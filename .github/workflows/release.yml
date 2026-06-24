@@ -1,0 +1,76 @@
+name: Foundry System Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  release:
+    types:
+      - published
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (e.g. v0.2.0). Defaults to v{version} from system.json."
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.event.release.tag_name || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Resolve release tag
+        id: tag
+        run: |
+          if [ -n "${{ github.event.inputs.tag }}" ]; then
+            TAG="${{ github.event.inputs.tag }}"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            TAG="${GITHUB_REF_NAME}"
+          elif [ "${{ github.event_name }}" = "release" ]; then
+            TAG="${{ github.event.release.tag_name }}"
+          else
+            VERSION=$(jq -r '.version' system.json)
+            TAG="v${VERSION}"
+          fi
+          echo "name=${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Build Foundry system package
+        run: |
+          SYSTEM_DIR="ars-magica-2e"
+          mkdir -p "dist/${SYSTEM_DIR}"
+
+          rsync -a \
+            --exclude ".git" \
+            --exclude ".github" \
+            --exclude "dist" \
+            --exclude "node_modules" \
+            --exclude "*.zip" \
+            ./ "dist/${SYSTEM_DIR}/"
+
+          cd dist
+          zip -r "../${SYSTEM_DIR}.zip" "${SYSTEM_DIR}"
+          cd ..
+
+          echo "Package contents:"
+          unzip -l "${SYSTEM_DIR}.zip" | head -20
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.name }}
+          name: ${{ steps.tag.outputs.name }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          overwrite_files: true
+          files: |
+            system.json
+            ars-magica-2e.zip
