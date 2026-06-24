@@ -16,7 +16,7 @@ const DROP_TARGETS = {
   equipment: "equipment"
 };
 
-export class ArM2eActorSheet extends ActorSheet {
+export class ArM2eActorSheet extends foundry.appv1.sheets.ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {

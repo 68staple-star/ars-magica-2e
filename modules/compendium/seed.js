@@ -1,15 +1,16 @@
 /**
  * Seed compendium packs on first world load when packs are empty.
+ * Foundry v13 locks system compendiums by default — unlock briefly to import.
  */
 
 const PACK_SEEDS = [
-  { pack: "arm2e-spells", file: "spells.json", documentClass: Item },
-  { pack: "arm2e-weapons", file: "weapons.json", documentClass: Item },
-  { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json", documentClass: Item },
-  { pack: "arm2e-rules-reference", file: "journals-rules.json", documentClass: JournalEntry },
-  { pack: "arm2e-covenant-template", file: "journals-covenant.json", documentClass: JournalEntry },
-  { pack: "arm2e-order-reference", file: "journals-order.json", documentClass: JournalEntry },
-  { pack: "arm2e-ability-reference", file: "journals-abilities.json", documentClass: JournalEntry }
+  { pack: "arm2e-spells", file: "spells.json" },
+  { pack: "arm2e-weapons", file: "weapons.json" },
+  { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json" },
+  { pack: "arm2e-rules-reference", file: "journals-rules.json" },
+  { pack: "arm2e-covenant-template", file: "journals-covenant.json" },
+  { pack: "arm2e-order-reference", file: "journals-order.json" },
+  { pack: "arm2e-ability-reference", file: "journals-abilities.json" }
 ];
 
 /**
@@ -32,6 +33,8 @@ async function loadSeedData(filename) {
  * @param {object[]} entries
  */
 function normalizeJournalEntries(entries) {
+  const htmlFormat = CONST.JOURNAL_ENTRY_TEXT_FORMATS?.HTML ?? 1;
+
   return entries.map((entry) => ({
     name: entry.name,
     pages: (entry.pages ?? []).map((page) => ({
@@ -39,7 +42,7 @@ function normalizeJournalEntries(entries) {
       type: "text",
       text: {
         content: page.text?.content ?? "",
-        format: CONST.JOURNAL_ENTRY_TEXT_FORMATS.HTML
+        format: htmlFormat
       }
     }))
   }));
@@ -48,16 +51,28 @@ function normalizeJournalEntries(entries) {
 /**
  * @param {CompendiumCollection} pack
  * @param {object[]} data
- * @param {typeof Item | typeof JournalEntry} documentClass
  */
-async function importPackData(pack, data, documentClass) {
+async function importPackData(pack, data) {
   if (!data.length) return;
 
-  const documents = documentClass.name === "JournalEntry"
+  const documentClass = pack.documentClass;
+  const documents = pack.metadata.type === "JournalEntry"
     ? normalizeJournalEntries(data)
     : data;
 
-  await documentClass.createDocuments(documents, { pack: pack.collection });
+  const wasLocked = pack.locked;
+
+  if (wasLocked) {
+    await pack.configure({ locked: false });
+  }
+
+  try {
+    await documentClass.createDocuments(documents, { pack: pack.collection });
+  } finally {
+    if (wasLocked) {
+      await pack.configure({ locked: true });
+    }
+  }
 }
 
 /**
@@ -68,17 +83,29 @@ export function registerCompendiumSeeding() {
     if (!game.user.isGM) return;
 
     for (const seed of PACK_SEEDS) {
-      const pack = game.packs.get(`ars-magica-2e.${seed.pack}`);
-      if (!pack) continue;
+      const packId = `ars-magica-2e.${seed.pack}`;
 
-      const index = await pack.getIndex();
-      if (index.size > 0) continue;
+      try {
+        const pack = game.packs.get(packId);
+        if (!pack) {
+          console.warn(`arm2e | Compendium pack not found: ${packId}`);
+          continue;
+        }
 
-      const data = await loadSeedData(seed.file);
-      if (!data.length) continue;
+        const index = await pack.getIndex();
+        if (index.size > 0) continue;
 
-      await importPackData(pack, data, seed.documentClass);
-      console.log(`arm2e | Seeded compendium ${seed.pack} (${data.length} entries)`);
+        const data = await loadSeedData(seed.file);
+        if (!data.length) {
+          console.warn(`arm2e | No seed data loaded for ${seed.pack}`);
+          continue;
+        }
+
+        await importPackData(pack, data);
+        console.log(`arm2e | Seeded compendium ${seed.pack} (${data.length} entries)`);
+      } catch (error) {
+        console.error(`arm2e | Failed to seed compendium ${seed.pack}`, error);
+      }
     }
   });
 }

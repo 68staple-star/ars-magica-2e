@@ -21,6 +21,8 @@ Hooks.on("init", () => {
   registerActorDocumentHooks();
   registerCompendiumSeeding();
 
+  const { Actors, Items } = foundry.documents.collections;
+
   Actors.registerSheet("ars-magica-2e", ArM2eActorSheet, {
     types: ["character"],
     makeDefault: true,
