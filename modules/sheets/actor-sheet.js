@@ -1,5 +1,6 @@
 import { ARM2E } from "../config.js";
 import { rollArM2e, rollSpellCast } from "../dice.js";
+import { ArM2eCreationWizard } from "../apps/creation-wizard.js";
 import { abilityKey } from "../utils/abilities.js";
 import { prepareCombatData } from "../utils/combat.js";
 import { prepareSpellLists } from "../utils/spells.js";
@@ -37,6 +38,21 @@ export class ArM2eActorSheet extends ActorSheet {
     context.spellLists = this._prepareSpellLists(system, registry);
 
     return context;
+  }
+
+  /** @override */
+  getHeaderButtons() {
+    const buttons = super.getHeaderButtons();
+    buttons.unshift({
+      label: "Character Wizard",
+      class: "arm2e-character-wizard",
+      icon: "fas fa-magic",
+      onclick: (event) => {
+        event.preventDefault();
+        new ArM2eCreationWizard(this.actor).render(true);
+      }
+    });
+    return buttons;
   }
 
   /** @override */

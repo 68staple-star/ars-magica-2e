@@ -1,4 +1,5 @@
 import { ARM2E } from "./modules/config.js";
+import { ArM2eCreationWizard } from "./modules/apps/creation-wizard.js";
 import { registerActorDocumentHooks } from "./modules/documents/actor.js";
 import { rollArM2e, rollSpellCast } from "./modules/dice.js";
 import { ArM2eActorSheet } from "./modules/sheets/actor-sheet.js";
@@ -7,7 +8,8 @@ Hooks.on("init", () => {
   CONFIG.ARM2E = {
     ...ARM2E,
     roll: rollArM2e,
-    rollSpellCast
+    rollSpellCast,
+    CreationWizard: ArM2eCreationWizard
   };
 
   registerActorDocumentHooks();

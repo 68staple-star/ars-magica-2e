@@ -1,0 +1,246 @@
+<form class="creation-wizard-app">
+  <header class="wizard-header">
+    <h1 class="wizard-title">Ars Magica Character Wizard</h1>
+    <p class="wizard-subtitle">Forge a covenant-ready character in four guided steps.</p>
+  </header>
+
+  <nav class="wizard-progress" aria-label="Creation progress">
+    {{#each steps}}
+    <div class="wizard-progress-step{{#if active}} is-active{{/if}}{{#if complete}} is-complete{{/if}}{{#if skipped}} is-skipped{{/if}}">
+      <span class="wizard-progress-index">{{id}}</span>
+      <span class="wizard-progress-label">{{label}}</span>
+    </div>
+    {{/each}}
+  </nav>
+
+  <section class="wizard-body">
+    {{#if isStep1}}
+    <div class="wizard-step wizard-step-1">
+      <h2 class="wizard-step-title">Step 1 — Identity &amp; Attributes</h2>
+      <div class="wizard-grid wizard-identity-grid">
+        <label class="wizard-field-group">
+          <span>Name</span>
+          <input class="wizard-field" type="text" data-path="identity.name" value="{{state.identity.name}}" />
+        </label>
+        <label class="wizard-field-group">
+          <span>Character Type</span>
+          <select class="wizard-field" data-path="identity.characterType">
+            {{#select state.identity.characterType}}
+            <option value="grog">Grog</option>
+            <option value="companion">Companion</option>
+            <option value="magus">Magus</option>
+            {{/select}}
+          </select>
+        </label>
+        <label class="wizard-field-group">
+          <span>Age</span>
+          <input class="wizard-field" type="number" data-path="identity.age" data-dtype="Number" min="1" value="{{state.identity.age}}" />
+        </label>
+        <label class="wizard-field-group wizard-span-2">
+          <span>Biography</span>
+          <textarea class="wizard-field" data-path="identity.biography" rows="3">{{state.identity.biography}}</textarea>
+        </label>
+      </div>
+
+      <div class="wizard-counter{{#if budgets.characteristics.isOver}} is-over{{/if}}">
+        Characteristic Points: <strong>{{budgets.characteristics.spent}}</strong> / {{budgets.characteristics.budget}}
+        ({{budgets.characteristics.remaining}} remaining)
+      </div>
+
+      <div class="wizard-card-grid">
+        {{#each characteristics}}
+        <label class="wizard-char-card">
+          <span class="wizard-char-label">{{label}} <em>({{abbrev}})</em></span>
+          <input
+            class="wizard-field wizard-char-input"
+            type="number"
+            data-path="characteristics.{{id}}"
+            data-dtype="Number"
+            min="{{../charMin}}"
+            max="{{../charMax}}"
+            value="{{value}}"
+          />
+        </label>
+        {{/each}}
+      </div>
+      <p class="wizard-note">Characteristics must remain between {{charMin}} and {{charMax}}. Negative scores refund points.</p>
+    </div>
+    {{/if}}
+
+    {{#if isStep2}}
+    <div class="wizard-step wizard-step-2">
+      <h2 class="wizard-step-title">Step 2 — Early Life &amp; Abilities</h2>
+      <div class="wizard-counter{{#if budgets.abilities.isOver}} is-over{{/if}}">
+        Ability Points: <strong>{{budgets.abilities.spent}}</strong> / {{budgets.abilities.budget}}
+        ({{budgets.abilities.remaining}} remaining)
+      </div>
+
+      {{#each abilityGroups}}
+      <section class="wizard-ability-section">
+        <h3 class="wizard-section-title">{{title}}</h3>
+        <div class="wizard-ability-grid">
+          {{#each entries}}
+          <div class="wizard-ability-row">
+            <span class="wizard-ability-name">{{label}}</span>
+            <input
+              class="wizard-field"
+              type="number"
+              data-path="abilities.{{../key}}.{{id}}.value"
+              data-dtype="Number"
+              value="{{value}}"
+              title="Cost {{cost}}"
+            />
+            <input
+              class="wizard-field wizard-specialty"
+              type="text"
+              data-path="abilities.{{../key}}.{{id}}.specialty"
+              value="{{specialty}}"
+              placeholder="Specialty"
+            />
+          </div>
+          {{/each}}
+        </div>
+      </section>
+      {{/each}}
+    </div>
+    {{/if}}
+
+    {{#if isStep3}}
+    <div class="wizard-step wizard-step-3">
+      <h2 class="wizard-step-title">Step 3 — Hermetic Apprenticeship</h2>
+
+      <div class="wizard-counter-row">
+        <div class="wizard-counter{{#if budgets.arts.isOver}} is-over{{/if}}">
+          Art Points: <strong>{{budgets.arts.spent}}</strong> / {{budgets.arts.budget}}
+        </div>
+        <div class="wizard-counter{{#if budgets.spells.isOver}} is-over{{/if}}">
+          Spell Points: <strong>{{budgets.spells.spent}}</strong> / {{budgets.spells.budget}}
+        </div>
+      </div>
+
+      <div class="wizard-magic-grid">
+        <section class="wizard-card">
+          <h3 class="wizard-section-title">Techniques</h3>
+          {{#each techniques}}
+          <label class="wizard-art-row">
+            <span>{{label}} ({{abbrev}})</span>
+            <input class="wizard-field" type="number" data-path="arts.techniques.{{id}}" data-dtype="Number" value="{{value}}" />
+          </label>
+          {{/each}}
+        </section>
+        <section class="wizard-card">
+          <h3 class="wizard-section-title">Forms</h3>
+          {{#each forms}}
+          <label class="wizard-art-row">
+            <span>{{label}} ({{abbrev}})</span>
+            <input class="wizard-field" type="number" data-path="arts.forms.{{id}}" data-dtype="Number" value="{{value}}" />
+          </label>
+          {{/each}}
+        </section>
+      </div>
+
+      <section class="wizard-card wizard-spell-builder">
+        <div class="wizard-card-header">
+          <h3 class="wizard-section-title">Formulaic Spells</h3>
+          <button type="button" class="wizard-btn wizard-btn-secondary" data-action="add-spell">Add Spell</button>
+        </div>
+
+        {{#if spells.length}}
+        <div class="wizard-spell-list">
+          {{#each spells}}
+          <article class="wizard-spell-card{{#unless allowed}} is-invalid{{/unless}}">
+            <div class="wizard-spell-grid">
+              <input class="wizard-field" type="text" data-path="spells.{{index}}.name" value="{{name}}" placeholder="Spell name" />
+              <input class="wizard-field" type="number" data-path="spells.{{index}}.level" data-dtype="Number" min="0" value="{{level}}" />
+              <select class="wizard-field" data-path="spells.{{index}}.technique">
+                {{#select technique}}
+                {{#each ../../registry.TECHNIQUES}}
+                <option value="{{id}}">{{label}}</option>
+                {{/each}}
+                {{/select}}
+              </select>
+              <select class="wizard-field" data-path="spells.{{index}}.form">
+                {{#select form}}
+                {{#each ../../registry.FORMS}}
+                <option value="{{id}}">{{label}}</option>
+                {{/each}}
+                {{/select}}
+              </select>
+              <input class="wizard-field" type="text" data-path="spells.{{index}}.range" value="{{range}}" placeholder="Range" />
+              <input class="wizard-field" type="text" data-path="spells.{{index}}.duration" value="{{duration}}" placeholder="Duration" />
+              <input class="wizard-field" type="text" data-path="spells.{{index}}.target" value="{{target}}" placeholder="Target" />
+              <label class="wizard-check">
+                <input class="wizard-field" type="checkbox" data-path="spells.{{index}}.mastered" {{#if mastered}}checked{{/if}} />
+                Mastered
+              </label>
+            </div>
+            <div class="wizard-spell-meta">
+              <span>Cost {{cost}}</span>
+              <span>Cast Total {{castingTotal}}</span>
+              <span>Max Lv {{maxLevel}}</span>
+              <button type="button" class="wizard-btn wizard-btn-danger" data-action="remove-spell" data-spell-index="{{index}}">Remove</button>
+            </div>
+          </article>
+          {{/each}}
+        </div>
+        {{else}}
+        <p class="wizard-note">No spells selected yet.</p>
+        {{/if}}
+      </section>
+    </div>
+    {{/if}}
+
+    {{#if isStep4}}
+    <div class="wizard-step wizard-step-4">
+      <h2 class="wizard-step-title">Step 4 — Summary &amp; Commit</h2>
+      <div class="wizard-summary-grid">
+        <section class="wizard-card">
+          <h3 class="wizard-section-title">Identity</h3>
+          <p><strong>{{summary.identity.name}}</strong> — {{summary.identity.characterType}} (Age {{summary.identity.age}})</p>
+          <p class="wizard-summary-bio">{{summary.identity.biography}}</p>
+        </section>
+        <section class="wizard-card">
+          <h3 class="wizard-section-title">Characteristics</h3>
+          <ul class="wizard-summary-list">
+            {{#each summary.characteristics}}
+            <li>{{abbrev}} {{label}}: <strong>{{value}}</strong></li>
+            {{/each}}
+          </ul>
+        </section>
+        <section class="wizard-card">
+          <h3 class="wizard-section-title">Point Totals</h3>
+          <ul class="wizard-summary-list">
+            <li>Characteristics: {{summary.totals.charSpent}} / {{summary.totals.charBudget}}</li>
+            <li>Abilities: {{summary.totals.abilitySpent}} / {{summary.totals.abilityBudget}}</li>
+            {{#if isMagus}}
+            <li>Arts: {{summary.totals.artSpent}} / {{summary.totals.artBudget}}</li>
+            <li>Spells: {{summary.totals.spellSpent}} / {{summary.totals.spellBudget}}</li>
+            {{/if}}
+            <li>Confidence: {{summary.confidence}}</li>
+          </ul>
+        </section>
+        {{#if isMagus}}
+        <section class="wizard-card wizard-span-2">
+          <h3 class="wizard-section-title">Hermetic Portfolio</h3>
+          <p><strong>Arts:</strong> {{summary.artHighlights}}</p>
+          <p><strong>Spells:</strong> {{summary.spells.length}} formulaic spells prepared.</p>
+        </section>
+        {{/if}}
+        <section class="wizard-card wizard-span-2">
+          <h3 class="wizard-section-title">Notable Abilities</h3>
+          <p>{{summary.abilityHighlights}}</p>
+        </section>
+      </div>
+    </div>
+    {{/if}}
+  </section>
+
+  <footer class="wizard-footer">
+    <button type="button" class="wizard-btn wizard-btn-secondary" data-action="wizard-back" {{#if isFirstStep}}disabled{{/if}}>Back</button>
+    {{#if isLastStep}}
+    <button type="button" class="wizard-btn wizard-btn-primary" data-action="wizard-forge">Forge Character</button>
+    {{else}}
+    <button type="button" class="wizard-btn wizard-btn-primary" data-action="wizard-next">Next</button>
+    {{/if}}
+  </footer>
+</form>
