@@ -307,6 +307,55 @@
           </table>
         </div>
       </section>
+
+      <section class="arm2e-panel arm2e-spells" aria-labelledby="arm2e-spells-heading">
+        <h2 id="arm2e-spells-heading" class="arm2e-section-heading">Formulaic Spells</h2>
+        <p class="arm2e-note arm2e-spells-note">Casting Modifier = Technique + Form + Stamina. Click a spell name or modifier to cast.</p>
+
+        {{#if spellLists.spells.length}}
+        {{#each spellLists.groups}}
+        <div class="arm2e-spell-group" data-technique="{{technique.id}}">
+          <h3 class="arm2e-spell-group-heading">{{technique.label}} ({{technique.abbrev}})</h3>
+          <table class="arm2e-spells-table">
+            <thead>
+              <tr>
+                <th scope="col">Spell</th>
+                <th scope="col">Arts</th>
+                <th scope="col">Lv</th>
+                <th scope="col">Range</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Target</th>
+                <th scope="col">Mastered</th>
+                <th scope="col">Cast Mod</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each spells}}
+              <tr
+                class="spell-row"
+                data-item-id="{{id}}"
+                data-spell-name="{{name}}"
+                data-spell-level="{{level}}"
+                data-casting-modifier="{{castingModifier}}"
+              >
+                <th scope="row" class="spell-name spell-roll-name rollable" title="Roll formulaic casting">{{name}}</th>
+                <td class="spell-arts">{{techniqueAbbrev}}{{formAbbrev}}</td>
+                <td class="spell-level">{{level}}</td>
+                <td class="spell-range">{{range}}</td>
+                <td class="spell-duration">{{duration}}</td>
+                <td class="spell-target">{{target}}</td>
+                <td class="spell-mastered">{{#if mastered}}Yes{{else}}No{{/if}}</td>
+                <td class="spell-casting-modifier spell-roll-cast rollable" title="Roll formulaic casting">{{castingModifier}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+        {{/each}}
+        {{else}}
+        <p class="arm2e-note arm2e-spells-empty">No formulaic spells learned. Create items of type <strong>spell</strong> on this actor.</p>
+        {{/if}}
+      </section>
     </div>
   </section>
 </form>

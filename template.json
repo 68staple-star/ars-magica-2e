@@ -61,7 +61,15 @@
     "types": ["ability", "art", "spell", "virtueFlaw", "weapon"],
     "ability": {},
     "art": {},
-    "spell": {},
+    "spell": {
+      "level": 0,
+      "technique": "creo",
+      "form": "corporem",
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false
+    },
     "virtueFlaw": {},
     "weapon": {
       "expense": "stan",

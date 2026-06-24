@@ -1,7 +1,8 @@
 import { ARM2E } from "../config.js";
-import { rollArM2e } from "../dice.js";
+import { rollArM2e, rollSpellCast } from "../dice.js";
 import { abilityKey } from "../utils/abilities.js";
 import { prepareCombatData } from "../utils/combat.js";
+import { prepareSpellLists } from "../utils/spells.js";
 
 export class ArM2eActorSheet extends ActorSheet {
   /** @override */
@@ -33,6 +34,7 @@ export class ArM2eActorSheet extends ActorSheet {
     context.artRows = this._prepareArtRows(system, registry);
     context.weaponSkillsNote = registry.WEAPON_SKILLS.note;
     context.combat = this._prepareCombat(system);
+    context.spellLists = this._prepareSpellLists(system, registry);
 
     return context;
   }
@@ -49,6 +51,7 @@ export class ArM2eActorSheet extends ActorSheet {
     html.find(".combat-roll-damage").on("click", this._onRollWeaponDamage.bind(this));
     html.find(".combat-roll-first-strike").on("click", this._onRollWeaponFirstStrike.bind(this));
     html.find(".combat-roll-defense").on("click", this._onRollWeaponDefense.bind(this));
+    html.find(".spell-roll-name, .spell-roll-cast").on("click", this._onRollSpellCast.bind(this));
   }
 
   /** @type {{ actor: Actor }} */
@@ -167,11 +170,37 @@ export class ArM2eActorSheet extends ActorSheet {
   }
 
   /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onRollSpellCast(event) {
+    event.preventDefault();
+    const row = event.currentTarget.closest(".spell-row");
+    if (!row) return;
+
+    const spellName = row.dataset.spellName ?? "Spell";
+    const castingModifier = Number(row.dataset.castingModifier);
+    const spellLevel = Number(row.dataset.spellLevel);
+    const safeModifier = Number.isFinite(castingModifier) ? castingModifier : 0;
+    const safeLevel = Number.isFinite(spellLevel) ? spellLevel : 0;
+
+    await rollSpellCast(spellName, safeModifier, safeLevel, this._rollOptions());
+  }
+
+  /**
    * @param {object} system
    */
   _prepareCombat(system) {
     const weaponItems = this.actor.items.filter((item) => item.type === "weapon");
     return prepareCombatData(system, weaponItems);
+  }
+
+  /**
+   * @param {object} system
+   * @param {typeof ARM2E} registry
+   */
+  _prepareSpellLists(system, registry) {
+    const spellItems = this.actor.items.filter((item) => item.type === "spell");
+    return prepareSpellLists(system, spellItems, registry);
   }
 
   /**

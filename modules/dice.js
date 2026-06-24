@@ -116,9 +116,10 @@ function formatDieSteps(dieResult) {
  * @param {ArM2eDieResult} dieResult
  * @param {number} baseModifier
  * @param {string} label
+ * @param {{ spellLevel?: number }} [context={}]
  * @returns {string}
  */
-function buildChatContent(dieResult, baseModifier, label) {
+function buildChatContent(dieResult, baseModifier, label, context = {}) {
   const modifierLabel = baseModifier >= 0 ? `+${baseModifier}` : String(baseModifier);
   const total = dieResult.value + baseModifier;
   const rollTitle = dieResult.rollType === "simple" ? "Simple Roll" : "Stress Roll";
@@ -127,6 +128,9 @@ function buildChatContent(dieResult, baseModifier, label) {
     : "";
   const explodeHtml = dieResult.exploded
     ? `<div class="arm2e-explode-flag">Exploding Stress Die</div>`
+    : "";
+  const castingHtml = context.spellLevel !== undefined
+    ? buildSpellCastOutcome(total, context.spellLevel)
     : "";
 
   return `
@@ -142,17 +146,38 @@ function buildChatContent(dieResult, baseModifier, label) {
     <span class="equals">=</span>
     <strong class="total">${total}</strong>
   </div>
+  ${castingHtml}
   ${explodeHtml}
   ${botchHtml}
 </div>`;
 }
 
 /**
+ * @param {number} total
+ * @param {number} spellLevel
+ * @returns {string}
+ */
+function buildSpellCastOutcome(total, spellLevel) {
+  const level = Number(spellLevel) || 0;
+  const shortfall = level - total;
+
+  if (total >= level) {
+    return `<div class="arm2e-cast-outcome arm2e-cast-success">Casting total meets or exceeds Level ${level} — spell succeeds without Fatigue loss.</div>`;
+  }
+
+  const severeFailure = shortfall > 10
+    ? " The spell fails to take effect (more than 10 short)."
+    : "";
+
+  return `<div class="arm2e-cast-outcome arm2e-cast-failure">Casting total falls short of Level ${level} — lose 1 Fatigue level.${severeFailure}</div>`;
+}
+
+/**
  * @param {"simple" | "stress"} rollType
  * @param {number} [baseModifier=0]
  * @param {string} [label=""]
- * @param {{ actor?: Actor, speaker?: object }} [options={}]
- * @returns {Promise<{ rollType: "simple" | "stress", value: number, modifier: number, total: number, potentialBotch: boolean, exploded: boolean, steps: DieStep[] }>}
+ * @param {{ actor?: Actor, speaker?: object, spellLevel?: number }} [options={}]
+ * @returns {Promise<{ rollType: "simple" | "stress", value: number, modifier: number, total: number, potentialBotch: boolean, exploded: boolean, steps: DieStep[], spellLevel?: number, castingSuccess?: boolean }>}
  */
 export async function rollArM2e(rollType, baseModifier = 0, label = "", options = {}) {
   const normalizedType = rollType === "simple" ? "simple" : "stress";
@@ -162,11 +187,12 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
   const speaker = options.speaker ?? ChatMessage.getSpeaker({ actor: options.actor });
   const roll = new Roll("1d10");
   await roll.evaluate();
+  const spellLevel = options.spellLevel !== undefined ? Number(options.spellLevel) || 0 : undefined;
 
   await ChatMessage.create({
     speaker,
     flavor: label || "Ars Magica 2e Roll",
-    content: buildChatContent(dieResult, modifier, label),
+    content: buildChatContent(dieResult, modifier, label, { spellLevel }),
     rolls: [roll],
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
     sound: CONFIG.sounds?.dice
@@ -179,6 +205,23 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
     total,
     potentialBotch: dieResult.potentialBotch,
     exploded: dieResult.exploded,
-    steps: dieResult.steps
+    steps: dieResult.steps,
+    spellLevel,
+    castingSuccess: spellLevel === undefined ? undefined : total >= spellLevel
   };
+}
+
+/**
+ * @param {string} spellName
+ * @param {number} castingModifier
+ * @param {number} spellLevel
+ * @param {{ actor?: Actor, speaker?: object }} [options={}]
+ */
+export async function rollSpellCast(spellName, castingModifier, spellLevel, options = {}) {
+  const label = `${spellName} — Formulaic Casting (Lv ${Number(spellLevel) || 0})`;
+
+  return rollArM2e("stress", castingModifier, label, {
+    ...options,
+    spellLevel
+  });
 }

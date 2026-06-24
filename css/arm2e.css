@@ -400,3 +400,46 @@
 .chat-message .arm2e-explode-flag {
   color: #6b2f1a;
 }
+
+.chat-message .arm2e-cast-outcome {
+  margin-top: 0.35rem;
+  font-weight: 700;
+}
+
+.chat-message .arm2e-cast-success {
+  color: #2f5a2f;
+}
+
+.chat-message .arm2e-cast-failure {
+  color: var(--arm2e-botched, #8b1e1e);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-spell-group {
+  margin-bottom: 1rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-spell-group-heading {
+  margin: 0 0 0.5rem;
+  color: var(--arm2e-accent);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-spells-table {
+  font-size: 0.85rem;
+}
+
+.ars-magica-2e.sheet.actor.character .spell-name,
+.ars-magica-2e.sheet.actor.character .spell-casting-modifier {
+  font-weight: 700;
+}
+
+.ars-magica-2e.sheet.actor.character .spell-casting-modifier {
+  text-align: center;
+}
+
+.ars-magica-2e.sheet.actor.character .spell-roll-name:hover,
+.ars-magica-2e.sheet.actor.character .spell-roll-cast:hover {
+  background: var(--arm2e-roll-hover);
+}
