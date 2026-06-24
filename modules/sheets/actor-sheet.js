@@ -80,7 +80,7 @@ export class ArM2eActorSheet extends ActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-    this._bindPrimaryTabs(html);
+    this._ensurePrimaryTab(html);
 
     html.find(".characteristic-label").on("click", this._onRollCharacteristic.bind(this));
     html.find(".ability-row").on("click", this._onRollAbility.bind(this));
@@ -115,31 +115,10 @@ export class ArM2eActorSheet extends ActorSheet {
   }
 
   /**
-   * Ensure tab navigation works on Foundry v13 where AppV1 tab binding may not run.
+   * Ensure a visible tab without clobbering Foundry's internal `this._tabs` array.
    * @param {JQuery} html
    */
-  _bindPrimaryTabs(html) {
-    const root = html[0] ?? this.element?.[0];
-    if (!root) return;
-
-    const TabsClass = foundry.applications?.api?.Tabs ?? globalThis.Tabs;
-    if (!TabsClass) {
-      this._activateFallbackTab(html);
-      return;
-    }
-
-    try {
-      this._tabs = new TabsClass({
-        navSelector: ".sheet-tabs",
-        contentSelector: ".sheet-body",
-        initial: "character"
-      });
-      this._tabs.bind(root);
-    } catch (error) {
-      console.error("arm2e | Failed to bind sheet tabs", error);
-      this._activateFallbackTab(html);
-    }
-
+  _ensurePrimaryTab(html) {
     if (!html.find(".sheet-body .tab.active").length) {
       this._activateFallbackTab(html);
     }
