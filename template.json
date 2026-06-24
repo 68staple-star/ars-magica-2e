@@ -1,0 +1,63 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "character": {
+      "identity": {
+        "age": 0,
+        "characterType": "companion",
+        "biography": ""
+      },
+      "characteristics": {
+        "intelligence": 0,
+        "perception": 0,
+        "strength": 0,
+        "stamina": 0,
+        "presence": 0,
+        "communication": 0,
+        "dexterity": 0,
+        "quickness": 0
+      },
+      "confidence": {
+        "value": 2,
+        "max": 2
+      },
+      "fatigue": {
+        "value": 0,
+        "max": 5
+      },
+      "abilities": {
+        "talents": {},
+        "skills": {},
+        "knowledges": {}
+      },
+      "arts": {
+        "techniques": {
+          "creo": 0,
+          "intellego": 0,
+          "muto": 0,
+          "perdo": 0,
+          "rego": 0
+        },
+        "forms": {
+          "animal": 0,
+          "aquam": 0,
+          "auram": 0,
+          "corporem": 0,
+          "herbam": 0,
+          "ignem": 0,
+          "imagonem": 0,
+          "mentem": 0,
+          "terram": 0,
+          "vim": 0
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": ["ability", "art", "spell", "virtueFlaw"],
+    "ability": {},
+    "art": {},
+    "spell": {},
+    "virtueFlaw": {}
+  }
+}

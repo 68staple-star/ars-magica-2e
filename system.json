@@ -1,0 +1,12 @@
+{
+  "id": "ars-magica-2e",
+  "title": "Ars Magica 2nd Edition (Custom)",
+  "description": "A custom Ars Magica 2nd Edition system for Foundry VTT.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": 11,
+    "verified": 12
+  },
+  "esmodules": ["./arm2e.js"],
+  "styles": ["./css/arm2e.css"]
+}

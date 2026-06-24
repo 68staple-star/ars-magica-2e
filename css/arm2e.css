@@ -1,0 +1,336 @@
+/* Ars Magica 2e — parchment layout pass */
+
+.ars-magica-2e.sheet.actor.character {
+  --arm2e-ink: #2c1810;
+  --arm2e-ink-muted: #5a3f2e;
+  --arm2e-parchment: #f3e4c8;
+  --arm2e-parchment-deep: #e6d2ad;
+  --arm2e-border: #7a5a3a;
+  --arm2e-border-light: #b9986d;
+  --arm2e-accent: #6b2f1a;
+  --arm2e-highlight: #fff8ea;
+  --arm2e-botched: #8b1e1e;
+  --arm2e-roll-hover: #dcc79f;
+
+  color: var(--arm2e-ink);
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.ars-magica-2e.sheet.actor.character .window-content,
+.ars-magica-2e.sheet.actor.character .arm2e-sheet {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 30%),
+    radial-gradient(circle at top left, #f8edd6 0%, var(--arm2e-parchment) 55%, var(--arm2e-parchment-deep) 100%);
+  border: 2px solid var(--arm2e-border);
+  box-shadow: inset 0 0 0 1px var(--arm2e-border-light);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--arm2e-border);
+  background: rgba(255, 248, 234, 0.55);
+}
+
+.ars-magica-2e.sheet.actor.character .profile-img {
+  border: 2px solid var(--arm2e-border);
+  border-radius: 4px;
+  object-fit: cover;
+  background: var(--arm2e-highlight);
+}
+
+.ars-magica-2e.sheet.actor.character .charname input {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--arm2e-ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--arm2e-border-light);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-tabs {
+  border-bottom: 2px solid var(--arm2e-border);
+  background: rgba(230, 210, 173, 0.65);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-tabs .item {
+  color: var(--arm2e-ink-muted);
+  border: 1px solid transparent;
+  border-bottom: none;
+  padding: 0.45rem 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-tabs .item.active {
+  color: var(--arm2e-accent);
+  background: var(--arm2e-highlight);
+  border-color: var(--arm2e-border);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-body {
+  padding: 0.75rem 1rem 1rem;
+  overflow-y: auto;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-panel {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 248, 234, 0.45);
+  border: 1px solid var(--arm2e-border-light);
+  border-radius: 4px;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-section-heading {
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--arm2e-border-light);
+  color: var(--arm2e-accent);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-identity-grid {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0.75rem;
+}
+
+.ars-magica-2e.sheet.actor.character label {
+  color: var(--arm2e-ink-muted);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ars-magica-2e.sheet.actor.character input,
+.ars-magica-2e.sheet.actor.character select,
+.ars-magica-2e.sheet.actor.character textarea {
+  color: var(--arm2e-ink);
+  background: var(--arm2e-highlight);
+  border: 1px solid var(--arm2e-border-light);
+  border-radius: 3px;
+}
+
+.ars-magica-2e.sheet.actor.character table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 248, 234, 0.7);
+}
+
+.ars-magica-2e.sheet.actor.character th,
+.ars-magica-2e.sheet.actor.character td {
+  border: 1px solid var(--arm2e-border-light);
+  padding: 0.35rem 0.5rem;
+  vertical-align: middle;
+}
+
+.ars-magica-2e.sheet.actor.character thead th {
+  background: var(--arm2e-parchment-deep);
+  color: var(--arm2e-accent);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-characteristics-grid tbody tr:nth-child(even) {
+  background: rgba(230, 210, 173, 0.35);
+}
+
+.ars-magica-2e.sheet.actor.character .characteristic-abbrev {
+  width: 3.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.ars-magica-2e.sheet.actor.character .characteristic-value input,
+.ars-magica-2e.sheet.actor.character .ability-value input,
+.ars-magica-2e.sheet.actor.character .ability-xp input,
+.ars-magica-2e.sheet.actor.character .art-score {
+  width: 100%;
+  min-width: 2.5rem;
+  text-align: center;
+}
+
+.ars-magica-2e.sheet.actor.character .rollable {
+  cursor: pointer;
+}
+
+.ars-magica-2e.sheet.actor.character .characteristic-label:hover,
+.ars-magica-2e.sheet.actor.character .ability-row:hover,
+.ars-magica-2e.sheet.actor.character .arts-cell:hover {
+  background: var(--arm2e-roll-hover);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-resource-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ars-magica-2e.sheet.actor.character .resource-bar {
+  display: grid;
+  grid-template-columns: 7rem 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ars-magica-2e.sheet.actor.character .resource-track {
+  width: 100%;
+  height: 1rem;
+  accent-color: var(--arm2e-accent);
+}
+
+.ars-magica-2e.sheet.actor.character .resource-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.ars-magica-2e.sheet.actor.character .resource-inputs input {
+  width: 3rem;
+  text-align: center;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-note {
+  margin: 0.5rem 0 0;
+  color: var(--arm2e-ink-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Hermetic arts grid — CSS Grid via table display: contents */
+.ars-magica-2e.sheet.actor.character .arm2e-arts-grid-wrapper {
+  overflow-x: auto;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-grid.arm2e-arts-grid {
+  display: grid;
+  grid-template-columns: 7.5rem repeat(10, minmax(3.5rem, 1fr));
+  gap: 0;
+  min-width: 48rem;
+  border: 2px solid var(--arm2e-border);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-grid.arm2e-arts-grid thead,
+.ars-magica-2e.sheet.actor.character .arm2e-grid.arm2e-arts-grid tbody,
+.ars-magica-2e.sheet.actor.character .arm2e-grid.arm2e-arts-grid tr {
+  display: contents;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-grid.arm2e-arts-grid th,
+.ars-magica-2e.sheet.actor.character .arm2e-grid.arm2e-arts-grid td {
+  min-height: 3.25rem;
+  text-align: center;
+}
+
+.ars-magica-2e.sheet.actor.character .arts-corner {
+  background: var(--arm2e-parchment-deep);
+}
+
+.ars-magica-2e.sheet.actor.character .arts-form-header,
+.ars-magica-2e.sheet.actor.character .arts-technique-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--arm2e-parchment-deep);
+  font-size: 0.75rem;
+}
+
+.ars-magica-2e.sheet.actor.character .art-abbrev {
+  font-weight: 700;
+  color: var(--arm2e-accent);
+}
+
+.ars-magica-2e.sheet.actor.character .art-label {
+  color: var(--arm2e-ink-muted);
+  font-size: 0.65rem;
+  line-height: 1.1;
+}
+
+.ars-magica-2e.sheet.actor.character .arts-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 248, 234, 0.85);
+}
+
+.ars-magica-2e.sheet.actor.character .arts-cell .art-total {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  border: 1px solid var(--arm2e-border-light);
+  border-radius: 999px;
+  background: #fff;
+  font-weight: 700;
+}
+
+.ars-magica-2e.sheet.actor.character .arts-row:nth-child(even) .arts-cell {
+  background: rgba(230, 210, 173, 0.35);
+}
+
+/* Chat roll output */
+.chat-message .arm2e-chat-roll {
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #b9986d;
+  border-radius: 4px;
+  background: #f8edd6;
+  color: #2c1810;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.chat-message .arm2e-chat-roll-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.chat-message .arm2e-roll-type {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5a3f2e;
+}
+
+.chat-message .arm2e-chat-roll-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+  color: #5a3f2e;
+}
+
+.chat-message .arm2e-chat-roll-total {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.chat-message .arm2e-botch-flag,
+.chat-message .arm2e-explode-flag {
+  margin-top: 0.35rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.chat-message .arm2e-botch-flag {
+  color: var(--arm2e-botched, #8b1e1e);
+}
+
+.chat-message .arm2e-explode-flag {
+  color: #6b2f1a;
+}
