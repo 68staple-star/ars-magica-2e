@@ -1,18 +1,7 @@
 import { ARM2E } from "../config.js";
 import { rollArM2e } from "../dice.js";
-
-/**
- * @param {string} label
- * @returns {string}
- */
-function abilityKey(label) {
-  return label
-    .toLowerCase()
-    .replace(/[()]/g, "")
-    .replace(/&/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
+import { abilityKey } from "../utils/abilities.js";
+import { prepareCombatData } from "../utils/combat.js";
 
 export class ArM2eActorSheet extends ActorSheet {
   /** @override */
@@ -43,6 +32,7 @@ export class ArM2eActorSheet extends ActorSheet {
     context.forms = this._prepareForms(system, registry);
     context.artRows = this._prepareArtRows(system, registry);
     context.weaponSkillsNote = registry.WEAPON_SKILLS.note;
+    context.combat = this._prepareCombat(system);
 
     return context;
   }
@@ -54,6 +44,11 @@ export class ArM2eActorSheet extends ActorSheet {
     html.find(".characteristic-label").on("click", this._onRollCharacteristic.bind(this));
     html.find(".ability-row").on("click", this._onRollAbility.bind(this));
     html.find(".arts-cell").on("click", this._onRollArtCell.bind(this));
+    html.find(".weapon-equipped").on("change", this._onToggleWeaponEquipped.bind(this));
+    html.find(".combat-roll-attack").on("click", this._onRollWeaponAttack.bind(this));
+    html.find(".combat-roll-damage").on("click", this._onRollWeaponDamage.bind(this));
+    html.find(".combat-roll-first-strike").on("click", this._onRollWeaponFirstStrike.bind(this));
+    html.find(".combat-roll-defense").on("click", this._onRollWeaponDefense.bind(this));
   }
 
   /** @type {{ actor: Actor }} */
@@ -110,6 +105,73 @@ export class ArM2eActorSheet extends ActorSheet {
     const formLabel = form?.abbrev ?? formId;
 
     await rollArM2e("stress", modifier, `${techniqueLabel}${formLabel} Casting Total`, this._rollOptions());
+  }
+
+  /**
+   * @param {JQuery.ChangeEvent} event
+   */
+  async _onToggleWeaponEquipped(event) {
+    const itemId = event.currentTarget.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (!item) return;
+
+    await item.update({ "system.equipped": event.currentTarget.checked });
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onRollWeaponAttack(event) {
+    event.preventDefault();
+    await this._rollWeaponTotal(event, "attack", "Attack");
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onRollWeaponDamage(event) {
+    event.preventDefault();
+    await this._rollWeaponTotal(event, "damage", "Damage");
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onRollWeaponFirstStrike(event) {
+    event.preventDefault();
+    await this._rollWeaponTotal(event, "firstStrike", "First Strike");
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onRollWeaponDefense(event) {
+    event.preventDefault();
+    await this._rollWeaponTotal(event, "defense", "Parry Defense");
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   * @param {"attack" | "damage" | "firstStrike" | "defense"} totalKey
+   * @param {string} labelPrefix
+   */
+  async _rollWeaponTotal(event, _totalKey, labelPrefix) {
+    const row = event.currentTarget.closest(".weapon-row");
+    if (!row) return;
+
+    const weaponName = row.dataset.weaponName ?? "Weapon";
+    const modifier = Number(event.currentTarget.dataset.modifier);
+    const safeModifier = Number.isFinite(modifier) ? modifier : 0;
+
+    await rollArM2e("stress", safeModifier, `${weaponName} — ${labelPrefix}`, this._rollOptions());
+  }
+
+  /**
+   * @param {object} system
+   */
+  _prepareCombat(system) {
+    const weaponItems = this.actor.items.filter((item) => item.type === "weapon");
+    return prepareCombatData(system, weaponItems);
   }
 
   /**

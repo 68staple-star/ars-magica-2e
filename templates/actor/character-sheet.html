@@ -88,6 +88,77 @@
           </div>
         </div>
       </section>
+
+      <section class="arm2e-panel arm2e-combat-equipment" aria-labelledby="arm2e-combat-heading">
+        <h2 id="arm2e-combat-heading" class="arm2e-section-heading">Combat &amp; Equipment</h2>
+        <div class="arm2e-combat-summary">
+          <div class="combat-stat">
+            <span class="combat-stat-label">Size</span>
+            <input type="number" name="system.combat.size" value="{{system.combat.size}}" data-dtype="Number" />
+          </div>
+          <div class="combat-stat">
+            <span class="combat-stat-label">Extra Load</span>
+            <input type="number" name="system.combat.extraLoad" value="{{system.combat.extraLoad}}" data-dtype="Number" min="0" step="0.5" />
+          </div>
+          <div class="combat-stat">
+            <span class="combat-stat-label">Current Load</span>
+            <span class="combat-stat-value">{{combat.totalLoad}}</span>
+          </div>
+          <div class="combat-stat">
+            <span class="combat-stat-label">Encumbrance</span>
+            <span class="combat-stat-value combat-encumbrance">{{combat.encumbrance}}</span>
+          </div>
+        </div>
+
+        {{#if combat.weapons.length}}
+        <table class="arm2e-weapons-table">
+          <thead>
+            <tr>
+              <th scope="col">Equipped</th>
+              <th scope="col">Weapon</th>
+              <th scope="col">Spd</th>
+              <th scope="col">AtkB</th>
+              <th scope="col">Dam</th>
+              <th scope="col">ParB</th>
+              <th scope="col">Load</th>
+              <th scope="col">Atk Sk</th>
+              <th scope="col">Par Sk</th>
+              <th scope="col">1st</th>
+              <th scope="col">Attack</th>
+              <th scope="col">Damage</th>
+              <th scope="col">Parry</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each combat.weapons}}
+            <tr class="weapon-row{{#if equipped}} weapon-equipped-row{{/if}}" data-item-id="{{id}}" data-weapon-name="{{name}}">
+              <td class="weapon-equipped-cell">
+                <input type="checkbox" class="weapon-equipped" data-item-id="{{id}}" {{#if equipped}}checked{{/if}} aria-label="Equipped" />
+              </td>
+              <th scope="row" class="weapon-name">{{name}}</th>
+              <td class="weapon-stat">{{speed}}</td>
+              <td class="weapon-stat">{{atkB}}</td>
+              <td class="weapon-stat">{{wpnDam}}</td>
+              <td class="weapon-stat">{{parB}}</td>
+              <td class="weapon-stat">{{load}}</td>
+              <td class="weapon-stat">{{attackSkill}}</td>
+              <td class="weapon-stat">{{parrySkill}}</td>
+              {{#if derived}}
+              <td class="weapon-derived combat-roll-first-strike rollable" data-modifier="{{derived.firstStrike}}" title="Roll stress die + First Strike">{{derived.firstStrike}}</td>
+              <td class="weapon-derived combat-roll-attack rollable" data-modifier="{{derived.attack}}" title="Roll stress die + Attack">{{derived.attack}}</td>
+              <td class="weapon-derived combat-roll-damage rollable" data-modifier="{{derived.damage}}" title="Roll stress die + Damage">{{derived.damage}}</td>
+              <td class="weapon-derived combat-roll-defense rollable" data-modifier="{{derived.defense}}" title="Roll stress die + Parry Defense">{{derived.defense}}</td>
+              {{else}}
+              <td class="weapon-derived weapon-derived-empty" colspan="4">Equip to calculate totals</td>
+              {{/if}}
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{else}}
+        <p class="arm2e-note arm2e-weapons-empty">No weapons in inventory. Create items of type <strong>weapon</strong> on this actor.</p>
+        {{/if}}
+      </section>
     </div>
 
     {{!-- Abilities Tab --}}

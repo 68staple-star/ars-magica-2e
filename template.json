@@ -25,6 +25,10 @@
         "value": 0,
         "max": 5
       },
+      "combat": {
+        "size": 0,
+        "extraLoad": 0
+      },
       "abilities": {
         "talents": {},
         "skills": {},
@@ -54,10 +58,22 @@
     }
   },
   "Item": {
-    "types": ["ability", "art", "spell", "virtueFlaw"],
+    "types": ["ability", "art", "spell", "virtueFlaw", "weapon"],
     "ability": {},
     "art": {},
     "spell": {},
-    "virtueFlaw": {}
+    "virtueFlaw": {},
+    "weapon": {
+      "expense": "stan",
+      "speed": 0,
+      "atkB": 0,
+      "wpnDam": 0,
+      "parB": 0,
+      "strReq": 0,
+      "load": 0,
+      "attackSkill": 0,
+      "parrySkill": 0,
+      "equipped": false
+    }
   }
 }

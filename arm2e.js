@@ -1,4 +1,5 @@
 import { ARM2E } from "./modules/config.js";
+import { registerActorDocumentHooks } from "./modules/documents/actor.js";
 import { rollArM2e } from "./modules/dice.js";
 import { ArM2eActorSheet } from "./modules/sheets/actor-sheet.js";
 
@@ -7,6 +8,8 @@ Hooks.on("init", () => {
     ...ARM2E,
     roll: rollArM2e
   };
+
+  registerActorDocumentHooks();
 
   Actors.registerSheet("ars-magica-2e", ArM2eActorSheet, {
     types: ["character"],

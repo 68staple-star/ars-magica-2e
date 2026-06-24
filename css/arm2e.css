@@ -198,6 +198,72 @@
   text-align: center;
 }
 
+.ars-magica-2e.sheet.actor.character .arm2e-combat-equipment {
+  border: 2px solid var(--arm2e-border);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-combat-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ars-magica-2e.sheet.actor.character .combat-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid var(--arm2e-border-light);
+  background: rgba(255, 248, 234, 0.75);
+}
+
+.ars-magica-2e.sheet.actor.character .combat-stat-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--arm2e-ink-muted);
+}
+
+.ars-magica-2e.sheet.actor.character .combat-stat-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--arm2e-accent);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-weapons-table {
+  font-size: 0.85rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-weapons-table .weapon-name {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ars-magica-2e.sheet.actor.character .weapon-equipped-row {
+  background: rgba(230, 210, 173, 0.45);
+}
+
+.ars-magica-2e.sheet.actor.character .weapon-derived {
+  font-weight: 700;
+  text-align: center;
+}
+
+.ars-magica-2e.sheet.actor.character .weapon-derived-empty {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--arm2e-ink-muted);
+  text-align: center;
+}
+
+.ars-magica-2e.sheet.actor.character .combat-roll-attack:hover,
+.ars-magica-2e.sheet.actor.character .combat-roll-damage:hover,
+.ars-magica-2e.sheet.actor.character .combat-roll-first-strike:hover,
+.ars-magica-2e.sheet.actor.character .combat-roll-defense:hover {
+  background: var(--arm2e-roll-hover);
+}
+
 .ars-magica-2e.sheet.actor.character .arm2e-note {
   margin: 0.5rem 0 0;
   color: var(--arm2e-ink-muted);
