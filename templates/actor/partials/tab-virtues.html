@@ -1,0 +1,49 @@
+<section class="arm2e-panel arm2e-virtues-panel" data-drop-target="virtueFlaw">
+  <div class="arm2e-panel-header">
+    <h2 class="arm2e-section-heading">Virtues &amp; Flaws</h2>
+    <button type="button" class="arm2e-item-create" data-item-type="virtueFlaw"><i class="fas fa-plus"></i> Add Entry</button>
+  </div>
+
+  <div class="arm2e-vf-summary">
+    <span>Virtues: <strong>{{virtueFlaws.virtuePoints}}</strong></span>
+    <span>Flaws: <strong>{{virtueFlaws.flawPoints}}</strong></span>
+    <span>Balance: <strong>{{virtueFlaws.balance}}</strong></span>
+  </div>
+
+  <div class="arm2e-vf-columns">
+    <div class="arm2e-vf-column">
+      <h3 class="arm2e-subheading">Virtues</h3>
+      {{#if virtueFlaws.virtues.length}}
+      <ul class="arm2e-vf-list">
+        {{#each virtueFlaws.virtues}}
+        <li class="arm2e-vf-entry" data-item-id="{{id}}">
+          <button type="button" class="item-edit arm2e-vf-name" data-item-id="{{id}}">{{name}}</button>
+          <span class="arm2e-vf-points">+{{points}}</span>
+          {{#if category}}<span class="arm2e-vf-category">{{category}}</span>{{/if}}
+          <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
+        </li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <p class="arm2e-note">No virtues. Drag from compendium or add manually.</p>
+      {{/if}}
+    </div>
+    <div class="arm2e-vf-column">
+      <h3 class="arm2e-subheading">Flaws</h3>
+      {{#if virtueFlaws.flaws.length}}
+      <ul class="arm2e-vf-list">
+        {{#each virtueFlaws.flaws}}
+        <li class="arm2e-vf-entry" data-item-id="{{id}}">
+          <button type="button" class="item-edit arm2e-vf-name" data-item-id="{{id}}">{{name}}</button>
+          <span class="arm2e-vf-points">-{{points}}</span>
+          {{#if category}}<span class="arm2e-vf-category">{{category}}</span>{{/if}}
+          <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
+        </li>
+        {{/each}}
+      </ul>
+      {{else}}
+      <p class="arm2e-note">No flaws recorded.</p>
+      {{/if}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<form class="arm2e-item-sheet" autocomplete="off">
+  <header class="arm2e-item-header">
+    <img src="{{item.img}}" data-edit="img" height="48" width="48" />
+    <input name="name" type="text" value="{{item.name}}" placeholder="Equipment Name" />
+  </header>
+  <div class="arm2e-item-grid">
+    <label>Load <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number" step="0.5" /></label>
+    <label class="arm2e-check"><input type="checkbox" name="system.equipped" {{checked system.equipped}} /> Equipped</label>
+    <label class="arm2e-span-2">Description <textarea name="system.description" rows="3">{{system.description}}</textarea></label>
+  </div>
+</form>

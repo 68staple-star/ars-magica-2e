@@ -1,0 +1,89 @@
+<section class="arm2e-panel arm2e-magic" aria-labelledby="arm2e-magic-heading">
+  <h2 id="arm2e-magic-heading" class="arm2e-section-heading">Hermetic Arts</h2>
+  <p class="arm2e-note arm2e-arts-note">Grid cells show Technique + Form totals. Edit scores in headers.</p>
+  <div class="arm2e-arts-grid-wrapper">
+    <table class="arm2e-arts-grid arm2e-grid">
+      <thead>
+        <tr>
+          <th scope="col" class="arts-corner"></th>
+          {{#each forms}}
+          <th scope="col" class="arts-form-header" data-form="{{id}}">
+            <span class="art-abbrev">{{abbrev}}</span>
+            <span class="art-label">{{label}}</span>
+            <input class="art-score" type="number" name="{{field}}" value="{{score}}" data-dtype="Number" aria-label="{{label}} score" />
+          </th>
+          {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        {{#each artRows}}
+        <tr class="arts-row" data-technique="{{technique.id}}">
+          <th scope="row" class="arts-technique-header">
+            <span class="art-abbrev">{{technique.abbrev}}</span>
+            <span class="art-label">{{technique.label}}</span>
+            <input class="art-score" type="number" name="{{technique.field}}" value="{{technique.score}}" data-dtype="Number" aria-label="{{technique.label}} score" />
+          </th>
+          {{#each cells}}
+          <td class="arts-cell rollable" data-technique="{{../technique.id}}" data-form="{{form.id}}" title="Roll stress die + casting total">
+            <span class="art-total">{{total}}</span>
+          </td>
+          {{/each}}
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="arm2e-panel arm2e-spells arm2e-grimoire" data-drop-target="spell" aria-labelledby="arm2e-spells-heading">
+  <div class="arm2e-panel-header">
+    <h2 id="arm2e-spells-heading" class="arm2e-section-heading">Formulaic Grimoire</h2>
+    <button type="button" class="arm2e-item-create" data-item-type="spell"><i class="fas fa-plus"></i> Add Spell</button>
+  </div>
+  <p class="arm2e-note arm2e-spells-note">Cast Mod = Technique + Form + Stamina. Click name or modifier to cast.</p>
+
+  {{#if spellLists.spells.length}}
+  <table class="arm2e-spells-table arm2e-grimoire-table">
+    <thead>
+      <tr>
+        <th>Spell</th>
+        <th>Arts</th>
+        <th>Lv</th>
+        <th>Range</th>
+        <th>Dur</th>
+        <th>Tgt</th>
+        <th>Mst</th>
+        <th>Cast</th>
+        <th>Notes</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each spellLists.spells}}
+      <tr class="spell-row" data-item-id="{{id}}" data-spell-name="{{name}}" data-spell-level="{{level}}" data-casting-modifier="{{castingModifier}}">
+        <th scope="row" class="spell-name spell-roll-name rollable">{{name}}</th>
+        <td class="spell-arts">{{techniqueAbbrev}}{{formAbbrev}}</td>
+        <td class="spell-level">{{level}}</td>
+        <td class="spell-range">{{range}}</td>
+        <td class="spell-duration">{{duration}}</td>
+        <td class="spell-target">{{target}}</td>
+        <td class="spell-mastered">{{#if mastered}}Y{{else}}N{{/if}}</td>
+        <td class="spell-casting-modifier spell-roll-cast rollable">{{castingModifier}}</td>
+        <td class="spell-notes">
+          {{#if notes}}{{notes}}{{/if}}
+          {{#if journal}}
+          <button type="button" class="arm2e-journal-link arm2e-spell-journal" data-journal-uuid="{{journal}}" title="Open spell description"><i class="fas fa-book-open"></i></button>
+          {{/if}}
+        </td>
+        <td>
+          <button type="button" class="arm2e-item-edit-icon item-edit" data-item-id="{{id}}" title="Edit spell"><i class="fas fa-pen"></i></button>
+          <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  <p class="arm2e-note arm2e-spells-empty">No formulaic spells. Drag from compendium or click Add Spell.</p>
+  {{/if}}
+</section>

@@ -1,0 +1,75 @@
+<section class="arm2e-panel arm2e-characteristics" aria-labelledby="arm2e-characteristics-heading">
+  <h2 id="arm2e-characteristics-heading" class="arm2e-section-heading">Characteristics</h2>
+  <div class="arm2e-char-pairs">
+    {{#each characteristicPairs}}
+    <div class="arm2e-char-pair">
+      <div class="arm2e-char-cell characteristic-row" data-characteristic="{{left.id}}">
+        <span class="characteristic-abbrev">{{left.abbrev}}</span>
+        <span class="characteristic-label rollable" title="Roll stress die + characteristic">{{left.label}}</span>
+        <input class="characteristic-value" type="number" name="{{left.field}}" value="{{left.value}}" data-dtype="Number" />
+      </div>
+      <div class="arm2e-char-cell characteristic-row" data-characteristic="{{right.id}}">
+        <span class="characteristic-abbrev">{{right.abbrev}}</span>
+        <span class="characteristic-label rollable" title="Roll stress die + characteristic">{{right.label}}</span>
+        <input class="characteristic-value" type="number" name="{{right.field}}" value="{{right.value}}" data-dtype="Number" />
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+<section class="arm2e-panel arm2e-resources" aria-labelledby="arm2e-resources-heading">
+  <h2 id="arm2e-resources-heading" class="arm2e-section-heading">Confidence</h2>
+  <div class="arm2e-resource-list">
+    <div class="resource-bar confidence" data-resource="confidence">
+      <label class="resource-label" for="{{actor._id}}-confidence-value">Current</label>
+      <progress class="resource-track" value="{{system.confidence.value}}" max="{{system.confidence.max}}"></progress>
+      <div class="resource-inputs">
+        <input id="{{actor._id}}-confidence-value" type="number" name="system.confidence.value" value="{{system.confidence.value}}" data-dtype="Number" min="0" />
+        <span class="resource-separator" aria-hidden="true">/</span>
+        <input type="number" name="system.confidence.max" value="{{system.confidence.max}}" data-dtype="Number" min="0" aria-label="Confidence maximum" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="arm2e-panel arm2e-personality" aria-labelledby="arm2e-personality-heading">
+  <h2 id="arm2e-personality-heading" class="arm2e-section-heading">Personality &amp; Reputation</h2>
+  <div class="arm2e-personality-grid">
+    <div class="form-group arm2e-span-2">
+      <label for="{{actor._id}}-traits">Personality Traits</label>
+      <input id="{{actor._id}}-traits" type="text" name="system.personality.traits" value="{{system.personality.traits}}" placeholder="Brave, Loyal, ..." />
+    </div>
+    <div class="form-group">
+      <label for="{{actor._id}}-reputation">Reputation</label>
+      <input id="{{actor._id}}-reputation" type="text" name="system.personality.reputation" value="{{system.personality.reputation}}" />
+    </div>
+    <div class="form-group">
+      <label for="{{actor._id}}-location-score">Location Score</label>
+      <input id="{{actor._id}}-location-score" type="number" name="system.personality.locationScore" value="{{system.personality.locationScore}}" data-dtype="Number" />
+    </div>
+    <div class="form-group arm2e-span-2 arm2e-biography">
+      <label for="{{actor._id}}-biography">Biography</label>
+      <textarea id="{{actor._id}}-biography" name="system.identity.biography" rows="4">{{system.identity.biography}}</textarea>
+    </div>
+  </div>
+</section>
+
+<section class="arm2e-panel arm2e-journal-refs" aria-labelledby="arm2e-journal-refs-heading">
+  <h2 id="arm2e-journal-refs-heading" class="arm2e-section-heading">Reference Links</h2>
+  <div class="arm2e-journal-ref-grid">
+    <div class="form-group">
+      <label for="{{actor._id}}-covenant-journal">Covenant Journal UUID</label>
+      <input id="{{actor._id}}-covenant-journal" type="text" name="system.identity.covenantJournal" value="{{system.identity.covenantJournal}}" placeholder="@UUID[...]" />
+    </div>
+    <div class="form-group">
+      <label for="{{actor._id}}-rules-journal">Rules Journal UUID</label>
+      <input id="{{actor._id}}-rules-journal" type="text" name="system.references.rulesJournal" value="{{system.references.rulesJournal}}" placeholder="@UUID[...]" />
+    </div>
+    <div class="form-group">
+      <label for="{{actor._id}}-order-journal">Order Journal UUID</label>
+      <input id="{{actor._id}}-order-journal" type="text" name="system.references.orderJournal" value="{{system.references.orderJournal}}" placeholder="@UUID[...]" />
+    </div>
+  </div>
+  <p class="arm2e-note">Paste journal @UUID links from your world after importing compendium references.</p>
+</section>

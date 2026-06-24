@@ -1,0 +1,68 @@
+/* Chat roll output */
+.chat-message .arm2e-chat-roll {
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #b9986d;
+  border-radius: 4px;
+  background: #f8edd6;
+  color: #2c1810;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.chat-message .arm2e-chat-roll-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.chat-message .arm2e-roll-type {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5a3f2e;
+}
+
+.chat-message .arm2e-chat-roll-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+  color: #5a3f2e;
+}
+
+.chat-message .arm2e-chat-roll-total {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.chat-message .arm2e-botch-flag,
+.chat-message .arm2e-explode-flag {
+  margin-top: 0.35rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.chat-message .arm2e-botch-flag {
+  color: #8b1e1e;
+}
+
+.chat-message .arm2e-explode-flag {
+  color: #6b2f1a;
+}
+
+.chat-message .arm2e-cast-outcome {
+  margin-top: 0.35rem;
+  font-weight: 700;
+}
+
+.chat-message .arm2e-cast-success {
+  color: #2f5a2f;
+}
+
+.chat-message .arm2e-cast-failure {
+  color: #8b1e1e;
+}

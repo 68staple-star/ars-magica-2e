@@ -1,0 +1,180 @@
+<section class="arm2e-panel arm2e-combat-summary-panel" aria-labelledby="arm2e-combat-heading">
+  <h2 id="arm2e-combat-heading" class="arm2e-section-heading">Combat Summary</h2>
+  <div class="arm2e-combat-summary">
+    <div class="combat-stat">
+      <span class="combat-stat-label">Extra Load</span>
+      <input type="number" name="system.combat.extraLoad" value="{{system.combat.extraLoad}}" data-dtype="Number" min="0" step="0.5" />
+    </div>
+    <div class="combat-stat">
+      <span class="combat-stat-label">Current Load</span>
+      <span class="combat-stat-value">{{combat.totalLoad}}</span>
+    </div>
+    <div class="combat-stat">
+      <span class="combat-stat-label">Encumbrance</span>
+      <span class="combat-stat-value combat-encumbrance">{{combat.encumbrance}}</span>
+    </div>
+    <div class="combat-stat">
+      <span class="combat-stat-label">Dodge</span>
+      <span class="combat-stat-value combat-roll-dodge rollable" data-modifier="{{combat.dodge}}" title="Roll stress die + Dodge">{{combat.dodge}}</span>
+    </div>
+    <div class="combat-stat">
+      <span class="combat-stat-label">Soak</span>
+      <span class="combat-stat-value">{{combat.soak}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="arm2e-panel arm2e-wound-track" aria-labelledby="arm2e-wounds-heading">
+  <h2 id="arm2e-wounds-heading" class="arm2e-section-heading">Body Levels</h2>
+  <div class="arm2e-track arm2e-wound-levels">
+    {{#each woundTrack.levels}}
+    <button
+      type="button"
+      class="arm2e-track-step wound-step{{#if active}} is-active{{/if}}"
+      data-wound-level="{{id}}"
+      title="{{label}}"
+    >{{label}}</button>
+    {{/each}}
+  </div>
+  <input type="hidden" name="system.wounds.level" value="{{system.wounds.level}}" />
+</section>
+
+<section class="arm2e-panel arm2e-fatigue-track" aria-labelledby="arm2e-fatigue-heading">
+  <h2 id="arm2e-fatigue-heading" class="arm2e-section-heading">Fatigue Levels</h2>
+  <div class="arm2e-track arm2e-fatigue-levels">
+    {{#each fatigueTrack.levels}}
+    <button
+      type="button"
+      class="arm2e-track-step fatigue-step{{#if active}} is-active{{/if}}"
+      data-fatigue-level="{{id}}"
+      title="{{label}}{{#if penalty}} ({{penalty}}){{/if}}"
+    >{{label}}</button>
+    {{/each}}
+  </div>
+  <input type="hidden" name="system.fatigue.level" value="{{system.fatigue.level}}" />
+  <div class="arm2e-fatigue-numeric">
+    <label for="{{actor._id}}-fatigue-value">Fatigue Points</label>
+    <input id="{{actor._id}}-fatigue-value" type="number" name="system.fatigue.value" value="{{system.fatigue.value}}" data-dtype="Number" min="0" />
+    <span>/</span>
+    <input type="number" name="system.fatigue.max" value="{{system.fatigue.max}}" data-dtype="Number" min="0" aria-label="Fatigue maximum" />
+  </div>
+</section>
+
+<section class="arm2e-panel arm2e-armor-panel" data-drop-target="armor">
+  <div class="arm2e-panel-header">
+    <h2 class="arm2e-section-heading">Armor</h2>
+    <button type="button" class="arm2e-item-create" data-item-type="armor"><i class="fas fa-plus"></i> Add Armor</button>
+  </div>
+  {{#if combat.armor.length}}
+  <table class="arm2e-armor-table">
+    <thead>
+      <tr>
+        <th>Eq</th>
+        <th>Armor</th>
+        <th>Type</th>
+        <th>Prot</th>
+        <th>Load</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each combat.armor}}
+      <tr class="armor-row" data-item-id="{{id}}">
+        <td><input type="checkbox" class="item-equipped" data-item-id="{{id}}" {{#if equipped}}checked{{/if}} /></td>
+        <th scope="row" class="item-edit" data-item-id="{{id}}">{{name}}</th>
+        <td>{{type}}</td>
+        <td>{{protection}}</td>
+        <td>{{load}}</td>
+        <td><button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  <p class="arm2e-note">No armor. Drag from compendium or click Add Armor.</p>
+  {{/if}}
+</section>
+
+<section class="arm2e-panel arm2e-weapons-panel" data-drop-target="weapon">
+  <div class="arm2e-panel-header">
+    <h2 class="arm2e-section-heading">Weapons</h2>
+    <button type="button" class="arm2e-item-create" data-item-type="weapon"><i class="fas fa-plus"></i> Add Weapon</button>
+  </div>
+  {{#if combat.weapons.length}}
+  <table class="arm2e-weapons-table">
+    <thead>
+      <tr>
+        <th>Eq</th>
+        <th>Weapon</th>
+        <th>Spd</th>
+        <th>AtkB</th>
+        <th>Dam</th>
+        <th>ParB</th>
+        <th>Load</th>
+        <th>1st</th>
+        <th>Atk</th>
+        <th>Dmg</th>
+        <th>Par</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each combat.weapons}}
+      <tr class="weapon-row{{#if equipped}} weapon-equipped-row{{/if}}" data-item-id="{{id}}" data-weapon-name="{{name}}">
+        <td><input type="checkbox" class="weapon-equipped item-equipped" data-item-id="{{id}}" {{#if equipped}}checked{{/if}} /></td>
+        <th scope="row" class="weapon-name item-edit" data-item-id="{{id}}">{{name}}</th>
+        <td>{{speed}}</td>
+        <td>{{atkB}}</td>
+        <td>{{wpnDam}}</td>
+        <td>{{parB}}</td>
+        <td>{{load}}</td>
+        {{#if derived}}
+        <td class="weapon-derived combat-roll-first-strike rollable" data-modifier="{{derived.firstStrike}}">{{derived.firstStrike}}</td>
+        <td class="weapon-derived combat-roll-attack rollable" data-modifier="{{derived.attack}}">{{derived.attack}}</td>
+        <td class="weapon-derived combat-roll-damage rollable" data-modifier="{{derived.damage}}">{{derived.damage}}</td>
+        <td class="weapon-derived combat-roll-defense rollable" data-modifier="{{derived.defense}}">{{derived.defense}}</td>
+        {{else}}
+        <td class="weapon-derived weapon-derived-empty" colspan="4">Equip</td>
+        {{/if}}
+        <td><button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  <p class="arm2e-note">No weapons. Drag from compendium or click Add Weapon.</p>
+  {{/if}}
+</section>
+
+<section class="arm2e-panel arm2e-equipment-panel" data-drop-target="equipment">
+  <div class="arm2e-panel-header">
+    <h2 class="arm2e-section-heading">Equipment</h2>
+    <button type="button" class="arm2e-item-create" data-item-type="equipment"><i class="fas fa-plus"></i> Add Equipment</button>
+  </div>
+  {{#if combat.equipment.length}}
+  <table class="arm2e-equipment-table">
+    <thead>
+      <tr>
+        <th>Eq</th>
+        <th>Item</th>
+        <th>Load</th>
+        <th>Notes</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each combat.equipment}}
+      <tr class="equipment-row" data-item-id="{{id}}">
+        <td><input type="checkbox" class="item-equipped" data-item-id="{{id}}" {{#if equipped}}checked{{/if}} /></td>
+        <th scope="row" class="item-edit" data-item-id="{{id}}">{{name}}</th>
+        <td>{{load}}</td>
+        <td>{{description}}</td>
+        <td><button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  <p class="arm2e-note">No equipment recorded.</p>
+  {{/if}}
+</section>

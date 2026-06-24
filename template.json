@@ -5,7 +5,13 @@
       "identity": {
         "age": 0,
         "characterType": "companion",
-        "biography": ""
+        "biography": "",
+        "covenant": "",
+        "covenantJournal": "",
+        "gender": "",
+        "yearBorn": 0,
+        "currentYear": 1220,
+        "decrepitude": 0
       },
       "characteristics": {
         "intelligence": 0,
@@ -22,8 +28,17 @@
         "max": 2
       },
       "fatigue": {
+        "level": "fresh",
         "value": 0,
         "max": 5
+      },
+      "wounds": {
+        "level": "unhurt"
+      },
+      "personality": {
+        "traits": "",
+        "reputation": "",
+        "locationScore": 0
       },
       "combat": {
         "size": 0,
@@ -54,11 +69,15 @@
           "terram": 0,
           "vim": 0
         }
+      },
+      "references": {
+        "rulesJournal": "",
+        "orderJournal": ""
       }
     }
   },
   "Item": {
-    "types": ["ability", "art", "spell", "virtueFlaw", "weapon"],
+    "types": ["ability", "art", "spell", "virtueFlaw", "weapon", "armor", "equipment"],
     "ability": {},
     "art": {},
     "spell": {
@@ -68,9 +87,17 @@
       "range": "",
       "duration": "",
       "target": "",
-      "mastered": false
+      "mastered": false,
+      "notes": "",
+      "journal": ""
     },
-    "virtueFlaw": {},
+    "virtueFlaw": {
+      "kind": "virtue",
+      "points": 1,
+      "category": "",
+      "description": "",
+      "source": ""
+    },
     "weapon": {
       "expense": "stan",
       "speed": 0,
@@ -82,6 +109,17 @@
       "attackSkill": 0,
       "parrySkill": 0,
       "equipped": false
+    },
+    "armor": {
+      "type": "",
+      "protection": 0,
+      "load": 0,
+      "equipped": false
+    },
+    "equipment": {
+      "load": 0,
+      "equipped": false,
+      "description": ""
     }
   }
 }

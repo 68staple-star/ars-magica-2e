@@ -1,0 +1,18 @@
+<form class="arm2e-item-sheet" autocomplete="off">
+  <header class="arm2e-item-header">
+    <img src="{{item.img}}" data-edit="img" height="48" width="48" />
+    <input name="name" type="text" value="{{item.name}}" placeholder="Weapon Name" />
+  </header>
+  <div class="arm2e-item-grid">
+    <label>Expense <input type="text" name="system.expense" value="{{system.expense}}" /></label>
+    <label>Speed <input type="number" name="system.speed" value="{{system.speed}}" data-dtype="Number" /></label>
+    <label>Atk Bonus <input type="number" name="system.atkB" value="{{system.atkB}}" data-dtype="Number" /></label>
+    <label>Damage <input type="number" name="system.wpnDam" value="{{system.wpnDam}}" data-dtype="Number" /></label>
+    <label>Parry Bonus <input type="number" name="system.parB" value="{{system.parB}}" data-dtype="Number" /></label>
+    <label>Str Req <input type="number" name="system.strReq" value="{{system.strReq}}" data-dtype="Number" /></label>
+    <label>Load <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number" step="0.5" /></label>
+    <label>Attack Skill <input type="number" name="system.attackSkill" value="{{system.attackSkill}}" data-dtype="Number" /></label>
+    <label>Parry Skill <input type="number" name="system.parrySkill" value="{{system.parrySkill}}" data-dtype="Number" /></label>
+    <label class="arm2e-check arm2e-span-2"><input type="checkbox" name="system.equipped" {{checked system.equipped}} /> Equipped</label>
+  </div>
+</form>

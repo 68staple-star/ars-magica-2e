@@ -57,21 +57,59 @@ export function calculateTotalLoad(items, extraLoad = 0) {
 
 /**
  * @param {object} system
+ * @param {number} encumbrance
+ * @returns {number}
+ */
+export function calculateDodge(system, encumbrance) {
+  const dodgeSkill = Number(system?.abilities?.talents?.dodge?.value) || 0;
+  const quickness = Number(system?.characteristics?.quickness) || 0;
+  const size = Number(system?.combat?.size) || 0;
+  const enc = Number(encumbrance) || 0;
+
+  return dodgeSkill + quickness - enc - size;
+}
+
+/**
+ * @param {Iterable<{ system: object }>} armorItems
+ * @returns {number}
+ */
+export function calculateSoak(armorItems) {
+  let soak = 0;
+
+  for (const item of armorItems) {
+    if (!item?.system?.equipped) continue;
+    soak += Number(item.system.protection) || 0;
+  }
+
+  return soak;
+}
+
+/**
+ * @param {object} system
  * @param {Iterable<Item>} weaponItems
+ * @param {Iterable<Item>} [armorItems=[]]
+ * @param {Iterable<Item>} [equipmentItems=[]]
  * @returns {{
  *   size: number,
  *   totalLoad: number,
  *   encumbrance: number,
- *   weapons: Array<object>
+ *   dodge: number,
+ *   soak: number,
+ *   weapons: Array<object>,
+ *   armor: Array<object>,
+ *   equipment: Array<object>
  * }}
  */
-export function prepareCombatData(system, weaponItems) {
+export function prepareCombatData(system, weaponItems, armorItems = [], equipmentItems = []) {
   const characteristics = system?.characteristics ?? {};
   const size = Number(system?.combat?.size) || 0;
   const extraLoad = Number(system?.combat?.extraLoad) || 0;
   const strength = Number(characteristics.strength) || 0;
-  const totalLoad = calculateTotalLoad(weaponItems, extraLoad);
+  const allLoadItems = [...weaponItems, ...armorItems, ...equipmentItems];
+  const totalLoad = calculateTotalLoad(allLoadItems, extraLoad);
   const encumbrance = calculateEncumbrance(totalLoad, strength);
+  const dodge = calculateDodge(system, encumbrance);
+  const soak = calculateSoak(armorItems);
 
   const weapons = [...weaponItems].map((item) => {
     const weapon = item.system ?? {};
@@ -96,5 +134,22 @@ export function prepareCombatData(system, weaponItems) {
     };
   });
 
-  return { size, totalLoad, encumbrance, weapons };
+  const armor = [...armorItems].map((item) => ({
+    id: item.id,
+    name: item.name,
+    type: item.system?.type ?? "",
+    protection: Number(item.system?.protection) || 0,
+    load: Number(item.system?.load) || 0,
+    equipped: Boolean(item.system?.equipped)
+  }));
+
+  const equipment = [...equipmentItems].map((item) => ({
+    id: item.id,
+    name: item.name,
+    load: Number(item.system?.load) || 0,
+    equipped: Boolean(item.system?.equipped),
+    description: item.system?.description ?? ""
+  }));
+
+  return { size, totalLoad, encumbrance, dodge, soak, weapons, armor, equipment };
 }

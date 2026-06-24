@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Ability Reference",
+    "pages": [
+      {
+        "name": "Categories",
+        "text": {
+          "content": "<h2>Ability Types</h2><p><strong>Talents</strong> — innate or intuitive capabilities.</p><p><strong>Skills</strong> — trained capabilities including weapon skills chosen per weapon.</p><p><strong>Knowledges</strong> — learned information and lore.</p><p>Specify parenthetical abilities (e.g. Craft, Area Lore) on your character sheet specialty field.</p>"
+        }
+      }
+    ]
+  }
+]

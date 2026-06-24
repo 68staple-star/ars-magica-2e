@@ -1,0 +1,65 @@
+<header class="sheet-header arm2e-header">
+  <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+  <div class="header-fields arm2e-identity-summary">
+    <h1 class="charname">
+      <input name="name" type="text" value="{{actor.name}}" placeholder="Character Name" />
+    </h1>
+    <div class="arm2e-header-band">
+      <div class="form-group">
+        <label for="{{actor._id}}-character-type">Type</label>
+        <select id="{{actor._id}}-character-type" name="system.identity.characterType">
+          {{#select system.identity.characterType}}
+          <option value="grog">Grog</option>
+          <option value="companion">Companion</option>
+          <option value="magus">Magus</option>
+          {{/select}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="{{actor._id}}-covenant">Covenant</label>
+        <input id="{{actor._id}}-covenant" type="text" name="system.identity.covenant" value="{{system.identity.covenant}}" placeholder="Covenant name" />
+      </div>
+      <div class="form-group">
+        <label for="{{actor._id}}-gender">Gender</label>
+        <input id="{{actor._id}}-gender" type="text" name="system.identity.gender" value="{{system.identity.gender}}" />
+      </div>
+      <div class="form-group">
+        <label for="{{actor._id}}-age">Age</label>
+        <input id="{{actor._id}}-age" type="number" name="system.identity.age" value="{{system.identity.age}}" data-dtype="Number" min="0" />
+      </div>
+      <div class="form-group">
+        <label for="{{actor._id}}-size">Size</label>
+        <input id="{{actor._id}}-size" type="number" name="system.combat.size" value="{{system.combat.size}}" data-dtype="Number" />
+      </div>
+      <div class="form-group">
+        <label for="{{actor._id}}-year-born">Year Born</label>
+        <input id="{{actor._id}}-year-born" type="number" name="system.identity.yearBorn" value="{{system.identity.yearBorn}}" data-dtype="Number" />
+      </div>
+      <div class="form-group">
+        <label for="{{actor._id}}-current-year">Current Year</label>
+        <input id="{{actor._id}}-current-year" type="number" name="system.identity.currentYear" value="{{system.identity.currentYear}}" data-dtype="Number" />
+      </div>
+      <div class="form-group">
+        <label for="{{actor._id}}-decrepitude">Decrepitude</label>
+        <input id="{{actor._id}}-decrepitude" type="number" name="system.identity.decrepitude" value="{{system.identity.decrepitude}}" data-dtype="Number" min="0" />
+      </div>
+    </div>
+    <div class="arm2e-quick-links">
+      {{#if system.identity.covenantJournal}}
+      <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.identity.covenantJournal}}" title="Open Covenant Chronicle">
+        <i class="fas fa-landmark"></i> Covenant
+      </button>
+      {{/if}}
+      {{#if system.references.rulesJournal}}
+      <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.references.rulesJournal}}" title="Open Rules Reference">
+        <i class="fas fa-book"></i> Rules
+      </button>
+      {{/if}}
+      {{#if system.references.orderJournal}}
+      <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.references.orderJournal}}" title="Open Order Reference">
+        <i class="fas fa-hat-wizard"></i> Order
+      </button>
+      {{/if}}
+    </div>
+  </div>
+</header>

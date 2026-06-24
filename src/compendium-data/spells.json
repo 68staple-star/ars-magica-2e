@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Pilum of Fire",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "ignem",
+      "range": "Voice",
+      "duration": "Momentary",
+      "target": "Individual",
+      "mastered": false,
+      "notes": "Creates a spear of flame.",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Unseen Porter",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "corporem",
+      "range": "Touch",
+      "duration": "Concentration",
+      "target": "Group",
+      "mastered": false,
+      "notes": "Moves objects without visible agency.",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wizard's Reach",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "muto",
+      "form": "corporem",
+      "range": "Touch",
+      "duration": "Momentary",
+      "target": "Individual",
+      "mastered": false,
+      "notes": "Extends the caster's reach.",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sense the Nature of Vis",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "vim",
+      "range": "Touch",
+      "duration": "Momentary",
+      "target": "Individual",
+      "mastered": false,
+      "notes": "Identifies magical vis.",
+      "journal": ""
+    }
+  },
+  {
+    "name": "The Crystal Dart",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "terram",
+      "range": "Voice",
+      "duration": "Momentary",
+      "target": "Individual",
+      "mastered": false,
+      "notes": "Hurls a sharpened shard of stone.",
+      "journal": ""
+    }
+  }
+]

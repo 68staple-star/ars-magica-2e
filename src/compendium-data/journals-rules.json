@@ -1,0 +1,25 @@
+[
+  {
+    "name": "ArM2 Rules Reference",
+    "pages": [
+      {
+        "name": "Dice & Rolls",
+        "text": {
+          "content": "<h2>Stress and Simple Dice</h2><p>Roll a d10. Results of 1–9 are face value; 0 (shown as 10 on the die) triggers special stress rules including botch checks and explosions on further 1s.</p><h2>Characteristics &amp; Abilities</h2><p>Add the relevant score to your die roll. Abilities with a specialty grant +1 when applicable.</p><h2>Confidence</h2><p>Spend Confidence to re-roll or improve outcomes per saga agreement.</p>"
+        }
+      },
+      {
+        "name": "Combat",
+        "text": {
+          "content": "<h2>Attack &amp; Defense</h2><p>Attack = Weapon Atk Bonus + Dex + Attack Skill. Defense = Parry Bonus + Parry Skill − Size. Dodge = Dodge + Qik − Enc − Size.</p><h2>Damage</h2><p>Damage = Weapon Damage + Str + Attack Skill, compared against Soak.</p><h2>Wounds &amp; Fatigue</h2><p>Track body levels and fatigue levels on the Combat tab of your character sheet.</p>"
+        }
+      },
+      {
+        "name": "Casting",
+        "text": {
+          "content": "<h2>Formulaic Spells</h2><p>Casting Modifier = Technique + Form + Stamina. Roll stress die + modifier vs spell Level.</p><p>If the total meets or exceeds the spell level, the spell succeeds without Fatigue loss. Otherwise lose one Fatigue level.</p>"
+        }
+      }
+    ]
+  }
+]

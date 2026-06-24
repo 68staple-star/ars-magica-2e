@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Covenant Chronicle Template",
+    "pages": [
+      {
+        "name": "Overview",
+        "text": {
+          "content": "<h2>Covenant Name</h2><p><em>Record your covenant's name, location, and founding date.</em></p><h2>Charter &amp; Hooks</h2><p>What binds the magi together? What threats or opportunities define the saga?</p>"
+        }
+      },
+      {
+        "name": "Resources",
+        "text": {
+          "content": "<h2>Library</h2><p>Summae, tractatus, and vis sources available to covenant members.</p><h2>Vis Stocks</h2><table><thead><tr><th>Art</th><th>Pawns</th></tr></thead><tbody><tr><td>Vim</td><td></td></tr></tbody></table><h2>Wealth &amp; Staff</h2><p>Grogs, specialists, and mundane holdings.</p>"
+        }
+      },
+      {
+        "name": "Seasonal Activities",
+        "text": {
+          "content": "<h2>Current Season</h2><p>Track laboratory work, study, vis gathering, and covenant projects per the Covenants supplement.</p>"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Dagger",
+    "type": "weapon",
+    "system": {
+      "expense": "inex",
+      "speed": 0,
+      "atkB": 0,
+      "wpnDam": 1,
+      "parB": 0,
+      "strReq": -3,
+      "load": 0,
+      "attackSkill": 0,
+      "parrySkill": 0,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Short Sword",
+    "type": "weapon",
+    "system": {
+      "expense": "stan",
+      "speed": 0,
+      "atkB": 1,
+      "wpnDam": 2,
+      "parB": 1,
+      "strReq": 0,
+      "load": 1,
+      "attackSkill": 0,
+      "parrySkill": 0,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Long Sword",
+    "type": "weapon",
+    "system": {
+      "expense": "stan",
+      "speed": -1,
+      "atkB": 2,
+      "wpnDam": 3,
+      "parB": 2,
+      "strReq": 1,
+      "load": 2,
+      "attackSkill": 0,
+      "parrySkill": 0,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Spear",
+    "type": "weapon",
+    "system": {
+      "expense": "stan",
+      "speed": 1,
+      "atkB": 1,
+      "wpnDam": 2,
+      "parB": 1,
+      "strReq": 0,
+      "load": 2,
+      "attackSkill": 0,
+      "parrySkill": 0,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Staff",
+    "type": "weapon",
+    "system": {
+      "expense": "inex",
+      "speed": 1,
+      "atkB": 0,
+      "wpnDam": 1,
+      "parB": 2,
+      "strReq": -2,
+      "load": 1,
+      "attackSkill": 0,
+      "parrySkill": 0,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Leather Armor",
+    "type": "armor",
+    "system": {
+      "type": "Leather",
+      "protection": 1,
+      "load": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Chain Mail",
+    "type": "armor",
+    "system": {
+      "type": "Chain",
+      "protection": 3,
+      "load": 3,
+      "equipped": false
+    }
+  }
+]

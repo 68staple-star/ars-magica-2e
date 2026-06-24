@@ -1,0 +1,36 @@
+<form class="arm2e-item-sheet" autocomplete="off">
+  <header class="arm2e-item-header">
+    <img src="{{item.img}}" data-edit="img" height="48" width="48" />
+    <input name="name" type="text" value="{{item.name}}" placeholder="Spell Name" />
+  </header>
+  <div class="arm2e-item-grid">
+    <label>Level <input type="number" name="system.level" value="{{system.level}}" data-dtype="Number" min="0" /></label>
+    <label>Technique
+      <select name="system.technique">
+        {{#select system.technique}}
+        {{#each techniques}}
+        <option value="{{id}}">{{label}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+    </label>
+    <label>Form
+      <select name="system.form">
+        {{#select system.form}}
+        {{#each forms}}
+        <option value="{{id}}">{{label}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+    </label>
+    <label>Range <input type="text" name="system.range" value="{{system.range}}" /></label>
+    <label>Duration <input type="text" name="system.duration" value="{{system.duration}}" /></label>
+    <label>Target <input type="text" name="system.target" value="{{system.target}}" /></label>
+    <label class="arm2e-span-2">Journal UUID <input type="text" name="system.journal" value="{{system.journal}}" placeholder="@UUID[...]" /></label>
+    <label class="arm2e-check arm2e-span-2"><input type="checkbox" name="system.mastered" {{checked system.mastered}} /> Mastered</label>
+    <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="3">{{system.notes}}</textarea></label>
+  </div>
+  {{#if system.journal}}
+  <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.journal}}"><i class="fas fa-book-open"></i> Open Description</button>
+  {{/if}}
+</form>

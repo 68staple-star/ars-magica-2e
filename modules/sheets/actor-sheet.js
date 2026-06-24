@@ -1,9 +1,20 @@
 import { ARM2E } from "../config.js";
 import { rollArM2e, rollSpellCast } from "../dice.js";
 import { ArM2eCreationWizard } from "../apps/creation-wizard.js";
-import { abilityKey } from "../utils/abilities.js";
 import { prepareCombatData } from "../utils/combat.js";
 import { prepareSpellLists } from "../utils/spells.js";
+import { prepareAbilitySections, prepareCharacteristicPairs } from "../utils/sheet-data.js";
+import { prepareVirtueFlawList } from "../utils/virtues.js";
+import { prepareFatigueTrack, prepareWoundTrack } from "../utils/wounds.js";
+import { openJournalEntry } from "../utils/journal.js";
+
+const DROP_TARGETS = {
+  spell: "spell",
+  weapon: "weapon",
+  virtueFlaw: "virtueFlaw",
+  armor: "armor",
+  equipment: "equipment"
+};
 
 export class ArM2eActorSheet extends ActorSheet {
   /** @override */
@@ -11,12 +22,16 @@ export class ArM2eActorSheet extends ActorSheet {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["ars-magica-2e", "sheet", "actor", "character"],
       template: "systems/ars-magica-2e/templates/actor/character-sheet.html",
-      width: 920,
-      height: 960,
+      width: 1040,
+      height: 980,
       tabs: [{
         navSelector: ".sheet-tabs",
         contentSelector: ".sheet-body",
-        initial: "core"
+        initial: "character"
+      }],
+      dragDrop: [{
+        dragSelector: ".item-edit, .spell-row, .weapon-row, .armor-row, .equipment-row, .arm2e-vf-entry",
+        dropSelector: null
       }]
     });
   }
@@ -26,16 +41,20 @@ export class ArM2eActorSheet extends ActorSheet {
     const context = await super.getData(options);
     const system = this.actor.system;
     const registry = CONFIG.ARM2E ?? ARM2E;
+    const characterType = system.identity?.characterType ?? "companion";
 
-    context.characteristics = this._prepareCharacteristics(system, registry);
-    context.talents = this._prepareAbilities(system, "talents", registry.TALENTS);
-    context.skills = this._prepareAbilities(system, "skills", registry.SKILLS);
-    context.knowledges = this._prepareAbilities(system, "knowledges", registry.KNOWLEDGES);
+    context.isMagus = characterType === "magus";
+    context.isGrog = characterType === "grog";
+    context.characteristicPairs = prepareCharacteristicPairs(registry, system);
+    context.abilitySections = prepareAbilitySections(system, registry);
     context.forms = this._prepareForms(system, registry);
     context.artRows = this._prepareArtRows(system, registry);
     context.weaponSkillsNote = registry.WEAPON_SKILLS.note;
     context.combat = this._prepareCombat(system);
     context.spellLists = this._prepareSpellLists(system, registry);
+    context.virtueFlaws = prepareVirtueFlawList(this.actor.items);
+    context.woundTrack = prepareWoundTrack(system);
+    context.fatigueTrack = prepareFatigueTrack(system);
 
     return context;
   }
@@ -62,12 +81,28 @@ export class ArM2eActorSheet extends ActorSheet {
     html.find(".characteristic-label").on("click", this._onRollCharacteristic.bind(this));
     html.find(".ability-row").on("click", this._onRollAbility.bind(this));
     html.find(".arts-cell").on("click", this._onRollArtCell.bind(this));
-    html.find(".weapon-equipped").on("change", this._onToggleWeaponEquipped.bind(this));
+    html.find(".weapon-equipped, .item-equipped").on("change", this._onToggleEquipped.bind(this));
     html.find(".combat-roll-attack").on("click", this._onRollWeaponAttack.bind(this));
     html.find(".combat-roll-damage").on("click", this._onRollWeaponDamage.bind(this));
     html.find(".combat-roll-first-strike").on("click", this._onRollWeaponFirstStrike.bind(this));
     html.find(".combat-roll-defense").on("click", this._onRollWeaponDefense.bind(this));
+    html.find(".combat-roll-dodge").on("click", this._onRollDodge.bind(this));
     html.find(".spell-roll-name, .spell-roll-cast").on("click", this._onRollSpellCast.bind(this));
+    html.find(".wound-step").on("click", this._onSetWoundLevel.bind(this));
+    html.find(".fatigue-step").on("click", this._onSetFatigueLevel.bind(this));
+    html.find(".arm2e-item-create").on("click", this._onCreateItem.bind(this));
+    html.find(".arm2e-item-delete").on("click", this._onDeleteItem.bind(this));
+    html.find(".item-edit").on("click", this._onEditItem.bind(this));
+    html.find(".arm2e-journal-link").on("click", this._onOpenJournal.bind(this));
+    html.find(".arm2e-collapse-toggle").on("click", this._onToggleCollapse.bind(this));
+    html.find(".arm2e-ability-filter").on("input", this._onFilterAbilities.bind(this));
+
+    for (const [selector, type] of Object.entries(DROP_TARGETS)) {
+      const panel = html.find(`[data-drop-target="${type}"]`);
+      if (!panel.length) continue;
+      panel.on("dragover", (event) => event.preventDefault());
+      panel.on("drop", (event) => this._onDropItem(event, type));
+    }
   }
 
   /** @type {{ actor: Actor }} */
@@ -85,7 +120,7 @@ export class ArM2eActorSheet extends ActorSheet {
 
     const label = row.querySelector(".characteristic-label")?.textContent?.trim() ?? "Characteristic";
     const abbrev = row.querySelector(".characteristic-abbrev")?.textContent?.trim() ?? "";
-    const value = Number(row.querySelector(".characteristic-value input")?.value) || 0;
+    const value = Number(row.querySelector(".characteristic-value")?.value) || 0;
 
     await rollArM2e("stress", value, `${label} (${abbrev})`, this._rollOptions());
   }
@@ -97,7 +132,7 @@ export class ArM2eActorSheet extends ActorSheet {
     if (event.target.closest("input, select, textarea, button, a")) return;
 
     const row = event.currentTarget;
-    const label = row.querySelector(".ability-name")?.textContent?.trim() ?? "Ability";
+    const label = row.dataset.abilityLabel ?? row.querySelector(".ability-name")?.textContent?.trim() ?? "Ability";
     const abilityType = row.dataset.abilityType ?? "ability";
     const value = Number(row.querySelector(".ability-value input")?.value) || 0;
     const specialty = row.querySelector(".ability-specialty input")?.value?.trim();
@@ -129,7 +164,7 @@ export class ArM2eActorSheet extends ActorSheet {
   /**
    * @param {JQuery.ChangeEvent} event
    */
-  async _onToggleWeaponEquipped(event) {
+  async _onToggleEquipped(event) {
     const itemId = event.currentTarget.dataset.itemId;
     const item = this.actor.items.get(itemId);
     if (!item) return;
@@ -171,6 +206,16 @@ export class ArM2eActorSheet extends ActorSheet {
 
   /**
    * @param {JQuery.ClickEvent} event
+   */
+  async _onRollDodge(event) {
+    event.preventDefault();
+    const modifier = Number(event.currentTarget.dataset.modifier);
+    const safeModifier = Number.isFinite(modifier) ? modifier : 0;
+    await rollArM2e("stress", safeModifier, "Dodge Defense", this._rollOptions());
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
    * @param {"attack" | "damage" | "firstStrike" | "defense"} totalKey
    * @param {string} labelPrefix
    */
@@ -189,6 +234,8 @@ export class ArM2eActorSheet extends ActorSheet {
    * @param {JQuery.ClickEvent} event
    */
   async _onRollSpellCast(event) {
+    if (event.target.closest(".item-edit, .arm2e-item-delete, .arm2e-journal-link")) return;
+
     event.preventDefault();
     const row = event.currentTarget.closest(".spell-row");
     if (!row) return;
@@ -203,11 +250,144 @@ export class ArM2eActorSheet extends ActorSheet {
   }
 
   /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onSetWoundLevel(event) {
+    event.preventDefault();
+    const level = event.currentTarget.dataset.woundLevel;
+    if (!level) return;
+    await this.actor.update({ "system.wounds.level": level });
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onSetFatigueLevel(event) {
+    event.preventDefault();
+    const level = event.currentTarget.dataset.fatigueLevel;
+    if (!level) return;
+    await this.actor.update({ "system.fatigue.level": level });
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onCreateItem(event) {
+    event.preventDefault();
+    const type = event.currentTarget.dataset.itemType;
+    if (!type) return;
+
+    const defaults = {
+      spell: { name: "New Spell", type: "spell" },
+      weapon: { name: "New Weapon", type: "weapon" },
+      virtueFlaw: { name: "New Virtue", type: "virtueFlaw", system: { kind: "virtue", points: 1 } },
+      armor: { name: "New Armor", type: "armor" },
+      equipment: { name: "New Equipment", type: "equipment" }
+    };
+
+    const itemData = defaults[type];
+    if (!itemData) return;
+
+    const created = await Item.create(itemData, { parent: this.actor });
+    if (created) created.sheet?.render(true);
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onDeleteItem(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const itemId = event.currentTarget.dataset.itemId ?? event.currentTarget.closest("[data-item-id]")?.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (!item) return;
+
+    const confirmed = await Dialog.confirm({
+      title: "Delete Item",
+      content: `<p>Delete <strong>${item.name}</strong>?</p>`,
+      defaultYes: false
+    });
+
+    if (confirmed) await item.delete();
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  _onEditItem(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const itemId = event.currentTarget.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (item) item.sheet.render(true);
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onOpenJournal(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const uuid = event.currentTarget.dataset.journalUuid;
+    await openJournalEntry(uuid);
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  _onToggleCollapse(event) {
+    event.preventDefault();
+    const panel = event.currentTarget.closest(".arm2e-collapsible");
+    if (!panel) return;
+
+    const isOpen = panel.classList.toggle("is-open");
+    event.currentTarget.setAttribute("aria-expanded", String(isOpen));
+  }
+
+  /**
+   * @param {JQuery.TriggeredEvent} event
+   */
+  _onFilterAbilities(event) {
+    const query = String(event.currentTarget.value ?? "").trim().toLowerCase();
+    const rows = this.element.find(".arm2e-tab-abilities .ability-row");
+
+    rows.each((_, row) => {
+      const label = row.dataset.abilityLabel?.toLowerCase() ?? row.querySelector(".ability-name")?.textContent?.toLowerCase() ?? "";
+      row.style.display = !query || label.includes(query) ? "" : "none";
+    });
+  }
+
+  /**
+   * @param {DragEvent} event
+   * @param {string} expectedType
+   */
+  async _onDropItem(event, expectedType) {
+    event.preventDefault();
+    const data = TextEditor.getDragEventData(event);
+    if (!data?.uuid) return;
+
+    const doc = await fromUuid(data.uuid);
+    if (!doc || doc.documentName !== "Item") return;
+    if (doc.type !== expectedType) {
+      ui.notifications.warn(`Expected a ${expectedType} item.`);
+      return;
+    }
+
+    if (doc.parent?.id === this.actor.id) return;
+
+    const itemData = doc.toObject();
+    delete itemData._id;
+    await this.actor.createEmbeddedDocuments("Item", [itemData]);
+  }
+
+  /**
    * @param {object} system
    */
   _prepareCombat(system) {
     const weaponItems = this.actor.items.filter((item) => item.type === "weapon");
-    return prepareCombatData(system, weaponItems);
+    const armorItems = this.actor.items.filter((item) => item.type === "armor");
+    const equipmentItems = this.actor.items.filter((item) => item.type === "equipment");
+    return prepareCombatData(system, weaponItems, armorItems, equipmentItems);
   }
 
   /**
@@ -217,39 +397,6 @@ export class ArM2eActorSheet extends ActorSheet {
   _prepareSpellLists(system, registry) {
     const spellItems = this.actor.items.filter((item) => item.type === "spell");
     return prepareSpellLists(system, spellItems, registry);
-  }
-
-  /**
-   * @param {object} system
-   * @param {typeof ARM2E} registry
-   */
-  _prepareCharacteristics(system, registry) {
-    return registry.CHARACTERISTICS.map((characteristic) => ({
-      ...characteristic,
-      value: system.characteristics?.[characteristic.id] ?? 0,
-      field: `system.characteristics.${characteristic.id}`
-    }));
-  }
-
-  /**
-   * @param {object} system
-   * @param {"talents" | "skills" | "knowledges"} category
-   * @param {readonly string[]} labels
-   */
-  _prepareAbilities(system, category, labels) {
-    return labels.map((label) => {
-      const id = abilityKey(label);
-      const entry = system.abilities?.[category]?.[id] ?? {};
-
-      return {
-        id,
-        label,
-        value: entry.value ?? 0,
-        xp: entry.xp ?? 0,
-        specialty: entry.specialty ?? "",
-        fieldBase: `system.abilities.${category}.${id}`
-      };
-    });
   }
 
   /**

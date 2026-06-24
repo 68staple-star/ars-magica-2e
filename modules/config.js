@@ -203,6 +203,34 @@ export const KNOWLEDGE_CATEGORIES = Object.freeze({
   formal: Object.freeze(["Church Knowledge", "Humanities", "Medicine", "Scribe (Specific Alphabet)"])
 });
 
+/** @type {Readonly<Record<string, string>>} */
+export const TALENT_CATEGORY_LABELS = Object.freeze({
+  arcane: "Arcane Talents",
+  awareness: "Awareness Talents",
+  exceptional: "Exceptional Talents",
+  physical: "Physical Talents",
+  social: "Social Talents"
+});
+
+/** @type {Readonly<Record<string, string>>} */
+export const SKILL_CATEGORY_LABELS = Object.freeze({
+  arcane: "Arcane Skills",
+  forester: "Forester Skills",
+  mental: "Mental Skills",
+  performance: "Performance Skills",
+  physical: "Physical Skills",
+  rogue: "Rogue Skills",
+  social: "Social Skills",
+  work: "Work Skills"
+});
+
+/** @type {Readonly<Record<string, string>>} */
+export const KNOWLEDGE_CATEGORY_LABELS = Object.freeze({
+  arcane: "Arcane Knowledges",
+  casual: "Casual Knowledges",
+  formal: "Formal Knowledges"
+});
+
 /** @type {Readonly<{
  *   CHARACTERISTICS: typeof CHARACTERISTICS,
  *   TECHNIQUES: typeof TECHNIQUES,
@@ -213,7 +241,10 @@ export const KNOWLEDGE_CATEGORIES = Object.freeze({
  *   WEAPON_SKILLS: typeof WEAPON_SKILLS,
  *   TALENT_CATEGORIES: typeof TALENT_CATEGORIES,
  *   SKILL_CATEGORIES: typeof SKILL_CATEGORIES,
- *   KNOWLEDGE_CATEGORIES: typeof KNOWLEDGE_CATEGORIES
+ *   KNOWLEDGE_CATEGORIES: typeof KNOWLEDGE_CATEGORIES,
+ *   TALENT_CATEGORY_LABELS: typeof TALENT_CATEGORY_LABELS,
+ *   SKILL_CATEGORY_LABELS: typeof SKILL_CATEGORY_LABELS,
+ *   KNOWLEDGE_CATEGORY_LABELS: typeof KNOWLEDGE_CATEGORY_LABELS
  * }>} */
 export const ARM2E = Object.freeze({
   CHARACTERISTICS,
@@ -225,5 +256,8 @@ export const ARM2E = Object.freeze({
   WEAPON_SKILLS,
   TALENT_CATEGORIES,
   SKILL_CATEGORIES,
-  KNOWLEDGE_CATEGORIES
+  KNOWLEDGE_CATEGORIES,
+  TALENT_CATEGORY_LABELS,
+  SKILL_CATEGORY_LABELS,
+  KNOWLEDGE_CATEGORY_LABELS
 });

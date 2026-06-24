@@ -113,46 +113,6 @@ function formatDieSteps(dieResult) {
 }
 
 /**
- * @param {ArM2eDieResult} dieResult
- * @param {number} baseModifier
- * @param {string} label
- * @param {{ spellLevel?: number }} [context={}]
- * @returns {string}
- */
-function buildChatContent(dieResult, baseModifier, label, context = {}) {
-  const modifierLabel = baseModifier >= 0 ? `+${baseModifier}` : String(baseModifier);
-  const total = dieResult.value + baseModifier;
-  const rollTitle = dieResult.rollType === "simple" ? "Simple Roll" : "Stress Roll";
-  const botchHtml = dieResult.potentialBotch
-    ? `<div class="arm2e-botch-flag">Potential Botch</div>`
-    : "";
-  const explodeHtml = dieResult.exploded
-    ? `<div class="arm2e-explode-flag">Exploding Stress Die</div>`
-    : "";
-  const castingHtml = context.spellLevel !== undefined
-    ? buildSpellCastOutcome(total, context.spellLevel)
-    : "";
-
-  return `
-<div class="arm2e-chat-roll">
-  <div class="arm2e-chat-roll-header">
-    <strong>${label || "Ars Magica 2e Roll"}</strong>
-    <span class="arm2e-roll-type">${rollTitle}</span>
-  </div>
-  <div class="arm2e-chat-roll-steps">${formatDieSteps(dieResult)}</div>
-  <div class="arm2e-chat-roll-total">
-    <span class="die-result">${dieResult.value}</span>
-    <span class="modifier">${modifierLabel}</span>
-    <span class="equals">=</span>
-    <strong class="total">${total}</strong>
-  </div>
-  ${castingHtml}
-  ${explodeHtml}
-  ${botchHtml}
-</div>`;
-}
-
-/**
  * @param {number} total
  * @param {number} spellLevel
  * @returns {string}
@@ -173,11 +133,36 @@ function buildSpellCastOutcome(total, spellLevel) {
 }
 
 /**
+ * @param {ArM2eDieResult} dieResult
+ * @param {number} baseModifier
+ * @param {string} label
+ * @param {{ spellLevel?: number }} [context={}]
+ * @returns {Promise<string>}
+ */
+async function buildChatContent(dieResult, baseModifier, label, context = {}) {
+  const modifierLabel = baseModifier >= 0 ? `+${baseModifier}` : String(baseModifier);
+  const total = dieResult.value + baseModifier;
+  const rollTitle = dieResult.rollType === "simple" ? "Simple Roll" : "Stress Roll";
+  const spellLevel = context.spellLevel !== undefined ? Number(context.spellLevel) || 0 : undefined;
+
+  return renderTemplate("systems/ars-magica-2e/templates/chat/roll-card.html", {
+    label: label || "Ars Magica 2e Roll",
+    rollTitle,
+    stepsHtml: formatDieSteps(dieResult),
+    dieValue: dieResult.value,
+    modifierLabel,
+    total,
+    castingHtml: spellLevel !== undefined ? buildSpellCastOutcome(total, spellLevel) : "",
+    explodeHtml: dieResult.exploded ? `<div class="arm2e-explode-flag">Exploding Stress Die</div>` : "",
+    botchHtml: dieResult.potentialBotch ? `<div class="arm2e-botch-flag">Potential Botch</div>` : ""
+  });
+}
+
+/**
  * @param {"simple" | "stress"} rollType
  * @param {number} [baseModifier=0]
  * @param {string} [label=""]
  * @param {{ actor?: Actor, speaker?: object, spellLevel?: number }} [options={}]
- * @returns {Promise<{ rollType: "simple" | "stress", value: number, modifier: number, total: number, potentialBotch: boolean, exploded: boolean, steps: DieStep[], spellLevel?: number, castingSuccess?: boolean }>}
  */
 export async function rollArM2e(rollType, baseModifier = 0, label = "", options = {}) {
   const normalizedType = rollType === "simple" ? "simple" : "stress";
@@ -192,7 +177,7 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
   await ChatMessage.create({
     speaker,
     flavor: label || "Ars Magica 2e Roll",
-    content: buildChatContent(dieResult, modifier, label, { spellLevel }),
+    content: await buildChatContent(dieResult, modifier, label, { spellLevel }),
     rolls: [roll],
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
     sound: CONFIG.sounds?.dice

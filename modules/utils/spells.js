@@ -42,6 +42,8 @@ export function prepareSpell(item, system, registry) {
     duration: spell.duration ?? "",
     target: spell.target ?? "",
     mastered: Boolean(spell.mastered),
+    notes: spell.notes ?? "",
+    journal: spell.journal ?? "",
     castingModifier: calculateCastingModifier(system, techniqueId, formId)
   };
 }

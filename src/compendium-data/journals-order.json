@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Order of Hermes Reference",
+    "pages": [
+      {
+        "name": "The Order",
+        "text": {
+          "content": "<h2>Structure</h2><p>The Order of Hermes unites magi under the Code of Hermes, divided into Tribunals and Houses.</p><h2>Code Highlights</h2><p>Do not deprive another magus of magical power. Do not spy on another magus's sanctum. Obey your Praeco at Tribunal.</p>"
+        }
+      },
+      {
+        "name": "Houses",
+        "text": {
+          "content": "<h2>Major Houses</h2><ul><li><strong>House Bonisagus</strong> — founders of Hermetic theory</li><li><strong>House Tremere</strong> — structured hierarchy and certámen tradition</li><li><strong>House Flambeau</strong> — martial magi</li><li><strong>House Merinita</strong> — faerie mysteries</li><li><strong>House Verditius</strong> — enchanted items</li></ul><p><em>Expand with your saga's House details from the Order of Hermes supplement.</em></p>"
+        }
+      },
+      {
+        "name": "Tribunals",
+        "text": {
+          "content": "<h2>Regional Tribunals</h2><p>Each Tribunal governs magi in a region. The Grand Tribunal meets every 33 years.</p><p>Record your saga's Tribunal, Praeco, and current political tensions here.</p>"
+        }
+      }
+    ]
+  }
+]

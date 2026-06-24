@@ -1,0 +1,114 @@
+<div class="arm2e-ability-search">
+  <label for="{{actor._id}}-ability-filter" class="sr-only">Filter abilities</label>
+  <input id="{{actor._id}}-ability-filter" class="arm2e-ability-filter" type="search" placeholder="Filter abilities..." />
+</div>
+
+{{#each abilitySections.talents}}
+<section class="arm2e-panel arm2e-ability-group arm2e-collapsible is-open" data-ability-category="{{id}}">
+  <h2 class="arm2e-section-heading arm2e-collapsible-header">
+    <button type="button" class="arm2e-collapse-toggle" aria-expanded="true">{{title}}</button>
+  </h2>
+  <div class="arm2e-collapsible-body">
+    <table class="arm2e-abilities-table">
+      <thead>
+        <tr>
+          <th scope="col">Ability</th>
+          <th scope="col">Score</th>
+          <th scope="col">XP</th>
+          <th scope="col">Specialty</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each abilities}}
+        <tr class="ability-row rollable" data-ability="{{id}}" data-ability-type="talent" data-ability-label="{{label}}" title="Roll stress die + ability">
+          <th scope="row" class="ability-name">{{label}}</th>
+          <td class="ability-value">
+            <input type="number" name="{{fieldBase}}.value" value="{{value}}" data-dtype="Number" />
+          </td>
+          <td class="ability-xp">
+            <input type="number" name="{{fieldBase}}.xp" value="{{xp}}" data-dtype="Number" min="0" />
+          </td>
+          <td class="ability-specialty">
+            <input type="text" name="{{fieldBase}}.specialty" value="{{specialty}}" placeholder="Specialty" />
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>
+{{/each}}
+
+{{#each abilitySections.skills}}
+<section class="arm2e-panel arm2e-ability-group arm2e-collapsible is-open" data-ability-category="{{id}}">
+  <h2 class="arm2e-section-heading arm2e-collapsible-header">
+    <button type="button" class="arm2e-collapse-toggle" aria-expanded="true">{{title}}</button>
+  </h2>
+  <div class="arm2e-collapsible-body">
+    <table class="arm2e-abilities-table">
+      <thead>
+        <tr>
+          <th scope="col">Ability</th>
+          <th scope="col">Score</th>
+          <th scope="col">XP</th>
+          <th scope="col">Specialty</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each abilities}}
+        <tr class="ability-row rollable" data-ability="{{id}}" data-ability-type="skill" data-ability-label="{{label}}" title="Roll stress die + ability">
+          <th scope="row" class="ability-name">{{label}}</th>
+          <td class="ability-value">
+            <input type="number" name="{{fieldBase}}.value" value="{{value}}" data-dtype="Number" />
+          </td>
+          <td class="ability-xp">
+            <input type="number" name="{{fieldBase}}.xp" value="{{xp}}" data-dtype="Number" min="0" />
+          </td>
+          <td class="ability-specialty">
+            <input type="text" name="{{fieldBase}}.specialty" value="{{specialty}}" placeholder="Specialty" />
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>
+{{/each}}
+
+<p class="arm2e-note arm2e-weapon-skills-note">{{weaponSkillsNote}}</p>
+
+{{#each abilitySections.knowledges}}
+<section class="arm2e-panel arm2e-ability-group arm2e-collapsible is-open" data-ability-category="{{id}}">
+  <h2 class="arm2e-section-heading arm2e-collapsible-header">
+    <button type="button" class="arm2e-collapse-toggle" aria-expanded="true">{{title}}</button>
+  </h2>
+  <div class="arm2e-collapsible-body">
+    <table class="arm2e-abilities-table">
+      <thead>
+        <tr>
+          <th scope="col">Ability</th>
+          <th scope="col">Score</th>
+          <th scope="col">XP</th>
+          <th scope="col">Specialty</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each abilities}}
+        <tr class="ability-row rollable" data-ability="{{id}}" data-ability-type="knowledge" data-ability-label="{{label}}" title="Roll stress die + ability">
+          <th scope="row" class="ability-name">{{label}}</th>
+          <td class="ability-value">
+            <input type="number" name="{{fieldBase}}.value" value="{{value}}" data-dtype="Number" />
+          </td>
+          <td class="ability-xp">
+            <input type="number" name="{{fieldBase}}.xp" value="{{xp}}" data-dtype="Number" min="0" />
+          </td>
+          <td class="ability-specialty">
+            <input type="text" name="{{fieldBase}}.specialty" value="{{specialty}}" placeholder="Specialty" />
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>
+{{/each}}
