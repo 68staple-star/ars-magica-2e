@@ -7,8 +7,8 @@
   "download": "https://github.com/68staple-star/ars-magica-2e/archive/refs/heads/main.zip",
   "compatibility": {
     "minimum": "11",
-    "verified": "11",
-    "maximum": "11"
+    "verified": "12",
+    "maximum": "12"
   },
   "esmodules": ["./arm2e.js"],
   "styles": ["./css/arm2e.css"],
