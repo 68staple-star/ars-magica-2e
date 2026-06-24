@@ -1,4 +1,4 @@
-export class ArM2eItemSheet extends foundry.appv1.sheets.ItemSheet {
+export class ArM2eItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {

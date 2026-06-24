@@ -16,7 +16,7 @@ const DROP_TARGETS = {
   equipment: "equipment"
 };
 
-export class ArM2eActorSheet extends foundry.appv1.sheets.ActorSheet {
+export class ArM2eActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
@@ -39,9 +39,12 @@ export class ArM2eActorSheet extends foundry.appv1.sheets.ActorSheet {
   /** @override */
   async getData(options = {}) {
     const context = await super.getData(options);
-    const system = this.actor.system;
+    const system = this.actor.system ?? context.system ?? {};
     const registry = CONFIG.ARM2E ?? ARM2E;
     const characterType = system.identity?.characterType ?? "companion";
+
+    context.system = system;
+    context.actor = this.actor;
 
     context.isMagus = characterType === "magus";
     context.isGrog = characterType === "grog";
@@ -77,6 +80,7 @@ export class ArM2eActorSheet extends foundry.appv1.sheets.ActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
+    this._bindPrimaryTabs(html);
 
     html.find(".characteristic-label").on("click", this._onRollCharacteristic.bind(this));
     html.find(".ability-row").on("click", this._onRollAbility.bind(this));
@@ -108,6 +112,47 @@ export class ArM2eActorSheet extends foundry.appv1.sheets.ActorSheet {
   /** @type {{ actor: Actor }} */
   _rollOptions() {
     return { actor: this.actor };
+  }
+
+  /**
+   * Ensure tab navigation works on Foundry v13 where AppV1 tab binding may not run.
+   * @param {JQuery} html
+   */
+  _bindPrimaryTabs(html) {
+    const root = html[0] ?? this.element?.[0];
+    if (!root) return;
+
+    const TabsClass = foundry.applications?.api?.Tabs ?? globalThis.Tabs;
+    if (!TabsClass) {
+      this._activateFallbackTab(html);
+      return;
+    }
+
+    try {
+      this._tabs = new TabsClass({
+        navSelector: ".sheet-tabs",
+        contentSelector: ".sheet-body",
+        initial: "character"
+      });
+      this._tabs.bind(root);
+    } catch (error) {
+      console.error("arm2e | Failed to bind sheet tabs", error);
+      this._activateFallbackTab(html);
+    }
+
+    if (!html.find(".sheet-body .tab.active").length) {
+      this._activateFallbackTab(html);
+    }
+  }
+
+  /**
+   * @param {JQuery} html
+   */
+  _activateFallbackTab(html) {
+    html.find(".sheet-tabs .item").removeClass("active");
+    html.find(".sheet-body .tab").removeClass("active");
+    html.find('.sheet-tabs .item[data-tab="character"]').addClass("active");
+    html.find('.sheet-body .tab[data-tab="character"]').addClass("active");
   }
 
   /**

@@ -78,6 +78,14 @@
   overflow-y: auto;
 }
 
+.ars-magica-2e.sheet.actor.character .sheet-body > .tab {
+  display: none;
+}
+
+.ars-magica-2e.sheet.actor.character .sheet-body > .tab.active {
+  display: block;
+}
+
 .ars-magica-2e.sheet.actor.character .arm2e-panel {
   margin-bottom: 1rem;
   padding: 0.75rem;

@@ -79,7 +79,7 @@ function buildInitialState(actor) {
   };
 }
 
-export class ArM2eCreationWizard extends foundry.appv1.api.FormApplication {
+export class ArM2eCreationWizard extends FormApplication {
   /**
    * @param {Actor} actor
    * @param {object} [options={}]

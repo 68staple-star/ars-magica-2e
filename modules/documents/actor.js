@@ -46,6 +46,7 @@ function applyCharacterDefaults(data) {
  * @param {object} data
  */
 function populateCharacterAbilityData(document, data) {
+  data.type ??= "character";
   if (data.type !== "character") return;
 
   const registry = getRegistry();
