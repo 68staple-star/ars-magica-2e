@@ -6,13 +6,33 @@ import { ArM2eVirtueFlawSheet } from "../sheets/virtue-flaw-sheet.js";
 import { ArM2eWeaponSheet } from "../sheets/weapon-sheet.js";
 
 /**
+ * @returns {{ ActorSheet: typeof ActorSheet, ItemSheet: typeof ItemSheet }}
+ */
+function resolveAppV1Sheets() {
+  const appV1 = foundry.appv1?.sheets;
+  const ActorSheet = appV1?.ActorSheet ?? globalThis.ActorSheet;
+  const ItemSheet = appV1?.ItemSheet ?? globalThis.ItemSheet;
+
+  if (!ActorSheet || !ItemSheet) {
+    throw new Error("arm2e | AppV1 ActorSheet/ItemSheet base classes are unavailable");
+  }
+
+  return { ActorSheet, ItemSheet };
+}
+
+/**
  * Register actor and item sheets for Foundry v11–v13.
  */
 export function registerSheets() {
   const { Actors, Items } = foundry.documents.collections;
-  const { ActorSheet, ItemSheet } = foundry.appv1.sheets;
   const { DocumentSheetConfig } = foundry.applications.apps;
+  const { ActorSheet, ItemSheet } = resolveAppV1Sheets();
   const systemId = game.system.id;
+
+  if (systemId !== "ars-magica-2e") {
+    console.warn(`arm2e | Skipping sheet registration — expected ars-magica-2e, got "${systemId}"`);
+    return;
+  }
 
   try {
     Actors.unregisterSheet("core", ActorSheet);

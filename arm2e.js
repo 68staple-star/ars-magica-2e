@@ -7,22 +7,47 @@ import { registerUiHooks } from "./modules/hooks/ui-hooks.js";
 import { registerTemplateLoading } from "./modules/init/load-templates.js";
 import { registerSheets } from "./modules/init/register-sheets.js";
 
-Hooks.on("init", () => {
-  CONFIG.ARM2E = {
-    ...ARM2E,
-    roll: rollArM2e,
-    rollSpellCast,
-    CreationWizard: ArM2eCreationWizard
-  };
+const SYSTEM_ID = "ars-magica-2e";
 
-  registerActorDocumentHooks();
-  registerCompendiumSeeding();
-  registerTemplateLoading();
-  registerUiHooks();
-  registerSheets();
+console.log(`arm2e | Loading system module (${SYSTEM_ID})`);
+
+Hooks.on("init", () => {
+  console.log(`arm2e | init hook — world system is "${game.system?.id}"`);
+
+  try {
+    CONFIG.ARM2E = {
+      ...ARM2E,
+      roll: rollArM2e,
+      rollSpellCast,
+      CreationWizard: ArM2eCreationWizard
+    };
+
+    registerActorDocumentHooks();
+    registerCompendiumSeeding();
+    registerTemplateLoading();
+    registerUiHooks();
+    registerSheets();
+    console.log("arm2e | init hook complete");
+  } catch (error) {
+    console.error("arm2e | init hook failed — sheets and wizard will not work", error);
+    throw error;
+  }
 });
 
 Hooks.once("ready", () => {
-  if (game.system.id !== "ars-magica-2e") return;
-  console.log(`arm2e | Ready on Foundry ${game.version} — system v${game.system.version}`);
+  const activeSystem = game.system?.id ?? "unknown";
+  const activeVersion = game.system?.version ?? "unknown";
+  const foundryVersion = game.version ?? "unknown";
+
+  console.log(`arm2e | ready hook — active system "${activeSystem}" v${activeVersion} (Foundry ${foundryVersion})`);
+
+  if (activeSystem !== SYSTEM_ID) {
+    console.warn(
+      `arm2e | This world is not using ${SYSTEM_ID}. ` +
+      "Create or switch the world to Ars Magica 2nd Edition (Custom) to enable the character sheet and wizard."
+    );
+    return;
+  }
+
+  console.log(`arm2e | Ready — Ars Magica 2e v${activeVersion} on Foundry ${foundryVersion}`);
 });

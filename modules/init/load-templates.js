@@ -12,7 +12,10 @@ const PARTIAL_PATHS = [
  */
 export function registerTemplateLoading() {
   Hooks.once("setup", async () => {
-    if (game.system.id !== "ars-magica-2e") return;
+    const systemId = game.system?.id ?? "unknown";
+    console.log(`arm2e | setup hook — world system is "${systemId}"`);
+
+    if (systemId !== "ars-magica-2e") return;
 
     try {
       await loadTemplates(PARTIAL_PATHS);
