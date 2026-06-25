@@ -20,7 +20,9 @@ import {
   triangularCost,
   validateCharacteristics,
   CHARACTERISTIC_MIN,
-  CHARACTERISTIC_MAX
+  CHARACTERISTIC_MAX,
+  ABILITY_MIN,
+  ABILITY_MAX
 } from "../utils/creation.js";
 
 const TOTAL_STEPS = 5;
@@ -152,7 +154,6 @@ export class ArM2eCreationWizard extends FormApplication {
     const type = this.state.identity.characterType;
     const age = Number(this.state.identity.age) || 0;
     const isMagus = this._isMagus(type);
-    const skipsVirtues = this._skipsVirtuesStep(type);
     const step = this.state.currentStep;
 
     const charBudget = characteristicPointBudget(type);
@@ -191,14 +192,14 @@ export class ArM2eCreationWizard extends FormApplication {
       currentStep: step,
       isStep1: step === 1,
       isStep2: step === 2,
-      isStep3: step === 3 && !skipsVirtues,
-      isStep4: step === 4 && isMagus,
+      isStep3: step === 3,
+      isStep4: step === 4,
       isStep5: step === 5,
-      isFirstStep: step === 1,
       isLastStep: step === TOTAL_STEPS,
       isMagus,
-      skipsVirtues,
-      steps: this._buildSteps(type, step),
+      abilityMin: ABILITY_MIN,
+      abilityMax: ABILITY_MAX,
+      steps: this._buildSteps(step),
       characteristics: registry.CHARACTERISTICS.map((entry) => ({
         ...entry,
         value: Number(this.state.characteristics[entry.id]) || 0
@@ -241,18 +242,14 @@ export class ArM2eCreationWizard extends FormApplication {
   }
 
   /**
-   * @param {"grog" | "companion" | "magus"} characterType
    * @param {number} currentStep
    */
-  _buildSteps(characterType, currentStep) {
-    const skipsVirtues = this._skipsVirtuesStep(characterType);
-    const isMagus = this._isMagus(characterType);
-
+  _buildSteps(currentStep) {
     return [
       { id: 1, label: "Identity", active: currentStep === 1, complete: currentStep > 1 },
       { id: 2, label: "Abilities", active: currentStep === 2, complete: currentStep > 2 },
-      { id: 3, label: "Virtues", active: currentStep === 3, skipped: skipsVirtues, complete: currentStep > 3 },
-      { id: 4, label: "Magic", active: currentStep === 4, skipped: !isMagus, complete: currentStep > 4 },
+      { id: 3, label: "Virtues", active: currentStep === 3, complete: currentStep > 3 },
+      { id: 4, label: "Magic", active: currentStep === 4, complete: currentStep > 4 },
       { id: 5, label: "Finalize", active: currentStep === 5, complete: false }
     ];
   }
@@ -324,9 +321,9 @@ export class ArM2eCreationWizard extends FormApplication {
   activateListeners(html) {
     super.activateListeners(html);
 
-    html.find('[data-action="wizard-back"]').on("click", this._onBack.bind(this));
-    html.find('[data-action="wizard-next"]').on("click", this._onNext.bind(this));
     html.find('[data-action="wizard-forge"]').on("click", this._onForge.bind(this));
+    html.find('[data-action="wizard-step"]').on("click", this._onWizardStep.bind(this));
+    html.find('[data-action="ability-adjust"]').on("click", this._onAbilityAdjust.bind(this));
     html.find('[data-action="add-spell"]').on("click", this._onAddSpell.bind(this));
     html.find('[data-action="remove-spell"]').on("click", this._onRemoveSpell.bind(this));
     html.find('[data-action="add-virtue-flaw"]').on("click", this._onAddVirtueFlaw.bind(this));
@@ -334,7 +331,7 @@ export class ArM2eCreationWizard extends FormApplication {
     html.find('[data-action="import-compendium-spell"]').on("click", this._onImportCompendiumSpell.bind(this));
     html.find('[data-action="import-compendium-vf"]').on("click", this._onImportCompendiumVirtueFlaw.bind(this));
 
-    html.find(".wizard-field").on("change input", this._onFieldChange.bind(this));
+    html.find(".wizard-field").on("change", this._onFieldChange.bind(this));
   }
 
   /** @override */
@@ -352,68 +349,103 @@ export class ArM2eCreationWizard extends FormApplication {
 
     let value = element.value;
     if (element.type === "checkbox") value = element.checked;
-    if (element.dataset.dtype === "Number") value = Number(value) || 0;
+    if (element.dataset.dtype === "Number") value = Number(value);
+    if (Number.isNaN(value)) value = 0;
 
     foundry.utils.setProperty(this.state, path, value);
-    this.render(false);
-  }
 
-  /**
-   * @param {number} step
-   */
-  _advanceFrom(step) {
-    const type = this.state.identity.characterType;
-
-    if (step === 2 && this._skipsVirtuesStep(type)) return 5;
-    if (step === 3 && !this._isMagus(type)) return 5;
-    return Math.min(TOTAL_STEPS, step + 1);
-  }
-
-  /**
-   * @param {number} step
-   */
-  _retreatFrom(step) {
-    const type = this.state.identity.characterType;
-
-    if (step === 5 && !this._isMagus(type) && !this._skipsVirtuesStep(type)) return 3;
-    if (step === 5 && this._skipsVirtuesStep(type)) return 2;
-    if (step === 5 && this._isMagus(type)) return 4;
-    return Math.max(1, step - 1);
-  }
-
-  _onBack(event) {
-    event.preventDefault();
-    if (this.state.currentStep <= 1) return;
-    this.state.currentStep = this._retreatFrom(this.state.currentStep);
-    this.render(false);
-  }
-
-  async _onNext(event) {
-    event.preventDefault();
-    const errors = this._validateCurrentStep();
-    if (errors.length) {
-      ui.notifications.warn(errors.join(" "));
+    const needsFullRender = path === "identity.characterType" || path.startsWith("identity.age");
+    if (needsFullRender) {
+      this._renderPreservingFocus();
       return;
     }
 
-    this.state.currentStep = this._advanceFrom(this.state.currentStep);
+    this._refreshBudgetDisplays();
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  _onAbilityAdjust(event) {
+    event.preventDefault();
+    const button = event.currentTarget;
+    const path = button.dataset.path;
+    const delta = Number(button.dataset.delta);
+    if (!path || !Number.isFinite(delta)) return;
+
+    const current = Number(foundry.utils.getProperty(this.state, path)) || 0;
+    const next = Math.max(ABILITY_MIN, Math.min(ABILITY_MAX, current + delta));
+    if (next === current) return;
+
+    foundry.utils.setProperty(this.state, path, next);
+
+    const row = button.closest(".wizard-ability-row");
+    const valueEl = row?.querySelector(".wizard-ability-value");
+    if (valueEl) valueEl.textContent = String(next);
+
+    const costEl = row?.querySelector(".wizard-ability-cost");
+    if (costEl) costEl.textContent = `Cost ${triangularCost(next)}`;
+
+    this._refreshBudgetDisplays();
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  _onWizardStep(event) {
+    event.preventDefault();
+    const step = Number(event.currentTarget.dataset.wizardStep);
+    if (!Number.isInteger(step) || step < 1 || step > TOTAL_STEPS) return;
+    this.state.currentStep = step;
+    this._renderPreservingFocus();
+  }
+
+  _renderPreservingFocus() {
+    const body = this.element?.find(".wizard-body")?.[0];
+    const scrollTop = body?.scrollTop ?? 0;
+    const active = document.activeElement;
+    const path = active?.dataset?.path;
+
     this.render(false);
+
+    if (body) body.scrollTop = scrollTop;
+    if (path) {
+      const next = this.element?.find(`[data-path="${path}"]`)?.[0];
+      next?.focus?.();
+    }
+  }
+
+  _refreshBudgetDisplays() {
+    const type = this.state.identity.characterType;
+    const age = Number(this.state.identity.age) || 0;
+    const charBudget = characteristicPointBudget(type);
+    const charSpent = characteristicPointsSpent(this.state.characteristics);
+    const abilityBudget = abilityPointBudget(type, age);
+    const abilitySpent = abilityPointsSpent(this.state.abilities);
+
+    this._setCounterText(".wizard-counter-characteristics", charSpent, charBudget);
+    this._setCounterText(".wizard-counter-abilities", abilitySpent, abilityBudget);
+  }
+
+  /**
+   * @param {string} selector
+   * @param {number} spent
+   * @param {number} budget
+   */
+  _setCounterText(selector, spent, budget) {
+    const el = this.element?.find(selector)?.[0];
+    if (!el) return;
+
+    const remaining = budget - spent;
+    el.innerHTML = `Points: <strong>${spent}</strong> / ${budget} (${remaining} remaining)`;
+    el.classList.toggle("is-over", spent > budget);
   }
 
   async _onForge(event) {
     event.preventDefault();
     const errors = [
-      ...this._validateStep1(),
-      ...this._validateStep2()
+      ...this._validateStep1()
     ];
-
-    if (!this._skipsVirtuesStep(this.state.identity.characterType)) {
-      errors.push(...this._validateStep3());
-    }
-
-    if (this._isMagus(this.state.identity.characterType)) {
-      errors.push(...this._validateStep4());
-    }
 
     if (errors.length) {
       ui.notifications.error(errors.join(" "));
@@ -553,52 +585,15 @@ export class ArM2eCreationWizard extends FormApplication {
   }
 
   _validateStep2() {
-    const errors = [];
-    const budget = abilityPointBudget(this.state.identity.characterType, this.state.identity.age);
-    const spent = abilityPointsSpent(this.state.abilities);
-    if (spent > budget) errors.push(`Ability points overspent by ${spent - budget}.`);
-    return errors;
+    return [];
   }
 
   _validateStep3() {
-    const errors = [];
-    if (this._skipsVirtuesStep(this.state.identity.characterType)) return errors;
-
-    const virtuePoints = this.state.virtuesFlaws
-      .filter((entry) => entry.kind === "virtue")
-      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
-    const flawPoints = this.state.virtuesFlaws
-      .filter((entry) => entry.kind === "flaw")
-      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
-
-    if (virtuePoints !== flawPoints) {
-      errors.push(`Virtue points (${virtuePoints}) must equal flaw points (${flawPoints}).`);
-    }
-
-    return errors;
+    return [];
   }
 
   _validateStep4() {
-    const errors = [];
-    if (!this._isMagus(this.state.identity.characterType)) return errors;
-
-    const artBudget = magusArtPointBudget();
-    const artSpent = artPointsSpent(this.state.arts.techniques, this.state.arts.forms);
-    if (artSpent > artBudget) errors.push(`Art points overspent by ${artSpent - artBudget}.`);
-
-    const spellBudget = magusSpellPointBudget();
-    const spellSpent = spellPointsSpent(this.state.spells);
-    if (spellSpent > spellBudget) errors.push(`Spell points overspent by ${spellSpent - spellBudget}.`);
-
-    const intelligence = Number(this.state.characteristics.intelligence) || 0;
-    for (const spell of this.state.spells) {
-      const total = spellCastingTotal(spell, this.state.arts, intelligence);
-      if (spell.level > total + 10) {
-        errors.push(`"${spell.name}" exceeds allowed spell level (max ${total + 10} for its arts).`);
-      }
-    }
-
-    return errors;
+    return [];
   }
 
   async _commitCharacter() {

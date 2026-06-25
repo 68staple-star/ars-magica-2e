@@ -6,6 +6,8 @@ import { abilityKey } from "./abilities.js";
 
 export const CHARACTERISTIC_MIN = -5;
 export const CHARACTERISTIC_MAX = 5;
+export const ABILITY_MIN = -6;
+export const ABILITY_MAX = 10;
 
 /** @type {ReadonlyArray<[string, string]>} */
 export const CHARACTERISTIC_PAIRS = Object.freeze([
@@ -163,7 +165,7 @@ export function buildEmptyAbilityState(registry, existing = {}) {
       const entry = existing?.[categoryKey]?.[id] ?? {};
       output[id] = {
         label,
-        value: Number(entry.value) || 0,
+        value: Number.isFinite(Number(entry.value)) ? Number(entry.value) : 0,
         specialty: entry.specialty ?? ""
       };
     }
@@ -188,7 +190,7 @@ export function serializeAbilitiesForActor(abilityState) {
 
     for (const [id, entry] of Object.entries(category ?? {})) {
       output[id] = {
-        value: Number(entry.value) || 0,
+        value: Number.isFinite(Number(entry.value)) ? Number(entry.value) : 0,
         xp: 0,
         specialty: entry.specialty ?? ""
       };

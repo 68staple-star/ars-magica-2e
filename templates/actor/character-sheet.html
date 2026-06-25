@@ -1,17 +1,15 @@
 <form class="{{cssClass}} arm2e-sheet flexcol" autocomplete="off">
-  {{> "systems/ars-magica-2e/templates/actor/partials/header-band.html"}}
-
-  <nav class="sheet-tabs tabs arm2e-tabs" data-group="primary">
+  <nav class="sheet-tabs tabs arm2e-tabs arm2e-tabs-compact" data-group="primary">
     <a class="item" data-tab="character">Character</a>
     <a class="item" data-tab="abilities">Abilities</a>
-    {{#unless isGrog}}
     <a class="item" data-tab="virtues">Virtues &amp; Flaws</a>
-    {{/unless}}
     <a class="item" data-tab="combat">Combat</a>
     {{#if isMagus}}
     <a class="item" data-tab="magic">Magic</a>
     {{/if}}
   </nav>
+
+  {{> "systems/ars-magica-2e/templates/actor/partials/header-band.html"}}
 
   <section class="sheet-body arm2e-body">
     <div class="tab arm2e-tab-character" data-group="primary" data-tab="character">
@@ -22,11 +20,9 @@
       {{> "systems/ars-magica-2e/templates/actor/partials/tab-abilities.html"}}
     </div>
 
-    {{#unless isGrog}}
     <div class="tab arm2e-tab-virtues" data-group="primary" data-tab="virtues">
       {{> "systems/ars-magica-2e/templates/actor/partials/tab-virtues.html"}}
     </div>
-    {{/unless}}
 
     <div class="tab arm2e-tab-combat" data-group="primary" data-tab="combat">
       {{> "systems/ars-magica-2e/templates/actor/partials/tab-combat.html"}}

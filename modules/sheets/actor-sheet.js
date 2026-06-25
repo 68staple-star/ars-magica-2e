@@ -110,10 +110,6 @@ export class ArM2eActorSheet extends ActorSheet {
     html.find(".arm2e-journal-link").on("click", this._onOpenJournal.bind(this));
     html.find(".arm2e-collapse-toggle").on("click", this._onToggleCollapse.bind(this));
     html.find(".arm2e-ability-filter").on("input", this._onFilterAbilities.bind(this));
-    html.find(".arm2e-open-wizard").on("click", (event) => {
-      event.preventDefault();
-      this._openCreationWizard();
-    });
 
     for (const [selector, type] of Object.entries(DROP_TARGETS)) {
       const panel = html.find(`[data-drop-target="${selector}"]`);
