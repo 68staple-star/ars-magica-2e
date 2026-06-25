@@ -5,6 +5,7 @@
 
 const PACK_SEEDS = [
   { pack: "arm2e-abilities", file: "abilities.json" },
+  { pack: "arm2e-formulaic-spells", file: "spells-arm5-index.json" },
   { pack: "arm2e-spells", file: "spells.json" },
   { pack: "arm2e-weapons", file: "weapons.json" },
   { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json" },

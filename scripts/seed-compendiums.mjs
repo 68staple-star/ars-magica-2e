@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "compendium-data");
 const files = [
   "abilities.json",
+  "spells-arm5-index.json",
   "spells.json",
   "weapons.json",
   "virtues-flaws.json",

@@ -62,7 +62,7 @@
       {{#each spellLists.spells}}
       <tr class="spell-row" data-item-id="{{id}}" data-spell-name="{{name}}" data-spell-level="{{level}}" data-casting-modifier="{{castingModifier}}">
         <th scope="row" class="spell-name spell-roll-name rollable">{{name}}</th>
-        <td class="spell-arts">{{techniqueAbbrev}}{{formAbbrev}}</td>
+        <td class="spell-arts">{{#if artAbbrev}}{{artAbbrev}}{{else}}{{techniqueAbbrev}}{{formAbbrev}}{{/if}}</td>
         <td class="spell-level">{{level}}</td>
         <td class="spell-range">{{range}}</td>
         <td class="spell-duration">{{duration}}</td>

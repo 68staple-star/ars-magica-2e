@@ -91,11 +91,14 @@
       "level": 0,
       "technique": "creo",
       "form": "corporem",
+      "artAbbrev": "",
+      "isGeneral": false,
       "range": "",
       "duration": "",
       "target": "",
       "mastered": false,
       "notes": "",
+      "source": "",
       "journal": ""
     },
     "virtueFlaw": {

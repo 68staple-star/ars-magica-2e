@@ -5,6 +5,8 @@
   </header>
   <div class="arm2e-item-grid">
     <label>Level <input type="number" name="system.level" value="{{system.level}}" data-dtype="Number" min="0" /></label>
+    <label>Art <input type="text" name="system.artAbbrev" value="{{system.artAbbrev}}" placeholder="e.g. CrIg" /></label>
+    <label class="arm2e-check"><input type="checkbox" name="system.isGeneral" {{checked system.isGeneral}} /> General</label>
     <label>Technique
       <select name="system.technique">
         {{#select system.technique}}
@@ -28,6 +30,7 @@
     <label>Target <input type="text" name="system.target" value="{{system.target}}" /></label>
     <label class="arm2e-span-2">Journal UUID <input type="text" name="system.journal" value="{{system.journal}}" placeholder="@UUID[...]" /></label>
     <label class="arm2e-check arm2e-span-2"><input type="checkbox" name="system.mastered" {{checked system.mastered}} /> Mastered</label>
+    <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" placeholder="Rulebook reference" /></label>
     <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="3">{{system.notes}}</textarea></label>
   </div>
   {{#if system.journal}}

@@ -1,0 +1,6338 @@
+[
+  {
+    "name": "Aegis of the Hearth",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "vim",
+      "artAbbrev": "ReVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Agony of the Beast",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "animal",
+      "artAbbrev": "PeAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAn 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Air's Ghostly Form",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Arc of Fiery Ribbons",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Arm of the Infant",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Aura of Ennobled Presence",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "imagonem",
+      "artAbbrev": "MuIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIm 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Aura of Rightful Authority",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Awaken the Slumbering Corpse",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ball of Abysmal Flame",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Bane of the Decrepit Body",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Beast of Miniscule Proportions",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAn 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Beast of Outlandish Size",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAn 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Beast Remade, The",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAn 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Bind Wound",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Black Whisper",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Blade of the Virulent Flame",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Blessing of Childlike Bliss",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Blunt the Viper's Fangs",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "animal",
+      "artAbbrev": "PeAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAn 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Bountiful Feast, The",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "herbam",
+      "artAbbrev": "CrHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrHe 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Break the Oncoming Wave",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Breath of the Open Sky",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Breath of Winter",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Bridge of Frost",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Bridge of Wood",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "herbam",
+      "artAbbrev": "CrHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrHe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Broom of the Winds",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Burst of the Sweeping Flames",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "ignem",
+      "artAbbrev": "ReIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIg 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Call of the Rushing Waters",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "aquam",
+      "artAbbrev": "InAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAq 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Call to Slumber, The",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Calling the Council of the Trees",
+    "type": "spell",
+    "system": {
+      "level": 45,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 45). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Calling the Odious Drought",
+    "type": "spell",
+    "system": {
+      "level": 50,
+      "technique": "perdo",
+      "form": "aquam",
+      "artAbbrev": "PeAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAq 50). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Calm the Motion of the Heart",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Captive Voice, The",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "imagonem",
+      "artAbbrev": "ReIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIm 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Cascade of Rocks",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "perdo",
+      "form": "terram",
+      "artAbbrev": "PeTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeTe 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Chamber of Invisibility",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIm 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Chamber of Spring Breezes",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Chaos of the Angry Waves",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Charge of the Angry Winds",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Charm Against Putrefaction",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Cheating the Reaper",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Chirurgeon's Healing Touch, The",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Circle of Beast Warding",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Circle of Encompassing Flames",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Circling Winds of Protection",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Circular Ward Against Demons",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "vim",
+      "artAbbrev": "ReVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Clear Sight of the Naiad",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "aquam",
+      "artAbbrev": "InAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAq 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Clenching Grasp of the Crushed Heart",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Cloak of Black Feathers",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Cloak of Mist",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Cloak of the Duck's Feathers",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Closing the Earth's Gate",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "aquam",
+      "artAbbrev": "PeAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAq 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Clouds of Rain and Thunder",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Clouds of Summer Snow",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Clouds of Thunderous Might",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "auram",
+      "artAbbrev": "ReAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAu 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Coat of Flame",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Coerce the Spirits of the Night",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Coils of the Entangling Plants",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Comfort of the Drenched Traveler",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "perdo",
+      "form": "aquam",
+      "artAbbrev": "PeAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAq 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Commanding the Harnessed Beast",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Confusion of the Insane Vibrations",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "imagonem",
+      "artAbbrev": "ReIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIm 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Confusion of the Numbed Will",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Conjuration of the Indubitable Cold",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "ignem",
+      "artAbbrev": "PeIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIg 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Conjure the Sturdy Vine",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "creo",
+      "form": "herbam",
+      "artAbbrev": "CrHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrHe 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Conjuring the Mystic Tower",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "terram",
+      "artAbbrev": "CrTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrTe 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Converse with Plant and Tree",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "herbam",
+      "artAbbrev": "InHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Creeping Chasm",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Creeping Oil",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "aquam",
+      "artAbbrev": "CrAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAq 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Crest of the Earth Wave",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Cripple the Howling Wolf",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "animal",
+      "artAbbrev": "PeAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAn 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Crystal Dart, The",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "terram",
+      "artAbbrev": "MuTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of Circe",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of the Desert",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "aquam",
+      "artAbbrev": "PeAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAq 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of the Haunted Forest",
+    "type": "spell",
+    "system": {
+      "level": 55,
+      "technique": "muto",
+      "form": "herbam",
+      "artAbbrev": "MuHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuHe 55). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of the Leprous Flesh",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of the Ravenous Swarm",
+    "type": "spell",
+    "system": {
+      "level": 45,
+      "technique": "creo",
+      "form": "animal",
+      "artAbbrev": "CrAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAn 45). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of the Rotted Wood",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "perdo",
+      "form": "herbam",
+      "artAbbrev": "PeHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeHe 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of the Unportended Plague",
+    "type": "spell",
+    "system": {
+      "level": 55,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 55). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Curse of the Unruly Tongue",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Dance of the Staves",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Decay Fur and Hide",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "perdo",
+      "form": "animal",
+      "artAbbrev": "PeAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAn 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Deluge of Rushing and Dashing",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "creo",
+      "form": "aquam",
+      "artAbbrev": "CrAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAq 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Demon's Eternal Oblivion",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "perdo",
+      "form": "vim",
+      "artAbbrev": "PeVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (PeVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Despair of the Quivering Manacles",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Discern Own Illusions",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "imagonem",
+      "artAbbrev": "InIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIm 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Discern the Images of Truth and Falsehood",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "intellego",
+      "form": "imagonem",
+      "artAbbrev": "InIm",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (InIm Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Disenchant",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "perdo",
+      "form": "vim",
+      "artAbbrev": "PeVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (PeVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Disguise of the New Visage",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Disguise of the Putrid Aroma",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Disguise of the Transformed Image",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "imagonem",
+      "artAbbrev": "MuIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIm 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Dispel the Phantom Image",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (PeIm Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Doublet of Impenetrable Silk",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAn 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Dust to Dust",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ear for Distant Voices, The",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "imagonem",
+      "artAbbrev": "InIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIm 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Earth Shock",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Earth Split Asunder, The",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Earth that Breaks No More",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "terram",
+      "artAbbrev": "MuTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Earth's Carbuncle, The",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Edge of the Razor",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "terram",
+      "artAbbrev": "MuTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Enchantment of Detachment",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Enchantment of the Scrying Pool",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "intellego",
+      "form": "aquam",
+      "artAbbrev": "InAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAq 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "End of the Mighty Castle",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "terram",
+      "artAbbrev": "PeTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeTe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Endurance of the Berserkers",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Enigma's Gift, The",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "creo",
+      "form": "vim",
+      "artAbbrev": "CrVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrVi 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Enslave the Mortal Mind",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Exchange of the Two Minds",
+    "type": "spell",
+    "system": {
+      "level": 55,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 55). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Eye of the Sage, The",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "intellego",
+      "form": "corporem",
+      "artAbbrev": "InCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InCo 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Eyes of the Bat",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "auram",
+      "artAbbrev": "InAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAu 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Eyes of the Cat",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Eyes of the Eagle",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "imagonem",
+      "artAbbrev": "InIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIm 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Eyes of the Eons",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "intellego",
+      "form": "terram",
+      "artAbbrev": "InTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Eyes of the Flame",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "intellego",
+      "form": "ignem",
+      "artAbbrev": "InIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIg 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Eyes of the Treacherous Terrain",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "terram",
+      "artAbbrev": "InTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InTe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Falcon's Hood, The",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "animal",
+      "artAbbrev": "PeAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAn 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Fist of Shattering",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "perdo",
+      "form": "terram",
+      "artAbbrev": "PeTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Flames of Sculpted Ice",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "muto",
+      "form": "ignem",
+      "artAbbrev": "MuIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIg 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Flash of the Scarlet Flames",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Fog of Confusion",
+    "type": "spell",
+    "system": {
+      "level": 45,
+      "technique": "muto",
+      "form": "auram",
+      "artAbbrev": "MuAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAu 45). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Footsteps of Slippery Oil",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "creo",
+      "form": "aquam",
+      "artAbbrev": "CrAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAq 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Forgiving Earth, The",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Freeing the Striding Tree",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Frosty Breath of the Spoken Lie",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "mentem",
+      "artAbbrev": "InMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InMe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gather the Essence of the Beast",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "vim",
+      "artAbbrev": "ReVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReVi 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gathering of the Stormy Might",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "rego",
+      "form": "auram",
+      "artAbbrev": "ReAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAu 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gentle Beast, The",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gentle Touch of the Purified Body",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gift of Reason",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "mentem",
+      "artAbbrev": "CrMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrMe 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gift of the Bear's Fortitude",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gift of the Frog's Legs",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gift of Vigor, The",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Gloom of Evening",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "perdo",
+      "form": "ignem",
+      "artAbbrev": "PeIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIg 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Great Rot, The",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "herbam",
+      "artAbbrev": "PeHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Grip of the Choking Hand",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Growth of the Creeping Things",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAn 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Hands of the Grasping Earth",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Haunt of the Living Ghost",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "imagonem",
+      "artAbbrev": "CrIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIm 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Heat of the Searing Forge",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Hermes' Portal",
+    "type": "spell",
+    "system": {
+      "level": 75,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 75). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Hornet Fire",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "ignem",
+      "artAbbrev": "MuIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIg 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Hunt for the Wild Herb",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "herbam",
+      "artAbbrev": "InHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InHe 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Hunter's Sense",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "intellego",
+      "form": "animal",
+      "artAbbrev": "InAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAn 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ice of Drowning",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Illusion of Cool Flames",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIm 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Illusion of the Misplaced Castle",
+    "type": "spell",
+    "system": {
+      "level": 50,
+      "technique": "rego",
+      "form": "imagonem",
+      "artAbbrev": "ReIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIm 50). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Illusion of the Shifted Image",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "imagonem",
+      "artAbbrev": "ReIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIm 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Image from the Wizard Torn",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "imagonem",
+      "artAbbrev": "ReIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIm 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Image of the Beast",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "animal",
+      "artAbbrev": "InAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAn 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Image Phantom",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "imagonem",
+      "artAbbrev": "MuIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIm 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Incantation of Lightning, The",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Incantation of Putrid Wine",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "aquam",
+      "artAbbrev": "MuAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAq 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Incantation of Summoning the Dead",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Incantation of the Body Made Whole",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Incantation of the Milky Eyes",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Inexorable Search, The",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "corporem",
+      "artAbbrev": "InCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InCo 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Infernal Smoke of Death",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "muto",
+      "form": "auram",
+      "artAbbrev": "MuAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAu 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Inmost Companion",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "muto",
+      "form": "mentem",
+      "artAbbrev": "MuMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuMe 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Intuition of the Forest",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "intellego",
+      "form": "herbam",
+      "artAbbrev": "InHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InHe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Invisibility of the Standing Wizard",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIm 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Invisible Eye Revealed, The",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "intellego",
+      "form": "vim",
+      "artAbbrev": "InVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (InVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Invocation of Weariness",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Jupiter's Resounding Blow",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Kiss of Death, The",
+    "type": "spell",
+    "system": {
+      "level": 45,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 45). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Lamp Without Flame",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Lay to Rest the Haunting Spirit",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (PeMe Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Leap of Homecoming, The",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Leap of the Fire",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "ignem",
+      "artAbbrev": "ReIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIg 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Lifting the Dangling Puppet",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Light Shaft of the Night",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "ignem",
+      "artAbbrev": "ReIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIg 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Lord of the Trees",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Loss of But a Moment's Memory",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Lungs of the Fish",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "aquam",
+      "artAbbrev": "MuAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAq 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Maintaining the Demanding Spell",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "vim",
+      "artAbbrev": "ReVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Many-Hued Conflagration, The",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "muto",
+      "form": "ignem",
+      "artAbbrev": "MuIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIg 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Masking the Odor of Magic",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "perdo",
+      "form": "vim",
+      "artAbbrev": "PeVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (PeVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Mastering the Unruly Beast",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Memory of the Distant Dream",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "mentem",
+      "artAbbrev": "CrMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrMe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Mighty Torrent of Water",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "aquam",
+      "artAbbrev": "CrAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAq 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Mind of the Beast",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "muto",
+      "form": "mentem",
+      "artAbbrev": "MuMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuMe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Miner's Keen Eye, The",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "terram",
+      "artAbbrev": "InTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Mists of Change",
+    "type": "spell",
+    "system": {
+      "level": 60,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 60). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Moonbeam",
+    "type": "spell",
+    "system": {
+      "level": 3,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 3). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Neptune's Wrath",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Notes of a Delightful Sound",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "imagonem",
+      "artAbbrev": "MuIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIm 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Object of Increased Size",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "terram",
+      "artAbbrev": "MuTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuTe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Obliteration of the Metallic Barrier",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "terram",
+      "artAbbrev": "PeTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Opening the Intangible Tunnel",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "vim",
+      "artAbbrev": "ReVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Opening the Tome of the Animal's Mind",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "animal",
+      "artAbbrev": "InAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAn 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Pains of the Perpetual Worry",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "mentem",
+      "artAbbrev": "CrMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrMe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Palm of Flame",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Panic of the Elephant's Mouse",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Panic of the Trembling Heart",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "mentem",
+      "artAbbrev": "CrMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrMe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Parching Wind",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "aquam",
+      "artAbbrev": "PeAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAq 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Parting the Waves",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Pass the Unyielding Portal",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "muto",
+      "form": "herbam",
+      "artAbbrev": "MuHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuHe 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Passion's Lost Feeling",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Past of Another",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "muto",
+      "form": "mentem",
+      "artAbbrev": "MuMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuMe 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Peering into the Mortal Mind",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "intellego",
+      "form": "mentem",
+      "artAbbrev": "InMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InMe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Perception of the Conflicting Motives",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "mentem",
+      "artAbbrev": "InMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InMe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Phantasm of the Human Form",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "imagonem",
+      "artAbbrev": "CrIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIm 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Phantasm of the Talking Head",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "imagonem",
+      "artAbbrev": "CrIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIm 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Phantasmal Animal",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "imagonem",
+      "artAbbrev": "CrIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIm 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Phantasmal Fire",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "imagonem",
+      "artAbbrev": "CrIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIm 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Phantom Gift, The",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "vim",
+      "artAbbrev": "CrVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrVi 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Physician's Eye",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "corporem",
+      "artAbbrev": "InCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InCo 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Piercing Shaft of Wood",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "herbam",
+      "artAbbrev": "MuHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuHe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Piercing the Faerie Veil",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "vim",
+      "artAbbrev": "InVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InVi 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Pilum of Fire",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "ignem",
+      "artAbbrev": "CrIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIg 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Pit of the Gaping Earth",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "terram",
+      "artAbbrev": "PeTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeTe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Plant's Withering Bane",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "herbam",
+      "artAbbrev": "PeHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeHe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Poisoning the Will",
+    "type": "spell",
+    "system": {
+      "level": 60,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 60). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Posing the Silent Question",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "mentem",
+      "artAbbrev": "InMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InMe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Preternatural Growth and Shrinking",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Prison of Flames",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "ignem",
+      "artAbbrev": "MuIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIg 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Probe for Pure Silver",
+    "type": "spell",
+    "system": {
+      "level": 4,
+      "technique": "intellego",
+      "form": "terram",
+      "artAbbrev": "InTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InTe 4). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Probe Nature's Hidden Lore",
+    "type": "spell",
+    "system": {
+      "level": 4,
+      "technique": "intellego",
+      "form": "herbam",
+      "artAbbrev": "InHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InHe 4). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Prying Eyes",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "imagonem",
+      "artAbbrev": "InIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIm 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Pull of the Skybound Winds",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Pull of the Watery Grave",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Purification of the Festering Wounds",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Push of the Gentle Wave",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Quiet the Raging Winds",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "auram",
+      "artAbbrev": "PeAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAu 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Rain of Oil",
+    "type": "spell",
+    "system": {
+      "level": 50,
+      "technique": "muto",
+      "form": "auram",
+      "artAbbrev": "MuAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAu 50). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Rain of Stones",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "auram",
+      "artAbbrev": "MuAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAu 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Recollection of Memories Never Quite Lived",
+    "type": "spell",
+    "system": {
+      "level": 4,
+      "technique": "muto",
+      "form": "mentem",
+      "artAbbrev": "MuMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuMe 4). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Removal of the Conspicuous Sigil",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIm 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Repel the Wooden Shafts",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Restoration of the Defiled Body",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Restore the Moved Image",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "imagonem",
+      "artAbbrev": "ReIm",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReIm Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Revealed Flaws of Mortal Flesh",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "intellego",
+      "form": "corporem",
+      "artAbbrev": "InCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InCo 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ring of Warding Against Spirits",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReMe Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Rise of the Feathery Body",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Rising Ire",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "mentem",
+      "artAbbrev": "CrMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrMe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Rock of Viscid Clay",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "terram",
+      "artAbbrev": "MuTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuTe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Room of Stale Air",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "auram",
+      "artAbbrev": "PeAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeAu 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Rope of Bronze",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "muto",
+      "form": "herbam",
+      "artAbbrev": "MuHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuHe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Rusted Decay of Ten-Score Years",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "perdo",
+      "form": "terram",
+      "artAbbrev": "PeTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sailor's Foretaste of the Morrow",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "auram",
+      "artAbbrev": "InAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAu 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Scales of the Magical Weight",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "vim",
+      "artAbbrev": "InVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InVi 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Scent of Peaceful Slumber",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Seal the Earth",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "terram",
+      "artAbbrev": "CrTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrTe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sense of Magical Power",
+    "type": "spell",
+    "system": {
+      "level": 2,
+      "technique": "intellego",
+      "form": "vim",
+      "artAbbrev": "InVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InVi 2). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sense of the Lingering Magic",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "intellego",
+      "form": "vim",
+      "artAbbrev": "InVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InVi 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sense the Feet that Tread the Earth",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "intellego",
+      "form": "terram",
+      "artAbbrev": "InTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InTe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sense the Nature of Vis",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "vim",
+      "artAbbrev": "InVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InVi 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Seven-League Stride",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Severed Limb Made Whole, The",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shadow of Human Life, The",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "creo",
+      "form": "imagonem",
+      "artAbbrev": "CrIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrIm 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shadow of Life Renewed, The",
+    "type": "spell",
+    "system": {
+      "level": 75,
+      "technique": "creo",
+      "form": "corporem",
+      "artAbbrev": "CrCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrCo 75). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shadows of the Fires Past",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "ignem",
+      "artAbbrev": "InIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIg 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shape of the Woodland Prowler",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shell of False Determinations",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "creo",
+      "form": "vim",
+      "artAbbrev": "CrVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (CrVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shell of Opaque Mysteries",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "creo",
+      "form": "vim",
+      "artAbbrev": "CrVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (CrVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shiver of the Lycanthrope",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "intellego",
+      "form": "animal",
+      "artAbbrev": "InAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAn 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Show of the Flames and Smoke",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "ignem",
+      "artAbbrev": "MuIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIg 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shriek of the Impending Shafts",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "herbam",
+      "artAbbrev": "InHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InHe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shroud Magic",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "muto",
+      "form": "vim",
+      "artAbbrev": "MuVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (MuVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Shrouded Glen, The",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sight of the Active Magics",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "intellego",
+      "form": "vim",
+      "artAbbrev": "InVi",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InVi 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sight of the Transparent Motive",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "intellego",
+      "form": "mentem",
+      "artAbbrev": "InMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InMe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sight of the True Form",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "intellego",
+      "form": "corporem",
+      "artAbbrev": "InCo",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (InCo Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Silence of the Smothered Sound",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIm 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Silent Vigil, The",
+    "type": "spell",
+    "system": {
+      "level": 45,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 45). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Snap of Awakening",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Soothe Pains of the Beast",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "animal",
+      "artAbbrev": "CrAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAn 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Soothe the Ferocious Bear",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Soothe the Raging Flames",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "ignem",
+      "artAbbrev": "PeIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIg 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Sorcerer's Fork, The",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "muto",
+      "form": "vim",
+      "artAbbrev": "MuVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (MuVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Spasms of the Uncontrolled Hand",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Stance of the Patient Tree",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Steed of Vengeance",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAn 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Stench of the Twenty Corpses",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Stir the Slumbering Tree",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "muto",
+      "form": "herbam",
+      "artAbbrev": "MuHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Stone Tell of the Mind that Sits",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "intellego",
+      "form": "terram",
+      "artAbbrev": "InTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InTe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Stone to Falling Dust",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "terram",
+      "artAbbrev": "PeTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Strike of the Angered Branch",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Strings of the Unwilling Marionette",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Subtle Taste of Poison and Purity",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "aquam",
+      "artAbbrev": "InAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAq 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Summoning the Distant Image",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "imagonem",
+      "artAbbrev": "InIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIm 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Supple Iron and Rigid Rope",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "terram",
+      "artAbbrev": "MuTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Suppressing the Wizard's Handiwork",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "vim",
+      "artAbbrev": "ReVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Tales of the Ashes",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "ignem",
+      "artAbbrev": "InIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIg 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Talons of the Winds",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "auram",
+      "artAbbrev": "MuAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAu 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Tangle of Wood and Thorns",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Taste of the Dulled Tongue",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIm 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Taste of the Spices and Herbs",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "muto",
+      "form": "imagonem",
+      "artAbbrev": "MuIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIm 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Teeth of the Earth Mother",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "muto",
+      "form": "terram",
+      "artAbbrev": "MuTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuTe 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Thaumaturgical Transformation of Plants to Iron",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "herbam",
+      "artAbbrev": "MuHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuHe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Thoughts Within Babble",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "mentem",
+      "artAbbrev": "InMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InMe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Tip of the Tongue",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Touch of Midas",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "terram",
+      "artAbbrev": "CrTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Touch of the Goose Feather",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Touch of the Pearls",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "intellego",
+      "form": "aquam",
+      "artAbbrev": "InAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAq 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Tower of Whirling Water",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Trackless Step",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Tracks of the Faerie Glow",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "terram",
+      "artAbbrev": "InTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InTe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Transform to Water",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "muto",
+      "form": "corporem",
+      "artAbbrev": "MuCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuCo 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Transformation of the Ravenous Beast to the Torpid Toad",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAn 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Transformation of theThorny Staff",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "muto",
+      "form": "herbam",
+      "artAbbrev": "MuHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuHe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Trap of the Entwining Vines",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "creo",
+      "form": "herbam",
+      "artAbbrev": "CrHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrHe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Trapping the Fire",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "muto",
+      "form": "ignem",
+      "artAbbrev": "MuIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuIg 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Treacherous Spear, The",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Treading the Ashen Path",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "perdo",
+      "form": "herbam",
+      "artAbbrev": "PeHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeHe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Tremulous Vault of the Torch's Flame",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "ignem",
+      "artAbbrev": "ReIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIg 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "True Rest of the Injured Brute",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "animal",
+      "artAbbrev": "CrAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAn 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "True Sight of the Air",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "auram",
+      "artAbbrev": "InAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAu 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Trust of Childlike Faith",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "perdo",
+      "form": "mentem",
+      "artAbbrev": "PeMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeMe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Twist of the Tongue",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Twist the Living Tree",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Unravelling the Fabric of Form)",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "perdo",
+      "form": "vim",
+      "artAbbrev": "PeVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (PeVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Unseen Arm",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Unseen Porter, The",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Unyielding Earth",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Veil of Invisibility",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "perdo",
+      "form": "imagonem",
+      "artAbbrev": "PeIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIm 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Vile Water of Sterility",
+    "type": "spell",
+    "system": {
+      "level": 45,
+      "technique": "muto",
+      "form": "aquam",
+      "artAbbrev": "MuAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuAq 45). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Viper's Gaze",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAn 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Vision of Heat's Light",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "intellego",
+      "form": "ignem",
+      "artAbbrev": "InIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIg 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Vision of the Haunting Spirits",
+    "type": "spell",
+    "system": {
+      "level": 40,
+      "technique": "muto",
+      "form": "mentem",
+      "artAbbrev": "MuMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (MuMe 40). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Visions of the Infernal Terrors",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "mentem",
+      "artAbbrev": "ReMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReMe 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Voice of the Lake",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "intellego",
+      "form": "aquam",
+      "artAbbrev": "InAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAq 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Walking Corpse, The",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "rego",
+      "form": "corporem",
+      "artAbbrev": "ReCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReCo 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wall of Living Wood",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "herbam",
+      "artAbbrev": "CrHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wall of Protecting Stone",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "terram",
+      "artAbbrev": "CrTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrTe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wall of Thorns",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "creo",
+      "form": "herbam",
+      "artAbbrev": "CrHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrHe 20). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against Faeries of the Air",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "auram",
+      "artAbbrev": "ReAu",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReAu Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against Faeries of the Mountain",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReTe Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against Faeries of the Waters",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReAq Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against Faeries of the Wood",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReHe Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against Heat and Flames",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "ignem",
+      "artAbbrev": "ReIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIg 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against Rain",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "auram",
+      "artAbbrev": "ReAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAu 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against the Beasts of Legend",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "animal",
+      "artAbbrev": "ReAn",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReAn Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Ward Against Wood",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "rego",
+      "form": "herbam",
+      "artAbbrev": "ReHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReHe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Watching Ward",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "rego",
+      "form": "vim",
+      "artAbbrev": "ReVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (ReVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Waves of Drowning and Smashing",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "rego",
+      "form": "aquam",
+      "artAbbrev": "ReAq",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAq 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Weaver's Trap of Webs",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "animal",
+      "artAbbrev": "CrAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAn 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Weight of a Thousand Hells",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "creo",
+      "form": "mentem",
+      "artAbbrev": "CrMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrMe 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Well Without Light",
+    "type": "spell",
+    "system": {
+      "level": 25,
+      "technique": "perdo",
+      "form": "ignem",
+      "artAbbrev": "PeIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIg 25). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Whispering Winds",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "auram",
+      "artAbbrev": "InAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InAu 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Whispers Through the Black Gate",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "intellego",
+      "form": "corporem",
+      "artAbbrev": "InCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wielding the Invisible Sling",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReTe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wind at the Back",
+    "type": "spell",
+    "system": {
+      "level": 5,
+      "technique": "rego",
+      "form": "auram",
+      "artAbbrev": "ReAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReAu 5). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wind of Mundane Silence",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "perdo",
+      "form": "vim",
+      "artAbbrev": "PeVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (PeVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wings of the Soaring Wind",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Winter's Icy Touch",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "perdo",
+      "form": "ignem",
+      "artAbbrev": "PeIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIg 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wizard's Autumn",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "herbam",
+      "artAbbrev": "PeHe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeHe 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wizard's Communion",
+    "type": "spell",
+    "system": {
+      "level": 0,
+      "technique": "muto",
+      "form": "vim",
+      "artAbbrev": "MuVi",
+      "isGeneral": true,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index — General (MuVi Gen). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wizard's Eclipse",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "perdo",
+      "form": "ignem",
+      "artAbbrev": "PeIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIg 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wizard's Icy Grip",
+    "type": "spell",
+    "system": {
+      "level": 30,
+      "technique": "perdo",
+      "form": "ignem",
+      "artAbbrev": "PeIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeIg 30). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wizard's Mount, The",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "creo",
+      "form": "animal",
+      "artAbbrev": "CrAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAn 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wizard's Sidestep",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "rego",
+      "form": "imagonem",
+      "artAbbrev": "ReIm",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (ReIm 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Words of the Flickering Flame",
+    "type": "spell",
+    "system": {
+      "level": 35,
+      "technique": "intellego",
+      "form": "ignem",
+      "artAbbrev": "InIg",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (InIg 35). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Words of the Unbroken Silence",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "mentem",
+      "artAbbrev": "CrMe",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrMe 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wound that Weeps, The",
+    "type": "spell",
+    "system": {
+      "level": 15,
+      "technique": "perdo",
+      "form": "corporem",
+      "artAbbrev": "PeCo",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (PeCo 15). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wrath of Whirling Winds and Water",
+    "type": "spell",
+    "system": {
+      "level": 65,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 65). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Wreaths of Foul Smoke",
+    "type": "spell",
+    "system": {
+      "level": 10,
+      "technique": "creo",
+      "form": "auram",
+      "artAbbrev": "CrAu",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "ArM5 OGL spell index (CrAu 10). Range, duration, and target not listed in the index.",
+      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
+      "journal": ""
+    }
+  }
+]

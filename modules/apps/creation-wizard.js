@@ -132,10 +132,19 @@ export class ArM2eCreationWizard extends FormApplication {
    * @returns {Promise<object[]>}
    */
   async _loadCompendiumSpells() {
-    const pack = game.packs?.get("ars-magica-2e.arm2e-spells");
-    if (!pack) return [];
-    const index = await pack.getIndex();
-    return index.map((entry) => ({ id: entry._id, name: entry.name }));
+    const packIds = ["ars-magica-2e.arm2e-formulaic-spells", "ars-magica-2e.arm2e-spells"];
+    const entries = [];
+
+    for (const packId of packIds) {
+      const pack = game.packs?.get(packId);
+      if (!pack) continue;
+      const index = await pack.getIndex();
+      for (const entry of index) {
+        entries.push({ id: entry._id, name: entry.name, pack: packId });
+      }
+    }
+
+    return entries.sort((left, right) => left.name.localeCompare(right.name));
   }
 
   /**
@@ -514,10 +523,12 @@ export class ArM2eCreationWizard extends FormApplication {
   async _onImportCompendiumSpell(event) {
     event.preventDefault();
     const select = this.element.find('[data-path="compendiumSpellId"]')[0];
+    const selected = select?.selectedOptions?.[0];
     const itemId = select?.value;
+    const packId = selected?.dataset?.pack ?? "ars-magica-2e.arm2e-formulaic-spells";
     if (!itemId) return;
 
-    const pack = game.packs.get("ars-magica-2e.arm2e-spells");
+    const pack = game.packs.get(packId);
     const item = await pack?.getDocument(itemId);
     if (!item) return;
 
@@ -526,6 +537,9 @@ export class ArM2eCreationWizard extends FormApplication {
       level: Number(item.system?.level) || 0,
       technique: item.system?.technique ?? "creo",
       form: item.system?.form ?? "corporem",
+      artAbbrev: item.system?.artAbbrev ?? "",
+      isGeneral: Boolean(item.system?.isGeneral),
+      source: item.system?.source ?? "",
       range: item.system?.range ?? "",
       duration: item.system?.duration ?? "",
       target: item.system?.target ?? "",
@@ -636,6 +650,9 @@ export class ArM2eCreationWizard extends FormApplication {
           level: Number(spell.level) || 0,
           technique: spell.technique,
           form: spell.form,
+          artAbbrev: spell.artAbbrev ?? "",
+          isGeneral: Boolean(spell.isGeneral),
+          source: spell.source ?? "",
           range: spell.range ?? "",
           duration: spell.duration ?? "",
           target: spell.target ?? "",

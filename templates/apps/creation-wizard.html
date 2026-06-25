@@ -200,7 +200,7 @@
           <select class="wizard-field" data-path="compendiumSpellId">
             <option value="">Import from compendium...</option>
             {{#each compendiumSpells}}
-            <option value="{{id}}">{{name}}</option>
+            <option value="{{id}}" data-pack="{{pack}}">{{name}}</option>
             {{/each}}
           </select>
           <button type="button" class="wizard-btn wizard-btn-secondary" data-action="import-compendium-spell">Import</button>

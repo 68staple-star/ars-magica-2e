@@ -34,6 +34,10 @@ export function prepareSpell(item, system, registry) {
     level: Number(spell.level) || 0,
     technique: techniqueId,
     form: formId,
+    artAbbrev: spell.artAbbrev
+      ?? `${technique?.abbrev ?? ""}${form?.abbrev ?? ""}${spell.isGeneral ? " Gen" : ""}`.trim(),
+    isGeneral: Boolean(spell.isGeneral),
+    source: spell.source ?? "",
     techniqueLabel: technique?.label ?? (techniqueId || "—"),
     techniqueAbbrev: technique?.abbrev ?? "—",
     formLabel: form?.label ?? (formId || "—"),
