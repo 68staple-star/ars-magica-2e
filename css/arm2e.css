@@ -2,6 +2,35 @@
 @import url("./items.css");
 @import url("./chat.css");
 
+/* Foundry window header controls — solid readable buttons */
+.window-app.ars-magica-2e .window-header button,
+.window-app.ars-magica-2e .window-header .header-button,
+.window-app.ars-magica-2e .window-header .header-control,
+.window-app.creation-wizard .window-header button,
+.window-app.creation-wizard .window-header .header-button,
+.window-app.creation-wizard .window-header .header-control,
+.ars-magica-2e.sheet .window-header button,
+.ars-magica-2e.sheet .window-header .header-button {
+  background: #6b2f1a !important;
+  color: #fff8ea !important;
+  border: 1px solid #4a2010 !important;
+  opacity: 1 !important;
+  text-shadow: none;
+}
+
+.window-app.ars-magica-2e .window-header button:hover,
+.window-app.creation-wizard .window-header button:hover,
+.ars-magica-2e.sheet .window-header button:hover {
+  background: #8a3d24 !important;
+  color: #fff8ea !important;
+}
+
+.window-app.ars-magica-2e .window-header button i,
+.window-app.creation-wizard .window-header button i,
+.ars-magica-2e.sheet .window-header button i {
+  color: #fff8ea !important;
+}
+
 /* Character Creation Wizard */
 .creation-wizard .window-content,
 .creation-wizard .creation-wizard-app {
@@ -37,35 +66,47 @@
 .creation-wizard .wizard-progress {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0.5rem;
+  gap: 0.35rem;
 }
 
 .creation-wizard .wizard-progress-step {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 0.75rem;
-  border: 1px solid #c8ad7f;
-  border-radius: 999px;
-  background: rgba(255, 248, 234, 0.8);
-  opacity: 0.75;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid #7a5a3a;
+  border-radius: 6px;
+  background: #dcc79f;
+  color: #2c1810;
+  opacity: 1;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.creation-wizard .wizard-progress-step:hover {
+  background: #cdb88a;
 }
 
 .creation-wizard .wizard-progress-step.is-active {
-  border-color: #6b2f1a;
+  border-color: #4a2010;
+  background: #6b2f1a;
+  color: #fff8ea;
+  box-shadow: none;
+}
+
+.creation-wizard .wizard-progress-step.is-active .wizard-progress-index {
   background: #fff8ea;
-  opacity: 1;
-  box-shadow: 0 0 0 2px rgba(107, 47, 26, 0.12);
+  color: #6b2f1a;
 }
 
 .creation-wizard .wizard-progress-step.is-complete {
-  opacity: 1;
-  background: #e8dcc0;
+  background: #c8ad7f;
 }
 
-.creation-wizard .wizard-progress-step.is-skipped {
-  opacity: 0.45;
-  text-decoration: line-through;
+.creation-wizard .wizard-progress-step.is-complete:not(.is-active) .wizard-progress-index {
+  background: #4a2010;
 }
 
 .creation-wizard .wizard-progress-index {
@@ -131,11 +172,13 @@
 .creation-wizard .wizard-field,
 .creation-wizard .wizard-char-input {
   width: 100%;
-  border: 1px solid #b9986d;
+  min-width: 0;
+  border: 1px solid #7a5a3a;
   border-radius: 6px;
   background: #fffdf7;
   color: #2c1810;
-  padding: 0.4rem 0.55rem;
+  padding: 0.45rem 0.6rem;
+  box-sizing: border-box;
 }
 
 .creation-wizard .wizard-field:focus {
@@ -172,9 +215,53 @@
 
 .creation-wizard .wizard-ability-row {
   display: grid;
-  grid-template-columns: 1fr 4rem 1fr;
+  grid-template-columns: minmax(0, 1fr) auto auto minmax(5rem, 1fr);
   gap: 0.5rem;
   align-items: center;
+}
+
+.creation-wizard .wizard-ability-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.creation-wizard .wizard-ability-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.creation-wizard .wizard-btn-ability {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid #7a5a3a;
+  border-radius: 4px;
+  background: #e8dcc0;
+  color: #2c1810;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.creation-wizard .wizard-btn-ability:hover {
+  background: #dcc79f;
+}
+
+.creation-wizard .wizard-ability-value {
+  display: inline-block;
+  min-width: 1.75rem;
+  text-align: center;
+  font-weight: 700;
+  color: #6b2f1a;
+}
+
+.creation-wizard .wizard-ability-cost {
+  font-size: 0.75rem;
+  color: #5a3f2e;
+  white-space: nowrap;
 }
 
 .creation-wizard .wizard-art-row {
@@ -270,7 +357,7 @@
 
 .creation-wizard .wizard-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 0.75rem;
   border-top: 1px solid #b9986d;
   padding-top: 0.75rem;

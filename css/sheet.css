@@ -54,23 +54,39 @@
 
 .ars-magica-2e.sheet.actor.character .arm2e-tabs {
   border-bottom: 2px solid var(--arm2e-border);
-  background: rgba(230, 210, 173, 0.65);
+  background: #e6d2ad;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-tabs.arm2e-tabs-compact {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  min-height: 0;
 }
 
 .ars-magica-2e.sheet.actor.character .arm2e-tabs .item {
-  color: var(--arm2e-ink-muted);
-  border: 1px solid transparent;
+  color: #2c1810;
+  background: #dcc79f;
+  border: 1px solid var(--arm2e-border);
   border-bottom: none;
-  padding: 0.45rem 0.9rem;
+  padding: 0.3rem 0.65rem;
   font-weight: 700;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .ars-magica-2e.sheet.actor.character .arm2e-tabs .item.active {
-  color: var(--arm2e-accent);
-  background: var(--arm2e-highlight);
-  border-color: var(--arm2e-border);
+  color: #fff8ea;
+  background: var(--arm2e-accent);
+  border-color: #4a2010;
 }
 
 .ars-magica-2e.sheet.actor.character .arm2e-body {
@@ -587,30 +603,7 @@
   border: 0;
 }
 
-/* Wizard banner */
-.ars-magica-2e.sheet.actor.character .arm2e-wizard-banner-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
-.ars-magica-2e.sheet.actor.character .arm2e-open-wizard {
-  border: 1px solid var(--arm2e-border);
-  border-radius: 4px;
-  background: var(--arm2e-accent);
-  color: #fff8ea;
-  padding: 0.5rem 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.ars-magica-2e.sheet.actor.character .arm2e-open-wizard:hover {
-  filter: brightness(1.08);
-}
-
-/* Character tab two-column layout */
+.ars-magica-2e.sheet.actor.character .arm2e-combat-gear-grid {
 .ars-magica-2e.sheet.actor.character .arm2e-character-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
@@ -728,15 +721,6 @@
   font-style: italic;
   font-size: 0.85rem;
   text-align: center;
-}
-
-.ars-magica-2e.sheet.actor.character .arm2e-tabs .item {
-  padding: 0.55rem 1.1rem;
-  font-size: 0.82rem;
-}
-
-.ars-magica-2e.sheet.actor.character .arm2e-tabs .item.active {
-  border-bottom: 3px solid var(--arm2e-accent);
 }
 
 .ars-magica-2e.sheet.actor.character .arm2e-combat-gear-grid {
