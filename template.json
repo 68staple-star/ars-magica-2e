@@ -118,13 +118,28 @@
       "load": 0,
       "attackSkill": 0,
       "parrySkill": 0,
-      "equipped": false
+      "equipped": false,
+      "category": "",
+      "ability": "",
+      "range": 0,
+      "availability": "",
+      "damageTypes": "",
+      "damageLevels": "",
+      "isShield": false,
+      "notes": "",
+      "source": ""
     },
     "armor": {
       "type": "",
       "protection": 0,
       "load": 0,
-      "equipped": false
+      "equipped": false,
+      "component": "",
+      "outfit": "",
+      "material": "",
+      "cost": "",
+      "notes": "",
+      "source": ""
     },
     "equipment": {
       "load": 0,

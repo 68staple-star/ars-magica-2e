@@ -9,4 +9,17 @@
     <label>Load <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number" step="0.5" /></label>
     <label class="arm2e-check arm2e-span-2"><input type="checkbox" name="system.equipped" {{checked system.equipped}} /> Equipped</label>
   </div>
+  {{#if system.source}}
+  <section class="arm2e-item-reference">
+    <h3 class="arm2e-subheading">Reference (ArM5 OGL)</h3>
+    <div class="arm2e-item-grid">
+      <label>Component <input type="text" name="system.component" value="{{system.component}}" readonly /></label>
+      <label>Outfit <input type="text" name="system.outfit" value="{{system.outfit}}" readonly /></label>
+      <label>Material <input type="text" name="system.material" value="{{system.material}}" readonly /></label>
+      <label>Cost <input type="text" name="system.cost" value="{{system.cost}}" readonly /></label>
+      <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" readonly /></label>
+      <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="2">{{system.notes}}</textarea></label>
+    </div>
+  </section>
+  {{/if}}
 </form>

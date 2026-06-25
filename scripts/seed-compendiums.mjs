@@ -12,6 +12,7 @@ const files = [
   "abilities.json",
   "spells-arm5-index.json",
   "spells.json",
+  "equipment-arm5-lom.json",
   "weapons.json",
   "virtues-flaws.json",
   "journals-rules.json",

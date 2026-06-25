@@ -25,6 +25,12 @@
         "text": {
           "content": "<h2>Formulaic Spells Compendium</h2><p>The <strong>Formulaic Spells (ArM5 Index)</strong> compendium contains spell names, arts, and levels from <em>Ars Magica Fifth Edition, Appendix III: Spells Index</em>, made available under the Ars Magica Open License via <a href=\"https://www.redcap.org/page/Ars_Magica_5E_Standard_Edition,_Appendix_III:_Spells_Index\" target=\"_blank\" rel=\"noopener\">Project: Redcap</a>.</p><p>Index entries do not include full range, duration, or target parameters — add those from your saga's rulebooks as needed. General (Gen) spells are marked accordingly.</p><p><em>Based on Ars Magica material ©1993–2024, licensed by Trident, Inc. d/b/a Atlas Games®, under CC-BY-SA 4.0. Ars Magica, Mythic Europe, and related marks are trademarks of Trident, Inc., used with permission.</em></p>"
         }
+      },
+      {
+        "name": "LoM Arms & Armor (OGL)",
+        "text": {
+          "content": "<h2>Arms &amp; Armor Compendium</h2><p>The <strong>Arms &amp; Armor (LoM)</strong> compendium contains melee weapons, missile weapons, body armor, and surcoats/greaves from the <em>Lords of Men</em> supplement <em>Arms &amp; Armor</em>, made available under the Ars Magica Open License via <a href=\"https://www.redcap.org/page/Lords_of_Men_Supplement:_Arms_%26_Armor\" target=\"_blank\" rel=\"noopener\">Project: Redcap</a>.</p><p>Statistics are mapped to this system's 2e combat fields (Speed, Atk, Damage, Parry) for convenience. ArM5-only details (ability category, damage types, availability period) are preserved on each item. Layer body armor, surcoats, and helmets per the supplement rules when building outfits.</p><p><em>Based on Ars Magica material ©1993–2024, licensed by Trident, Inc. d/b/a Atlas Games®, under CC-BY-SA 4.0. Ars Magica, Mythic Europe, and related marks are trademarks of Trident, Inc., used with permission.</em></p>"
+        }
       }
     ]
   }
