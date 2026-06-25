@@ -70,8 +70,13 @@ async function importPackData(pack, data) {
     await pack.configure({ locked: false });
   }
 
+  const BATCH_SIZE = 50;
+
   try {
-    await documentClass.createDocuments(documents, { pack: pack.collection });
+    for (let offset = 0; offset < documents.length; offset += BATCH_SIZE) {
+      const batch = documents.slice(offset, offset + BATCH_SIZE);
+      await documentClass.createDocuments(batch, { pack: pack.collection });
+    }
   } finally {
     if (wasLocked) {
       await pack.configure({ locked: true });

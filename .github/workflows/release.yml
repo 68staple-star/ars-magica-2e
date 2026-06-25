@@ -42,6 +42,17 @@ jobs:
           fi
           echo "name=${TAG}" >> "$GITHUB_OUTPUT"
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies and compile compendiums
+        run: |
+          npm ci
+          npm run compile:packs
+
       - name: Build Foundry system package
         run: |
           SYSTEM_DIR="ars-magica-2e"

@@ -1,0 +1,12 @@
+{
+  "name": "ars-magica-2e",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile:packs": "node scripts/compile-compendiums.mjs",
+    "validate:packs": "node scripts/seed-compendiums.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.4"
+  }
+}
