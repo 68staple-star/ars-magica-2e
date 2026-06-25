@@ -21,6 +21,7 @@
           <span class="arm2e-vf-points">+{{points}}</span>
           {{#if category}}<span class="arm2e-vf-category">{{category}}</span>{{/if}}
           <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
+          {{#if description}}<p class="arm2e-vf-description">{{description}}</p>{{/if}}
         </li>
         {{/each}}
       </ul>
@@ -38,6 +39,7 @@
           <span class="arm2e-vf-points">-{{points}}</span>
           {{#if category}}<span class="arm2e-vf-category">{{category}}</span>{{/if}}
           <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
+          {{#if description}}<p class="arm2e-vf-description">{{description}}</p>{{/if}}
         </li>
         {{/each}}
       </ul>

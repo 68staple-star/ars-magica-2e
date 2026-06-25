@@ -104,6 +104,7 @@
     "virtueFlaw": {
       "kind": "virtue",
       "points": 1,
+      "magnitude": "",
       "category": "",
       "description": "",
       "source": ""

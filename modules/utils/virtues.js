@@ -20,6 +20,7 @@ export function prepareVirtueFlawList(items) {
       name: item.name,
       kind: item.system?.kind ?? "virtue",
       points: Number(item.system?.points) || 0,
+      magnitude: item.system?.magnitude ?? "",
       category: item.system?.category ?? "",
       description: item.system?.description ?? "",
       source: item.system?.source ?? ""

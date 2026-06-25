@@ -64,6 +64,7 @@ function buildInitialState(actor) {
         name: item.name,
         kind: item.system?.kind ?? "virtue",
         points: Number(item.system?.points) || 0,
+        magnitude: item.system?.magnitude ?? "",
         category: item.system?.category ?? "",
         description: item.system?.description ?? "",
         source: item.system?.source ?? ""
@@ -151,10 +152,35 @@ export class ArM2eCreationWizard extends FormApplication {
    * @returns {Promise<object[]>}
    */
   async _loadCompendiumVirtuesFlaws() {
-    const pack = game.packs?.get("ars-magica-2e.arm2e-virtues-flaws");
-    if (!pack) return [];
-    const index = await pack.getIndex();
-    return index.map((entry) => ({ id: entry._id, name: entry.name }));
+    const packIds = [
+      "ars-magica-2e.arm2e-virtues-flaws-arm5",
+      "ars-magica-2e.arm2e-virtues-flaws"
+    ];
+    const entries = [];
+
+    for (const packId of packIds) {
+      const pack = game.packs?.get(packId);
+      if (!pack) continue;
+
+      const documents = await pack.getDocuments();
+      for (const doc of documents) {
+        entries.push({
+          id: doc.id,
+          name: doc.name,
+          pack: packId,
+          kind: doc.system?.kind ?? "virtue",
+          points: Number(doc.system?.points) || 0,
+          magnitude: doc.system?.magnitude ?? "",
+          category: doc.system?.category ?? "",
+          description: doc.system?.description ?? ""
+        });
+      }
+    }
+
+    return entries.sort((left, right) => {
+      if (left.kind !== right.kind) return left.kind === "virtue" ? -1 : 1;
+      return left.name.localeCompare(right.name);
+    });
   }
 
   /** @override */
@@ -193,6 +219,9 @@ export class ArM2eCreationWizard extends FormApplication {
         allowed: (Number(spell.level) || 0) <= castingTotal + 10
       };
     });
+
+    const compendiumVirtuesFlaws = await this._loadCompendiumVirtuesFlaws();
+    this._compendiumVfById = new Map(compendiumVirtuesFlaws.map((entry) => [entry.id, entry]));
 
     return {
       actor: this.actor,
@@ -234,7 +263,8 @@ export class ArM2eCreationWizard extends FormApplication {
       spells,
       virtuesFlaws: this.state.virtuesFlaws.map((entry, index) => ({ ...entry, index })),
       compendiumSpells: await this._loadCompendiumSpells(),
-      compendiumVirtuesFlaws: await this._loadCompendiumVirtuesFlaws(),
+      compendiumVirtues: compendiumVirtuesFlaws.filter((entry) => entry.kind === "virtue"),
+      compendiumFlaws: compendiumVirtuesFlaws.filter((entry) => entry.kind === "flaw"),
       summary: this._buildSummary(registry, {
         charBudget,
         charSpent,
@@ -339,6 +369,7 @@ export class ArM2eCreationWizard extends FormApplication {
     html.find('[data-action="remove-virtue-flaw"]').on("click", this._onRemoveVirtueFlaw.bind(this));
     html.find('[data-action="import-compendium-spell"]').on("click", this._onImportCompendiumSpell.bind(this));
     html.find('[data-action="import-compendium-vf"]').on("click", this._onImportCompendiumVirtueFlaw.bind(this));
+    html.find('[data-path="compendiumVfId"]').on("change", this._onCompendiumVfPreview.bind(this));
 
     html.find(".wizard-field").on("change", this._onFieldChange.bind(this));
   }
@@ -552,13 +583,25 @@ export class ArM2eCreationWizard extends FormApplication {
   /**
    * @param {JQuery.ClickEvent} event
    */
+  _onCompendiumVfPreview(event) {
+    const select = event.currentTarget;
+    const entry = this._compendiumVfById?.get(select.value);
+    const preview = this.element.find(".wizard-vf-preview");
+    preview.text(entry?.description ?? "");
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
   async _onImportCompendiumVirtueFlaw(event) {
     event.preventDefault();
     const select = this.element.find('[data-path="compendiumVfId"]')[0];
+    const selected = select?.selectedOptions?.[0];
     const itemId = select?.value;
+    const packId = selected?.dataset?.pack ?? "ars-magica-2e.arm2e-virtues-flaws-arm5";
     if (!itemId) return;
 
-    const pack = game.packs.get("ars-magica-2e.arm2e-virtues-flaws");
+    const pack = game.packs.get(packId);
     const item = await pack?.getDocument(itemId);
     if (!item) return;
 
@@ -566,6 +609,7 @@ export class ArM2eCreationWizard extends FormApplication {
       name: item.name,
       kind: item.system?.kind ?? "virtue",
       points: Number(item.system?.points) || 0,
+      magnitude: item.system?.magnitude ?? "",
       category: item.system?.category ?? "",
       description: item.system?.description ?? "",
       source: item.system?.source ?? ""
@@ -669,6 +713,7 @@ export class ArM2eCreationWizard extends FormApplication {
         system: {
           kind: entry.kind,
           points: Number(entry.points) || 0,
+          magnitude: entry.magnitude ?? "",
           category: entry.category ?? "",
           description: entry.description ?? "",
           source: entry.source ?? ""

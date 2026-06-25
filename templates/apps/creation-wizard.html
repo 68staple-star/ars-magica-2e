@@ -116,16 +116,24 @@
         Balance: <strong>{{budgets.virtuesFlaws.balance}}</strong>
       </div>
 
-      {{#if compendiumVirtuesFlaws.length}}
+      {{#if compendiumVirtues}}
       <div class="wizard-compendium-row">
         <select class="wizard-field" data-path="compendiumVfId">
           <option value="">Import from compendium...</option>
-          {{#each compendiumVirtuesFlaws}}
-          <option value="{{id}}">{{name}}</option>
-          {{/each}}
+          <optgroup label="Virtues">
+            {{#each compendiumVirtues}}
+            <option value="{{id}}" data-pack="{{pack}}">{{name}}{{#if points}} ({{points}} pt){{/if}}{{#if category}} — {{category}}{{/if}}</option>
+            {{/each}}
+          </optgroup>
+          <optgroup label="Flaws">
+            {{#each compendiumFlaws}}
+            <option value="{{id}}" data-pack="{{pack}}">{{name}}{{#if points}} ({{points}} pt){{/if}}{{#if category}} — {{category}}{{/if}}</option>
+            {{/each}}
+          </optgroup>
         </select>
         <button type="button" class="wizard-btn wizard-btn-secondary" data-action="import-compendium-vf">Import</button>
       </div>
+      <p class="wizard-vf-preview wizard-note"></p>
       {{/if}}
 
       <div class="wizard-card-header">
@@ -147,6 +155,9 @@
           <input class="wizard-field" type="number" data-path="virtuesFlaws.{{index}}.points" data-dtype="Number" min="0" value="{{points}}" />
           <input class="wizard-field" type="text" data-path="virtuesFlaws.{{index}}.category" value="{{category}}" placeholder="Category" />
           <button type="button" class="wizard-btn wizard-btn-danger" data-action="remove-virtue-flaw" data-vf-index="{{index}}">Remove</button>
+          {{#if description}}
+          <p class="wizard-vf-description wizard-note wizard-span-all">{{description}}</p>
+          {{/if}}
         </div>
         {{/each}}
       </div>

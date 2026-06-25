@@ -9,6 +9,7 @@ const PACK_SEEDS = [
   { pack: "arm2e-spells", file: "spells.json" },
   { pack: "arm2e-equipment-lom", file: "equipment-arm5-lom.json" },
   { pack: "arm2e-weapons", file: "weapons.json" },
+  { pack: "arm2e-virtues-flaws-arm5", file: "virtues-flaws-arm5.json" },
   { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json" },
   { pack: "arm2e-rules-reference", file: "journals-rules.json" },
   { pack: "arm2e-covenant-template", file: "journals-covenant.json" },

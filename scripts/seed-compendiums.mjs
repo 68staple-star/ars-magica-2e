@@ -14,6 +14,7 @@ const files = [
   "spells.json",
   "equipment-arm5-lom.json",
   "weapons.json",
+  "virtues-flaws-arm5.json",
   "virtues-flaws.json",
   "journals-rules.json",
   "journals-covenant.json",

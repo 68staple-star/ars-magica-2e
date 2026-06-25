@@ -337,6 +337,30 @@
   background: #fffdf7;
 }
 
+.creation-wizard .wizard-vf-description,
+.creation-wizard .wizard-vf-preview {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #4a3728;
+}
+
+.arm2e-vf-description {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #4a3728;
+  white-space: pre-wrap;
+}
+
+.arm2e-vf-entry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+}
+
 .creation-wizard .wizard-compendium-row {
   display: flex;
   flex-wrap: wrap;
