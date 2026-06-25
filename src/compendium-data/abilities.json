@@ -1,0 +1,890 @@
+[
+  {
+    "name": "Finesse",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "finesse",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Penetration",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "penetration",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Alertness",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "alertness",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Scan",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "scan",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Search",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "search",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Alchemy",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "alchemy",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Animal Ken",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "animal-ken",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Contortions",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "contortions",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Direction Sense",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "direction-sense",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Empathy",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "empathy",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Enchanting Music",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "enchanting-music",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Entrancement",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "entrancement",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "presence"
+    }
+  },
+  {
+    "name": "Healer",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "healer",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Hex",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "hex",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Magic Sensitivity",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "magic-sensitivity",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Mimicry",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "mimicry",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Perfect Balance",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "perfect-balance",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Premonitions",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "premonitions",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Read Lips",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "read-lips",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Second Sight",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "second-sight",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Sense Holiness & Unholiness",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "sense-holiness-unholiness",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Visions",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "visions",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Weather Sense",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "weather-sense",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Athletics",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "athletics",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "stamina"
+    }
+  },
+  {
+    "name": "Climb",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "climb",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "stamina"
+    }
+  },
+  {
+    "name": "Dodge",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "dodge",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "quickness"
+    }
+  },
+  {
+    "name": "Charisma",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "charisma",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "presence"
+    }
+  },
+  {
+    "name": "Charm",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "charm",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Guile",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "guile",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Folk Ken",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "folk-ken",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Pretend",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "pretend",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Subterfuge",
+    "type": "ability",
+    "system": {
+      "category": "talents",
+      "key": "subterfuge",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Certámen",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "certamen",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Parma Magica",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "parma-magica",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Animal Handling",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "animal-handling",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Survival",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "survival",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Track",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "track",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "perception"
+    }
+  },
+  {
+    "name": "Concentration",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "concentration",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "stamina"
+    }
+  },
+  {
+    "name": "Meditation",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "meditation",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "stamina"
+    }
+  },
+  {
+    "name": "Acting",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "acting",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Storytelling",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "storytelling",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Jongleur",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "jongleur",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Sing",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "sing",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Play (Specific Instrument)",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "play-specific-instrument",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Brawl",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "brawl",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Ride",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "ride",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Swim",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "swim",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "stamina"
+    }
+  },
+  {
+    "name": "Forgery",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "forgery",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Legerdemain",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "legerdemain",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Pick Locks",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "pick-locks",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Stealth",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "stealth",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "quickness"
+    }
+  },
+  {
+    "name": "Diplomacy",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "diplomacy",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "communication"
+    }
+  },
+  {
+    "name": "Drinking",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "drinking",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "stamina"
+    }
+  },
+  {
+    "name": "Intimidation",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "intimidation",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "presence"
+    }
+  },
+  {
+    "name": "Intrigue",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "intrigue",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Leadership",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "leadership",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "presence"
+    }
+  },
+  {
+    "name": "Boating",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "boating",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Chirurgy",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "chirurgy",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Craft (Specify)",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "craft-specify",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Evaluate (Specific Items)",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "evaluate-specific-items",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Hermes History",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "hermes-history",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Hermes Lore",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "hermes-lore",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Magic Theory",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "magic-theory",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "(Area) Lore",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "area-lore",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Church Lore",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "church-lore",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Faerie Lore",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "faerie-lore",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Fantastic Beast Lore",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "fantastic-beast-lore",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Legend Lore",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "legend-lore",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Occult Lore",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "occult-lore",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Speak (Specific Alphabet)",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "speak-specific-alphabet",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Church Knowledge",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "church-knowledge",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Humanities",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "humanities",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Medicine",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "medicine",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  },
+  {
+    "name": "Scribe (Specific Alphabet)",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "scribe-specific-alphabet",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    }
+  }
+]

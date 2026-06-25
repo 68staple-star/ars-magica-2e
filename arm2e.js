@@ -6,6 +6,10 @@ import { rollArM2e, rollSpellCast } from "./modules/dice.js";
 import { registerUiHooks } from "./modules/hooks/ui-hooks.js";
 import { registerTemplateLoading } from "./modules/init/load-templates.js";
 import { registerSheets } from "./modules/init/register-sheets.js";
+import {
+  registerAbilityMigration,
+  registerMigrationSettings
+} from "./modules/migrations/migrate-abilities-to-items.js";
 
 const SYSTEM_ID = "ars-magica-2e";
 
@@ -23,10 +27,12 @@ Hooks.on("init", () => {
     };
 
     registerActorDocumentHooks();
+    registerMigrationSettings();
     registerCompendiumSeeding();
     registerTemplateLoading();
     registerUiHooks();
     registerSheets();
+    registerAbilityMigration();
     console.log("arm2e | init hook complete");
   } catch (error) {
     console.error("arm2e | init hook failed — sheets and wizard will not work", error);

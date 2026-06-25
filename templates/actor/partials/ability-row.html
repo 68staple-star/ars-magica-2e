@@ -1,0 +1,18 @@
+<tr class="ability-row rollable" data-item-id="{{itemId}}" data-ability="{{key}}" data-ability-type="{{category}}" data-ability-label="{{label}}" title="Roll stress die + characteristic + ability">
+  <th scope="row" class="ability-name">{{label}}</th>
+  <td class="ability-char" title="Default roll characteristic">{{charAbbrev}}</td>
+  <td class="ability-value">
+    <input type="number" name="items.{{itemId}}.system.value" value="{{value}}" data-dtype="Number" />
+  </td>
+  <td class="ability-specialty">
+    <input type="text" name="items.{{itemId}}.system.specialty" value="{{specialty}}" placeholder="Spec." />
+  </td>
+  <td class="ability-xp">
+    <input type="number" name="items.{{itemId}}.system.xp" value="{{xp}}" data-dtype="Number" min="0" />
+  </td>
+  <td class="ability-controls">
+    <button type="button" class="arm2e-item-delete arm2e-ability-delete" data-item-id="{{itemId}}" title="Remove ability">
+      <i class="fas fa-trash" aria-hidden="true"></i>
+    </button>
+  </td>
+</tr>

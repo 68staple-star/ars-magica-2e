@@ -78,7 +78,14 @@
   },
   "Item": {
     "types": ["ability", "art", "spell", "virtueFlaw", "weapon", "armor", "equipment"],
-    "ability": {},
+    "ability": {
+      "category": "talents",
+      "key": "",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence"
+    },
     "art": {},
     "spell": {
       "level": 0,

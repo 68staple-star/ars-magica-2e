@@ -1,60 +1,89 @@
 /**
- * Prepare categorized ability groups for the character sheet.
+ * Prepare categorized ability groups for the character sheet (Item-based).
  */
 
-import { abilityKey } from "./abilities.js";
+import { getAbilityByKey } from "../config/ability-registry.js";
 
 /**
- * @param {object} system
+ * @param {Item[]} abilityItems
  * @param {"talents" | "skills" | "knowledges"} category
  * @param {Readonly<Record<string, ReadonlyArray<string>>>} categoryMap
  * @param {Readonly<Record<string, string>>} categoryLabels
+ * @param {typeof import("../config.js").ARM2E} registry
  */
-function prepareCategorizedAbilities(system, category, categoryMap, categoryLabels) {
-  return Object.entries(categoryMap).map(([categoryId, labels]) => ({
-    id: categoryId,
-    title: categoryLabels[categoryId] ?? categoryId,
-    abilities: labels.map((label) => {
-      const id = abilityKey(label);
-      const entry = system.abilities?.[category]?.[id] ?? {};
+function prepareCategorizedAbilityItems(abilityItems, category, categoryMap, categoryLabels, registry) {
+  const itemsInCategory = abilityItems.filter((item) => item.system?.category === category);
 
-      return {
-        id,
-        label,
-        value: entry.value ?? 0,
-        xp: entry.xp ?? 0,
-        specialty: entry.specialty ?? "",
-        fieldBase: `system.abilities.${category}.${id}`
-      };
-    })
-  }));
+  return Object.entries(categoryMap).map(([categoryId, labels]) => {
+    const abilities = itemsInCategory
+      .filter((item) => {
+        const definition = getAbilityByKey(item.system?.key) ?? registry.getAbilityByKey?.(item.system?.key);
+        return definition && labels.includes(definition.label);
+      })
+      .map((item) => enrichAbilityItem(item, registry))
+      .sort((left, right) => left.label.localeCompare(right.label));
+
+    return {
+      id: categoryId,
+      title: categoryLabels[categoryId] ?? categoryId,
+      abilities
+    };
+  }).filter((section) => section.abilities.length > 0);
 }
 
 /**
- * @param {object} system
+ * @param {Item} item
  * @param {typeof import("../config.js").ARM2E} registry
  */
-export function prepareAbilitySections(system, registry) {
+export function enrichAbilityItem(item, registry) {
+  const definition = getAbilityByKey(item.system?.key) ?? registry.getAbilityByKey?.(item.system?.key);
+  const rollCharacteristic = item.system?.rollCharacteristic ?? definition?.characteristic ?? "";
+  const characteristic = registry.CHARACTERISTICS.find((entry) => entry.id === rollCharacteristic);
+
   return {
-    talents: prepareCategorizedAbilities(
-      system,
-      "talents",
-      registry.TALENT_CATEGORIES,
-      registry.TALENT_CATEGORY_LABELS
-    ),
-    skills: prepareCategorizedAbilities(
-      system,
-      "skills",
-      registry.SKILL_CATEGORIES,
-      registry.SKILL_CATEGORY_LABELS
-    ),
-    knowledges: prepareCategorizedAbilities(
-      system,
-      "knowledges",
-      registry.KNOWLEDGE_CATEGORIES,
-      registry.KNOWLEDGE_CATEGORY_LABELS
-    )
+    id: item.id,
+    itemId: item.id,
+    key: item.system?.key ?? "",
+    label: item.name,
+    category: item.system?.category ?? "",
+    value: Number(item.system?.value) || 0,
+    xp: Number(item.system?.xp) || 0,
+    specialty: item.system?.specialty ?? "",
+    charAbbrev: characteristic?.abbrev ?? "—",
+    rollCharacteristic,
+    alternates: definition?.alternates ?? [],
+    fieldBase: `items.${item.id}.system`
   };
+}
+
+/**
+ * @param {Item[]} abilityItems
+ * @param {typeof import("../config.js").ARM2E} registry
+ */
+export function prepareAbilityColumns(abilityItems, registry) {
+  const talents = prepareCategorizedAbilityItems(
+    abilityItems,
+    "talents",
+    registry.TALENT_CATEGORIES,
+    registry.TALENT_CATEGORY_LABELS,
+    registry
+  );
+  const skills = prepareCategorizedAbilityItems(
+    abilityItems,
+    "skills",
+    registry.SKILL_CATEGORIES,
+    registry.SKILL_CATEGORY_LABELS,
+    registry
+  );
+  const knowledges = prepareCategorizedAbilityItems(
+    abilityItems,
+    "knowledges",
+    registry.KNOWLEDGE_CATEGORIES,
+    registry.KNOWLEDGE_CATEGORY_LABELS,
+    registry
+  );
+
+  return { talents, skills, knowledges };
 }
 
 /**
@@ -84,4 +113,9 @@ export function prepareCharacteristicPairs(registry, system) {
       }
     };
   });
+}
+
+/** @deprecated Use prepareAbilityColumns */
+export function prepareAbilitySections(system, registry) {
+  return prepareAbilityColumns([], registry);
 }

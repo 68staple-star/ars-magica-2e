@@ -1,114 +1,119 @@
-<div class="arm2e-ability-search">
-  <label for="{{actor._id}}-ability-filter" class="sr-only">Filter abilities</label>
-  <input id="{{actor._id}}-ability-filter" class="arm2e-ability-filter" type="search" placeholder="Filter abilities..." />
+<div class="arm2e-abilities-toolbar">
+  <div class="arm2e-ability-search">
+    <label for="{{actor._id}}-ability-filter" class="sr-only">Filter abilities</label>
+    <input id="{{actor._id}}-ability-filter" class="arm2e-ability-filter" type="search" placeholder="Filter abilities..." />
+  </div>
+  <p class="arm2e-note arm2e-abilities-hint">Drag abilities from the Abilities compendium into a column, or use Add Ability.</p>
 </div>
 
-{{#each abilitySections.talents}}
-<section class="arm2e-panel arm2e-ability-group arm2e-collapsible is-open" data-ability-category="{{id}}">
-  <h2 class="arm2e-section-heading arm2e-collapsible-header">
-    <button type="button" class="arm2e-collapse-toggle" aria-expanded="true">{{title}}</button>
-  </h2>
-  <div class="arm2e-collapsible-body">
-    <table class="arm2e-abilities-table">
-      <thead>
-        <tr>
-          <th scope="col">Ability</th>
-          <th scope="col">Score</th>
-          <th scope="col">XP</th>
-          <th scope="col">Specialty</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each abilities}}
-        <tr class="ability-row rollable" data-ability="{{id}}" data-ability-type="talent" data-ability-label="{{label}}" title="Roll stress die + ability">
-          <th scope="row" class="ability-name">{{label}}</th>
-          <td class="ability-value">
-            <input type="number" name="{{fieldBase}}.value" value="{{value}}" data-dtype="Number" />
-          </td>
-          <td class="ability-xp">
-            <input type="number" name="{{fieldBase}}.xp" value="{{xp}}" data-dtype="Number" min="0" />
-          </td>
-          <td class="ability-specialty">
-            <input type="text" name="{{fieldBase}}.specialty" value="{{specialty}}" placeholder="Specialty" />
-          </td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </div>
-</section>
-{{/each}}
+<div class="arm2e-abilities-columns">
+  <section class="arm2e-ability-column" data-drop-target="ability" data-ability-category="talents">
+    <header class="arm2e-ability-column-header">
+      <h2 class="arm2e-section-heading">Talents</h2>
+      <button type="button" class="arm2e-item-create arm2e-add-ability" data-ability-category="talents" title="Add talent">
+        <i class="fas fa-plus" aria-hidden="true"></i> Add
+      </button>
+    </header>
+    <div class="arm2e-ability-column-body">
+      {{#each abilityColumns.talents}}
+      <div class="arm2e-ability-subgroup">
+        <h3 class="arm2e-subheading">{{title}}</h3>
+        <table class="arm2e-abilities-table">
+          <thead>
+            <tr>
+              <th scope="col">Ability</th>
+              <th scope="col">Char</th>
+              <th scope="col">Scr</th>
+              <th scope="col">Spec</th>
+              <th scope="col">XP</th>
+              <th scope="col" class="sr-only">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each abilities}}
+            {{> "systems/ars-magica-2e/templates/actor/partials/ability-row.html"}}
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{/each}}
+      {{#unless abilityColumns.talents.length}}
+      <p class="arm2e-empty-column">Drop talents here or click Add.</p>
+      {{/unless}}
+    </div>
+  </section>
 
-{{#each abilitySections.skills}}
-<section class="arm2e-panel arm2e-ability-group arm2e-collapsible is-open" data-ability-category="{{id}}">
-  <h2 class="arm2e-section-heading arm2e-collapsible-header">
-    <button type="button" class="arm2e-collapse-toggle" aria-expanded="true">{{title}}</button>
-  </h2>
-  <div class="arm2e-collapsible-body">
-    <table class="arm2e-abilities-table">
-      <thead>
-        <tr>
-          <th scope="col">Ability</th>
-          <th scope="col">Score</th>
-          <th scope="col">XP</th>
-          <th scope="col">Specialty</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each abilities}}
-        <tr class="ability-row rollable" data-ability="{{id}}" data-ability-type="skill" data-ability-label="{{label}}" title="Roll stress die + ability">
-          <th scope="row" class="ability-name">{{label}}</th>
-          <td class="ability-value">
-            <input type="number" name="{{fieldBase}}.value" value="{{value}}" data-dtype="Number" />
-          </td>
-          <td class="ability-xp">
-            <input type="number" name="{{fieldBase}}.xp" value="{{xp}}" data-dtype="Number" min="0" />
-          </td>
-          <td class="ability-specialty">
-            <input type="text" name="{{fieldBase}}.specialty" value="{{specialty}}" placeholder="Specialty" />
-          </td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </div>
-</section>
-{{/each}}
+  <section class="arm2e-ability-column" data-drop-target="ability" data-ability-category="skills">
+    <header class="arm2e-ability-column-header">
+      <h2 class="arm2e-section-heading">Skills</h2>
+      <button type="button" class="arm2e-item-create arm2e-add-ability" data-ability-category="skills" title="Add skill">
+        <i class="fas fa-plus" aria-hidden="true"></i> Add
+      </button>
+    </header>
+    <div class="arm2e-ability-column-body">
+      {{#each abilityColumns.skills}}
+      <div class="arm2e-ability-subgroup">
+        <h3 class="arm2e-subheading">{{title}}</h3>
+        <table class="arm2e-abilities-table">
+          <thead>
+            <tr>
+              <th scope="col">Ability</th>
+              <th scope="col">Char</th>
+              <th scope="col">Scr</th>
+              <th scope="col">Spec</th>
+              <th scope="col">XP</th>
+              <th scope="col" class="sr-only">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each abilities}}
+            {{> "systems/ars-magica-2e/templates/actor/partials/ability-row.html"}}
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{/each}}
+      {{#unless abilityColumns.skills.length}}
+      <p class="arm2e-empty-column">Drop skills here or click Add.</p>
+      {{/unless}}
+    </div>
+  </section>
+
+  <section class="arm2e-ability-column" data-drop-target="ability" data-ability-category="knowledges">
+    <header class="arm2e-ability-column-header">
+      <h2 class="arm2e-section-heading">Knowledges</h2>
+      <button type="button" class="arm2e-item-create arm2e-add-ability" data-ability-category="knowledges" title="Add knowledge">
+        <i class="fas fa-plus" aria-hidden="true"></i> Add
+      </button>
+    </header>
+    <div class="arm2e-ability-column-body">
+      {{#each abilityColumns.knowledges}}
+      <div class="arm2e-ability-subgroup">
+        <h3 class="arm2e-subheading">{{title}}</h3>
+        <table class="arm2e-abilities-table">
+          <thead>
+            <tr>
+              <th scope="col">Ability</th>
+              <th scope="col">Char</th>
+              <th scope="col">Scr</th>
+              <th scope="col">Spec</th>
+              <th scope="col">XP</th>
+              <th scope="col" class="sr-only">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each abilities}}
+            {{> "systems/ars-magica-2e/templates/actor/partials/ability-row.html"}}
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      {{/each}}
+      {{#unless abilityColumns.knowledges.length}}
+      <p class="arm2e-empty-column">Drop knowledges here or click Add.</p>
+      {{/unless}}
+    </div>
+  </section>
+</div>
 
 <p class="arm2e-note arm2e-weapon-skills-note">{{weaponSkillsNote}}</p>
-
-{{#each abilitySections.knowledges}}
-<section class="arm2e-panel arm2e-ability-group arm2e-collapsible is-open" data-ability-category="{{id}}">
-  <h2 class="arm2e-section-heading arm2e-collapsible-header">
-    <button type="button" class="arm2e-collapse-toggle" aria-expanded="true">{{title}}</button>
-  </h2>
-  <div class="arm2e-collapsible-body">
-    <table class="arm2e-abilities-table">
-      <thead>
-        <tr>
-          <th scope="col">Ability</th>
-          <th scope="col">Score</th>
-          <th scope="col">XP</th>
-          <th scope="col">Specialty</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each abilities}}
-        <tr class="ability-row rollable" data-ability="{{id}}" data-ability-type="knowledge" data-ability-label="{{label}}" title="Roll stress die + ability">
-          <th scope="row" class="ability-name">{{label}}</th>
-          <td class="ability-value">
-            <input type="number" name="{{fieldBase}}.value" value="{{value}}" data-dtype="Number" />
-          </td>
-          <td class="ability-xp">
-            <input type="number" name="{{fieldBase}}.xp" value="{{xp}}" data-dtype="Number" min="0" />
-          </td>
-          <td class="ability-specialty">
-            <input type="text" name="{{fieldBase}}.specialty" value="{{specialty}}" placeholder="Specialty" />
-          </td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </div>
-</section>
-{{/each}}

@@ -1,0 +1,44 @@
+<form class="{{cssClass}} arm2e-item-sheet flexcol" autocomplete="off">
+  <header class="sheet-header flexrow">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="48" width="48" />
+    <div class="header-fields flexcol">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{item.name}}" placeholder="Ability Name" />
+      </h1>
+      <div class="form-group">
+        <label>Category</label>
+        <select name="system.category" disabled>
+          <option value="talents" {{#if (eq system.category "talents")}}selected{{/if}}>Talent</option>
+          <option value="skills" {{#if (eq system.category "skills")}}selected{{/if}}>Skill</option>
+          <option value="knowledges" {{#if (eq system.category "knowledges")}}selected{{/if}}>Knowledge</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="form-group">
+      <label for="{{item._id}}-value">Score</label>
+      <input id="{{item._id}}-value" type="number" name="system.value" value="{{system.value}}" data-dtype="Number" />
+    </div>
+    <div class="form-group">
+      <label for="{{item._id}}-xp">Experience</label>
+      <input id="{{item._id}}-xp" type="number" name="system.xp" value="{{system.xp}}" data-dtype="Number" min="0" />
+    </div>
+    <div class="form-group">
+      <label for="{{item._id}}-specialty">Specialty</label>
+      <input id="{{item._id}}-specialty" type="text" name="system.specialty" value="{{system.specialty}}" placeholder="Parenthetical specialty" />
+    </div>
+    <div class="form-group">
+      <label for="{{item._id}}-roll-char">Roll Characteristic</label>
+      <select id="{{item._id}}-roll-char" name="system.rollCharacteristic">
+        {{#each characteristics}}
+        <option value="{{id}}" {{#if (eq ../system.rollCharacteristic id)}}selected{{/if}}>{{label}} ({{abbrev}})</option>
+        {{/each}}
+      </select>
+    </div>
+    {{#if definition}}
+    <p class="arm2e-note">Default characteristic from rules: {{definition.characteristic}}{{#if definition.alternates}}; alternates may apply depending on use{{/if}}</p>
+    {{/if}}
+  </section>
+</form>

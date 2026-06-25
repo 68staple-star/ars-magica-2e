@@ -58,10 +58,21 @@ export function calculateTotalLoad(items, extraLoad = 0) {
 /**
  * @param {object} system
  * @param {number} encumbrance
+ * @param {Actor} [actor]
  * @returns {number}
  */
-export function calculateDodge(system, encumbrance) {
-  const dodgeSkill = Number(system?.abilities?.talents?.dodge?.value) || 0;
+export function calculateDodge(system, encumbrance, actor = null) {
+  let dodgeSkill = 0;
+
+  if (actor) {
+    const dodgeItem = actor.items.find((item) => item.type === "ability" && item.system?.key === "dodge");
+    dodgeSkill = Number(dodgeItem?.system?.value) || 0;
+  }
+
+  if (!dodgeSkill) {
+    dodgeSkill = Number(system?.abilities?.talents?.dodge?.value) || 0;
+  }
+
   const quickness = Number(system?.characteristics?.quickness) || 0;
   const size = Number(system?.combat?.size) || 0;
   const enc = Number(encumbrance) || 0;
@@ -100,7 +111,7 @@ export function calculateSoak(armorItems) {
  *   equipment: Array<object>
  * }}
  */
-export function prepareCombatData(system, weaponItems, armorItems = [], equipmentItems = []) {
+export function prepareCombatData(system, weaponItems, armorItems = [], equipmentItems = [], actor = null) {
   const characteristics = system?.characteristics ?? {};
   const size = Number(system?.combat?.size) || 0;
   const extraLoad = Number(system?.combat?.extraLoad) || 0;
@@ -108,7 +119,7 @@ export function prepareCombatData(system, weaponItems, armorItems = [], equipmen
   const allLoadItems = [...weaponItems, ...armorItems, ...equipmentItems];
   const totalLoad = calculateTotalLoad(allLoadItems, extraLoad);
   const encumbrance = calculateEncumbrance(totalLoad, strength);
-  const dodge = calculateDodge(system, encumbrance);
+  const dodge = calculateDodge(system, encumbrance, actor);
   const soak = calculateSoak(armorItems);
 
   const weapons = [...weaponItems].map((item) => {

@@ -1,3 +1,4 @@
+import { ArM2eAbilitySheet } from "../sheets/ability-sheet.js";
 import { ArM2eActorSheet } from "../sheets/actor-sheet.js";
 import { ArM2eArmorSheet } from "../sheets/armor-sheet.js";
 import { ArM2eEquipmentSheet } from "../sheets/equipment-sheet.js";
@@ -45,6 +46,12 @@ export function registerSheets() {
     types: ["character"],
     makeDefault: true,
     label: "ARM2e Character Sheet"
+  });
+
+  Items.registerSheet(systemId, ArM2eAbilitySheet, {
+    types: ["ability"],
+    makeDefault: true,
+    label: "ARM2e Ability Sheet"
   });
 
   Items.registerSheet(systemId, ArM2eSpellSheet, {

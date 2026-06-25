@@ -4,11 +4,13 @@ const SHEET_TEMPLATES = [
   `${TEMPLATE_ROOT}/actor/character-sheet.html`,
   `${TEMPLATE_ROOT}/apps/creation-wizard.html`,
   `${TEMPLATE_ROOT}/actor/partials/header-band.html`,
+  `${TEMPLATE_ROOT}/actor/partials/ability-row.html`,
   `${TEMPLATE_ROOT}/actor/partials/tab-character.html`,
   `${TEMPLATE_ROOT}/actor/partials/tab-abilities.html`,
   `${TEMPLATE_ROOT}/actor/partials/tab-virtues.html`,
   `${TEMPLATE_ROOT}/actor/partials/tab-combat.html`,
   `${TEMPLATE_ROOT}/actor/partials/tab-magic.html`,
+  `${TEMPLATE_ROOT}/item/ability-sheet.html`,
   `${TEMPLATE_ROOT}/chat/roll-card.html`
 ];
 

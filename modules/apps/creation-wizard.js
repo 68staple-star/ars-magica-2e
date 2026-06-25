@@ -1,5 +1,8 @@
 import { ARM2E } from "../config.js";
-import { abilityKey, buildCharacterAbilities } from "../utils/abilities.js";
+import {
+  buildAbilityLookupFromActor,
+  serializeAbilityItemsForActor
+} from "../utils/abilities.js";
 import {
   abilityPointBudget,
   abilityPointsSpent,
@@ -51,7 +54,7 @@ function buildInitialState(actor) {
       traits: system.personality?.traits ?? ""
     },
     characteristics,
-    abilities: buildEmptyAbilityState(registry, system.abilities),
+    abilities: buildEmptyAbilityState(registry, buildAbilityLookupFromActor(actor, registry)),
     arts: buildEmptyArts(registry, system.arts),
     virtuesFlaws: actor.items
       .filter((item) => item.type === "virtueFlaw")
@@ -261,7 +264,8 @@ export class ArM2eCreationWizard extends FormApplication {
       key: categoryKey,
       title,
       entries: labels.map((label) => {
-        const id = abilityKey(label);
+        const id = registry.getAbilityByLabel?.(label)?.key
+          ?? label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
         const entry = this.state.abilities[categoryKey][id] ?? { value: 0, specialty: "", label };
 
         return {
@@ -601,7 +605,8 @@ export class ArM2eCreationWizard extends FormApplication {
     const registry = CONFIG.ARM2E ?? ARM2E;
     const type = this.state.identity.characterType;
     const confidence = defaultConfidence(type);
-    const abilities = serializeAbilitiesForActor(this.state.abilities);
+    const serializedAbilities = serializeAbilitiesForActor(this.state.abilities);
+    const abilityItemData = serializeAbilityItemsForActor(this.actor, registry, serializedAbilities);
 
     await this.actor.update({
       name: this.state.identity.name.trim(),
@@ -614,20 +619,19 @@ export class ArM2eCreationWizard extends FormApplication {
       "system.identity.currentYear": Number(this.state.identity.currentYear) || 1220,
       "system.personality.traits": this.state.identity.traits ?? "",
       "system.characteristics": foundry.utils.deepClone(this.state.characteristics),
-      "system.abilities": buildCharacterAbilities(registry, abilities),
       "system.arts.techniques": foundry.utils.deepClone(this.state.arts.techniques),
       "system.arts.forms": foundry.utils.deepClone(this.state.arts.forms),
       "system.confidence.value": confidence,
       "system.confidence.max": confidence
     });
 
-    const removableTypes = new Set(["spell", "virtueFlaw"]);
+    const removableTypes = new Set(["spell", "virtueFlaw", "ability"]);
     const existing = this.actor.items.filter((item) => removableTypes.has(item.type));
     if (existing.length) {
       await this.actor.deleteEmbeddedDocuments("Item", existing.map((item) => item.id));
     }
 
-    const items = [];
+    const items = [...abilityItemData];
 
     for (const spell of this.state.spells) {
       items.push({

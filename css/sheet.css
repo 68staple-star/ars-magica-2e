@@ -212,7 +212,7 @@
 
 .ars-magica-2e.sheet.actor.character .arm2e-combat-summary {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.75rem;
   margin-bottom: 0.75rem;
 }
@@ -585,5 +585,167 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* Wizard banner */
+.ars-magica-2e.sheet.actor.character .arm2e-wizard-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-open-wizard {
+  border: 1px solid var(--arm2e-border);
+  border-radius: 4px;
+  background: var(--arm2e-accent);
+  color: #fff8ea;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-open-wizard:hover {
+  filter: brightness(1.08);
+}
+
+/* Character tab two-column layout */
+.ars-magica-2e.sheet.actor.character .arm2e-character-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.ars-magica-2e.sheet.actor.character details.arm2e-journal-refs summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.ars-magica-2e.sheet.actor.character details.arm2e-journal-refs summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Abilities three-column paper layout */
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-ability-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 24rem;
+  max-height: calc(100vh - 16rem);
+  border: 1px solid var(--arm2e-border-light);
+  border-radius: 4px;
+  background: rgba(255, 248, 234, 0.35);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-ability-column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem 0;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-ability-column-header .arm2e-section-heading {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-ability-column-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0.65rem 0.65rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-ability-column[data-drop-target="ability"] {
+  outline: 2px dashed transparent;
+  transition: outline-color 0.15s ease;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-ability-column.drag-over {
+  outline-color: var(--arm2e-accent);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table {
+  font-size: 0.78rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table th,
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table td {
+  padding: 0.2rem 0.3rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table .ability-name {
+  font-size: 0.76rem;
+  text-align: left;
+  max-width: 7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table .ability-char {
+  text-align: center;
+  font-weight: 700;
+  color: var(--arm2e-accent);
+  width: 2.25rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table .ability-value input,
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table .ability-xp input {
+  width: 2.5rem;
+  min-width: 2.5rem;
+  padding: 0.15rem;
+  font-size: 0.78rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-abilities-table .ability-specialty input {
+  width: 100%;
+  min-width: 3.5rem;
+  padding: 0.15rem;
+  font-size: 0.76rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-empty-column {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  color: var(--arm2e-ink-muted);
+  font-style: italic;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-tabs .item {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.82rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-tabs .item.active {
+  border-bottom: 3px solid var(--arm2e-accent);
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-combat-gear-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-combat-gear-grid .arm2e-span-2 {
+  grid-column: 1 / -1;
 }
 

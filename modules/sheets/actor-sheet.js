@@ -1,14 +1,17 @@
 import { ARM2E } from "../config.js";
 import { rollArM2e, rollSpellCast } from "../dice.js";
 import { ArM2eCreationWizard } from "../apps/creation-wizard.js";
+import { promptAbilityRoll } from "../utils/ability-rolls.js";
+import { findAbilityItem } from "../utils/abilities.js";
 import { prepareCombatData } from "../utils/combat.js";
 import { prepareSpellLists } from "../utils/spells.js";
-import { prepareAbilitySections, prepareCharacteristicPairs } from "../utils/sheet-data.js";
+import { prepareAbilityColumns, prepareCharacteristicPairs } from "../utils/sheet-data.js";
 import { prepareVirtueFlawList } from "../utils/virtues.js";
 import { prepareFatigueTrack, prepareWoundTrack } from "../utils/wounds.js";
 import { openJournalEntry } from "../utils/journal.js";
 
 const DROP_TARGETS = {
+  ability: "ability",
   spell: "spell",
   weapon: "weapon",
   virtueFlaw: "virtueFlaw",
@@ -22,15 +25,15 @@ export class ArM2eActorSheet extends ActorSheet {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["ars-magica-2e", "sheet", "actor", "character"],
       template: "systems/ars-magica-2e/templates/actor/character-sheet.html",
-      width: 1040,
-      height: 980,
+      width: 1280,
+      height: 900,
       tabs: [{
         navSelector: ".sheet-tabs",
         contentSelector: ".sheet-body",
         initial: "character"
       }],
       dragDrop: [{
-        dragSelector: ".item-edit, .spell-row, .weapon-row, .armor-row, .equipment-row, .arm2e-vf-entry",
+        dragSelector: ".item-edit, .spell-row, .weapon-row, .armor-row, .equipment-row, .arm2e-vf-entry, .ability-row",
         dropSelector: null
       }]
     });
@@ -46,10 +49,12 @@ export class ArM2eActorSheet extends ActorSheet {
     context.system = system;
     context.actor = this.actor;
 
+    const abilityItems = this.actor.items.filter((item) => item.type === "ability");
+
     context.isMagus = characterType === "magus";
     context.isGrog = characterType === "grog";
     context.characteristicPairs = prepareCharacteristicPairs(registry, system);
-    context.abilitySections = prepareAbilitySections(system, registry);
+    context.abilityColumns = prepareAbilityColumns(abilityItems, registry);
     context.forms = this._prepareForms(system, registry);
     context.artRows = this._prepareArtRows(system, registry);
     context.weaponSkillsNote = registry.WEAPON_SKILLS.note;
@@ -63,18 +68,22 @@ export class ArM2eActorSheet extends ActorSheet {
   }
 
   /** @override */
-  getHeaderButtons() {
-    const buttons = super.getHeaderButtons();
+  _getHeaderButtons() {
+    const buttons = super._getHeaderButtons();
     buttons.unshift({
       label: "Character Wizard",
       class: "arm2e-character-wizard",
       icon: "fas fa-magic",
       onclick: (event) => {
         event.preventDefault();
-        new ArM2eCreationWizard(this.actor).render(true);
+        this._openCreationWizard();
       }
     });
     return buttons;
+  }
+
+  _openCreationWizard() {
+    new ArM2eCreationWizard(this.actor).render(true);
   }
 
   /** @override */
@@ -96,16 +105,21 @@ export class ArM2eActorSheet extends ActorSheet {
     html.find(".fatigue-step").on("click", this._onSetFatigueLevel.bind(this));
     html.find(".arm2e-item-create").on("click", this._onCreateItem.bind(this));
     html.find(".arm2e-item-delete").on("click", this._onDeleteItem.bind(this));
+    html.find(".arm2e-add-ability").on("click", this._onBrowseAbilities.bind(this));
     html.find(".item-edit").on("click", this._onEditItem.bind(this));
     html.find(".arm2e-journal-link").on("click", this._onOpenJournal.bind(this));
     html.find(".arm2e-collapse-toggle").on("click", this._onToggleCollapse.bind(this));
     html.find(".arm2e-ability-filter").on("input", this._onFilterAbilities.bind(this));
+    html.find(".arm2e-open-wizard").on("click", (event) => {
+      event.preventDefault();
+      this._openCreationWizard();
+    });
 
     for (const [selector, type] of Object.entries(DROP_TARGETS)) {
-      const panel = html.find(`[data-drop-target="${type}"]`);
+      const panel = html.find(`[data-drop-target="${selector}"]`);
       if (!panel.length) continue;
       panel.on("dragover", (event) => event.preventDefault());
-      panel.on("drop", (event) => this._onDropItem(event, type));
+      panel.on("drop", (event) => this._onDropItem(event, type, event.currentTarget));
     }
   }
 
@@ -156,15 +170,12 @@ export class ArM2eActorSheet extends ActorSheet {
     if (event.target.closest("input, select, textarea, button, a")) return;
 
     const row = event.currentTarget;
-    const label = row.dataset.abilityLabel ?? row.querySelector(".ability-name")?.textContent?.trim() ?? "Ability";
-    const abilityType = row.dataset.abilityType ?? "ability";
-    const value = Number(row.querySelector(".ability-value input")?.value) || 0;
-    const specialty = row.querySelector(".ability-specialty input")?.value?.trim();
-    const specialtyBonus = specialty ? 1 : 0;
-    const modifier = value + specialtyBonus;
-    const specialtyNote = specialty ? `, specialty: ${specialty}` : "";
+    const itemId = row.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (!item || item.type !== "ability") return;
 
-    await rollArM2e("stress", modifier, `${label} (${abilityType}${specialtyNote})`, this._rollOptions());
+    const registry = CONFIG.ARM2E ?? ARM2E;
+    await promptAbilityRoll(this.actor, item, registry);
   }
 
   /**
@@ -384,8 +395,9 @@ export class ArM2eActorSheet extends ActorSheet {
   /**
    * @param {DragEvent} event
    * @param {string} expectedType
+   * @param {HTMLElement} dropTarget
    */
-  async _onDropItem(event, expectedType) {
+  async _onDropItem(event, expectedType, dropTarget) {
     event.preventDefault();
     const data = TextEditor.getDragEventData(event);
     if (!data?.uuid) return;
@@ -397,11 +409,98 @@ export class ArM2eActorSheet extends ActorSheet {
       return;
     }
 
-    if (doc.parent?.id === this.actor.id) return;
+    if (expectedType === "ability") {
+      const expectedCategory = dropTarget?.dataset?.abilityCategory;
+      const itemCategory = doc.system?.category;
+
+      if (expectedCategory && itemCategory && expectedCategory !== itemCategory) {
+        ui.notifications.warn(`That ability belongs in the ${itemCategory} column.`);
+        return;
+      }
+
+      const duplicate = findAbilityItem(this.actor, doc.system?.key, doc.system?.specialty ?? "");
+      if (duplicate) {
+        ui.notifications.info(`${duplicate.name} is already on this character.`);
+        return;
+      }
+    } else if (doc.parent?.id === this.actor.id) {
+      return;
+    }
 
     const itemData = doc.toObject();
     delete itemData._id;
     await this.actor.createEmbeddedDocuments("Item", [itemData]);
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onBrowseAbilities(event) {
+    event.preventDefault();
+    const category = event.currentTarget.dataset.abilityCategory;
+    const pack = game.packs.get("ars-magica-2e.arm2e-abilities");
+
+    if (!pack) {
+      ui.notifications.warn("Abilities compendium not found. Reload the world as GM to seed compendiums.");
+      return;
+    }
+
+    const documents = await pack.getDocuments();
+    const filtered = documents
+      .filter((doc) => !category || doc.system?.category === category)
+      .sort((left, right) => left.name.localeCompare(right.name));
+
+    if (!filtered.length) {
+      ui.notifications.warn("No abilities available in the compendium.");
+      return;
+    }
+
+    const options = filtered.map((doc) => {
+      const owned = findAbilityItem(this.actor, doc.system?.key, doc.system?.specialty ?? "");
+      const disabled = owned ? "disabled" : "";
+      return `<option value="${doc.uuid}" ${disabled}>${doc.name}${owned ? " (owned)" : ""}</option>`;
+    }).join("");
+
+    const content = `
+      <form>
+        <div class="form-group">
+          <label for="arm2e-add-ability-select">Ability</label>
+          <select id="arm2e-add-ability-select" style="width:100%">${options}</select>
+        </div>
+      </form>
+    `;
+
+    new Dialog({
+      title: "Add Ability",
+      content,
+      buttons: {
+        add: {
+          icon: '<i class="fas fa-plus"></i>',
+          label: "Add",
+          callback: async (html) => {
+            const uuid = html.find("#arm2e-add-ability-select").val();
+            if (!uuid) return;
+            const doc = await fromUuid(uuid);
+            if (!doc) return;
+
+            const duplicate = findAbilityItem(this.actor, doc.system?.key, doc.system?.specialty ?? "");
+            if (duplicate) {
+              ui.notifications.info(`${duplicate.name} is already on this character.`);
+              return;
+            }
+
+            const itemData = doc.toObject();
+            delete itemData._id;
+            await this.actor.createEmbeddedDocuments("Item", [itemData]);
+          }
+        },
+        cancel: {
+          icon: '<i class="fas fa-times"></i>',
+          label: "Cancel"
+        }
+      },
+      default: "add"
+    }, { width: 420 }).render(true);
   }
 
   /**
@@ -411,7 +510,7 @@ export class ArM2eActorSheet extends ActorSheet {
     const weaponItems = this.actor.items.filter((item) => item.type === "weapon");
     const armorItems = this.actor.items.filter((item) => item.type === "armor");
     const equipmentItems = this.actor.items.filter((item) => item.type === "equipment");
-    return prepareCombatData(system, weaponItems, armorItems, equipmentItems);
+    return prepareCombatData(system, weaponItems, armorItems, equipmentItems, this.actor);
   }
 
   /**
