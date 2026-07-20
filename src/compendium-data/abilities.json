@@ -100,7 +100,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "dexterity",
-      "description": ""
+      "description": "Add your score to any roll to break free of a hold or restraint, squeeze into a small space, or get through a small opening. Specialties: ropes, breaking people's holds, crawl, squeeze. (Dex, Str)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -113,7 +114,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "perception",
-      "description": ""
+      "description": "You can determine which way is north on a roll of 9+. Specialties: underground, in towns, in woods, at sea. (Per)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -126,7 +128,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "perception",
-      "description": ""
+      "description": "You can intuitively understand the emotional needs of others and can therefore respond to them correctly. Add your score to appropriate Com, Prs, and Folk Ken rolls. Specialties: warriors, those in need, anger.",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -139,7 +142,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "communication",
-      "description": ""
+      "description": "When you set your mind to it, you can influence others with your music. For a specific effect, you must sing words that people can understand. You can calm the grieving with tunes alone, but you need lyrics to convince peasants to rise up against the local lord. General effects work on animals, but specific effects only work on creatures that can understand words. When you use Enchanting Music, roll a die (stress or simple, depending on the situation) and add Communication and Enchanting Music. An Ease Factor of 9+will calm the upset, 12 will win someone’s love, 15 will incite a riot, and a 24 might win back a soul from the Prince of Darkness. If you botch, you inspire an unwanted emotion.\r\n\r\nIf the target has Magic Resistance, you must penetrate their resistance; see Realms for rules.\r\n\r\nYou should also roll for the quality of the musical performance, but the magical effect is independent of this, unless you botch. If you do botch the Music roll, you have failed to produce any music for some reason, and so the Supernatural Ability automatically fails. Specialties: a particular emotion, a particular sort of person. (Supernatural)\n\n(ArM5 Ch.5 OGL reference text — concepts map to 2e ability use; verify saga house rules.)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -269,7 +273,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "perception",
-      "description": ""
+      "description": "You are able to feel the presence of good and evil. A Perception + Sense Holiness and Unholiness roll against an Ease Factor of 9 lets you sense holiness or unholiness in a general area; against an Ease Factor of 15, in a person or object. The Ease Factor to detect a demon is 0, but the character must still Penetrate its Magic Resistance (see page 184). If an angel is hiding its divine nature, which is unusual, the Ease Factor is 15, and the character must Penetrate. If the angel is not hiding its divine nature, the roll automatically succeeds. In auras of particularly strong divine or infernal influence, your sensitivity may overwhelm you. This Ability is granted by the Divine realm, not the Magic or Faerie realms, and thus uses the Divine column of the Realm Interaction chart (Realms). Specialties: good or evil. (Supernatural)\n\n(ArM5 Ch.5 OGL reference text — concepts map to 2e ability use; verify saga house rules.)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -308,7 +313,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "stamina",
-      "description": ""
+      "description": "General physical prowess. It includes moving smoothly, confidently, and with grace. Use of Athletics improves most large-muscle coordination. Specialties: acrobatics, contortions, grace, jumping, running. (General)\n\n(ArM5 Ch.5 OGL reference text — concepts map to 2e ability use; verify saga house rules.)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -360,7 +366,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "communication",
-      "description": ""
+      "description": "Enticing, fascinating, and endearing others to you, but only on a personal basis. It can be used to win someone over emotionally, especially members of the opposite sex. Specialties: courtly love, first impressions, being witty. (General)\n\n(ArM5 Ch.5 OGL reference text — concepts map to 2e ability use; verify saga house rules.)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -412,7 +419,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "intelligence",
-      "description": ""
+      "description": "Figuring out the motivations and temperaments of others and using that insight to your favor. Subterfuge can be used to justify conduct, escape blame, or navigate social traps. Specialties: excuses, politics, court, clergy.",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -542,7 +550,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "dexterity",
-      "description": ""
+      "description": "Entertaining with juggling, tumbling, and popular humor. Jongleurs can be found in the marketplace and at noble gatherings. Specialties: juggling, tumbling, jokes, a particular audience. (Dex, Com)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -685,7 +694,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "dexterity",
-      "description": ""
+      "description": "Forging documents and wax seals. Requires the ability to scribe the relevant alphabet. Specialties: seals, papal documents, local charters. (Dex, Int)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -776,7 +786,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "intelligence",
-      "description": ""
+      "description": "Dealing and plotting, including subtle use of power in non-confrontational ways to achieve your own ends. Intrigue need not be underhanded or manipulative — it also covers negotiations and knowledge of formal and informal rules of conduct and politeness. In addition, Intrigue also allows a character to pick up important information about those in power, separating fact from useless gossip. Intrigue is a vital talent for those who frequent court or a Hermetic Tribunal. Specialties: gossip, plotting, rumormongering, alliances. (General)\n\n(ArM5 Ch.5 OGL reference text — concepts map to 2e ability use; verify saga house rules.)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -815,7 +826,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "intelligence",
-      "description": ""
+      "description": "This is Middle Ages-style surgery, used to help others recover from physical damage. It encompasses tending and binding wounds of all varieties, and the necessary but brutal skill of cauterization. See “Wounds” starting in Obstacles for rules. Specialties: cauterization, diagnosis, binding wounds, setting bones. (General)\n\n(ArM5 Ch.5 OGL reference text — concepts map to 2e ability use; verify saga house rules.)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -854,7 +866,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "intelligence",
-      "description": ""
+      "description": "Knowledge of the Order's history, including its founders, schisms, and famous covenants. Specialties: a House, a Tribunal, the Schism War. (Int)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -867,7 +880,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "intelligence",
-      "description": ""
+      "description": "Judging events according to the Code of Hermes and the Peripheral Code. In addition to memorizing important precedents, this knowledge includes the practical side of enforcing Hermetic law — for example, knowing when to push for a vote or how to present an argument. Specialties: Wizards’ Marches, apprentices, mundane relations, Tribunal procedures, political intrigue. (Arcane)\n\n(ArM5 Ch.5 OGL reference text — concepts map to 2e ability use; verify saga house rules.)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {
@@ -984,7 +998,8 @@
       "xp": 0,
       "specialty": "",
       "rollCharacteristic": "intelligence",
-      "description": ""
+      "description": "Formal knowledge of Church doctrine, hierarchy, and practice beyond casual Church Lore. Specialties: canon law, liturgy, a religious order. (Int)",
+      "source": "ArM5 Ch.5 / ArM2e Abilities (CC BY-SA 4.0 where OGL)"
     }
   },
   {

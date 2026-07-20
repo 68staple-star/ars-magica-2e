@@ -13,7 +13,8 @@
       "ability": "Brawl",
       "attackSkill": 0,
       "parrySkill": 0,
-      "equipped": false
+      "equipped": false,
+      "notes": "Light casual/brawl weapon. Ability: Brawl."
     }
   },
   {
@@ -30,7 +31,8 @@
       "ability": "Single",
       "attackSkill": 0,
       "parrySkill": 0,
-      "equipped": false
+      "equipped": false,
+      "notes": "One-handed blade. Ability: Single."
     }
   },
   {
@@ -47,7 +49,8 @@
       "ability": "Single",
       "attackSkill": 0,
       "parrySkill": 0,
-      "equipped": false
+      "equipped": false,
+      "notes": "One-handed blade. Ability: Single."
     }
   },
   {
@@ -64,7 +67,8 @@
       "ability": "Great",
       "attackSkill": 0,
       "parrySkill": 0,
-      "equipped": false
+      "equipped": false,
+      "notes": "Pole/great weapon. Ability: Great."
     }
   },
   {
@@ -81,7 +85,8 @@
       "ability": "Great",
       "attackSkill": 0,
       "parrySkill": 0,
-      "equipped": false
+      "equipped": false,
+      "notes": "Pole/great weapon. Ability: Great."
     }
   },
   {
@@ -91,7 +96,8 @@
       "type": "Leather",
       "protection": 1,
       "load": 1,
-      "equipped": false
+      "equipped": false,
+      "notes": "Light body armor; modest Prot with low Load."
     }
   },
   {
@@ -101,7 +107,8 @@
       "type": "Chain",
       "protection": 3,
       "load": 3,
-      "equipped": false
+      "equipped": false,
+      "notes": "Heavy metal armor; high Prot with significant Load."
     }
   }
 ]
