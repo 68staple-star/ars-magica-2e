@@ -2,7 +2,7 @@ import { ARM2E } from "./modules/config.js";
 import { ArM2eCreationWizard } from "./modules/apps/creation-wizard.js";
 import { registerCompendiumSeeding } from "./modules/compendium/seed.js";
 import { registerActorDocumentHooks } from "./modules/documents/actor.js";
-import { rollArM2e, rollSpellCast } from "./modules/dice.js";
+import { rollArM2e, rollSpellCast, rollSpontaneousCast } from "./modules/dice.js";
 import { registerUiHooks } from "./modules/hooks/ui-hooks.js";
 import { registerTemplateLoading } from "./modules/init/load-templates.js";
 import { registerSheets } from "./modules/init/register-sheets.js";
@@ -23,6 +23,7 @@ Hooks.on("init", () => {
       ...ARM2E,
       roll: rollArM2e,
       rollSpellCast,
+      rollSpontaneousCast,
       CreationWizard: ArM2eCreationWizard
     };
 

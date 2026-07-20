@@ -48,11 +48,12 @@ function buildInitialState(actor) {
       name: actor.name ?? "",
       age,
       characterType,
-      biography: system.identity?.biography ?? "",
       covenant: system.identity?.covenant ?? "",
+      house: system.identity?.house ?? "",
       gender: system.identity?.gender ?? "",
-      yearBorn: Number(system.identity?.yearBorn) || 0,
+      yearBorn: Number(system.identity?.yearBorn) || 1195,
       currentYear: Number(system.identity?.currentYear) || 1220,
+      biography: system.identity?.biography ?? "",
       traits: system.personality?.traits ?? ""
     },
     characteristics,
@@ -189,7 +190,12 @@ export class ArM2eCreationWizard extends FormApplication {
     const type = this.state.identity.characterType;
     const age = Number(this.state.identity.age) || 0;
     const isMagus = this._isMagus(type);
-    const step = this.state.currentStep;
+    const skipsVirtues = this._skipsVirtuesStep(type);
+    let step = this.state.currentStep;
+
+    if (skipsVirtues && step === 3) step = 5;
+    if (!isMagus && step === 4) step = skipsVirtues ? 5 : 3;
+    if (step !== this.state.currentStep) this.state.currentStep = step;
 
     const charBudget = characteristicPointBudget(type);
     const charSpent = characteristicPointsSpent(this.state.characteristics);
@@ -235,6 +241,7 @@ export class ArM2eCreationWizard extends FormApplication {
       isStep5: step === 5,
       isLastStep: step === TOTAL_STEPS,
       isMagus,
+      skipsVirtues,
       abilityMin: ABILITY_MIN,
       abilityMax: ABILITY_MAX,
       steps: this._buildSteps(step),
@@ -284,11 +291,19 @@ export class ArM2eCreationWizard extends FormApplication {
    * @param {number} currentStep
    */
   _buildSteps(currentStep) {
+    const type = this.state.identity.characterType;
+    const skipsVirtues = this._skipsVirtuesStep(type);
+    const isMagus = this._isMagus(type);
+
     return [
       { id: 1, label: "Identity", active: currentStep === 1, complete: currentStep > 1 },
       { id: 2, label: "Abilities", active: currentStep === 2, complete: currentStep > 2 },
-      { id: 3, label: "Virtues", active: currentStep === 3, complete: currentStep > 3 },
-      { id: 4, label: "Magic", active: currentStep === 4, complete: currentStep > 4 },
+      ...(!skipsVirtues
+        ? [{ id: 3, label: "Virtues", active: currentStep === 3, complete: currentStep > 3 }]
+        : []),
+      ...(isMagus
+        ? [{ id: 4, label: "Magic", active: currentStep === 4, complete: currentStep > 4 }]
+        : []),
       { id: 5, label: "Finalize", active: currentStep === 5, complete: false }
     ];
   }
@@ -434,8 +449,13 @@ export class ArM2eCreationWizard extends FormApplication {
    */
   _onWizardStep(event) {
     event.preventDefault();
-    const step = Number(event.currentTarget.dataset.wizardStep);
+    let step = Number(event.currentTarget.dataset.wizardStep);
     if (!Number.isInteger(step) || step < 1 || step > TOTAL_STEPS) return;
+
+    const type = this.state.identity.characterType;
+    if (this._skipsVirtuesStep(type) && step === 3) step = 5;
+    if (!this._isMagus(type) && step === 4) step = this._skipsVirtuesStep(type) ? 5 : 3;
+
     this.state.currentStep = step;
     this._renderPreservingFocus();
   }
@@ -483,8 +503,12 @@ export class ArM2eCreationWizard extends FormApplication {
 
   async _onForge(event) {
     event.preventDefault();
+    const type = this.state.identity.characterType;
     const errors = [
-      ...this._validateStep1()
+      ...this._validateStep1(),
+      ...this._validateStep2(),
+      ...(this._skipsVirtuesStep(type) ? [] : this._validateStep3()),
+      ...(this._isMagus(type) ? this._validateStep4() : [])
     ];
 
     if (errors.length) {
@@ -643,15 +667,54 @@ export class ArM2eCreationWizard extends FormApplication {
   }
 
   _validateStep2() {
-    return [];
+    const errors = [];
+    const type = this.state.identity.characterType;
+    const age = Number(this.state.identity.age) || 0;
+    const budget = abilityPointBudget(type, age);
+    const spent = abilityPointsSpent(this.state.abilities);
+    if (spent > budget) errors.push(`Abilities overspent by ${spent - budget} points.`);
+    return errors;
   }
 
   _validateStep3() {
+    if (this._skipsVirtuesStep(this.state.identity.characterType)) return [];
+
+    const virtuePoints = this.state.virtuesFlaws
+      .filter((entry) => entry.kind === "virtue")
+      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
+    const flawPoints = this.state.virtuesFlaws
+      .filter((entry) => entry.kind === "flaw")
+      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
+
+    if (virtuePoints !== flawPoints) {
+      return [`Virtues (${virtuePoints}) and Flaws (${flawPoints}) must balance.`];
+    }
+
     return [];
   }
 
   _validateStep4() {
-    return [];
+    if (!this._isMagus(this.state.identity.characterType)) return [];
+
+    const errors = [];
+    const artBudget = magusArtPointBudget();
+    const artSpent = artPointsSpent(this.state.arts.techniques, this.state.arts.forms);
+    if (artSpent > artBudget) errors.push(`Arts overspent by ${artSpent - artBudget} points.`);
+
+    const spellBudget = magusSpellPointBudget();
+    const spellSpent = spellPointsSpent(this.state.spells);
+    if (spellSpent > spellBudget) errors.push(`Spells overspent by ${spellSpent - spellBudget} points.`);
+
+    const intelligence = Number(this.state.characteristics.intelligence) || 0;
+    for (const spell of this.state.spells) {
+      const castingTotal = spellCastingTotal(spell, this.state.arts, intelligence);
+      const level = Number(spell.level) || 0;
+      if (level > castingTotal + 10) {
+        errors.push(`"${spell.name}" (Lv ${level}) exceeds Tech+Form+Int+10 (${castingTotal + 10}).`);
+      }
+    }
+
+    return errors;
   }
 
   async _commitCharacter() {
@@ -660,6 +723,8 @@ export class ArM2eCreationWizard extends FormApplication {
     const confidence = defaultConfidence(type);
     const serializedAbilities = serializeAbilitiesForActor(this.state.abilities);
     const abilityItemData = serializeAbilityItemsForActor(this.actor, registry, serializedAbilities);
+    const isMagus = this._isMagus(type);
+    const skipsVirtues = this._skipsVirtuesStep(type);
 
     await this.actor.update({
       name: this.state.identity.name.trim(),
@@ -667,6 +732,7 @@ export class ArM2eCreationWizard extends FormApplication {
       "system.identity.characterType": type,
       "system.identity.biography": this.state.identity.biography ?? "",
       "system.identity.covenant": this.state.identity.covenant ?? "",
+      "system.identity.house": this.state.identity.house ?? "",
       "system.identity.gender": this.state.identity.gender ?? "",
       "system.identity.yearBorn": Number(this.state.identity.yearBorn) || 0,
       "system.identity.currentYear": Number(this.state.identity.currentYear) || 1220,
@@ -678,47 +744,94 @@ export class ArM2eCreationWizard extends FormApplication {
       "system.confidence.max": confidence
     });
 
-    const removableTypes = new Set(["spell", "virtueFlaw", "ability"]);
-    const existing = this.actor.items.filter((item) => removableTypes.has(item.type));
-    if (existing.length) {
-      await this.actor.deleteEmbeddedDocuments("Item", existing.map((item) => item.id));
+    // Upsert abilities by key; preserve custom (non-registry) ability Items
+    const registryKeys = new Set(registry.ABILITY_ENTRIES.map((entry) => entry.key));
+    const forgedKeys = new Set(abilityItemData.map((entry) => entry.system.key));
+    const abilityUpdates = [];
+    const abilityCreates = [];
+
+    for (const data of abilityItemData) {
+      const existing = this.actor.items.find(
+        (item) => item.type === "ability" && item.system?.key === data.system.key
+      );
+      if (existing) {
+        abilityUpdates.push({
+          _id: existing.id,
+          name: data.name,
+          system: data.system
+        });
+      } else {
+        const createData = { ...data };
+        delete createData._id;
+        abilityCreates.push(createData);
+      }
     }
 
-    const items = [...abilityItemData];
+    const abilityDeletes = this.actor.items
+      .filter((item) => (
+        item.type === "ability"
+        && registryKeys.has(item.system?.key)
+        && !forgedKeys.has(item.system?.key)
+      ))
+      .map((item) => item.id);
 
-    for (const spell of this.state.spells) {
-      items.push({
-        name: spell.name,
-        type: "spell",
-        system: {
-          level: Number(spell.level) || 0,
-          technique: spell.technique,
-          form: spell.form,
-          artAbbrev: spell.artAbbrev ?? "",
-          isGeneral: Boolean(spell.isGeneral),
-          source: spell.source ?? "",
-          range: spell.range ?? "",
-          duration: spell.duration ?? "",
-          target: spell.target ?? "",
-          mastered: Boolean(spell.mastered),
-          notes: spell.notes ?? ""
-        }
-      });
+    if (abilityDeletes.length) {
+      await this.actor.deleteEmbeddedDocuments("Item", abilityDeletes);
+    }
+    if (abilityUpdates.length) {
+      await this.actor.updateEmbeddedDocuments("Item", abilityUpdates);
+    }
+    if (abilityCreates.length) {
+      await this.actor.createEmbeddedDocuments("Item", abilityCreates);
     }
 
-    for (const entry of this.state.virtuesFlaws) {
-      items.push({
-        name: entry.name,
-        type: "virtueFlaw",
-        system: {
-          kind: entry.kind,
-          points: Number(entry.points) || 0,
-          magnitude: entry.magnitude ?? "",
-          category: entry.category ?? "",
-          description: entry.description ?? "",
-          source: entry.source ?? ""
-        }
-      });
+    // Replace spells always; replace V&F for companions/magi, clear them for grogs
+    const replaceIds = this.actor.items
+      .filter((item) => item.type === "spell" || item.type === "virtueFlaw")
+      .map((item) => item.id);
+    if (replaceIds.length) {
+      await this.actor.deleteEmbeddedDocuments("Item", replaceIds);
+    }
+
+    const items = [];
+
+    if (isMagus) {
+      for (const spell of this.state.spells) {
+        items.push({
+          name: spell.name,
+          type: "spell",
+          system: {
+            level: Number(spell.level) || 0,
+            technique: spell.technique,
+            form: spell.form,
+            artAbbrev: spell.artAbbrev ?? "",
+            isGeneral: Boolean(spell.isGeneral),
+            source: spell.source ?? "",
+            range: spell.range ?? "",
+            duration: spell.duration ?? "",
+            target: spell.target ?? "",
+            mastered: Boolean(spell.mastered),
+            notes: spell.notes ?? ""
+          }
+        });
+      }
+    }
+
+    if (!skipsVirtues) {
+      for (const entry of this.state.virtuesFlaws) {
+        items.push({
+          name: entry.name,
+          type: "virtueFlaw",
+          system: {
+            kind: entry.kind,
+            points: Number(entry.points) || 0,
+            magnitude: entry.magnitude ?? "",
+            category: entry.category ?? "",
+            description: entry.description ?? "",
+            source: entry.source ?? ""
+          }
+        });
+      }
     }
 
     if (items.length) await this.actor.createEmbeddedDocuments("Item", items);

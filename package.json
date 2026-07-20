@@ -5,6 +5,7 @@
   "scripts": {
     "compile:packs": "node scripts/compile-compendiums.mjs",
     "parse:spells": "node scripts/parse-spells-ch9.mjs",
+    "parse:abilities": "node scripts/parse-ability-descriptions.mjs",
     "validate:packs": "node scripts/seed-compendiums.mjs"
   },
   "devDependencies": {

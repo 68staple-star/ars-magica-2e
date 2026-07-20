@@ -8,7 +8,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Manipulating your spells and performing special feats with them. You will have to make rolls with this ability to place objects delicately with your Unseen Arm, for example. I ti s also useful fortargetingspellsa ndother such maneuvers described in the Magic chapter. Specialties: grace, precision, any one form (but not a technique). (Per)"
     }
   },
   {
@@ -20,7 +21,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Getting your spell through resistance offered by the target. Add it to thenumberyou rolled to cast your spell when comparing that number to the target's resistance roll. Special ties: any one form or technique. make and just what the result of one is. Descriptions also list sample specialties and (in parentheses) the characteristics most often used with the abilities. Feel free to invent your own abilities. Unique abilities, added with troupe approval, make a character distinct and help elucidate their persona Ii ty."
     }
   },
   {
@@ -32,7 +34,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Noticing something that you're not looking or listen- restraint, squeeze into a small space, or get through a small ingfor. Useitw hen you mightbe surprisedby someonesneak- � 0 opening. Specialties: ropes, breaking people's holds, crawl, ing up on you or when something interesting is ha ppcning that squeeze. (Dex, Str) you aren't yet aware of. It tells you something' s there, bu tdoes Direction Sense- You can determine which way is north on a roll not give the specific information that Scan does. Specialties:. \\ 0 of 9+. Specialties: underground, in towns, in woods, at sea. bodyguarding, traps, ambushes. (Per) \\\\ (Per)"
     }
   },
   {
@@ -44,7 +47,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Noticing things that you are looking or listening for. Used Empathy- You can intuitively understand the emotional needs of to catch or identify faint sounds, to hear someone whispering others and can therefore respond to them correctly. Add your to you, or to see the riders approaching across the moor. score to appropriate Com, Prs, and Folk Ken rolls. Specialties: Specialties: keeping watch, quick scan, sea, woods. (Per) warriors, those in need, anger."
     }
   },
   {
@@ -56,7 +60,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Looking for something in a small area, such as trying to Enchanting Music- When you set your mind to it, you can find a ring in a castle larder or searching for concealed doors, influence others ina Sf't?dficwayby trying toenchant them with objects, or even people. Specialties: in the dark, sounds, pla,. your music. After a successful roll with a musical ability, such (Per).-; - \\ 0 as Sing or Play Lute, make a stress roll with Enchanting Music Q �� 'cl A C, • \"c, A { 1., 1 u 1r +P rs and compare the result to the following chart to see how 1 r' ··'' ( 11 () >-:./,: '· {�> well you affect the aud ience. The harder the effcct, the higher Exceptl·onal Talents -v \" �· 6 1 t' I.r.,P Ill o / �,, \"·.Ji\",� 1.Y,, \"/ ·\"., J you must roll. Fora specific (as opposed to general) effect, you You can have an exceptional talent only if you bought it as a must sing words that people can understand. Y…"
     }
   },
   {
@@ -68,7 +73,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Crea ting potions, poisons, and elixir s, and the refining of alchemical substances. You can make a potion as per the rules for magi; your Lab total is Int + Alchemy. Alchemy is especially suited for some purposes, so you get bonuses when making certain types of potions: poisons +5, antidotes +4, healing & health +3, transformations +2. You may also Wish to indulge yourself in more esoteric pursuits, such as discovering the secret of the philosophers' stone. Magi with Ale hem y may add it to the Lab total when creating potions, and they get the bonuses described above (such as +5 for poisons) as well. Spe cialties: potions related to any one technique, such as Perdo or Muto. (I nt)"
     }
   },
   {
@@ -80,7 +86,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "A profound empathy with animals that allows you to understand their motivations and feelings. Such empathy engenders a solemn love and respect for animals of all kinds. • '19 By touching and speaking softly to a wild (but not violent) � animal and rolling 12 +, you can tame it to your touch within a matterof minutes. Adds to Animal Handling rolls. Specialties: horses, wolves, falcons. (Int, Per)"
     }
   },
   {
@@ -92,7 +99,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": ""
     }
   },
   {
@@ -104,7 +112,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": ""
     }
   },
   {
@@ -116,7 +125,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": ""
     }
   },
   {
@@ -128,7 +138,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": ""
     }
   },
   {
@@ -140,7 +151,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "presence"
+      "rollCharacteristic": "presence",
+      "description": "The power to control another's will. First you must stare deeply into the other's eyes for several seconds - generally impossible in combat. Then you can command the victim verbally to perform a certain task. At that point, roll a die versus the target to see if the command will be carried out. You roll Prs + Entrancement vs. the victim's Stm roll. In addition, the victim gets a bonus according to the command, as rated by the storyguide. (ReMe 40) Specialties: seduction, domineering, with the prideful. Command Example Bonus Innocuous Talk to me +3 Questionable Meet me alone at night -t6 Dangerous Put away your weapons +9 Heinous Kill your fellows +12 Suicidal Jum p out the window +15"
     }
   },
   {
@@ -152,7 +164,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Empathic understanding of how to aid the wounded, the sick, and the suffering. Add your score to any roll to tend wounds or disease, and to the recovery rolls of any whom you \"'\\ 0 tend regularly. You can also use it to calm the grieving, to \\'\\.J soothe pains, or to perform other similar actions. Specialties: disease, childbirth, broken bones. (Prs, Com, Dex)"
     }
   },
   {
@@ -164,7 +177,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Hexes can bring injury or ruin to your enemies. You must wish a specific calamity upon the person by cursing them aloud, and the storyguide (based on your roll) determines how much ofit comes true. The full extent of thehex will strikeyour victim in a day to a month. Protection of the Church or magic might prevent a hex, but a hex can often bypass magic resis tance by affecting the victim indirectly. Sometimes the Church punishes those whose curses are widely known to have come to pass. Specialties: revenge, fear, crops, children. (PeMe, PcCo, PeAn, etc. 20) Hex Roll Cause a calf to be born with only three legs 9 Bring a debilitating illness to a family member 15 Cause the victim to be killed in a strange accident 21"
     }
   },
   {
@@ -176,7 +190,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Feeling the aura of magic to identify a place or object as magical. A roll of 9+ lets you sense magic in the general area, and a roll of 15+ lets you pinpoint it on a certain object. Because you are sensitive to magic, you must subtract your score from all natural and magic resistance rolls. Special ties: any one specific technique or form. (Per)"
     }
   },
   {
@@ -188,7 +203,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Mim icking others' voices as well as animal sounds. Mimicry is far from perfect, and you.will have to make good� 0 rolls (usually 9+) to mimic a specific person's voice convinc ing! y. Specialties: wolf howl, specific persons, sounds of pain. (Com)"
     }
   },
   {
@@ -200,7 +216,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Keeping your balance, especially on narrow ledges or tightropes. Add your score to any roll to avoid falling, tripping, etc. Specialties: ropes, ledges, high winds. N °"
     }
   },
   {
@@ -212,7 +229,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Sensing danger intuit ively, having the feeling that something is wrong or likely to go wrong soon. For examp le, a roll of 12 + lets you anticipate an ambush the round before it is sprung. Specialties: cities, forest, caverns, natural disasters, intentional ambush. (Per)"
     }
   },
   {
@@ -224,7 +242,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "You have the limi tcd,self-taught ability toread lips. It is far from perfect, and you will get many words confused; but;\\/ 0 it is vital toa deaf, illiterate person who wants to commun icate, and extremely handy for a thief. A roll of 9+ lets you catch the gist of a person's speech through lip-reading. Specialties: con versations, whispers, speeches. (Per)"
     }
   },
   {
@@ -236,7 +255,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Seeing ghosts, demons, and other invisible spiri ts, usually on rolls of 9+. Specialties: ghosts, demons, at night, while concentrating. (Per)"
     }
   },
   {
@@ -248,7 +268,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": ""
     }
   },
   {
@@ -260,7 +281,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Receiving visions related to emotionally or magically laden events. Whenever it is appropriate to the story and the setting, the storyguide can have you make a roll to see if you have a vision. Roll a stress die and add the level of the magic aura; you have a Vision if you roll 12 +. The storyguide must make up the vision,. which could be of the past, of a possible future, orofa related but distant event. Usually the visions are symbolic or confusing. Interpreting the vision correctly re quires an Int + Visions roll of 9+ (which the storyguide may make secretly). Visions usually come to you at quiet times when you are in a place connected with a powerful emotional or magical event, such as the site of a patricide or diabolic sacrifice. Specialties: past, future, over a distance, grief, death."
     }
   },
   {
@@ -272,7 +294,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "On a roll of 9+, you can sense what the weather 1 will be like the next day, or less if the weather is rapidly /\\! 0 changing. Specialties: storms, sea, temperature. (Per) Physical Talents"
     }
   },
   {
@@ -284,7 +307,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "stamina"
+      "rollCharacteristic": "stamina",
+      "description": ""
     }
   },
   {
@@ -296,7 +320,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "stamina"
+      "rollCharacteristic": "stamina",
+      "description": "Climbing all manner of difficult surfaces, including trees, cliffs, mountai nsides, and walls. Specialized equipment is nec essary for more difficult climbs. A botch usually means a fall. (See falling rules in the Combat chapter.) Specialties: cliffs, trees, walls. (Dex, Str)"
     }
   },
   {
@@ -308,7 +333,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "quickness"
+      "rollCharacteristic": "quickness",
+      "description": "Getting out of the way of attacks and other dangers. Add your Dodge + Qik - Enc to obtain your Defense total (see the Combat chapter). Specialties: reaction to surprise attack, vs. one type of attack (thrown, thrusting, unarmed, etc.)"
     }
   },
   {
@@ -320,7 +346,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "presence"
+      "rollCharacteristic": "presence",
+      "description": "Possession of a certain indelible force of presence, which causes people to trust you and want to follow you. It works on audiences and groups of people the way Charm works on individuals. Specialties: demagoguery, war, politics, inspirational, religion. (Prs)"
     }
   },
   {
@@ -332,7 +359,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": ""
     }
   },
   {
@@ -344,7 +372,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Telling convincing lies. If you understand the person you are lying to (such as by a Per + Folk Ken roll of 10 +), you may gain a bonus to your Guile roll. Specialties: lying to authority, elaborate lies, quick lies. (Com, Per) Sllills Skills are trained or possibly self-taught abilities. You can increase them through training or direct experience. If you try something covered by a skill that you lack, you suffer a penalty. Forrelatively common skills,such asSwim, your penalty is onlyan extra botch roll or two. For more refined skills, such as lock picking, your penalty can be as high as -8. Arcane S�ills Only magi may have these skills."
     }
   },
   {
@@ -356,7 +385,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Understanding the motives, background, and person ality of another person. Predictions ofa person's actions, when possible, are never, ever certain. The storyguide should se cretly roll a die when this ability is used. A \"O\" means that it fails, despite your roll. This kind of uncertainty keeps players on their toes. Specialties: peasants, townfolk, nobles, clergy, wizards, the opposite sex. (I nt, Per)"
     }
   },
   {
@@ -368,7 +398,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Feigning an emotion, a belief, or a certain frame of mind. This ability is similar to Acting because you are pretending to be that which you are not, but unlike Acting, you are not pre tending that you are someone other than yourself. Specialties: tears, anger, friendliness, passion. (Com)"
     }
   },
   {
@@ -380,7 +411,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": ""
     }
   },
   {
@@ -392,7 +424,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Formal Hermetic magical contest between magi."
     }
   },
   {
@@ -404,7 +437,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "The Hermetic ritual shield against magic. Score × 5 contributes to magic resistance (plus Form)."
     }
   },
   {
@@ -416,7 +450,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Handling and use of animals, including rais ing them, tending them, grooming them, and dealing with their medical problems. Specialties: falcons, dogs, horses, veterinary. (Int, Per)"
     }
   },
   {
@@ -428,7 +463,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Finding food, water, shelter, a direct route, and relative safety in the wilderness, a very dangerous and \"wild\" place in the Middle Ages. It covers such mun dane tasks as lighting a fire(wit hout matches) and cooking food without implements."
     }
   },
   {
@@ -440,7 +476,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "perception"
+      "rollCharacteristic": "perception",
+      "description": "Following and identifying the tracks of creatures and beasts of all varieties. Also covering your own tracks or never leaving any in the first place. Specialties: woodlands, moun tains, swamps, tracking humans, hiding tracks. (Per) Mental S�ills"
     }
   },
   {
@@ -452,7 +489,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "stamina"
+      "rollCharacteristic": "stamina",
+      "description": "Focusing your mental facult ies on one task, espe cially for extended periods of time. If you areattemptinga feat that demands your extended attention, especially if you have just failed the feat and are trying again, the storyguide can call for a Concentration roll before you can make the attempt. Tl)e ease factor increases on subsequent attempts. This skill is es pecially important for magi because it helps them maintain concentration on a spell despite distractions. Specialties: ig noring pain, ignoring sounds, concentrating for long periods. (Stm, In t)"
     }
   },
   {
@@ -464,7 +502,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "stamina"
+      "rollCharacteristic": "stamina",
+      "description": "Focusing on your mind and ignoring outside influ ences. It's helpful for recovering from fatigue, for certain magical activi ties, and for praying. Specialties: prayer, com posing your thoughts, resting the body, controlling emotions. (Int) Performance SRills"
     }
   },
   {
@@ -476,7 +515,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Playing a role before an audience. Acting incorporates the ability to mimic gestures and accents, and allows you to change your apparent personality to create a believable character. Often as useful off stage as on. Specialties: improvisation, tragedy, soaring passions, a specific role. (Com, Prs)"
     }
   },
   {
@@ -488,7 +528,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Choosing an appropriate story from your repertoire (which grows with your score) and telling it well. Mast ers of the art can tell stories for weeks without repeating themselves. Specialties: poems, romances, tributes, improvisation. (Com)"
     }
   },
   {
@@ -500,7 +541,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": ""
     }
   },
   {
@@ -512,7 +554,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Singing well, and knowing a repertoire of songs. Everyone can sing, but this skill indica tes a level of competence that allows others to enjoy list ening to it. Specialties: solo, choral, ballads, lul labies, war songs. (Com)"
     }
   },
   {
@@ -524,7 +567,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Playing a musical instrument you specify."
     }
   },
   {
@@ -536,7 +580,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Enc. The Atk total is Dex+ Brawl. (Def is normal.) Specific rolls for the various maneuv ers are given in the Brawling Maneu vers Table. Striking is hitting your opponent in an att empt to cause damage, possibly with the fist, knee, foot, etc. You can increase damage by using a cestus or other weapon, at the storyguide's option. Brawling damage isdif ferentf rom standard dam age. The first 10 points by which you exceed your opponent' sSoak roll cause the loss of a fatigue level instead of a body level. The next ten points cause the loss of a body level as well. If your brawling dam age exceeds your opponent's Soak roll by 21 points or more, the opponent is knocked unconscious. Throwing is unbalancing and toppling your opponent while remaining standing yourself. Tackling is knocking an opponent down while falling down yourself. If you take a running start before you tackle, you get a -…"
     }
   },
   {
@@ -548,7 +593,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Fighting with a one-handed melee weapon (swords, axes, maces, and similar). Used with LoM/ArM5 Single ability weapons."
     }
   },
   {
@@ -560,7 +606,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Fighting with two-handed or pole weapons (great swords, spears, staves, and similar). Used with LoM/ArM5 Great ability weapons."
     }
   },
   {
@@ -572,7 +619,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Shooting bows. Used with LoM/ArM5 Bow ability weapons."
     }
   },
   {
@@ -584,7 +632,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Throwing weapons such as knives, javelins, and axes. Used with LoM/ArM5 Thrown ability weapons."
     }
   },
   {
@@ -596,7 +645,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Shooting crossbows. Used with LoM/ArM5 Crossbow ability weapons."
     }
   },
   {
@@ -608,7 +658,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Riding and controlling a horse, especially under stress. Spe cialties: performance, speed, in battle. (Dex, Str)"
     }
   },
   {
@@ -620,7 +671,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "stamina"
+      "rollCharacteristic": "stamina",
+      "description": "A refinement of the skill most folk already have. Special ties: rough water, diving, swimmin g deep, long dist ance, underwater. (Dex) Ro�ue S�ills"
     }
   },
   {
@@ -632,7 +684,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": ""
     }
   },
   {
@@ -644,7 +697,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Sleight of hand and a mind oriented towards dis covering ready sources of income. It requires a delicate grace and dexterity and great hand-eye coordination. It is usually the province of petty thieves, who often have a hand cut off for their 'troubles. Legerdemain includes filching things from market stalls and cutting purses, as well as simple, \"magical\" trickery - often used in confidence games, such as the shell game, to raise money from the credulous folk who play them. Stealing is usually a tricky task, so victims often get a +2 to their Per + Legerdemain rolls to catch you. Specialties: filch, pick pockets, prestidigitation. (Dex, Qik)"
     }
   },
   {
@@ -656,7 +710,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Opening locks without the convenience of a key, and usually without the permissi on of theowner. Certain locksare so in tricate that a minimum skill level is required even to attempt to open them, but these locks are very rare. Medieval locks are much larger, bulkier, and sim pier than their modern counterparts. Specialties: traps, speed, in darkness. (Dex)"
     }
   },
   {
@@ -668,7 +723,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "quickness"
+      "rollCharacteristic": "quickness",
+      "description": "Sneaking about without being seen or heard. It includes following people withou tt heir noticing you. This skill may be judged according to an ease factor, or may be rolled against another person's Perception roll. Specialties: hide, sneak, tail, forest, towns. (Dex) Soci al S�ills"
     }
   },
   {
@@ -680,7 +736,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "communication"
+      "rollCharacteristic": "communication",
+      "description": "Negotiating successfully and getting along with other people without putting on an act, overt mani pula ti on, or letting your own desires fall to the wayside. It is know ledge of the informal rules of give and take, as well as the official, cultural rules of conduct and politeness. Because of the value of a player's actionsand speech in Diplomacy, always try to use the role-playing modifier. Specialties: negotiation, politics, etiquett e, tact. (Com)"
     }
   },
   {
@@ -692,7 +749,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "stamina"
+      "rollCharacteristic": "stamina",
+      "description": "Drinking prodigious amo unts of alcohol without pass ing out, a familiarity with expec ted and acceptable drinking behavior, as well as enjoying drinking without hurting your self. With this skill, a person is able tohave fun in a tavern, even ino neo fa di fferentcult ure. Ar ollc anb c made to seehowsmall a penalty is given to a character who has been drinking. Spe cialties: guzzle, drinking songs, vulgarity, keeping your head about you. (Stm, Com)"
     }
   },
   {
@@ -704,7 +762,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "presence"
+      "rollCharacteristic": "presence",
+      "description": "Inspiring fear in others and scaring them into sub mission, man ipulat ing their own fears and weaknesses to use as weapons against them. (Folk Ken may be of help in many compl ime ntary rolls). Specialties: overt, subtle, threats, vio lence, intellectual. (Prs, Str, and even Int)."
     }
   },
   {
@@ -716,7 +775,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": ""
     }
   },
   {
@@ -728,7 +788,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "presence"
+      "rollCharacteristic": "presence",
+      "description": "Getting people to obey your orders and to follow your lead. With a successful Leadership roll, you may add your score as a modif ier to another's appropriate personality trait rolls. For insta nce, you could encourage the grogs to be brave or cautious. Specialties: giving orders, engendering loyalty, combat, inspiring bravery. (Prs) Weapon S�ills When you choose a weapon skill, you pick a specific weapon. You mu st choose att ack and parry skills separately. You cannot have parry scores with throwing weapons or missile weapons. The storyguide may allow you to use this skill at a small penalty when you wield a weapon simi lar to the one with which you are trained. In a single round, you cannot both attack and parry with a single, one-handed weapon, but you can with a two-handed weapon. The use of weapon skills is explained in the Combat chapter. MeleeSpecialties: charging, tournaments,…"
     }
   },
   {
@@ -740,7 +801,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "Han dl ing small watercraft of all types, vital for most fishing. Specialties: directing others, handling storms, repairs. (Dex)"
     }
   },
   {
@@ -752,7 +814,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": ""
     }
   },
   {
@@ -764,7 +827,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "dexterity"
+      "rollCharacteristic": "dexterity",
+      "description": "A specific craft trade you name."
     }
   },
   {
@@ -776,7 +840,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Appraising a category of goods you specify."
     }
   },
   {
@@ -788,7 +853,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": ""
     }
   },
   {
@@ -800,7 +866,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": ""
     }
   },
   {
@@ -812,7 +879,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Knowledge of what magic is and how it works, used primarily for working in the laboratory. You can some times gain experience through experimentation (see the Magic chapter). Specialties: potions, enchanting items, inventing spells. Magus base score: 5. Casual Knowledues These can be studied, but one can also pick them up through through direct experience, about 1 experience point for a month of exposure or for participation in a significant event, such as a faerie list, or make up your own: baking, blacksmithi ng, bowyery, carpentry, chandlery, clothiery, cooperage, engineering, em balming, fishing, glass working, goldsmit hing, hide-worki�g, jewel-working, leather-crafting, locksmithi ng, masonry, m11l ery, portrait painting, perfumery, pottery, sculpting, sil versmithing, shipbuilding, smelting, woodcrafting, weaponry, wine making. Specialties: appropriate for the craft. (I nt, Dex)"
     }
   },
   {
@@ -824,7 +892,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Knowledge of a specific geographic area you specify."
     }
   },
   {
@@ -836,7 +905,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Knowledge of Christianity, especially as expressed locally, including church politics. Specialties: saints, clergy, history, corruption."
     }
   },
   {
@@ -848,7 +918,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Familiarity with the enigmatic faeries, partial knowl edge of some of their powers and weaknesses, and under standing (understanding?) of their needs and motivations. Even with this knowledge, categorizing the faeries neatly or making sense of their behavior is difficult. Specialties: faerie forests, the unseelie court, faerie mounds, faerie festivals."
     }
   },
   {
@@ -860,7 +931,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Familiarity with the magical creatures of the world, such as dragons, unicorns, ogres, and so on. Specialties: races of Cain, dragonkind, weaknesses, motivations, habitat."
     }
   },
   {
@@ -872,7 +944,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Familiarity with legends and folklore, some of which may even be true. Use this lore when you are trying to remember information about some mythical place, beast, or hero. It can often give vital insights into the weaknesses of a monster or the location of a mystic oak. Specialties: beasts, heroes, faeries, a particular place. ·"
     }
   },
   {
@@ -884,7 +957,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "An understanding of the sinister side of the world, of its darker aspects. It includes knowledge of demons, their habits, and their weaknesses; of theundead and their habits; or, of the sinister powers of curses. Specialties: demons, undead, curses."
     }
   },
   {
@@ -896,7 +970,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Speaking a specific language or alphabet you specify."
     }
   },
   {
@@ -908,7 +983,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": ""
     }
   },
   {
@@ -920,7 +996,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Familiarity with all the branches of higher learning, including the classics. Most are rare Latin copies and, thanks to the Arabs, some Greek texts. Specialties: arts, science, phi losophy."
     }
   },
   {
@@ -932,7 +1009,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "The art of healing at a level not commonly found in medieval society. Includes knowledge of the structure and functions of the human body (the study of which the Church punishes by burning), the use of elixirs and herbs in healing (which can aid a magus in obtaining materials for potions and other laboratory procedures), and the diagnosis and treatment of disease. Some wounds and diseases can only be cured by a person knowledgeable in the art of medicine. The knowledge of medicine may give you a bonus on Chirurgy rolls because you know better salves and ointments to apply to the wounds. Specialties: anatomy, apothecary, physicianry."
     }
   },
   {
@@ -944,7 +1022,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": "Reading and writing a specific alphabet you specify."
     }
   }
 ]

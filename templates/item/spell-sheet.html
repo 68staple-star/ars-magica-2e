@@ -28,11 +28,14 @@
     <label>Range <input type="text" name="system.range" value="{{system.range}}" /></label>
     <label>Duration <input type="text" name="system.duration" value="{{system.duration}}" /></label>
     <label>Target <input type="text" name="system.target" value="{{system.target}}" /></label>
-    <label class="arm2e-span-2">Journal UUID <input type="text" name="system.journal" value="{{system.journal}}" placeholder="@UUID[...]" /></label>
     <label class="arm2e-check arm2e-span-2"><input type="checkbox" name="system.mastered" {{checked system.mastered}} /> Mastered</label>
     <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" placeholder="Rulebook reference" /></label>
     <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="3">{{system.notes}}</textarea></label>
   </div>
+  <details class="arm2e-advanced-refs">
+    <summary>Advanced — Journal UUID</summary>
+    <label class="arm2e-span-2">Journal UUID <input type="text" name="system.journal" value="{{system.journal}}" placeholder="@UUID[...]" /></label>
+  </details>
   {{#if system.journal}}
   <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.journal}}"><i class="fas fa-book-open"></i> Open Description</button>
   {{/if}}

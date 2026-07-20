@@ -37,6 +37,10 @@
         {{/each}}
       </select>
     </div>
+    <div class="form-group">
+      <label for="{{item._id}}-description">Description</label>
+      <textarea id="{{item._id}}-description" name="system.description" rows="5">{{system.description}}</textarea>
+    </div>
     {{#if definition}}
     <p class="arm2e-note">Default characteristic from rules: {{definition.characteristic}}{{#if definition.alternates}}; alternates may apply depending on use{{/if}}</p>
     {{/if}}

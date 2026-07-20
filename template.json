@@ -8,6 +8,7 @@
         "biography": "",
         "covenant": "",
         "covenantJournal": "",
+        "house": "",
         "gender": "",
         "yearBorn": 0,
         "currentYear": 1220,
@@ -84,7 +85,8 @@
       "value": 0,
       "xp": 0,
       "specialty": "",
-      "rollCharacteristic": "intelligence"
+      "rollCharacteristic": "intelligence",
+      "description": ""
     },
     "art": {},
     "spell": {

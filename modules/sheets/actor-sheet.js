@@ -6,6 +6,7 @@ import { findAbilityItem } from "../utils/abilities.js";
 import { prepareCombatData } from "../utils/combat.js";
 import { prepareSpellLists } from "../utils/spells.js";
 import { prepareAbilityColumns, prepareCharacteristicPairs } from "../utils/sheet-data.js";
+import { promptSpontaneousCast } from "../utils/spontaneous-cast.js";
 import { prepareVirtueFlawList } from "../utils/virtues.js";
 import { prepareFatigueTrack, prepareStatusStrip, prepareWoundTrack } from "../utils/wounds.js";
 import { openJournalEntry } from "../utils/journal.js";
@@ -184,13 +185,9 @@ export class ArM2eActorSheet extends ActorSheet {
     const techniqueId = cell.dataset.technique ?? "";
     const formId = cell.dataset.form ?? "";
     const registry = CONFIG.ARM2E ?? ARM2E;
-    const technique = registry.TECHNIQUES.find((entry) => entry.id === techniqueId);
-    const form = registry.FORMS.find((entry) => entry.id === formId);
-    const modifier = Number(cell.querySelector(".art-total")?.textContent) || 0;
-    const techniqueLabel = technique?.abbrev ?? techniqueId;
-    const formLabel = form?.abbrev ?? formId;
 
-    await rollArM2e("stress", modifier, `${techniqueLabel}${formLabel} Casting Total`, this._rollOptions());
+    if (!techniqueId || !formId) return;
+    await promptSpontaneousCast(this.actor, techniqueId, formId, registry);
   }
 
   /**

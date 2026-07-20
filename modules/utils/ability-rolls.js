@@ -4,6 +4,7 @@
 
 import { getAbilityByKey } from "../config/ability-registry.js";
 import { rollArM2e } from "../dice.js";
+import { CONFIDENCE_BONUS, getConfidenceValue } from "./confidence.js";
 
 /**
  * @param {object} actorSystem
@@ -19,8 +20,9 @@ export function getCharacteristicValue(actorSystem, characteristicId) {
  * @param {typeof import("../config.js").ARM2E} registry
  * @param {object} actorSystem
  * @param {string} [characteristicOverride]
+ * @param {boolean} [applySpecialty=true]
  */
-export function buildAbilityRollModifier(abilityItem, registry, actorSystem, characteristicOverride) {
+export function buildAbilityRollModifier(abilityItem, registry, actorSystem, characteristicOverride, applySpecialty = true) {
   const definition = getAbilityByKey(abilityItem.system?.key);
   const characteristicId = characteristicOverride
     || abilityItem.system?.rollCharacteristic
@@ -30,7 +32,7 @@ export function buildAbilityRollModifier(abilityItem, registry, actorSystem, cha
   const characteristicValue = getCharacteristicValue(actorSystem, characteristicId);
   const abilityValue = Number(abilityItem.system?.value) || 0;
   const specialty = String(abilityItem.system?.specialty ?? "").trim();
-  const specialtyBonus = specialty ? 1 : 0;
+  const specialtyBonus = applySpecialty && specialty ? 1 : 0;
   const modifier = characteristicValue + abilityValue + specialtyBonus;
 
   const characteristic = registry.CHARACTERISTICS.find((entry) => entry.id === characteristicId);
@@ -73,13 +75,15 @@ export function formatAbilityRollLabel(breakdown, abilityLabel, abilityType) {
  * @param {Item} abilityItem
  * @param {typeof import("../config.js").ARM2E} registry
  * @param {string} characteristicId
+ * @param {{ applySpecialty?: boolean, spendConfidence?: boolean }} [options={}]
  */
-export async function executeAbilityRoll(actor, abilityItem, registry, characteristicId) {
+export async function executeAbilityRoll(actor, abilityItem, registry, characteristicId, options = {}) {
   const breakdown = buildAbilityRollModifier(
     abilityItem,
     registry,
     actor.system,
-    characteristicId
+    characteristicId,
+    options.applySpecialty !== false
   );
 
   if (!breakdown.characteristicId) {
@@ -90,7 +94,10 @@ export async function executeAbilityRoll(actor, abilityItem, registry, character
   const abilityType = abilityItem.system?.category?.replace(/s$/, "") ?? "ability";
   const label = formatAbilityRollLabel(breakdown, abilityItem.name, abilityType);
 
-  await rollArM2e("stress", breakdown.modifier, label, { actor });
+  await rollArM2e("stress", breakdown.modifier, label, {
+    actor,
+    spendConfidence: Boolean(options.spendConfidence)
+  });
 }
 
 /**
@@ -104,6 +111,8 @@ export async function promptAbilityRoll(actor, abilityItem, registry) {
   const defaultCharacteristic = abilityItem.system?.rollCharacteristic
     ?? definition?.characteristic
     ?? "";
+  const specialty = String(abilityItem.system?.specialty ?? "").trim();
+  const confidence = getConfidenceValue(actor);
 
   const options = registry.CHARACTERISTICS.map((entry) => {
     const selected = entry.id === defaultCharacteristic ? "selected" : "";
@@ -114,12 +123,28 @@ export async function promptAbilityRoll(actor, abilityItem, registry) {
     ? `<p class="notes">Rules allow alternate characteristics: ${definition.alternates.join(", ")}.</p>`
     : "";
 
+  const specialtyBlock = specialty
+    ? `<div class="form-group">
+        <label class="checkbox">
+          <input type="checkbox" name="applySpecialty" checked />
+          Apply specialty <em>${specialty}</em> (+1)
+        </label>
+      </div>`
+    : "";
+
   const content = `
     <form class="arm2e-ability-roll-dialog">
-      <p>Roll <strong>${abilityItem.name}</strong> using stress die + characteristic + ability${abilityItem.system?.specialty ? " + specialty" : ""}.</p>
+      <p>Roll <strong>${abilityItem.name}</strong> using stress die + characteristic + ability.</p>
       <div class="form-group">
         <label for="arm2e-roll-characteristic">Characteristic</label>
         <select id="arm2e-roll-characteristic" name="characteristic">${options}</select>
+      </div>
+      ${specialtyBlock}
+      <div class="form-group">
+        <label class="checkbox">
+          <input type="checkbox" name="spendConfidence" ${confidence < 1 ? "disabled" : ""} />
+          Spend 1 Confidence (+${CONFIDENCE_BONUS}) — have ${confidence}
+        </label>
       </div>
       ${alternatesNote}
     </form>
@@ -135,7 +160,14 @@ export async function promptAbilityRoll(actor, abilityItem, registry) {
           label: "Roll",
           callback: async (html) => {
             const characteristicId = html.find('[name="characteristic"]').val();
-            await executeAbilityRoll(actor, abilityItem, registry, characteristicId);
+            const applySpecialty = specialty
+              ? Boolean(html.find('[name="applySpecialty"]').is(":checked"))
+              : false;
+            const spendConfidence = Boolean(html.find('[name="spendConfidence"]').is(":checked"));
+            await executeAbilityRoll(actor, abilityItem, registry, characteristicId, {
+              applySpecialty,
+              spendConfidence
+            });
             resolve(true);
           }
         },
@@ -146,6 +178,6 @@ export async function promptAbilityRoll(actor, abilityItem, registry) {
         }
       },
       default: "roll"
-    }, { width: 360 }).render(true);
+    }, { width: 380 }).render(true);
   });
 }

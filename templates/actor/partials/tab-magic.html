@@ -1,6 +1,6 @@
 <section class="arm2e-panel arm2e-magic" aria-labelledby="arm2e-magic-heading">
   <h2 id="arm2e-magic-heading" class="arm2e-section-heading">Hermetic Arts</h2>
-  <p class="arm2e-note arm2e-arts-note">Grid cells show Technique + Form totals. Edit scores in headers.</p>
+  <p class="arm2e-note arm2e-arts-note">Click a grid cell to cast spontaneous magic (Tech + Form + Int, ÷2 or ÷5). Edit scores in headers.</p>
   <div class="arm2e-arts-grid-wrapper">
     <table class="arm2e-arts-grid arm2e-grid">
       <thead>
@@ -24,7 +24,7 @@
             <input class="art-score" type="number" name="{{technique.field}}" value="{{technique.score}}" data-dtype="Number" aria-label="{{technique.label}} score" />
           </th>
           {{#each cells}}
-          <td class="arts-cell rollable" data-technique="{{../technique.id}}" data-form="{{form.id}}" title="Roll stress die + casting total">
+          <td class="arts-cell rollable" data-technique="{{../technique.id}}" data-form="{{form.id}}" title="Cast spontaneous {{../technique.abbrev}}{{form.abbrev}}">
             <span class="art-total">{{total}}</span>
           </td>
           {{/each}}

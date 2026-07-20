@@ -211,7 +211,8 @@ export function serializeAbilityItemsForActor(actor, registry, abilityState) {
         value: Number(entry.value) || 0,
         xp: Number(entry.xp) || 0,
         specialty: entry.specialty ?? "",
-        rollCharacteristic
+        rollCharacteristic,
+        description: existing?.system?.description ?? ""
       }
     });
   }

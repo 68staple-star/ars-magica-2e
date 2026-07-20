@@ -3,11 +3,13 @@
  * Foundry d10 results use 1-10; the 10 face maps to the ArM "0" die face.
  */
 
+import { CONFIDENCE_BONUS, spendConfidence } from "./utils/confidence.js";
 import {
   applyCastingFatigue,
   getConditionModifiers,
   getFatigueLevel
 } from "./utils/wounds.js";
+import { spontaneousLevelEquivalent } from "./utils/spontaneous.js";
 
 /**
  * @returns {number} Raw Foundry d10 result (1-10).
@@ -169,6 +171,18 @@ async function buildChatContent(dieResult, baseModifier, label, context = {}) {
     ...conditionParts
   ];
 
+  const castingHtml = context.outcomeHtml
+    ?? (spellLevel !== undefined
+      ? buildSpellCastOutcome(total, spellLevel, {
+        fatigueApplied: context.fatigueApplied,
+        fatigueLabel: context.fatigueLabel
+      })
+      : "");
+
+  const confidenceHtml = context.confidenceSpent
+    ? `<div class="arm2e-cast-outcome">Spent 1 Confidence (+${context.confidenceBonus}) — ${context.confidenceRemaining} remaining.</div>`
+    : "";
+
   return renderTemplate("systems/ars-magica-2e/templates/chat/roll-card.html", {
     label: label || "Ars Magica 2e Roll",
     rollTitle,
@@ -179,14 +193,11 @@ async function buildChatContent(dieResult, baseModifier, label, context = {}) {
       valueLabel: formatSigned(row.value)
     })),
     total,
-    castingHtml: spellLevel !== undefined
-      ? buildSpellCastOutcome(total, spellLevel, {
-        fatigueApplied: context.fatigueApplied,
-        fatigueLabel: context.fatigueLabel
-      })
-      : "",
+    castingHtml: `${castingHtml}${confidenceHtml}`,
     explodeHtml: dieResult.exploded ? `<div class="arm2e-explode-flag">Exploding Stress Die</div>` : "",
-    botchHtml: dieResult.potentialBotch ? `<div class="arm2e-botch-flag">Potential Botch</div>` : "",
+    botchHtml: dieResult.potentialBotch
+      ? `<div class="arm2e-botch-flag">Potential Botch — storyguide chooses botch dice and resolves.</div>`
+      : "",
     inactiveHtml: context.inactiveHtml ?? ""
   });
 }
@@ -200,18 +211,37 @@ async function buildChatContent(dieResult, baseModifier, label, context = {}) {
  *   speaker?: object,
  *   spellLevel?: number,
  *   applyConditions?: boolean,
- *   applyCastingFatigue?: boolean
+ *   applyCastingFatigue?: boolean,
+ *   spendConfidence?: boolean,
+ *   confidenceBonus?: number,
+ *   outcomeHtml?: string,
+ *   forceFatigue?: boolean
  * }} [options={}]
  */
 export async function rollArM2e(rollType, baseModifier = 0, label = "", options = {}) {
   const normalizedType = rollType === "simple" ? "simple" : "stress";
-  const modifier = Number(baseModifier) || 0;
+  let modifier = Number(baseModifier) || 0;
   const applyConditions = options.applyConditions !== false
     && normalizedType === "stress"
     && Boolean(options.actor);
   const conditions = applyConditions
     ? getConditionModifiers(options.actor.system)
     : { total: 0, parts: [], canAct: true };
+
+  let confidenceSpent = false;
+  let confidenceRemaining = 0;
+  const confidenceBonus = Number(options.confidenceBonus) || CONFIDENCE_BONUS;
+
+  if (options.spendConfidence && options.actor) {
+    const result = await spendConfidence(options.actor);
+    confidenceSpent = result.spent;
+    confidenceRemaining = result.remaining;
+    if (confidenceSpent) {
+      modifier += confidenceBonus;
+    } else {
+      ui.notifications.warn(`${options.actor.name} has no Confidence to spend.`);
+    }
+  }
 
   if (applyConditions && !conditions.canAct) {
     const speaker = options.speaker ?? ChatMessage.getSpeaker({ actor: options.actor });
@@ -261,12 +291,12 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
   let fatigueApplied = false;
   let fatigueLabel = "";
 
-  if (
-    options.actor
-    && spellLevel !== undefined
-    && castingSuccess === false
-    && options.applyCastingFatigue !== false
-  ) {
+  const shouldApplyFatigue = options.actor && options.applyCastingFatigue !== false && (
+    options.forceFatigue
+    || (spellLevel !== undefined && castingSuccess === false)
+  );
+
+  if (shouldApplyFatigue) {
     const result = await applyCastingFatigue(options.actor);
     fatigueApplied = result.changed;
     fatigueLabel = getFatigueLevel(result.next).label;
@@ -284,7 +314,11 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
       conditionParts: conditions.parts,
       conditionTotal,
       fatigueApplied,
-      fatigueLabel
+      fatigueLabel,
+      outcomeHtml: options.outcomeHtml,
+      confidenceSpent,
+      confidenceRemaining,
+      confidenceBonus: confidenceSpent ? confidenceBonus : 0
     }),
     rolls: [roll],
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
@@ -302,7 +336,9 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
     steps: dieResult.steps,
     spellLevel,
     castingSuccess,
-    fatigueApplied
+    fatigueApplied,
+    confidenceSpent,
+    confidenceRemaining
   };
 }
 
@@ -320,4 +356,72 @@ export async function rollSpellCast(spellName, castingModifier, spellLevel, opti
     spellLevel,
     applyCastingFatigue: true
   });
+}
+
+/**
+ * Spontaneous casting: die + Tech + Form + Int, then ÷2 (fatigue) or ÷5 (careful).
+ * Fatiguing spontaneous always costs 1 Fatigue level.
+ *
+ * @param {object} arts
+ * @param {number} castingModifier
+ * @param {{
+ *   actor?: Actor,
+ *   speaker?: object,
+ *   fatiguing?: boolean,
+ *   rollType?: "simple" | "stress",
+ *   targetLevel?: number,
+ *   spendConfidence?: boolean
+ * }} [options={}]
+ */
+export async function rollSpontaneousCast(arts, castingModifier, options = {}) {
+  const fatiguing = options.fatiguing !== false;
+  const rollType = options.rollType === "simple" ? "simple" : "stress";
+  const artsLabel = `${arts.techniqueAbbrev ?? "?"}${arts.formAbbrev ?? "?"}`;
+  const modeLabel = fatiguing ? "Fatiguing ÷2" : "Careful ÷5";
+  const label = `Spontaneous ${artsLabel} — ${modeLabel}`;
+
+  const result = await rollArM2e(rollType, castingModifier, label, {
+    actor: options.actor,
+    speaker: options.speaker,
+    spendConfidence: options.spendConfidence,
+    applyCastingFatigue: fatiguing,
+    forceFatigue: fatiguing,
+    applyConditions: rollType === "stress",
+    outcomeHtml: "" // filled after we know total
+  });
+
+  if (result.cancelled) return result;
+
+  const levelEquivalent = spontaneousLevelEquivalent(result.total, fatiguing);
+  const rounded = Math.round(levelEquivalent * 10) / 10;
+  const targetLevel = options.targetLevel !== undefined && options.targetLevel !== ""
+    ? Number(options.targetLevel)
+    : undefined;
+
+  let outcome = `<div class="arm2e-cast-outcome arm2e-cast-success">Level equivalent: <strong>${rounded}</strong> (total ${result.total} ÷ ${fatiguing ? 2 : 5}).`;
+  if (Number.isFinite(targetLevel)) {
+    outcome += rounded + 0.0001 >= targetLevel
+      ? ` Meets suggested Level ${targetLevel}.`
+      : ` Short of suggested Level ${targetLevel}.`;
+  }
+  if (fatiguing && result.fatigueApplied) {
+    outcome += ` Fatigue is now <strong>${getFatigueLevel(options.actor.system.fatigue.level).label}</strong>.`;
+  } else if (fatiguing) {
+    outcome += " Fatiguing spontaneous costs 1 Fatigue level.";
+  }
+  outcome += "</div>";
+
+  // Re-post is noisy; append via a follow-up chat note instead
+  await ChatMessage.create({
+    speaker: options.speaker ?? ChatMessage.getSpeaker({ actor: options.actor }),
+    content: outcome,
+    type: CONST.CHAT_MESSAGE_TYPES.OTHER
+  });
+
+  return {
+    ...result,
+    levelEquivalent: rounded,
+    fatiguing,
+    targetLevel
+  };
 }

@@ -37,6 +37,10 @@
           <input class="wizard-field" type="text" data-path="identity.covenant" value="{{state.identity.covenant}}" />
         </label>
         <label class="wizard-field-group">
+          <span>House</span>
+          <input class="wizard-field" type="text" data-path="identity.house" value="{{state.identity.house}}" placeholder="Magus only" />
+        </label>
+        <label class="wizard-field-group">
           <span>Gender</span>
           <input class="wizard-field" type="text" data-path="identity.gender" value="{{state.identity.gender}}" />
         </label>
@@ -108,6 +112,7 @@
     {{/if}}
 
     {{#if isStep3}}
+    {{#unless skipsVirtues}}
     <div class="wizard-step wizard-step-3">
       <h2 class="wizard-step-title">Virtues &amp; Flaws</h2>
       <div class="wizard-counter">
@@ -165,9 +170,11 @@
       <p class="wizard-note">No virtues or flaws selected yet.</p>
       {{/if}}
     </div>
+    {{/unless}}
     {{/if}}
 
     {{#if isStep4}}
+    {{#if isMagus}}
     <div class="wizard-step wizard-step-4">
       <h2 class="wizard-step-title">Hermetic Apprenticeship</h2>
       <div class="wizard-counter-row">
@@ -261,6 +268,7 @@
         {{/if}}
       </section>
     </div>
+    {{/if}}
     {{/if}}
 
     {{#if isStep5}}

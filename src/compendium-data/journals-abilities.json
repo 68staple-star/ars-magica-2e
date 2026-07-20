@@ -3,9 +3,15 @@
     "name": "Ability Reference",
     "pages": [
       {
+        "name": "Using Abilities",
+        "text": {
+          "content": "<h2>Rolls</h2><p>Most ability rolls are <strong>stress die + Characteristic + Ability</strong> (+1 specialty when it applies). Opposed actions compare totals; static tasks use an ease factor set by the storyguide.</p><h2>Specialties</h2><p>Record specialties in parentheses on the ability. When rolling, the sheet asks whether the specialty applies before adding +1.</p><h2>Weapon Groups</h2><p>This system also includes Single Weapon, Great Weapon, Bow, Thrown Weapon, and Crossbow so LoM/ArM5 gear can link to combat totals. Classic 2e still allows per-weapon attack/parry skills via the weapon’s Attack/Parry Skill fields when Ability is blank.</p>"
+        }
+      },
+      {
         "name": "Categories",
         "text": {
-          "content": "<h2>Ability Types</h2><p><strong>Talents</strong> — innate or intuitive capabilities.</p><p><strong>Skills</strong> — trained capabilities including weapon skills chosen per weapon.</p><p><strong>Knowledges</strong> — learned information and lore.</p><p>Specify parenthetical abilities (e.g. Craft, Area Lore) on your character sheet specialty field.</p>"
+          "content": "<h2>Ability Types</h2><p><strong>Talents</strong> — innate or intuitive capabilities (raised mainly by adventure experience).</p><p><strong>Skills</strong> — trained capabilities.</p><p><strong>Knowledges</strong> — learned information and lore.</p><p>Open ability Items from the Abilities pack for full 2e blurbs. Parenthetical abilities (Craft, Area Lore, Speak, Scribe, Play Instrument) use the specialty field to name the specific focus.</p>"
         }
       }
     ]

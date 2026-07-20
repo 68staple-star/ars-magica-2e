@@ -1,5 +1,5 @@
-2026/07/20-14:18:31.058 1c34 Delete type=3 #1
-2026/07/20-14:18:31.062 2eb4 Level-0 table #5: started
-2026/07/20-14:18:31.066 2eb4 Level-0 table #5: 1156 bytes OK
-2026/07/20-14:18:31.070 2eb4 Delete type=0 #3
-2026/07/20-14:18:31.070 2eb4 Manual compaction at level-0 from '!journal!a1Jlt18p4MjalO_R' @ 72057594037927935 : 1 .. '!journal.pages!ZZ2coJZwazfLTYFf' @ 0 : 0; will stop at (end)
+2026/07/20-14:29:12.177 28c0 Delete type=3 #1
+2026/07/20-14:29:12.181 2d8c Level-0 table #5: started
+2026/07/20-14:29:12.184 2d8c Level-0 table #5: 1355 bytes OK
+2026/07/20-14:29:12.188 2d8c Delete type=0 #3
+2026/07/20-14:29:12.188 2d8c Manual compaction at level-0 from '!journal!a1Jlt18p4MjalO_R' @ 72057594037927935 : 1 .. '!journal.pages!ZZ2coJZwazfLTYFf' @ 0 : 0; will stop at (end)
