@@ -885,7 +885,8 @@
 }
 
 .ars-magica-2e.sheet.actor.character .arm2e-covenant-field.is-dragover,
-.ars-magica-2e.sheet.actor.covenant .arm2e-member-drop.is-dragover {
+.ars-magica-2e.sheet.actor.covenant .arm2e-member-drop.is-dragover,
+.ars-magica-2e .arm2e-journal-drop.is-dragover {
   outline: 2px dashed var(--arm2e-accent, #7a5a2e);
   outline-offset: 2px;
   background: color-mix(in srgb, var(--arm2e-accent, #7a5a2e) 12%, transparent);

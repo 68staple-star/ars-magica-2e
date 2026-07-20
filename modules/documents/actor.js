@@ -1,6 +1,8 @@
 import { buildAbilityLookupFromActor, findAbilityItem } from "../utils/abilities.js";
 import { defaultConfidence } from "../utils/creation.js";
 import { defaultCovenantSystem } from "../utils/covenant.js";
+import { defaultCharacterTokenBars } from "../utils/token-status.js";
+import { FATIGUE_LEVELS, WOUND_LEVELS } from "../utils/wounds.js";
 
 /**
  * @returns {typeof import("../config.js").ARM2E}
@@ -32,14 +34,29 @@ function applyCharacterDefaults(data) {
       reputation: "",
       locationScore: 0
     },
-    wounds: { level: "unhurt" },
-    fatigue: { level: "fresh", value: 0, max: 5 },
+    wounds: {
+      level: "unhurt",
+      value: 0,
+      max: WOUND_LEVELS.length - 1
+    },
+    fatigue: {
+      level: "fresh",
+      value: 0,
+      max: FATIGUE_LEVELS.length - 1
+    },
     references: {
       rulesJournal: "",
-      orderJournal: ""
+      orderJournal: "",
+      rulesPdf: ""
     },
     confidence: { value: confidence, max: confidence }
   }, system, { inplace: false });
+
+  data.prototypeToken = foundry.utils.mergeObject(
+    defaultCharacterTokenBars(),
+    data.prototypeToken ?? {},
+    { inplace: false }
+  );
 }
 
 /**

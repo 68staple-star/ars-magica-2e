@@ -63,23 +63,31 @@
 
 <details class="arm2e-panel arm2e-journal-refs arm2e-advanced-refs">
   <summary class="arm2e-section-heading">Advanced — Links</summary>
-  <p class="arm2e-note">Prefer dropping a Covenant actor onto the header field. UUIDs below are optional GM wiring.</p>
+  <p class="arm2e-note">Drop a Journal onto a field to link it, or drop a Covenant actor onto the header. GM: Journal directory → Attach Rules PDF for your licensed core book.</p>
   <div class="arm2e-journal-ref-grid">
     <div class="form-group">
       <label for="{{actor._id}}-covenant-actor">Covenant Actor UUID</label>
       <input id="{{actor._id}}-covenant-actor" type="text" name="system.identity.covenantActor" value="{{system.identity.covenantActor}}" placeholder="@UUID[Actor.…]" />
     </div>
-    <div class="form-group">
+    <div class="form-group arm2e-journal-drop" data-drop-target="journal" data-journal-field="system.identity.covenantJournal" title="Drop a Journal Entry here">
       <label for="{{actor._id}}-covenant-journal">Covenant Journal UUID</label>
-      <input id="{{actor._id}}-covenant-journal" type="text" name="system.identity.covenantJournal" value="{{system.identity.covenantJournal}}" placeholder="@UUID[JournalEntry.…]" />
+      <input id="{{actor._id}}-covenant-journal" type="text" name="system.identity.covenantJournal" value="{{system.identity.covenantJournal}}" placeholder="Drop journal or paste @UUID" />
     </div>
-    <div class="form-group">
+    <div class="form-group arm2e-journal-drop" data-drop-target="journal" data-journal-field="system.references.rulesJournal" title="Drop a Journal Entry here">
       <label for="{{actor._id}}-rules-journal">Rules Journal UUID</label>
-      <input id="{{actor._id}}-rules-journal" type="text" name="system.references.rulesJournal" value="{{system.references.rulesJournal}}" placeholder="@UUID[...]" />
+      <input id="{{actor._id}}-rules-journal" type="text" name="system.references.rulesJournal" value="{{system.references.rulesJournal}}" placeholder="Drop journal or paste @UUID" />
     </div>
-    <div class="form-group">
+    <div class="form-group arm2e-journal-drop" data-drop-target="journal" data-journal-field="system.references.orderJournal" title="Drop a Journal Entry here">
       <label for="{{actor._id}}-order-journal">Order Journal UUID</label>
-      <input id="{{actor._id}}-order-journal" type="text" name="system.references.orderJournal" value="{{system.references.orderJournal}}" placeholder="@UUID[...]" />
+      <input id="{{actor._id}}-order-journal" type="text" name="system.references.orderJournal" value="{{system.references.orderJournal}}" placeholder="Drop journal or paste @UUID" />
+    </div>
+    <div class="form-group arm2e-span-2">
+      <label for="{{actor._id}}-rules-pdf">Personal Rules PDF Path</label>
+      <div class="arm2e-covenant-link-row">
+        <input id="{{actor._id}}-rules-pdf" type="text" name="system.references.rulesPdf" value="{{system.references.rulesPdf}}" placeholder="Optional path — prefer world Attach Rules PDF" />
+        <button type="button" class="arm2e-pick-rules-pdf" title="Browse for PDF"><i class="fas fa-folder-open"></i></button>
+        <button type="button" class="arm2e-open-world-pdf" title="Open world / linked rules journal"><i class="fas fa-book"></i></button>
+      </div>
     </div>
   </div>
 </details>

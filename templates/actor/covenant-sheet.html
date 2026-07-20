@@ -122,9 +122,9 @@
       <label class="arm2e-span-2"><textarea name="system.notes" rows="10" placeholder="Seasonal plans, tribunal politics, ongoing projects…">{{system.notes}}</textarea></label>
 
       <h2 class="arm2e-subheading">Chronicle Journal</h2>
-      <p class="arm2e-note">Optional link to a Journal Entry (import the Covenant Template pack, then paste its UUID).</p>
-      <label class="arm2e-span-2">Journal UUID
-        <input type="text" name="system.chronicleJournal" value="{{system.chronicleJournal}}" placeholder="@UUID[JournalEntry.…]" />
+      <p class="arm2e-note">Drop a Journal Entry here, or paste its UUID. Import the Covenant Template pack for a ready-made chronicle.</p>
+      <label class="arm2e-span-2 arm2e-journal-drop" data-drop-target="journal" data-journal-field="system.chronicleJournal" title="Drop a Journal Entry here">Journal UUID
+        <input type="text" name="system.chronicleJournal" value="{{system.chronicleJournal}}" placeholder="Drop journal or paste @UUID[JournalEntry.…]" />
       </label>
     </div>
   </section>

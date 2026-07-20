@@ -37,6 +37,12 @@
         "text": {
           "content": "<h2>Virtues &amp; Flaws Compendium</h2><p>The <strong>Virtues &amp; Flaws (ArM5)</strong> compendium contains the full detailed virtue and flaw entries from <em>Ars Magica Fifth Edition, Chapter Four: Virtues and Flaws</em>, made available under the Ars Magica Open License via <a href=\"https://www.redcap.org/page/Ars_Magica_5E_Standard_Edition,_Chapter_Four:_Virtues_and_Flaws\" target=\"_blank\" rel=\"noopener\">Project: Redcap</a>.</p><p>Each entry includes its point value, category (Hermetic, General, Social Status, etc.), and full rule text. Import virtues and flaws in the Character Wizard or drag them onto the Virtues tab. Personality flaws marked Major or Minor appear as separate entries.</p><p><em>Based on Ars Magica material ©1993–2024, licensed by Trident, Inc. d/b/a Atlas Games®, under CC-BY-SA 4.0. Ars Magica, Mythic Europe, and related marks are trademarks of Trident, Inc., used with permission.</em></p>"
         }
+      },
+      {
+        "name": "Core Rules PDF",
+        "text": {
+          "content": "<h2>Licensed PDF (not shipped)</h2><p>The Ars Magica 2e core book PDF is <strong>not</strong> included in this system release. If you own AG0201 (or another licensed PDF), the GM can attach it to the world:</p><ol><li>Place the PDF in your Foundry user data or world <code>assets</code> folder.</li><li>Open the Journal directory → right-click → <strong>Attach Rules PDF…</strong>.</li><li>Choose the file. Foundry creates <em>ArM2 Core Rules (PDF)</em> with a PDF journal page.</li></ol><p>Characters can drop that journal onto <strong>Rules Journal UUID</strong> (Advanced — Links), or use the header <strong>Rules</strong> button once linked. Settings also store the world PDF path and journal UUID.</p><p>This HTML Rules Reference remains the searchable quick sheet for dice, combat, and casting.</p>"
+        }
       }
     ]
   }

@@ -8,13 +8,26 @@ import { prepareSpellLists } from "../utils/spells.js";
 import { prepareAbilityColumns, prepareCharacteristicPairs } from "../utils/sheet-data.js";
 import { promptSpontaneousCast } from "../utils/spontaneous-cast.js";
 import { prepareVirtueFlawList } from "../utils/virtues.js";
-import { prepareFatigueTrack, prepareStatusStrip, prepareWoundTrack } from "../utils/wounds.js";
-import { openJournalEntry } from "../utils/journal.js";
+import {
+  fatigueLevelUpdate,
+  prepareFatigueTrack,
+  prepareStatusStrip,
+  prepareWoundTrack,
+  woundLevelUpdate
+} from "../utils/wounds.js";
+import {
+  getWorldRulesPdfJournalUuid,
+  linkJournalToActor,
+  openJournalEntry,
+  openWorldRulesPdfJournal,
+  pickPdfPathForActor
+} from "../utils/journal.js";
 import {
   linkCharacterToCovenant,
   openLinkedDocument,
   unlinkCharacterFromCovenant
 } from "../utils/covenant.js";
+import { buildRollDragData } from "../utils/roll-macros.js";
 
 const DROP_TARGETS = {
   ability: "ability",
@@ -39,7 +52,7 @@ export class ArM2eActorSheet extends ActorSheet {
         initial: "character"
       }],
       dragDrop: [{
-        dragSelector: ".item-edit, .spell-row, .weapon-row, .armor-row, .equipment-row, .arm2e-vf-entry, .ability-row",
+        dragSelector: ".item-edit, .spell-row, .weapon-row, .armor-row, .equipment-row, .arm2e-vf-entry, .ability-row, .characteristic-row, .combat-roll-dodge, .arts-cell",
         dropSelector: null
       }]
     });
@@ -115,6 +128,8 @@ export class ArM2eActorSheet extends ActorSheet {
     html.find(".arm2e-add-ability").on("click", this._onBrowseAbilities.bind(this));
     html.find(".item-edit").on("click", this._onEditItem.bind(this));
     html.find(".arm2e-journal-link").on("click", this._onOpenJournal.bind(this));
+    html.find(".arm2e-open-world-pdf").on("click", this._onOpenWorldRulesPdf.bind(this));
+    html.find(".arm2e-pick-rules-pdf").on("click", this._onPickRulesPdf.bind(this));
     html.find(".arm2e-open-covenant").on("click", this._onOpenCovenant.bind(this));
     html.find(".arm2e-unlink-covenant").on("click", this._onUnlinkCovenant.bind(this));
     html.find(".arm2e-collapse-toggle").on("click", this._onToggleCollapse.bind(this));
@@ -131,6 +146,18 @@ export class ArM2eActorSheet extends ActorSheet {
       });
       covenantDrop.on("drop", (event) => this._onDropCovenant(event));
     }
+
+    html.find(".arm2e-journal-drop").each((_, el) => {
+      const zone = $(el);
+      zone.on("dragover", (event) => {
+        event.preventDefault();
+        event.currentTarget.classList.add("is-dragover");
+      });
+      zone.on("dragleave", (event) => {
+        event.currentTarget.classList.remove("is-dragover");
+      });
+      zone.on("drop", (event) => this._onDropJournalLink(event));
+    });
 
     for (const [selector, type] of Object.entries(DROP_TARGETS)) {
       const panel = html.find(`[data-drop-target="${selector}"]`);
@@ -304,7 +331,7 @@ export class ArM2eActorSheet extends ActorSheet {
     event.preventDefault();
     const level = event.currentTarget.dataset.woundLevel;
     if (!level) return;
-    await this.actor.update({ "system.wounds.level": level });
+    await this.actor.update(woundLevelUpdate(level));
   }
 
   /**
@@ -314,7 +341,7 @@ export class ArM2eActorSheet extends ActorSheet {
     event.preventDefault();
     const level = event.currentTarget.dataset.fatigueLevel;
     if (!level) return;
-    await this.actor.update({ "system.fatigue.level": level });
+    await this.actor.update(fatigueLevelUpdate(level));
   }
 
   /**
@@ -426,6 +453,141 @@ export class ArM2eActorSheet extends ActorSheet {
       ui.notifications.info(`Linked to ${doc.name}.`);
       this.render(false);
     }
+  }
+
+  /**
+   * @param {JQuery.TriggeredEvent} event
+   */
+  async _onDropJournalLink(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    event.currentTarget.classList.remove("is-dragover");
+
+    const field = event.currentTarget.dataset.journalField;
+    if (!field) return;
+
+    const data = TextEditor.getDragEventData(event.originalEvent ?? event);
+    if (!data?.uuid) return;
+
+    const doc = await fromUuid(data.uuid);
+    const linked = await linkJournalToActor(this.actor, field, doc);
+    if (linked) {
+      ui.notifications.info(`Linked ${doc.name}.`);
+      this.render(false);
+    }
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onOpenWorldRulesPdf(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const linked = this.actor.system?.references?.rulesJournal || getWorldRulesPdfJournalUuid();
+    if (linked) {
+      await openJournalEntry(linked);
+      return;
+    }
+    await openWorldRulesPdfJournal();
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onPickRulesPdf(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const path = await pickPdfPathForActor(this.actor, "system.references.rulesPdf");
+    if (path) this.render(false);
+  }
+
+  /** @override */
+  _onDragStart(event) {
+    const target = event.currentTarget;
+
+    if (target.classList?.contains("characteristic-row")) {
+      const characteristicId = target.dataset.characteristic;
+      const label = target.querySelector(".characteristic-label")?.textContent?.trim() || characteristicId;
+      event.dataTransfer.setData("text/plain", JSON.stringify(buildRollDragData({
+        roll: "characteristic",
+        name: `${this.actor.name}: ${label}`,
+        actorUuid: this.actor.uuid,
+        characteristicId,
+        img: this.actor.img
+      })));
+      return;
+    }
+
+    if (target.classList?.contains("ability-row")) {
+      const item = this.actor.items.get(target.dataset.itemId);
+      if (item) {
+        event.dataTransfer.setData("text/plain", JSON.stringify(buildRollDragData({
+          roll: "ability",
+          name: `${this.actor.name}: ${item.name}`,
+          actorUuid: this.actor.uuid,
+          itemUuid: item.uuid,
+          img: item.img
+        })));
+        return;
+      }
+    }
+
+    if (target.classList?.contains("spell-row")) {
+      const item = this.actor.items.get(target.dataset.itemId);
+      if (item) {
+        event.dataTransfer.setData("text/plain", JSON.stringify(buildRollDragData({
+          roll: "spell",
+          name: `${this.actor.name}: ${item.name}`,
+          actorUuid: this.actor.uuid,
+          itemUuid: item.uuid,
+          img: item.img
+        })));
+        return;
+      }
+    }
+
+    if (target.classList?.contains("weapon-row")) {
+      const item = this.actor.items.get(target.dataset.itemId);
+      if (item) {
+        event.dataTransfer.setData("text/plain", JSON.stringify(buildRollDragData({
+          roll: "weapon",
+          name: `${this.actor.name}: ${item.name} Attack`,
+          actorUuid: this.actor.uuid,
+          itemUuid: item.uuid,
+          totalKey: "attack",
+          img: item.img
+        })));
+        return;
+      }
+    }
+
+    if (target.classList?.contains("combat-roll-dodge")) {
+      event.dataTransfer.setData("text/plain", JSON.stringify(buildRollDragData({
+        roll: "dodge",
+        name: `${this.actor.name}: Dodge`,
+        actorUuid: this.actor.uuid,
+        img: this.actor.img
+      })));
+      return;
+    }
+
+    if (target.classList?.contains("arts-cell")) {
+      const techniqueId = target.dataset.technique;
+      const formId = target.dataset.form;
+      if (techniqueId && formId) {
+        event.dataTransfer.setData("text/plain", JSON.stringify(buildRollDragData({
+          roll: "spontaneous",
+          name: `${this.actor.name}: Spontaneous ${techniqueId}/${formId}`,
+          actorUuid: this.actor.uuid,
+          techniqueId,
+          formId,
+          img: this.actor.img
+        })));
+        return;
+      }
+    }
+
+    return super._onDragStart(event);
   }
 
   /**

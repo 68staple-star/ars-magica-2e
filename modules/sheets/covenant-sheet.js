@@ -8,6 +8,7 @@ import {
   openLinkedDocument,
   unlinkCharacterFromCovenant
 } from "../utils/covenant.js";
+import { linkJournalToActor } from "../utils/journal.js";
 
 /**
  * Saga-facing sheet for covenant Actors (aura, season, vis, members).
@@ -76,6 +77,18 @@ export class ArM2eCovenantSheet extends ActorSheet {
       event.currentTarget.classList.remove("is-dragover");
     });
     dropZone.on("drop", (event) => this._onDropMember(event));
+
+    html.find(".arm2e-journal-drop").each((_, el) => {
+      const zone = $(el);
+      zone.on("dragover", (event) => {
+        event.preventDefault();
+        event.currentTarget.classList.add("is-dragover");
+      });
+      zone.on("dragleave", (event) => {
+        event.currentTarget.classList.remove("is-dragover");
+      });
+      zone.on("drop", (event) => this._onDropJournalLink(event));
+    });
   }
 
   /**
@@ -141,6 +154,28 @@ export class ArM2eCovenantSheet extends ActorSheet {
     const linked = await linkCharacterToCovenant(doc, this.actor);
     if (linked) {
       ui.notifications.info(`${doc.name} joined ${this.actor.name}.`);
+      this.render(false);
+    }
+  }
+
+  /**
+   * @param {JQuery.TriggeredEvent} event
+   */
+  async _onDropJournalLink(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    event.currentTarget.classList.remove("is-dragover");
+
+    const field = event.currentTarget.dataset.journalField;
+    if (!field) return;
+
+    const data = TextEditor.getDragEventData(event.originalEvent ?? event);
+    if (!data?.uuid) return;
+
+    const doc = await fromUuid(data.uuid);
+    const linked = await linkJournalToActor(this.actor, field, doc);
+    if (linked) {
+      ui.notifications.info(`Linked ${doc.name}.`);
       this.render(false);
     }
   }

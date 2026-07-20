@@ -3,6 +3,8 @@ import { ArM2eCreationWizard } from "./modules/apps/creation-wizard.js";
 import { registerCompendiumSeeding } from "./modules/compendium/seed.js";
 import { registerActorDocumentHooks } from "./modules/documents/actor.js";
 import { rollArM2e, rollSpellCast, rollSpontaneousCast } from "./modules/dice.js";
+import { registerHotbarHooks } from "./modules/hooks/hotbar-hooks.js";
+import { registerStatusHooks } from "./modules/hooks/status-hooks.js";
 import { registerUiHooks } from "./modules/hooks/ui-hooks.js";
 import { registerTemplateLoading } from "./modules/init/load-templates.js";
 import { registerSheets } from "./modules/init/register-sheets.js";
@@ -10,6 +12,10 @@ import {
   registerAbilityMigration,
   registerMigrationSettings
 } from "./modules/migrations/migrate-abilities-to-items.js";
+import { promptAbilityRoll } from "./modules/utils/ability-rolls.js";
+import { registerRulesPdfSettings } from "./modules/utils/journal.js";
+import { executeHotbarRoll } from "./modules/utils/roll-macros.js";
+import { promptSpontaneousCast } from "./modules/utils/spontaneous-cast.js";
 
 const SYSTEM_ID = "ars-magica-2e";
 
@@ -24,14 +30,20 @@ Hooks.on("init", () => {
       roll: rollArM2e,
       rollSpellCast,
       rollSpontaneousCast,
+      promptAbilityRoll,
+      promptSpontaneousCast,
+      executeHotbarRoll,
       CreationWizard: ArM2eCreationWizard
     };
 
+    registerRulesPdfSettings();
     registerActorDocumentHooks();
     registerMigrationSettings();
     registerCompendiumSeeding();
     registerTemplateLoading();
     registerUiHooks();
+    registerStatusHooks();
+    registerHotbarHooks();
     registerSheets();
     registerAbilityMigration();
     console.log("arm2e | init hook complete");

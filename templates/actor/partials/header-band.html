@@ -74,6 +74,10 @@
       <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.references.rulesJournal}}" title="Open Rules Reference">
         <i class="fas fa-book"></i> Rules
       </button>
+      {{else}}
+      <button type="button" class="arm2e-open-world-pdf" title="Open Rules PDF / Reference">
+        <i class="fas fa-book"></i> Rules
+      </button>
       {{/if}}
       {{#if system.references.orderJournal}}
       <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.references.orderJournal}}" title="Open Order Reference">

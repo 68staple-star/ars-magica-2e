@@ -1,4 +1,5 @@
 import { ArM2eCreationWizard } from "../apps/creation-wizard.js";
+import { attachRulesPdfViaPicker, openWorldRulesPdfJournal } from "../utils/journal.js";
 
 const WIZARD_BUTTON = {
   label: "Character Wizard",
@@ -22,6 +23,34 @@ function resolveActorIdFromElement(element) {
   if (!element) return undefined;
   const li = element.closest?.("[data-document-id]") ?? element;
   return li.dataset?.documentId ?? element.dataset?.documentId;
+}
+
+/**
+ * @param {Array<object>} entryOptions
+ */
+function addJournalPdfOptions(entryOptions) {
+  if (!game.user.isGM) return;
+
+  entryOptions.push({
+    name: "Attach Rules PDF…",
+    icon: '<i class="fas fa-file-pdf"></i>',
+    callback: () => {
+      attachRulesPdfViaPicker().catch((error) => {
+        console.error("arm2e | Attach Rules PDF failed", error);
+        ui.notifications.error("Could not attach rules PDF.");
+      });
+    }
+  });
+
+  entryOptions.push({
+    name: "Open Rules PDF Journal",
+    icon: '<i class="fas fa-book-open"></i>',
+    callback: () => {
+      openWorldRulesPdfJournal().catch((error) => {
+        console.error("arm2e | Open Rules PDF failed", error);
+      });
+    }
+  });
 }
 
 /**
@@ -68,6 +97,16 @@ export function registerUiHooks() {
         openCreationWizard(actor);
       }
     });
+  });
+
+  Hooks.on("getJournalEntryContextOptions", (application, entryOptions) => {
+    if (game.system.id !== "ars-magica-2e") return;
+    addJournalPdfOptions(entryOptions);
+  });
+
+  Hooks.on("getJournalDirectoryEntryContext", (application, entryOptions) => {
+    if (game.system.id !== "ars-magica-2e") return;
+    addJournalPdfOptions(entryOptions);
   });
 
   Hooks.on("getApplicationV1HeaderButtons", (app, buttons) => {

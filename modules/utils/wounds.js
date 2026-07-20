@@ -40,6 +40,70 @@ export function getFatigueLevel(levelId) {
 }
 
 /**
+ * @param {string} levelId
+ * @returns {number}
+ */
+export function woundLevelIndex(levelId) {
+  const index = WOUND_LEVELS.findIndex((entry) => entry.id === levelId);
+  return index >= 0 ? index : 0;
+}
+
+/**
+ * @param {string} levelId
+ * @returns {number}
+ */
+export function fatigueLevelIndex(levelId) {
+  const index = FATIGUE_LEVELS.findIndex((entry) => entry.id === levelId);
+  return index >= 0 ? index : 0;
+}
+
+/**
+ * @param {number} index
+ * @returns {string}
+ */
+export function woundLevelFromIndex(index) {
+  const safe = Math.max(0, Math.min(WOUND_LEVELS.length - 1, Number(index) || 0));
+  return WOUND_LEVELS[safe].id;
+}
+
+/**
+ * @param {number} index
+ * @returns {string}
+ */
+export function fatigueLevelFromIndex(index) {
+  const safe = Math.max(0, Math.min(FATIGUE_LEVELS.length - 1, Number(index) || 0));
+  return FATIGUE_LEVELS[safe].id;
+}
+
+/**
+ * Build an actor update that keeps wound level and bar value in sync.
+ * @param {string} levelId
+ * @returns {object}
+ */
+export function woundLevelUpdate(levelId) {
+  const level = getWoundLevel(levelId).id;
+  return {
+    "system.wounds.level": level,
+    "system.wounds.value": woundLevelIndex(level),
+    "system.wounds.max": WOUND_LEVELS.length - 1
+  };
+}
+
+/**
+ * Build an actor update that keeps fatigue level and bar value in sync.
+ * @param {string} levelId
+ * @returns {object}
+ */
+export function fatigueLevelUpdate(levelId) {
+  const level = getFatigueLevel(levelId).id;
+  return {
+    "system.fatigue.level": level,
+    "system.fatigue.value": fatigueLevelIndex(level),
+    "system.fatigue.max": FATIGUE_LEVELS.length - 1
+  };
+}
+
+/**
  * Numeric penalty applied to most stress rolls from the current wound level.
  * Incapacitated / Unconscious return null (cannot act).
  * @param {object} system
@@ -132,7 +196,7 @@ export async function applyCastingFatigue(actor) {
     return { previous, next, changed: false };
   }
 
-  await actor.update({ "system.fatigue.level": next });
+  await actor.update(fatigueLevelUpdate(next));
   return { previous, next, changed: true };
 }
 
