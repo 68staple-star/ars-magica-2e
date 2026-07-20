@@ -2,6 +2,7 @@ import { ArM2eAbilitySheet } from "../sheets/ability-sheet.js";
 import { ArM2eActorSheet } from "../sheets/actor-sheet.js";
 import { ArM2eArmorSheet } from "../sheets/armor-sheet.js";
 import { ArM2eBeastSheet } from "../sheets/beast-sheet.js";
+import { ArM2eCovenantSheet } from "../sheets/covenant-sheet.js";
 import { ArM2eEquipmentSheet } from "../sheets/equipment-sheet.js";
 import { ArM2eSpellSheet } from "../sheets/spell-sheet.js";
 import { ArM2eVirtueFlawSheet } from "../sheets/virtue-flaw-sheet.js";
@@ -53,6 +54,12 @@ export function registerSheets() {
     types: ["beast"],
     makeDefault: true,
     label: "ARM2e Beast Sheet"
+  });
+
+  Actors.registerSheet(systemId, ArM2eCovenantSheet, {
+    types: ["covenant"],
+    makeDefault: true,
+    label: "ARM2e Covenant Sheet"
   });
 
   Items.registerSheet(systemId, ArM2eAbilitySheet, {

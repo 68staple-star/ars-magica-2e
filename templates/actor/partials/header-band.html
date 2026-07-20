@@ -15,9 +15,19 @@
           {{/select}}
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group arm2e-covenant-field" data-drop-target="covenant" title="Drop a Covenant actor to link">
         <label for="{{actor._id}}-covenant">Covenant</label>
-        <input id="{{actor._id}}-covenant" type="text" name="system.identity.covenant" value="{{system.identity.covenant}}" placeholder="Covenant name" />
+        <div class="arm2e-covenant-link-row">
+          <input id="{{actor._id}}-covenant" type="text" name="system.identity.covenant" value="{{system.identity.covenant}}" placeholder="Name (or drop Covenant actor)" />
+          {{#if system.identity.covenantActor}}
+          <button type="button" class="arm2e-open-covenant" data-uuid="{{system.identity.covenantActor}}" title="Open linked Covenant">
+            <i class="fas fa-landmark"></i>
+          </button>
+          <button type="button" class="arm2e-unlink-covenant" title="Unlink Covenant actor">
+            <i class="fas fa-unlink"></i>
+          </button>
+          {{/if}}
+        </div>
       </div>
       <div class="form-group">
         <label for="{{actor._id}}-house">House</label>
@@ -49,10 +59,16 @@
       </div>
     </div>
     <div class="arm2e-quick-links">
-      {{#if system.identity.covenantJournal}}
-      <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.identity.covenantJournal}}" title="Open Covenant Chronicle">
+      {{#if system.identity.covenantActor}}
+      <button type="button" class="arm2e-open-covenant" data-uuid="{{system.identity.covenantActor}}" title="Open Covenant">
         <i class="fas fa-landmark"></i> Covenant
       </button>
+      {{else}}
+      {{#if system.identity.covenantJournal}}
+      <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.identity.covenantJournal}}" title="Open Covenant Chronicle">
+        <i class="fas fa-landmark"></i> Chronicle
+      </button>
+      {{/if}}
       {{/if}}
       {{#if system.references.rulesJournal}}
       <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.references.rulesJournal}}" title="Open Rules Reference">

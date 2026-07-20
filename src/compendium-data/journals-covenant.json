@@ -5,19 +5,31 @@
       {
         "name": "Overview",
         "text": {
-          "content": "<h2>Covenant Name</h2><p><em>Record your covenant's name, location, and founding date.</em></p><h2>Charter &amp; Hooks</h2><p>What binds the magi together? What threats or opportunities define the saga?</p>"
+          "content": "<h1>Covenant Chronicle</h1><p>Import this journal into your world, then link it from a <strong>Covenant</strong> actor (Notes → Chronicle Journal UUID). Keep mechanical state on the actor; use these pages for narrative and seasonal logs.</p><h2>Identity</h2><ul><li><strong>Name:</strong></li><li><strong>Location / site:</strong></li><li><strong>Tribunal:</strong></li><li><strong>Founded:</strong></li><li><strong>Stage:</strong> Spring / Summer / Autumn / Winter (maturity)</li></ul><h2>Charter</h2><p>What binds the magi? Voting, guest rights, sharing of vis and books, who speaks for the covenant at Tribunal.</p><h2>Hooks &amp; Boons</h2><p><em>Hooks</em> — threats, mysteries, and obligations that drive the saga.<br><em>Boons</em> — allies, privileges, and advantages tied to the site.</p><h2>Table workflow</h2><ol><li>Create a Covenant actor (Actors → Create → type <em>Covenant</em>).</li><li>Fill aura, season, wealth, and vis on the actor sheet.</li><li>Drop character actors onto the Members tab (or drop the covenant onto a character header).</li><li>Paste this journal’s UUID into the covenant’s Chronicle field.</li></ol>"
         }
       },
       {
-        "name": "Resources",
+        "name": "Aura &amp; Site",
         "text": {
-          "content": "<h2>Library</h2><p>Summae, tractatus, and vis sources available to covenant members.</p><h2>Vis Stocks</h2><table><thead><tr><th>Art</th><th>Pawns</th></tr></thead><tbody><tr><td>Vim</td><td></td></tr></tbody></table><h2>Wealth &amp; Staff</h2><p>Grogs, specialists, and mundane holdings.</p>"
+          "content": "<h2>Aura</h2><p>Record aura type (Magic / Faerie / Divine / Infernal) and level on the Covenant actor. Use this page for flavor: regio layers, boundaries, what strengthens or weakens the aura, and how visitors react.</p><h2>Site notes</h2><ul><li>Mundane cover story / village relations</li><li>Approaches and defenses</li><li>Regio entrances and keys</li><li>Nearby supernatural neighbors</li></ul><h2>Wealth &amp; income</h2><p>Summarize prosperity on the actor (<em>Wealth</em> / <em>Income</em>). Here, track rents, tithes, trade, and seasonal shortfalls that might force magi into adventure.</p>"
         }
       },
       {
-        "name": "Seasonal Activities",
+        "name": "Library &amp; Labs",
         "text": {
-          "content": "<h2>Current Season</h2><p>Track laboratory work, study, vis gathering, and covenant projects per the Covenants supplement.</p>"
+          "content": "<h2>Library</h2><p>List summae and tractatus available to members (Arts and Abilities). Note quality, subject, and who may borrow without a vote. Mirror a short index on the Covenant actor’s Library field for quick reference.</p><h2>Laboratories</h2><p>Who has a personal lab? Shared space? Specializations, safety, and any enchanted devices that affect lab totals. Keep one-line summaries on the actor; expand details here.</p><h2>Vis sources</h2><p>Track stocks by Art on the Covenant actor. On this page, describe harvest sites, seasons, contested sources, and agreements with other covenants or hedge wizards.</p>"
+        }
+      },
+      {
+        "name": "Turb &amp; Covenfolk",
+        "text": {
+          "content": "<h2>Turb</h2><p>Fighting companions, shields, and specialists who defend the covenant. Link named grogs as Character actors and drop them onto the covenant Members tab when they belong to the household.</p><h2>Covenfolk</h2><ul><li>Autocrat / steward</li><li>Consors and specialists (blacksmith, scribe, healer…)</li><li>Servants and laborers</li><li>Loyalty, wages, and morale notes</li></ul><h2>Roster tip</h2><p>Membership is stored on each character (<code>covenantActor</code>). The covenant Members tab lists everyone currently linked.</p>"
+        }
+      },
+      {
+        "name": "Seasonal Log",
+        "text": {
+          "content": "<h2>Current season</h2><p>Set <em>Season</em> on the Covenant actor (Spring / Summer / Autumn / Winter). Use this page as the running log.</p><h3>Template</h3><p><strong>Year:</strong> ____ &nbsp; <strong>Season:</strong> ____</p><ul><li><strong>Magus A:</strong> activity / advancement notes</li><li><strong>Magus B:</strong></li><li><strong>Companions / grogs:</strong></li><li><strong>Covenant project:</strong> (building, harvest, Tribunal prep…)</li><li><strong>Vis gained / spent:</strong></li><li><strong>Events:</strong></li></ul><h2>Between sessions</h2><p>After each seasonal resolution, update vis stocks and wealth on the Covenant actor, then append a short entry above.</p>"
         }
       }
     ]

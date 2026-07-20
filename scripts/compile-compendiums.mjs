@@ -27,6 +27,7 @@ const PACKS = [
   { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json", type: "Item" },
   { pack: "arm2e-rules-reference", file: "journals-rules.json", type: "JournalEntry" },
   { pack: "arm2e-covenant-template", file: "journals-covenant.json", type: "JournalEntry" },
+  { pack: "arm2e-covenants", file: "covenants-sample.json", type: "Actor" },
   { pack: "arm2e-order-reference", file: "journals-order.json", type: "JournalEntry" },
   { pack: "arm2e-ability-reference", file: "journals-abilities.json", type: "JournalEntry" },
   { pack: "arm2e-bestiary", file: "beasts-arm5-ch13.json", type: "Actor" }
@@ -143,7 +144,7 @@ function prepareActorDocument(entry, pack, index) {
     _key: packKey(COLLECTION_BY_TYPE.Actor, id),
     name,
     type,
-    img: entry.img ?? "icons/svg/mystery-man.svg",
+    img: entry.img ?? (type === "covenant" ? "icons/svg/castle.svg" : "icons/svg/mystery-man.svg"),
     system: entry.system ?? {},
     items: entry.items ?? [],
     effects: entry.effects ?? [],

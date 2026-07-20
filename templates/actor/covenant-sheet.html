@@ -1,0 +1,131 @@
+<form class="{{cssClass}} arm2e-item-sheet arm2e-covenant-sheet flexcol" autocomplete="off">
+  <header class="sheet-header flexrow">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="72" width="72" />
+    <div class="header-fields flexcol">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="Covenant Name" />
+      </h1>
+      <div class="arm2e-item-grid">
+        <label>Location <input type="text" name="system.location" value="{{system.location}}" placeholder="Site or regio" /></label>
+        <label>Tribunal <input type="text" name="system.tribunal" value="{{system.tribunal}}" placeholder="e.g. Stonehenge" /></label>
+        <label>Founded <input type="number" name="system.founded" value="{{system.founded}}" data-dtype="Number" /></label>
+        <label>Current Year <input type="number" name="system.currentYear" value="{{system.currentYear}}" data-dtype="Number" /></label>
+        <label>Stage
+          <select name="system.stage">
+            {{#select system.stage}}
+            {{#each stages}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </label>
+        <label>Season
+          <select name="system.season">
+            {{#select system.season}}
+            {{#each seasons}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </label>
+      </div>
+      <div class="arm2e-quick-links">
+        {{#if system.chronicleJournal}}
+        <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.chronicleJournal}}" title="Open Chronicle Journal">
+          <i class="fas fa-book"></i> Chronicle
+        </button>
+        {{/if}}
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs arm2e-covenant-tabs" data-group="primary">
+    <a class="item" data-tab="overview">Overview</a>
+    <a class="item" data-tab="resources">Resources</a>
+    <a class="item" data-tab="members">Members</a>
+    <a class="item" data-tab="notes">Notes</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab" data-tab="overview" data-group="primary">
+      <h2 class="arm2e-subheading">Aura &amp; Prosperity</h2>
+      <div class="arm2e-item-grid">
+        <label>Aura Type
+          <select name="system.aura.type">
+            {{#select system.aura.type}}
+            {{#each auraTypes}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </label>
+        <label>Aura Level <input type="number" name="system.aura.level" value="{{system.aura.level}}" data-dtype="Number" /></label>
+        <label>Wealth <input type="text" name="system.wealth" value="{{system.wealth}}" placeholder="Poor / Average / Wealthy…" /></label>
+        <label>Income <input type="text" name="system.income" value="{{system.income}}" placeholder="Sources &amp; obligations" /></label>
+      </div>
+
+      <label class="arm2e-span-2">Charter <textarea name="system.charter" rows="4" placeholder="What binds the magi? Oaths, voting, guest rights…">{{system.charter}}</textarea></label>
+      <label class="arm2e-span-2">Hooks <textarea name="system.hooks" rows="3" placeholder="Threats, mysteries, and saga hooks tied to this site">{{system.hooks}}</textarea></label>
+      <label class="arm2e-span-2">Boons <textarea name="system.boons" rows="3" placeholder="Allies, resources, and advantages">{{system.boons}}</textarea></label>
+      <p class="arm2e-note">Stage is covenant maturity (Spring–Winter). Season is the current saga season for activities.</p>
+    </div>
+
+    <div class="tab" data-tab="resources" data-group="primary">
+      <h2 class="arm2e-subheading">Vis Stocks <span class="arm2e-muted">({{visTotal}} pawns)</span></h2>
+      <div class="arm2e-vis-grid">
+        {{#each visArts}}
+        <label title="{{label}}">{{abbrev}}
+          <input type="number" name="system.vis.{{id}}" value="{{value}}" data-dtype="Number" min="0" />
+        </label>
+        {{/each}}
+      </div>
+      <label class="arm2e-span-2">Vis Notes <textarea name="system.vis.notes" rows="2" placeholder="Sources, harvest seasons, contested sites…">{{system.vis.notes}}</textarea></label>
+
+      <h2 class="arm2e-subheading">Library</h2>
+      <label class="arm2e-span-2"><textarea name="system.library" rows="5" placeholder="Summae, tractatus, and lab texts available to members">{{system.library}}</textarea></label>
+
+      <h2 class="arm2e-subheading">Laboratories</h2>
+      <label class="arm2e-span-2"><textarea name="system.laboratories" rows="4" placeholder="Labs, specializations, shared space, and safety notes">{{system.laboratories}}</textarea></label>
+
+      <h2 class="arm2e-subheading">Turb &amp; Staff</h2>
+      <label class="arm2e-span-2"><textarea name="system.turb" rows="4" placeholder="Grogs, specialists, covenfolk roles and numbers">{{system.turb}}</textarea></label>
+    </div>
+
+    <div class="tab" data-tab="members" data-group="primary">
+      <h2 class="arm2e-subheading">Linked Characters</h2>
+      <p class="arm2e-note">Drag a Character actor here (or drop a Covenant onto a character sheet) to link membership.</p>
+
+      <div class="arm2e-member-drop" data-drop-target="member">
+        {{#if members.length}}
+        <ul class="arm2e-member-list">
+          {{#each members}}
+          <li class="arm2e-member-row" data-uuid="{{uuid}}" draggable="true">
+            <img src="{{img}}" width="28" height="28" alt="" />
+            <div class="arm2e-member-meta">
+              <button type="button" class="arm2e-open-member" data-uuid="{{uuid}}">{{name}}</button>
+              <span class="arm2e-muted">{{characterType}}{{#if house}} · {{house}}{{/if}}</span>
+            </div>
+            <button type="button" class="arm2e-unlink-member" data-actor-id="{{id}}" title="Unlink">
+              <i class="fas fa-unlink"></i>
+            </button>
+          </li>
+          {{/each}}
+        </ul>
+        {{else}}
+        <p class="arm2e-drop-hint">No linked members yet — drop characters here.</p>
+        {{/if}}
+      </div>
+    </div>
+
+    <div class="tab" data-tab="notes" data-group="primary">
+      <h2 class="arm2e-subheading">Saga Notes</h2>
+      <label class="arm2e-span-2"><textarea name="system.notes" rows="10" placeholder="Seasonal plans, tribunal politics, ongoing projects…">{{system.notes}}</textarea></label>
+
+      <h2 class="arm2e-subheading">Chronicle Journal</h2>
+      <p class="arm2e-note">Optional link to a Journal Entry (import the Covenant Template pack, then paste its UUID).</p>
+      <label class="arm2e-span-2">Journal UUID
+        <input type="text" name="system.chronicleJournal" value="{{system.chronicleJournal}}" placeholder="@UUID[JournalEntry.…]" />
+      </label>
+    </div>
+  </section>
+</form>

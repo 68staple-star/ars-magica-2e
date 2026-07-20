@@ -1,12 +1,13 @@
 {
   "Actor": {
-    "types": ["character", "beast"],
+    "types": ["character", "beast", "covenant"],
     "character": {
       "identity": {
         "age": 0,
         "characterType": "companion",
         "biography": "",
         "covenant": "",
+        "covenantActor": "",
         "covenantJournal": "",
         "house": "",
         "gender": "",
@@ -99,6 +100,46 @@
       "vis": "",
       "description": "",
       "source": ""
+    },
+    "covenant": {
+      "location": "",
+      "tribunal": "",
+      "founded": 0,
+      "currentYear": 1220,
+      "stage": "Spring",
+      "season": "Spring",
+      "aura": {
+        "type": "Magic",
+        "level": 3
+      },
+      "wealth": "",
+      "income": "",
+      "vis": {
+        "creo": 0,
+        "intellego": 0,
+        "muto": 0,
+        "perdo": 0,
+        "rego": 0,
+        "animal": 0,
+        "aquam": 0,
+        "auram": 0,
+        "corporem": 0,
+        "herbam": 0,
+        "ignem": 0,
+        "imagonem": 0,
+        "mentem": 0,
+        "terram": 0,
+        "vim": 0,
+        "notes": ""
+      },
+      "library": "",
+      "laboratories": "",
+      "turb": "",
+      "charter": "",
+      "hooks": "",
+      "boons": "",
+      "notes": "",
+      "chronicleJournal": ""
     }
   },
   "Item": {

@@ -62,12 +62,16 @@
 </div>
 
 <details class="arm2e-panel arm2e-journal-refs arm2e-advanced-refs">
-  <summary class="arm2e-section-heading">Advanced — Journal UUID Links</summary>
-  <p class="arm2e-note">Optional GM wiring. Most players can ignore this section.</p>
+  <summary class="arm2e-section-heading">Advanced — Links</summary>
+  <p class="arm2e-note">Prefer dropping a Covenant actor onto the header field. UUIDs below are optional GM wiring.</p>
   <div class="arm2e-journal-ref-grid">
     <div class="form-group">
+      <label for="{{actor._id}}-covenant-actor">Covenant Actor UUID</label>
+      <input id="{{actor._id}}-covenant-actor" type="text" name="system.identity.covenantActor" value="{{system.identity.covenantActor}}" placeholder="@UUID[Actor.…]" />
+    </div>
+    <div class="form-group">
       <label for="{{actor._id}}-covenant-journal">Covenant Journal UUID</label>
-      <input id="{{actor._id}}-covenant-journal" type="text" name="system.identity.covenantJournal" value="{{system.identity.covenantJournal}}" placeholder="@UUID[...]" />
+      <input id="{{actor._id}}-covenant-journal" type="text" name="system.identity.covenantJournal" value="{{system.identity.covenantJournal}}" placeholder="@UUID[JournalEntry.…]" />
     </div>
     <div class="form-group">
       <label for="{{actor._id}}-rules-journal">Rules Journal UUID</label>

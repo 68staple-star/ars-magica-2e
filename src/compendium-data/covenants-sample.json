@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Sample Spring Covenant",
+    "type": "covenant",
+    "img": "icons/svg/castle.svg",
+    "system": {
+      "location": "Wooded hills above a quiet village",
+      "tribunal": "Stonehenge",
+      "founded": 1198,
+      "currentYear": 1220,
+      "stage": "Spring",
+      "season": "Spring",
+      "aura": {
+        "type": "Magic",
+        "level": 3
+      },
+      "wealth": "Average",
+      "income": "Village rents, a small mill share, occasional silver from Tribunal work",
+      "vis": {
+        "creo": 0,
+        "intellego": 0,
+        "muto": 0,
+        "perdo": 0,
+        "rego": 0,
+        "animal": 2,
+        "aquam": 0,
+        "auram": 0,
+        "corporem": 0,
+        "herbam": 4,
+        "ignem": 0,
+        "imagonem": 0,
+        "mentem": 0,
+        "terram": 1,
+        "vim": 3,
+        "notes": "Herbâm from the oak grove each Autumn; Vim from a fragile regio spring — contested if neighbors learn of it."
+      },
+      "library": "Shared Art summae (modest quality); Ability tractatus on Magic Theory and Area Lore (local). Personal lab texts stay with their owners unless voted for the common library.",
+      "laboratories": "Three personal labs in the manor wing; one shared workshop with basic equipment. No specialized labs yet.",
+      "turb": "A dozen covenfolk, a steward, a blacksmith, and a turb of six grogs under a veteran sergeant. Morale is fair while food is reliable.",
+      "charter": "Equal votes among member magi. Vis from covenant sources is shared by vote. Guests may stay one season with a sponsor; longer stays require unanimous consent.",
+      "hooks": "The grove’s regio is thinning. A nearby lord wants clearer taxes from the village. Rumors of a hedge tradition in the deep woods.",
+      "boons": "Friendly village priest (within reason). Hidden site. Reliable Herbâm harvest.",
+      "notes": "Starter covenant for new sagas. Import the Covenant Chronicle Template journal and paste its UUID into Chronicle Journal. Link player characters via the Members tab.",
+      "chronicleJournal": ""
+    }
+  }
+]

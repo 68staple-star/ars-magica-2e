@@ -863,3 +863,125 @@
   grid-column: 1 / -1;
 }
 
+/* Covenant link on character header */
+.ars-magica-2e.sheet.actor.character .arm2e-covenant-link-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-covenant-link-row input {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-covenant-link-row button,
+.ars-magica-2e.sheet.actor.covenant .arm2e-quick-links button {
+  flex: 0 0 auto;
+  width: auto;
+  height: 1.75rem;
+  line-height: 1;
+  padding: 0 0.45rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-covenant-field.is-dragover,
+.ars-magica-2e.sheet.actor.covenant .arm2e-member-drop.is-dragover {
+  outline: 2px dashed var(--arm2e-accent, #7a5a2e);
+  outline-offset: 2px;
+  background: color-mix(in srgb, var(--arm2e-accent, #7a5a2e) 12%, transparent);
+}
+
+/* Covenant actor sheet */
+.ars-magica-2e.sheet.actor.covenant .arm2e-covenant-tabs {
+  flex: 0 0 auto;
+  border-bottom: 1px solid var(--arm2e-rule, #c9b89a);
+  margin: 0.35rem 0 0.5rem;
+  gap: 0.35rem;
+}
+
+.ars-magica-2e.sheet.actor.covenant .sheet-body {
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-vis-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.4rem 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-vis-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-vis-grid input {
+  width: 100%;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-muted {
+  color: var(--arm2e-ink-muted, #6b5c48);
+  font-weight: 500;
+  font-size: 0.85em;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-member-drop {
+  min-height: 8rem;
+  border: 1px dashed var(--arm2e-rule, #c9b89a);
+  border-radius: 4px;
+  padding: 0.65rem;
+  background: color-mix(in srgb, var(--arm2e-paper, #f7f1e4) 80%, #fff);
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-member-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-member-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.35rem;
+  border-radius: 3px;
+  background: color-mix(in srgb, #fff 55%, transparent);
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-member-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-open-member {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  font-weight: 700;
+  cursor: pointer;
+  color: inherit;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-open-member:hover {
+  color: var(--arm2e-accent, #7a5a2e);
+  text-decoration: underline;
+}
+
+.ars-magica-2e.sheet.actor.covenant .arm2e-drop-hint {
+  margin: 1.5rem 0;
+  text-align: center;
+  color: var(--arm2e-ink-muted, #6b5c48);
+  font-style: italic;
+}
+

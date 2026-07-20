@@ -10,6 +10,11 @@ import { promptSpontaneousCast } from "../utils/spontaneous-cast.js";
 import { prepareVirtueFlawList } from "../utils/virtues.js";
 import { prepareFatigueTrack, prepareStatusStrip, prepareWoundTrack } from "../utils/wounds.js";
 import { openJournalEntry } from "../utils/journal.js";
+import {
+  linkCharacterToCovenant,
+  openLinkedDocument,
+  unlinkCharacterFromCovenant
+} from "../utils/covenant.js";
 
 const DROP_TARGETS = {
   ability: "ability",
@@ -110,8 +115,22 @@ export class ArM2eActorSheet extends ActorSheet {
     html.find(".arm2e-add-ability").on("click", this._onBrowseAbilities.bind(this));
     html.find(".item-edit").on("click", this._onEditItem.bind(this));
     html.find(".arm2e-journal-link").on("click", this._onOpenJournal.bind(this));
+    html.find(".arm2e-open-covenant").on("click", this._onOpenCovenant.bind(this));
+    html.find(".arm2e-unlink-covenant").on("click", this._onUnlinkCovenant.bind(this));
     html.find(".arm2e-collapse-toggle").on("click", this._onToggleCollapse.bind(this));
     html.find(".arm2e-ability-filter").on("input", this._onFilterAbilities.bind(this));
+
+    const covenantDrop = html.find('[data-drop-target="covenant"]');
+    if (covenantDrop.length) {
+      covenantDrop.on("dragover", (event) => {
+        event.preventDefault();
+        event.currentTarget.classList.add("is-dragover");
+      });
+      covenantDrop.on("dragleave", (event) => {
+        event.currentTarget.classList.remove("is-dragover");
+      });
+      covenantDrop.on("drop", (event) => this._onDropCovenant(event));
+    }
 
     for (const [selector, type] of Object.entries(DROP_TARGETS)) {
       const panel = html.find(`[data-drop-target="${selector}"]`);
@@ -263,7 +282,7 @@ export class ArM2eActorSheet extends ActorSheet {
    * @param {JQuery.ClickEvent} event
    */
   async _onRollSpellCast(event) {
-    if (event.target.closest(".item-edit, .arm2e-item-delete, .arm2e-journal-link")) return;
+    if (event.target.closest(".item-edit, .arm2e-item-delete, .arm2e-journal-link, .arm2e-open-covenant, .arm2e-unlink-covenant")) return;
 
     event.preventDefault();
     const row = event.currentTarget.closest(".spell-row");
@@ -359,6 +378,54 @@ export class ArM2eActorSheet extends ActorSheet {
     event.stopPropagation();
     const uuid = event.currentTarget.dataset.journalUuid;
     await openJournalEntry(uuid);
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onOpenCovenant(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const uuid = event.currentTarget.dataset.uuid
+      ?? this.actor.system?.identity?.covenantActor;
+    await openLinkedDocument(uuid, {
+      missing: "No covenant actor linked. Drop a Covenant onto the header field.",
+      wrongType: "Linked document is not a covenant actor."
+    });
+  }
+
+  /**
+   * @param {JQuery.ClickEvent} event
+   */
+  async _onUnlinkCovenant(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    await unlinkCharacterFromCovenant(this.actor);
+    this.render(false);
+  }
+
+  /**
+   * @param {JQuery.TriggeredEvent} event
+   */
+  async _onDropCovenant(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    event.currentTarget.classList.remove("is-dragover");
+
+    const data = TextEditor.getDragEventData(event.originalEvent ?? event);
+    if (!data?.uuid) return;
+
+    const doc = await fromUuid(data.uuid);
+    if (!doc || doc.documentName !== "Actor" || doc.type !== "covenant") {
+      ui.notifications.warn("Drop a Covenant actor to link this character.");
+      return;
+    }
+
+    const linked = await linkCharacterToCovenant(this.actor, doc);
+    if (linked) {
+      ui.notifications.info(`Linked to ${doc.name}.`);
+      this.render(false);
+    }
   }
 
   /**

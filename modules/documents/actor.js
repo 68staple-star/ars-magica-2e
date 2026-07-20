@@ -1,5 +1,6 @@
 import { buildAbilityLookupFromActor, findAbilityItem } from "../utils/abilities.js";
 import { defaultConfidence } from "../utils/creation.js";
+import { defaultCovenantSystem } from "../utils/covenant.js";
 
 /**
  * @returns {typeof import("../config.js").ARM2E}
@@ -19,6 +20,7 @@ function applyCharacterDefaults(data) {
   data.system = foundry.utils.mergeObject({
     identity: {
       covenant: "",
+      covenantActor: "",
       covenantJournal: "",
       gender: "",
       yearBorn: 0,
@@ -75,6 +77,16 @@ export function registerActorDocumentHooks() {
         description: "",
         source: ""
       }, data.system ?? {}, { inplace: false });
+      return;
+    }
+
+    if (data.type === "covenant") {
+      data.img ??= "icons/svg/castle.svg";
+      data.system = foundry.utils.mergeObject(
+        defaultCovenantSystem(),
+        data.system ?? {},
+        { inplace: false }
+      );
     }
   });
 }
