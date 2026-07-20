@@ -2,8 +2,10 @@ import { ArM2eAbilitySheet } from "../sheets/ability-sheet.js";
 import { ArM2eActorSheet } from "../sheets/actor-sheet.js";
 import { ArM2eArmorSheet } from "../sheets/armor-sheet.js";
 import { ArM2eBeastSheet } from "../sheets/beast-sheet.js";
+import { ArM2eBookSheet } from "../sheets/book-sheet.js";
 import { ArM2eCovenantSheet } from "../sheets/covenant-sheet.js";
 import { ArM2eEquipmentSheet } from "../sheets/equipment-sheet.js";
+import { ArM2eLaboratorySheet } from "../sheets/laboratory-sheet.js";
 import { ArM2eSpellSheet } from "../sheets/spell-sheet.js";
 import { ArM2eVirtueFlawSheet } from "../sheets/virtue-flaw-sheet.js";
 import { ArM2eWeaponSheet } from "../sheets/weapon-sheet.js";
@@ -96,6 +98,18 @@ export function registerSheets() {
     types: ["equipment"],
     makeDefault: true,
     label: "ARM2e Equipment Sheet"
+  });
+
+  Items.registerSheet(systemId, ArM2eBookSheet, {
+    types: ["book"],
+    makeDefault: true,
+    label: "ARM2e Book Sheet"
+  });
+
+  Items.registerSheet(systemId, ArM2eLaboratorySheet, {
+    types: ["laboratory"],
+    makeDefault: true,
+    label: "ARM2e Laboratory Sheet"
   });
 
   DocumentSheetConfig.updateDefaultSheets?.();

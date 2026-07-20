@@ -125,6 +125,12 @@ export function defaultCovenantSystem() {
     hooks: "",
     boons: "",
     notes: "",
-    chronicleJournal: ""
+    chronicleJournal: "",
+    seasonal: {
+      year: 1220,
+      season: "Spring",
+      log: "",
+      activities: []
+    }
   };
 }

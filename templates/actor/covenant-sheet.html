@@ -30,6 +30,9 @@
         </label>
       </div>
       <div class="arm2e-quick-links">
+        <button type="button" class="arm2e-open-seasonal" title="Seasonal Activity Planner">
+          <i class="fas fa-calendar-alt"></i> {{seasonalSummary}} ({{seasonalCount}})
+        </button>
         {{#if system.chronicleJournal}}
         <button type="button" class="arm2e-journal-link" data-journal-uuid="{{system.chronicleJournal}}" title="Open Chronicle Journal">
           <i class="fas fa-book"></i> Chronicle
@@ -81,36 +84,118 @@
       </div>
       <label class="arm2e-span-2">Vis Notes <textarea name="system.vis.notes" rows="2" placeholder="Sources, harvest seasons, contested sites…">{{system.vis.notes}}</textarea></label>
 
-      <h2 class="arm2e-subheading">Library</h2>
-      <label class="arm2e-span-2"><textarea name="system.library" rows="5" placeholder="Summae, tractatus, and lab texts available to members">{{system.library}}</textarea></label>
+      <div class="arm2e-cov-section-head">
+        <h2 class="arm2e-subheading">Library</h2>
+        <button type="button" class="arm2e-item-create" data-type="book"><i class="fas fa-plus"></i> Book</button>
+      </div>
+      <div class="arm2e-item-drop" data-item-type="book" title="Drop book items here">
+        {{#if books.length}}
+        <ul class="arm2e-cov-item-list">
+          {{#each books}}
+          <li class="arm2e-cov-item-row" data-item-id="{{id}}" draggable="true">
+            <button type="button" class="arm2e-item-edit" data-item-id="{{id}}">{{name}}</button>
+            <span class="arm2e-muted">{{kind}} · {{topic}} · L{{level}} Q{{quality}}</span>
+            <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
+          </li>
+          {{/each}}
+        </ul>
+        {{else}}
+        <p class="arm2e-drop-hint">No books yet — create or drop Book items here.</p>
+        {{/if}}
+      </div>
+      <label class="arm2e-span-2">Library Notes <textarea name="system.library" rows="2" placeholder="Free-text index / borrowing rules">{{system.library}}</textarea></label>
 
-      <h2 class="arm2e-subheading">Laboratories</h2>
-      <label class="arm2e-span-2"><textarea name="system.laboratories" rows="4" placeholder="Labs, specializations, shared space, and safety notes">{{system.laboratories}}</textarea></label>
+      <div class="arm2e-cov-section-head">
+        <h2 class="arm2e-subheading">Laboratories</h2>
+        <button type="button" class="arm2e-item-create" data-type="laboratory"><i class="fas fa-plus"></i> Lab</button>
+      </div>
+      <div class="arm2e-item-drop" data-item-type="laboratory" title="Drop laboratory items here">
+        {{#if laboratories.length}}
+        <ul class="arm2e-cov-item-list">
+          {{#each laboratories}}
+          <li class="arm2e-cov-item-row" data-item-id="{{id}}" draggable="true">
+            <button type="button" class="arm2e-item-edit" data-item-id="{{id}}">{{name}}</button>
+            <span class="arm2e-muted">{{#if specialization}}{{specialization}} · {{/if}}Size {{size}} · GQ {{generalQuality}}</span>
+            <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
+          </li>
+          {{/each}}
+        </ul>
+        {{else}}
+        <p class="arm2e-drop-hint">No laboratories yet — create or drop Laboratory items here.</p>
+        {{/if}}
+      </div>
+      <label class="arm2e-span-2">Lab Notes <textarea name="system.laboratories" rows="2" placeholder="Shared workshop notes">{{system.laboratories}}</textarea></label>
 
-      <h2 class="arm2e-subheading">Turb &amp; Staff</h2>
-      <label class="arm2e-span-2"><textarea name="system.turb" rows="4" placeholder="Grogs, specialists, covenfolk roles and numbers">{{system.turb}}</textarea></label>
+      <h2 class="arm2e-subheading">Turb &amp; Staff Notes</h2>
+      <label class="arm2e-span-2"><textarea name="system.turb" rows="3" placeholder="Specialists and numbers not tracked as character actors">{{system.turb}}</textarea></label>
     </div>
 
     <div class="tab" data-tab="members" data-group="primary">
-      <h2 class="arm2e-subheading">Linked Characters</h2>
-      <p class="arm2e-note">Drag a Character actor here (or drop a Covenant onto a character sheet) to link membership.</p>
+      <h2 class="arm2e-subheading">Roster</h2>
+      <p class="arm2e-note">Drag a Character actor here (or drop a Covenant onto a character sheet) to link membership. Grogs listed here are your turb.</p>
 
       <div class="arm2e-member-drop" data-drop-target="member">
         {{#if members.length}}
+        {{#if roster.magi.length}}
+        <h3 class="arm2e-roster-heading">Magi</h3>
         <ul class="arm2e-member-list">
-          {{#each members}}
+          {{#each roster.magi}}
           <li class="arm2e-member-row" data-uuid="{{uuid}}" draggable="true">
             <img src="{{img}}" width="28" height="28" alt="" />
             <div class="arm2e-member-meta">
               <button type="button" class="arm2e-open-member" data-uuid="{{uuid}}">{{name}}</button>
               <span class="arm2e-muted">{{characterType}}{{#if house}} · {{house}}{{/if}}</span>
             </div>
-            <button type="button" class="arm2e-unlink-member" data-actor-id="{{id}}" title="Unlink">
-              <i class="fas fa-unlink"></i>
-            </button>
+            <button type="button" class="arm2e-unlink-member" data-actor-id="{{id}}" title="Unlink"><i class="fas fa-unlink"></i></button>
           </li>
           {{/each}}
         </ul>
+        {{/if}}
+        {{#if roster.companions.length}}
+        <h3 class="arm2e-roster-heading">Companions</h3>
+        <ul class="arm2e-member-list">
+          {{#each roster.companions}}
+          <li class="arm2e-member-row" data-uuid="{{uuid}}" draggable="true">
+            <img src="{{img}}" width="28" height="28" alt="" />
+            <div class="arm2e-member-meta">
+              <button type="button" class="arm2e-open-member" data-uuid="{{uuid}}">{{name}}</button>
+              <span class="arm2e-muted">{{characterType}}</span>
+            </div>
+            <button type="button" class="arm2e-unlink-member" data-actor-id="{{id}}" title="Unlink"><i class="fas fa-unlink"></i></button>
+          </li>
+          {{/each}}
+        </ul>
+        {{/if}}
+        {{#if roster.grogs.length}}
+        <h3 class="arm2e-roster-heading">Turb (Grogs)</h3>
+        <ul class="arm2e-member-list">
+          {{#each roster.grogs}}
+          <li class="arm2e-member-row" data-uuid="{{uuid}}" draggable="true">
+            <img src="{{img}}" width="28" height="28" alt="" />
+            <div class="arm2e-member-meta">
+              <button type="button" class="arm2e-open-member" data-uuid="{{uuid}}">{{name}}</button>
+              <span class="arm2e-muted">grog</span>
+            </div>
+            <button type="button" class="arm2e-unlink-member" data-actor-id="{{id}}" title="Unlink"><i class="fas fa-unlink"></i></button>
+          </li>
+          {{/each}}
+        </ul>
+        {{/if}}
+        {{#if roster.other.length}}
+        <h3 class="arm2e-roster-heading">Other</h3>
+        <ul class="arm2e-member-list">
+          {{#each roster.other}}
+          <li class="arm2e-member-row" data-uuid="{{uuid}}" draggable="true">
+            <img src="{{img}}" width="28" height="28" alt="" />
+            <div class="arm2e-member-meta">
+              <button type="button" class="arm2e-open-member" data-uuid="{{uuid}}">{{name}}</button>
+              <span class="arm2e-muted">{{characterType}}</span>
+            </div>
+            <button type="button" class="arm2e-unlink-member" data-actor-id="{{id}}" title="Unlink"><i class="fas fa-unlink"></i></button>
+          </li>
+          {{/each}}
+        </ul>
+        {{/if}}
         {{else}}
         <p class="arm2e-drop-hint">No linked members yet — drop characters here.</p>
         {{/if}}

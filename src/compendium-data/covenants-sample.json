@@ -34,14 +34,68 @@
         "vim": 3,
         "notes": "Herbâm from the oak grove each Autumn; Vim from a fragile regio spring — contested if neighbors learn of it."
       },
-      "library": "Shared Art summae (modest quality); Ability tractatus on Magic Theory and Area Lore (local). Personal lab texts stay with their owners unless voted for the common library.",
-      "laboratories": "Three personal labs in the manor wing; one shared workshop with basic equipment. No specialized labs yet.",
-      "turb": "A dozen covenfolk, a steward, a blacksmith, and a turb of six grogs under a veteran sergeant. Morale is fair while food is reliable.",
+      "library": "Borrowing of common books requires a magus sponsor. Lab texts stay with their owners unless voted into the library.",
+      "laboratories": "Shared workshop for overflow work; personal labs listed as Laboratory items.",
+      "turb": "A dozen covenfolk, a steward, a blacksmith, and six grogs under a veteran sergeant (link named grogs on Members).",
       "charter": "Equal votes among member magi. Vis from covenant sources is shared by vote. Guests may stay one season with a sponsor; longer stays require unanimous consent.",
       "hooks": "The grove’s regio is thinning. A nearby lord wants clearer taxes from the village. Rumors of a hedge tradition in the deep woods.",
       "boons": "Friendly village priest (within reason). Hidden site. Reliable Herbâm harvest.",
-      "notes": "Starter covenant for new sagas. Import the Covenant Chronicle Template journal and paste its UUID into Chronicle Journal. Link player characters via the Members tab.",
-      "chronicleJournal": ""
-    }
+      "notes": "Starter covenant for new sagas. Use Seasonal planner from the sheet header. Link player characters via the Members tab.",
+      "chronicleJournal": "",
+      "seasonal": {
+        "year": 1220,
+        "season": "Spring",
+        "log": "",
+        "activities": []
+      }
+    },
+    "items": [
+      {
+        "name": "Roots of Herbam",
+        "type": "book",
+        "img": "icons/svg/book.svg",
+        "system": {
+          "kind": "summa",
+          "topic": "Herbam",
+          "level": 5,
+          "quality": 8,
+          "language": "Latin",
+          "author": "Unknown Bonisagus",
+          "notes": "Modest common-library summa.",
+          "source": "Sample"
+        }
+      },
+      {
+        "name": "On Magic Theory",
+        "type": "book",
+        "img": "icons/svg/book.svg",
+        "system": {
+          "kind": "tractatus",
+          "topic": "Magic Theory",
+          "level": 0,
+          "quality": 7,
+          "language": "Latin",
+          "author": "Covenant founder",
+          "notes": "Useful for freshly gauntleted magi.",
+          "source": "Sample"
+        }
+      },
+      {
+        "name": "Shared Workshop",
+        "type": "laboratory",
+        "img": "icons/svg/castle.svg",
+        "system": {
+          "ownerActor": "",
+          "size": 0,
+          "refinement": 0,
+          "safety": 0,
+          "generalQuality": 0,
+          "upkeep": 1,
+          "specialization": "",
+          "notes": "Basic shared lab space for visitors and overflow.",
+          "source": "Sample"
+        }
+      }
+    ]
   }
 ]

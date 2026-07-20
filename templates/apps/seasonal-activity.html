@@ -1,0 +1,86 @@
+<form class="arm2e-seasonal-form flexcol" autocomplete="off">
+  <header class="arm2e-seasonal-header">
+    <div class="arm2e-item-grid">
+      <label>Year <input type="number" name="seasonalYear" value="{{year}}" data-dtype="Number" /></label>
+      <label>Season
+        <select name="seasonalSeason">
+          {{#select season}}
+          {{#each seasons}}
+          <option value="{{this}}">{{this}}</option>
+          {{/each}}
+          {{/select}}
+        </select>
+      </label>
+    </div>
+    <div class="arm2e-seasonal-actions">
+      <button type="button" class="arm2e-seasonal-save-meta"><i class="fas fa-save"></i> Save Year/Season</button>
+      <button type="button" class="arm2e-seasonal-advance"><i class="fas fa-forward"></i> Advance Season</button>
+    </div>
+  </header>
+
+  <section class="arm2e-seasonal-list">
+    <h2>Activities</h2>
+    {{#if activities.length}}
+    <ul class="arm2e-seasonal-entries">
+      {{#each activities}}
+      <li class="arm2e-seasonal-entry{{#if resolved}} is-resolved{{/if}}" data-activity-id="{{id}}">
+        <div class="arm2e-seasonal-entry-main">
+          <strong>{{actorName}}</strong>
+          <span class="arm2e-muted">{{activityLabel}}</span>
+          {{#if targetName}}<span class="arm2e-muted">· {{targetName}}</span>{{/if}}
+          {{#if summary}}<div>{{summary}}</div>{{/if}}
+          {{#if xpNote}}<div class="arm2e-muted">XP: {{xpNote}}</div>{{/if}}
+        </div>
+        <div class="arm2e-seasonal-entry-controls">
+          <button type="button" class="arm2e-seasonal-toggle" data-activity-id="{{id}}" title="Toggle resolved">
+            <i class="fas {{#if resolved}}fa-check-square{{else}}fa-square{{/if}}"></i>
+          </button>
+          <button type="button" class="arm2e-seasonal-remove" data-activity-id="{{id}}" title="Remove">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+    {{else}}
+    <p class="arm2e-note">No activities yet for this season.</p>
+    {{/if}}
+  </section>
+
+  <section class="arm2e-seasonal-add-block">
+    <h2>Add Activity</h2>
+    <div class="arm2e-item-grid">
+      <label>Character
+        <select name="newActorUuid">
+          <option value="">—</option>
+          {{#each members}}
+          <option value="{{uuid}}">{{name}} ({{type}})</option>
+          {{/each}}
+        </select>
+      </label>
+      <label>Activity
+        <select name="newActivity">
+          {{#each activityTypes}}
+          <option value="{{id}}">{{label}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <label class="arm2e-span-2">Book / Lab
+        <select name="newTargetUuid">
+          <option value="">—</option>
+          {{#each targets}}
+          <option value="{{uuid}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <label class="arm2e-span-2">Summary <input type="text" name="newSummary" placeholder="What are they doing?" /></label>
+      <label class="arm2e-span-2">XP / Outcome Note <input type="text" name="newXpNote" placeholder="e.g. +15 Herbam from summa" /></label>
+    </div>
+    <button type="button" class="arm2e-seasonal-add"><i class="fas fa-plus"></i> Add</button>
+  </section>
+
+  <section class="arm2e-seasonal-log-block">
+    <h2>Season Log</h2>
+    <textarea name="seasonalLog" rows="4" placeholder="Appended when you advance seasons; edit freely.">{{log}}</textarea>
+  </section>
+</form>

@@ -1,8 +1,10 @@
 import { ARM2E } from "./modules/config.js";
 import { ArM2eCreationWizard } from "./modules/apps/creation-wizard.js";
+import { ArM2eSeasonalActivityApp } from "./modules/apps/seasonal-activity-app.js";
 import { registerCompendiumSeeding } from "./modules/compendium/seed.js";
 import { registerActorDocumentHooks } from "./modules/documents/actor.js";
 import { rollArM2e, rollSpellCast, rollSpontaneousCast } from "./modules/dice.js";
+import { registerChatHooks } from "./modules/hooks/chat-hooks.js";
 import { registerHotbarHooks } from "./modules/hooks/hotbar-hooks.js";
 import { registerStatusHooks } from "./modules/hooks/status-hooks.js";
 import { registerUiHooks } from "./modules/hooks/ui-hooks.js";
@@ -33,7 +35,8 @@ Hooks.on("init", () => {
       promptAbilityRoll,
       promptSpontaneousCast,
       executeHotbarRoll,
-      CreationWizard: ArM2eCreationWizard
+      CreationWizard: ArM2eCreationWizard,
+      SeasonalActivityApp: ArM2eSeasonalActivityApp
     };
 
     registerRulesPdfSettings();
@@ -44,6 +47,7 @@ Hooks.on("init", () => {
     registerUiHooks();
     registerStatusHooks();
     registerHotbarHooks();
+    registerChatHooks();
     registerSheets();
     registerAbilityMigration();
     console.log("arm2e | init hook complete");

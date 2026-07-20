@@ -96,7 +96,8 @@ export async function executeAbilityRoll(actor, abilityItem, registry, character
 
   await rollArM2e("stress", breakdown.modifier, label, {
     actor,
-    spendConfidence: Boolean(options.spendConfidence)
+    spendConfidence: Boolean(options.spendConfidence),
+    itemUuid: abilityItem.uuid
   });
 }
 

@@ -1,0 +1,20 @@
+<form class="arm2e-item-sheet" autocomplete="off">
+  <header class="arm2e-item-header">
+    <img src="{{item.img}}" data-edit="img" height="48" width="48" />
+    <input name="name" type="text" value="{{item.name}}" placeholder="Laboratory Name" />
+  </header>
+  <div class="arm2e-item-grid">
+    <label class="arm2e-span-2">Owner Actor UUID
+      <input type="text" name="system.ownerActor" value="{{system.ownerActor}}" placeholder="@UUID[Actor.…] — optional magus link" />
+    </label>
+    <label>Size <input type="number" name="system.size" value="{{system.size}}" data-dtype="Number" /></label>
+    <label>Refinement <input type="number" name="system.refinement" value="{{system.refinement}}" data-dtype="Number" /></label>
+    <label>Safety <input type="number" name="system.safety" value="{{system.safety}}" data-dtype="Number" /></label>
+    <label>General Quality <input type="number" name="system.generalQuality" value="{{system.generalQuality}}" data-dtype="Number" /></label>
+    <label>Upkeep <input type="number" name="system.upkeep" value="{{system.upkeep}}" data-dtype="Number" /></label>
+    <label>Specialization <input type="text" name="system.specialization" value="{{system.specialization}}" placeholder="e.g. Vim, potions…" /></label>
+    <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="3">{{system.notes}}</textarea></label>
+    <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" /></label>
+  </div>
+  <p class="arm2e-note">Lab totals are not auto-calculated yet — record specialization and notes for seasonal lab work.</p>
+</form>

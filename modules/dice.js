@@ -10,6 +10,7 @@ import {
   getFatigueLevel
 } from "./utils/wounds.js";
 import { spontaneousLevelEquivalent } from "./utils/spontaneous.js";
+import { buildChatActionsHtml, canOfferConfidence } from "./hooks/chat-hooks.js";
 
 /**
  * @returns {number} Raw Foundry d10 result (1-10).
@@ -183,6 +184,8 @@ async function buildChatContent(dieResult, baseModifier, label, context = {}) {
     ? `<div class="arm2e-cast-outcome">Spent 1 Confidence (+${context.confidenceBonus}) — ${context.confidenceRemaining} remaining.</div>`
     : "";
 
+  const actionsHtml = context.actionsHtml ?? "";
+
   return renderTemplate("systems/ars-magica-2e/templates/chat/roll-card.html", {
     label: label || "Ars Magica 2e Roll",
     rollTitle,
@@ -198,7 +201,8 @@ async function buildChatContent(dieResult, baseModifier, label, context = {}) {
     botchHtml: dieResult.potentialBotch
       ? `<div class="arm2e-botch-flag">Potential Botch — storyguide chooses botch dice and resolves.</div>`
       : "",
-    inactiveHtml: context.inactiveHtml ?? ""
+    inactiveHtml: context.inactiveHtml ?? "",
+    actionsHtml
   });
 }
 
@@ -318,11 +322,27 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
       outcomeHtml: options.outcomeHtml,
       confidenceSpent,
       confidenceRemaining,
-      confidenceBonus: confidenceSpent ? confidenceBonus : 0
+      confidenceBonus: confidenceSpent ? confidenceBonus : 0,
+      actionsHtml: buildChatActionsHtml({
+        actorUuid: options.actor?.uuid,
+        itemUuid: options.itemUuid,
+        confidenceSpent,
+        canSpendConfidence: canOfferConfidence(options.actor, confidenceSpent)
+      })
     }),
     rolls: [roll],
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-    sound: CONFIG.sounds?.dice
+    sound: CONFIG.sounds?.dice,
+    flags: {
+      "ars-magica-2e": {
+        actorUuid: options.actor?.uuid ?? "",
+        itemUuid: options.itemUuid ?? "",
+        label: label || "Ars Magica 2e Roll",
+        total,
+        confidenceSpent,
+        confidenceRemaining
+      }
+    }
   });
 
   return {

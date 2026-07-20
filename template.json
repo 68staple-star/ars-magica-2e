@@ -142,11 +142,17 @@
       "hooks": "",
       "boons": "",
       "notes": "",
-      "chronicleJournal": ""
+      "chronicleJournal": "",
+      "seasonal": {
+        "year": 1220,
+        "season": "Spring",
+        "log": "",
+        "activities": []
+      }
     }
   },
   "Item": {
-    "types": ["ability", "art", "spell", "virtueFlaw", "weapon", "armor", "equipment"],
+    "types": ["ability", "art", "spell", "virtueFlaw", "weapon", "armor", "equipment", "book", "laboratory"],
     "ability": {
       "category": "talents",
       "key": "",
@@ -216,6 +222,27 @@
       "load": 0,
       "equipped": false,
       "description": ""
+    },
+    "book": {
+      "kind": "summa",
+      "topic": "",
+      "level": 0,
+      "quality": 0,
+      "language": "Latin",
+      "author": "",
+      "notes": "",
+      "source": ""
+    },
+    "laboratory": {
+      "ownerActor": "",
+      "size": 0,
+      "refinement": 0,
+      "safety": 0,
+      "generalQuality": 0,
+      "upkeep": 0,
+      "specialization": "",
+      "notes": "",
+      "source": ""
     }
   }
 }

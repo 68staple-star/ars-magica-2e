@@ -1,0 +1,25 @@
+<form class="arm2e-item-sheet" autocomplete="off">
+  <header class="arm2e-item-header">
+    <img src="{{item.img}}" data-edit="img" height="48" width="48" />
+    <input name="name" type="text" value="{{item.name}}" placeholder="Book Title" />
+  </header>
+  <div class="arm2e-item-grid">
+    <label>Kind
+      <select name="system.kind">
+        {{#select system.kind}}
+        {{#each bookKinds}}
+        <option value="{{this}}">{{this}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+    </label>
+    <label>Topic <input type="text" name="system.topic" value="{{system.topic}}" placeholder="Art or Ability" /></label>
+    <label>Level <input type="number" name="system.level" value="{{system.level}}" data-dtype="Number" min="0" /></label>
+    <label>Quality <input type="number" name="system.quality" value="{{system.quality}}" data-dtype="Number" min="0" /></label>
+    <label>Language <input type="text" name="system.language" value="{{system.language}}" /></label>
+    <label>Author <input type="text" name="system.author" value="{{system.author}}" /></label>
+    <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="3">{{system.notes}}</textarea></label>
+    <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" /></label>
+  </div>
+  <p class="arm2e-note">Summa Level / Quality and tractatus Quality are for table reference — XP is applied in the Seasonal Activity app notes.</p>
+</form>

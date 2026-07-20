@@ -321,7 +321,10 @@ export class ArM2eActorSheet extends ActorSheet {
     const safeModifier = Number.isFinite(castingModifier) ? castingModifier : 0;
     const safeLevel = Number.isFinite(spellLevel) ? spellLevel : 0;
 
-    await rollSpellCast(spellName, safeModifier, safeLevel, this._rollOptions());
+    await rollSpellCast(spellName, safeModifier, safeLevel, {
+      ...this._rollOptions(),
+      itemUuid: this.actor.items.get(row.dataset.itemId)?.uuid
+    });
   }
 
   /**

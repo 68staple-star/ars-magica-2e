@@ -46,7 +46,9 @@ const DEFAULT_ITEM_IMG = {
   armor: "icons/svg/shield.svg",
   virtueFlaw: "icons/svg/aura.svg",
   equipment: "icons/svg/chest.svg",
-  art: "icons/svg/dice-target.svg"
+  art: "icons/svg/dice-target.svg",
+  book: "icons/svg/book.svg",
+  laboratory: "icons/svg/castle.svg"
 };
 
 /**
@@ -139,6 +141,21 @@ function prepareActorDocument(entry, pack, index) {
   const type = entry.type ?? "beast";
   const id = entry._id ?? deterministicId(pack, name);
 
+  const items = (entry.items ?? []).map((item, itemIndex) => {
+    const itemName = item.name ?? `Item ${itemIndex + 1}`;
+    const itemId = item._id ?? deterministicId(pack, `${name}:${itemName}`);
+    return {
+      _id: itemId,
+      _key: `!actors.items!${itemId}`,
+      name: itemName,
+      type: item.type ?? "equipment",
+      img: item.img ?? DEFAULT_ITEM_IMG[item.type] ?? "icons/svg/item-bag.svg",
+      system: item.system ?? {},
+      flags: item.flags ?? {},
+      effects: item.effects ?? []
+    };
+  });
+
   return {
     _id: id,
     _key: packKey(COLLECTION_BY_TYPE.Actor, id),
@@ -146,12 +163,12 @@ function prepareActorDocument(entry, pack, index) {
     type,
     img: entry.img ?? (type === "covenant" ? "icons/svg/castle.svg" : "icons/svg/mystery-man.svg"),
     system: entry.system ?? {},
-    items: entry.items ?? [],
+    items,
     effects: entry.effects ?? [],
     flags: entry.flags ?? {},
     prototypeToken: entry.prototypeToken ?? {
       name,
-      disposition: -1,
+      disposition: type === "covenant" ? 1 : -1,
       actorLink: true
     }
   };
