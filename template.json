@@ -183,7 +183,16 @@
       "magnitude": "",
       "category": "",
       "description": "",
-      "source": ""
+      "source": "",
+      "grants": {
+        "abilities": [],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     },
     "weapon": {
       "expense": "stan",

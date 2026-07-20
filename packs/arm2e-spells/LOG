@@ -1,5 +1,5 @@
-2026/07/20-14:54:50.383 4eac Delete type=3 #1
-2026/07/20-14:54:50.389 1eec Level-0 table #5: started
-2026/07/20-14:54:50.395 1eec Level-0 table #5: 205250 bytes OK
-2026/07/20-14:54:50.399 1eec Delete type=0 #3
-2026/07/20-14:54:50.399 1eec Manual compaction at level-0 from '!items!-0aV_-EoqAVIp_qM' @ 72057594037927935 : 1 .. '!items!zyzorSchJp2EEdZz' @ 0 : 0; will stop at (end)
+2026/07/20-16:02:15.987 28dc Delete type=3 #1
+2026/07/20-16:02:15.996 42ec Level-0 table #5: started
+2026/07/20-16:02:16.002 42ec Level-0 table #5: 205250 bytes OK
+2026/07/20-16:02:16.006 42ec Delete type=0 #3
+2026/07/20-16:02:16.007 42ec Manual compaction at level-0 from '!items!-0aV_-EoqAVIp_qM' @ 72057594037927935 : 1 .. '!items!zyzorSchJp2EEdZz' @ 0 : 0; will stop at (end)

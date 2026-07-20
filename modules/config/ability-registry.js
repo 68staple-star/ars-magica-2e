@@ -95,11 +95,14 @@ export const ABILITY_ENTRIES = Object.freeze([
   { key: "fantastic-beast-lore", label: "Fantastic Beast Lore", category: "knowledges", subgroup: "casual", characteristic: "intelligence" },
   { key: "legend-lore", label: "Legend Lore", category: "knowledges", subgroup: "casual", characteristic: "intelligence" },
   { key: "occult-lore", label: "Occult Lore", category: "knowledges", subgroup: "casual", characteristic: "intelligence" },
+  { key: "speak-own-language", label: "Speak Own Language", category: "knowledges", subgroup: "casual", characteristic: "intelligence" },
+  { key: "speak-latin", label: "Speak Latin", category: "knowledges", subgroup: "casual", characteristic: "intelligence" },
   { key: "speak-specific-alphabet", label: "Speak (Specific Alphabet)", category: "knowledges", subgroup: "casual", characteristic: "intelligence" },
   // Formal Knowledges
   { key: "church-knowledge", label: "Church Knowledge", category: "knowledges", subgroup: "formal", characteristic: "intelligence" },
   { key: "humanities", label: "Humanities", category: "knowledges", subgroup: "formal", characteristic: "intelligence" },
   { key: "medicine", label: "Medicine", category: "knowledges", subgroup: "formal", characteristic: "intelligence" },
+  { key: "scribe-latin", label: "Scribe Latin", category: "knowledges", subgroup: "formal", characteristic: "intelligence" },
   { key: "scribe-specific-alphabet", label: "Scribe (Specific Alphabet)", category: "knowledges", subgroup: "formal", characteristic: "intelligence" }
 ]);
 

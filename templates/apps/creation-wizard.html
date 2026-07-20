@@ -83,43 +83,15 @@
     {{/if}}
 
     {{#if isStep2}}
-    <div class="wizard-step wizard-step-2">
-      <h2 class="wizard-step-title">Early Life &amp; Abilities</h2>
-      <div class="wizard-counter wizard-counter-abilities{{#if budgets.abilities.isOver}} is-over{{/if}}">
-        Ability Points: <strong>{{budgets.abilities.spent}}</strong> / {{budgets.abilities.budget}}
-        ({{budgets.abilities.remaining}} remaining; negative scores refund points)
-      </div>
-      {{#each abilityGroups}}
-      <section class="wizard-ability-section">
-        <h3 class="wizard-section-title">{{title}}</h3>
-        <div class="wizard-ability-grid">
-          {{#each entries}}
-          <div class="wizard-ability-row">
-            <span class="wizard-ability-name" title="{{label}}">{{label}}</span>
-            <div class="wizard-ability-controls">
-              <button type="button" class="wizard-btn-ability" data-action="ability-adjust" data-path="abilities.{{../key}}.{{id}}.value" data-delta="-1" title="Decrease ability">−</button>
-              <span class="wizard-ability-value">{{value}}</span>
-              <button type="button" class="wizard-btn-ability" data-action="ability-adjust" data-path="abilities.{{../key}}.{{id}}.value" data-delta="1" title="Increase ability">+</button>
-            </div>
-            <span class="wizard-ability-cost">Cost {{cost}}</span>
-            <input class="wizard-field wizard-specialty" type="text" data-path="abilities.{{../key}}.{{id}}.specialty" value="{{specialty}}" placeholder="Specialty" />
-          </div>
-          {{/each}}
-        </div>
-      </section>
-      {{/each}}
-    </div>
-    {{/if}}
-
-    {{#if isStep3}}
     {{#unless skipsVirtues}}
-    <div class="wizard-step wizard-step-3">
+    <div class="wizard-step wizard-step-2">
       <h2 class="wizard-step-title">Virtues &amp; Flaws</h2>
       <div class="wizard-counter">
         Virtues: <strong>{{budgets.virtuesFlaws.virtues}}</strong> |
         Flaws: <strong>{{budgets.virtuesFlaws.flaws}}</strong> |
         Balance: <strong>{{budgets.virtuesFlaws.balance}}</strong>
       </div>
+      <p class="wizard-note">Choose virtues before abilities — some grant free Ability scores or extra ability points for later steps.</p>
 
       {{#if compendiumVirtues}}
       <div class="wizard-compendium-row">
@@ -171,6 +143,36 @@
       {{/if}}
     </div>
     {{/unless}}
+    {{/if}}
+
+    {{#if isStep3}}
+    <div class="wizard-step wizard-step-3">
+      <h2 class="wizard-step-title">Early Life &amp; Abilities</h2>
+      <div class="wizard-counter wizard-counter-abilities{{#if budgets.abilities.isOver}} is-over{{/if}}">
+        Ability Points: <strong>{{budgets.abilities.spent}}</strong> / {{budgets.abilities.budget}}
+        ({{budgets.abilities.remaining}} remaining{{#if budgets.abilities.bonusBudget}}; +{{budgets.abilities.bonusBudget}} from Virtues{{/if}})
+      </div>
+      <p class="wizard-note">Base abilities for this character type and any virtue grants are filled automatically (AG0201). Raising them further only costs the difference above the free base. Virtue bonus points can only be spent on matching ability groups.</p>
+      {{#each abilityGroups}}
+      <section class="wizard-ability-section">
+        <h3 class="wizard-section-title">{{title}}</h3>
+        <div class="wizard-ability-grid">
+          {{#each entries}}
+          <div class="wizard-ability-row{{#if isBase}} is-base-ability{{/if}}">
+            <span class="wizard-ability-name" title="{{label}}">{{label}}{{#if isBase}} <em class="wizard-base-tag">{{#if fromGrant}}(grant {{base}}){{else}}(base {{base}}){{/if}}</em>{{/if}}</span>
+            <div class="wizard-ability-controls">
+              <button type="button" class="wizard-btn-ability" data-action="ability-adjust" data-path="abilities.{{../key}}.{{id}}.value" data-delta="-1" title="Decrease ability">−</button>
+              <span class="wizard-ability-value">{{value}}</span>
+              <button type="button" class="wizard-btn-ability" data-action="ability-adjust" data-path="abilities.{{../key}}.{{id}}.value" data-delta="1" title="Increase ability">+</button>
+            </div>
+            <span class="wizard-ability-cost">Cost {{cost}}</span>
+            <input class="wizard-field wizard-specialty" type="text" data-path="abilities.{{../key}}.{{id}}.specialty" value="{{specialty}}" placeholder="Specialty" />
+          </div>
+          {{/each}}
+        </div>
+      </section>
+      {{/each}}
+    </div>
     {{/if}}
 
     {{#if isStep4}}

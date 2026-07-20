@@ -226,6 +226,33 @@
   white-space: nowrap;
 }
 
+.creation-wizard .wizard-base-tag {
+  font-style: italic;
+  font-weight: 500;
+  color: #5a3f2e;
+  font-size: 0.85em;
+}
+
+.creation-wizard .wizard-ability-row.is-base-ability .wizard-ability-value {
+  font-weight: 700;
+}
+
+.arm2e-item-sheet .arm2e-grant-summary {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #c4b59a;
+  background: #f7f1e6;
+}
+
+.arm2e-item-sheet .arm2e-grant-summary h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1em;
+}
+
+.arm2e-item-sheet .arm2e-grant-summary p {
+  margin: 0.2rem 0;
+}
+
 .creation-wizard .wizard-ability-controls {
   display: inline-flex;
   align-items: center;

@@ -44,7 +44,23 @@
       "magnitude": "minor",
       "category": "Supernatural",
       "description": "You can communicate with animals as if they were human beings. Choosing this Virtue confers the Ability Animal Ken 1 (page 62).",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [
+          {
+            "key": "animal-ken",
+            "category": "talents",
+            "minScore": 1,
+            "free": true
+          }
+        ],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     }
   },
   {
@@ -68,7 +84,25 @@
       "magnitude": "minor",
       "category": "General",
       "description": "You may take Arcane Abilities during character generation. Unless you have The Gift, you cannot learn Parma Magica. You get an additional 50 experience points, which must be spent on Arcane Abilities.\nA Gifted character who is not a Hermetic magus and knows Parma Magica must take the Major Story Flaw Enemy: Entire Order of Hermes, as magi are bound by their Oath to slay the character on sight, unless he immediately joins the Order. Such a character cannot be played in a normal saga, as the other player characters have to kill him.",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [],
+        "abilityPoints": {
+          "amount": 15,
+          "categories": [
+            "skills",
+            "knowledges",
+            "talents"
+          ],
+          "subgroups": [
+            "arcane"
+          ],
+          "keys": [
+            "occult-lore",
+            "faerie-lore"
+          ]
+        }
+      }
     }
   },
   {
@@ -236,7 +270,23 @@
       "magnitude": "minor",
       "category": "General",
       "description": "You have been educated in a grammar school, and may have attended a university or cathedral school. You may purchase Academic Abilities during character generation. During character generation you get an additional 50 experience points, which must be spent on Latin and Artes Liberales.",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [],
+        "abilityPoints": {
+          "amount": 15,
+          "categories": [
+            "knowledges"
+          ],
+          "subgroups": [
+            "formal"
+          ],
+          "keys": [
+            "speak-latin",
+            "speak-specific-alphabet"
+          ]
+        }
+      }
     }
   },
   {
@@ -260,7 +310,23 @@
       "magnitude": "minor",
       "category": "Supernatural",
       "description": "When you set your mind to it, you can magically induce emotions and beliefs in others with your music. Choosing this Virtue confers the Ability Enchanting Music 1 (page 65).",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [
+          {
+            "key": "enchanting-music",
+            "category": "talents",
+            "minScore": 1,
+            "free": true
+          }
+        ],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     }
   },
   {
@@ -296,7 +362,23 @@
       "magnitude": "major",
       "category": "Supernatural",
       "description": "You have the power to control another’s will by staring into their eyes and giving them a verbal command. Choosing this Virtue confers the Ability Entrancement 1 (page 65).",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [
+          {
+            "key": "entrancement",
+            "category": "talents",
+            "minScore": 1,
+            "free": true
+          }
+        ],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     }
   },
   {
@@ -800,7 +882,23 @@
       "magnitude": "minor",
       "category": "Supernatural",
       "description": "You are often able to identify a place or object as magical. However, your sensitivity makes you more susceptible to magical effects: subtract your Magic Sensitivity score from your Magic Resistance. Choosing this Virtue confers the Ability Magic Sensitivity 1 (page 66).",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [
+          {
+            "key": "magic-sensitivity",
+            "category": "talents",
+            "minScore": 1,
+            "free": true
+          }
+        ],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     }
   },
   {
@@ -968,7 +1066,23 @@
       "magnitude": "minor",
       "category": "Supernatural",
       "description": "You intuitively sense when something is wrong, or is likely to go wrong soon. This Virtue confers the Ability Premonitions 1 (page 67).",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [
+          {
+            "key": "premonitions",
+            "category": "talents",
+            "minScore": 1,
+            "free": true
+          }
+        ],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     }
   },
   {
@@ -1100,7 +1214,23 @@
       "magnitude": "minor",
       "category": "Supernatural",
       "description": "You are able to see through illusionary concealment and disguise, including invisibility, and can also see naturally invisible things such as spirits and the boundaries between regio levels (see page 189). Choosing this Virtue confers the Ability Second Sight 1 (page 67).",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [
+          {
+            "key": "second-sight",
+            "category": "talents",
+            "minScore": 1,
+            "free": true
+          }
+        ],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     }
   },
   {
@@ -1136,7 +1266,23 @@
       "magnitude": "minor",
       "category": "Supernatural",
       "description": "You are able to feel the presence of good and evil. In auras of particularly strong divine or infernal influence, your sensitivity may overwhelm you. Choosing this Virtue confers the Ability Sense Holiness and Unholiness 1 (page 67).",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [
+          {
+            "key": "sense-holiness-unholiness",
+            "category": "talents",
+            "minScore": 1,
+            "free": true
+          }
+        ],
+        "abilityPoints": {
+          "amount": 0,
+          "categories": [],
+          "subgroups": [],
+          "keys": []
+        }
+      }
     }
   },
   {
@@ -1412,7 +1558,20 @@
       "magnitude": "minor",
       "category": "General",
       "description": "You have been trained to fight, and may have spent some time campaigning, perhaps on one of the Crusades. You may acquire Martial Abilities during character creation, and gain an additional 50 experience points which must be spent on Martial Abilities.",
-      "source": "ArM5 Chapter IV (CC BY-SA 4.0)"
+      "source": "ArM5 Chapter IV (CC BY-SA 4.0)",
+      "grants": {
+        "abilities": [],
+        "abilityPoints": {
+          "amount": 15,
+          "categories": [
+            "skills"
+          ],
+          "subgroups": [
+            "physical"
+          ],
+          "keys": []
+        }
+      }
     }
   },
   {

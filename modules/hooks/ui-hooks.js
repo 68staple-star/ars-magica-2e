@@ -1,12 +1,6 @@
 import { ArM2eCreationWizard } from "../apps/creation-wizard.js";
 import { attachRulesPdfViaPicker, openWorldRulesPdfJournal } from "../utils/journal.js";
 
-const WIZARD_BUTTON = {
-  label: "Character Wizard",
-  class: "arm2e-character-wizard",
-  icon: "fas fa-magic"
-};
-
 /**
  * @param {Actor} actor
  */
@@ -54,22 +48,9 @@ function addJournalPdfOptions(entryOptions) {
 }
 
 /**
- * Register UI hooks for actor directory shortcuts and sheet header controls.
+ * Register UI hooks for actor directory shortcuts and journal PDF helpers.
  */
 export function registerUiHooks() {
-  const addWizardButton = (buttons, actor) => {
-    if (!actor || actor.type !== "character") return;
-    if (buttons.some((button) => button.class === WIZARD_BUTTON.class)) return;
-
-    buttons.unshift({
-      ...WIZARD_BUTTON,
-      onclick: (event) => {
-        event.preventDefault();
-        openCreationWizard(actor);
-      }
-    });
-  };
-
   Hooks.on("getActorContextOptions", (application, entryOptions) => {
     if (game.system.id !== "ars-magica-2e") return;
 
@@ -107,20 +88,5 @@ export function registerUiHooks() {
   Hooks.on("getJournalDirectoryEntryContext", (application, entryOptions) => {
     if (game.system.id !== "ars-magica-2e") return;
     addJournalPdfOptions(entryOptions);
-  });
-
-  Hooks.on("getApplicationV1HeaderButtons", (app, buttons) => {
-    if (game.system.id !== "ars-magica-2e") return;
-    if (!app.actor || app.actor.type !== "character") return;
-    if (!app.constructor?.name?.includes("ArM2e")) return;
-    addWizardButton(buttons, app.actor);
-  });
-
-  // Legacy v11–v12 sheet header hook
-  Hooks.on("getActorSheetHeaderButtons", (app, buttons) => {
-    if (game.system.id !== "ars-magica-2e") return;
-    if (!app.actor || app.actor.type !== "character") return;
-    if (!app.constructor?.name?.includes("ArM2e")) return;
-    addWizardButton(buttons, app.actor);
   });
 }

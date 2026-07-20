@@ -18,6 +18,90 @@ export const CHARACTERISTIC_PAIRS = Object.freeze([
 ]);
 
 /**
+ * AG0201 Base Abilities Table — free starting scores by character type.
+ * Raising above the base costs triangular(final) − triangular(base).
+ * @type {Readonly<Record<"grog"|"companion"|"magus", ReadonlyArray<{ key: string, category: string, value: number, specialty?: string }>>>}
+ */
+export const STARTING_ABILITY_PACKAGES = Object.freeze({
+  grog: Object.freeze([
+    { key: "speak-own-language", category: "knowledges", value: 4 },
+    { key: "brawl", category: "skills", value: 1 }
+  ]),
+  companion: Object.freeze([
+    { key: "speak-own-language", category: "knowledges", value: 5 }
+  ]),
+  magus: Object.freeze([
+    { key: "speak-own-language", category: "knowledges", value: 4 },
+    { key: "speak-latin", category: "knowledges", value: 5 },
+    { key: "scribe-latin", category: "knowledges", value: 3 },
+    { key: "magic-theory", category: "knowledges", value: 5 },
+    { key: "hermes-lore", category: "knowledges", value: 2 },
+    { key: "hermes-history", category: "knowledges", value: 2 },
+    { key: "parma-magica", category: "skills", value: 2 }
+  ])
+});
+
+/**
+ * @returns {ReadonlyArray<{ key: string, category: string, value: number }>}
+ */
+function allStartingPackageEntries() {
+  return Object.values(STARTING_ABILITY_PACKAGES).flat();
+}
+
+/**
+ * @param {"grog" | "companion" | "magus"} characterType
+ * @returns {Record<string, number>}
+ */
+export function getStartingAbilityBaseMap(characterType) {
+  /** @type {Record<string, number>} */
+  const bases = {};
+  for (const entry of STARTING_ABILITY_PACKAGES[characterType] ?? []) {
+    bases[entry.key] = entry.value;
+  }
+  return bases;
+}
+
+/**
+ * Apply AG0201 base abilities for a character type onto wizard ability state.
+ * Clears other package keys first so switching type swaps packages cleanly.
+ * @param {object} abilityState
+ * @param {"grog" | "companion" | "magus"} characterType
+ * @returns {object}
+ */
+export function applyStartingAbilityPackage(abilityState, characterType) {
+  if (!abilityState) return abilityState;
+
+  for (const entry of allStartingPackageEntries()) {
+    const slot = abilityState[entry.category]?.[entry.key];
+    if (!slot) continue;
+    slot.value = 0;
+  }
+
+  for (const entry of STARTING_ABILITY_PACKAGES[characterType] ?? []) {
+    const slot = abilityState[entry.category]?.[entry.key];
+    if (!slot) continue;
+    slot.value = entry.value;
+    if (entry.specialty && !String(slot.specialty ?? "").trim()) {
+      slot.specialty = entry.specialty;
+    }
+  }
+
+  return abilityState;
+}
+
+/**
+ * @param {object} abilityState
+ * @returns {boolean}
+ */
+export function abilityStateHasScores(abilityState) {
+  for (const category of Object.values(abilityState ?? {})) {
+    for (const entry of Object.values(category ?? {})) {
+      if ((Number(entry?.value) || 0) !== 0) return true;
+    }
+  }
+  return false;
+}
+/**
  * @param {number} score
  * @returns {number}
  */
@@ -84,19 +168,43 @@ export function defaultConfidence(characterType) {
 }
 
 /**
+ * Ability points spent beyond free starting bases (AG0201).
  * @param {Record<string, { value?: number }>} categories
+ * @param {"grog" | "companion" | "magus" | Record<string, number>} [characterTypeOrBases]
  * @returns {number}
  */
-export function abilityPointsSpent(categories) {
+export function abilityPointsSpent(categories, characterTypeOrBases) {
+  const bases =
+    characterTypeOrBases && typeof characterTypeOrBases === "object"
+      ? characterTypeOrBases
+      : characterTypeOrBases
+        ? getStartingAbilityBaseMap(characterTypeOrBases)
+        : {};
   let total = 0;
 
   for (const category of Object.values(categories ?? {})) {
-    for (const entry of Object.values(category ?? {})) {
-      total += triangularCost(entry?.value ?? 0);
+    for (const [key, entry] of Object.entries(category ?? {})) {
+      const value = Number(entry?.value) || 0;
+      const base = Number(bases[key]) || 0;
+      if (value === base) continue;
+      total += triangularCost(value) - triangularCost(base);
     }
   }
 
   return total;
+}
+
+/**
+ * Incremental cost to display for an ability given its free base.
+ * @param {number} value
+ * @param {number} [base=0]
+ * @returns {number}
+ */
+export function abilityIncrementalCost(value, base = 0) {
+  const score = Number(value) || 0;
+  const floor = Number(base) || 0;
+  if (score === floor) return 0;
+  return triangularCost(score) - triangularCost(floor);
 }
 
 /**

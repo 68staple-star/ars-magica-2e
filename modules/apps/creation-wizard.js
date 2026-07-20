@@ -4,14 +4,18 @@ import {
   serializeAbilityItemsForActor
 } from "../utils/abilities.js";
 import {
+  abilityIncrementalCost,
   abilityPointBudget,
   abilityPointsSpent,
+  abilityStateHasScores,
+  applyStartingAbilityPackage,
   artPointsSpent,
   buildEmptyAbilityState,
   buildEmptyArts,
   characteristicPointBudget,
   characteristicPointsSpent,
   defaultConfidence,
+  getStartingAbilityBaseMap,
   magusArtPointBudget,
   magusSpellPointBudget,
   serializeAbilitiesForActor,
@@ -24,8 +28,35 @@ import {
   ABILITY_MIN,
   ABILITY_MAX
 } from "../utils/creation.js";
+import {
+  applyAbilityMins,
+  bonusAbilityPoints,
+  collectVirtueGrants,
+  mergeAbilityBaseMaps,
+  reconcileAbilityBases,
+  restrictedAbilityPointsSpent,
+  splitAbilitySpend
+} from "../utils/virtue-grants.js";
 
 const TOTAL_STEPS = 5;
+
+/** @returns {{ abilities: object[], abilityPoints: object }} */
+function emptyGrants() {
+  return {
+    abilities: [],
+    abilityPoints: { amount: 0, categories: [], subgroups: [], keys: [] }
+  };
+}
+
+/**
+ * @param {object} system
+ * @returns {object}
+ */
+function cloneGrants(system) {
+  const grants = system?.grants;
+  if (!grants) return emptyGrants();
+  return foundry.utils.deepClone(grants);
+}
 
 /**
  * @param {Actor} actor
@@ -42,6 +73,25 @@ function buildInitialState(actor) {
     characteristics[characteristic.id] ??= 0;
   }
 
+  const virtuesFlaws = actor.items
+    .filter((item) => item.type === "virtueFlaw")
+    .map((item) => ({
+      name: item.name,
+      kind: item.system?.kind ?? "virtue",
+      points: Number(item.system?.points) || 0,
+      magnitude: item.system?.magnitude ?? "",
+      category: item.system?.category ?? "",
+      description: item.system?.description ?? "",
+      source: item.system?.source ?? "",
+      grants: cloneGrants(item.system)
+    }));
+
+  const abilities = buildEmptyAbilityState(registry, buildAbilityLookupFromActor(actor, registry));
+  if (!abilityStateHasScores(abilities)) {
+    applyStartingAbilityPackage(abilities, characterType);
+  }
+  applyAbilityMins(abilities, collectVirtueGrants(virtuesFlaws));
+
   return {
     currentStep: 1,
     identity: {
@@ -57,19 +107,9 @@ function buildInitialState(actor) {
       traits: system.personality?.traits ?? ""
     },
     characteristics,
-    abilities: buildEmptyAbilityState(registry, buildAbilityLookupFromActor(actor, registry)),
+    abilities,
     arts: buildEmptyArts(registry, system.arts),
-    virtuesFlaws: actor.items
-      .filter((item) => item.type === "virtueFlaw")
-      .map((item) => ({
-        name: item.name,
-        kind: item.system?.kind ?? "virtue",
-        points: Number(item.system?.points) || 0,
-        magnitude: item.system?.magnitude ?? "",
-        category: item.system?.category ?? "",
-        description: item.system?.description ?? "",
-        source: item.system?.source ?? ""
-      })),
+    virtuesFlaws,
     spells: actor.items
       .filter((item) => item.type === "spell")
       .map((item) => ({
@@ -130,6 +170,72 @@ export class ArM2eCreationWizard extends FormApplication {
     return characterType === "magus";
   }
 
+  /** @returns {ReturnType<typeof collectVirtueGrants>} */
+  _collectedGrants() {
+    return collectVirtueGrants(this.state.virtuesFlaws);
+  }
+
+  /** @returns {Record<string, number>} */
+  _abilityBases() {
+    return mergeAbilityBaseMaps(
+      getStartingAbilityBaseMap(this.state.identity.characterType),
+      this._collectedGrants()
+    );
+  }
+
+  /**
+   * @returns {{
+   *   ageBudget: number,
+   *   bonusBudget: number,
+   *   budget: number,
+   *   spent: number,
+   *   unrestrictedSpent: number,
+   *   restrictedSpent: number,
+   *   remaining: number,
+   *   isOver: boolean
+   * }}
+   */
+  _abilityBudgetState() {
+    const type = this.state.identity.characterType;
+    const age = Number(this.state.identity.age) || 0;
+    const grants = this._collectedGrants();
+    const bases = this._abilityBases();
+    const ageBudget = abilityPointBudget(type, age);
+    const bonusBudget = bonusAbilityPoints(grants);
+    const budget = ageBudget + bonusBudget;
+    const spent = abilityPointsSpent(this.state.abilities, bases);
+    const eligible = restrictedAbilityPointsSpent(this.state.abilities, bases, grants.pointPools);
+    const { unrestrictedSpent, restrictedSpent } = splitAbilitySpend(spent, eligible, bonusBudget);
+    const isOver = unrestrictedSpent > ageBudget || spent > budget;
+
+    return {
+      ageBudget,
+      bonusBudget,
+      budget,
+      spent,
+      unrestrictedSpent,
+      restrictedSpent,
+      remaining: budget - spent,
+      isOver
+    };
+  }
+
+  /**
+   * Re-apply type package + virtue grant mins after V/F or type changes.
+   * @param {Record<string, number>} [previousBases]
+   */
+  _reapplyAbilityGrants(previousBases) {
+    const type = this.state.identity.characterType;
+    const grants = this._collectedGrants();
+    const nextBases = mergeAbilityBaseMaps(getStartingAbilityBaseMap(type), grants);
+
+    if (previousBases) {
+      reconcileAbilityBases(this.state.abilities, previousBases, nextBases);
+    }
+
+    applyAbilityMins(this.state.abilities, grants);
+  }
+
   /**
    * @returns {Promise<object[]>}
    */
@@ -173,7 +279,8 @@ export class ArM2eCreationWizard extends FormApplication {
           points: Number(doc.system?.points) || 0,
           magnitude: doc.system?.magnitude ?? "",
           category: doc.system?.category ?? "",
-          description: doc.system?.description ?? ""
+          description: doc.system?.description ?? "",
+          grants: cloneGrants(doc.system)
         });
       }
     }
@@ -188,19 +295,18 @@ export class ArM2eCreationWizard extends FormApplication {
   async getData() {
     const registry = CONFIG.ARM2E ?? ARM2E;
     const type = this.state.identity.characterType;
-    const age = Number(this.state.identity.age) || 0;
     const isMagus = this._isMagus(type);
     const skipsVirtues = this._skipsVirtuesStep(type);
     let step = this.state.currentStep;
 
-    if (skipsVirtues && step === 3) step = 5;
-    if (!isMagus && step === 4) step = skipsVirtues ? 5 : 3;
+    // Step map: 1 Identity, 2 Virtues, 3 Abilities, 4 Magic, 5 Finalize
+    if (skipsVirtues && step === 2) step = 3;
+    if (!isMagus && step === 4) step = 5;
     if (step !== this.state.currentStep) this.state.currentStep = step;
 
     const charBudget = characteristicPointBudget(type);
     const charSpent = characteristicPointsSpent(this.state.characteristics);
-    const abilityBudget = abilityPointBudget(type, age);
-    const abilitySpent = abilityPointsSpent(this.state.abilities);
+    const abilityBudgets = this._abilityBudgetState();
     const artBudget = isMagus ? magusArtPointBudget() : 0;
     const artSpent = artPointsSpent(this.state.arts.techniques, this.state.arts.forms);
     const spellBudget = isMagus ? magusSpellPointBudget() : 0;
@@ -252,11 +358,29 @@ export class ArM2eCreationWizard extends FormApplication {
       charMin: CHARACTERISTIC_MIN,
       charMax: CHARACTERISTIC_MAX,
       budgets: {
-        characteristics: { budget: charBudget, spent: charSpent, remaining: charBudget - charSpent, isOver: charSpent > charBudget },
-        abilities: { budget: abilityBudget, spent: abilitySpent, remaining: abilityBudget - abilitySpent, isOver: abilitySpent > abilityBudget },
+        characteristics: {
+          budget: charBudget,
+          spent: charSpent,
+          remaining: charBudget - charSpent,
+          isOver: charSpent > charBudget
+        },
+        abilities: {
+          budget: abilityBudgets.budget,
+          spent: abilityBudgets.spent,
+          remaining: abilityBudgets.remaining,
+          isOver: abilityBudgets.isOver,
+          ageBudget: abilityBudgets.ageBudget,
+          bonusBudget: abilityBudgets.bonusBudget,
+          restrictedSpent: abilityBudgets.restrictedSpent
+        },
         arts: { budget: artBudget, spent: artSpent, remaining: artBudget - artSpent, isOver: artSpent > artBudget },
         spells: { budget: spellBudget, spent: spellSpent, remaining: spellBudget - spellSpent, isOver: spellSpent > spellBudget },
-        virtuesFlaws: { virtues: virtuePoints, flaws: flawPoints, balance: virtuePoints - flawPoints, isBalanced: virtuePoints === flawPoints }
+        virtuesFlaws: {
+          virtues: virtuePoints,
+          flaws: flawPoints,
+          balance: virtuePoints - flawPoints,
+          isBalanced: virtuePoints === flawPoints
+        }
       },
       abilityGroups: this._prepareAbilityGroups(),
       techniques: registry.TECHNIQUES.map((entry) => ({
@@ -275,8 +399,8 @@ export class ArM2eCreationWizard extends FormApplication {
       summary: this._buildSummary(registry, {
         charBudget,
         charSpent,
-        abilityBudget,
-        abilitySpent,
+        abilityBudget: abilityBudgets.budget,
+        abilitySpent: abilityBudgets.spent,
         artBudget,
         artSpent,
         spellBudget,
@@ -297,10 +421,10 @@ export class ArM2eCreationWizard extends FormApplication {
 
     return [
       { id: 1, label: "Identity", active: currentStep === 1, complete: currentStep > 1 },
-      { id: 2, label: "Abilities", active: currentStep === 2, complete: currentStep > 2 },
       ...(!skipsVirtues
-        ? [{ id: 3, label: "Virtues", active: currentStep === 3, complete: currentStep > 3 }]
+        ? [{ id: 2, label: "Virtues", active: currentStep === 2, complete: currentStep > 2 }]
         : []),
+      { id: 3, label: "Abilities", active: currentStep === 3, complete: currentStep > 3 },
       ...(isMagus
         ? [{ id: 4, label: "Magic", active: currentStep === 4, complete: currentStep > 4 }]
         : []),
@@ -310,6 +434,9 @@ export class ArM2eCreationWizard extends FormApplication {
 
   _prepareAbilityGroups() {
     const registry = CONFIG.ARM2E ?? ARM2E;
+    const bases = this._abilityBases();
+    const grantBases = mergeAbilityBaseMaps({}, this._collectedGrants());
+    const typeBases = getStartingAbilityBaseMap(this.state.identity.characterType);
 
     const mapCategory = (categoryKey, labels, title) => ({
       key: categoryKey,
@@ -318,13 +445,21 @@ export class ArM2eCreationWizard extends FormApplication {
         const id = registry.getAbilityByLabel?.(label)?.key
           ?? label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
         const entry = this.state.abilities[categoryKey][id] ?? { value: 0, specialty: "", label };
+        const base = Number(bases[id]) || 0;
+        const value = Number(entry.value) || 0;
+        const fromGrant = (Number(grantBases[id]) || 0) > 0;
+        const fromType = (Number(typeBases[id]) || 0) > 0;
 
         return {
           id,
           label,
-          value: Number(entry.value) || 0,
+          value,
           specialty: entry.specialty ?? "",
-          cost: triangularCost(entry.value)
+          base,
+          isBase: base > 0,
+          fromGrant,
+          fromType,
+          cost: abilityIncrementalCost(value, base)
         };
       })
     });
@@ -407,9 +542,17 @@ export class ArM2eCreationWizard extends FormApplication {
     if (element.dataset.dtype === "Number") value = Number(value);
     if (Number.isNaN(value)) value = 0;
 
+    const previousBases = path === "identity.characterType" ? this._abilityBases() : null;
     foundry.utils.setProperty(this.state, path, value);
 
-    const needsFullRender = path === "identity.characterType" || path.startsWith("identity.age");
+    if (path === "identity.characterType") {
+      applyStartingAbilityPackage(this.state.abilities, value);
+      this._reapplyAbilityGrants(previousBases);
+      this._renderPreservingFocus();
+      return;
+    }
+
+    const needsFullRender = path.startsWith("identity.age");
     if (needsFullRender) {
       this._renderPreservingFocus();
       return;
@@ -429,17 +572,27 @@ export class ArM2eCreationWizard extends FormApplication {
     if (!path || !Number.isFinite(delta)) return;
 
     const current = Number(foundry.utils.getProperty(this.state, path)) || 0;
-    const next = Math.max(ABILITY_MIN, Math.min(ABILITY_MAX, current + delta));
+    const key = path.split(".")[2];
+    const base = Number(this._abilityBases()[key]) || 0;
+    const min = Math.max(ABILITY_MIN, base);
+    const next = Math.max(min, Math.min(ABILITY_MAX, current + delta));
     if (next === current) return;
 
     foundry.utils.setProperty(this.state, path, next);
+
+    if (delta > 0 && this._abilityBudgetState().isOver) {
+      foundry.utils.setProperty(this.state, path, current);
+      return;
+    }
 
     const row = button.closest(".wizard-ability-row");
     const valueEl = row?.querySelector(".wizard-ability-value");
     if (valueEl) valueEl.textContent = String(next);
 
     const costEl = row?.querySelector(".wizard-ability-cost");
-    if (costEl) costEl.textContent = `Cost ${triangularCost(next)}`;
+    if (costEl) {
+      costEl.textContent = `Cost ${abilityIncrementalCost(next, base)}`;
+    }
 
     this._refreshBudgetDisplays();
   }
@@ -453,8 +606,8 @@ export class ArM2eCreationWizard extends FormApplication {
     if (!Number.isInteger(step) || step < 1 || step > TOTAL_STEPS) return;
 
     const type = this.state.identity.characterType;
-    if (this._skipsVirtuesStep(type) && step === 3) step = 5;
-    if (!this._isMagus(type) && step === 4) step = this._skipsVirtuesStep(type) ? 5 : 3;
+    if (this._skipsVirtuesStep(type) && step === 2) step = 3;
+    if (!this._isMagus(type) && step === 4) step = 5;
 
     this.state.currentStep = step;
     this._renderPreservingFocus();
@@ -477,14 +630,12 @@ export class ArM2eCreationWizard extends FormApplication {
 
   _refreshBudgetDisplays() {
     const type = this.state.identity.characterType;
-    const age = Number(this.state.identity.age) || 0;
     const charBudget = characteristicPointBudget(type);
     const charSpent = characteristicPointsSpent(this.state.characteristics);
-    const abilityBudget = abilityPointBudget(type, age);
-    const abilitySpent = abilityPointsSpent(this.state.abilities);
+    const ability = this._abilityBudgetState();
 
     this._setCounterText(".wizard-counter-characteristics", charSpent, charBudget);
-    this._setCounterText(".wizard-counter-abilities", abilitySpent, abilityBudget);
+    this._setAbilityCounterText(ability);
   }
 
   /**
@@ -501,13 +652,27 @@ export class ArM2eCreationWizard extends FormApplication {
     el.classList.toggle("is-over", spent > budget);
   }
 
+  /**
+   * @param {ReturnType<ArM2eCreationWizard["_abilityBudgetState"]>} ability
+   */
+  _setAbilityCounterText(ability) {
+    const el = this.element?.find(".wizard-counter-abilities")?.[0];
+    if (!el) return;
+
+    const bonusNote = ability.bonusBudget > 0 ? `; +${ability.bonusBudget} from Virtues` : "";
+    el.innerHTML =
+      `Ability Points: <strong>${ability.spent}</strong> / ${ability.budget}`
+      + ` (${ability.remaining} remaining${bonusNote})`;
+    el.classList.toggle("is-over", ability.isOver);
+  }
+
   async _onForge(event) {
     event.preventDefault();
     const type = this.state.identity.characterType;
     const errors = [
       ...this._validateStep1(),
-      ...this._validateStep2(),
-      ...(this._skipsVirtuesStep(type) ? [] : this._validateStep3()),
+      ...(this._skipsVirtuesStep(type) ? [] : this._validateStep2()),
+      ...this._validateStep3(),
       ...(this._isMagus(type) ? this._validateStep4() : [])
     ];
 
@@ -550,14 +715,17 @@ export class ArM2eCreationWizard extends FormApplication {
 
   _onAddVirtueFlaw(event) {
     event.preventDefault();
+    const previousBases = this._abilityBases();
     this.state.virtuesFlaws.push({
       name: "New Virtue",
       kind: "virtue",
       points: 1,
       category: "",
       description: "",
-      source: ""
+      source: "",
+      grants: emptyGrants()
     });
+    this._reapplyAbilityGrants(previousBases);
     this.render(false);
   }
 
@@ -568,7 +736,9 @@ export class ArM2eCreationWizard extends FormApplication {
     event.preventDefault();
     const index = Number(event.currentTarget.dataset.vfIndex);
     if (!Number.isInteger(index)) return;
+    const previousBases = this._abilityBases();
     this.state.virtuesFlaws.splice(index, 1);
+    this._reapplyAbilityGrants(previousBases);
     this.render(false);
   }
 
@@ -629,6 +799,7 @@ export class ArM2eCreationWizard extends FormApplication {
     const item = await pack?.getDocument(itemId);
     if (!item) return;
 
+    const previousBases = this._abilityBases();
     this.state.virtuesFlaws.push({
       name: item.name,
       kind: item.system?.kind ?? "virtue",
@@ -636,8 +807,10 @@ export class ArM2eCreationWizard extends FormApplication {
       magnitude: item.system?.magnitude ?? "",
       category: item.system?.category ?? "",
       description: item.system?.description ?? "",
-      source: item.system?.source ?? ""
+      source: item.system?.source ?? "",
+      grants: cloneGrants(item.system)
     });
+    this._reapplyAbilityGrants(previousBases);
     this.render(false);
   }
 
@@ -666,17 +839,8 @@ export class ArM2eCreationWizard extends FormApplication {
     return errors;
   }
 
+  /** Virtues & Flaws (step 2) */
   _validateStep2() {
-    const errors = [];
-    const type = this.state.identity.characterType;
-    const age = Number(this.state.identity.age) || 0;
-    const budget = abilityPointBudget(type, age);
-    const spent = abilityPointsSpent(this.state.abilities);
-    if (spent > budget) errors.push(`Abilities overspent by ${spent - budget} points.`);
-    return errors;
-  }
-
-  _validateStep3() {
     if (this._skipsVirtuesStep(this.state.identity.characterType)) return [];
 
     const virtuePoints = this.state.virtuesFlaws
@@ -691,6 +855,21 @@ export class ArM2eCreationWizard extends FormApplication {
     }
 
     return [];
+  }
+
+  /** Abilities (step 3) */
+  _validateStep3() {
+    const errors = [];
+    const ability = this._abilityBudgetState();
+    if (ability.unrestrictedSpent > ability.ageBudget) {
+      errors.push(
+        `Abilities overspent age budget by ${ability.unrestrictedSpent - ability.ageBudget} points`
+        + ` (virtue pools cannot cover unrestricted abilities).`
+      );
+    } else if (ability.spent > ability.budget) {
+      errors.push(`Abilities overspent by ${ability.spent - ability.budget} points.`);
+    }
+    return errors;
   }
 
   _validateStep4() {
@@ -828,7 +1007,8 @@ export class ArM2eCreationWizard extends FormApplication {
             magnitude: entry.magnitude ?? "",
             category: entry.category ?? "",
             description: entry.description ?? "",
-            source: entry.source ?? ""
+            source: entry.source ?? "",
+            grants: foundry.utils.deepClone(entry.grants ?? emptyGrants())
           }
         });
       }

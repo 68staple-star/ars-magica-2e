@@ -90,15 +90,17 @@ export class ArM2eActorSheet extends ActorSheet {
   /** @override */
   _getHeaderButtons() {
     const buttons = super._getHeaderButtons();
-    buttons.unshift({
-      label: "Character Wizard",
-      class: "arm2e-character-wizard",
-      icon: "fas fa-magic",
-      onclick: (event) => {
-        event.preventDefault();
-        this._openCreationWizard();
-      }
-    });
+    if (!buttons.some((button) => button.class === "arm2e-character-wizard")) {
+      buttons.unshift({
+        label: "Character Wizard",
+        class: "arm2e-character-wizard",
+        icon: "fas fa-magic",
+        onclick: (event) => {
+          event.preventDefault();
+          this._openCreationWizard();
+        }
+      });
+    }
     return buttons;
   }
 

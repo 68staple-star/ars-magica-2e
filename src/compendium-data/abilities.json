@@ -976,6 +976,32 @@
     }
   },
   {
+    "name": "Speak Own Language",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "speak-own-language",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence",
+      "description": "Your native spoken language. Magi, companions, and grogs begin with a free base score (AG0201 Base Abilities Table)."
+    }
+  },
+  {
+    "name": "Speak Latin",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "speak-latin",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence",
+      "description": "Spoken Latin. Magi begin with a free base score (AG0201 Base Abilities Table)."
+    }
+  },
+  {
     "name": "Speak (Specific Alphabet)",
     "type": "ability",
     "system": {
@@ -1026,6 +1052,19 @@
       "specialty": "",
       "rollCharacteristic": "intelligence",
       "description": "The art of healing at a level not commonly found in medieval society. Includes knowledge of the structure and functions of the human body (the study of which the Church punishes by burning), the use of elixirs and herbs in healing (which can aid a magus in obtaining materials for potions and other laboratory procedures), and the diagnosis and treatment of disease. Some wounds and diseases can only be cured by a person knowledgeable in the art of medicine. The knowledge of medicine may give you a bonus on Chirurgy rolls because you know better salves and ointments to apply to the wounds. Specialties: anatomy, apothecary, physicianry."
+    }
+  },
+  {
+    "name": "Scribe Latin",
+    "type": "ability",
+    "system": {
+      "category": "knowledges",
+      "key": "scribe-latin",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "intelligence",
+      "description": "Reading and writing Latin. Magi begin with a free base score (AG0201 Base Abilities Table)."
     }
   },
   {

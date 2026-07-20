@@ -17,5 +17,18 @@
     <label>Category <input type="text" name="system.category" value="{{system.category}}" /></label>
     <label>Source <input type="text" name="system.source" value="{{system.source}}" placeholder="Core, Covenants, ..." /></label>
     <label class="arm2e-span-2">Description <textarea name="system.description" rows="4">{{system.description}}</textarea></label>
+    {{#if grantSummary.hasGrants}}
+    <div class="arm2e-span-2 arm2e-grant-summary">
+      <h3>Creation Grants</h3>
+      {{#if grantSummary.abilities.length}}
+      <p><strong>Abilities:</strong>
+        {{#each grantSummary.abilities}}{{#unless @first}}, {{/unless}}{{this}}{{/each}}
+      </p>
+      {{/if}}
+      {{#if grantSummary.abilityPoints}}
+      <p><strong>Ability points:</strong> {{grantSummary.abilityPoints}}</p>
+      {{/if}}
+    </div>
+    {{/if}}
   </div>
 </form>

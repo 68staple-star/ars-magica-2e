@@ -62,7 +62,23 @@
       "points": 1,
       "category": "General",
       "description": "Bonus to formal knowledges from schooling.",
-      "source": "Core"
+      "source": "Core",
+      "grants": {
+        "abilities": [],
+        "abilityPoints": {
+          "amount": 15,
+          "categories": [
+            "knowledges"
+          ],
+          "subgroups": [
+            "formal"
+          ],
+          "keys": [
+            "speak-latin",
+            "speak-specific-alphabet"
+          ]
+        }
+      }
     }
   },
   {
