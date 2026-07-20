@@ -46,7 +46,35 @@ function applyCharacterDefaults(data) {
 export function registerActorDocumentHooks() {
   Hooks.on("preCreateActor", (document, data, options, userId) => {
     data.type ??= "character";
-    if (data.type !== "character") return;
-    applyCharacterDefaults(data);
+    if (data.type === "character") {
+      applyCharacterDefaults(data);
+      return;
+    }
+    if (data.type === "beast") {
+      data.system = foundry.utils.mergeObject({
+        realm: "Magic",
+        might: 0,
+        mightForm: "",
+        size: 0,
+        soak: 0,
+        characteristics: {
+          intelligence: 0,
+          perception: 0,
+          strength: 0,
+          stamina: 0,
+          presence: 0,
+          communication: 0,
+          dexterity: 0,
+          quickness: 0,
+          cunning: 0
+        },
+        combat: "",
+        powers: "",
+        abilities: "",
+        vis: "",
+        description: "",
+        source: ""
+      }, data.system ?? {}, { inplace: false });
+    }
   });
 }

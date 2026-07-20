@@ -14,7 +14,8 @@ const PACK_SEEDS = [
   { pack: "arm2e-rules-reference", file: "journals-rules.json" },
   { pack: "arm2e-covenant-template", file: "journals-covenant.json" },
   { pack: "arm2e-order-reference", file: "journals-order.json" },
-  { pack: "arm2e-ability-reference", file: "journals-abilities.json" }
+  { pack: "arm2e-ability-reference", file: "journals-abilities.json" },
+  { pack: "arm2e-bestiary", file: "beasts-arm5-ch13.json" }
 ];
 
 /**

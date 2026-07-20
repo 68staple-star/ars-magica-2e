@@ -1373,7 +1373,7 @@
       "damageTypes": "n/a",
       "damageLevels": "2",
       "isShield": true,
-      "notes": "New",
+      "notes": "Infantry shield — LoM ArM5-scale Init/Atk/Def/Dam mapped to 2e fields. Ability: Single.",
       "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
     }
   },
@@ -1698,7 +1698,7 @@
       "damageTypes": "C, S",
       "damageLevels": "1",
       "isShield": false,
-      "notes": "New",
+      "notes": "Whip — LoM ArM5-scale weapon. Ability: Single. Niche reach/control weapon more than raw damage.",
       "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
     }
   }

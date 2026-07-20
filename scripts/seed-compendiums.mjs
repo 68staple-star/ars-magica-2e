@@ -19,7 +19,9 @@ const files = [
   "journals-rules.json",
   "journals-covenant.json",
   "journals-order.json",
-  "journals-abilities.json"
+  "journals-abilities.json",
+  "beasts-arm5-ch13.json",
+  "spells.json"
 ];
 
 for (const file of files) {

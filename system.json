@@ -2,9 +2,9 @@
   "id": "ars-magica-2e",
   "title": "Ars Magica 2nd Edition (Custom)",
   "description": "A custom Ars Magica 2nd Edition system for Foundry VTT.",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "manifest": "https://raw.githubusercontent.com/68staple-star/ars-magica-2e/main/system.json",
-  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.7/ars-magica-2e.zip",
+  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.8/ars-magica-2e.zip",
   "compatibility": {
     "minimum": "11",
     "verified": "13"
@@ -92,6 +92,13 @@
       "system": "ars-magica-2e",
       "path": "packs/arm2e-ability-reference",
       "type": "JournalEntry"
+    },
+    {
+      "name": "arm2e-bestiary",
+      "label": "Bestiary (ArM5 Ch.13)",
+      "system": "ars-magica-2e",
+      "path": "packs/arm2e-bestiary",
+      "type": "Actor"
     }
   ]
 }

@@ -3,14 +3,16 @@
     "name": "Pilum of Fire",
     "type": "spell",
     "system": {
-      "level": 10,
+      "level": 20,
       "technique": "creo",
       "form": "ignem",
+      "artAbbrev": "CrIg",
       "range": "Voice",
       "duration": "Momentary",
       "target": "Individual",
       "mastered": false,
-      "notes": "Creates a spear of flame.",
+      "notes": "A 2-foot, thick-shafted, spear-shaped jet of fire flies from your palms, doing +15 damage to a target you designate. Requires a targeting roll if the target is far, moving, or otherwise hard to hit.\n\n(Base 10, +2 Voice)\n\nSample starter spell — prefer the full Ch.9 pack entry when available.",
+      "source": "ArM5 Ch.9 sample",
       "journal": ""
     }
   },
@@ -18,14 +20,16 @@
     "name": "Unseen Porter",
     "type": "spell",
     "system": {
-      "level": 5,
+      "level": 10,
       "technique": "rego",
-      "form": "corporem",
-      "range": "Touch",
+      "form": "terram",
+      "artAbbrev": "ReTe",
+      "range": "Voice",
       "duration": "Concentration",
-      "target": "Group",
+      "target": "Individual",
       "mastered": false,
-      "notes": "Moves objects without visible agency.",
+      "notes": "Moves a non-living object of Size +1 or smaller without visible agency, roughly as a strong person could. Useful for hauling gear; does not work well for fine manipulation.\n\nSample starter spell — check Ch.9 pack for full OGL wording of similar Rego effects.",
+      "source": "Sample (2e-friendly)",
       "journal": ""
     }
   },
@@ -36,11 +40,13 @@
       "level": 5,
       "technique": "muto",
       "form": "corporem",
-      "range": "Touch",
-      "duration": "Momentary",
+      "artAbbrev": "MuCo",
+      "range": "Personal",
+      "duration": "Diameter",
       "target": "Individual",
       "mastered": false,
-      "notes": "Extends the caster's reach.",
+      "notes": "Lengthens the caster's arms so they may touch or manipulate objects at a greater distance (about twice normal reach) without leaving their stance.\n\nSample utility spell for playtesting Muto Corporem.",
+      "source": "Sample (2e-friendly)",
       "journal": ""
     }
   },
@@ -51,11 +57,13 @@
       "level": 5,
       "technique": "intellego",
       "form": "vim",
+      "artAbbrev": "InVi",
       "range": "Touch",
       "duration": "Momentary",
       "target": "Individual",
       "mastered": false,
-      "notes": "Identifies magical vis.",
+      "notes": "By touching a physical object containing raw vis, you learn how much vis is present and which Art it is associated with.\n\n(Base 4, +1 Touch)\n\nSample starter spell — prefer Ch.9 pack for full Vim Intellego wording.",
+      "source": "ArM5 Ch.9 sample",
       "journal": ""
     }
   },
@@ -66,11 +74,13 @@
       "level": 10,
       "technique": "creo",
       "form": "terram",
+      "artAbbrev": "CrTe",
       "range": "Voice",
       "duration": "Momentary",
       "target": "Individual",
       "mastered": false,
-      "notes": "Hurls a sharpened shard of stone.",
+      "notes": "Creates and hurls a sharpened crystal or stone dart at a target. Inflicts +10 damage; requires a targeting roll against a moving or distant foe.\n\nSample combat spell for Creo Terram playtests.",
+      "source": "Sample (2e-friendly)",
       "journal": ""
     }
   }

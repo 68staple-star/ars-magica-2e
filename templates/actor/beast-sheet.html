@@ -1,0 +1,48 @@
+<form class="{{cssClass}} arm2e-item-sheet arm2e-beast-sheet flexcol" autocomplete="off">
+  <header class="sheet-header flexrow">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64" />
+    <div class="header-fields flexcol">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="Creature Name" />
+      </h1>
+      <div class="arm2e-item-grid">
+        <label>Realm
+          <select name="system.realm">
+            {{#select system.realm}}
+            {{#each realms}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </label>
+        <label>Might <input type="number" name="system.might" value="{{system.might}}" data-dtype="Number" /></label>
+        <label>Might Form <input type="text" name="system.mightForm" value="{{system.mightForm}}" placeholder="e.g. Animal" /></label>
+        <label>Size <input type="number" name="system.size" value="{{system.size}}" data-dtype="Number" /></label>
+        <label>Soak <input type="number" name="system.soak" value="{{system.soak}}" data-dtype="Number" /></label>
+      </div>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <h2 class="arm2e-subheading">Characteristics</h2>
+    <div class="arm2e-item-grid">
+      <label>Int <input type="number" name="system.characteristics.intelligence" value="{{system.characteristics.intelligence}}" data-dtype="Number" /></label>
+      <label>Cun <input type="number" name="system.characteristics.cunning" value="{{system.characteristics.cunning}}" data-dtype="Number" title="Animal cunning (use instead of Int when listed)" /></label>
+      <label>Per <input type="number" name="system.characteristics.perception" value="{{system.characteristics.perception}}" data-dtype="Number" /></label>
+      <label>Str <input type="number" name="system.characteristics.strength" value="{{system.characteristics.strength}}" data-dtype="Number" /></label>
+      <label>Stm <input type="number" name="system.characteristics.stamina" value="{{system.characteristics.stamina}}" data-dtype="Number" /></label>
+      <label>Prs <input type="number" name="system.characteristics.presence" value="{{system.characteristics.presence}}" data-dtype="Number" /></label>
+      <label>Com <input type="number" name="system.characteristics.communication" value="{{system.characteristics.communication}}" data-dtype="Number" /></label>
+      <label>Dex <input type="number" name="system.characteristics.dexterity" value="{{system.characteristics.dexterity}}" data-dtype="Number" /></label>
+      <label>Qik <input type="number" name="system.characteristics.quickness" value="{{system.characteristics.quickness}}" data-dtype="Number" /></label>
+    </div>
+
+    <label class="arm2e-span-2">Combat <textarea name="system.combat" rows="3">{{system.combat}}</textarea></label>
+    <label class="arm2e-span-2">Powers <textarea name="system.powers" rows="6">{{system.powers}}</textarea></label>
+    <label class="arm2e-span-2">Abilities <textarea name="system.abilities" rows="2">{{system.abilities}}</textarea></label>
+    <label class="arm2e-span-2">Vis <input type="text" name="system.vis" value="{{system.vis}}" /></label>
+    <label class="arm2e-span-2">Description <textarea name="system.description" rows="8">{{system.description}}</textarea></label>
+    <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" readonly /></label>
+    <p class="arm2e-note">ArM5 creature reference. Adapt Init/Atk/Def/Dam and Soak to 2e combat math at the table.</p>
+  </section>
+</form>

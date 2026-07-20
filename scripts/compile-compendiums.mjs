@@ -28,12 +28,14 @@ const PACKS = [
   { pack: "arm2e-rules-reference", file: "journals-rules.json", type: "JournalEntry" },
   { pack: "arm2e-covenant-template", file: "journals-covenant.json", type: "JournalEntry" },
   { pack: "arm2e-order-reference", file: "journals-order.json", type: "JournalEntry" },
-  { pack: "arm2e-ability-reference", file: "journals-abilities.json", type: "JournalEntry" }
+  { pack: "arm2e-ability-reference", file: "journals-abilities.json", type: "JournalEntry" },
+  { pack: "arm2e-bestiary", file: "beasts-arm5-ch13.json", type: "Actor" }
 ];
 
 const COLLECTION_BY_TYPE = {
   Item: "items",
-  JournalEntry: "journal"
+  JournalEntry: "journal",
+  Actor: "actors"
 };
 
 const DEFAULT_ITEM_IMG = {
@@ -127,6 +129,34 @@ function prepareJournalDocument(entry, pack) {
 }
 
 /**
+ * @param {object} entry
+ * @param {string} pack
+ * @param {number} index
+ */
+function prepareActorDocument(entry, pack, index) {
+  const name = entry.name ?? `Actor ${index + 1}`;
+  const type = entry.type ?? "beast";
+  const id = entry._id ?? deterministicId(pack, name);
+
+  return {
+    _id: id,
+    _key: packKey(COLLECTION_BY_TYPE.Actor, id),
+    name,
+    type,
+    img: entry.img ?? "icons/svg/mystery-man.svg",
+    system: entry.system ?? {},
+    items: entry.items ?? [],
+    effects: entry.effects ?? [],
+    flags: entry.flags ?? {},
+    prototypeToken: entry.prototypeToken ?? {
+      name,
+      disposition: -1,
+      actorLink: true
+    }
+  };
+}
+
+/**
  * @param {{ pack: string, file: string, type: string }} config
  */
 async function compileOne(config) {
@@ -156,9 +186,10 @@ async function compileOne(config) {
 
     usedNames.add(filename);
 
-    const document = type === "JournalEntry"
-      ? prepareJournalDocument(entry, pack)
-      : prepareItemDocument(entry, pack, index);
+    let document;
+    if (type === "JournalEntry") document = prepareJournalDocument(entry, pack);
+    else if (type === "Actor") document = prepareActorDocument(entry, pack, index);
+    else document = prepareItemDocument(entry, pack, index);
 
     await writeFile(join(sourceDir, `${filename}.json`), `${JSON.stringify(document, null, 2)}\n`, "utf8");
   }

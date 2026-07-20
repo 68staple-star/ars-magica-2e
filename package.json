@@ -6,6 +6,7 @@
     "compile:packs": "node scripts/compile-compendiums.mjs",
     "parse:spells": "node scripts/parse-spells-ch9.mjs",
     "parse:abilities": "node scripts/parse-ability-descriptions.mjs",
+    "parse:bestiary": "node scripts/parse-bestiary-ch13.mjs",
     "validate:packs": "node scripts/seed-compendiums.mjs"
   },
   "devDependencies": {

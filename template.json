@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character"],
+    "types": ["character", "beast"],
     "character": {
       "identity": {
         "age": 0,
@@ -75,6 +75,30 @@
         "rulesJournal": "",
         "orderJournal": ""
       }
+    },
+    "beast": {
+      "realm": "Magic",
+      "might": 0,
+      "mightForm": "",
+      "size": 0,
+      "soak": 0,
+      "characteristics": {
+        "intelligence": 0,
+        "perception": 0,
+        "strength": 0,
+        "stamina": 0,
+        "presence": 0,
+        "communication": 0,
+        "dexterity": 0,
+        "quickness": 0,
+        "cunning": 0
+      },
+      "combat": "",
+      "powers": "",
+      "abilities": "",
+      "vis": "",
+      "description": "",
+      "source": ""
     }
   },
   "Item": {

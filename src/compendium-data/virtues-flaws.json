@@ -72,7 +72,7 @@
       "kind": "flaw",
       "points": 1,
       "category": "General",
-      "description": "Character lacks significant wealth.",
+      "description": "The character lacks significant personal wealth — little spare coin, few luxuries, and limited ability to fund travel, bribes, or equipment upgrades without covenant help.",
       "source": "Core"
     }
   },
