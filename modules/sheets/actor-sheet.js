@@ -7,7 +7,7 @@ import { prepareCombatData } from "../utils/combat.js";
 import { prepareSpellLists } from "../utils/spells.js";
 import { prepareAbilityColumns, prepareCharacteristicPairs } from "../utils/sheet-data.js";
 import { prepareVirtueFlawList } from "../utils/virtues.js";
-import { prepareFatigueTrack, prepareWoundTrack } from "../utils/wounds.js";
+import { prepareFatigueTrack, prepareStatusStrip, prepareWoundTrack } from "../utils/wounds.js";
 import { openJournalEntry } from "../utils/journal.js";
 
 const DROP_TARGETS = {
@@ -63,6 +63,7 @@ export class ArM2eActorSheet extends ActorSheet {
     context.virtueFlaws = prepareVirtueFlawList(this.actor.items);
     context.woundTrack = prepareWoundTrack(system);
     context.fatigueTrack = prepareFatigueTrack(system);
+    context.status = prepareStatusStrip(system, context.combat?.encumbrance ?? 0);
 
     return context;
   }

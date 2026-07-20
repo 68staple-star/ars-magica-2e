@@ -4,6 +4,7 @@ const SHEET_TEMPLATES = [
   `${TEMPLATE_ROOT}/actor/character-sheet.html`,
   `${TEMPLATE_ROOT}/apps/creation-wizard.html`,
   `${TEMPLATE_ROOT}/actor/partials/header-band.html`,
+  `${TEMPLATE_ROOT}/actor/partials/status-strip.html`,
   `${TEMPLATE_ROOT}/actor/partials/ability-row.html`,
   `${TEMPLATE_ROOT}/actor/partials/tab-character.html`,
   `${TEMPLATE_ROOT}/actor/partials/tab-abilities.html`,

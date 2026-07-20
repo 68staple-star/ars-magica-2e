@@ -11,7 +11,7 @@
       {
         "name": "Combat",
         "text": {
-          "content": "<h2>Attack &amp; Defense</h2><p>Attack = Weapon Atk Bonus + Dex + Attack Skill. Defense = Parry Bonus + Parry Skill − Size. Dodge = Dodge + Qik − Enc − Size.</p><h2>Damage</h2><p>Damage = Weapon Damage + Str + Attack Skill, compared against Soak.</p><h2>Wounds &amp; Fatigue</h2><p>Track body levels and fatigue levels on the Combat tab of your character sheet.</p>"
+          "content": "<h2>Attack &amp; Defense</h2><p>Attack = Weapon Atk Bonus + Dex + Attack Skill. Defense = Parry Bonus + Parry Skill − Size. Dodge = Dodge + Qik − Enc − Size.</p><h2>Damage</h2><p>Damage = Weapon Damage + Str + Attack Skill, compared against Soak.</p><h2>Wounds &amp; Fatigue</h2><p>Track body levels and fatigue levels on the character sheet status strip (visible on every tab). Wound and fatigue penalties are applied automatically to stress rolls and shown in the chat breakdown.</p><h2>Edition Policy</h2><p>This system uses <strong>Ars Magica 2nd Edition</strong> combat and casting math. Later-edition OGL content (spells, virtues/flaws, equipment catalogs) is included as reference material where the concepts map cleanly — re-check levels and weapon numbers against your saga’s 2e expectations when in doubt.</p>"
         }
       },
       {

@@ -603,12 +603,142 @@
   border: 0;
 }
 
-.ars-magica-2e.sheet.actor.character .arm2e-combat-gear-grid {
 .ars-magica-2e.sheet.actor.character .arm2e-character-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.4fr) auto;
+  gap: 0.65rem 0.85rem;
+  align-items: center;
+  margin: 0 0 0.75rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #c8ad7f;
+  border-radius: 6px;
+  background: #f7f0e2;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-strip.is-incapacitated {
+  border-color: #8a3a2a;
+  background: #f3e4de;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6a4e35;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-step {
+  margin: 0;
+  padding: 0.18rem 0.4rem;
+  border: 1px solid #c8ad7f;
+  border-radius: 4px;
+  background: #fffdf7;
+  color: #4a3728;
+  font: inherit;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-step.is-active {
+  border-color: #7a2f2f;
+  background: #7a2f2f;
+  color: #fffdf7;
+  font-weight: 700;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: flex-end;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 3.4rem;
+  padding: 0.2rem 0.35rem;
+  border-left: 1px solid #d9c4a0;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-metric-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6a4e35;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-metric-value {
+  font-size: 0.95rem;
+  color: #3d2a1c;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-status-metric-value.is-penalized {
+  color: #8a3a2a;
+}
+
+@media (max-width: 1100px) {
+  .ars-magica-2e.sheet.actor.character .arm2e-status-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .ars-magica-2e.sheet.actor.character .arm2e-status-metrics {
+    justify-content: flex-start;
+  }
+
+  .ars-magica-2e.sheet.actor.character .arm2e-status-metric {
+    border-left: none;
+    border-right: 1px solid #d9c4a0;
+  }
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-track-penalty {
+  font-size: 0.75em;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-chat-roll-breakdown,
+.arm2e-chat-roll .arm2e-chat-roll-breakdown {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0.4rem 0;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-chat-roll-line,
+.arm2e-chat-roll .arm2e-chat-roll-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.9em;
+}
+
+.ars-magica-2e.sheet.actor.character .arm2e-chat-roll-line-label,
+.arm2e-chat-roll .arm2e-chat-roll-line-label {
+  color: #5a4332;
 }
 
 .ars-magica-2e.sheet.actor.character details.arm2e-journal-refs summary {

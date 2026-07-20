@@ -1,0 +1,44 @@
+<section class="arm2e-status-strip{{#unless status.canAct}} is-incapacitated{{/unless}}" aria-label="Combat status">
+  <div class="arm2e-status-group arm2e-status-wounds">
+    <span class="arm2e-status-label">Wounds</span>
+    <div class="arm2e-status-track" role="group" aria-label="Body levels">
+      {{#each status.woundLevels}}
+      <button
+        type="button"
+        class="arm2e-status-step wound-step{{#if active}} is-active{{/if}}"
+        data-wound-level="{{id}}"
+        title="{{label}} ({{penaltyLabel}})"
+      >{{short}}</button>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="arm2e-status-group arm2e-status-fatigue">
+    <span class="arm2e-status-label">Fatigue</span>
+    <div class="arm2e-status-track" role="group" aria-label="Fatigue levels">
+      {{#each status.fatigueLevels}}
+      <button
+        type="button"
+        class="arm2e-status-step fatigue-step{{#if active}} is-active{{/if}}"
+        data-fatigue-level="{{id}}"
+        title="{{label}} ({{penaltyLabel}})"
+      >{{short}}</button>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="arm2e-status-metrics">
+    <div class="arm2e-status-metric" title="Wound + fatigue penalty applied to stress rolls">
+      <span class="arm2e-status-metric-label">Roll penalty</span>
+      <strong class="arm2e-status-metric-value{{#if status.penaltyTotal}} is-penalized{{/if}}">{{status.penaltyLabel}}</strong>
+    </div>
+    <div class="arm2e-status-metric" title="Confidence points">
+      <span class="arm2e-status-metric-label">Conf</span>
+      <strong class="arm2e-status-metric-value">{{status.confidenceValue}}/{{status.confidenceMax}}</strong>
+    </div>
+    <div class="arm2e-status-metric" title="Encumbrance (Load − Strength)">
+      <span class="arm2e-status-metric-label">Enc</span>
+      <strong class="arm2e-status-metric-value">{{status.encumbrance}}</strong>
+    </div>
+  </div>
+</section>

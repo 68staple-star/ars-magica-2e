@@ -33,7 +33,7 @@
       class="arm2e-track-step wound-step{{#if active}} is-active{{/if}}"
       data-wound-level="{{id}}"
       title="{{label}}"
-    >{{label}}</button>
+    >{{label}} <span class="arm2e-track-penalty">({{penaltyLabel}})</span></button>
     {{/each}}
   </div>
   <input type="hidden" name="system.wounds.level" value="{{system.wounds.level}}" />
@@ -47,8 +47,8 @@
       type="button"
       class="arm2e-track-step fatigue-step{{#if active}} is-active{{/if}}"
       data-fatigue-level="{{id}}"
-      title="{{label}}{{#if penalty}} ({{penalty}}){{/if}}"
-    >{{label}}</button>
+      title="{{label}}"
+    >{{label}} <span class="arm2e-track-penalty">({{penaltyLabel}})</span></button>
     {{/each}}
   </div>
   <input type="hidden" name="system.fatigue.level" value="{{system.fatigue.level}}" />

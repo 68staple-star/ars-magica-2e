@@ -38,6 +38,23 @@
   font-size: 1.05rem;
 }
 
+.chat-message .arm2e-chat-roll-breakdown {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0.35rem 0;
+}
+
+.chat-message .arm2e-chat-roll-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.9em;
+}
+
+.chat-message .arm2e-chat-roll-line-label {
+  color: #5a3f2e;
+}
+
 .chat-message .arm2e-botch-flag,
 .chat-message .arm2e-explode-flag {
   margin-top: 0.35rem;

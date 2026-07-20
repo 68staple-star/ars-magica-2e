@@ -4,12 +4,23 @@
     <span class="arm2e-roll-type">{{rollTitle}}</span>
   </div>
   <div class="arm2e-chat-roll-steps">{{{stepsHtml}}}</div>
+  <div class="arm2e-chat-roll-breakdown">
+    <div class="arm2e-chat-roll-line">
+      <span class="arm2e-chat-roll-line-label">Die</span>
+      <span class="arm2e-chat-roll-line-value die-result">{{dieValue}}</span>
+    </div>
+    {{#each modifierRows}}
+    <div class="arm2e-chat-roll-line">
+      <span class="arm2e-chat-roll-line-label">{{label}}</span>
+      <span class="arm2e-chat-roll-line-value">{{valueLabel}}</span>
+    </div>
+    {{/each}}
+  </div>
   <div class="arm2e-chat-roll-total">
-    <span class="die-result">{{dieValue}}</span>
-    <span class="modifier">{{modifierLabel}}</span>
-    <span class="equals">=</span>
+    <span class="equals">Total</span>
     <strong class="total">{{total}}</strong>
   </div>
+  {{{inactiveHtml}}}
   {{{castingHtml}}}
   {{{explodeHtml}}}
   {{{botchHtml}}}
