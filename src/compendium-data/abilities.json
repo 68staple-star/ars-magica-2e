@@ -540,6 +540,66 @@
     }
   },
   {
+    "name": "Single Weapon",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "single-weapon",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Great Weapon",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "great-weapon",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Bow",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "bow",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Thrown Weapon",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "thrown-weapon",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
+    "name": "Crossbow",
+    "type": "ability",
+    "system": {
+      "category": "skills",
+      "key": "crossbow",
+      "value": 0,
+      "xp": 0,
+      "specialty": "",
+      "rollCharacteristic": "dexterity"
+    }
+  },
+  {
     "name": "Ride",
     "type": "ability",
     "system": {

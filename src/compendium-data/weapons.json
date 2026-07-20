@@ -10,6 +10,7 @@
       "parB": 0,
       "strReq": -3,
       "load": 0,
+      "ability": "Brawl",
       "attackSkill": 0,
       "parrySkill": 0,
       "equipped": false
@@ -26,6 +27,7 @@
       "parB": 1,
       "strReq": 0,
       "load": 1,
+      "ability": "Single",
       "attackSkill": 0,
       "parrySkill": 0,
       "equipped": false
@@ -42,6 +44,7 @@
       "parB": 2,
       "strReq": 1,
       "load": 2,
+      "ability": "Single",
       "attackSkill": 0,
       "parrySkill": 0,
       "equipped": false
@@ -58,6 +61,7 @@
       "parB": 1,
       "strReq": 0,
       "load": 2,
+      "ability": "Great",
       "attackSkill": 0,
       "parrySkill": 0,
       "equipped": false
@@ -74,6 +78,7 @@
       "parB": 2,
       "strReq": -2,
       "load": 1,
+      "ability": "Great",
       "attackSkill": 0,
       "parrySkill": 0,
       "equipped": false

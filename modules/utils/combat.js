@@ -2,6 +2,80 @@
  * Ars Magica 2e combat derived totals (AG0201, Ch. 3).
  */
 
+/** LoM / ArM5 ability shorthand → ability item key */
+const WEAPON_ABILITY_ALIASES = Object.freeze({
+  brawl: "brawl",
+  single: "single-weapon",
+  "single weapon": "single-weapon",
+  "single-weapon": "single-weapon",
+  great: "great-weapon",
+  "great weapon": "great-weapon",
+  "great-weapon": "great-weapon",
+  bow: "bow",
+  thrown: "thrown-weapon",
+  "thrown weapon": "thrown-weapon",
+  "thrown-weapon": "thrown-weapon",
+  crossbow: "crossbow"
+});
+
+/**
+ * @param {string} raw
+ * @returns {string}
+ */
+export function normalizeWeaponAbilityKey(raw) {
+  const cleaned = String(raw ?? "").trim().toLowerCase();
+  if (!cleaned) return "";
+  return WEAPON_ABILITY_ALIASES[cleaned] ?? cleaned.replace(/\s+/g, "-");
+}
+
+/**
+ * Resolve a weapon's linked ability score from the actor's ability Items.
+ * Falls back to stored attackSkill / parrySkill when no ability is linked or found.
+ *
+ * @param {Actor | null} actor
+ * @param {object} weapon
+ * @returns {{ attackSkill: number, parrySkill: number, abilityKey: string, abilityLabel: string }}
+ */
+export function resolveWeaponSkills(actor, weapon) {
+  const abilityKey = normalizeWeaponAbilityKey(weapon?.ability);
+  const storedAttack = Number(weapon?.attackSkill) || 0;
+  const storedParry = Number(weapon?.parrySkill) || 0;
+
+  if (!abilityKey || !actor) {
+    return {
+      attackSkill: storedAttack,
+      parrySkill: storedParry,
+      abilityKey,
+      abilityLabel: ""
+    };
+  }
+
+  const abilityItem = actor.items.find(
+    (item) => item.type === "ability" && (
+      item.system?.key === abilityKey
+      || normalizeWeaponAbilityKey(item.name) === abilityKey
+      || normalizeWeaponAbilityKey(item.system?.key) === abilityKey
+    )
+  );
+
+  if (!abilityItem) {
+    return {
+      attackSkill: storedAttack,
+      parrySkill: storedParry,
+      abilityKey,
+      abilityLabel: abilityKey
+    };
+  }
+
+  const score = Number(abilityItem.system?.value) || 0;
+  return {
+    attackSkill: score,
+    parrySkill: score,
+    abilityKey,
+    abilityLabel: abilityItem.name ?? abilityKey
+  };
+}
+
 /**
  * @param {number} totalLoad
  * @param {number} strength
@@ -16,14 +90,15 @@ export function calculateEncumbrance(totalLoad, strength) {
  * @param {object} characteristics
  * @param {number} encumbrance
  * @param {number} size
+ * @param {{ attackSkill?: number, parrySkill?: number }} [skills]
  * @returns {{ firstStrike: number, attack: number, damage: number, defense: number }}
  */
-export function calculateWeaponTotals(weapon, characteristics, encumbrance, size) {
+export function calculateWeaponTotals(weapon, characteristics, encumbrance, size, skills = null) {
   const quickness = Number(characteristics?.quickness) || 0;
   const dexterity = Number(characteristics?.dexterity) || 0;
   const strength = Number(characteristics?.strength) || 0;
-  const attackSkill = Number(weapon?.attackSkill) || 0;
-  const parrySkill = Number(weapon?.parrySkill) || 0;
+  const attackSkill = Number(skills?.attackSkill ?? weapon?.attackSkill) || 0;
+  const parrySkill = Number(skills?.parrySkill ?? weapon?.parrySkill) || 0;
   const speed = Number(weapon?.speed) || 0;
   const atkB = Number(weapon?.atkB) || 0;
   const wpnDam = Number(weapon?.wpnDam) || 0;
@@ -81,18 +156,26 @@ export function calculateDodge(system, encumbrance, actor = null) {
 }
 
 /**
+ * Soak = Stamina + equipped armor Protection (2e combat).
+ *
+ * @param {object} characteristics
  * @param {Iterable<{ system: object }>} armorItems
- * @returns {number}
+ * @returns {{ soak: number, stamina: number, protection: number }}
  */
-export function calculateSoak(armorItems) {
-  let soak = 0;
+export function calculateSoak(characteristics, armorItems) {
+  const stamina = Number(characteristics?.stamina) || 0;
+  let protection = 0;
 
   for (const item of armorItems) {
     if (!item?.system?.equipped) continue;
-    soak += Number(item.system.protection) || 0;
+    protection += Number(item.system.protection) || 0;
   }
 
-  return soak;
+  return {
+    soak: stamina + protection,
+    stamina,
+    protection
+  };
 }
 
 /**
@@ -100,12 +183,15 @@ export function calculateSoak(armorItems) {
  * @param {Iterable<Item>} weaponItems
  * @param {Iterable<Item>} [armorItems=[]]
  * @param {Iterable<Item>} [equipmentItems=[]]
+ * @param {Actor} [actor=null]
  * @returns {{
  *   size: number,
  *   totalLoad: number,
  *   encumbrance: number,
  *   dodge: number,
  *   soak: number,
+ *   soakStamina: number,
+ *   soakProtection: number,
  *   weapons: Array<object>,
  *   armor: Array<object>,
  *   equipment: Array<object>
@@ -120,12 +206,13 @@ export function prepareCombatData(system, weaponItems, armorItems = [], equipmen
   const totalLoad = calculateTotalLoad(allLoadItems, extraLoad);
   const encumbrance = calculateEncumbrance(totalLoad, strength);
   const dodge = calculateDodge(system, encumbrance, actor);
-  const soak = calculateSoak(armorItems);
+  const soakParts = calculateSoak(characteristics, armorItems);
 
   const weapons = [...weaponItems].map((item) => {
     const weapon = item.system ?? {};
+    const skills = resolveWeaponSkills(actor, weapon);
     const derived = weapon.equipped
-      ? calculateWeaponTotals(weapon, characteristics, encumbrance, size)
+      ? calculateWeaponTotals(weapon, characteristics, encumbrance, size, skills)
       : null;
 
     return {
@@ -138,8 +225,10 @@ export function prepareCombatData(system, weaponItems, armorItems = [], equipmen
       parB: Number(weapon.parB) || 0,
       strReq: Number(weapon.strReq) || 0,
       load: Number(weapon.load) || 0,
-      attackSkill: Number(weapon.attackSkill) || 0,
-      parrySkill: Number(weapon.parrySkill) || 0,
+      ability: skills.abilityKey || weapon.ability || "",
+      abilityLabel: skills.abilityLabel,
+      attackSkill: skills.attackSkill,
+      parrySkill: skills.parrySkill,
       equipped: Boolean(weapon.equipped),
       derived
     };
@@ -162,5 +251,16 @@ export function prepareCombatData(system, weaponItems, armorItems = [], equipmen
     description: item.system?.description ?? ""
   }));
 
-  return { size, totalLoad, encumbrance, dodge, soak, weapons, armor, equipment };
+  return {
+    size,
+    totalLoad,
+    encumbrance,
+    dodge,
+    soak: soakParts.soak,
+    soakStamina: soakParts.stamina,
+    soakProtection: soakParts.protection,
+    weapons,
+    armor,
+    equipment
+  };
 }

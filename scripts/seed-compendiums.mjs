@@ -11,7 +11,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "compend
 const files = [
   "abilities.json",
   "spells-arm5-index.json",
-  "spells.json",
+  "spells-arm5-ch9.json",
   "equipment-arm5-lom.json",
   "weapons.json",
   "virtues-flaws-arm5.json",

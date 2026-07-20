@@ -59,8 +59,13 @@ export const ABILITY_ENTRIES = Object.freeze([
   { key: "jongleur", label: "Jongleur", category: "skills", subgroup: "performance", characteristic: "dexterity" },
   { key: "sing", label: "Sing", category: "skills", subgroup: "performance", characteristic: "communication" },
   { key: "play-specific-instrument", label: "Play (Specific Instrument)", category: "skills", subgroup: "performance", characteristic: "dexterity" },
-  // Physical Skills
+  // Physical Skills (weapon groups map to LoM/ArM5 ability field on weapons)
   { key: "brawl", label: "Brawl", category: "skills", subgroup: "physical", characteristic: "dexterity" },
+  { key: "single-weapon", label: "Single Weapon", category: "skills", subgroup: "physical", characteristic: "dexterity", alternates: ["Single"] },
+  { key: "great-weapon", label: "Great Weapon", category: "skills", subgroup: "physical", characteristic: "dexterity", alternates: ["Great"] },
+  { key: "bow", label: "Bow", category: "skills", subgroup: "physical", characteristic: "dexterity" },
+  { key: "thrown-weapon", label: "Thrown Weapon", category: "skills", subgroup: "physical", characteristic: "dexterity", alternates: ["Thrown"] },
+  { key: "crossbow", label: "Crossbow", category: "skills", subgroup: "physical", characteristic: "dexterity" },
   { key: "ride", label: "Ride", category: "skills", subgroup: "physical", characteristic: "dexterity" },
   { key: "swim", label: "Swim", category: "skills", subgroup: "physical", characteristic: "stamina" },
   // Rogue Skills
@@ -153,7 +158,12 @@ export const ABILITY_BY_KEY = Object.freeze(
  * @returns {AbilityDefinition | undefined}
  */
 export function getAbilityByLabel(label) {
-  return ABILITY_ENTRIES.find((entry) => entry.label === label);
+  const normalized = String(label ?? "").trim().toLowerCase();
+  if (!normalized) return undefined;
+  return ABILITY_ENTRIES.find((entry) => {
+    if (entry.label.toLowerCase() === normalized) return true;
+    return (entry.alternates ?? []).some((alt) => alt.toLowerCase() === normalized);
+  });
 }
 
 /**

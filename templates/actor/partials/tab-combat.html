@@ -19,7 +19,7 @@
     </div>
     <div class="combat-stat">
       <span class="combat-stat-label">Soak</span>
-      <span class="combat-stat-value">{{combat.soak}}</span>
+      <span class="combat-stat-value" title="Stamina {{combat.soakStamina}} + Armor Prot {{combat.soakProtection}}">{{combat.soak}}</span>
     </div>
   </div>
 </section>
@@ -107,6 +107,7 @@
       <tr>
         <th>Eq</th>
         <th>Weapon</th>
+        <th>Skill</th>
         <th>Spd</th>
         <th>AtkB</th>
         <th>Dam</th>
@@ -124,6 +125,7 @@
       <tr class="weapon-row{{#if equipped}} weapon-equipped-row{{/if}}" data-item-id="{{id}}" data-weapon-name="{{name}}">
         <td><input type="checkbox" class="weapon-equipped item-equipped" data-item-id="{{id}}" {{#if equipped}}checked{{/if}} /></td>
         <th scope="row" class="weapon-name item-edit" data-item-id="{{id}}">{{name}}</th>
+        <td title="Ability {{ability}} (score {{attackSkill}})">{{#if abilityLabel}}{{abilityLabel}} {{attackSkill}}{{else}}{{#if ability}}{{ability}}{{else}}—{{/if}}{{/if}}</td>
         <td>{{speed}}</td>
         <td>{{atkB}}</td>
         <td>{{wpnDam}}</td>

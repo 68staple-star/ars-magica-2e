@@ -65,11 +65,21 @@ export const FORMS = Object.freeze([
 ]);
 
 /**
- * Weapon skills in 2e are chosen per specific weapon (attack and parry separately).
- * @type {Readonly<{ note: string }>}
+ * Weapon combat skills.
+ * Classic 2e treats attack/parry per weapon; LoM/ArM5 gear uses group abilities
+ * (Brawl, Single, Great, Bow, Thrown, Crossbow) linked via weapon.system.ability.
+ * @type {Readonly<{ note: string, groups: ReadonlyArray<string> }>}
  */
 export const WEAPON_SKILLS = Object.freeze({
-  note: "Choose a specific weapon; attack and parry are separate skills (see Combat chapter)."
+  note: "Link a weapon Ability (Brawl / Single Weapon / Great Weapon / Bow / Thrown Weapon / Crossbow). Combat totals use that ability score; otherwise Attack Skill and Parry Skill fields apply.",
+  groups: Object.freeze([
+    "brawl",
+    "single-weapon",
+    "great-weapon",
+    "bow",
+    "thrown-weapon",
+    "crossbow"
+  ])
 });
 
 /** @type {Readonly<Record<string, string>>} */

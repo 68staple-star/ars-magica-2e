@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "compile:packs": "node scripts/compile-compendiums.mjs",
+    "parse:spells": "node scripts/parse-spells-ch9.mjs",
     "validate:packs": "node scripts/seed-compendiums.mjs"
   },
   "devDependencies": {
