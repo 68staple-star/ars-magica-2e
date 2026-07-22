@@ -1,5 +1,59 @@
 import { ArM2eCreationWizard } from "../apps/creation-wizard.js";
 import { attachRulesPdfViaPicker, openWorldRulesPdfJournal } from "../utils/journal.js";
+import { formatPackEntrySummary } from "../utils/equipment-summary.js";
+
+/**
+ * Show Speed/Atk/Dam (etc.) under each entry in the Weapons & Armor pack list.
+ * Foundry's default directory only shows names.
+ *
+ * @param {Application} app
+ * @param {JQuery | HTMLElement} html
+ */
+async function enrichWeaponsArmorCompendium(app, html) {
+  if (game.system.id !== "ars-magica-2e") return;
+
+  const pack = app.collection ?? app.documentCollection;
+  const packName = pack?.metadata?.name ?? pack?.collection?.split(".")?.pop();
+  if (packName !== "arm2e-weapons") return;
+
+  const root = html instanceof jQuery ? html[0] : html;
+  if (!root) return;
+
+  const index = await pack.getIndex({
+    fields: [
+      "type",
+      "system.speed",
+      "system.atkB",
+      "system.wpnDam",
+      "system.parB",
+      "system.strReq",
+      "system.load",
+      "system.range",
+      "system.ability",
+      "system.category",
+      "system.protection",
+      "system.outfit",
+      "system.cost",
+      "system.notes"
+    ]
+  });
+
+  for (const entry of index) {
+    if (entry.type !== "weapon" && entry.type !== "armor") continue;
+    const summary = formatPackEntrySummary(entry);
+    if (!summary) continue;
+
+    const row = root.querySelector(`[data-document-id="${entry._id}"]`);
+    if (!row || row.querySelector(".arm2e-pack-stats")) continue;
+
+    const nameEl = row.querySelector(".document-name, .entry-name, h4, a");
+    const stats = document.createElement("div");
+    stats.className = "arm2e-pack-stats";
+    stats.textContent = summary;
+    if (nameEl?.parentElement) nameEl.parentElement.append(stats);
+    else row.append(stats);
+  }
+}
 
 /**
  * @param {Actor} actor
@@ -51,6 +105,30 @@ function addJournalPdfOptions(entryOptions) {
  * Register UI hooks for actor directory shortcuts and journal PDF helpers.
  */
 export function registerUiHooks() {
+  CONFIG.Item.compendiumIndexFields = [
+    ...(CONFIG.Item.compendiumIndexFields ?? []),
+    "system.speed",
+    "system.atkB",
+    "system.wpnDam",
+    "system.parB",
+    "system.strReq",
+    "system.load",
+    "system.range",
+    "system.ability",
+    "system.category",
+    "system.protection",
+    "system.outfit",
+    "system.cost",
+    "system.notes",
+    "system.source"
+  ];
+
+  Hooks.on("renderCompendium", (app, html) => {
+    enrichWeaponsArmorCompendium(app, html).catch((error) => {
+      console.warn("arm2e | Compendium stat enrichment failed", error);
+    });
+  });
+
   Hooks.on("getActorContextOptions", (application, entryOptions) => {
     if (game.system.id !== "ars-magica-2e") return;
 

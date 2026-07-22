@@ -18,12 +18,44 @@
   align-items: center;
 }
 
+.arm2e-item-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
 .arm2e-item-header input[type="text"] {
   font-size: 1.1rem;
   font-weight: 700;
   border: none;
   border-bottom: 1px solid #b9986d;
   background: transparent;
+  width: 100%;
+}
+
+.arm2e-stat-summary {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5a3f2e;
+  line-height: 1.35;
+}
+
+.arm2e-pack-stats {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #5a3f2e;
+  opacity: 0.92;
+  line-height: 1.25;
+  white-space: normal;
+}
+
+.compendium .directory-item .arm2e-pack-stats,
+.directory .directory-item .arm2e-pack-stats {
+  padding-left: 0;
 }
 
 .arm2e-item-grid {

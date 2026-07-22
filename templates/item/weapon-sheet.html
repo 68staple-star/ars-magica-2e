@@ -1,7 +1,12 @@
 <form class="arm2e-item-sheet" autocomplete="off">
   <header class="arm2e-item-header">
     <img src="{{item.img}}" data-edit="img" height="48" width="48" />
-    <input name="name" type="text" value="{{item.name}}" placeholder="Weapon Name" />
+    <div class="arm2e-item-header-text">
+      <input name="name" type="text" value="{{item.name}}" placeholder="Weapon Name" />
+      {{#if statSummary}}
+      <p class="arm2e-stat-summary">{{statSummary}}</p>
+      {{/if}}
+    </div>
   </header>
   <div class="arm2e-item-grid">
     <label>Expense <input type="text" name="system.expense" value="{{system.expense}}" /></label>
