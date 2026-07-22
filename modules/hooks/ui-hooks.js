@@ -108,24 +108,9 @@ function addJournalPdfOptions(entryOptions) {
  * Register UI hooks for actor directory shortcuts and journal PDF helpers.
  */
 export function registerUiHooks() {
-  CONFIG.Item.compendiumIndexFields = [
-    ...(CONFIG.Item.compendiumIndexFields ?? []),
-    "system.summary",
-    "system.speed",
-    "system.atkB",
-    "system.wpnDam",
-    "system.parB",
-    "system.strReq",
-    "system.load",
-    "system.range",
-    "system.ability",
-    "system.category",
-    "system.protection",
-    "system.outfit",
-    "system.cost",
-    "system.notes",
-    "system.source"
-  ];
+  // Do NOT expand CONFIG.Item.compendiumIndexFields globally — that forces every
+  // Item pack (spells, virtues, abilities, …) to ship bloated indexes on world load.
+  // Weapons enrichment requests fields only when that pack is opened (see getIndex above).
 
   Hooks.on("renderCompendium", (app, html) => {
     enrichWeaponsArmorCompendium(app, html).catch((error) => {

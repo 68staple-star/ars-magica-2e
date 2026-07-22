@@ -2,9 +2,9 @@
   "id": "ars-magica-2e",
   "title": "Ars Magica 2nd Edition (Custom)",
   "description": "A custom Ars Magica 2nd Edition system for Foundry VTT.",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "manifest": "https://raw.githubusercontent.com/68staple-star/ars-magica-2e/main/system.json",
-  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.15/ars-magica-2e.zip",
+  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.16/ars-magica-2e.zip",
   "compatibility": {
     "minimum": "11",
     "verified": "13"

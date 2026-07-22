@@ -147,35 +147,64 @@ async function importPackData(pack, data, options = {}) {
 
 /**
  * Register compendium seeding hook.
+ * Only imports when a pack is truly empty; never blocks world ready on full re-index work.
  */
 export function registerCompendiumSeeding() {
-  Hooks.once("ready", async () => {
+  Hooks.once("ready", () => {
     if (!game.user.isGM) return;
+    if (game.system?.id !== "ars-magica-2e") return;
 
-    for (const seed of PACK_SEEDS) {
-      const packId = `ars-magica-2e.${seed.pack}`;
-
-      try {
-        const pack = game.packs.get(packId);
-        if (!pack) {
-          console.warn(`arm2e | Compendium pack not found: ${packId}`);
-          continue;
-        }
-
-        const index = await pack.getIndex();
-        if (index.size > 0) continue;
-
-        const data = await loadSeedData(seed.file);
-        if (!data.length) {
-          console.warn(`arm2e | No seed data loaded for ${seed.pack}`);
-          continue;
-        }
-
-        await importPackData(pack, data, { folders: seed.folders });
-        console.log(`arm2e | Seeded compendium ${seed.pack} (${data.length} entries)`);
-      } catch (error) {
-        console.error(`arm2e | Failed to seed compendium ${seed.pack}`, error);
-      }
-    }
+    // Defer so Foundry can finish painting the UI first.
+    setTimeout(() => {
+      seedEmptyPacks().catch((error) => {
+        console.error("arm2e | Compendium seeding failed", error);
+      });
+    }, 0);
   });
+}
+
+/**
+ * Import seed JSON into any empty system packs (first-time / broken packs only).
+ */
+async function seedEmptyPacks() {
+  const started = performance.now();
+  let seeded = 0;
+
+  for (const seed of PACK_SEEDS) {
+    const packId = `ars-magica-2e.${seed.pack}`;
+
+    try {
+      const pack = game.packs.get(packId);
+      if (!pack) {
+        console.warn(`arm2e | Compendium pack not found: ${packId}`);
+        continue;
+      }
+
+      // Prefer already-built index from world setup — avoid redundant getIndex I/O.
+      const existingSize = pack.index?.size ?? 0;
+      if (existingSize > 0) continue;
+
+      const index = await pack.getIndex();
+      if (index.size > 0) continue;
+
+      const data = await loadSeedData(seed.file);
+      if (!data.length) {
+        console.warn(`arm2e | No seed data loaded for ${seed.pack}`);
+        continue;
+      }
+
+      await importPackData(pack, data, { folders: seed.folders });
+      seeded += 1;
+      console.log(`arm2e | Seeded compendium ${seed.pack} (${data.length} entries)`);
+    } catch (error) {
+      console.error(`arm2e | Failed to seed compendium ${seed.pack}`, error);
+    }
+  }
+
+  const ms = Math.round(performance.now() - started);
+  if (seeded > 0) {
+    console.log(`arm2e | Compendium seeding finished (${seeded} packs) in ${ms}ms`);
+  } else {
+    console.log(`arm2e | Compendium packs already populated (seed check ${ms}ms)`);
+  }
 }
