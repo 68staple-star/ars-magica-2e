@@ -11,8 +11,8 @@ Ralph's take on Ars Magica 2e for Foundry for the occasional Tuesday night game.
 
 ## GM Setup (one-time per world)
 
-1. **Install the system** in Foundry v11 and create or open your world.
-2. On first load as GM, empty compendiums auto-seed with sample spells, weapons, virtues/flaws, and journal references.
+1. **Install the system** in Foundry v11+ and create or open your world.
+2. Compendiums ship precompiled — open **Weapons & Armor**, **Virtues & Flaws**, spells, etc. from the Compendium packs sidebar (no auto-seed on world load).
 3. **Import journals into your world** (recommended):
    - Open Compendiums → **Rules Reference**, **Covenant Template**, or **Order of Hermes**
    - Right-click an entry → **Import**
@@ -50,4 +50,4 @@ Import spells and virtues directly from compendiums during steps 3–4.
 
 ## Development
 
-Seed data lives in `src/compendium-data/`. The GM-only `modules/compendium/seed.js` hook populates empty packs on first `ready`.
+Seed JSON lives in `src/compendium-data/`. Compile into LevelDB packs with `npm run compile:packs`. Runtime auto-seed is disabled so world load does not unlock or re-import packs.
