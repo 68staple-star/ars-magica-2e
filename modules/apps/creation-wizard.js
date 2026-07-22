@@ -260,7 +260,6 @@ export class ArM2eCreationWizard extends FormApplication {
    */
   async _loadCompendiumVirtuesFlaws() {
     const packIds = [
-      "ars-magica-2e.arm2e-virtues-flaws-arm5",
       "ars-magica-2e.arm2e-virtues-flaws"
     ];
     const entries = [];
@@ -794,7 +793,7 @@ export class ArM2eCreationWizard extends FormApplication {
     const select = this.element.find('[data-path="compendiumVfId"]')[0];
     const selected = select?.selectedOptions?.[0];
     const itemId = select?.value;
-    const packId = selected?.dataset?.pack ?? "ars-magica-2e.arm2e-virtues-flaws-arm5";
+    const packId = selected?.dataset?.pack ?? "ars-magica-2e.arm2e-virtues-flaws";
     if (!itemId) return;
 
     const pack = game.packs.get(packId);

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "The Gift",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "virtue",
+      "points": 0,
+      "category": "Hermetic",
+      "description": "The character can learn and cast Hermetic magic.",
+      "source": "Core"
+    }
+  },
+  {
+    "name": "Gentle Gift",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "virtue",
+      "points": 3,
+      "category": "Hermetic",
+      "description": "Magic does not disturb mundanes as strongly.",
+      "source": "Core"
+    }
+  },
+  {
+    "name": "Blatant Gift",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "flaw",
+      "points": 3,
+      "category": "Hermetic",
+      "description": "The Gift is especially disturbing to others.",
+      "source": "Core"
+    }
+  },
+  {
+    "name": "Affinity with Art",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "virtue",
+      "points": 1,
+      "category": "Hermetic",
+      "description": "Learn one Art at reduced XP cost (specify Art).",
+      "source": "Core"
+    }
+  },
+  {
+    "name": "Deficient Form",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "flaw",
+      "points": 1,
+      "category": "Hermetic",
+      "description": "One Form is harder to learn (specify Form).",
+      "source": "Core"
+    }
+  },
+  {
+    "name": "Educated",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "virtue",
+      "points": 1,
+      "category": "General",
+      "description": "Bonus to formal knowledges from schooling.",
+      "source": "Core",
+      "grants": {
+        "abilities": [],
+        "abilityPoints": {
+          "amount": 15,
+          "categories": [
+            "knowledges"
+          ],
+          "subgroups": [
+            "formal"
+          ],
+          "keys": [
+            "speak-latin",
+            "speak-specific-alphabet"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "Poor",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "flaw",
+      "points": 1,
+      "category": "General",
+      "description": "The character lacks significant personal wealth — little spare coin, few luxuries, and limited ability to fund travel, bribes, or equipment upgrades without covenant help.",
+      "source": "Core"
+    }
+  },
+  {
+    "name": "Wealthy",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "virtue",
+      "points": 1,
+      "category": "General",
+      "description": "Character has notable personal resources.",
+      "source": "Core"
+    }
+  },
+  {
+    "name": "Covenant Upbringing",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "virtue",
+      "points": 1,
+      "category": "Social",
+      "description": "Raised within a covenant; knows Hermetic customs.",
+      "source": "Covenants"
+    }
+  },
+  {
+    "name": "Tribunal Politics",
+    "type": "virtueFlaw",
+    "system": {
+      "kind": "flaw",
+      "points": 1,
+      "category": "Social",
+      "description": "Entangled in regional Tribunal disputes.",
+      "source": "Order of Hermes"
+    }
+  }
+]
