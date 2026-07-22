@@ -5,30 +5,20 @@
   </header>
   <div class="arm2e-item-grid">
     <label>Expense <input type="text" name="system.expense" value="{{system.expense}}" /></label>
-    <label>Speed <input type="number" name="system.speed" value="{{system.speed}}" data-dtype="Number" /></label>
+    <label title="Melee Speed / Missile Rate">Speed / Rate <input type="number" name="system.speed" value="{{system.speed}}" data-dtype="Number" /></label>
     <label>Atk Bonus <input type="number" name="system.atkB" value="{{system.atkB}}" data-dtype="Number" /></label>
     <label>Damage <input type="number" name="system.wpnDam" value="{{system.wpnDam}}" data-dtype="Number" /></label>
     <label>Parry Bonus <input type="number" name="system.parB" value="{{system.parB}}" data-dtype="Number" /></label>
     <label>Str Req <input type="number" name="system.strReq" value="{{system.strReq}}" data-dtype="Number" /></label>
     <label>Load <input type="number" name="system.load" value="{{system.load}}" data-dtype="Number" step="0.5" /></label>
     <label title="Brawl, Single, Great, Bow, Thrown, or Crossbow — links to matching ability score">Ability <input type="text" name="system.ability" value="{{system.ability}}" placeholder="e.g. Single" /></label>
+    <label>Category <input type="text" name="system.category" value="{{system.category}}" placeholder="melee, missile, thrown, shield" /></label>
+    <label>Range (paces) <input type="number" name="system.range" value="{{system.range}}" data-dtype="Number" /></label>
     <label title="Used when Ability is empty or unmatched">Attack Skill <input type="number" name="system.attackSkill" value="{{system.attackSkill}}" data-dtype="Number" /></label>
     <label title="Used when Ability is empty or unmatched">Parry Skill <input type="number" name="system.parrySkill" value="{{system.parrySkill}}" data-dtype="Number" /></label>
-    <label class="arm2e-check arm2e-span-2"><input type="checkbox" name="system.equipped" {{checked system.equipped}} /> Equipped</label>
+    <label class="arm2e-check"><input type="checkbox" name="system.isShield" {{checked system.isShield}} /> Shield</label>
+    <label class="arm2e-check"><input type="checkbox" name="system.equipped" {{checked system.equipped}} /> Equipped</label>
+    <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" /></label>
+    <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="3">{{system.notes}}</textarea></label>
   </div>
-  {{#if system.source}}
-  <section class="arm2e-item-reference">
-    <h3 class="arm2e-subheading">Reference (ArM5 / LoM OGL)</h3>
-    <p class="arm2e-note">LoM numbers use ArM5-scale Init/Atk/Def/Dam. Use with 2e math carefully — prefer sample 2e weapons when in doubt.</p>
-    <div class="arm2e-item-grid">
-      <label>Category <input type="text" name="system.category" value="{{system.category}}" readonly /></label>
-      <label>Range <input type="number" name="system.range" value="{{system.range}}" data-dtype="Number" readonly /></label>
-      <label>Availability <input type="text" name="system.availability" value="{{system.availability}}" readonly /></label>
-      <label>Damage Types <input type="text" name="system.damageTypes" value="{{system.damageTypes}}" readonly /></label>
-      <label>Damage Levels <input type="text" name="system.damageLevels" value="{{system.damageLevels}}" readonly /></label>
-      <label class="arm2e-span-2">Source <input type="text" name="system.source" value="{{system.source}}" readonly /></label>
-      <label class="arm2e-span-2">Notes <textarea name="system.notes" rows="2">{{system.notes}}</textarea></label>
-    </div>
-  </section>
-  {{/if}}
 </form>

@@ -205,8 +205,10 @@ export class ArM2eActorSheet extends ActorSheet {
     const label = row.querySelector(".characteristic-label")?.textContent?.trim() ?? "Characteristic";
     const abbrev = row.querySelector(".characteristic-abbrev")?.textContent?.trim() ?? "";
     const value = Number(row.querySelector(".characteristic-value")?.value) || 0;
+    const rollType = event.shiftKey ? "simple" : "stress";
+    const typeLabel = rollType === "simple" ? "Simple" : "Stress";
 
-    await rollArM2e("stress", value, `${label} (${abbrev})`, this._rollOptions());
+    await rollArM2e(rollType, value, `${label} (${abbrev}) — ${typeLabel}`, this._rollOptions());
   }
 
   /**

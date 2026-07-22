@@ -441,27 +441,29 @@ export class ArM2eCreationWizard extends FormApplication {
     const mapCategory = (categoryKey, labels, title) => ({
       key: categoryKey,
       title,
-      entries: labels.map((label) => {
-        const id = registry.getAbilityByLabel?.(label)?.key
-          ?? label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-        const entry = this.state.abilities[categoryKey][id] ?? { value: 0, specialty: "", label };
-        const base = Number(bases[id]) || 0;
-        const value = Number(entry.value) || 0;
-        const fromGrant = (Number(grantBases[id]) || 0) > 0;
-        const fromType = (Number(typeBases[id]) || 0) > 0;
+      entries: labels
+        .map((label) => {
+          const id = registry.getAbilityByLabel?.(label)?.key
+            ?? label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+          const entry = this.state.abilities[categoryKey][id] ?? { value: 0, specialty: "", label };
+          const base = Number(bases[id]) || 0;
+          const value = Number(entry.value) || 0;
+          const fromGrant = (Number(grantBases[id]) || 0) > 0;
+          const fromType = (Number(typeBases[id]) || 0) > 0;
 
-        return {
-          id,
-          label,
-          value,
-          specialty: entry.specialty ?? "",
-          base,
-          isBase: base > 0,
-          fromGrant,
-          fromType,
-          cost: abilityIncrementalCost(value, base)
-        };
-      })
+          return {
+            id,
+            label,
+            value,
+            specialty: entry.specialty ?? "",
+            base,
+            isBase: base > 0,
+            fromGrant,
+            fromType,
+            cost: abilityIncrementalCost(value, base)
+          };
+        })
+        .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: "base" }))
     });
 
     return [

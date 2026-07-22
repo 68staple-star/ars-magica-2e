@@ -21,7 +21,6 @@ const PACKS = [
   { pack: "arm2e-abilities", file: "abilities.json", type: "Item" },
   { pack: "arm2e-formulaic-spells", file: "spells-arm5-index.json", type: "Item" },
   { pack: "arm2e-spells", file: "spells-arm5-ch9.json", type: "Item" },
-  { pack: "arm2e-equipment-lom", file: "equipment-arm5-lom.json", type: "Item" },
   { pack: "arm2e-weapons", file: "weapons.json", type: "Item" },
   { pack: "arm2e-virtues-flaws-arm5", file: "virtues-flaws-arm5.json", type: "Item" },
   { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json", type: "Item" },
