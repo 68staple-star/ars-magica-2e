@@ -3,12 +3,17 @@
  * Foundry v13 locks system compendiums by default — unlock briefly to import.
  */
 
+import {
+  flattenVirtueFlawFolders,
+  resolveVirtueFlawFolderKey
+} from "../utils/virtue-flaw-folders.js";
+
 const PACK_SEEDS = [
   { pack: "arm2e-abilities", file: "abilities.json" },
   { pack: "arm2e-formulaic-spells", file: "spells-arm5-index.json" },
   { pack: "arm2e-spells", file: "spells-arm5-ch9.json" },
   { pack: "arm2e-weapons", file: "weapons.json" },
-  { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json" },
+  { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json", folders: "virtueFlaw" },
   { pack: "arm2e-rules-reference", file: "journals-rules.json" },
   { pack: "arm2e-covenant-template", file: "journals-covenant.json" },
   { pack: "arm2e-covenants", file: "covenants-sample.json" },
@@ -53,14 +58,65 @@ function normalizeJournalEntries(entries) {
 }
 
 /**
+ * Create Virtues / Flaws → point-cost folders in an empty pack.
+ * @param {CompendiumCollection} pack
+ * @returns {Promise<Map<string, string>>} leaf/root key → folder id
+ */
+async function createVirtueFlawFolders(pack) {
+  /** @type {Map<string, string>} */
+  const ids = new Map();
+  const FolderClass = globalThis.Folder ?? foundry.documents.Folder;
+  const defs = flattenVirtueFlawFolders();
+
+  for (const folder of defs.filter((f) => !f.parentKey)) {
+    const [created] = await FolderClass.createDocuments([{
+      name: folder.name,
+      type: pack.metadata.type,
+      sorting: "a",
+      sort: folder.sort,
+      folder: null
+    }], { pack: pack.collection });
+    ids.set(folder.key, created.id);
+  }
+
+  for (const folder of defs.filter((f) => f.parentKey)) {
+    const [created] = await FolderClass.createDocuments([{
+      name: folder.name,
+      type: pack.metadata.type,
+      sorting: "a",
+      sort: folder.sort,
+      folder: ids.get(folder.parentKey) ?? null
+    }], { pack: pack.collection });
+    ids.set(folder.key, created.id);
+  }
+
+  return ids;
+}
+
+/**
+ * Attach folder ids to virtue/flaw seed items.
+ * @param {object[]} data
+ * @param {Map<string, string>} folderIds
+ * @returns {object[]}
+ */
+function assignVirtueFlawFolders(data, folderIds) {
+  return data.map((entry) => {
+    const leafKey = resolveVirtueFlawFolderKey(entry.system ?? {});
+    const folder = folderIds.get(leafKey) ?? null;
+    return { ...entry, folder };
+  });
+}
+
+/**
  * @param {CompendiumCollection} pack
  * @param {object[]} data
+ * @param {{ folders?: string }} [options]
  */
-async function importPackData(pack, data) {
+async function importPackData(pack, data, options = {}) {
   if (!data.length) return;
 
   const documentClass = pack.documentClass;
-  const documents = pack.metadata.type === "JournalEntry"
+  let documents = pack.metadata.type === "JournalEntry"
     ? normalizeJournalEntries(data)
     : data;
 
@@ -73,6 +129,11 @@ async function importPackData(pack, data) {
   const BATCH_SIZE = 50;
 
   try {
+    if (options.folders === "virtueFlaw") {
+      const folderIds = await createVirtueFlawFolders(pack);
+      documents = assignVirtueFlawFolders(documents, folderIds);
+    }
+
     for (let offset = 0; offset < documents.length; offset += BATCH_SIZE) {
       const batch = documents.slice(offset, offset + BATCH_SIZE);
       await documentClass.createDocuments(batch, { pack: pack.collection });
@@ -110,7 +171,7 @@ export function registerCompendiumSeeding() {
           continue;
         }
 
-        await importPackData(pack, data);
+        await importPackData(pack, data, { folders: seed.folders });
         console.log(`arm2e | Seeded compendium ${seed.pack} (${data.length} entries)`);
       } catch (error) {
         console.error(`arm2e | Failed to seed compendium ${seed.pack}`, error);
