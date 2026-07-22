@@ -1,0 +1,231 @@
+AG0201 Ars Magica 2nd Edition — Weapons & Armor tables
+Source PDF: AG0201_ArM2.PDF
+Extraction: Python pdfplumber + pypdf (pdftotext not available)
+PDF page numbers used: 58 and 59 (1-based; match printed book page numbers in footer)
+  - PDF p.58 = Melee Weapon Chart (+ column footnotes)
+  - PDF p.59 = Missile Weapon Chart + Armor Chart (+ footnotes / Type of Armor notes)
+Index (PDF p.156) confirms: Melee Weapon Chart → 58, Missile Weapon Chart → 59, Armor Chart → 59
+
+OCR note: This PDF is a scan. Digits/letters are sometimes misread (e.g. inex→incx/ine x, expn→cxpn,
+0→O, 2→z, N/A→NIA). Values below are reconciled from character-position column mapping;
+ambiguous cells are marked [OCR?].
+
+================================================================================
+MELEE WEAPON CHART (PDF page 58)
+================================================================================
+Printed column headers (exact):
+  Weapon | Expense | Speed | AtkB | WpnDam | ParB | Str | Load | Space
+
+(Header line as extracted: "Weapon Expense Speed AtkB WpnDam ParB Str Load Space")
+Note: Footnotes under the table use the spelling "WpnDmg" when expanding Weapon Damage.
+
+--- rows (cleaned) ---
+Weapon                  Expense  Speed  AtkB  WpnDam  ParB  Str  Load  Space
+Dagger (1h)             inex     +1     +4    +2      +1    n    0     0'
+Shortsword (1h)         stan     +2     +4    +4      +2    -2   0.5   0'
+Broadsword (1h)         expn     +3     +4    +6      +3    0    0.5   1'
+Bastard Sword (1h)      expn     +4     +3    +8      +3    +2   0.5   2'
+Bastard Sword (2h)      expn     +4     +3    +10     +4    0    0.5   2'
+Greatsword (2h)         expn     +5     +3    +11     +5    +1   1     3'
+Short Spear (1h)        inex     +5     +2    +3      +1    -1   0     1'
+Short Spear (2h)        inex     +6     +3    +5      +2    n    0     0'
+Long Spear (2h)         inex     +8     +2    +6      +3    -2   0.5   0'
+Lance (mtd) (1h)        stan     +7     +2    +8•     +1    0    1     1'     [OCR?: damage digit extracted as "s"; see note]
+Hand Axe (1h)           inex     +2     +2    +7      +1    0    0.5   1'
+Battle Axe (2h)         stan     +4     +2    +12     +2    0    1     3'
+Pole Axe (2h)           stan     +5     +1    +13     +3    +1   1.5   4'
+Halberd (2h)            expn     +5     +1    +15     +3    +1   2     4'
+Club (1h)               inex     +2     +3    +2      +1    -2   0     2'
+Club (2h)               inex     +2     +3    +3      +2    n    0     2'
+Quarterstaff (2h)       inex     +5     +2    +4      +6    -3   0     2'
+Mace (1h)               stan     +2     +3    +5      +1    0    0     2'
+Mace (2h)               stan     +2     +3    +7      +2    -2   0     2'
+War Maul (2h)           stan     +3     +2    +10     +2    +1   1.5   2'
+Morning Star (1h)       stan     +3     +2    +8      +1    +2   0.5   3'
+Morning Star (2h)       stan     +3     +2    +10     +1    0    0.5   3'
+Military Flail (2h)     expn     +4     +3    +10     +2    -1   1     4'
+Throwing Knife          inex     -2     -1    +0      N/A   n    0     N/A
+Javelin                 stan     -5     -1    +5      N/A   -2   0     N/A
+Throwing Axe            stan     -4     -2    +6      N/A   -1   0.5   N/A
+Target Shield           inex     +1     +3    -2      +2    n    0     1'
+Round Shield            inex     +2     +2    -1      +3    -2   0.5   1'
+Knight Shield           stan     +2     +1    0       +4    0    1     0'
+Kite Shield             expn     +1     +1    0       +5    +1   1.5   1'
+Tower Shield            expn     0      0     -1      +6    +2   2     1'
+
+Lance WpnDam OCR note: glyphs in the WpnDam column were "+" + letter "s" + footnote bullet "•".
+  Digit is almost certainly 8 (or possibly 5); cleaned table uses +8•. Footnote text: "See the combat section on Charging."
+Short Spear (2h) Space: OCR as "o·" / similar; treated as 0'.
+
+--- footnotes under Melee Weapon Chart (as printed / cleaned) ---
+Expense- There are three types of weapons, classified by the cost of making and maintaining them: Inexpensive (marked
+"inex"), standard (stan), and expensive (expn). Weapons available to you depend on your background or your covenant.
+Speed- The bonus to the First Strike roll when using this weapon, based on the length, weight, and style of use. A long, light
+weapon held in front of the user has the edge over a short, heavy weapon swung from over the shoulder.
+AtkB, Attack Bonus- Attack Bonus + Dex + Skill = Attack Total.
+WpnDmg, Weapon Damage- Weapon Damage + Str + Skill = Damage Total.
+ParB, Parry Bonus- Parry Bonus + Skill - Size = Defense Total.
+Str, Strength- The minimum Str required to use the weapon effectively. An "n" means no minimum Str score is required.
+Load- Represents the weight and awkwardness of the weapon, used to figure Encumbrance.
+Space- Feet needed around the wielder for effective use; think of it as a zone, and if the zones of two people overlap there could
+be trouble.
+• See the combat section on Charging.
+
+================================================================================
+MISSILE WEAPON CHART (PDF page 59)
+================================================================================
+Printed column headers (exact):
+  Weapon | Expense | Rate | AtkB | WpnDam | Str | Load | Range
+
+(Header line as extracted: "Weapon Expense Rate AtkB WpnDam Str Load Range")
+
+--- rows (cleaned) ---
+Weapon            Expense  Rate  AtkB  WpnDam  Str  Load  Range
+sling             inex     +2    0     +4      n    0     100
+self bow          inex     +3    0     +8      0    0     120
+long bow          stan     +6    0     +14     +2   0.5   250
+composite bow     expn     +4    +1    +9      -1   0.5   225
+light crossbow    expn     -8    +1    +10     0    0.5   200
+heavy crossbow    expn     -15   +1    +15     -3   1     300
+arbalist          expn     -23   +1    +19     0    1.5   400
+
+Name notes: header area title extracted as "Missile Weapon Chart" (OCR sometimes "Mi�sile").
+Row labels as printed/extracted: sling, self bow, longbow (cleaned here as "long bow"), composite bow,
+light crossbow, heavy crossbow, arbalist. Raw extract for longbow was "longbow" (one word).
+
+--- footnotes under Missile Weapon Chart ---
+Expense- inex=inexpensive, stan=standard, expn=expensive.
+Rate- The bonus to Rate total, which determines how often you can fire the weapon.
+AtkB, Attack Bonus- The bonus to your Attack roll.
+WpnDam, Weapon Damage- The bonus to your Damage roll.
+Str, Strength- The minimum Strength needed to use the weapon.
+Load- Represents the weight and awkwardness of the weapon, used to figure Encumbrance.
+Range- Maximum range in paces.
+
+================================================================================
+ARMOR CHART (PDF page 59)
+================================================================================
+Printed table column headers (exact, right-hand table):
+  Armor | Expense | Protection | Load
+
+(Header line as extracted: "Armor Expense Protection Load")
+
+Section headers in the table body:
+  Cuirass Armor / Hauberk Armor / Full Armor
+
+--- rows (cleaned) ---
+Category        Armor                    Expense  Protection  Load
+Cuirass Armor   Leather/Fur/Quilted      inex     1           0.5
+Cuirass Armor   Heavy/Hard Leather       inex     2           1
+Cuirass Armor   Ring Mail                stan     4           1.5
+Cuirass Armor   Scale Mail               stan     5           2
+Cuirass Armor   Chain Mail               expn     8           3.5
+Cuirass Armor   Plate                    expn     10          4
+Hauberk Armor   Leather/Fur/Quilted      inex     3           1.5
+Hauberk Armor   Heavy/Hard Leather       inex     5           2.5
+Hauberk Armor   Ring Mail                stan     7           3
+Hauberk Armor   Scale Mail               stan     9           4.5
+Hauberk Armor   Chain Mail               expn     12          5
+Hauberk Armor   Plate                    expn     15          6
+Full Armor      Leather/Fur/Quilted      inex     4           2
+Full Armor      Heavy/Hard Leather       stan     6           2.5
+Full Armor      Ring Mail                stan     8           4
+Full Armor      Chain Mail               expn     14          6
+Full Armor      Plate                    expn     17          7
+
+Note: Full Armor has no Scale Mail row in the printed chart (jumps Ring Mail → Chain Mail → Plate).
+Hauberk Heavy/Hard Leather Expense is inex; Full Armor Heavy/Hard Leather Expense is stan.
+
+--- left-column "Type of Armor" descriptive notes (page 59) ---
+Cuirass armor covers only the chest, abdomen, and back. The arms and legs are left completely unprotected.
+This very basic armor does not include a helm (which makes aimed blows especially effective against people
+wearing it).
+
+Hauberk armor covers the torso as well as the shoulders and the upper arms. It also includes a short skirt that
+protects the thighs and groin. It includes a half helm that protects only the crown and the back of the head. The helm
+subtracts 1 from all Perception rolls.
+
+Full armor covers the entire body, even the forearm, shins, feet, and hands, and it includes a full helm which
+covers the neck and part of the face. Subtract 3 from all Perception rolls when wearing the helm.
+
+--- "Armament Availability" blurb (page 59, left column) ---
+We provide stats for a broad variety of weapons and armor to cover as many possibilities as we can. No region
+will have all these armaments readily available, and some types of armament (notably plate mail) are only available
+late in the medieval period (which encompasses the thirteenth century). In regards to the many armaments we did
+not include, it should be easy for you to design your own statistics using ours as models.
+
+--- footnotes under Armor Chart ---
+Expense- inex = inexpensive, stan = standard, expn = expensive.
+Protection- Protection + Stm + Size = Soak total.
+Load- Represents the weight and awkwardness of the armor, used to figure Encumbrance.
+
+================================================================================
+RAW EXTRACTION SNIPPETS (pypdf / pdfplumber, lightly unedited)
+================================================================================
+--- PDF page 58 (pypdf extract_text) ---
+58 Chapter 3 Ars Magfca
+Melee Weapon Chart
+Weapon Expense Speed AtkB WpnDam ParB Str Load Space
+Dagger (lh) in ex +1 +4 +2 +1 n 0 O'
+Shortsword (lh ) stan +2 +4 +4 +2 -z 0.5 O'
+Broadsword (lh ) expn +3 +4 +6 +3 0 0.5 1'
+Bastard Sword (lh) expn +4 +3 +8 +3 +2 0.5 2'
+Bastard Sword (2h) expn +4 +3 +10 +4 0 0.5 2'
+Greatsw ord (2h) expn +5 +3 +1 1 +5 +1 1 3'
+Short Spear (1 h) incx +5 +2 +3 +1 -1 0 1'
+Short Spear (2h) inex +6 +3 +5 +2 n 0 o
+Long Spear (2h) inex +8 +2 +6 +3 -2 0.5 O'
+Lance (mtd) (1h ) stan +7 +2 +s• +1 0 1 1'
+Hand Axe (1h ) inex +2 +2 +7 +1 0 0.5 1'
+Battle Axe (2h) stan +4 +2 +12 +2 0 1 3'
+Pole Axe (2h) stan +5 +1 +13 +3 +1 1. 5 4'
+Halberd (2h) cxpn +5 +1 +15 +3 +1 2 4'
+Club (1 h) inex +2 +3 +2 +1 -2 0 2'
+Club (2h) in ex +2 +3 +3 +2 n 0 2'
+Quarterstaff (2h) in ex +5 +2 +4 +6 -3 0 2'
+Mace (lh ) stan +2 +3 +5 +1 0 0 2'
+Mace (2h) stan +2 +3 +7 +2 - 2 0 2'
+War Maul (2h) stan +3 +2 +10 +2 +1 1. 5 2'
+Morning Star (1 h) stan +3 +2 +8 +1 +2 0.5 3'
+Morning Star (2h) stan +3 +2 +10 +1 0 0.5 3'
+Military Flail (2h) expn +4 +3 +10 +2 -1 1 4'
+Throwing Knife inex -2 -1 +O NIA n 0 NIA
+Javelin stan -5 -1 +5 NIA -2 0 NIA
+Throwing Axe stan -4 -2 +6 NIA -1 0.5 NIA
+Target Shield inex +1 +3 -2 +2 n 0 1'
+Round Shield inex +2 +2 -1 +3 -2 0.5 1'
+Knight Shield stan +2 +1 0 +4 0 1 O'
+Kite Shield expn +1 +1 0 +5 +1 1. 5 1'
+Tower Shield expn 0 0 -1 +6 +2 2 1'
+
+--- PDF page 59 missile (column-mapped) ---
+sling inex +2 0 +4 n 0 100
+self bow inex(+OCR incx) +3 0 +8 0 0 120
+longbow stan +6 0 +14 +2 0.5 250
+composite bow expn +4 +1 +9 -1 0.5 225
+light crossbow expn -8 +1 +10 0 0.5 200
+heavy crossbow expn -15 +1 +15 -3 1 300
+arbalist expn -23 +1 +19 0 1.5 400
+
+--- PDF page 59 armor right column (pdfplumber lines) ---
+Armor Expense Protection Load
+Cuirass Armor
+Leather/Fur /Quilted inex 1 0.5
+Heavy /Hard Leather inex 2 1
+Ring Mail stan 4 1.5
+Scale Mail stan 5 2
+Chain Mail expn 8 3.5
+Plate expn 10 4
+Hauberk Armor
+Leather/Fur /Quilted inex 3 1.5
+Heavy /Hard Leather inex 5 2.5
+Ring Mail stan 7 3
+Scale Mail stan 9 4.5
+Chain Mail expn 12 5
+Plate expn 15 6
+Full Armor
+Leather /Fur /Quilted inex 4 2
+Heavy /Hard Leather stan 6 2.5
+Ring Mail stan 8 4
+Chain Mail expn 14 6
+Plate expn 17 7
