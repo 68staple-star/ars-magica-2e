@@ -75,7 +75,7 @@ export function formatAbilityRollLabel(breakdown, abilityLabel, abilityType) {
  * @param {Item} abilityItem
  * @param {typeof import("../config.js").ARM2E} registry
  * @param {string} characteristicId
- * @param {{ applySpecialty?: boolean, spendConfidence?: boolean }} [options={}]
+ * @param {{ applySpecialty?: boolean, spendConfidence?: boolean, rollType?: "simple" | "stress" }} [options={}]
  */
 export async function executeAbilityRoll(actor, abilityItem, registry, characteristicId, options = {}) {
   const breakdown = buildAbilityRollModifier(
@@ -93,8 +93,9 @@ export async function executeAbilityRoll(actor, abilityItem, registry, character
 
   const abilityType = abilityItem.system?.category?.replace(/s$/, "") ?? "ability";
   const label = formatAbilityRollLabel(breakdown, abilityItem.name, abilityType);
+  const rollType = options.rollType === "simple" ? "simple" : "stress";
 
-  await rollArM2e("stress", breakdown.modifier, label, {
+  await rollArM2e(rollType, breakdown.modifier, label, {
     actor,
     spendConfidence: Boolean(options.spendConfidence),
     itemUuid: abilityItem.uuid
@@ -135,7 +136,14 @@ export async function promptAbilityRoll(actor, abilityItem, registry) {
 
   const content = `
     <form class="arm2e-ability-roll-dialog">
-      <p>Roll <strong>${abilityItem.name}</strong> using stress die + characteristic + ability.</p>
+      <p>Roll <strong>${abilityItem.name}</strong> using characteristic + ability.</p>
+      <div class="form-group">
+        <label for="arm2e-roll-type">Die</label>
+        <select id="arm2e-roll-type" name="rollType">
+          <option value="stress" selected>Stress (0 = botch check, 1 = explode)</option>
+          <option value="simple">Simple (0 counts as 10, no botch)</option>
+        </select>
+      </div>
       <div class="form-group">
         <label for="arm2e-roll-characteristic">Characteristic</label>
         <select id="arm2e-roll-characteristic" name="characteristic">${options}</select>
@@ -161,13 +169,15 @@ export async function promptAbilityRoll(actor, abilityItem, registry) {
           label: "Roll",
           callback: async (html) => {
             const characteristicId = html.find('[name="characteristic"]').val();
+            const rollType = html.find('[name="rollType"]').val() === "simple" ? "simple" : "stress";
             const applySpecialty = specialty
               ? Boolean(html.find('[name="applySpecialty"]').is(":checked"))
               : false;
             const spendConfidence = Boolean(html.find('[name="spendConfidence"]').is(":checked"));
             await executeAbilityRoll(actor, abilityItem, registry, characteristicId, {
               applySpecialty,
-              spendConfidence
+              spendConfidence,
+              rollType
             });
             resolve(true);
           }
@@ -179,6 +189,6 @@ export async function promptAbilityRoll(actor, abilityItem, registry) {
         }
       },
       default: "roll"
-    }, { width: 380 }).render(true);
+    }, { width: 420 }).render(true);
   });
 }

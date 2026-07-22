@@ -1,6 +1,7 @@
 /**
  * Ars Magica 2e dice engine (AG0201, Ch. 0 pp. 7-9).
  * Foundry d10 results use 1-10; the 10 face maps to the ArM "0" die face.
+ * Dice So Nice / chat dice use the same Foundry Roll results as ArM math.
  */
 
 import { CONFIDENCE_BONUS, spendConfidence } from "./utils/confidence.js";
@@ -11,13 +12,6 @@ import {
 } from "./utils/wounds.js";
 import { spontaneousLevelEquivalent } from "./utils/spontaneous.js";
 import { buildChatActionsHtml, canOfferConfidence } from "./hooks/chat-hooks.js";
-
-/**
- * @returns {number} Raw Foundry d10 result (1-10).
- */
-function rollD10() {
-  return Math.floor(Math.random() * 10) + 1;
-}
 
 /**
  * @param {number} raw
@@ -36,6 +30,17 @@ function simpleFaceValue(face) {
 }
 
 /**
+ * Evaluate one Foundry d10 used for both ArM math and 3D/chat dice.
+ * @returns {Promise<{ raw: number, roll: Roll }>}
+ */
+async function evaluateFoundryD10() {
+  const roll = new Roll("1d10");
+  await roll.evaluate();
+  const raw = Number(roll.total) || 0;
+  return { raw, roll };
+}
+
+/**
  * @typedef {object} DieStep
  * @property {number} raw
  * @property {number} face
@@ -49,13 +54,14 @@ function simpleFaceValue(face) {
  * @property {DieStep[]} steps
  * @property {boolean} potentialBotch
  * @property {boolean} exploded
+ * @property {Roll[]} rolls
  */
 
 /**
- * @returns {ArM2eDieResult}
+ * @returns {Promise<ArM2eDieResult>}
  */
-export function rollSimpleDie() {
-  const raw = rollD10();
+export async function rollSimpleDie() {
+  const { raw, roll } = await evaluateFoundryD10();
   const face = toArMFace(raw);
 
   return {
@@ -63,22 +69,26 @@ export function rollSimpleDie() {
     value: simpleFaceValue(face),
     steps: [{ raw, face, multiplier: 1 }],
     potentialBotch: false,
-    exploded: false
+    exploded: false,
+    rolls: [roll]
   };
 }
 
 /**
- * @returns {ArM2eDieResult}
+ * @returns {Promise<ArM2eDieResult>}
  */
-export function rollStressDie() {
+export async function rollStressDie() {
   /** @type {DieStep[]} */
   const steps = [];
+  /** @type {Roll[]} */
+  const rolls = [];
   let multiplier = 1;
   let potentialBotch = false;
 
   while (true) {
-    const raw = rollD10();
+    const { raw, roll } = await evaluateFoundryD10();
     const face = toArMFace(raw);
+    rolls.push(roll);
     steps.push({ raw, face, multiplier });
 
     if (multiplier === 1 && face === 0) {
@@ -88,7 +98,8 @@ export function rollStressDie() {
         value: 0,
         steps,
         potentialBotch,
-        exploded: false
+        exploded: false,
+        rolls
       };
     }
 
@@ -104,7 +115,8 @@ export function rollStressDie() {
       value: faceValue * multiplier,
       steps,
       potentialBotch,
-      exploded: steps.length > 1
+      exploded: steps.length > 1,
+      rolls
     };
   }
 }
@@ -115,7 +127,8 @@ export function rollStressDie() {
  */
 function formatDieSteps(dieResult) {
   return dieResult.steps.map((step, index) => {
-    const faceLabel = step.face === 0 ? "0" : String(step.face);
+    // Physical d10 shows 10 for ArM face 0 — label both so Dice So Nice matches chat.
+    const faceLabel = step.face === 0 ? "0 (die 10)" : String(step.face);
     const suffix = step.multiplier > 1 ? ` x${step.multiplier}` : "";
     return `<span class="die-step">Roll ${index + 1}: ${faceLabel}${suffix}</span>`;
   }).join("");
@@ -219,7 +232,8 @@ async function buildChatContent(dieResult, baseModifier, label, context = {}) {
  *   spendConfidence?: boolean,
  *   confidenceBonus?: number,
  *   outcomeHtml?: string,
- *   forceFatigue?: boolean
+ *   forceFatigue?: boolean,
+ *   itemUuid?: string
  * }} [options={}]
  */
 export async function rollArM2e(rollType, baseModifier = 0, label = "", options = {}) {
@@ -257,7 +271,7 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
       speaker,
       flavor: label || "Ars Magica 2e Roll",
       content: await buildChatContent(
-        { rollType: "stress", value: 0, steps: [], potentialBotch: false, exploded: false },
+        { rollType: "stress", value: 0, steps: [], potentialBotch: false, exploded: false, rolls: [] },
         modifier,
         label,
         {
@@ -283,12 +297,10 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
     };
   }
 
-  const dieResult = normalizedType === "simple" ? rollSimpleDie() : rollStressDie();
+  const dieResult = normalizedType === "simple" ? await rollSimpleDie() : await rollStressDie();
   const conditionTotal = Number(conditions.total) || 0;
   const total = dieResult.value + modifier + conditionTotal;
   const speaker = options.speaker ?? ChatMessage.getSpeaker({ actor: options.actor });
-  const roll = new Roll("1d10");
-  await roll.evaluate();
   const spellLevel = options.spellLevel !== undefined ? Number(options.spellLevel) || 0 : undefined;
   const castingSuccess = spellLevel === undefined ? undefined : total >= spellLevel;
 
@@ -330,7 +342,7 @@ export async function rollArM2e(rollType, baseModifier = 0, label = "", options 
         canSpendConfidence: canOfferConfidence(options.actor, confidenceSpent)
       })
     }),
-    rolls: [roll],
+    rolls: dieResult.rolls ?? [],
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
     sound: CONFIG.sounds?.dice,
     flags: {

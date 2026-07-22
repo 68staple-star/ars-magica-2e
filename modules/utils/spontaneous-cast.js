@@ -37,8 +37,8 @@ export async function promptSpontaneousCast(actor, techniqueId, formId, registry
       <div class="form-group">
         <label>Die</label>
         <select name="rollType">
-          <option value="stress" selected>Stress</option>
-          <option value="simple">Simple</option>
+          <option value="stress" selected>Stress (0 = botch check, 1 = explode)</option>
+          <option value="simple">Simple (0 counts as 10, no botch)</option>
         </select>
       </div>
       <div class="form-group">
