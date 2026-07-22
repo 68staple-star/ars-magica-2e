@@ -8,6 +8,18 @@
       {{/if}}
     </div>
   </header>
+
+  <section class="arm2e-stat-panel" aria-label="Armor statistics">
+    <div class="arm2e-stat-chip"><span>Protection</span><strong>{{system.protection}}</strong></div>
+    <div class="arm2e-stat-chip"><span>Load</span><strong>{{system.load}}</strong></div>
+    {{#if system.cost}}
+    <div class="arm2e-stat-chip"><span>Cost</span><strong>{{system.cost}}</strong></div>
+    {{/if}}
+    {{#if system.outfit}}
+    <div class="arm2e-stat-chip"><span>Outfit</span><strong>{{system.outfit}}</strong></div>
+    {{/if}}
+  </section>
+
   <div class="arm2e-item-grid">
     <label>Type <input type="text" name="system.type" value="{{system.type}}" placeholder="Leather, Chain, ..." /></label>
     <label>Protection <input type="number" name="system.protection" value="{{system.protection}}" data-dtype="Number" /></label>

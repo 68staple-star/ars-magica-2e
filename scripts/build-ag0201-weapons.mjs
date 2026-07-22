@@ -11,6 +11,37 @@ const outPath = path.join(root, "src/compendium-data/weapons.json");
 
 const SOURCE = "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)";
 
+/**
+ * Compact Sp/Atk/Dam/Par tag for pack list visibility (Foundry only shows names).
+ * @param {object} system
+ * @returns {string}
+ */
+function weaponStatTag(system) {
+  const s = (n) => {
+    const v = Number(n) || 0;
+    return v > 0 ? `+${v}` : String(v);
+  };
+  return `[${s(system.speed)}/${s(system.atkB)}/${s(system.wpnDam)}/${s(system.parB)}]`;
+}
+
+/**
+ * @param {object} system
+ * @returns {string}
+ */
+function armorStatTag(system) {
+  return `[Prot ${Number(system.protection) || 0} · Load ${Number(system.load) || 0}]`;
+}
+
+/**
+ * @param {string} baseName
+ * @param {string} tag
+ * @returns {string}
+ */
+function withStatTag(baseName, tag) {
+  const cleaned = String(baseName).replace(/\s*\[[^\]]*]\s*$/, "").trim();
+  return `${cleaned} ${tag}`;
+}
+
 function weapon(name, opts) {
   const {
     expense,
@@ -36,30 +67,36 @@ function weapon(name, opts) {
   if (space && space !== "N/A") noteParts.push(`Space: ${space}.`);
   if (space === "N/A") noteParts.push("Space: N/A.");
 
+  const system = {
+    expense,
+    speed: Number(speed),
+    atkB: Number(atkB),
+    wpnDam: Number(String(wpnDam).replace("•", "")),
+    parB: parB === "N/A" ? 0 : Number(parB),
+    strReq: str === "n" ? 0 : Number(str),
+    load: Number(load),
+    attackSkill: 0,
+    parrySkill: 0,
+    equipped: false,
+    category,
+    ability,
+    range: Number(range) || 0,
+    availability: "",
+    damageTypes: "",
+    damageLevels: "",
+    isShield: Boolean(isShield),
+    notes: noteParts.filter(Boolean).join(" "),
+    source: SOURCE,
+    chartName: name
+  };
+
+  const tag = weaponStatTag(system);
+  system.summary = `Sp/Atk/Dam/Par ${tag}`;
+
   return {
-    name,
+    name: withStatTag(name, tag),
     type: "weapon",
-    system: {
-      expense,
-      speed: Number(speed),
-      atkB: Number(atkB),
-      wpnDam: Number(String(wpnDam).replace("•", "")),
-      parB: parB === "N/A" ? 0 : Number(parB),
-      strReq: str === "n" ? 0 : Number(str),
-      load: Number(load),
-      attackSkill: 0,
-      parrySkill: 0,
-      equipped: false,
-      category,
-      ability,
-      range: Number(range) || 0,
-      availability: "",
-      damageTypes: "",
-      damageLevels: "",
-      isShield: Boolean(isShield),
-      notes: noteParts.filter(Boolean).join(" "),
-      source: SOURCE
-    }
+    system
   };
 }
 
@@ -71,21 +108,26 @@ function armor(displayName, outfit, material, expense, protection, load) {
         ? "Includes full helm (−3 Perception)."
         : "Chest/abdomen/back only; no helm.";
 
+  const system = {
+    type: material,
+    protection: Number(protection),
+    load: Number(load),
+    equipped: false,
+    component: "body",
+    outfit,
+    material,
+    cost: expense,
+    notes: `${outfit}. Expense: ${expense}. ${helmNote}`,
+    source: SOURCE,
+    chartName: displayName
+  };
+  const tag = armorStatTag(system);
+  system.summary = tag;
+
   return {
-    name: displayName,
+    name: withStatTag(displayName, tag),
     type: "armor",
-    system: {
-      type: material,
-      protection: Number(protection),
-      load: Number(load),
-      equipped: false,
-      component: "body",
-      outfit,
-      material,
-      cost: expense,
-      notes: `${outfit}. Expense: ${expense}. ${helmNote}`,
-      source: SOURCE
-    }
+    system
   };
 }
 
@@ -180,6 +222,8 @@ const ag0201Items = [...melee, ...missile, ...armors];
 function weaponConflictKey(name) {
   let n = String(name)
     .toLowerCase()
+    .replace(/\s*\[[^\]]*]\s*/g, " ")
+    .replace(/^lom\s*[—–-]\s*/i, "")
     .replace(/[—–]/g, " ")
     .replace(/\(.*?\)/g, " ")
     .replace(/,/g, " ")
@@ -290,14 +334,17 @@ function mergeLoMReference(agItems) {
         continue;
       }
       const clone = structuredClone(item);
-      clone.name = `LoM — ${item.name}`;
+      const tag = weaponStatTag(clone.system ?? {});
       clone.system = {
         ...clone.system,
+        chartName: item.name,
+        summary: `Sp/Atk/Dam/Par ${tag}`,
         notes: [
           clone.system?.notes,
-          "LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist."
+          "LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par."
         ].filter(Boolean).join(" ")
       };
+      clone.name = withStatTag(`LoM — ${item.name}`, tag);
       kept.push(clone);
       continue;
     }
@@ -308,14 +355,17 @@ function mergeLoMReference(agItems) {
         continue;
       }
       const clone = structuredClone(item);
-      clone.name = `LoM — ${item.name}`;
+      const tag = armorStatTag(clone.system ?? {});
       clone.system = {
         ...clone.system,
+        chartName: item.name,
+        summary: tag,
         notes: [
           clone.system?.notes,
           "LoM component reference. Prefer AG0201 Armor Chart outfits for 2e Soak."
         ].filter(Boolean).join(" ")
       };
+      clone.name = withStatTag(`LoM — ${item.name}`, tag);
       kept.push(clone);
       continue;
     }

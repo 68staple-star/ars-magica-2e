@@ -22,6 +22,7 @@ async function enrichWeaponsArmorCompendium(app, html) {
   const index = await pack.getIndex({
     fields: [
       "type",
+      "system.summary",
       "system.speed",
       "system.atkB",
       "system.wpnDam",
@@ -43,10 +44,12 @@ async function enrichWeaponsArmorCompendium(app, html) {
     const summary = formatPackEntrySummary(entry);
     if (!summary) continue;
 
-    const row = root.querySelector(`[data-document-id="${entry._id}"]`);
+    const row = root.querySelector(
+      `[data-document-id="${entry._id}"], [data-entry-id="${entry._id}"], [data-uuid$=".${entry._id}"]`
+    );
     if (!row || row.querySelector(".arm2e-pack-stats")) continue;
 
-    const nameEl = row.querySelector(".document-name, .entry-name, h4, a");
+    const nameEl = row.querySelector(".document-name, .entry-name, .name, h4, a");
     const stats = document.createElement("div");
     stats.className = "arm2e-pack-stats";
     stats.textContent = summary;
@@ -107,6 +110,7 @@ function addJournalPdfOptions(entryOptions) {
 export function registerUiHooks() {
   CONFIG.Item.compendiumIndexFields = [
     ...(CONFIG.Item.compendiumIndexFields ?? []),
+    "system.summary",
     "system.speed",
     "system.atkB",
     "system.wpnDam",
@@ -126,6 +130,15 @@ export function registerUiHooks() {
   Hooks.on("renderCompendium", (app, html) => {
     enrichWeaponsArmorCompendium(app, html).catch((error) => {
       console.warn("arm2e | Compendium stat enrichment failed", error);
+    });
+  });
+
+  // Foundry v13 ApplicationV2 also fires this family of hooks.
+  Hooks.on("renderApplicationV2", (app, element) => {
+    const name = app?.constructor?.name ?? "";
+    if (name !== "Compendium" && !name.includes("Compendium")) return;
+    enrichWeaponsArmorCompendium(app, element).catch((error) => {
+      console.warn("arm2e | Compendium V2 stat enrichment failed", error);
     });
   });
 

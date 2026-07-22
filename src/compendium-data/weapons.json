@@ -1,6 +1,6 @@
 [
   {
-    "name": "Dagger (1h)",
+    "name": "Dagger (1h) [+1/+4/+2/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -21,11 +21,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "No Str minimum (chart: n). Space: 0'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Dagger (1h)",
+      "summary": "Sp/Atk/Dam/Par [+1/+4/+2/+1]"
     }
   },
   {
-    "name": "Shortsword (1h)",
+    "name": "Shortsword (1h) [+2/+4/+4/+2]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -46,11 +48,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 0'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Shortsword (1h)",
+      "summary": "Sp/Atk/Dam/Par [+2/+4/+4/+2]"
     }
   },
   {
-    "name": "Broadsword (1h)",
+    "name": "Broadsword (1h) [+3/+4/+6/+3]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -71,11 +75,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Broadsword (1h)",
+      "summary": "Sp/Atk/Dam/Par [+3/+4/+6/+3]"
     }
   },
   {
-    "name": "Bastard Sword (1h)",
+    "name": "Bastard Sword (1h) [+4/+3/+8/+3]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -96,11 +102,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Bastard Sword (1h)",
+      "summary": "Sp/Atk/Dam/Par [+4/+3/+8/+3]"
     }
   },
   {
-    "name": "Bastard Sword (2h)",
+    "name": "Bastard Sword (2h) [+4/+3/+10/+4]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -121,11 +129,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Bastard Sword (2h)",
+      "summary": "Sp/Atk/Dam/Par [+4/+3/+10/+4]"
     }
   },
   {
-    "name": "Greatsword (2h)",
+    "name": "Greatsword (2h) [+5/+3/+11/+5]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -146,11 +156,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 3'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Greatsword (2h)",
+      "summary": "Sp/Atk/Dam/Par [+5/+3/+11/+5]"
     }
   },
   {
-    "name": "Short Spear (1h)",
+    "name": "Short Spear (1h) [+5/+2/+3/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -171,11 +183,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Short Spear (1h)",
+      "summary": "Sp/Atk/Dam/Par [+5/+2/+3/+1]"
     }
   },
   {
-    "name": "Short Spear (2h)",
+    "name": "Short Spear (2h) [+6/+3/+5/+2]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -196,11 +210,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "No Str minimum (chart: n). Space: 0'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Short Spear (2h)",
+      "summary": "Sp/Atk/Dam/Par [+6/+3/+5/+2]"
     }
   },
   {
-    "name": "Long Spear (2h)",
+    "name": "Long Spear (2h) [+8/+2/+6/+3]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -221,11 +237,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 0'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Long Spear (2h)",
+      "summary": "Sp/Atk/Dam/Par [+8/+2/+6/+3]"
     }
   },
   {
-    "name": "Lance (mtd) (1h)",
+    "name": "Lance (mtd) (1h) [+7/+2/+8/+1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -246,11 +264,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "WpnDam marked with • — see Charging rules. Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Lance (mtd) (1h)",
+      "summary": "Sp/Atk/Dam/Par [+7/+2/+8/+1]"
     }
   },
   {
-    "name": "Hand Axe (1h)",
+    "name": "Hand Axe (1h) [+2/+2/+7/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -271,11 +291,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Hand Axe (1h)",
+      "summary": "Sp/Atk/Dam/Par [+2/+2/+7/+1]"
     }
   },
   {
-    "name": "Battle Axe (2h)",
+    "name": "Battle Axe (2h) [+4/+2/+12/+2]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -296,11 +318,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 3'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Battle Axe (2h)",
+      "summary": "Sp/Atk/Dam/Par [+4/+2/+12/+2]"
     }
   },
   {
-    "name": "Pole Axe (2h)",
+    "name": "Pole Axe (2h) [+5/+1/+13/+3]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -321,11 +345,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 4'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Pole Axe (2h)",
+      "summary": "Sp/Atk/Dam/Par [+5/+1/+13/+3]"
     }
   },
   {
-    "name": "Halberd (2h)",
+    "name": "Halberd (2h) [+5/+1/+15/+3]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -346,11 +372,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 4'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Halberd (2h)",
+      "summary": "Sp/Atk/Dam/Par [+5/+1/+15/+3]"
     }
   },
   {
-    "name": "Club (1h)",
+    "name": "Club (1h) [+2/+3/+2/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -371,11 +399,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Club (1h)",
+      "summary": "Sp/Atk/Dam/Par [+2/+3/+2/+1]"
     }
   },
   {
-    "name": "Club (2h)",
+    "name": "Club (2h) [+2/+3/+3/+2]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -396,11 +426,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "No Str minimum (chart: n). Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Club (2h)",
+      "summary": "Sp/Atk/Dam/Par [+2/+3/+3/+2]"
     }
   },
   {
-    "name": "Quarterstaff (2h)",
+    "name": "Quarterstaff (2h) [+5/+2/+4/+6]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -421,11 +453,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Quarterstaff (2h)",
+      "summary": "Sp/Atk/Dam/Par [+5/+2/+4/+6]"
     }
   },
   {
-    "name": "Mace (1h)",
+    "name": "Mace (1h) [+2/+3/+5/+1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -446,11 +480,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Mace (1h)",
+      "summary": "Sp/Atk/Dam/Par [+2/+3/+5/+1]"
     }
   },
   {
-    "name": "Mace (2h)",
+    "name": "Mace (2h) [+2/+3/+7/+2]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -471,11 +507,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Mace (2h)",
+      "summary": "Sp/Atk/Dam/Par [+2/+3/+7/+2]"
     }
   },
   {
-    "name": "War Maul (2h)",
+    "name": "War Maul (2h) [+3/+2/+10/+2]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -496,11 +534,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 2'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "War Maul (2h)",
+      "summary": "Sp/Atk/Dam/Par [+3/+2/+10/+2]"
     }
   },
   {
-    "name": "Morning Star (1h)",
+    "name": "Morning Star (1h) [+3/+2/+8/+1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -521,11 +561,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 3'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Morning Star (1h)",
+      "summary": "Sp/Atk/Dam/Par [+3/+2/+8/+1]"
     }
   },
   {
-    "name": "Morning Star (2h)",
+    "name": "Morning Star (2h) [+3/+2/+10/+1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -546,11 +588,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 3'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Morning Star (2h)",
+      "summary": "Sp/Atk/Dam/Par [+3/+2/+10/+1]"
     }
   },
   {
-    "name": "Military Flail (2h)",
+    "name": "Military Flail (2h) [+4/+3/+10/+2]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -571,11 +615,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Space: 4'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Military Flail (2h)",
+      "summary": "Sp/Atk/Dam/Par [+4/+3/+10/+2]"
     }
   },
   {
-    "name": "Throwing Knife",
+    "name": "Throwing Knife [-2/-1/0/0]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -596,11 +642,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "No Str minimum (chart: n). ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Throwing Knife",
+      "summary": "Sp/Atk/Dam/Par [-2/-1/0/0]"
     }
   },
   {
-    "name": "Javelin",
+    "name": "Javelin [-5/-1/+5/0]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -621,11 +669,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Javelin",
+      "summary": "Sp/Atk/Dam/Par [-5/-1/+5/0]"
     }
   },
   {
-    "name": "Throwing Axe",
+    "name": "Throwing Axe [-4/-2/+6/0]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -646,11 +696,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Throwing Axe",
+      "summary": "Sp/Atk/Dam/Par [-4/-2/+6/0]"
     }
   },
   {
-    "name": "Target Shield",
+    "name": "Target Shield [+1/+3/-2/+2]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -671,11 +723,13 @@
       "damageLevels": "",
       "isShield": true,
       "notes": "No Str minimum (chart: n). Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Target Shield",
+      "summary": "Sp/Atk/Dam/Par [+1/+3/-2/+2]"
     }
   },
   {
-    "name": "Round Shield",
+    "name": "Round Shield [+2/+2/-1/+3]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -696,11 +750,13 @@
       "damageLevels": "",
       "isShield": true,
       "notes": "Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Round Shield",
+      "summary": "Sp/Atk/Dam/Par [+2/+2/-1/+3]"
     }
   },
   {
-    "name": "Knight Shield",
+    "name": "Knight Shield [+2/+1/0/+4]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -721,11 +777,13 @@
       "damageLevels": "",
       "isShield": true,
       "notes": "Space: 0'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Knight Shield",
+      "summary": "Sp/Atk/Dam/Par [+2/+1/0/+4]"
     }
   },
   {
-    "name": "Kite Shield",
+    "name": "Kite Shield [+1/+1/0/+5]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -746,11 +804,13 @@
       "damageLevels": "",
       "isShield": true,
       "notes": "Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Kite Shield",
+      "summary": "Sp/Atk/Dam/Par [+1/+1/0/+5]"
     }
   },
   {
-    "name": "Tower Shield",
+    "name": "Tower Shield [0/0/-1/+6]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -771,11 +831,13 @@
       "damageLevels": "",
       "isShield": true,
       "notes": "Space: 1'.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Tower Shield",
+      "summary": "Sp/Atk/Dam/Par [0/0/-1/+6]"
     }
   },
   {
-    "name": "Sling",
+    "name": "Sling [+2/0/+4/0]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -796,11 +858,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Rate +2 (stored as Speed for First Strike/Rate totals). Range 100 paces. No Str minimum (chart: n). ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Sling",
+      "summary": "Sp/Atk/Dam/Par [+2/0/+4/0]"
     }
   },
   {
-    "name": "Self Bow",
+    "name": "Self Bow [+3/0/+8/0]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -821,11 +885,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Rate +3 (stored as Speed for First Strike/Rate totals). Range 120 paces. ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Self Bow",
+      "summary": "Sp/Atk/Dam/Par [+3/0/+8/0]"
     }
   },
   {
-    "name": "Long Bow",
+    "name": "Long Bow [+6/0/+14/0]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -846,11 +912,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Rate +6 (stored as Speed for First Strike/Rate totals). Range 250 paces. ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Long Bow",
+      "summary": "Sp/Atk/Dam/Par [+6/0/+14/0]"
     }
   },
   {
-    "name": "Composite Bow",
+    "name": "Composite Bow [+4/+1/+9/0]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -871,11 +939,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Rate +4 (stored as Speed for First Strike/Rate totals). Range 225 paces. ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Composite Bow",
+      "summary": "Sp/Atk/Dam/Par [+4/+1/+9/0]"
     }
   },
   {
-    "name": "Light Crossbow",
+    "name": "Light Crossbow [-8/+1/+10/0]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -896,11 +966,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Rate -8 (stored as Speed for First Strike/Rate totals). Range 200 paces. ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Light Crossbow",
+      "summary": "Sp/Atk/Dam/Par [-8/+1/+10/0]"
     }
   },
   {
-    "name": "Heavy Crossbow",
+    "name": "Heavy Crossbow [-15/+1/+15/0]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -921,11 +993,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Rate -15 (stored as Speed for First Strike/Rate totals). Range 300 paces. ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Heavy Crossbow",
+      "summary": "Sp/Atk/Dam/Par [-15/+1/+15/0]"
     }
   },
   {
-    "name": "Arbalist",
+    "name": "Arbalist [-23/+1/+19/0]",
     "type": "weapon",
     "system": {
       "expense": "expn",
@@ -946,11 +1020,13 @@
       "damageLevels": "",
       "isShield": false,
       "notes": "Rate -23 (stored as Speed for First Strike/Rate totals). Range 400 paces. ParB N/A. Space: N/A.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Arbalist",
+      "summary": "Sp/Atk/Dam/Par [-23/+1/+19/0]"
     }
   },
   {
-    "name": "Cuirass Armor — Leather/Fur/Quilted",
+    "name": "Cuirass Armor — Leather/Fur/Quilted [Prot 1 · Load 0.5]",
     "type": "armor",
     "system": {
       "type": "Leather/Fur/Quilted",
@@ -962,11 +1038,13 @@
       "material": "Leather/Fur/Quilted",
       "cost": "inex",
       "notes": "Cuirass Armor. Expense: inex. Chest/abdomen/back only; no helm.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Cuirass Armor — Leather/Fur/Quilted",
+      "summary": "[Prot 1 · Load 0.5]"
     }
   },
   {
-    "name": "Cuirass Armor — Heavy/Hard Leather",
+    "name": "Cuirass Armor — Heavy/Hard Leather [Prot 2 · Load 1]",
     "type": "armor",
     "system": {
       "type": "Heavy/Hard Leather",
@@ -978,11 +1056,13 @@
       "material": "Heavy/Hard Leather",
       "cost": "inex",
       "notes": "Cuirass Armor. Expense: inex. Chest/abdomen/back only; no helm.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Cuirass Armor — Heavy/Hard Leather",
+      "summary": "[Prot 2 · Load 1]"
     }
   },
   {
-    "name": "Cuirass Armor — Ring Mail",
+    "name": "Cuirass Armor — Ring Mail [Prot 4 · Load 1.5]",
     "type": "armor",
     "system": {
       "type": "Ring Mail",
@@ -994,11 +1074,13 @@
       "material": "Ring Mail",
       "cost": "stan",
       "notes": "Cuirass Armor. Expense: stan. Chest/abdomen/back only; no helm.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Cuirass Armor — Ring Mail",
+      "summary": "[Prot 4 · Load 1.5]"
     }
   },
   {
-    "name": "Cuirass Armor — Scale Mail",
+    "name": "Cuirass Armor — Scale Mail [Prot 5 · Load 2]",
     "type": "armor",
     "system": {
       "type": "Scale Mail",
@@ -1010,11 +1092,13 @@
       "material": "Scale Mail",
       "cost": "stan",
       "notes": "Cuirass Armor. Expense: stan. Chest/abdomen/back only; no helm.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Cuirass Armor — Scale Mail",
+      "summary": "[Prot 5 · Load 2]"
     }
   },
   {
-    "name": "Cuirass Armor — Chain Mail",
+    "name": "Cuirass Armor — Chain Mail [Prot 8 · Load 3.5]",
     "type": "armor",
     "system": {
       "type": "Chain Mail",
@@ -1026,11 +1110,13 @@
       "material": "Chain Mail",
       "cost": "expn",
       "notes": "Cuirass Armor. Expense: expn. Chest/abdomen/back only; no helm.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Cuirass Armor — Chain Mail",
+      "summary": "[Prot 8 · Load 3.5]"
     }
   },
   {
-    "name": "Cuirass Armor — Plate",
+    "name": "Cuirass Armor — Plate [Prot 10 · Load 4]",
     "type": "armor",
     "system": {
       "type": "Plate",
@@ -1042,11 +1128,13 @@
       "material": "Plate",
       "cost": "expn",
       "notes": "Cuirass Armor. Expense: expn. Chest/abdomen/back only; no helm.",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Cuirass Armor — Plate",
+      "summary": "[Prot 10 · Load 4]"
     }
   },
   {
-    "name": "Hauberk Armor — Leather/Fur/Quilted",
+    "name": "Hauberk Armor — Leather/Fur/Quilted [Prot 3 · Load 1.5]",
     "type": "armor",
     "system": {
       "type": "Leather/Fur/Quilted",
@@ -1058,11 +1146,13 @@
       "material": "Leather/Fur/Quilted",
       "cost": "inex",
       "notes": "Hauberk Armor. Expense: inex. Includes half helm (−1 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Hauberk Armor — Leather/Fur/Quilted",
+      "summary": "[Prot 3 · Load 1.5]"
     }
   },
   {
-    "name": "Hauberk Armor — Heavy/Hard Leather",
+    "name": "Hauberk Armor — Heavy/Hard Leather [Prot 5 · Load 2.5]",
     "type": "armor",
     "system": {
       "type": "Heavy/Hard Leather",
@@ -1074,11 +1164,13 @@
       "material": "Heavy/Hard Leather",
       "cost": "inex",
       "notes": "Hauberk Armor. Expense: inex. Includes half helm (−1 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Hauberk Armor — Heavy/Hard Leather",
+      "summary": "[Prot 5 · Load 2.5]"
     }
   },
   {
-    "name": "Hauberk Armor — Ring Mail",
+    "name": "Hauberk Armor — Ring Mail [Prot 7 · Load 3]",
     "type": "armor",
     "system": {
       "type": "Ring Mail",
@@ -1090,11 +1182,13 @@
       "material": "Ring Mail",
       "cost": "stan",
       "notes": "Hauberk Armor. Expense: stan. Includes half helm (−1 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Hauberk Armor — Ring Mail",
+      "summary": "[Prot 7 · Load 3]"
     }
   },
   {
-    "name": "Hauberk Armor — Scale Mail",
+    "name": "Hauberk Armor — Scale Mail [Prot 9 · Load 4.5]",
     "type": "armor",
     "system": {
       "type": "Scale Mail",
@@ -1106,11 +1200,13 @@
       "material": "Scale Mail",
       "cost": "stan",
       "notes": "Hauberk Armor. Expense: stan. Includes half helm (−1 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Hauberk Armor — Scale Mail",
+      "summary": "[Prot 9 · Load 4.5]"
     }
   },
   {
-    "name": "Hauberk Armor — Chain Mail",
+    "name": "Hauberk Armor — Chain Mail [Prot 12 · Load 5]",
     "type": "armor",
     "system": {
       "type": "Chain Mail",
@@ -1122,11 +1218,13 @@
       "material": "Chain Mail",
       "cost": "expn",
       "notes": "Hauberk Armor. Expense: expn. Includes half helm (−1 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Hauberk Armor — Chain Mail",
+      "summary": "[Prot 12 · Load 5]"
     }
   },
   {
-    "name": "Hauberk Armor — Plate",
+    "name": "Hauberk Armor — Plate [Prot 15 · Load 6]",
     "type": "armor",
     "system": {
       "type": "Plate",
@@ -1138,11 +1236,13 @@
       "material": "Plate",
       "cost": "expn",
       "notes": "Hauberk Armor. Expense: expn. Includes half helm (−1 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Hauberk Armor — Plate",
+      "summary": "[Prot 15 · Load 6]"
     }
   },
   {
-    "name": "Full Armor — Leather/Fur/Quilted",
+    "name": "Full Armor — Leather/Fur/Quilted [Prot 4 · Load 2]",
     "type": "armor",
     "system": {
       "type": "Leather/Fur/Quilted",
@@ -1154,11 +1254,13 @@
       "material": "Leather/Fur/Quilted",
       "cost": "inex",
       "notes": "Full Armor. Expense: inex. Includes full helm (−3 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Full Armor — Leather/Fur/Quilted",
+      "summary": "[Prot 4 · Load 2]"
     }
   },
   {
-    "name": "Full Armor — Heavy/Hard Leather",
+    "name": "Full Armor — Heavy/Hard Leather [Prot 6 · Load 2.5]",
     "type": "armor",
     "system": {
       "type": "Heavy/Hard Leather",
@@ -1170,11 +1272,13 @@
       "material": "Heavy/Hard Leather",
       "cost": "stan",
       "notes": "Full Armor. Expense: stan. Includes full helm (−3 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Full Armor — Heavy/Hard Leather",
+      "summary": "[Prot 6 · Load 2.5]"
     }
   },
   {
-    "name": "Full Armor — Ring Mail",
+    "name": "Full Armor — Ring Mail [Prot 8 · Load 4]",
     "type": "armor",
     "system": {
       "type": "Ring Mail",
@@ -1186,11 +1290,13 @@
       "material": "Ring Mail",
       "cost": "stan",
       "notes": "Full Armor. Expense: stan. Includes full helm (−3 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Full Armor — Ring Mail",
+      "summary": "[Prot 8 · Load 4]"
     }
   },
   {
-    "name": "Full Armor — Chain Mail",
+    "name": "Full Armor — Chain Mail [Prot 14 · Load 6]",
     "type": "armor",
     "system": {
       "type": "Chain Mail",
@@ -1202,11 +1308,13 @@
       "material": "Chain Mail",
       "cost": "expn",
       "notes": "Full Armor. Expense: expn. Includes full helm (−3 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Full Armor — Chain Mail",
+      "summary": "[Prot 14 · Load 6]"
     }
   },
   {
-    "name": "Full Armor — Plate",
+    "name": "Full Armor — Plate [Prot 17 · Load 7]",
     "type": "armor",
     "system": {
       "type": "Plate",
@@ -1218,11 +1326,13 @@
       "material": "Plate",
       "cost": "expn",
       "notes": "Full Armor. Expense: expn. Includes full helm (−3 Perception).",
-      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)"
+      "source": "AG0201 Ars Magica 2nd Edition, pp. 58–59 (Melee / Missile / Armor Charts)",
+      "chartName": "Full Armor — Plate",
+      "summary": "[Prot 17 · Load 7]"
     }
   },
   {
-    "name": "LoM — Boiled-leather greaves",
+    "name": "LoM — Boiled-leather greaves [Prot 1 · Load 1]",
     "type": "armor",
     "system": {
       "type": "Boiled-leather greaves",
@@ -1234,11 +1344,13 @@
       "material": "",
       "cost": "inex",
       "notes": "Already included in full armor listings; do not add again when wearing full armor. LoM component reference. Prefer AG0201 Armor Chart outfits for 2e Soak.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Boiled-leather greaves",
+      "summary": "[Prot 1 · Load 1]"
     }
   },
   {
-    "name": "LoM — Coat of Plates",
+    "name": "LoM — Coat of Plates [Prot 2 · Load 2]",
     "type": "armor",
     "system": {
       "type": "Coat of Plates",
@@ -1250,11 +1362,13 @@
       "material": "",
       "cost": "expe",
       "notes": "LoM body armor component — ArM5-scale Prot/Load. Layer with greaves/helmet per supplement. LoM component reference. Prefer AG0201 Armor Chart outfits for 2e Soak.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Coat of Plates",
+      "summary": "[Prot 2 · Load 2]"
     }
   },
   {
-    "name": "LoM — Gambeson",
+    "name": "LoM — Gambeson [Prot 1 · Load 1.5]",
     "type": "armor",
     "system": {
       "type": "Gambeson",
@@ -1266,11 +1380,13 @@
       "material": "",
       "cost": "inex",
       "notes": "LoM body armor component — ArM5-scale Prot/Load. Layer with greaves/helmet per supplement. LoM component reference. Prefer AG0201 Armor Chart outfits for 2e Soak.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Gambeson",
+      "summary": "[Prot 1 · Load 1.5]"
     }
   },
   {
-    "name": "LoM — Plate jambes",
+    "name": "LoM — Plate jambes [Prot 1 · Load 1]",
     "type": "armor",
     "system": {
       "type": "Plate jambes",
@@ -1282,11 +1398,13 @@
       "material": "",
       "cost": "expe",
       "notes": "Already included in full armor listings; do not add again when wearing full armor. LoM component reference. Prefer AG0201 Armor Chart outfits for 2e Soak.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Plate jambes",
+      "summary": "[Prot 1 · Load 1]"
     }
   },
   {
-    "name": "LoM — Plate-and-mail jambes",
+    "name": "LoM — Plate-and-mail jambes [Prot 2 · Load 0.5]",
     "type": "armor",
     "system": {
       "type": "Plate-and-mail jambes",
@@ -1298,11 +1416,13 @@
       "material": "",
       "cost": "expe",
       "notes": "Already included in full armor listings; do not add again when wearing full armor. LoM component reference. Prefer AG0201 Armor Chart outfits for 2e Soak.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Plate-and-mail jambes",
+      "summary": "[Prot 2 · Load 0.5]"
     }
   },
   {
-    "name": "LoM — Bow, Horse",
+    "name": "LoM — Bow, Horse [-2/+5/+8/0]",
     "type": "weapon",
     "system": {
       "expense": "expe",
@@ -1322,12 +1442,14 @@
       "damageTypes": "P",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "Ancient Magic, page 17 Range increment: 15 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Ancient Magic, page 17 Range increment: 15 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Bow, Horse",
+      "summary": "Sp/Atk/Dam/Par [-2/+5/+8/0]"
     }
   },
   {
-    "name": "LoM — Dueling Stick, Short",
+    "name": "LoM — Dueling Stick, Short [+2/+4/+2/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1347,12 +1469,14 @@
       "damageTypes": "C",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "Ancient Magic, page 95 LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Ancient Magic, page 95 LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Dueling Stick, Short",
+      "summary": "Sp/Atk/Dam/Par [+2/+4/+2/+1]"
     }
   },
   {
-    "name": "LoM — Falchion",
+    "name": "LoM — Falchion [+1/+4/+4/+1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1372,12 +1496,14 @@
       "damageTypes": "S",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Falchion",
+      "summary": "Sp/Atk/Dam/Par [+1/+4/+4/+1]"
     }
   },
   {
-    "name": "LoM — Farm Implement",
+    "name": "LoM — Farm Implement [+1/+3/+5/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1397,12 +1523,14 @@
       "damageTypes": "P,S",
       "damageLevels": "1",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Farm Implement",
+      "summary": "Sp/Atk/Dam/Par [+1/+3/+5/+1]"
     }
   },
   {
-    "name": "LoM — Gauntlet",
+    "name": "LoM — Gauntlet [0/0/+2/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1422,12 +1550,14 @@
       "damageTypes": "C",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Gauntlet",
+      "summary": "Sp/Atk/Dam/Par [0/0/+2/+1]"
     }
   },
   {
-    "name": "LoM — Kick",
+    "name": "LoM — Kick [-1/0/+3/-1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1447,12 +1577,14 @@
       "damageTypes": "C",
       "damageLevels": "n/a",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Kick",
+      "summary": "Sp/Atk/Dam/Par [-1/0/+3/-1]"
     }
   },
   {
-    "name": "LoM — Knife (Melee)",
+    "name": "LoM — Knife (Melee) [0/+1/+2/0]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1472,12 +1604,14 @@
       "damageTypes": "P,S",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Knife (Melee)",
+      "summary": "Sp/Atk/Dam/Par [0/+1/+2/0]"
     }
   },
   {
-    "name": "LoM — Knife (Missile)",
+    "name": "LoM — Knife (Missile) [0/+1/+2/0]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1497,12 +1631,14 @@
       "damageTypes": "P",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "Range increment: 5 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Range increment: 5 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Knife (Missile)",
+      "summary": "Sp/Atk/Dam/Par [0/+1/+2/0]"
     }
   },
   {
-    "name": "LoM — Mace and Chain",
+    "name": "LoM — Mace and Chain [+2/+3/+7/0]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1522,12 +1658,14 @@
       "damageTypes": "C",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Mace and Chain",
+      "summary": "Sp/Atk/Dam/Par [+2/+3/+7/0]"
     }
   },
   {
-    "name": "LoM — Net",
+    "name": "LoM — Net [-1/+2/0/+2]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1547,12 +1685,14 @@
       "damageTypes": "S",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "Guardians of the Forest, page 134 LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Guardians of the Forest, page 134 LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Net",
+      "summary": "Sp/Atk/Dam/Par [-1/+2/0/+2]"
     }
   },
   {
-    "name": "LoM — Pole Arm",
+    "name": "LoM — Pole Arm [+3/+4/+8/+1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1572,12 +1712,14 @@
       "damageTypes": "S,P",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Pole Arm",
+      "summary": "Sp/Atk/Dam/Par [+3/+4/+8/+1]"
     }
   },
   {
-    "name": "LoM — Rock, sharpened",
+    "name": "LoM — Rock, sharpened [0/0/+3/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1597,12 +1739,14 @@
       "damageTypes": "C, S",
       "damageLevels": "1",
       "isShield": false,
-      "notes": "Ancient Magic, page 17 Range increment: 5 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Ancient Magic, page 17 Range increment: 5 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Rock, sharpened",
+      "summary": "Sp/Atk/Dam/Par [0/0/+3/+1]"
     }
   },
   {
-    "name": "LoM — Shield, Buckler",
+    "name": "LoM — Shield, Buckler [0/0/0/+1]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1622,12 +1766,14 @@
       "damageTypes": "n/a",
       "damageLevels": "2",
       "isShield": true,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Shield, Buckler",
+      "summary": "Sp/Atk/Dam/Par [0/0/0/+1]"
     }
   },
   {
-    "name": "LoM — Shield, Heater",
+    "name": "LoM — Shield, Heater [0/0/0/+3]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1647,12 +1793,14 @@
       "damageTypes": "n/a",
       "damageLevels": "2",
       "isShield": true,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Shield, Heater",
+      "summary": "Sp/Atk/Dam/Par [0/0/0/+3]"
     }
   },
   {
-    "name": "LoM — Shield, Infantry",
+    "name": "LoM — Shield, Infantry [0/0/0/+4]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1672,12 +1820,14 @@
       "damageTypes": "n/a",
       "damageLevels": "2",
       "isShield": true,
-      "notes": "Infantry shield — LoM ArM5-scale Init/Atk/Def/Dam mapped to 2e fields. Ability: Single. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Infantry shield — LoM ArM5-scale Init/Atk/Def/Dam mapped to 2e fields. Ability: Single. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Shield, Infantry",
+      "summary": "Sp/Atk/Dam/Par [0/0/0/+4]"
     }
   },
   {
-    "name": "LoM — Stone",
+    "name": "LoM — Stone [0/+1/+2/0]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1697,12 +1847,14 @@
       "damageTypes": "C",
       "damageLevels": "n/a",
       "isShield": false,
-      "notes": "Range increment: 5 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Range increment: 5 paces. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Stone",
+      "summary": "Sp/Atk/Dam/Par [0/+1/+2/0]"
     }
   },
   {
-    "name": "LoM — Trident",
+    "name": "LoM — Trident [+3/+3/+5/+3]",
     "type": "weapon",
     "system": {
       "expense": "expe",
@@ -1722,12 +1874,14 @@
       "damageTypes": "P",
       "damageLevels": "2",
       "isShield": false,
-      "notes": "Guardians of the Forest, page 134 LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Guardians of the Forest, page 134 LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Trident",
+      "summary": "Sp/Atk/Dam/Par [+3/+3/+5/+3]"
     }
   },
   {
-    "name": "LoM — Unarmed",
+    "name": "LoM — Unarmed [0/0/0/0]",
     "type": "weapon",
     "system": {
       "expense": "stan",
@@ -1747,12 +1901,14 @@
       "damageTypes": "C",
       "damageLevels": "n/a",
       "isShield": false,
-      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "LoM weapon — ArM5-scale Init/Atk/Def/Dam mapped to 2e Speed/Atk/Dam/Parry. Ability field links combat skill. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Unarmed",
+      "summary": "Sp/Atk/Dam/Par [0/0/0/0]"
     }
   },
   {
-    "name": "LoM — Whip",
+    "name": "LoM — Whip [+2/+1/-3/+1]",
     "type": "weapon",
     "system": {
       "expense": "inex",
@@ -1772,8 +1928,10 @@
       "damageTypes": "C, S",
       "damageLevels": "1",
       "isShield": false,
-      "notes": "Whip — LoM ArM5-scale weapon. Ability: Single. Niche reach/control weapon more than raw damage. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist.",
-      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)"
+      "notes": "Whip — LoM ArM5-scale weapon. Ability: Single. Niche reach/control weapon more than raw damage. LoM/ArM5-scale reference. Prefer AG0201 chart items when both exist. Tag order: Sp/Atk/Dam/Par.",
+      "source": "Lords of Men: Arms & Armor (CC BY-SA 4.0) — ArM5-scale reference (not 2e table numbers)",
+      "chartName": "Whip",
+      "summary": "Sp/Atk/Dam/Par [+2/+1/-3/+1]"
     }
   }
 ]

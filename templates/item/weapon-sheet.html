@@ -8,6 +8,23 @@
       {{/if}}
     </div>
   </header>
+
+  <section class="arm2e-stat-panel" aria-label="Combat statistics">
+    <div class="arm2e-stat-chip"><span>Speed</span><strong>{{system.speed}}</strong></div>
+    <div class="arm2e-stat-chip"><span>Atk</span><strong>{{system.atkB}}</strong></div>
+    <div class="arm2e-stat-chip"><span>Dam</span><strong>{{system.wpnDam}}</strong></div>
+    <div class="arm2e-stat-chip"><span>Par</span><strong>{{system.parB}}</strong></div>
+    <div class="arm2e-stat-chip"><span>Str</span><strong>{{system.strReq}}</strong></div>
+    <div class="arm2e-stat-chip"><span>Load</span><strong>{{system.load}}</strong></div>
+    {{#if system.range}}
+    <div class="arm2e-stat-chip"><span>Range</span><strong>{{system.range}}</strong></div>
+    {{/if}}
+    {{#if system.ability}}
+    <div class="arm2e-stat-chip"><span>Ability</span><strong>{{system.ability}}</strong></div>
+    {{/if}}
+  </section>
+  <p class="arm2e-stat-legend">Pack list tag order: Speed / Atk / Dam / Par</p>
+
   <div class="arm2e-item-grid">
     <label>Expense <input type="text" name="system.expense" value="{{system.expense}}" /></label>
     <label title="Melee Speed / Missile Rate">Speed / Rate <input type="number" name="system.speed" value="{{system.speed}}" data-dtype="Number" /></label>
