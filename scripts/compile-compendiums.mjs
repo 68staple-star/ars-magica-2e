@@ -8,6 +8,11 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  flattenVirtueFlawFolders,
+  folderPathSegments,
+  resolveVirtueFlawFolderKey
+} from "../modules/utils/virtue-flaw-folders.js";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(root, "..");
@@ -22,7 +27,12 @@ const PACKS = [
   { pack: "arm2e-formulaic-spells", file: "spells-arm5-index.json", type: "Item" },
   { pack: "arm2e-spells", file: "spells-arm5-ch9.json", type: "Item" },
   { pack: "arm2e-weapons", file: "weapons.json", type: "Item" },
-  { pack: "arm2e-virtues-flaws", file: "virtues-flaws.json", type: "Item" },
+  {
+    pack: "arm2e-virtues-flaws",
+    file: "virtues-flaws.json",
+    type: "Item",
+    folders: "virtueFlaw"
+  },
   { pack: "arm2e-rules-reference", file: "journals-rules.json", type: "JournalEntry" },
   { pack: "arm2e-covenant-template", file: "journals-covenant.json", type: "JournalEntry" },
   { pack: "arm2e-covenants", file: "covenants-sample.json", type: "Actor" },
@@ -77,11 +87,56 @@ function slugify(name) {
 }
 
 /**
+ * Deterministic folder id map for Virtues & Flaws.
+ * @param {string} pack
+ * @returns {Map<string, string>}
+ */
+function buildVirtueFlawFolderIds(pack) {
+  const ids = new Map();
+  for (const folder of flattenVirtueFlawFolders()) {
+    ids.set(folder.key, deterministicId(pack, `folder:${folder.key}`));
+  }
+  return ids;
+}
+
+/**
+ * Write Foundry Folder documents into nested source dirs.
+ * @param {string} sourceDir
+ * @param {string} pack
+ * @param {Map<string, string>} folderIds
+ */
+async function writeVirtueFlawFolders(sourceDir, pack, folderIds) {
+  const folders = flattenVirtueFlawFolders();
+
+  for (const folder of folders) {
+    const id = folderIds.get(folder.key);
+    const parentId = folder.parentKey ? folderIds.get(folder.parentKey) ?? null : null;
+    const dir = join(sourceDir, ...folderPathSegments(folder.key));
+    await mkdir(dir, { recursive: true });
+
+    const document = {
+      _id: id,
+      _key: packKey("folders", id),
+      name: folder.name,
+      type: "Item",
+      folder: parentId,
+      sorting: "a",
+      sort: folder.sort,
+      color: "",
+      flags: {}
+    };
+
+    await writeFile(join(dir, "_Folder.json"), `${JSON.stringify(document, null, 2)}\n`, "utf8");
+  }
+}
+
+/**
  * @param {object} entry
  * @param {string} pack
  * @param {number} index
+ * @param {string | null} [folderId]
  */
-function prepareItemDocument(entry, pack, index) {
+function prepareItemDocument(entry, pack, index, folderId = null) {
   const name = entry.name ?? `Entry ${index + 1}`;
   const type = entry.type ?? "equipment";
   const id = entry._id ?? deterministicId(pack, name);
@@ -93,6 +148,7 @@ function prepareItemDocument(entry, pack, index) {
     type,
     img: entry.img ?? DEFAULT_ITEM_IMG[type] ?? "icons/svg/item-bag.svg",
     system: entry.system ?? {},
+    folder: folderId,
     flags: entry.flags ?? {},
     effects: entry.effects ?? []
   };
@@ -173,10 +229,10 @@ function prepareActorDocument(entry, pack, index) {
 }
 
 /**
- * @param {{ pack: string, file: string, type: string }} config
+ * @param {{ pack: string, file: string, type: string, folders?: string }} config
  */
 async function compileOne(config) {
-  const { pack, file, type } = config;
+  const { pack, file, type, folders } = config;
   const dataPath = join(dataRoot, file);
   const sourceDir = join(sourceRoot, pack);
   const destDir = join(packRoot, pack);
@@ -187,6 +243,11 @@ async function compileOne(config) {
   await rm(sourceDir, { recursive: true, force: true });
   await rm(destDir, { recursive: true, force: true });
   await mkdir(sourceDir, { recursive: true });
+
+  const folderIds = folders === "virtueFlaw" ? buildVirtueFlawFolderIds(pack) : null;
+  if (folderIds) {
+    await writeVirtueFlawFolders(sourceDir, pack, folderIds);
+  }
 
   const usedNames = new Set();
 
@@ -202,17 +263,29 @@ async function compileOne(config) {
 
     usedNames.add(filename);
 
+    let folderId = null;
+    let outDir = sourceDir;
+
+    if (folderIds && type === "Item") {
+      const leafKey = resolveVirtueFlawFolderKey(entry.system ?? {});
+      folderId = folderIds.get(leafKey) ?? null;
+      const segments = folderPathSegments(leafKey);
+      outDir = join(sourceDir, ...segments);
+      await mkdir(outDir, { recursive: true });
+    }
+
     let document;
     if (type === "JournalEntry") document = prepareJournalDocument(entry, pack);
     else if (type === "Actor") document = prepareActorDocument(entry, pack, index);
-    else document = prepareItemDocument(entry, pack, index);
+    else document = prepareItemDocument(entry, pack, index, folderId);
 
-    await writeFile(join(sourceDir, `${filename}.json`), `${JSON.stringify(document, null, 2)}\n`, "utf8");
+    await writeFile(join(outDir, `${filename}.json`), `${JSON.stringify(document, null, 2)}\n`, "utf8");
   }
 
   await mkdir(destDir, { recursive: true });
-  await compilePack(sourceDir, destDir, { recursive: false, log: true });
-  console.log(`Compiled ${pack}: ${entries.length} entries`);
+  const recursive = Boolean(folderIds);
+  await compilePack(sourceDir, destDir, { recursive, log: true });
+  console.log(`Compiled ${pack}: ${entries.length} entries${folderIds ? ` (+ ${folderIds.size} folders)` : ""}`);
 }
 
 await rm(sourceRoot, { recursive: true, force: true });
