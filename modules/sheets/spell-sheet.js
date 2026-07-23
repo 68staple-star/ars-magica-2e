@@ -9,11 +9,20 @@ export class ArM2eSpellSheet extends ArM2eItemSheet {
   }
 
   /** @override */
-  getData() {
-    const context = super.getData();
+  async getData(options = {}) {
+    const context = await super.getData(options);
     const registry = CONFIG.ARM2E;
-    context.techniques = registry.TECHNIQUES;
-    context.forms = registry.FORMS;
+    const technique = String(context.system?.technique ?? "");
+    const form = String(context.system?.form ?? "");
+
+    context.techniques = (registry.TECHNIQUES ?? []).map((entry) => ({
+      ...entry,
+      selected: entry.id === technique
+    }));
+    context.forms = (registry.FORMS ?? []).map((entry) => ({
+      ...entry,
+      selected: entry.id === form
+    }));
     return context;
   }
 
