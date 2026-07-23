@@ -18,7 +18,7 @@
         {{#each virtueFlaws.virtues}}
         <li class="arm2e-vf-entry" data-item-id="{{id}}">
           <button type="button" class="item-edit arm2e-vf-name" data-item-id="{{id}}">{{name}}</button>
-          <span class="arm2e-vf-points">+{{points}}</span>
+          <span class="arm2e-vf-points">{{pointsLabel}}</span>
           {{#if category}}<span class="arm2e-vf-category">{{category}}</span>{{/if}}
           <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
           {{#if description}}<p class="arm2e-vf-description">{{description}}</p>{{/if}}
@@ -36,7 +36,7 @@
         {{#each virtueFlaws.flaws}}
         <li class="arm2e-vf-entry" data-item-id="{{id}}">
           <button type="button" class="item-edit arm2e-vf-name" data-item-id="{{id}}">{{name}}</button>
-          <span class="arm2e-vf-points">-{{points}}</span>
+          <span class="arm2e-vf-points">{{pointsLabel}}</span>
           {{#if category}}<span class="arm2e-vf-category">{{category}}</span>{{/if}}
           <button type="button" class="arm2e-item-delete" data-item-id="{{id}}" title="Delete"><i class="fas fa-trash"></i></button>
           {{#if description}}<p class="arm2e-vf-description">{{description}}</p>{{/if}}

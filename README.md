@@ -28,7 +28,7 @@ Ralph's take on Ars Magica 2e for Foundry for the occasional Tuesday night game.
 |------|----------|
 | Sample Spells | Starter formulaic spells with mechanical stats |
 | Weapons & Armor | Common weapons and armor from the Combat chapter |
-| Virtues & Flaws | Catalog entries from Core, Covenants, and Order supplements |
+| Virtues & Flaws | AG0201 Core catalog with signed costs (+1…+5 / −1…−5) |
 | Rules Reference | Player cheat sheet for dice, combat, and casting |
 | Covenant Template | Structured covenant worksheet |
 | Order of Hermes | Houses and Tribunal overview |

@@ -99,12 +99,12 @@
           <option value="">Import from compendium...</option>
           <optgroup label="Virtues">
             {{#each compendiumVirtues}}
-            <option value="{{id}}" data-pack="{{pack}}">{{name}}{{#if points}} ({{points}} pt){{/if}}{{#if category}} — {{category}}{{/if}}</option>
+            <option value="{{id}}" data-pack="{{pack}}">{{name}}{{#if pointsLabel}} ({{pointsLabel}}){{/if}}{{#if category}} — {{category}}{{/if}}</option>
             {{/each}}
           </optgroup>
           <optgroup label="Flaws">
             {{#each compendiumFlaws}}
-            <option value="{{id}}" data-pack="{{pack}}">{{name}}{{#if points}} ({{points}} pt){{/if}}{{#if category}} — {{category}}{{/if}}</option>
+            <option value="{{id}}" data-pack="{{pack}}">{{name}}{{#if pointsLabel}} ({{pointsLabel}}){{/if}}{{#if category}} — {{category}}{{/if}}</option>
             {{/each}}
           </optgroup>
         </select>
@@ -129,7 +129,7 @@
             <option value="flaw">Flaw</option>
             {{/select}}
           </select>
-          <input class="wizard-field" type="number" data-path="virtuesFlaws.{{index}}.points" data-dtype="Number" min="0" value="{{points}}" />
+          <input class="wizard-field" type="number" data-path="virtuesFlaws.{{index}}.points" data-dtype="Number" value="{{points}}" title="Virtues +1…+5, Flaws −1…−5" />
           <input class="wizard-field" type="text" data-path="virtuesFlaws.{{index}}.category" value="{{category}}" placeholder="Category" />
           <button type="button" class="wizard-btn wizard-btn-danger" data-action="remove-virtue-flaw" data-vf-index="{{index}}">Remove</button>
           {{#if description}}
