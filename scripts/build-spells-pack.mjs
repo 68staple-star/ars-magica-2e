@@ -6,6 +6,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { formatSpellDisplayName } from "../modules/utils/spell-folders.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
@@ -118,7 +119,11 @@ for (const item of index) {
   added.push(item.name);
 }
 
-const merged = order.map((key) => byKey.get(key));
+const merged = order.map((key) => {
+  const spell = byKey.get(key);
+  spell.name = formatSpellDisplayName(spell.name, spell.system ?? {});
+  return spell;
+});
 fs.writeFileSync(outPath, `${JSON.stringify(merged, null, 2)}\n`);
 
 console.log(`Wrote ${merged.length} spells to ${outPath}`);
