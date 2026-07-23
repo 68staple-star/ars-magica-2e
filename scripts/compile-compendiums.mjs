@@ -21,6 +21,8 @@ const sourceRoot = join(projectRoot, "packs", "_source");
 const packRoot = join(projectRoot, "packs");
 
 const HTML_FORMAT = 1;
+/** Foundry DOCUMENT_OWNERSHIP_LEVELS.INHERIT for embedded pages */
+const OWNERSHIP_INHERIT = -1;
 
 const PACKS = [
   { pack: "arm2e-abilities", file: "abilities.json", type: "Item" },
@@ -170,6 +172,8 @@ function prepareItemDocument(entry, pack, index, folderId = null) {
 function prepareJournalDocument(entry, pack) {
   const name = entry.name ?? "Journal Entry";
   const id = entry._id ?? deterministicId(pack, name);
+  // OBSERVER (2) so players can read reference journals from the pack / imports.
+  const ownership = entry.ownership ?? { default: 2 };
 
   return {
     _id: id,
@@ -179,18 +183,21 @@ function prepareJournalDocument(entry, pack) {
       const pageId = deterministicId(pack, `${name}:${page.name ?? pageIndex}`);
       return {
         _id: pageId,
-        _key: `!journal.pages!${pageId}`,
+        _key: `!journal.pages!${id}.${pageId}`,
         name: page.name,
         type: "text",
+        sort: (pageIndex + 1) * 100000,
+        title: { show: true, level: 1 },
         text: {
           content: page.text?.content ?? "",
           format: HTML_FORMAT
-        }
+        },
+        ownership: { default: OWNERSHIP_INHERIT }
       };
     }),
     folder: null,
     flags: entry.flags ?? {},
-    ownership: { default: 0 }
+    ownership
   };
 }
 
