@@ -1,6 +1,9 @@
 /**
- * Human-readable combat summaries for weapons and armor (AG0201 / LoM).
+ * Human-readable combat summaries for weapons and armor (AG0201 / LoM),
+ * plus formulaic spell pack lines.
  */
+
+import { formatSpellSummary } from "./spell-folders.js";
 
 /**
  * @param {number | string | null | undefined} value
@@ -59,5 +62,6 @@ export function formatPackEntrySummary(indexEntry) {
   const type = indexEntry?.type;
   if (type === "weapon") return formatWeaponSummary(system);
   if (type === "armor") return formatArmorSummary(system);
+  if (type === "spell") return formatSpellSummary(system);
   return "";
 }

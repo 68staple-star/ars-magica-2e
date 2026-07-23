@@ -3,6 +3,46 @@ import { attachRulesPdfViaPicker, openWorldRulesPdfJournal } from "../utils/jour
 import { formatPackEntrySummary } from "../utils/equipment-summary.js";
 
 /**
+ * @param {Application} app
+ * @returns {{ pack: object, packName: string, root: HTMLElement } | null}
+ */
+function resolveCompendiumContext(app, html) {
+  if (game.system.id !== "ars-magica-2e") return null;
+
+  const pack = app.collection ?? app.documentCollection;
+  const packName = pack?.metadata?.name ?? pack?.collection?.split(".")?.pop();
+  const root = html instanceof jQuery ? html[0] : html;
+  if (!pack || !packName || !root) return null;
+  return { pack, packName, root };
+}
+
+/**
+ * Append a one-line summary under each matching pack row.
+ * @param {HTMLElement} root
+ * @param {Iterable<object>} index
+ * @param {(entry: object) => boolean} filter
+ */
+function appendPackSummaries(root, index, filter) {
+  for (const entry of index) {
+    if (!filter(entry)) continue;
+    const summary = formatPackEntrySummary(entry);
+    if (!summary) continue;
+
+    const row = root.querySelector(
+      `[data-document-id="${entry._id}"], [data-entry-id="${entry._id}"], [data-uuid$=".${entry._id}"]`
+    );
+    if (!row || row.querySelector(".arm2e-pack-stats")) continue;
+
+    const nameEl = row.querySelector(".document-name, .entry-name, .name, h4, a");
+    const stats = document.createElement("div");
+    stats.className = "arm2e-pack-stats";
+    stats.textContent = summary;
+    if (nameEl?.parentElement) nameEl.parentElement.append(stats);
+    else row.append(stats);
+  }
+}
+
+/**
  * Show Speed/Atk/Dam (etc.) under each entry in the Weapons & Armor pack list.
  * Foundry's default directory only shows names.
  *
@@ -10,16 +50,10 @@ import { formatPackEntrySummary } from "../utils/equipment-summary.js";
  * @param {JQuery | HTMLElement} html
  */
 async function enrichWeaponsArmorCompendium(app, html) {
-  if (game.system.id !== "ars-magica-2e") return;
+  const ctx = resolveCompendiumContext(app, html);
+  if (!ctx || ctx.packName !== "arm2e-weapons") return;
 
-  const pack = app.collection ?? app.documentCollection;
-  const packName = pack?.metadata?.name ?? pack?.collection?.split(".")?.pop();
-  if (packName !== "arm2e-weapons") return;
-
-  const root = html instanceof jQuery ? html[0] : html;
-  if (!root) return;
-
-  const index = await pack.getIndex({
+  const index = await ctx.pack.getIndex({
     fields: [
       "type",
       "system.summary",
@@ -39,23 +73,35 @@ async function enrichWeaponsArmorCompendium(app, html) {
     ]
   });
 
-  for (const entry of index) {
-    if (entry.type !== "weapon" && entry.type !== "armor") continue;
-    const summary = formatPackEntrySummary(entry);
-    if (!summary) continue;
+  appendPackSummaries(ctx.root, index, (entry) => entry.type === "weapon" || entry.type === "armor");
+}
 
-    const row = root.querySelector(
-      `[data-document-id="${entry._id}"], [data-entry-id="${entry._id}"], [data-uuid$=".${entry._id}"]`
-    );
-    if (!row || row.querySelector(".arm2e-pack-stats")) continue;
+/**
+ * Show Technique/Form/Level (and R/D/T) under Formulaic Spells pack entries.
+ *
+ * @param {Application} app
+ * @param {JQuery | HTMLElement} html
+ */
+async function enrichSpellsCompendium(app, html) {
+  const ctx = resolveCompendiumContext(app, html);
+  if (!ctx || ctx.packName !== "arm2e-spells") return;
 
-    const nameEl = row.querySelector(".document-name, .entry-name, .name, h4, a");
-    const stats = document.createElement("div");
-    stats.className = "arm2e-pack-stats";
-    stats.textContent = summary;
-    if (nameEl?.parentElement) nameEl.parentElement.append(stats);
-    else row.append(stats);
-  }
+  const index = await ctx.pack.getIndex({
+    fields: [
+      "type",
+      "system.summary",
+      "system.technique",
+      "system.form",
+      "system.artAbbrev",
+      "system.level",
+      "system.isGeneral",
+      "system.range",
+      "system.duration",
+      "system.target"
+    ]
+  });
+
+  appendPackSummaries(ctx.root, index, (entry) => entry.type === "spell");
 }
 
 /**
@@ -116,6 +162,9 @@ export function registerUiHooks() {
     enrichWeaponsArmorCompendium(app, html).catch((error) => {
       console.warn("arm2e | Compendium stat enrichment failed", error);
     });
+    enrichSpellsCompendium(app, html).catch((error) => {
+      console.warn("arm2e | Spell pack enrichment failed", error);
+    });
   });
 
   // Foundry v13 ApplicationV2 also fires this family of hooks.
@@ -124,6 +173,9 @@ export function registerUiHooks() {
     if (name !== "Compendium" && !name.includes("Compendium")) return;
     enrichWeaponsArmorCompendium(app, element).catch((error) => {
       console.warn("arm2e | Compendium V2 stat enrichment failed", error);
+    });
+    enrichSpellsCompendium(app, element).catch((error) => {
+      console.warn("arm2e | Spell pack V2 enrichment failed", error);
     });
   });
 

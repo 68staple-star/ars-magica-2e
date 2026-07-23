@@ -13,6 +13,12 @@ import {
   folderPathSegments,
   resolveVirtueFlawFolderKey
 } from "../modules/utils/virtue-flaw-folders.js";
+import {
+  flattenSpellFolders,
+  resolveSpellFolderKey,
+  spellFolderPathSegments,
+  stripSpellDisplaySuffix
+} from "../modules/utils/spell-folders.js";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(root, "..");
@@ -26,7 +32,7 @@ const OWNERSHIP_INHERIT = -1;
 
 const PACKS = [
   { pack: "arm2e-abilities", file: "abilities.json", type: "Item" },
-  { pack: "arm2e-spells", file: "spells.json", type: "Item" },
+  { pack: "arm2e-spells", file: "spells.json", type: "Item", folders: "spellArts" },
   { pack: "arm2e-weapons", file: "weapons.json", type: "Item" },
   {
     pack: "arm2e-virtues-flaws",
@@ -111,18 +117,31 @@ function buildVirtueFlawFolderIds(pack) {
 }
 
 /**
+ * Deterministic folder id map for Formulaic Spells (Technique → Form).
+ * @param {string} pack
+ * @returns {Map<string, string>}
+ */
+function buildSpellFolderIds(pack) {
+  const ids = new Map();
+  for (const folder of flattenSpellFolders()) {
+    ids.set(folder.key, deterministicId(pack, `folder:${folder.key}`));
+  }
+  return ids;
+}
+
+/**
  * Write Foundry Folder documents into nested source dirs.
  * @param {string} sourceDir
  * @param {string} pack
  * @param {Map<string, string>} folderIds
+ * @param {Array<{ key: string, name: string, sort: number, parentKey: string | null }>} folders
+ * @param {(leafKey: string) => string[]} pathSegments
  */
-async function writeVirtueFlawFolders(sourceDir, pack, folderIds) {
-  const folders = flattenVirtueFlawFolders();
-
+async function writePackFolders(sourceDir, pack, folderIds, folders, pathSegments) {
   for (const folder of folders) {
     const id = folderIds.get(folder.key);
     const parentId = folder.parentKey ? folderIds.get(folder.parentKey) ?? null : null;
-    const dir = join(sourceDir, ...folderPathSegments(folder.key));
+    const dir = join(sourceDir, ...pathSegments(folder.key));
     await mkdir(dir, { recursive: true });
 
     const document = {
@@ -142,6 +161,36 @@ async function writeVirtueFlawFolders(sourceDir, pack, folderIds) {
 }
 
 /**
+ * @param {string} sourceDir
+ * @param {string} pack
+ * @param {Map<string, string>} folderIds
+ */
+async function writeVirtueFlawFolders(sourceDir, pack, folderIds) {
+  await writePackFolders(
+    sourceDir,
+    pack,
+    folderIds,
+    flattenVirtueFlawFolders(),
+    folderPathSegments
+  );
+}
+
+/**
+ * @param {string} sourceDir
+ * @param {string} pack
+ * @param {Map<string, string>} folderIds
+ */
+async function writeSpellFolders(sourceDir, pack, folderIds) {
+  await writePackFolders(
+    sourceDir,
+    pack,
+    folderIds,
+    flattenSpellFolders(),
+    spellFolderPathSegments
+  );
+}
+
+/**
  * @param {object} entry
  * @param {string} pack
  * @param {number} index
@@ -150,7 +199,9 @@ async function writeVirtueFlawFolders(sourceDir, pack, folderIds) {
 function prepareItemDocument(entry, pack, index, folderId = null) {
   const name = entry.name ?? `Entry ${index + 1}`;
   const type = entry.type ?? "equipment";
-  const id = entry._id ?? deterministicId(pack, name);
+  // Keep spell document ids stable when display names gain `[CrIg 15]` suffixes.
+  const idSource = type === "spell" ? stripSpellDisplaySuffix(name) || name : name;
+  const id = entry._id ?? deterministicId(pack, idSource);
 
   return {
     _id: id,
@@ -260,9 +311,23 @@ async function compileOne(config) {
   await rm(destDir, { recursive: true, force: true });
   await mkdir(sourceDir, { recursive: true });
 
-  const folderIds = folders === "virtueFlaw" ? buildVirtueFlawFolderIds(pack) : null;
-  if (folderIds) {
+  /** @type {Map<string, string> | null} */
+  let folderIds = null;
+  /** @type {(system: object) => string} | null */
+  let resolveFolderKey = null;
+  /** @type {(leafKey: string) => string[]} | null */
+  let pathSegments = null;
+
+  if (folders === "virtueFlaw") {
+    folderIds = buildVirtueFlawFolderIds(pack);
+    resolveFolderKey = resolveVirtueFlawFolderKey;
+    pathSegments = folderPathSegments;
     await writeVirtueFlawFolders(sourceDir, pack, folderIds);
+  } else if (folders === "spellArts") {
+    folderIds = buildSpellFolderIds(pack);
+    resolveFolderKey = resolveSpellFolderKey;
+    pathSegments = spellFolderPathSegments;
+    await writeSpellFolders(sourceDir, pack, folderIds);
   }
 
   const usedNames = new Set();
@@ -282,10 +347,10 @@ async function compileOne(config) {
     let folderId = null;
     let outDir = sourceDir;
 
-    if (folderIds && type === "Item") {
-      const leafKey = resolveVirtueFlawFolderKey(entry.system ?? {});
+    if (folderIds && resolveFolderKey && pathSegments && type === "Item") {
+      const leafKey = resolveFolderKey(entry.system ?? {});
       folderId = folderIds.get(leafKey) ?? null;
-      const segments = folderPathSegments(leafKey);
+      const segments = pathSegments(leafKey);
       outDir = join(sourceDir, ...segments);
       await mkdir(outDir, { recursive: true });
     }
