@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "compile:packs": "node scripts/compile-compendiums.mjs",
+    "parse:virtues-flaws": "node scripts/parse-ag0201-virtues-flaws.mjs && node scripts/build-virtues-flaws-pack.mjs",
     "parse:spells": "node scripts/parse-spells-ch9.mjs",
     "parse:abilities": "node scripts/parse-ability-descriptions.mjs",
     "parse:bestiary": "node scripts/parse-bestiary-ch13.mjs",

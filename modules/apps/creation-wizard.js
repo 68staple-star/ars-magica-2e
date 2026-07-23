@@ -37,6 +37,7 @@ import {
   restrictedAbilityPointsSpent,
   splitAbilitySpend
 } from "../utils/virtue-grants.js";
+import { formatVirtueFlawPoints } from "../utils/virtues.js";
 
 const TOTAL_STEPS = 5;
 
@@ -276,6 +277,7 @@ export class ArM2eCreationWizard extends FormApplication {
           pack: packId,
           kind: doc.system?.kind ?? "virtue",
           points: Number(doc.system?.points) || 0,
+          pointsLabel: formatVirtueFlawPoints(Number(doc.system?.points) || 0),
           magnitude: doc.system?.magnitude ?? "",
           category: doc.system?.category ?? "",
           description: doc.system?.description ?? "",
@@ -314,10 +316,10 @@ export class ArM2eCreationWizard extends FormApplication {
 
     const virtuePoints = this.state.virtuesFlaws
       .filter((entry) => entry.kind === "virtue")
-      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
+      .reduce((sum, entry) => sum + Math.abs(Number(entry.points) || 0), 0);
     const flawPoints = this.state.virtuesFlaws
       .filter((entry) => entry.kind === "flaw")
-      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
+      .reduce((sum, entry) => sum + Math.abs(Number(entry.points) || 0), 0);
 
     const spells = this.state.spells.map((spell, index) => {
       const castingTotal = spellCastingTotal(spell, this.state.arts, intelligence);
@@ -846,10 +848,10 @@ export class ArM2eCreationWizard extends FormApplication {
 
     const virtuePoints = this.state.virtuesFlaws
       .filter((entry) => entry.kind === "virtue")
-      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
+      .reduce((sum, entry) => sum + Math.abs(Number(entry.points) || 0), 0);
     const flawPoints = this.state.virtuesFlaws
       .filter((entry) => entry.kind === "flaw")
-      .reduce((sum, entry) => sum + (Number(entry.points) || 0), 0);
+      .reduce((sum, entry) => sum + Math.abs(Number(entry.points) || 0), 0);
 
     if (virtuePoints !== flawPoints) {
       return [`Virtues (${virtuePoints}) and Flaws (${flawPoints}) must balance.`];
