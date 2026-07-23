@@ -67,12 +67,22 @@ function packKey(collection, id) {
   return `!${collection}!${id}`;
 }
 
+/** Foundry `randomID` alphabet — alphanumeric only (no `-` / `_`). */
+const FOUNDRY_ID_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
 /**
+ * Stable 16-char Foundry document id derived from pack + name.
+ * Must match Foundry's ID charset; base64url is unsafe (`-`, `_`, leading `-`).
  * @param {string} pack
  * @param {string} name
  */
 function deterministicId(pack, name) {
-  return createHash("sha256").update(`${pack}\0${name}`).digest("base64url").slice(0, 16);
+  const digest = createHash("sha256").update(`${pack}\0${name}`).digest();
+  let id = "";
+  for (let i = 0; i < 16; i += 1) {
+    id += FOUNDRY_ID_CHARS[digest[i] % FOUNDRY_ID_CHARS.length];
+  }
+  return id;
 }
 
 /**
