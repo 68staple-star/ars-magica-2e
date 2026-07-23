@@ -26,7 +26,7 @@ Ralph's take on Ars Magica 2e for Foundry for the occasional Tuesday night game.
 
 | Pack | Contents |
 |------|----------|
-| Sample Spells | Starter formulaic spells with mechanical stats |
+| Formulaic Spells | ArM5 Ch.9 spellbook (OGL) merged with Appendix III index stubs |
 | Weapons & Armor | Common weapons and armor from the Combat chapter |
 | Virtues & Flaws | AG0201 Core catalog with signed costs (+1…+5 / −1…−5) |
 | Rules Reference | Player cheat sheet for dice, combat, and casting |

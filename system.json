@@ -2,9 +2,9 @@
   "id": "ars-magica-2e",
   "title": "Ars Magica 2nd Edition (Custom)",
   "description": "A custom Ars Magica 2nd Edition system for Foundry VTT.",
-  "version": "0.3.19",
+  "version": "0.3.20",
   "manifest": "https://raw.githubusercontent.com/68staple-star/ars-magica-2e/main/system.json",
-  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.19/ars-magica-2e.zip",
+  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.20/ars-magica-2e.zip",
   "compatibility": {
     "minimum": "11",
     "verified": "13"
@@ -24,15 +24,8 @@
       "type": "Item"
     },
     {
-      "name": "arm2e-formulaic-spells",
-      "label": "Formulaic Spells (ArM5 Index)",
-      "system": "ars-magica-2e",
-      "path": "packs/arm2e-formulaic-spells",
-      "type": "Item"
-    },
-    {
       "name": "arm2e-spells",
-      "label": "Formulaic Spellbook (ArM5 Ch.9)",
+      "label": "Formulaic Spells",
       "system": "ars-magica-2e",
       "path": "packs/arm2e-spells",
       "type": "Item"
