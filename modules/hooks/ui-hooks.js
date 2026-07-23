@@ -84,7 +84,7 @@ async function enrichWeaponsArmorCompendium(app, html) {
  */
 async function enrichSpellsCompendium(app, html) {
   const ctx = resolveCompendiumContext(app, html);
-  if (!ctx || ctx.packName !== "arm2e-spells") return;
+  if (!ctx || (ctx.packName !== "arm2e-spells" && ctx.packName !== "arm2e-grand-grimoire")) return;
 
   const index = await ctx.pack.getIndex({
     fields: [

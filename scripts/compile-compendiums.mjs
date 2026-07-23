@@ -33,6 +33,7 @@ const OWNERSHIP_INHERIT = -1;
 const PACKS = [
   { pack: "arm2e-abilities", file: "abilities.json", type: "Item" },
   { pack: "arm2e-spells", file: "spells.json", type: "Item", folders: "spellArts" },
+  { pack: "arm2e-grand-grimoire", file: "spells-grand-grimoire.json", type: "Item", folders: "spellArts" },
   { pack: "arm2e-weapons", file: "weapons.json", type: "Item" },
   {
     pack: "arm2e-virtues-flaws",

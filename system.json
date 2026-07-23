@@ -2,9 +2,9 @@
   "id": "ars-magica-2e",
   "title": "Ars Magica 2nd Edition (Custom)",
   "description": "A custom Ars Magica 2nd Edition system for Foundry VTT.",
-  "version": "0.3.23",
+  "version": "0.3.24",
   "manifest": "https://raw.githubusercontent.com/68staple-star/ars-magica-2e/main/system.json",
-  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.23/ars-magica-2e.zip",
+  "download": "https://github.com/68staple-star/ars-magica-2e/releases/download/v0.3.24/ars-magica-2e.zip",
   "compatibility": {
     "minimum": "11",
     "verified": "13"
@@ -28,6 +28,13 @@
       "label": "Formulaic Spells",
       "system": "ars-magica-2e",
       "path": "packs/arm2e-spells",
+      "type": "Item"
+    },
+    {
+      "name": "arm2e-grand-grimoire",
+      "label": "Grand Grimoire (Arm5 Ref)",
+      "system": "ars-magica-2e",
+      "path": "packs/arm2e-grand-grimoire",
       "type": "Item"
     },
     {
