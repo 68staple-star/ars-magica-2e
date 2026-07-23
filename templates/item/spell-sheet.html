@@ -9,20 +9,16 @@
     <label class="arm2e-check"><input type="checkbox" name="system.isGeneral" {{checked system.isGeneral}} /> General</label>
     <label>Technique
       <select name="system.technique">
-        {{#select system.technique}}
         {{#each techniques}}
-        <option value="{{id}}">{{label}}</option>
+        <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
         {{/each}}
-        {{/select}}
       </select>
     </label>
     <label>Form
       <select name="system.form">
-        {{#select system.form}}
         {{#each forms}}
-        <option value="{{id}}">{{label}}</option>
+        <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
         {{/each}}
-        {{/select}}
       </select>
     </label>
     <label>Range <input type="text" name="system.range" value="{{system.range}}" /></label>

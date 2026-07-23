@@ -10,8 +10,8 @@ export class ArM2eAbilitySheet extends ArM2eItemSheet {
   }
 
   /** @override */
-  getData() {
-    const context = super.getData();
+  async getData(options = {}) {
+    const context = await super.getData(options);
     const registry = CONFIG.ARM2E;
     context.characteristics = registry.CHARACTERISTICS;
     context.definition = registry.getAbilityByKey?.(this.item.system?.key)
