@@ -241,7 +241,7 @@ export class ArM2eCreationWizard extends FormApplication {
    * @returns {Promise<object[]>}
    */
   async _loadCompendiumSpells() {
-    const packIds = ["ars-magica-2e.arm2e-formulaic-spells", "ars-magica-2e.arm2e-spells"];
+    const packIds = ["ars-magica-2e.arm2e-spells"];
     const entries = [];
 
     for (const packId of packIds) {
@@ -753,7 +753,7 @@ export class ArM2eCreationWizard extends FormApplication {
     const select = this.element.find('[data-path="compendiumSpellId"]')[0];
     const selected = select?.selectedOptions?.[0];
     const itemId = select?.value;
-    const packId = selected?.dataset?.pack ?? "ars-magica-2e.arm2e-formulaic-spells";
+    const packId = selected?.dataset?.pack ?? "ars-magica-2e.arm2e-spells";
     if (!itemId) return;
 
     const pack = game.packs.get(packId);

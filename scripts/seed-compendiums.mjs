@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "compendium-data");
 const files = [
   "abilities.json",
+  "spells.json",
   "spells-arm5-index.json",
   "spells-arm5-ch9.json",
   "equipment-arm5-lom.json",
@@ -22,8 +23,7 @@ const files = [
   "covenants-sample.json",
   "journals-order.json",
   "journals-abilities.json",
-  "beasts-arm5-ch13.json",
-  "spells.json"
+  "beasts-arm5-ch13.json"
 ];
 
 for (const file of files) {
