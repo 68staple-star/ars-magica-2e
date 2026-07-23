@@ -9,6 +9,7 @@ import { registerHotbarHooks } from "./modules/hooks/hotbar-hooks.js";
 import { registerStatusHooks } from "./modules/hooks/status-hooks.js";
 import { registerUiHooks } from "./modules/hooks/ui-hooks.js";
 import { registerTemplateLoading } from "./modules/init/load-templates.js";
+import { registerHandlebarsHelpers } from "./modules/init/handlebars-helpers.js";
 import { registerSheets } from "./modules/init/register-sheets.js";
 import {
   registerAbilityMigration,
@@ -43,6 +44,7 @@ Hooks.on("init", () => {
     registerActorDocumentHooks();
     registerMigrationSettings();
     registerCompendiumSeeding();
+    registerHandlebarsHelpers();
     registerTemplateLoading();
     registerUiHooks();
     registerStatusHooks();
