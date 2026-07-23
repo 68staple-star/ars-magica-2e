@@ -1,6 +1,6 @@
 [
   {
-    "name": "A Mighty Torrent of Water [CrAq 25]",
+    "name": "A Mighty Torrent of Water",
     "type": "spell",
     "system": {
       "level": 25,
@@ -18,7 +18,7 @@
     }
   },
   {
-    "name": "Agony of the Beast [PeAn 10]",
+    "name": "Agony of the Beast",
     "type": "spell",
     "system": {
       "level": 10,
@@ -36,7 +36,7 @@
     }
   },
   {
-    "name": "Air Clear and Pure [PeAu 10]",
+    "name": "Air Clear and Pure",
     "type": "spell",
     "system": {
       "level": 10,
@@ -54,7 +54,7 @@
     }
   },
   {
-    "name": "Air's Ghostly Form [CrAu 5]",
+    "name": "Air's Ghostly Form",
     "type": "spell",
     "system": {
       "level": 5,
@@ -72,7 +72,7 @@
     }
   },
   {
-    "name": "Alleviate the Serpent's Bite [PeAn 10]",
+    "name": "Alleviate the Serpent's Bite",
     "type": "spell",
     "system": {
       "level": 10,
@@ -90,7 +90,7 @@
     }
   },
   {
-    "name": "Arc of Fiery Ribbons [CrIg 25]",
+    "name": "Arc of Fiery Ribbons",
     "type": "spell",
     "system": {
       "level": 25,
@@ -108,7 +108,7 @@
     }
   },
   {
-    "name": "Arm of the Infant [MuCo 20]",
+    "name": "Arm of the Infant",
     "type": "spell",
     "system": {
       "level": 20,
@@ -126,7 +126,7 @@
     }
   },
   {
-    "name": "Ars Magfca The Traitorous Spear [ReHe 20]",
+    "name": "Ars Magfca The Traitorous Spear",
     "type": "spell",
     "system": {
       "level": 20,
@@ -144,7 +144,7 @@
     }
   },
   {
-    "name": "Aura of Ennobled Presence [MuIm 10]",
+    "name": "Aura of Ennobled Presence",
     "type": "spell",
     "system": {
       "level": 10,
@@ -162,7 +162,7 @@
     }
   },
   {
-    "name": "Aura of Rightful Authority [ReMe 20]",
+    "name": "Aura of Rightful Authority",
     "type": "spell",
     "system": {
       "level": 20,
@@ -180,7 +180,7 @@
     }
   },
   {
-    "name": "Awaken the Slumbering Corpse [ReCo 20]",
+    "name": "Awaken the Slumbering Corpse",
     "type": "spell",
     "system": {
       "level": 20,
@@ -198,7 +198,7 @@
     }
   },
   {
-    "name": "Ball of Abysmal Flame [CrIg 30]",
+    "name": "Ball of Abysmal Flame",
     "type": "spell",
     "system": {
       "level": 30,
@@ -216,7 +216,7 @@
     }
   },
   {
-    "name": "Bane of the Decrepit Body [PeCo 25]",
+    "name": "Bane of the Decrepit Body",
     "type": "spell",
     "system": {
       "level": 25,
@@ -234,7 +234,7 @@
     }
   },
   {
-    "name": "Beast of Outlandish Size [MuAn 15]",
+    "name": "Beast of Outlandish Size",
     "type": "spell",
     "system": {
       "level": 15,
@@ -252,7 +252,7 @@
     }
   },
   {
-    "name": "Transformation of the Ravenous Beast to the Torpid Toad [MuAn 20]",
+    "name": "Beast to the Torpid Toad",
     "type": "spell",
     "system": {
       "level": 20,
@@ -260,17 +260,17 @@
       "form": "animal",
       "artAbbrev": "MuAn",
       "isGeneral": false,
-      "range": "",
-      "duration": "",
+      "range": "Near",
+      "duration": "Sun./Perm.",
       "target": "",
       "mastered": false,
-      "notes": "AG0201 2e spell — see core book for full text if notes were incomplete in the extract.",
+      "notes": "Turns any animal into a toad, unless it makes a Size roll of 9+. Birds are so dissimilar to toads that they get a +2 bonus on the roll. Ars MaQlca\n\n(AG0201 2e spell text — cast with 2e Technique + Form + Stamina.)",
       "source": "AG0201 Ars Magica 2nd Edition, Chapter 5 (Spells)",
       "journal": ""
     }
   },
   {
-    "name": "Bind Wound [CrCo 10]",
+    "name": "Bind Wound",
     "type": "spell",
     "system": {
       "level": 10,
@@ -288,7 +288,7 @@
     }
   },
   {
-    "name": "Black Whisper [PeMe 30]",
+    "name": "Black Whisper",
     "type": "spell",
     "system": {
       "level": 30,
@@ -306,7 +306,7 @@
     }
   },
   {
-    "name": "Blade of the Virulent Flame [CrIg 30]",
+    "name": "Blade of the Virulent Flame",
     "type": "spell",
     "system": {
       "level": 30,
@@ -324,7 +324,7 @@
     }
   },
   {
-    "name": "Blasting Wind, Blinding Mist [MuAu 10]",
+    "name": "Blasting Wind, Blinding Mist",
     "type": "spell",
     "system": {
       "level": 10,
@@ -342,7 +342,7 @@
     }
   },
   {
-    "name": "Blessing of Childlike Bliss [PeMe 25]",
+    "name": "Blessing of Childlike Bliss",
     "type": "spell",
     "system": {
       "level": 25,
@@ -360,7 +360,7 @@
     }
   },
   {
-    "name": "Body Made Whole [CrCo 45]",
+    "name": "Body Made Whole",
     "type": "spell",
     "system": {
       "level": 45,
@@ -378,7 +378,7 @@
     }
   },
   {
-    "name": "Break the Oncoming Wave [PeAq 20]",
+    "name": "Break the Oncoming Wave",
     "type": "spell",
     "system": {
       "level": 20,
@@ -396,7 +396,7 @@
     }
   },
   {
-    "name": "Breath of the Open Sky [CrAu 40]",
+    "name": "Breath of the Open Sky",
     "type": "spell",
     "system": {
       "level": 40,
@@ -414,7 +414,7 @@
     }
   },
   {
-    "name": "Breath of Winter [MuAq 15]",
+    "name": "Breath of Winter",
     "type": "spell",
     "system": {
       "level": 15,
@@ -432,7 +432,7 @@
     }
   },
   {
-    "name": "Bridge of Frost [MuAq 20]",
+    "name": "Bridge of Frost",
     "type": "spell",
     "system": {
       "level": 20,
@@ -450,7 +450,7 @@
     }
   },
   {
-    "name": "Bridge of Wood [CrHe 30]",
+    "name": "Bridge of Wood",
     "type": "spell",
     "system": {
       "level": 30,
@@ -468,7 +468,7 @@
     }
   },
   {
-    "name": "Broom of the Winds [ReAu 15]",
+    "name": "Broom of the Winds",
     "type": "spell",
     "system": {
       "level": 15,
@@ -486,7 +486,7 @@
     }
   },
   {
-    "name": "Burst of the Sweeping Flames [ReIg 30]",
+    "name": "Burst of the Sweeping Flames",
     "type": "spell",
     "system": {
       "level": 30,
@@ -504,7 +504,7 @@
     }
   },
   {
-    "name": "Call of the Rushing Waters [InAq 15]",
+    "name": "Call of the Rushing Waters",
     "type": "spell",
     "system": {
       "level": 15,
@@ -522,7 +522,7 @@
     }
   },
   {
-    "name": "Calling the Council of the Trees [InHe 45]",
+    "name": "Calling the Council of the Trees",
     "type": "spell",
     "system": {
       "level": 45,
@@ -540,7 +540,7 @@
     }
   },
   {
-    "name": "Calm the Motion of the Heart [PeMe 15]",
+    "name": "Calm the Motion of the Heart",
     "type": "spell",
     "system": {
       "level": 15,
@@ -558,7 +558,7 @@
     }
   },
   {
-    "name": "Cascade ofR ocks [PeTe 25]",
+    "name": "Cascade ofR ocks",
     "type": "spell",
     "system": {
       "level": 25,
@@ -576,7 +576,7 @@
     }
   },
   {
-    "name": "Chamber of Invisibility [PeIm 25]",
+    "name": "Chamber of Invisibility",
     "type": "spell",
     "system": {
       "level": 25,
@@ -594,7 +594,7 @@
     }
   },
   {
-    "name": "Chaos of the Angry Waves [ReAq 15]",
+    "name": "Chaos of the Angry Waves",
     "type": "spell",
     "system": {
       "level": 15,
@@ -612,7 +612,7 @@
     }
   },
   {
-    "name": "Charge of the Angry Winds [CrAu 30]",
+    "name": "Charge of the Angry Winds",
     "type": "spell",
     "system": {
       "level": 30,
@@ -630,7 +630,7 @@
     }
   },
   {
-    "name": "Charm Against Putrefaction [CrCo 5]",
+    "name": "Charm Against Putrefaction",
     "type": "spell",
     "system": {
       "level": 5,
@@ -648,7 +648,7 @@
     }
   },
   {
-    "name": "Circle of Beast Warding [ReAn 20]",
+    "name": "Circle of Beast Warding",
     "type": "spell",
     "system": {
       "level": 20,
@@ -666,7 +666,7 @@
     }
   },
   {
-    "name": "Circle of Encompassing Flames [CrIg 30]",
+    "name": "Circle of Encompassing Flames",
     "type": "spell",
     "system": {
       "level": 30,
@@ -684,7 +684,7 @@
     }
   },
   {
-    "name": "Circle of the Faerie Stone [CrTe 30]",
+    "name": "Circle of the Faerie Stone",
     "type": "spell",
     "system": {
       "level": 30,
@@ -702,7 +702,7 @@
     }
   },
   {
-    "name": "Circling Winds of Protection � [ReAu 20]",
+    "name": "Circling Winds of Protection �",
     "type": "spell",
     "system": {
       "level": 20,
@@ -720,7 +720,7 @@
     }
   },
   {
-    "name": "Circular Ward Against Demons [ReVi Gen]",
+    "name": "Circular Ward Against Demons",
     "type": "spell",
     "system": {
       "level": 0,
@@ -738,7 +738,7 @@
     }
   },
   {
-    "name": "Cleanse the Verminous Infestation [PeAn 25]",
+    "name": "Cleanse the Verminous Infestation",
     "type": "spell",
     "system": {
       "level": 25,
@@ -756,7 +756,7 @@
     }
   },
   {
-    "name": "Clenching Grasp of the Crushed Heart [PeCo 40]",
+    "name": "Clenching Grasp of the Crushed Heart",
     "type": "spell",
     "system": {
       "level": 40,
@@ -774,7 +774,7 @@
     }
   },
   {
-    "name": "Clenching of the S Earth's Mighty Hand [CrTe 10]",
+    "name": "Clenching of the S Earth's Mighty Hand",
     "type": "spell",
     "system": {
       "level": 10,
@@ -792,7 +792,7 @@
     }
   },
   {
-    "name": "Cloak of Black Feathers [MuCo 35]",
+    "name": "Cloak of Black Feathers",
     "type": "spell",
     "system": {
       "level": 35,
@@ -810,7 +810,7 @@
     }
   },
   {
-    "name": "Cloak of Mist [MuCo 40]",
+    "name": "Cloak of Mist",
     "type": "spell",
     "system": {
       "level": 40,
@@ -828,7 +828,7 @@
     }
   },
   {
-    "name": "Cloak of the Duck's Feathers [ReAq 5]",
+    "name": "Cloak of the Duck's Feathers",
     "type": "spell",
     "system": {
       "level": 5,
@@ -846,7 +846,7 @@
     }
   },
   {
-    "name": "Cloak of Winter [MuAq 30]",
+    "name": "Cloak of Winter",
     "type": "spell",
     "system": {
       "level": 30,
@@ -864,7 +864,7 @@
     }
   },
   {
-    "name": "Clouds of Summer Snow Clouds of Rain and Thunder [CrAu 25]",
+    "name": "Clouds of Summer Snow Clouds of Rain and Thunder",
     "type": "spell",
     "system": {
       "level": 25,
@@ -882,7 +882,7 @@
     }
   },
   {
-    "name": "Clouds of Thunderous Might [MuAu 10]",
+    "name": "Clouds of Thunderous Might",
     "type": "spell",
     "system": {
       "level": 10,
@@ -900,7 +900,7 @@
     }
   },
   {
-    "name": "Coerce the Spirits of the Night [ReMe Gen]",
+    "name": "Coerce the Spirits of the Night",
     "type": "spell",
     "system": {
       "level": 0,
@@ -918,7 +918,7 @@
     }
   },
   {
-    "name": "Coils of the Entangling Plants [ReHe 20]",
+    "name": "Coils of the Entangling Plants",
     "type": "spell",
     "system": {
       "level": 20,
@@ -936,7 +936,7 @@
     }
   },
   {
-    "name": "Commanding the Harnessed Beast [ReAn 30]",
+    "name": "Commanding the Harnessed Beast",
     "type": "spell",
     "system": {
       "level": 30,
@@ -954,7 +954,7 @@
     }
   },
   {
-    "name": "Conflicting Motives [CrMe 15]",
+    "name": "Conflicting Motives",
     "type": "spell",
     "system": {
       "level": 15,
@@ -972,7 +972,7 @@
     }
   },
   {
-    "name": "Confusion of the Insane Vibrations [ReIm 25]",
+    "name": "Confusion of the Insane Vibrations",
     "type": "spell",
     "system": {
       "level": 25,
@@ -990,7 +990,7 @@
     }
   },
   {
-    "name": "Confusion of the Numbed Will· [ReMe 15]",
+    "name": "Confusion of the Numbed Will·",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1008,7 +1008,7 @@
     }
   },
   {
-    "name": "Conjuration of Indubitable Cold [PeIg 20]",
+    "name": "Conjuration of Indubitable Cold",
     "type": "spell",
     "system": {
       "level": 20,
@@ -1026,7 +1026,7 @@
     }
   },
   {
-    "name": "Conjure the Sturdy Vine [CrHe 10]",
+    "name": "Conjure the Sturdy Vine",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1044,7 +1044,7 @@
     }
   },
   {
-    "name": "Conjuring the Mystic Tower [CrTe 50]",
+    "name": "Conjuring the Mystic Tower",
     "type": "spell",
     "system": {
       "level": 50,
@@ -1062,7 +1062,7 @@
     }
   },
   {
-    "name": "Converse with Plants and Trees [InHe 25]",
+    "name": "Converse with Plants and Trees",
     "type": "spell",
     "system": {
       "level": 25,
@@ -1080,7 +1080,7 @@
     }
   },
   {
-    "name": "Creeping Chasm [ReTe 35]",
+    "name": "Creeping Chasm",
     "type": "spell",
     "system": {
       "level": 35,
@@ -1098,7 +1098,7 @@
     }
   },
   {
-    "name": "Creeping Oil [CrAq 10]",
+    "name": "Creeping Oil",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1116,7 +1116,7 @@
     }
   },
   {
-    "name": "Crest of the Earth Wave [ReTe 50]",
+    "name": "Crest of the Earth Wave",
     "type": "spell",
     "system": {
       "level": 50,
@@ -1134,7 +1134,7 @@
     }
   },
   {
-    "name": "Cripple the Howling Wolf [PeAn 15]",
+    "name": "Cripple the Howling Wolf",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1152,7 +1152,7 @@
     }
   },
   {
-    "name": "Curse of Circe [MuCo 30]",
+    "name": "Curse of Circe",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1170,7 +1170,7 @@
     }
   },
   {
-    "name": "Curse of the Desert [PeAq 25]",
+    "name": "Curse of the Desert",
     "type": "spell",
     "system": {
       "level": 25,
@@ -1188,7 +1188,7 @@
     }
   },
   {
-    "name": "Curse of the Haunted Forest [InHe 30]",
+    "name": "Curse of the Haunted Forest",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1206,7 +1206,7 @@
     }
   },
   {
-    "name": "Curse of the Leprous Flesh [PeCo 30]",
+    "name": "Curse of the Leprous Flesh",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1224,7 +1224,7 @@
     }
   },
   {
-    "name": "Curse of the Rotted Wood [PeHe 10]",
+    "name": "Curse of the Rotted Wood",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1242,7 +1242,7 @@
     }
   },
   {
-    "name": "Curse of the U nportended Plague [PeCo 35]",
+    "name": "Curse of the U nportended Plague",
     "type": "spell",
     "system": {
       "level": 35,
@@ -1260,7 +1260,7 @@
     }
   },
   {
-    "name": "Curse of the Unportended Plague [PeCo 35]",
+    "name": "Curse of the Unportended Plague",
     "type": "spell",
     "system": {
       "level": 35,
@@ -1278,7 +1278,7 @@
     }
   },
   {
-    "name": "Curse of the Unruly Tongue [ReCo 10]",
+    "name": "Curse of the Unruly Tongue",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1296,7 +1296,7 @@
     }
   },
   {
-    "name": "Dance of the Staves [InHe 10]",
+    "name": "Dance of the Staves",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1314,7 +1314,7 @@
     }
   },
   {
-    "name": "Decay Fur and Hide [PeAn 10]",
+    "name": "Decay Fur and Hide",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1332,7 +1332,7 @@
     }
   },
   {
-    "name": "Deluge of Rushing and Dashing [CrAq 20]",
+    "name": "Deluge of Rushing and Dashing",
     "type": "spell",
     "system": {
       "level": 20,
@@ -1350,7 +1350,7 @@
     }
   },
   {
-    "name": "Demon's Eternal Oblivion [PeVi Gen]",
+    "name": "Demon's Eternal Oblivion",
     "type": "spell",
     "system": {
       "level": 0,
@@ -1368,7 +1368,7 @@
     }
   },
   {
-    "name": "Despair of the Quivering Manacles [ReCo 10]",
+    "name": "Despair of the Quivering Manacles",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1386,7 +1386,7 @@
     }
   },
   {
-    "name": "Discern Own Illusions [InIm 5]",
+    "name": "Discern Own Illusions",
     "type": "spell",
     "system": {
       "level": 5,
@@ -1404,7 +1404,7 @@
     }
   },
   {
-    "name": "Discern the Images of Truth and Falsehood [InIm Gen]",
+    "name": "Discern the Images of Truth and Falsehood",
     "type": "spell",
     "system": {
       "level": 0,
@@ -1422,7 +1422,7 @@
     }
   },
   {
-    "name": "Disenchant [PeVi Gen]",
+    "name": "Disenchant",
     "type": "spell",
     "system": {
       "level": 0,
@@ -1440,7 +1440,7 @@
     }
   },
   {
-    "name": "Disguise of the New Visage [MuCo 15]",
+    "name": "Disguise of the New Visage",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1458,7 +1458,7 @@
     }
   },
   {
-    "name": "Disguise of the Putrid Aroma [ReAn 5]",
+    "name": "Disguise of the Putrid Aroma",
     "type": "spell",
     "system": {
       "level": 5,
@@ -1476,7 +1476,7 @@
     }
   },
   {
-    "name": "Disguise of the Transformed Image [MuIm 15]",
+    "name": "Disguise of the Transformed Image",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1494,7 +1494,7 @@
     }
   },
   {
-    "name": "Dispel the Phantom Image [PeIm Gen]",
+    "name": "Dispel the Phantom Image",
     "type": "spell",
     "system": {
       "level": 0,
@@ -1512,7 +1512,7 @@
     }
   },
   {
-    "name": "Douse the Fire [CrAq 5]",
+    "name": "Douse the Fire",
     "type": "spell",
     "system": {
       "level": 5,
@@ -1530,7 +1530,7 @@
     }
   },
   {
-    "name": "Dust to Dust [PeCo 15]",
+    "name": "Dust to Dust",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1548,7 +1548,7 @@
     }
   },
   {
-    "name": "Earth Shock [ReTe 30]",
+    "name": "Earth Shock",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1566,7 +1566,7 @@
     }
   },
   {
-    "name": "Earth that Breaks NoM ore [MuTe 20]",
+    "name": "Earth that Breaks NoM ore",
     "type": "spell",
     "system": {
       "level": 20,
@@ -1584,7 +1584,7 @@
     }
   },
   {
-    "name": "Earth's Mighty Hand [CrTe 10]",
+    "name": "Earth's Mighty Hand",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1602,7 +1602,7 @@
     }
   },
   {
-    "name": "Edge of the Razor [MuTe 5]",
+    "name": "Edge of the Razor",
     "type": "spell",
     "system": {
       "level": 5,
@@ -1620,7 +1620,7 @@
     }
   },
   {
-    "name": "Emotion of Reversed Intentions [MuMe 25]",
+    "name": "Emotion of Reversed Intentions",
     "type": "spell",
     "system": {
       "level": 25,
@@ -1638,7 +1638,7 @@
     }
   },
   {
-    "name": "Enchantment of Detachment [MuMe 15]",
+    "name": "Enchantment of Detachment",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1656,7 +1656,7 @@
     }
   },
   {
-    "name": "Enchantment of the Scrying Pool [InAq 30]",
+    "name": "Enchantment of the Scrying Pool",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1674,7 +1674,7 @@
     }
   },
   {
-    "name": "Endurance of the Berserkers [ReCo 15]",
+    "name": "Endurance of the Berserkers",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1692,7 +1692,7 @@
     }
   },
   {
-    "name": "Enslave the Mortal Mind [CrTe 50]",
+    "name": "Enslave the Mortal Mind",
     "type": "spell",
     "system": {
       "level": 50,
@@ -1710,7 +1710,7 @@
     }
   },
   {
-    "name": "Evil Eye [MuCo 5]",
+    "name": "Evil Eye",
     "type": "spell",
     "system": {
       "level": 5,
@@ -1728,7 +1728,7 @@
     }
   },
   {
-    "name": "Exchange of the Two Minds [ReMe 30]",
+    "name": "Exchange of the Two Minds",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1746,7 +1746,7 @@
     }
   },
   {
-    "name": "Eye of the Eons [InTe 10]",
+    "name": "Eye of the Eons",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1764,7 +1764,7 @@
     }
   },
   {
-    "name": "Eye of the Treacherous Terrain [InTe 15]",
+    "name": "Eye of the Treacherous Terrain",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1782,7 +1782,7 @@
     }
   },
   {
-    "name": "Eyes of the Bat [CrAu 25]",
+    "name": "Eyes of the Bat",
     "type": "spell",
     "system": {
       "level": 25,
@@ -1800,7 +1800,7 @@
     }
   },
   {
-    "name": "Eyes of the Cat [MuCo 10]",
+    "name": "Eyes of the Cat",
     "type": "spell",
     "system": {
       "level": 10,
@@ -1818,7 +1818,7 @@
     }
   },
   {
-    "name": "Eyes of the Past [InIm 25]",
+    "name": "Eyes of the Past",
     "type": "spell",
     "system": {
       "level": 25,
@@ -1836,7 +1836,7 @@
     }
   },
   {
-    "name": "Faeries of the Mountains [ReTe Gen]",
+    "name": "Faeries of the Mountains",
     "type": "spell",
     "system": {
       "level": 0,
@@ -1854,7 +1854,7 @@
     }
   },
   {
-    "name": "Faeries of the Waters [ReAq Gen]",
+    "name": "Faeries of the Waters",
     "type": "spell",
     "system": {
       "level": 0,
@@ -1872,7 +1872,7 @@
     }
   },
   {
-    "name": "Fist of Shattering [PeTe 5]",
+    "name": "Fist of Shattering",
     "type": "spell",
     "system": {
       "level": 5,
@@ -1890,7 +1890,7 @@
     }
   },
   {
-    "name": "Flames of Sculpted Ice [MuIg 30]",
+    "name": "Flames of Sculpted Ice",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1908,7 +1908,7 @@
     }
   },
   {
-    "name": "Fog of Confusion [MuAu 25]",
+    "name": "Fog of Confusion",
     "type": "spell",
     "system": {
       "level": 25,
@@ -1926,7 +1926,7 @@
     }
   },
   {
-    "name": "Footsteps of Slippery Oil [CrAq 15]",
+    "name": "Footsteps of Slippery Oil",
     "type": "spell",
     "system": {
       "level": 15,
@@ -1944,7 +1944,7 @@
     }
   },
   {
-    "name": "Fragile Image of the Painted Statue [CrIm 5]",
+    "name": "Fragile Image of the Painted Statue",
     "type": "spell",
     "system": {
       "level": 5,
@@ -1962,7 +1962,7 @@
     }
   },
   {
-    "name": "Free the Accursed Body [CrCo Gen]",
+    "name": "Free the Accursed Body",
     "type": "spell",
     "system": {
       "level": 0,
@@ -1980,7 +1980,7 @@
     }
   },
   {
-    "name": "Freeing the Striding Tree [ReHe 30]",
+    "name": "Freeing the Striding Tree",
     "type": "spell",
     "system": {
       "level": 30,
@@ -1998,7 +1998,7 @@
     }
   },
   {
-    "name": "Frosty Breath of the Spoken Lie [InMe 20]",
+    "name": "Frosty Breath of the Spoken Lie",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2016,7 +2016,7 @@
     }
   },
   {
-    "name": "Gather the Essence of the Beast [MuVi 15]",
+    "name": "Gather the Essence of the Beast",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2034,7 +2034,7 @@
     }
   },
   {
-    "name": "Gathering of the Stormy Might [ReAu 20]",
+    "name": "Gathering of the Stormy Might",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2052,7 +2052,7 @@
     }
   },
   {
-    "name": "Gentle Touch of the Purified Body [CrCo 15]",
+    "name": "Gentle Touch of the Purified Body",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2070,7 +2070,7 @@
     }
   },
   {
-    "name": "Gift of Reason [CrMe 30]",
+    "name": "Gift of Reason",
     "type": "spell",
     "system": {
       "level": 30,
@@ -2088,7 +2088,7 @@
     }
   },
   {
-    "name": "Gift of the Bear's Fortitude [MuCo 30]",
+    "name": "Gift of the Bear's Fortitude",
     "type": "spell",
     "system": {
       "level": 30,
@@ -2106,7 +2106,7 @@
     }
   },
   {
-    "name": "Gift of the Floating Wood [ReAq 10]",
+    "name": "Gift of the Floating Wood",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2124,7 +2124,7 @@
     }
   },
   {
-    "name": "Gift of the Frog's Legs [ReCo 15]",
+    "name": "Gift of the Frog's Legs",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2142,7 +2142,7 @@
     }
   },
   {
-    "name": "Gift of Vigor [ReCo 20]",
+    "name": "Gift of Vigor",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2160,7 +2160,7 @@
     }
   },
   {
-    "name": "Grant Lungs of the Fish [MuAq 20]",
+    "name": "Grant Lungs of the Fish",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2178,7 +2178,7 @@
     }
   },
   {
-    "name": "Grip of the Choking Hand [PeCo 10]",
+    "name": "Grip of the Choking Hand",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2196,7 +2196,7 @@
     }
   },
   {
-    "name": "Growth and Shrinking [MuCo 20]",
+    "name": "Growth and Shrinking",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2214,7 +2214,7 @@
     }
   },
   {
-    "name": "Growth of the Creeping Things [MuAn 10]",
+    "name": "Growth of the Creeping Things",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2232,7 +2232,7 @@
     }
   },
   {
-    "name": "Hands of the Grasping Earth [MuTe 15]",
+    "name": "Hands of the Grasping Earth",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2250,7 +2250,7 @@
     }
   },
   {
-    "name": "Haunt of the Living Ghost [ReIm 40]",
+    "name": "Haunt of the Living Ghost",
     "type": "spell",
     "system": {
       "level": 40,
@@ -2268,7 +2268,7 @@
     }
   },
   {
-    "name": "Heat of Hell's Impending Doom [MuAu 35]",
+    "name": "Heat of Hell's Impending Doom",
     "type": "spell",
     "system": {
       "level": 35,
@@ -2286,7 +2286,7 @@
     }
   },
   {
-    "name": "Heat of the Searing Forge [CrIg 10]",
+    "name": "Heat of the Searing Forge",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2304,7 +2304,7 @@
     }
   },
   {
-    "name": "HeatofHell'slmpendingDoom [MuAu 35]",
+    "name": "HeatofHell'slmpendingDoom",
     "type": "spell",
     "system": {
       "level": 35,
@@ -2322,7 +2322,7 @@
     }
   },
   {
-    "name": "Hermes' Portal [ReTe 75]",
+    "name": "Hermes' Portal",
     "type": "spell",
     "system": {
       "level": 75,
@@ -2340,7 +2340,7 @@
     }
   },
   {
-    "name": "Hornet Fire [MuIg 15]",
+    "name": "Hornet Fire",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2358,7 +2358,7 @@
     }
   },
   {
-    "name": "Hunt for the Wild Herb [InHe 15]",
+    "name": "Hunt for the Wild Herb",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2376,7 +2376,7 @@
     }
   },
   {
-    "name": "Hunter's Sense [InAn 30]",
+    "name": "Hunter's Sense",
     "type": "spell",
     "system": {
       "level": 30,
@@ -2394,7 +2394,7 @@
     }
   },
   {
-    "name": "I Tangle of Wood and Thorns [ReHe 15]",
+    "name": "I Tangle of Wood and Thorns",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2412,7 +2412,7 @@
     }
   },
   {
-    "name": "Ice of Drowning [MuAq 25]",
+    "name": "Ice of Drowning",
     "type": "spell",
     "system": {
       "level": 25,
@@ -2430,7 +2430,7 @@
     }
   },
   {
-    "name": "Illusion of Cool Flames [PeIm 20]",
+    "name": "Illusion of Cool Flames",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2448,7 +2448,7 @@
     }
   },
   {
-    "name": "Illusion of the Altered Image [MuIm 10]",
+    "name": "Illusion of the Altered Image",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2466,7 +2466,7 @@
     }
   },
   {
-    "name": "Illusion of the Misplaced Castle [ReIm 30]",
+    "name": "Illusion of the Misplaced Castle",
     "type": "spell",
     "system": {
       "level": 30,
@@ -2484,7 +2484,7 @@
     }
   },
   {
-    "name": "Illusion of the Shifted Image [ReIm 10]",
+    "name": "Illusion of the Shifted Image",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2502,7 +2502,7 @@
     }
   },
   {
-    "name": "Image from the Wizard Tom [MuIm 15]",
+    "name": "Image from the Wizard Tom",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2520,7 +2520,7 @@
     }
   },
   {
-    "name": "Image from the Wizard Torn [ReIm 15]",
+    "name": "Image from the Wizard Torn",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2538,7 +2538,7 @@
     }
   },
   {
-    "name": "Image of the Beast [InAn 5]",
+    "name": "Image of the Beast",
     "type": "spell",
     "system": {
       "level": 5,
@@ -2556,7 +2556,7 @@
     }
   },
   {
-    "name": "Image of the Inanimate Thing [CrIm 10]",
+    "name": "Image of the Inanimate Thing",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2574,7 +2574,7 @@
     }
   },
   {
-    "name": "Image of the Past State [InIm 15]",
+    "name": "Image of the Past State",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2592,7 +2592,7 @@
     }
   },
   {
-    "name": "Image Phantom [MuIm 20]",
+    "name": "Image Phantom",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2610,7 +2610,7 @@
     }
   },
   {
-    "name": "Incantation of C Summoning the Dead [ReMe 25]",
+    "name": "Incantation of C Summoning the Dead",
     "type": "spell",
     "system": {
       "level": 25,
@@ -2628,7 +2628,7 @@
     }
   },
   {
-    "name": "Incantation of Putrid Wine [PeAq 15]",
+    "name": "Incantation of Putrid Wine",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2646,7 +2646,7 @@
     }
   },
   {
-    "name": "Incantation of the Body Made Whole [CrCo 45]",
+    "name": "Incantation of the Body Made Whole",
     "type": "spell",
     "system": {
       "level": 45,
@@ -2664,7 +2664,7 @@
     }
   },
   {
-    "name": "Incantation of the Milky Eyes [PeCo 20]",
+    "name": "Incantation of the Milky Eyes",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2682,7 +2682,7 @@
     }
   },
   {
-    "name": "Infernal Smoke of Death Rain of Oil [MuAu 50]",
+    "name": "Infernal Smoke of Death Rain of Oil",
     "type": "spell",
     "system": {
       "level": 50,
@@ -2700,7 +2700,7 @@
     }
   },
   {
-    "name": "Insane Vibrations [MuIm 25]",
+    "name": "Insane Vibrations",
     "type": "spell",
     "system": {
       "level": 25,
@@ -2718,7 +2718,7 @@
     }
   },
   {
-    "name": "Int Enslave the Mortal Mind [ReMe 50]",
+    "name": "Int Enslave the Mortal Mind",
     "type": "spell",
     "system": {
       "level": 50,
@@ -2736,7 +2736,7 @@
     }
   },
   {
-    "name": "Intuition of the Forest [InHe 10]",
+    "name": "Intuition of the Forest",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2754,7 +2754,7 @@
     }
   },
   {
-    "name": "Invisibility of the Standing Wizard [PeIm 15]",
+    "name": "Invisibility of the Standing Wizard",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2772,7 +2772,7 @@
     }
   },
   {
-    "name": "Invisible Hand of the Thief [ReTe 15]",
+    "name": "Invisible Hand of the Thief",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2790,7 +2790,7 @@
     }
   },
   {
-    "name": "Invocation of Weariness [PeCo 5]",
+    "name": "Invocation of Weariness",
     "type": "spell",
     "system": {
       "level": 5,
@@ -2808,7 +2808,7 @@
     }
   },
   {
-    "name": "Jupiter's Resounding Blow [ReAu 10]",
+    "name": "Jupiter's Resounding Blow",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2826,7 +2826,7 @@
     }
   },
   {
-    "name": "Lamp Without Flame [CrIg 10]",
+    "name": "Lamp Without Flame",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2844,7 +2844,7 @@
     }
   },
   {
-    "name": "Lay to Rest the Haunting Spirit [MuMe Gen]",
+    "name": "Lay to Rest the Haunting Spirit",
     "type": "spell",
     "system": {
       "level": 0,
@@ -2862,7 +2862,7 @@
     }
   },
   {
-    "name": "Leap of the Fire [ReIg 15]",
+    "name": "Leap of the Fire",
     "type": "spell",
     "system": {
       "level": 15,
@@ -2880,7 +2880,7 @@
     }
   },
   {
-    "name": "Lifting the Dangling Puppet [ReCo 20]",
+    "name": "Lifting the Dangling Puppet",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2898,7 +2898,7 @@
     }
   },
   {
-    "name": "Light Shaft of the Night [ReIg 10]",
+    "name": "Light Shaft of the Night",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2916,7 +2916,7 @@
     }
   },
   {
-    "name": "Lord of the Trees [ReHe 25]",
+    "name": "Lord of the Trees",
     "type": "spell",
     "system": {
       "level": 25,
@@ -2934,7 +2934,7 @@
     }
   },
   {
-    "name": "Loss of But a Moment's Memory [PeMe 20]",
+    "name": "Loss of But a Moment's Memory",
     "type": "spell",
     "system": {
       "level": 20,
@@ -2952,7 +2952,7 @@
     }
   },
   {
-    "name": "Lungs of the Fish [MuAq 10]",
+    "name": "Lungs of the Fish",
     "type": "spell",
     "system": {
       "level": 10,
@@ -2970,7 +2970,7 @@
     }
   },
   {
-    "name": "Lungs of Water and Death [CrAq 35]",
+    "name": "Lungs of Water and Death",
     "type": "spell",
     "system": {
       "level": 35,
@@ -2988,7 +2988,7 @@
     }
   },
   {
-    "name": "M Stone of the Hundred Shards [CrTe 15]",
+    "name": "M Stone of the Hundred Shards",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3006,7 +3006,7 @@
     }
   },
   {
-    "name": "Maintaining the Demanding Spell [ReVi Gen]",
+    "name": "Maintaining the Demanding Spell",
     "type": "spell",
     "system": {
       "level": 0,
@@ -3024,7 +3024,7 @@
     }
   },
   {
-    "name": "Mastering the Unruly Beast [ReAn 25]",
+    "name": "Mastering the Unruly Beast",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3042,7 +3042,7 @@
     }
   },
   {
-    "name": "Memories Never Quite Lived [MuMe 20]",
+    "name": "Memories Never Quite Lived",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3060,7 +3060,7 @@
     }
   },
   {
-    "name": "Memory of the Distant Dream [CrMe 20]",
+    "name": "Memory of the Distant Dream",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3078,7 +3078,7 @@
     }
   },
   {
-    "name": "Mighty Torrent of Water [CrAq 25]",
+    "name": "Mighty Torrent of Water",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3096,7 +3096,7 @@
     }
   },
   {
-    "name": "Mind of the Beast [MuMe 30]",
+    "name": "Mind of the Beast",
     "type": "spell",
     "system": {
       "level": 30,
@@ -3114,7 +3114,7 @@
     }
   },
   {
-    "name": "Mists of Change [MuCo 30]",
+    "name": "Mists of Change",
     "type": "spell",
     "system": {
       "level": 30,
@@ -3132,7 +3132,7 @@
     }
   },
   {
-    "name": "Moonbeam [CrIg 5]",
+    "name": "Moonbeam",
     "type": "spell",
     "system": {
       "level": 5,
@@ -3150,7 +3150,7 @@
     }
   },
   {
-    "name": "Neptune's Wrath [CrAu 50]",
+    "name": "Neptune's Wrath",
     "type": "spell",
     "system": {
       "level": 50,
@@ -3168,7 +3168,7 @@
     }
   },
   {
-    "name": "Notes of a Delightful Sound [MuIm 15]",
+    "name": "Notes of a Delightful Sound",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3186,7 +3186,7 @@
     }
   },
   {
-    "name": "Object of Increased Size [MuTe 15]",
+    "name": "Object of Increased Size",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3204,7 +3204,7 @@
     }
   },
   {
-    "name": "Obliteration of the Metallic Barrier [PeTe 20]",
+    "name": "Obliteration of the Metallic Barrier",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3222,7 +3222,7 @@
     }
   },
   {
-    "name": "Opening the Earth's Pore [CrTe 40]",
+    "name": "Opening the Earth's Pore",
     "type": "spell",
     "system": {
       "level": 40,
@@ -3240,7 +3240,7 @@
     }
   },
   {
-    "name": "Opening the Intangible Tunnel [ReVi Gen]",
+    "name": "Opening the Intangible Tunnel",
     "type": "spell",
     "system": {
       "level": 0,
@@ -3258,7 +3258,7 @@
     }
   },
   {
-    "name": "Opening the Tome of the Animal's Mind [InAn 25]",
+    "name": "Opening the Tome of the Animal's Mind",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3276,7 +3276,7 @@
     }
   },
   {
-    "name": "Pains of the Perpetual Worry [CrMe 20]",
+    "name": "Pains of the Perpetual Worry",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3294,7 +3294,7 @@
     }
   },
   {
-    "name": "Palm of Flame [CrIg 5]",
+    "name": "Palm of Flame",
     "type": "spell",
     "system": {
       "level": 5,
@@ -3312,7 +3312,7 @@
     }
   },
   {
-    "name": "Palm of Flame Heat of the Searing Forge [CrIg 10]",
+    "name": "Palm of Flame Heat of the Searing Forge",
     "type": "spell",
     "system": {
       "level": 10,
@@ -3330,7 +3330,7 @@
     }
   },
   {
-    "name": "Panic of the Elephant's Mouse [ReAn 15]",
+    "name": "Panic of the Elephant's Mouse",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3348,7 +3348,7 @@
     }
   },
   {
-    "name": "Panic of the Trembling Heart [CrMe 15]",
+    "name": "Panic of the Trembling Heart",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3366,7 +3366,7 @@
     }
   },
   {
-    "name": "Parching Wind [PeAq 10]",
+    "name": "Parching Wind",
     "type": "spell",
     "system": {
       "level": 10,
@@ -3384,7 +3384,7 @@
     }
   },
   {
-    "name": "Parting the Waters [ReAq 25]",
+    "name": "Parting the Waters",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3402,7 +3402,7 @@
     }
   },
   {
-    "name": "Passion's Lost Feeling [MuMe 20]",
+    "name": "Passion's Lost Feeling",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3420,7 +3420,7 @@
     }
   },
   {
-    "name": "Pe Emotion of Reversed Intentions [MuMe 25]",
+    "name": "Pe Emotion of Reversed Intentions",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3438,7 +3438,7 @@
     }
   },
   {
-    "name": "Peering into the Mortal Mind [CrMe 30]",
+    "name": "Peering into the Mortal Mind",
     "type": "spell",
     "system": {
       "level": 30,
@@ -3456,7 +3456,7 @@
     }
   },
   {
-    "name": "Perceive Magical Scent [InVi 20]",
+    "name": "Perceive Magical Scent",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3474,7 +3474,7 @@
     }
   },
   {
-    "name": "Perception of the Conflicting Motives [InMe 15]",
+    "name": "Perception of the Conflicting Motives",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3492,7 +3492,7 @@
     }
   },
   {
-    "name": "Phantasm of the Human Form [CrIm 25]",
+    "name": "Phantasm of the Human Form",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3510,7 +3510,7 @@
     }
   },
   {
-    "name": "Phantasm of the Talking Head [CrIm 10]",
+    "name": "Phantasm of the Talking Head",
     "type": "spell",
     "system": {
       "level": 10,
@@ -3528,7 +3528,7 @@
     }
   },
   {
-    "name": "Phantasmal Animal [CrIm 20]",
+    "name": "Phantasmal Animal",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3546,7 +3546,7 @@
     }
   },
   {
-    "name": "Phantasmal Fire [CrIm 15]",
+    "name": "Phantasmal Fire",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3564,7 +3564,7 @@
     }
   },
   {
-    "name": "Physician's Eye [InCo 5]",
+    "name": "Physician's Eye",
     "type": "spell",
     "system": {
       "level": 5,
@@ -3582,7 +3582,7 @@
     }
   },
   {
-    "name": "Piercing Shaft of Wood [InHe 20]",
+    "name": "Piercing Shaft of Wood",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3600,7 +3600,7 @@
     }
   },
   {
-    "name": "Pilum of Fire [CrIg 20]",
+    "name": "Pilum of Fire",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3618,7 +3618,7 @@
     }
   },
   {
-    "name": "Pit of the Gaping Earth [PeTe 15]",
+    "name": "Pit of the Gaping Earth",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3636,7 +3636,7 @@
     }
   },
   {
-    "name": "Plant's Whithering Bane [PeHe 20]",
+    "name": "Plant's Whithering Bane",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3654,7 +3654,7 @@
     }
   },
   {
-    "name": "Poison and Purity [InAq 10]",
+    "name": "Poison and Purity",
     "type": "spell",
     "system": {
       "level": 10,
@@ -3672,7 +3672,7 @@
     }
   },
   {
-    "name": "Posing the Silent Question [InMe 25]",
+    "name": "Posing the Silent Question",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3690,7 +3690,7 @@
     }
   },
   {
-    "name": "Preternatural Growth and Shrinking [MuCo 20]",
+    "name": "Preternatural Growth and Shrinking",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3708,7 +3708,7 @@
     }
   },
   {
-    "name": "Prison of Flames [MuIg 15]",
+    "name": "Prison of Flames",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3726,7 +3726,7 @@
     }
   },
   {
-    "name": "Probe for Pure Silver [InTe 5]",
+    "name": "Probe for Pure Silver",
     "type": "spell",
     "system": {
       "level": 5,
@@ -3744,7 +3744,7 @@
     }
   },
   {
-    "name": "Probe Nature's Hidden Lore [InHe 5]",
+    "name": "Probe Nature's Hidden Lore",
     "type": "spell",
     "system": {
       "level": 5,
@@ -3762,7 +3762,7 @@
     }
   },
   {
-    "name": "Pull of the Skybound Winds [ReAu 45]",
+    "name": "Pull of the Skybound Winds",
     "type": "spell",
     "system": {
       "level": 45,
@@ -3780,7 +3780,7 @@
     }
   },
   {
-    "name": "Pull of the Wateey Grave [CrAu 25]",
+    "name": "Pull of the Wateey Grave",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3798,7 +3798,7 @@
     }
   },
   {
-    "name": "Pull of the Watery Grave [ReAq 25]",
+    "name": "Pull of the Watery Grave",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3816,7 +3816,7 @@
     }
   },
   {
-    "name": "Push of the Gentle Wave [ReAq 10]",
+    "name": "Push of the Gentle Wave",
     "type": "spell",
     "system": {
       "level": 10,
@@ -3834,7 +3834,7 @@
     }
   },
   {
-    "name": "Quench the Rippling Flames [PeIg 5]",
+    "name": "Quench the Rippling Flames",
     "type": "spell",
     "system": {
       "level": 5,
@@ -3852,7 +3852,7 @@
     }
   },
   {
-    "name": "Quiet the Raging Winds [PeAu 25]",
+    "name": "Quiet the Raging Winds",
     "type": "spell",
     "system": {
       "level": 25,
@@ -3870,7 +3870,7 @@
     }
   },
   {
-    "name": "Quiet the Raging Winds The Cloudless Sky Returned [PeAu 30]",
+    "name": "Quiet the Raging Winds The Cloudless Sky Returned",
     "type": "spell",
     "system": {
       "level": 30,
@@ -3888,7 +3888,7 @@
     }
   },
   {
-    "name": "Quite Lived [MuMe 20]",
+    "name": "Quite Lived",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3906,7 +3906,7 @@
     }
   },
   {
-    "name": "Quivering Manacles [PeCo 10]",
+    "name": "Quivering Manacles",
     "type": "spell",
     "system": {
       "level": 10,
@@ -3924,7 +3924,7 @@
     }
   },
   {
-    "name": "R Lay to Rest the Haunting Spirit [PeMe Gen]",
+    "name": "R Lay to Rest the Haunting Spirit",
     "type": "spell",
     "system": {
       "level": 0,
@@ -3942,7 +3942,7 @@
     }
   },
   {
-    "name": "Rain of Stones [MuAu 15]",
+    "name": "Rain of Stones",
     "type": "spell",
     "system": {
       "level": 15,
@@ -3960,7 +3960,7 @@
     }
   },
   {
-    "name": "Rain of Stones Talons of the Winds [MuAu 20]",
+    "name": "Rain of Stones Talons of the Winds",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3978,7 +3978,7 @@
     }
   },
   {
-    "name": "Re Passion's Lost Feeling [PeMe 20]",
+    "name": "Re Passion's Lost Feeling",
     "type": "spell",
     "system": {
       "level": 20,
@@ -3996,7 +3996,7 @@
     }
   },
   {
-    "name": "Re Tracks of the Faerie Glow [InTe 25]",
+    "name": "Re Tracks of the Faerie Glow",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4014,7 +4014,7 @@
     }
   },
   {
-    "name": "Removal of the Conspicuous Sigil [PeIm 10]",
+    "name": "Removal of the Conspicuous Sigil",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4032,7 +4032,7 @@
     }
   },
   {
-    "name": "Repel the Wooden Shafts [ReHe 10]",
+    "name": "Repel the Wooden Shafts",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4050,7 +4050,7 @@
     }
   },
   {
-    "name": "Restoration of the Defiled Body [CrCo 25]",
+    "name": "Restoration of the Defiled Body",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4068,7 +4068,7 @@
     }
   },
   {
-    "name": "Restoration of the Lost Image [CrIm Gen]",
+    "name": "Restoration of the Lost Image",
     "type": "spell",
     "system": {
       "level": 0,
@@ -4086,7 +4086,7 @@
     }
   },
   {
-    "name": "Restore the Image Transformed [MuIm Gen]",
+    "name": "Restore the Image Transformed",
     "type": "spell",
     "system": {
       "level": 0,
@@ -4104,7 +4104,7 @@
     }
   },
   {
-    "name": "Restore the Moved Image [ReIm Gen]",
+    "name": "Restore the Moved Image",
     "type": "spell",
     "system": {
       "level": 0,
@@ -4122,7 +4122,7 @@
     }
   },
   {
-    "name": "Return of Mental Lucidity [CrMe Gen]",
+    "name": "Return of Mental Lucidity",
     "type": "spell",
     "system": {
       "level": 0,
@@ -4140,7 +4140,7 @@
     }
   },
   {
-    "name": "Revealed Flaws of Mortal Flesh [InCo 10]",
+    "name": "Revealed Flaws of Mortal Flesh",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4158,7 +4158,7 @@
     }
   },
   {
-    "name": "Ring of Warding Against Spirits [ReMe Gen]",
+    "name": "Ring of Warding Against Spirits",
     "type": "spell",
     "system": {
       "level": 0,
@@ -4176,7 +4176,7 @@
     }
   },
   {
-    "name": "Rise of the Feathery Body [ReCo 15]",
+    "name": "Rise of the Feathery Body",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4194,7 +4194,7 @@
     }
   },
   {
-    "name": "Rising Ire [CrMe 15]",
+    "name": "Rising Ire",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4212,7 +4212,7 @@
     }
   },
   {
-    "name": "Rock of Viscid Clay [MuTe 15]",
+    "name": "Rock of Viscid Clay",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4230,7 +4230,7 @@
     }
   },
   {
-    "name": "Room of Stale Air [PeAu 20]",
+    "name": "Room of Stale Air",
     "type": "spell",
     "system": {
       "level": 20,
@@ -4248,7 +4248,7 @@
     }
   },
   {
-    "name": "Rope of Bronze [InHe 15]",
+    "name": "Rope of Bronze",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4266,7 +4266,7 @@
     }
   },
   {
-    "name": "Rusted Decay ofT en Score Years [PeTe 15]",
+    "name": "Rusted Decay ofT en Score Years",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4284,7 +4284,7 @@
     }
   },
   {
-    "name": "Sailor's Foretaste of the Morrow [CrAu 20]",
+    "name": "Sailor's Foretaste of the Morrow",
     "type": "spell",
     "system": {
       "level": 20,
@@ -4302,7 +4302,7 @@
     }
   },
   {
-    "name": "Scales of the Magical Weight [InVi 15]",
+    "name": "Scales of the Magical Weight",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4320,7 +4320,7 @@
     }
   },
   {
-    "name": "Scent of Peaceful Slumber [ReMe 20]",
+    "name": "Scent of Peaceful Slumber",
     "type": "spell",
     "system": {
       "level": 20,
@@ -4338,7 +4338,7 @@
     }
   },
   {
-    "name": "Sense of the Fires Nearby [InIg 30]",
+    "name": "Sense of the Fires Nearby",
     "type": "spell",
     "system": {
       "level": 30,
@@ -4356,7 +4356,7 @@
     }
   },
   {
-    "name": "Sense of the Lingering Magic [InVi 30]",
+    "name": "Sense of the Lingering Magic",
     "type": "spell",
     "system": {
       "level": 30,
@@ -4374,7 +4374,7 @@
     }
   },
   {
-    "name": "Sense State of Consciousness [InMe 5]",
+    "name": "Sense State of Consciousness",
     "type": "spell",
     "system": {
       "level": 5,
@@ -4392,7 +4392,7 @@
     }
   },
   {
-    "name": "Sense the C Feet that Tread the Earth [InTe 35]",
+    "name": "Sense the C Feet that Tread the Earth",
     "type": "spell",
     "system": {
       "level": 35,
@@ -4410,7 +4410,7 @@
     }
   },
   {
-    "name": "Shadows of the Fires Past [InIg 5]",
+    "name": "Shadows of the Fires Past",
     "type": "spell",
     "system": {
       "level": 5,
@@ -4428,7 +4428,7 @@
     }
   },
   {
-    "name": "Shape of the Woodland Prowler [MuCo 25]",
+    "name": "Shape of the Woodland Prowler",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4446,7 +4446,7 @@
     }
   },
   {
-    "name": "Shiver of the Lycanthrope [InAn 10]",
+    "name": "Shiver of the Lycanthrope",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4464,7 +4464,7 @@
     }
   },
   {
-    "name": "Show of the Flames and Smoke [MuIg 10]",
+    "name": "Show of the Flames and Smoke",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4482,7 +4482,7 @@
     }
   },
   {
-    "name": "Shriek of the Impending Shafts [InHe 25]",
+    "name": "Shriek of the Impending Shafts",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4500,7 +4500,7 @@
     }
   },
   {
-    "name": "Shroud Magic [MuVi Gen]",
+    "name": "Shroud Magic",
     "type": "spell",
     "system": {
       "level": 0,
@@ -4518,7 +4518,7 @@
     }
   },
   {
-    "name": "Sight of the Transparent Motive [InMe 10]",
+    "name": "Sight of the Transparent Motive",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4536,7 +4536,7 @@
     }
   },
   {
-    "name": "Sight of the True Form [InCo 10]",
+    "name": "Sight of the True Form",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4554,7 +4554,7 @@
     }
   },
   {
-    "name": "Silence of the Smothered Sound [PeIm 25]",
+    "name": "Silence of the Smothered Sound",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4572,7 +4572,7 @@
     }
   },
   {
-    "name": "Snap of Awakening [ReMe 5]",
+    "name": "Snap of Awakening",
     "type": "spell",
     "system": {
       "level": 5,
@@ -4590,7 +4590,7 @@
     }
   },
   {
-    "name": "Soothe Pains of the Beast [CrAn 15]",
+    "name": "Soothe Pains of the Beast",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4608,7 +4608,7 @@
     }
   },
   {
-    "name": "Soothe the Ferocious Boar [ReAn 10]",
+    "name": "Soothe the Ferocious Boar",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4626,7 +4626,7 @@
     }
   },
   {
-    "name": "Soothe the Raging Flames [PeIg 15]",
+    "name": "Soothe the Raging Flames",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4644,7 +4644,7 @@
     }
   },
   {
-    "name": "Spasms of the Uncontrolled Hands [ReCo 5]",
+    "name": "Spasms of the Uncontrolled Hands",
     "type": "spell",
     "system": {
       "level": 5,
@@ -4662,7 +4662,7 @@
     }
   },
   {
-    "name": "Spells Peering into the Mortal Mind [InMe 30]",
+    "name": "Spells Peering into the Mortal Mind",
     "type": "spell",
     "system": {
       "level": 30,
@@ -4680,7 +4680,7 @@
     }
   },
   {
-    "name": "Stance of the Patient Tree [MuCo 40]",
+    "name": "Stance of the Patient Tree",
     "type": "spell",
     "system": {
       "level": 40,
@@ -4698,7 +4698,7 @@
     }
   },
   {
-    "name": "Standing Wizard [MuIm 15]",
+    "name": "Standing Wizard",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4716,7 +4716,7 @@
     }
   },
   {
-    "name": "Statue to Animal [MuTe 25]",
+    "name": "Statue to Animal",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4734,7 +4734,7 @@
     }
   },
   {
-    "name": "Steed of Vengeance [MuAn 25]",
+    "name": "Steed of Vengeance",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4752,7 +4752,7 @@
     }
   },
   {
-    "name": "Stench of the Twenty Corpses [CrAu 10]",
+    "name": "Stench of the Twenty Corpses",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4770,7 +4770,7 @@
     }
   },
   {
-    "name": "Stir the Slumbering Tree [InHe 25]",
+    "name": "Stir the Slumbering Tree",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4788,7 +4788,7 @@
     }
   },
   {
-    "name": "Stone of the Hundred Shards [CrTe 15]",
+    "name": "Stone of the Hundred Shards",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4806,7 +4806,7 @@
     }
   },
   {
-    "name": "Stone Tell of the Mind that Sits [CrTe 30]",
+    "name": "Stone Tell of the Mind that Sits",
     "type": "spell",
     "system": {
       "level": 30,
@@ -4824,7 +4824,7 @@
     }
   },
   {
-    "name": "Stone to Falling Dust [PeTe 30]",
+    "name": "Stone to Falling Dust",
     "type": "spell",
     "system": {
       "level": 30,
@@ -4842,7 +4842,7 @@
     }
   },
   {
-    "name": "Strike of the Angered Branch [ReHe 15]",
+    "name": "Strike of the Angered Branch",
     "type": "spell",
     "system": {
       "level": 15,
@@ -4860,7 +4860,7 @@
     }
   },
   {
-    "name": "Strings of the Un willing Marionette [ReCo 30]",
+    "name": "Strings of the Un willing Marionette",
     "type": "spell",
     "system": {
       "level": 30,
@@ -4878,7 +4878,7 @@
     }
   },
   {
-    "name": "Subtle Shift of Heart [MuMe 10]",
+    "name": "Subtle Shift of Heart",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4896,7 +4896,7 @@
     }
   },
   {
-    "name": "Subtle Tongue of Poison and Purity [InAq 10]",
+    "name": "Subtle Tongue of Poison and Purity",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4914,7 +4914,7 @@
     }
   },
   {
-    "name": "Summon the Haunting Spirit [ReMe 25]",
+    "name": "Summon the Haunting Spirit",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4932,7 +4932,7 @@
     }
   },
   {
-    "name": "Summoning the Dead [ReMe 25]",
+    "name": "Summoning the Dead",
     "type": "spell",
     "system": {
       "level": 25,
@@ -4950,7 +4950,7 @@
     }
   },
   {
-    "name": "Summoning the Distant Images [InIm 35]",
+    "name": "Summoning the Distant Images",
     "type": "spell",
     "system": {
       "level": 35,
@@ -4968,7 +4968,7 @@
     }
   },
   {
-    "name": "Supple Iron and Rigid Rope [MuTe 10]",
+    "name": "Supple Iron and Rigid Rope",
     "type": "spell",
     "system": {
       "level": 10,
@@ -4986,7 +4986,7 @@
     }
   },
   {
-    "name": "T Coerce the Spirits of the Night [ReMe Gen]",
+    "name": "T Coerce the Spirits of the Night",
     "type": "spell",
     "system": {
       "level": 0,
@@ -5004,7 +5004,7 @@
     }
   },
   {
-    "name": "Tales of the Ashes [InIg 10]",
+    "name": "Tales of the Ashes",
     "type": "spell",
     "system": {
       "level": 10,
@@ -5022,7 +5022,7 @@
     }
   },
   {
-    "name": "Talons of the Winds [MuAu 20]",
+    "name": "Talons of the Winds",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5040,7 +5040,7 @@
     }
   },
   {
-    "name": "Tangle of Wood and Thoms [MuHe 15]",
+    "name": "Tangle of Wood and Thoms",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5058,7 +5058,7 @@
     }
   },
   {
-    "name": "Taste of the Dulled Tongue [PeIm 5]",
+    "name": "Taste of the Dulled Tongue",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5076,7 +5076,7 @@
     }
   },
   {
-    "name": "Taste of the Spices and Herbs [MuIm 5]",
+    "name": "Taste of the Spices and Herbs",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5094,7 +5094,7 @@
     }
   },
   {
-    "name": "Teeth of the Earth Mother [MuTe 35]",
+    "name": "Teeth of the Earth Mother",
     "type": "spell",
     "system": {
       "level": 35,
@@ -5112,7 +5112,7 @@
     }
   },
   {
-    "name": "Thaumaturgical Transformation of Plants to Iron [InHe 20]",
+    "name": "Thaumaturgical Transformation of Plants to Iron",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5130,7 +5130,7 @@
     }
   },
   {
-    "name": "The Beast Remade [MuAn 30]",
+    "name": "The Beast Remade",
     "type": "spell",
     "system": {
       "level": 30,
@@ -5148,7 +5148,7 @@
     }
   },
   {
-    "name": "The Call to Slumber [ReMe 15]",
+    "name": "The Call to Slumber",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5166,7 +5166,7 @@
     }
   },
   {
-    "name": "The Call toS lumber [ReMe 15]",
+    "name": "The Call toS lumber",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5184,7 +5184,7 @@
     }
   },
   {
-    "name": "The Captive Voice [ReIm 20]",
+    "name": "The Captive Voice",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5202,7 +5202,7 @@
     }
   },
   {
-    "name": "The Chirurgeon's Healing Touch [CrCo 20]",
+    "name": "The Chirurgeon's Healing Touch",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5220,7 +5220,7 @@
     }
   },
   {
-    "name": "The Cloudless Sky Returned [PeAu 30]",
+    "name": "The Cloudless Sky Returned",
     "type": "spell",
     "system": {
       "level": 30,
@@ -5238,7 +5238,7 @@
     }
   },
   {
-    "name": "The Crystal Dart [MuTe 15]",
+    "name": "The Crystal Dart",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5256,7 +5256,7 @@
     }
   },
   {
-    "name": "The Ear for Distant Voices [InIm 20]",
+    "name": "The Ear for Distant Voices",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5274,7 +5274,7 @@
     }
   },
   {
-    "name": "The Earth Split Asunder [ReTe 25]",
+    "name": "The Earth Split Asunder",
     "type": "spell",
     "system": {
       "level": 25,
@@ -5292,7 +5292,7 @@
     }
   },
   {
-    "name": "The Earth's Carbuncle [ReTe 15]",
+    "name": "The Earth's Carbuncle",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5310,7 +5310,7 @@
     }
   },
   {
-    "name": "The Eye of the Sage [InCo 30]",
+    "name": "The Eye of the Sage",
     "type": "spell",
     "system": {
       "level": 30,
@@ -5328,7 +5328,7 @@
     }
   },
   {
-    "name": "The Falcon's Hood [PeAn 20]",
+    "name": "The Falcon's Hood",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5346,7 +5346,7 @@
     }
   },
   {
-    "name": "The Forgiving Earth [MuTe 10]",
+    "name": "The Forgiving Earth",
     "type": "spell",
     "system": {
       "level": 10,
@@ -5364,7 +5364,7 @@
     }
   },
   {
-    "name": "The Gentle Beast [ReAn 20]",
+    "name": "The Gentle Beast",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5382,7 +5382,7 @@
     }
   },
   {
-    "name": "The Great Rot [PeHe 25]",
+    "name": "The Great Rot",
     "type": "spell",
     "system": {
       "level": 25,
@@ -5400,7 +5400,7 @@
     }
   },
   {
-    "name": "The Hunter's Lethal Arrow [PeAn 30]",
+    "name": "The Hunter's Lethal Arrow",
     "type": "spell",
     "system": {
       "level": 30,
@@ -5418,7 +5418,7 @@
     }
   },
   {
-    "name": "The Immaculate Beast [MuAn 15]",
+    "name": "The Immaculate Beast",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5436,7 +5436,7 @@
     }
   },
   {
-    "name": "The Incantation of Lightning [CrAu 35]",
+    "name": "The Incantation of Lightning",
     "type": "spell",
     "system": {
       "level": 35,
@@ -5454,7 +5454,7 @@
     }
   },
   {
-    "name": "The Inexorable Search [InCo 20]",
+    "name": "The Inexorable Search",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5472,7 +5472,7 @@
     }
   },
   {
-    "name": "The Invisible Eye Revealed [InVi 15]",
+    "name": "The Invisible Eye Revealed",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5490,7 +5490,7 @@
     }
   },
   {
-    "name": "The Kiss of Death [PeCo 35]",
+    "name": "The Kiss of Death",
     "type": "spell",
     "system": {
       "level": 35,
@@ -5508,7 +5508,7 @@
     }
   },
   {
-    "name": "The Leap of Homecoming [ReCo 35]",
+    "name": "The Leap of Homecoming",
     "type": "spell",
     "system": {
       "level": 35,
@@ -5526,7 +5526,7 @@
     }
   },
   {
-    "name": "The Many-Hued Conflagration [MuIg 5]",
+    "name": "The Many-Hued Conflagration",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5544,7 +5544,7 @@
     }
   },
   {
-    "name": "The Seven League Stride [ReCo 45]",
+    "name": "The Seven League Stride",
     "type": "spell",
     "system": {
       "level": 45,
@@ -5562,7 +5562,7 @@
     }
   },
   {
-    "name": "The Severed Limb Made Whole [CrCo 30]",
+    "name": "The Severed Limb Made Whole",
     "type": "spell",
     "system": {
       "level": 30,
@@ -5580,7 +5580,7 @@
     }
   },
   {
-    "name": "The Shadow of Human Life [CrIm 40]",
+    "name": "The Shadow of Human Life",
     "type": "spell",
     "system": {
       "level": 40,
@@ -5598,7 +5598,7 @@
     }
   },
   {
-    "name": "The Shadow of Life Renewed [CrCo 70]",
+    "name": "The Shadow of Life Renewed",
     "type": "spell",
     "system": {
       "level": 70,
@@ -5616,7 +5616,7 @@
     }
   },
   {
-    "name": "The Shrouded Glen [ReMe 40]",
+    "name": "The Shrouded Glen",
     "type": "spell",
     "system": {
       "level": 40,
@@ -5634,7 +5634,7 @@
     }
   },
   {
-    "name": "The Silent Vigil [MuCo 30]",
+    "name": "The Silent Vigil",
     "type": "spell",
     "system": {
       "level": 30,
@@ -5652,7 +5652,7 @@
     }
   },
   {
-    "name": "The Walking Corpse [ReCo 25]",
+    "name": "The Walking Corpse",
     "type": "spell",
     "system": {
       "level": 25,
@@ -5670,7 +5670,7 @@
     }
   },
   {
-    "name": "The Wound that Weeps [PeCo 15]",
+    "name": "The Wound that Weeps",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5688,7 +5688,7 @@
     }
   },
   {
-    "name": "Thief of the Stolen Breath [PeAu 10]",
+    "name": "Thief of the Stolen Breath",
     "type": "spell",
     "system": {
       "level": 10,
@@ -5706,7 +5706,7 @@
     }
   },
   {
-    "name": "Thoughts Within Babble [InMe 25]",
+    "name": "Thoughts Within Babble",
     "type": "spell",
     "system": {
       "level": 25,
@@ -5724,7 +5724,7 @@
     }
   },
   {
-    "name": "Tip of the Tongue [PeMe 5]",
+    "name": "Tip of the Tongue",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5742,7 +5742,7 @@
     }
   },
   {
-    "name": "Tongue of the Beasts [InAn 15]",
+    "name": "Tongue of the Beasts",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5760,7 +5760,7 @@
     }
   },
   {
-    "name": "Tongue of the Birds [InAn 15]",
+    "name": "Tongue of the Birds",
     "type": "spell",
     "system": {
       "level": 15,
@@ -5778,7 +5778,7 @@
     }
   },
   {
-    "name": "Tongue of the Fish [InAn 20]",
+    "name": "Tongue of the Fish",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5796,7 +5796,7 @@
     }
   },
   {
-    "name": "Tooth of the Staff [CrTe 5]",
+    "name": "Tooth of the Staff",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5814,7 +5814,7 @@
     }
   },
   {
-    "name": "Touch of the Goose Feather [PeCo 5]",
+    "name": "Touch of the Goose Feather",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5832,7 +5832,7 @@
     }
   },
   {
-    "name": "Touch of the Pearls [InAq 5]",
+    "name": "Touch of the Pearls",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5850,7 +5850,7 @@
     }
   },
   {
-    "name": "Touch of tl:ie Pearls [InAq 5]",
+    "name": "Touch of tl:ie Pearls",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5868,7 +5868,7 @@
     }
   },
   {
-    "name": "Tower of Whirling Water [ReAq 30]",
+    "name": "Tower of Whirling Water",
     "type": "spell",
     "system": {
       "level": 30,
@@ -5886,7 +5886,7 @@
     }
   },
   {
-    "name": "Tracing the Trail of Death's Stench [InCo 25]",
+    "name": "Tracing the Trail of Death's Stench",
     "type": "spell",
     "system": {
       "level": 25,
@@ -5904,7 +5904,7 @@
     }
   },
   {
-    "name": "Trackless Step [ReTe 10]",
+    "name": "Trackless Step",
     "type": "spell",
     "system": {
       "level": 10,
@@ -5922,7 +5922,7 @@
     }
   },
   {
-    "name": "Tracks of the Faerie Glow [CrTe 25]",
+    "name": "Tracks of the Faerie Glow",
     "type": "spell",
     "system": {
       "level": 25,
@@ -5940,7 +5940,7 @@
     }
   },
   {
-    "name": "Transform to Water [MuCo 45]",
+    "name": "Transform to Water",
     "type": "spell",
     "system": {
       "level": 45,
@@ -5958,7 +5958,7 @@
     }
   },
   {
-    "name": "Transformation of Plants to Iron [MuHe 20]",
+    "name": "Transformation of Plants to Iron",
     "type": "spell",
     "system": {
       "level": 20,
@@ -5976,7 +5976,25 @@
     }
   },
   {
-    "name": "Transformation of the Thorny Staff [InHe 5]",
+    "name": "Transformation of the Ravenous Beast to the Torpid Toad",
+    "type": "spell",
+    "system": {
+      "level": 20,
+      "technique": "muto",
+      "form": "animal",
+      "artAbbrev": "MuAn",
+      "isGeneral": false,
+      "range": "",
+      "duration": "",
+      "target": "",
+      "mastered": false,
+      "notes": "AG0201 2e spell — see core book for full text if notes were incomplete in the extract.",
+      "source": "AG0201 Ars Magica 2nd Edition, Chapter 5 (Spells)",
+      "journal": ""
+    }
+  },
+  {
+    "name": "Transformation of the Thorny Staff",
     "type": "spell",
     "system": {
       "level": 5,
@@ -5994,7 +6012,7 @@
     }
   },
   {
-    "name": "Transformed Image [MuIm 15]",
+    "name": "Transformed Image",
     "type": "spell",
     "system": {
       "level": 15,
@@ -6012,7 +6030,7 @@
     }
   },
   {
-    "name": "Trap of the Entwining Vines [CrHe 15]",
+    "name": "Trap of the Entwining Vines",
     "type": "spell",
     "system": {
       "level": 15,
@@ -6030,7 +6048,7 @@
     }
   },
   {
-    "name": "Trapping the Fire [MuIg 25]",
+    "name": "Trapping the Fire",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6048,7 +6066,7 @@
     }
   },
   {
-    "name": "Tread the Earth [CrTe 35]",
+    "name": "Tread the Earth",
     "type": "spell",
     "system": {
       "level": 35,
@@ -6066,7 +6084,7 @@
     }
   },
   {
-    "name": "Treading the Ashen Path [PeHe 30]",
+    "name": "Treading the Ashen Path",
     "type": "spell",
     "system": {
       "level": 30,
@@ -6084,7 +6102,7 @@
     }
   },
   {
-    "name": "Tremulant Vault of the Torch's Flame [ReIg 5]",
+    "name": "Tremulant Vault of the Torch's Flame",
     "type": "spell",
     "system": {
       "level": 5,
@@ -6102,7 +6120,7 @@
     }
   },
   {
-    "name": "True Sight of the Air [CrAu 15]",
+    "name": "True Sight of the Air",
     "type": "spell",
     "system": {
       "level": 15,
@@ -6120,7 +6138,7 @@
     }
   },
   {
-    "name": "Trust of Childlike Faith [PeMe 10]",
+    "name": "Trust of Childlike Faith",
     "type": "spell",
     "system": {
       "level": 10,
@@ -6138,7 +6156,7 @@
     }
   },
   {
-    "name": "Truth and Falsehood [InIm Gen]",
+    "name": "Truth and Falsehood",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6156,7 +6174,7 @@
     }
   },
   {
-    "name": "Twist of the Tongue [PeCo 20]",
+    "name": "Twist of the Tongue",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6174,7 +6192,7 @@
     }
   },
   {
-    "name": "Twist the Living Tree [InHe 15]",
+    "name": "Twist the Living Tree",
     "type": "spell",
     "system": {
       "level": 15,
@@ -6192,7 +6210,7 @@
     }
   },
   {
-    "name": "Unseen Arm [ReTe 5]",
+    "name": "Unseen Arm",
     "type": "spell",
     "system": {
       "level": 5,
@@ -6210,7 +6228,7 @@
     }
   },
   {
-    "name": "Unseen Porter [MuTe 20]",
+    "name": "Unseen Porter",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6228,7 +6246,7 @@
     }
   },
   {
-    "name": "Unsene Porter [ReTe 20]",
+    "name": "Unsene Porter",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6246,7 +6264,7 @@
     }
   },
   {
-    "name": "Unwilling Marionette [PeCo 30]",
+    "name": "Unwilling Marionette",
     "type": "spell",
     "system": {
       "level": 30,
@@ -6264,7 +6282,7 @@
     }
   },
   {
-    "name": "Unyielding Earth [MuTe 10]",
+    "name": "Unyielding Earth",
     "type": "spell",
     "system": {
       "level": 10,
@@ -6282,7 +6300,7 @@
     }
   },
   {
-    "name": "Veil of Invisibility [PeIm 30]",
+    "name": "Veil of Invisibility",
     "type": "spell",
     "system": {
       "level": 30,
@@ -6300,7 +6318,7 @@
     }
   },
   {
-    "name": "Verminous Infestation [CrAq 25]",
+    "name": "Verminous Infestation",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6318,7 +6336,7 @@
     }
   },
   {
-    "name": "Vile Water of Sterility [PeAq 30]",
+    "name": "Vile Water of Sterility",
     "type": "spell",
     "system": {
       "level": 30,
@@ -6336,7 +6354,7 @@
     }
   },
   {
-    "name": "Viper's Gaze [ReAn 15]",
+    "name": "Viper's Gaze",
     "type": "spell",
     "system": {
       "level": 15,
@@ -6354,7 +6372,7 @@
     }
   },
   {
-    "name": "Vision of Heat's Light [InIg 20]",
+    "name": "Vision of Heat's Light",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6372,7 +6390,7 @@
     }
   },
   {
-    "name": "Vision of the Haunting Spirit [MuMe 5]",
+    "name": "Vision of the Haunting Spirit",
     "type": "spell",
     "system": {
       "level": 5,
@@ -6390,7 +6408,7 @@
     }
   },
   {
-    "name": "Vision of the Marauding Beast [InAn 20]",
+    "name": "Vision of the Marauding Beast",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6408,7 +6426,7 @@
     }
   },
   {
-    "name": "Visions of the Infernal Terrors [MuIm 30]",
+    "name": "Visions of the Infernal Terrors",
     "type": "spell",
     "system": {
       "level": 30,
@@ -6426,7 +6444,7 @@
     }
   },
   {
-    "name": "Visions of the Wandering Eye [InIm 45]",
+    "name": "Visions of the Wandering Eye",
     "type": "spell",
     "system": {
       "level": 45,
@@ -6444,7 +6462,7 @@
     }
   },
   {
-    "name": "Voice of the Lake [InAq 25]",
+    "name": "Voice of the Lake",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6462,7 +6480,7 @@
     }
   },
   {
-    "name": "Wa t Well Without Light [PeIg 25]",
+    "name": "Wa t Well Without Light",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6480,7 +6498,7 @@
     }
   },
   {
-    "name": "Waiting Spell [ReVi Gen]",
+    "name": "Waiting Spell",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6498,7 +6516,7 @@
     }
   },
   {
-    "name": "Wall of Living Wood [CrHe 25]",
+    "name": "Wall of Living Wood",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6516,7 +6534,7 @@
     }
   },
   {
-    "name": "Wall of Protecting Stone [CrTe 25]",
+    "name": "Wall of Protecting Stone",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6534,7 +6552,7 @@
     }
   },
   {
-    "name": "Wall of Thorns [CrHe 20]",
+    "name": "Wall of Thorns",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6552,7 +6570,7 @@
     }
   },
   {
-    "name": "WallofLivingWood [CrHe 25]",
+    "name": "WallofLivingWood",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6570,7 +6588,7 @@
     }
   },
   {
-    "name": "Ward Against Faeries of the Ai r [ReAu Gen]",
+    "name": "Ward Against Faeries of the Ai r",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6588,7 +6606,7 @@
     }
   },
   {
-    "name": "Ward Against Faeries of the Waters [ReAq Gen]",
+    "name": "Ward Against Faeries of the Waters",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6606,7 +6624,7 @@
     }
   },
   {
-    "name": "Ward Against Faeries of the Wood [ReHe Gen]",
+    "name": "Ward Against Faeries of the Wood",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6624,7 +6642,7 @@
     }
   },
   {
-    "name": "Ward Against Heat and Flames · [ReIg 25]",
+    "name": "Ward Against Heat and Flames ·",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6642,7 +6660,7 @@
     }
   },
   {
-    "name": "Ward Against the Beasts of Legend [ReAn 25]",
+    "name": "Ward Against the Beasts of Legend",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6660,7 +6678,7 @@
     }
   },
   {
-    "name": "Watching Ward [ReVi Gen]",
+    "name": "Watching Ward",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6678,7 +6696,7 @@
     }
   },
   {
-    "name": "Wave of Drowning To and Smashing [CrAu 20]",
+    "name": "Wave of Drowning To and Smashing",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6696,7 +6714,7 @@
     }
   },
   {
-    "name": "Weaver's Trap of Webs [CrAn 20]",
+    "name": "Weaver's Trap of Webs",
     "type": "spell",
     "system": {
       "level": 20,
@@ -6714,7 +6732,7 @@
     }
   },
   {
-    "name": "Weight of a Thousand Hells [CrMe 25]",
+    "name": "Weight of a Thousand Hells",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6732,7 +6750,7 @@
     }
   },
   {
-    "name": "Well Without Light [PeIg 25]",
+    "name": "Well Without Light",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6750,7 +6768,7 @@
     }
   },
   {
-    "name": "Whip of Thorns [ReHe 5]",
+    "name": "Whip of Thorns",
     "type": "spell",
     "system": {
       "level": 5,
@@ -6768,7 +6786,7 @@
     }
   },
   {
-    "name": "Whispering Winds [CrAu 10]",
+    "name": "Whispering Winds",
     "type": "spell",
     "system": {
       "level": 10,
@@ -6786,7 +6804,7 @@
     }
   },
   {
-    "name": "Whispers Through the Black Gate [InCo 15]",
+    "name": "Whispers Through the Black Gate",
     "type": "spell",
     "system": {
       "level": 15,
@@ -6804,7 +6822,7 @@
     }
   },
   {
-    "name": "Wielding the Invisible Sling [ReTe 10]",
+    "name": "Wielding the Invisible Sling",
     "type": "spell",
     "system": {
       "level": 10,
@@ -6822,7 +6840,7 @@
     }
   },
   {
-    "name": "Wind at the Back [ReAu 5]",
+    "name": "Wind at the Back",
     "type": "spell",
     "system": {
       "level": 5,
@@ -6840,7 +6858,7 @@
     }
   },
   {
-    "name": "Wind ofM undane Silence [PeVi Gen]",
+    "name": "Wind ofM undane Silence",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6858,7 +6876,7 @@
     }
   },
   {
-    "name": "Winds and Water [CrAu 60]",
+    "name": "Winds and Water",
     "type": "spell",
     "system": {
       "level": 60,
@@ -6876,7 +6894,7 @@
     }
   },
   {
-    "name": "Wings of the Soaring Wind [ReAu 25]",
+    "name": "Wings of the Soaring Wind",
     "type": "spell",
     "system": {
       "level": 25,
@@ -6894,7 +6912,7 @@
     }
   },
   {
-    "name": "Winter's Icy Touch [PeIg 10]",
+    "name": "Winter's Icy Touch",
     "type": "spell",
     "system": {
       "level": 10,
@@ -6912,7 +6930,7 @@
     }
   },
   {
-    "name": "Wizard's Autumn [PeHe 15]",
+    "name": "Wizard's Autumn",
     "type": "spell",
     "system": {
       "level": 15,
@@ -6930,7 +6948,7 @@
     }
   },
   {
-    "name": "Wizard's Boso t [MuVi Gen]",
+    "name": "Wizard's Boso t",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6948,7 +6966,7 @@
     }
   },
   {
-    "name": "Wizard's Comm union [MuVi Gen]",
+    "name": "Wizard's Comm union",
     "type": "spell",
     "system": {
       "level": 0,
@@ -6966,7 +6984,7 @@
     }
   },
   {
-    "name": "Wizard's Eclipse [PeIg 30]",
+    "name": "Wizard's Eclipse",
     "type": "spell",
     "system": {
       "level": 30,
@@ -6984,7 +7002,7 @@
     }
   },
   {
-    "name": "Wizard's Sidestep [ReIm 20]",
+    "name": "Wizard's Sidestep",
     "type": "spell",
     "system": {
       "level": 20,
@@ -7002,7 +7020,7 @@
     }
   },
   {
-    "name": "Wizard's Subtle Touch [InVi 5]",
+    "name": "Wizard's Subtle Touch",
     "type": "spell",
     "system": {
       "level": 5,
@@ -7020,7 +7038,7 @@
     }
   },
   {
-    "name": "Wizards' Communion [MuVi Gen]",
+    "name": "Wizards' Communion",
     "type": "spell",
     "system": {
       "level": 0,
@@ -7038,7 +7056,7 @@
     }
   },
   {
-    "name": "Words of the Unbroken Silence [CrMe 5]",
+    "name": "Words of the Unbroken Silence",
     "type": "spell",
     "system": {
       "level": 5,
@@ -7056,7 +7074,7 @@
     }
   },
   {
-    "name": "Words with the Flickering Flame [InIg 25]",
+    "name": "Words with the Flickering Flame",
     "type": "spell",
     "system": {
       "level": 25,
@@ -7074,7 +7092,7 @@
     }
   },
   {
-    "name": "Wrath of Whirling Winds and Water [CrAu 60]",
+    "name": "Wrath of Whirling Winds and Water",
     "type": "spell",
     "system": {
       "level": 60,
@@ -7088,1482 +7106,6 @@
       "mastered": false,
       "notes": "AG0201 2e spell — see core book for full text if notes were incomplete in the extract.",
       "source": "AG0201 Ars Magica 2nd Edition, Chapter 5 (Spells)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Aegis of the Hearth [ReVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "rego",
-      "form": "vim",
-      "artAbbrev": "ReVi Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Year",
-      "target": "Boundary (Ritual)",
-      "mastered": false,
-      "notes": "This ritual protects a covenant in the way a Parma Magica protects a magus.\nIf any spell is cast toward the Aegis (originating from outside it) by any magus who was not involved in the Aegis ritual, the Aegis resists the spell. Furthermore, spells that bring objects into the Aegis, including teleportation spells such as The Seven-League Stride', are also resisted unless the caster was involved in the ritual. If the foreign spell cannot penetrate a resistance equal to the level of the Aegis, it fizzles out. The Aegis is also able to block foreign Intellego spells, even if they cannot normally be blocked by a Parma Magica, and spells that were cast before they entered the Aegis, such as an invisibility spell cast on a magus outside the Aegis.\nMagi who were not involved in the ritual and who cast spells within the Aegis must subtract half the level of the Aegis from all their Casting Totals. Spells successfully cast have otherwise normal effects (e.g. Ignem spells still do full damage). Penetration totals for magical creatures are reduced by the same amount.\nEffects from enchanted devices are resisted by the Aegis unless the item was within the Aegis at the time of casting, or was created within the Aegis by someone who was part of the ritual or in possession of a token.\nCreatures with a Might score cannot enter the area protected by the Aegis unless they have a higher Might than the Aegis’s level. When approaching the border of an Aegis, a magical person (including a Hermetic magus) feels a slight tingle in the extremities. Magical, Infernal, Faerie, and Divine creatures and persons may be brought within the Aegis, if they are formally invited by one who participated in its casting and given a token to represent the invitation. (The tokens are used during the casting of the ritual, and thus conform to the Law of Sympathy.) Such a person is also not affected by the penalty to casting within the Aegis. The invitation may be withdrawn at any time. This does not require retrieving the token or even notifying the individual who is no longer welcome. Withdrawing an invitation will not expel the person beyond the Aegis, but will prevent them from re-entering after they leave (unless their Might is high enough), and subject them to the Casting Total penalty while they are within the Aegis. The invitation and expulsion must both be issued by magi who participated in the ritual, but not necessarily by the same magus. A magus may only invite or expel specific, known, individuals. He may not expel someone he does not know has been invited in.\nThe Aegis is typically cast on the winter solstice, since magical auras can be slightly higher at that time, and the Aegis then lasts for the entire next year. The entire covenant usually participates in the Aegis ritual, which often ends with the participants walking around the perimeter of the protected area in order to define it. Quite often, the covenant holds a major council meeting, or perhaps a large feast, after the ritual of the Aegis. Magi do not need to be able to cast the spell to participate in the ritual, and, indeed, non-Hermetic wizards can participate as well. Only one magus needs to actually cast the spell.\nAegis of the Hearth was invented by Notatus, the first Primus of House Bonisagus. It was a major breakthrough, incorporating Mercurian rituals as well as Hermetic theory, and was the reason Notatus was chosen to succeed Bonisagus. As a result, the spell is more powerful than it ought to be, and has no Perdo requisite. By 1220 Notatus’s discoveries have spread, and any magus trained in the Order is capable of inventing versions of the Aegis with the above parameters, but at different levels, sizes, or both. Inventing a version with different parameters, however, would require a similar breakthrough, and years of research.\n\n(Base spell)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Beast of Minuscule Proportions [MuAn 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "muto",
-      "form": "animal",
-      "artAbbrev": "MuAn",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Reduces the size of an animal by 2. This modifies Strength by –4, reduces the range for each wound type by two points, and increases Quickness by +2. The beast appears to be the runt of its litter, unfit to live.\n\n(Base: 4, +2 Voice, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Blunt the Viper's Fangs [PeAn 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "perdo",
-      "form": "animal",
-      "artAbbrev": "PeAn",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Blunt the claws, teeth, talons, or other natural weapons of a beast. Only sharp weapons may be affected: this spell does not affect a weapon such as a horse’s hoof or a giant snake’s coils. The blunted weapon has its total damage (including Attack Advantage) reduced to half (round up). The beast may recover from the effect as if it were a Light Wound. The spell may affect animals of size up to +4.\n\n(Base 5, +2 Voice, +1 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Calling the Odious Drought [PeAq 50]",
-    "type": "spell",
-    "system": {
-      "level": 50,
-      "technique": "perdo",
-      "form": "aquam",
-      "artAbbrev": "PeAq",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Year",
-      "target": "Boundary",
-      "mastered": false,
-      "notes": "Causes a drought over the surrounding area. Only one-tenth the normal rain falls, streams dry up, and rivers dwindle.\nRego Aquam can change water into ice or steam, because these are both states that water can have naturally.\nRego Aquam botches generally involve spectacular and dangerous loss of control of the water. Add one magnitude if the controlled movement is slightly unnatural, two if it is very unnatural.\n\n(Base 5, +1 Touch, +4 Year, +4 Boundary, no increase for requisite)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Cascade of Rocks [PeTe 40]",
-    "type": "spell",
-    "system": {
-      "level": 40,
-      "technique": "perdo",
-      "form": "terram",
-      "artAbbrev": "PeTe",
-      "isGeneral": false,
-      "range": "Sight",
-      "duration": "Momentary",
-      "target": "Part",
-      "mastered": false,
-      "notes": "Makes a cliff collapse, causing an avalanche. The effects depend on the size of the cliff and what lies below it.\nThe guidelines for controlling dirt, sand, mud, or clay are listed below. Add one magnitude to control stone or glass, and two for metal or gemstones. Manipulating objects with great precision may also be higher, depending on the level of precision.\nRego Terram botches often result in the caster being struck by large amounts of flying stone.\nControl or move dirt in a slightly unnatural fashion.\nKeep dirt away from you, under your conscious control (that is, you must be aware of its presence).\n\n(Base 4, +3 Sight, +1 Part, +4 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Chamber of Spring Breezes [CrAu 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "creo",
-      "form": "auram",
-      "artAbbrev": "CrAu",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Creates a breeze of fresh air that continually moves throughout a room, keeping the air continuously breathable even if the room is airtight. Rose of Jerbiton’s version of this spell always causes the air to smell of roses. The breeze can be created outdoors, but there it has little effect.\n\n(Base 1, +1 Touch, +2 Sun, +1 unnatural)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Cheating the Reaper [CrCo 30]",
-    "type": "spell",
-    "system": {
-      "level": 30,
-      "technique": "creo",
-      "form": "corporem",
-      "artAbbrev": "CrCo",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual (Ritual)",
-      "mastered": false,
-      "notes": "Resolves a major (or less severe) crisis caused by aging (see page 170). The target still requires rest for the remainder of the season to recover fully. Each application of this spell causes Warping.\n\n(Base 25, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Clear Sight of the Niad [InAq 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "intellego",
-      "form": "aquam",
-      "artAbbrev": "InAq",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Momentary",
-      "target": "Vision",
-      "mastered": false,
-      "notes": "You can see as clearly through water as through air, for a single moment.\n\n(Base 1, +4 Vision)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Closing the Earth's Gate [PeAq 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "perdo",
-      "form": "aquam",
-      "artAbbrev": "PeAq",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Dries a single spring, so that it never flows again. This spell targets the spring, not the water in it at a particular time, so the spring does not start to flow again later.\n\n(Base 20, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Clouds of Rain and Thunder [CrAu 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "creo",
-      "form": "auram",
-      "artAbbrev": "CrAu",
-      "isGeneral": false,
-      "range": "Sight",
-      "duration": "Concentration",
-      "target": "Group",
-      "mastered": false,
-      "notes": "Creates a small but severe rainstorm, including lightning and winds. The storm gathers and breaks in a few seconds as the caster concentrates, and dissipates with similar speed when he stops doing so.\nNote that reducing the Range for this spell makes the storm increasingly unnatural, so versions of this spell with lower Range still have the same level.\n\n(Base 3, +3 Sight, +1 Conc, +2 Group)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Clouds of Summer Snow [CrAu 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "creo",
-      "form": "auram",
-      "artAbbrev": "CrAu",
-      "isGeneral": false,
-      "range": "Sight",
-      "duration": "Concentration",
-      "target": "Group",
-      "mastered": false,
-      "notes": "Creates clouds that drop snow over an area about half a mile across. The clouds gather over a few seconds at the beginning of the spell, and dissipate over the same sort of time when the caster stops concentrating. The spell does not affect temperature.\n\n(Base 2, +3 Sight, +1 Conc, +2 Group, +1 Size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Coat of Flame [CrIg 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "creo",
-      "form": "ignem",
-      "artAbbrev": "CrIg",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Diameter",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The target is swathed in fire, and takes +5 damage every round while the spell is in effect. That is, the damage must be rolled against Soak twenty times during the spell. The Rego requisite ensures that the fire does not spread.\n\n(Base 5, +2 Voice, +1 Diam, +1 Rego requisite)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Conjuration of the Indubitable Cold [PeIg 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "perdo",
-      "form": "ignem",
-      "artAbbrev": "PeIg",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Part",
-      "mastered": false,
-      "notes": "Cools the air within ten paces of the target, leaving it slightly below freezing. All non-living things are chilled thoroughly, not just on the surface. All living things (except you, if you cast with a Rego requisite) lose one Fatigue level. House fires become as small as campfires, bonfires become as small as torch fires, and campfires and smaller fires go out.\n\n(Base 4, +2 Voice, +1 Part, +2 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Converse with Plant and Tree [InHe 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "intellego",
-      "form": "herbam",
-      "artAbbrev": "InHe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Concentration",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "You can speak with a plant for one conversation. The level of conversation depends on the type of plants; longer-lived and more noble plants have more to say. A single question and response takes ten to thirty minutes, with slower-growing plants speaking more slowly. Typically, plants can talk about the soil and about other plants around them, but have limited awareness of more momentary events, such as the passing of animals or people, unless that passing has a direct bearing on the plant (for example, a person cut its trunk). News can spread quickly through a forest when it has to, called from tree to tree on the wind. Bystanders cannot understand your conversation.\nThese guidelines assume that when you change a plant, it’s still a plant in some way. Changing a plant into something else usually involves a spell one level of magni- tude higher than the guideline most appropriate to the action. To change plants into treated or finished material (for example, wooden furniture, a vegetarian meal, linen or cotton cloth) add one magnitude to the level necessary to change plants into natural, unworked plants.\nMuto Herbam botches may turn the caster into a plant, or turn the target into an animated plant hostile to the caster.\nChange a plant or item made from plant products into metal or stone (Terram requisite).\nAwaken the consciousness of a plant (Mentem requisite).\n\n(Base 15, +1 Touch, +1 Conc)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Curse of the Ravenous Swarm [CrAn 50]",
-    "type": "spell",
-    "system": {
-      "level": 50,
-      "technique": "creo",
-      "form": "animal",
-      "artAbbrev": "CrAn",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Moon",
-      "target": "Group",
-      "mastered": false,
-      "notes": "Calls a swarm of locusts or other destructive insects upon an area, which destroys wild plant life and fields. When the spell’s duration ends, all the insects disappear, leaving nothing but the damage. The Rego requisite ensures that the insects only devastate the area desired by the caster.\nWhen you try to get information from an animal, remember that its memories are gathered through its particular senses, with their particular strengths and weaknesses. For example, dogs remember much about odors of various things, but often forget details of how they looked. Animals do not remember human words, but might remember tone of voice and such. You may not get the exact information you are looking for.\nTo communicate with an animal, you must bring yourself to the animal's mental level — a process that might have strange, though temporary, effects on you. For example, you might have a craving for raw meat or speak very slowly for a moment after communicating with a bear.\nSince Animal includes aspects of both Corpus and Mentem with regard to beasts, guidelines that apply to the latter two may apply to Animal. InCo and InMe may be referred to for additional ideas. Botches with InAn normally result in false information.\n\n(Base 5, +1 Touch, +3 Moon, +2 Group, +2 size, for a swarm weighing as much as one thousand pigs, +1 extra effect from requisite, ritual because it has a really major effect)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Doublet of Impenetrable Silk [MuAn 15]",
-    "type": "spell",
-    "system": {
-      "level": 15,
-      "technique": "muto",
-      "form": "animal",
-      "artAbbrev": "MuAn",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Change an item made of animal material — silk, wool, or leather — so it cannot be cut or penetrated by weapons. A simple cloth doublet becomes the equivalent of armor with no Load and a +3 Soak bonus. Armor made of quilted material or any kind of leather improves its Protection by an additional +3. The magic does not make the armor better at absorbing shock, so this +3 bonus is the limit that can be bestowed without changing the material into something completely different. At the storyguide’s option, the bonus given by this spell may not apply against strictly blunt weapons like clubs and staves.\n\n(Base 4, +1 Touch, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Earth that Breaks No More [MuTe 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "muto",
-      "form": "terram",
-      "artAbbrev": "MuTe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Sun",
-      "target": "Part",
-      "mastered": false,
-      "notes": "Turns a volume of packed dirt of up to ten cubic paces into stone.\n\n(Base 3, +1 Touch, +2 Sun, +1 Part, +1 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "End of the Mighty Castle [PeTe 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "perdo",
-      "form": "terram",
-      "artAbbrev": "PeTe",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Structure",
-      "mastered": false,
-      "notes": "A single stone structure, such as a castle keep or manor house, crumbles to dust and small pebbles. Anyone inside at the time takes +10 damage from falling and having stones land on them, possibly more if the structure is particularly large.\n\n(Base 4, +2 Voice, +3 Str)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Eye of the Cat [MuCo 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "muto",
-      "form": "corporem",
-      "artAbbrev": "MuCo",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The target gains the eyes of a cat, which allow him or her to see in near darkness (but not in absolute darkness, such as a lightless subterranean cavern).\n\n(Base 2, +1 Touch, +2 Sun, requisite free)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Eyes of the Eagle [InIm 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "intellego",
-      "form": "imagonem",
-      "artAbbrev": "InIm",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Sun",
-      "target": "Vision",
-      "mastered": false,
-      "notes": "You see distant things clearly. No matter how far away something is, you can make out details as if it were only a foot or so from you. Things do not all appear to be a foot away; you can simply make out details as well as if they were. You can still judge distance accurately; in fact, more accurately than normal, to within an inch or so at a distance of several miles, since you can see as clearly as if you were judging distance a foot away.\n\n(Base 3, +2 Sun, +4 Vision)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Eyes of the Eons [InTe 10]",
-    "type": "spell",
-    "system": {
-      "level": 10,
-      "technique": "intellego",
-      "form": "terram",
-      "artAbbrev": "InTe",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Determines the age of any nonliving target to within 10% of its actual age.\n\n(Base 4, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Eyes of the Flame [InIg 35]",
-    "type": "spell",
-    "system": {
-      "level": 35,
-      "technique": "intellego",
-      "form": "ignem",
-      "artAbbrev": "InIg",
-      "isGeneral": false,
-      "range": "Arcane Connection",
-      "duration": "Concentration",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Lets you see a fire to which you have an Arcane Connection. You can also see all those things which the fire illuminates.\nEyes of the Flame Words of the Flickering Flame\nR: Voice, D: Conc, T: Ind\n(Allows you to converse with a fire, commonly very chaotic and distractible. Promising a fire more fuel might keep its interest. Fires are mostly aware of what they’ve burned, but they have a limited awareness of what goes on around them as well. )\nThe intensity of a fire also affects the difficulty of changing it. For every five points by which the fire’s damage exceeds +5, add one magnitude to the spell’s level.\n\n(Base 10, +4 Arc, +1 Conc)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Eyes of the Treacherous Terrain [InTe 15]",
-    "type": "spell",
-    "system": {
-      "level": 15,
-      "technique": "intellego",
-      "form": "terram",
-      "artAbbrev": "InTe",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Concentration",
-      "target": "Vision",
-      "mastered": false,
-      "notes": "You can tell intuitively if any natural terrain you see is treacherous, such as if a rock field is prone to sliding.\n\n(Base 2, +1 Conc, +4 Vision)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Flash of the Scarlet Flames [CrIg 15]",
-    "type": "spell",
-    "system": {
-      "level": 15,
-      "technique": "creo",
-      "form": "ignem",
-      "artAbbrev": "CrIg",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "A brilliant red flash explodes in the air where you designate. If you target a person’s face the target needs a Stamina stress roll of 9+ to avoid temporary blindness. If the target botches the roll, he is permanently blinded. If temporarily blinded, he can try to make a simple Staminaroll of 9+ each minute to recover. The flash is equivalent to looking straight at the sun.\nIn Rose of Jerbiton’s version of this spell, there is a faint odor of roses in the area where the flash explodes.\n\n(Base 5, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Gentle Touch of the Putrified Body [CrCo 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "creo",
-      "form": "corporem",
-      "artAbbrev": "CrCo",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual (Ritual)",
-      "mastered": false,
-      "notes": "The target is cured of a Light Wound caused by poison or disease. This spell does not heal damage caused by injury.\n\n(Base 15, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Gloom of Evening [PeIg 10]",
-    "type": "spell",
-    "system": {
-      "level": 10,
-      "technique": "perdo",
-      "form": "ignem",
-      "artAbbrev": "PeIg",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Diameter",
-      "target": "Room",
-      "mastered": false,
-      "notes": "The level of light in the target room drops substantially, making the room gloomy, with deep shadows everywhere.\n\n(Base 2, +1 Touch, +1 Diam, +2 Room)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Incantation of Summoning the Dead [ReMe 40]",
-    "type": "spell",
-    "system": {
-      "level": 40,
-      "technique": "rego",
-      "form": "mentem",
-      "artAbbrev": "ReMe",
-      "isGeneral": false,
-      "range": "Arcane Connection",
-      "duration": "Concentration",
-      "target": "Individual (Ritual)",
-      "mastered": false,
-      "notes": "Calls up a person’s ghost. You must be on the spot where the person died, or must have the corpse (either of these constitutes an Arcane Connection). Alternatively, you can summon any ghost that haunts the area you are in, if you know the ghost’s full name, according to the Law of Names. Those buried by Church ceremony and those have who gone straight to heaven (that is, saints and crusaders, as opposed to the normal folk who must wait for a time before going on) are not available for summoning.\nIf the ghost has Magic Resistance, you must penetrate that resistance in order to summon it.\n\n(Base 15, +4 Arc, +1 Conc)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Infernal Smoke of Death [MuAu 40]",
-    "type": "spell",
-    "system": {
-      "level": 40,
-      "technique": "muto",
-      "form": "auram",
-      "artAbbrev": "MuAu",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Concentration",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Turns normal smoke from a fire into a thick, corrosive cloud. Anyone immersed in the cloud of smoke takes +25 corrosion damage against which armor provides only half its normal Protection value. Soft materials like cloth, fur, paper, and leather are charred and ruined by exposure to the noxious vapor. While you concentrate, any new smoke becomes corrosive, but even after you stop concentrating, the corrosive smoke remains deadly. It dissipates after several hours. The smoke is heavier than air, so rolls along the ground, pooling in low spots.\n\n(Base 25, +2 Voice, +1 Conc)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Inmost Companion [MuMe 40]",
-    "type": "spell",
-    "system": {
-      "level": 40,
-      "technique": "muto",
-      "form": "mentem",
-      "artAbbrev": "MuMe",
-      "isGeneral": false,
-      "range": "Eye",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The target’s mind is made physical as a bird. This bird normally stays close to the target’s body, but need not. If the target has Magic Resistance, it protects both his body and mind, as normal. No matter how far it travels, the target’s mind controls his body, as well as the bird’s, as normal. In particular, it can see through both sets of sense organs. If the bird is killed, the target also dies, as his mind has been killed.\n\n(Base 25, +1 Eye, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Masking the Odor of Magic [PeVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "perdo",
-      "form": "vim",
-      "artAbbrev": "PeVi Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Prevents the detection of a magic spell, or of a magic power in an item or being, by InVi magic, unless the level of the InVi spell exceeds twice the level of this spell – 5 (for example, exceeds 20 for a level 15 version).\n\n(Base effect, +1 Touch, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Mirror of Opposition (Form) [MuVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "muto",
-      "form": "vim",
-      "artAbbrev": "MuVi Gen",
-      "isGeneral": true,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Cast on another spell while the other spell is being cast, this causes the targeted spell to have the exact opposite of its normal effects. This effect works on spells up to half the (level–5) of the Mirror of Opposition spell. The effects of the inversion are up to the storyguide to determine, but the target of the inverted spell usually remains the same as that of the original spell. The inverted spell cannot overcome any limitations of Hermetic magic. For example, if a Momentary Perdo Corpus spell is cast, the inversion is probably a Creo Corpus spell of Sun duration. There are ten versions of this spell, each affecting spells of one of the Hermetic forms.\n\n(Base effect, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Parting the Waves [ReAq 30]",
-    "type": "spell",
-    "system": {
-      "level": 30,
-      "technique": "rego",
-      "form": "aquam",
-      "artAbbrev": "ReAq",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Concentration",
-      "target": "Group",
-      "mastered": false,
-      "notes": "Parts a body of water, revealing a dry path 5 paces wide along the bottom. Very large bodies of water are too large for the Group target, and are thus unaffected.\n\n(Base 10, +1 Touch, +1 Conc, +2 Group)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Pass the Unyielding Portal [MuHe 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "muto",
-      "form": "herbam",
-      "artAbbrev": "MuHe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Diameter",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Makes the wood of a door pliable, allowing the magus to bend it open regardless of most locks or bars.\n\n(Base 3, +1 Touch, +1 Diameter)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Past of Another [MuMe 35]",
-    "type": "spell",
-    "system": {
-      "level": 35,
-      "technique": "muto",
-      "form": "mentem",
-      "artAbbrev": "MuMe",
-      "isGeneral": false,
-      "range": "Eye",
-      "duration": "Year",
-      "target": "Individual (Ritual)",
-      "mastered": false,
-      "notes": "The target’s memories are completely rewritten, and he is unable to remember his actual life until the effect is dispelled or expires.\n\n(Base 10, +1 Eye, +4 Year)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Piercing the Faerie Veil [InVi 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "intellego",
-      "form": "vim",
-      "artAbbrev": "InVi",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Concentration",
-      "target": "Vision",
-      "mastered": false,
-      "notes": "This spell allows the caster to see through the boundaries of regiones, and therefore divine the path to the next level (more details about regiones are given on page 189 XXX). There are separate but related spells for Divine, Magical and Infernal regiones.\n\n(Base 3, +1 Conc, +4 Vision)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Plant's Withering Bane [PeHe 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "perdo",
-      "form": "herbam",
-      "artAbbrev": "PeHe",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Withers and destroys one living plant, up to and including a plant the size of a small tree.\n\n(Base 5, +2 Voice, +1 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Poisoning the Will [PeMe 65]",
-    "type": "spell",
-    "system": {
-      "level": 65,
-      "technique": "perdo",
-      "form": "mentem",
-      "artAbbrev": "PeMe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Moon",
-      "target": "Boundary (Ritual)",
-      "mastered": false,
-      "notes": "You curse a place, be it a valley, town, city, or covenant. The curse gradually saps the will and vitality from the people there. They become less energetic, and slowly stop caring about the place, what happens there, other people, and finally themselves. Colors seem more drab and the days longer, and there is an all-pervading sense of boredom and lassitude. Strong-willed individuals and those with strong Personality Traits are less affected, but still suffer to an extent. All Personality Trait rolls while in the area suffer a –3 modifier. This spell affects only those who are within the cursed area, including visitors to it. Those who leave the area are overwhelmed by the return of their vigor and sense of purpose.\nThe Rego Animal spells that deal with the mind may also be used as good guidelines for levels of Rego Mentem spells. Many changes to the mind are Rego effects, because the mind could naturally assume that state.\nRego Mentem botches can change the target’s mental state in the wrong way, or change the state of mind of the caster.\nControl a natural emotion (for example, calm, fear). The target must feel the emotion before you can control it.\nControl a disembodied spirit. Incline a person to a particular sort of response.\nControl an unnatural emotion (for example, cultivate a person’s feelings of bravery where he is usually cowardly).\nImbue all of a person’s responses with a particular emotion.\nControl a person as long as you can see them.\nSummon a ghost. (Ritual)\n\n(Base 4, +1 Touch, +3 Moon, +4 Bound, +5 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Purification of the Festering Wounds [CrCo 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "creo",
-      "form": "corporem",
-      "artAbbrev": "CrCo",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Moon",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The target gains a +9 bonus to Recovery rolls, as long as he has been under the influence of this spell for the whole of the recovery interval. The recovery interval is counted from the time that the spell is cast; any previous time is ignored.\n\n(Base 4, +1 Touch, +3 Moon)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Prying Eyes [InIm 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "intellego",
-      "form": "imagonem",
-      "artAbbrev": "InIm",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Concentration",
-      "target": "Room",
-      "mastered": false,
-      "notes": "You can see inside a room, as long as you can touch one of its walls. If the room is unlit or poorly lit, you can only see as much as you could if you were inside, but magical enhancements of your senses do apply. You may change your viewpoint within the room throughout the duration of the spell.\n\n(Base 1, +1 Touch, +1 Conc, +2 Room)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Rain of Oil [MuAu 50]",
-    "type": "spell",
-    "system": {
-      "level": 50,
-      "technique": "muto",
-      "form": "auram",
-      "artAbbrev": "MuAu",
-      "isGeneral": false,
-      "range": "Sight",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Turns rain into droplets of oil. The rain of oil continues as long as the storm does, drenching the landscape with flammable liquid. The oil will evaporate at a natural rate after the rain ceases. A Creo Ignem spell can ignite the storm so that the oil burns as it falls, but this requires a Group target large enough to catch all the raindrops. Lighting the oil after it has landed is much easier.\nCausing the destruction of air with great precision raises the order of magnitude by at least one level\n\n(Base 4, +3 Sight, +2 Sun, +5 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Recollection of Memories Never Quite Lived [MuMe 4]",
-    "type": "spell",
-    "system": {
-      "level": 4,
-      "technique": "muto",
-      "form": "mentem",
-      "artAbbrev": "MuMe",
-      "isGeneral": false,
-      "range": "Eye",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Changes the target’s memory of a detail into a similar, though different, memory. The target is no more sure of this manufactured memory than of the authentic one, so he may discover strange fabrications to be false.\n\n(Base 1, +1 Eye, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Rusted Decay of Ten-Score Years [PeTe 10]",
-    "type": "spell",
-    "system": {
-      "level": 10,
-      "technique": "perdo",
-      "form": "terram",
-      "artAbbrev": "PeTe",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "After the spell is cast, the metal of the target becomes so thoroughly rusted that it breaks if used in any demanding way (for example, used to strike a blow with in combat or to pry open a door). It also loses any sharpness it might once have had.\n\n(Base 4, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Seal the Earth [CrTe 15]",
-    "type": "spell",
-    "system": {
-      "level": 15,
-      "technique": "creo",
-      "form": "terram",
-      "artAbbrev": "CrTe",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Sun",
-      "target": "Group",
-      "mastered": false,
-      "notes": "Creates enough dirt to fill in a pit of up to 6 paces across and 3 paces deep.\n\n(Base 1, +2 Voice, +2 Sun, +2 Group)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Sense of Magical Power [InVi 2]",
-    "type": "spell",
-    "system": {
-      "level": 2,
-      "technique": "intellego",
-      "form": "vim",
-      "artAbbrev": "InVi",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "This spell tells the caster whether he is currently in a magic aura. It does not give any further information. Other spells do the same for other kinds of aura.\n\n(Base 1, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Sense the Feet that Tread the Earth [InTe 30]",
-    "type": "spell",
-    "system": {
-      "level": 30,
-      "technique": "intellego",
-      "form": "terram",
-      "artAbbrev": "InTe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Concentration",
-      "target": "Part",
-      "mastered": false,
-      "notes": "You touch the earth and feel what is moving along the ground within a mile of where you stand. You can tell the direction, distance, weight, number, and manner of movement of moving things. For instance, you might sense “a single 50-stone creature slithering toward us, a hundred rods in that direction.”\nThe targets below are for changing dirt. To change to or from sand, mud, or clay, use the same level of magnitude as for dirt. To change to or from stone or glass, add one level of magnitude. To change to or from metal or gemstone, add two levels of magnitude. These adjustments only apply once, so that changing metal to metal is only two magnitudes higher.\nThe amount of material you can change is limited by the guidelines for each end. Thus, you can turn a cubic pace of stone into a cubic inch of gemstone with a base Individual.\nSerious Muto Terram botches have a tendency to turn the caster to stone or metal, but lesser botches transform the wrong thing, or transform things in the wrong way.\nChange dirt so that it is slightly unnatural (requisites may be required).\nChange dirt into a liquid or gas (with requisites). Change dirt to stone, or vice versa.\nChange dirt so that it is highly unnatural (requisites will often be\nrequired). Change dirt into a mixture of liquids, solids, and gases (with requisites). Change dirt into a plant (with requisites). Make something grow to ten times its previous volume.\nChange dirt into a slightly unnatural liquid or gas (with requisites).\nChange dirt into an animal (with requisites).\n\n(Base 4, +1 Touch, +1 Conc, +1 Part, +3 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Sense the Nature of Vis [InVi 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "intellego",
-      "form": "vim",
-      "artAbbrev": "InVi",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "You can tell what Art a supply of raw vis is connected to. To you, the vis appears to glow with an aura that is appropriate to the Technique or Form that the vis is associated with. Creo is white, Intellego gold, Muto constantly fluctuating, Perdo black, Rego purple, Animal brown, Aquam blue, Auram violet, Corpus dark red, Herbam green, Imaginem pearly blue, Ignem bright red, Mentem orange, Terram dark brown, and Vim silver. Some of the colors are very similar, but are easy to distinguish if the item is held steadily and studied for a few seconds.\n\n(Base 4, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Shell of False Determinations [CrVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "creo",
-      "form": "vim",
-      "artAbbrev": "CrVi Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual (Ritual)",
-      "mastered": false,
-      "notes": "Creates a “shell” of magic on an item, helping to shield it from investigation by other magi. All attempts to investigate the magic item give false information about its powers unless half of the level of the shell is exceeded by the magus’s Investigation roll.\n\n(Base effect, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Shell of Opaque Mysteries [CrVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "creo",
-      "form": "vim",
-      "artAbbrev": "CrVi Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual (Ritual)",
-      "mastered": false,
-      "notes": "This spell is similar to Shell of False Determinations (above), but it causes all attempts to investigate the magic item to utterly fail, unless the level of the ritual is exceeded by the magus’s Investigation roll. Once a magus determines the presence of a particular shell (that is, by overcoming it), it has no more power against him or her.\n\n(Base effect, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Sight of the Active Magics [InVi 40]",
-    "type": "spell",
-    "system": {
-      "level": 40,
-      "technique": "intellego",
-      "form": "vim",
-      "artAbbrev": "InVi",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Concentration",
-      "target": "Vision",
-      "mastered": false,
-      "notes": "You can see spells as “auras” around things and people. The color of the aura indicates the Form of the spell working on a subject, the color matching the appropriate one described in Sense the Nature of Vis. The Technique of a spell working on the subject is recognized by the aura’s shape, not color. Creo and Rego are both very orderly auras. Muto is constantly shifting, and Intellego usually is as well, but more slowly. A Perdo aura is usually in fragments. Thus, a magus with both Endurance of the Berserkers and The Invisible Eye Revealed upon him has a very controlled, orderly aura of deep red around his or her entire body, and the magus’s eyes are surrounded with slowly shifting auras of a silvery hue. You should be warned: Imaginem or Vim spells may be used to disguise auras. Also note that this spell will detect the residues of some spells.\nThese spells let you change other spells.\nThese meta-magical spells have certain special restrictions, which apply to all Muto Vim spells invented according to Hermetic theory. First of all, they cannot be cast on spontaneous spells. Such magic is being manipulated at whim — any attempt to alter it further would make the caster lose control. (This is necessary for game balance.)\nSecond, you must make an Intelligence + Concentration roll of 9+ if you are casting both spells (that is, the MuVi spell and the spell it is affecting). If this fails, the spells do not go off. If it botches, they botch. (This is slightly easier than normal.)\nIf you wish to cast one of these spells on a spell being cast by another magus, you must either be cooperating, or you must fast cast the MuVi spell. There is no other way to get the timing right. In addition, your Penetration total for the Muto Vim spell must beat the other magus’s Penetration total for the spell to be changed, unless you are cooperating.\nTouch range is sufficient to affect your own spells, but Voice range, at least, is needed to affect another magus’s casting. You cannot touch the spell itself.\nThese spells can only be used on Hermetic magic, as they depend on a good understanding of the processes involved.\nYou may only put a Muto Vim effect into a magical item if it is to work with another effect in that item. All Muto Vim spells require some tailoring to the specific use, and a magical item effect cannot be so tailored.\nNote that a spell invented according to one of the guidelines below will change another spell in a specific way: it is not possible to invent a single spell which changes another spell however the caster wants. See the example spells for ideas on how specific this should be.\nIt is not possible, for reasons that Hermetic theorists do not well understand, to use Muto Vim to affect another spell after it has been cast.\nIf the parameters of an effect after it has been changed by a Muto Vim spell would normally require a Ritual, then at least one of the original spell and the Muto Vim spell must be a Ritual. For example, a Formulaic or Spontaneous Muto Vim effect on a Formulaic spell cannot produce an effect that would normally require a Ritual.\nMuto Vim botches can have any conceivable effect, as they alter the other spell in unpredictable ways.\nMuto Vim spells work by altering the magical energies that create the spell as it is being cast. The spell is the result of the combination of the base casting and the Muto Vim effect, and has its effect once both the casting and the Muto Vim effect have finished. This means that a Muto Vim spell must have a duration at least as long as the casting of the target spell, but need not last for as long as the spell itself. For normally-cast formulaic spells, a Momentary Duration is sufficient, but if the casting time is longer for any reason, the Muto Vim spell must also have a longer Duration; Sun is sufficient for any practical Ritual.\nAn increase in power or parameters may not raise the level of the target spell above the guideline level used for the Muto Vim spell.\nSuperficially change a spell of less than or equal to twice the (level + 1 magnitude) of the Vim spell. This may not change the primary effect of the spell, or its power.\nSignificantly change a spell of less than or equal to the level + 1 magnitude of the Vim spell. This may not change either the Technique or Form of the target spell. A change in power of plus or minus on magnitude is a significant change, as is a change of target, if the target was possible for the original spell. Totally change a spell of less than or equal to half the (level + 1 magnitude) of the Vim spell. This may change the Technique, Form, or both of the target spell, and needs no requisites for those Arts. The Vim spell affects the structure of the spell, not the things that the spell targets. A change in power of up to two magnitudes is a total change. Any greater change requires either Creo or Perdo to create more magical energy or destroy some.\n\n(Base 5, +1 Conc, +4 Vision, +2 Techniques and Forms)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Soothe the Ferocious Bear [ReAn 10]",
-    "type": "spell",
-    "system": {
-      "level": 10,
-      "technique": "rego",
-      "form": "animal",
-      "artAbbrev": "ReAn",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Calms an animal until it is threatened or aroused again. You must speak soothingly or musically to it, and something as simple as approaching it may arouse it again.\n\n(Base 4, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Spasms of the Uncontrolled Hand [ReCo 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "rego",
-      "form": "corporem",
-      "artAbbrev": "ReCo",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Concentration",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "One of the target’s hands spasms, causing him to drop anything he is holding in it. It keeps spasming for as long as you concentrate.\n\n(Base 2, +2 Voice, +1 Conc)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Strings of the Unwilling Marionette [ReCo 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "rego",
-      "form": "corporem",
-      "artAbbrev": "ReCo",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Concentration",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "You can control the physical movements of a person, such as walking, standing, and turning. If the target resists the control, the movements are jerky. The target can yell, but you can prevent intelligible speech by controlling the target’s mouth. The target must be conscious to be moved about.\n\n(Base 10, +2 Voice, +1 Conc)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Subtle Taste of Poison and Purity [InAq 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "intellego",
-      "form": "aquam",
-      "artAbbrev": "InAq",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Concentration",
-      "target": "Taste",
-      "mastered": false,
-      "notes": "You can taste all of the properties of any liquid or mixture of liquids. Unlike Touch of the Pearls, you can use this sense on any number of liquids during the duration of the spell, but you must taste the liquids in question.\n\n(Base 4, +1 Concentration)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Summoning the Distant Image [InIm 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "intellego",
-      "form": "imagonem",
-      "artAbbrev": "InIm",
-      "isGeneral": false,
-      "range": "Arcane Connection",
-      "duration": "Concentration",
-      "target": "Room",
-      "mastered": false,
-      "notes": "You can see and hear what is happening in a distant place if you have some sort of Arcane Connection to either the location or a person there.\nThese are useful and powerful illusion spells, altering the visual image, noises, smell, or taste of some object or being. The image remains altered without your concentration and adapts itself appropriately to the medium. The accuracy of duplication depends on your knowledge of the subject. For instance, if you want to make a voice like that of a specific person, you must be familiar with the voice that you want to mimic. Those more familiar with the face, voice, body, or other aspect being mimicked might see through an illusion by mundane means (“Duke Tybol, isn’t your scar on your left cheek?”).\nMuto Imaginem, or indeed other Imaginem magic, cannot overcome the effects of The Gift, although it might offset them a little.\nMuto Imaginem botches often change the caster’s appearance in dangerous or embarrassing ways.\n\n(Base 2, +4 Arc, +1 Conc, +2 Room)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Suppressing the Wizard's Handiwork [ReVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "rego",
-      "form": "vim",
-      "artAbbrev": "ReVi Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Concentration",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Cancels one spell that you have cast, but only as long as you concentrate. When concentration is broken the effects of the spell return. The level of the spell to be suppressed must not exceed the level of this spell. The effects of the spell being suppressed take about one round to fade out, and then another round to return after concentration is broken. The spell to be affected must be active to be suppressed — in particular, it may not be of Momentary duration.\nCommon uses of this spell include providing access to some place normally blocked by magic (for example, having a MuTe blocking the door to your lab, and then suppressing it to enter), and avoiding traps (such as suppressing a Watching Ward [ReVi Gen] on your rear door). This spell is designed to be held while you do something else, so the magus gets a +3 bonus to all Concentration rolls.\n\n(Base, +1 Touch, +1 Conc)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Tangle of Wood and Thorns [ReHe 15]",
-    "type": "spell",
-    "system": {
-      "level": 15,
-      "technique": "rego",
-      "form": "herbam",
-      "artAbbrev": "ReHe",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Concentration",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Takes a length of wood that you designate and hurls it at a target (a Targeting roll is required). The wood wraps around and immobilizes the target (assuming that there is enough wood), who must make a Strength stress roll of 9+ to break free (one attempt per round). If the victim ever botches, he cannot escape without outside help. If the length of wood has thorns, it does +6 damage when it hits, and again each time the target tries to break free, whether successful or not. When the caster stops concentrating, the target can escape on a Strength roll of 6+.\n\n(Base 3, +2 Voice, +1 Conc, +1 Muto requisite)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Bountiful Feast, The [CrHe 35]",
-    "type": "spell",
-    "system": {
-      "level": 35,
-      "technique": "creo",
-      "form": "herbam",
-      "artAbbrev": "CrHe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Year",
-      "target": "Special (Ritual)",
-      "mastered": false,
-      "notes": "This ritual, which must be cast at noon on the day after the winter solstice, attempts to ensure that all crops that grow within its target will be healthy and fruitful. The spell protects against non-magical blight and other diseases. It can’t control the weather or prevent others from harming crops, but it does cause crops to be healthier, larger, and tastier than they otherwise would be. The target of this spell is the fields owned by those present at the ritual. The spell must be cast within the region affected by the spell, although that region need not be contiguous. Although food plants are affected most by this ritual, all plants are made healthier to some degree.\nAs with most Intellego magic, Intellego Herbam botches generally give false information.\n\n(Base 1, +1 Touch, +4 Year, +4 Special (equivalent to Boundary), +1 Size (for a total of +4 Size, including the +3 from the guideline, so that the area affected is up to about 6 miles across))\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Enigma's Gift, The [CrVi 30]",
-    "type": "spell",
-    "system": {
-      "level": 30,
-      "technique": "creo",
-      "form": "vim",
-      "artAbbrev": "CrVi",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The target of the spell gains four Warping Points and, if a Hermetic magus, must check to see whether he enters Twilight in the normal way. Although the burst of magic that causes the Warping lasts but a moment, the resulting Warping is permanent.\nSince magic is a tricky thing to understand, spells that detect magic are at once difficult and important.\nAlthough demons deal in Vim, they are made of the essence of deception itself. If a demon does not wish to be detected, it cannot be (at least to the common knowledge of the Order), and for this reason there are no demon-locating magics.\nMagic items cannot be investigated with simple magic spells. Investigation requires that you spend at least one season in the laboratory to discover what magic an enchanted item contains (see the Laboratory chapter). A spell will suffice to tell you that an item is magical, however, and may give you some idea of its powers. Spells will never tell you how to use an item.\nDetect magic of tenth magnitude or higher.\nDetect the presence of a mystical aura. Detect the presence of vis. As concentrated magic, vis is not hard to spot.\nDetect magic of eighth magnitude or higher.\nDetermine the power of a mystical aura.\nDetect magic of sixth magnitude or higher.\nDetect regio boundaries. If cast with a Vision target, this provides enough information to find a way between levels, for regiones that allow that sort of entrance. Otherwise, it reveals the presence of a regio, and possibly its rough shape.\nDetect magic of third magnitude or higher.\nJudge the amount of vis present. Discern the Art of vis.\nDetect the traces of powerful magic.\nDetect the recent presence of weak magic.\nFurther increases in level will give increased sensitivity to residues. The base level of a spell also gives a fairly good idea of the strength of the magic (within a magnitude). The addition of one magnitude will say whether the effect is Hermetic, and a magus familiar with other types of magic will be able to identify them as well. The addition of two magnitudes will give information about Technique and Form, or nearest equivalent for other types of magic. Further increases in level will yield further information, depending on the design of the specific spell.\nDifferent spells may be invented to detect Faerie, Divine, or Infernal effects. Each spell only affects one realm, and storyguides may wish to disallow spells to detect the Divine or Infernal.\nAs a general rule, residues of magic decline as follows. As soon as the magic finishes, the magnitude halves. It then drops by one for every duration of the spell that passes. Storyguides should employ this as a guideline, not a rigid formula, and may, if they wish, allow high level detection spells to pick up residues with “negative magnitude.”\nMagical items have an effective residue magnitude equal to the number of pawns of vis used to open the enchantment (or the total pawns used for lesser enchanted devices). Magnitudes of non-Hermetic items must be set by the storyguide. A spell to detect items will not also detect effects or creatures, and vice versa. Variants will detect items enchanted by different Realms, as above.\nMagical creatures can also be detected. Treat their Might as the level of the effect; for Hermetic magi, use their highest Art. Divide Might or highest Art by five (rounding up) to get the effective residue magnitude. Again, this requires a different spell, and variants may detect Faerie and possibly Divine creatures. Demons may not be detected. Storyguides may, at their option, allow spells that detect other Infernal creatures, such as diabolists and undead.\nRaw vis will show up as magical, simply as raw vis, under any magical detection. The level of the detecting spell is irrelevant, as is the realm of power that it was designed to detect. However, only specially designed spells will yield any information other than that it is raw vis.\nIntellego Vim botches generally give false information.\n\n(Base 20, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Miner's Keen Eye, The [InTe 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "intellego",
-      "form": "terram",
-      "artAbbrev": "InTe",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Concentration",
-      "target": "Vision",
-      "mastered": false,
-      "notes": "You can see any one type of mineral (gold, diamond, sand), specified at the time of casting, through up to 3 paces of intervening material. You have a good idea of how much is there and how pure it is, if appropriate.\n\n(Base 2, +1 Conc, +4 Vision, +1 see through intervening material)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Phantom Gift, The [CrVi 15]",
-    "type": "spell",
-    "system": {
-      "level": 15,
-      "technique": "creo",
-      "form": "vim",
-      "artAbbrev": "CrVi",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The target of the spell becomes tainted with magic as most magi are. Beasts and people react to the target as though he were a magus. Those who normally associate with the victim do not become hostile, but do give him or her a wider berth. The spell has no effect on those who already have The Gift, including those blessed with the Gentle Gift.\n\n(Base 3, +2 Voice, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Sorcerer's Fork, The [MuVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "muto",
-      "form": "vim",
-      "artAbbrev": "MuVi Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "This spell splits another spell (whose level must not exceed the level of this spell) into two or more identical spells of reduced power, which may be cast against two or more sepa- rate targets. Each resulting spell has the same Range and Target (target category, that is, the actual target may be different) as the original spell, but the power of the effect is divided by the number of resulting split spells. The precise effect is at storyguide discretion. One casting die is rolled, and the Penetration total is split between the spells. The Sorcerer’s Fork must be equal to or greater than the level of the spell that is to be split. The split spell has a targeting penalty as for multiple casting (see page 87). If the casting magus is not cooperating, all the split spells will strike the original target.\n\n(Base effect, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Treacherous Spear, The [ReHe 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "rego",
-      "form": "herbam",
-      "artAbbrev": "ReHe",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Diameter",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "This spell animates a wooden or wooden-hafted melee weapon in someone else’s hand, and makes that weapon attack its holder until the wielder is dead or the weapon is destroyed. When the spell is cast, the weapon tries to break its wielder’s hold (Quickness – Encumbrance stress roll of 9+ to hang on). On subsequent rounds, the wielder hangs on by making Strength stress rolls of 6+, allowed once per round. If a roll to hold on ever botches, the wielder loses control of the weapon and is hit by it automatically (see below). While still in its wielder’s grip, the weapon does not strike him or her, but does not strike on the wielder’s behalf either. Once the weapon breaks free or is released, it attacks its wielder, using his Attack and Damage scores.\nThe former wielder may fight the rebellious weapon. The weapon uses its defense rating as its Defense total. It has no Soak, and is “killed” after it takes a wound depending on its size. One-handed weapons must take a Medium Wound, while two-handed weapons must take a Heavy Wound. The damage of thrusting and missile weapons is halved when attacking the renegade weapon.\n\n(Base 10, +2 Voice, +1 Diam)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Wizard's Mount, The [CrAn 35]",
-    "type": "spell",
-    "system": {
-      "level": 35,
-      "technique": "creo",
-      "form": "animal",
-      "artAbbrev": "CrAn",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Creates a horse, which is normal in every way except that it is not disturbed by The Gift.\n\n(Base 15, +1 Touch, +2 Sun, +1 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Touch of Midas [CrTe 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "creo",
-      "form": "terram",
-      "artAbbrev": "CrTe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual (Ritual)",
-      "mastered": false,
-      "notes": "This spell creates a roughly spherical lump of gold about six inches across. This weighs about 80 pounds, and is enough money to keep a peasant family in comfort for about 300 years.\n\n(Base 15, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Tremulous Vault of the Torch's Flame [ReIg 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "rego",
-      "form": "ignem",
-      "artAbbrev": "ReIg",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Causes a fire to quiver a few seconds and then make a leap of up to 10 feet in any direction. A Targeting roll is required to hit a specific target. The flame stays at the spot it hits if it can burn there (see rules for fire damage on page 181 XXX). Otherwise, it simply scorches the spot and goes out (doing +5 damage).\n\n(Base 3, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "True Rest of the Injured Brute [CrAn 20]",
-    "type": "spell",
-    "system": {
-      "level": 20,
-      "technique": "creo",
-      "form": "animal",
-      "artAbbrev": "CrAn",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Moon",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The injured target gets a +9 bonus to all Recovery rolls made while the spell is in effect.\n\n(Base 4, +1 Touch, +3 Moon)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Unravelling the Fabric of (Form) [PeVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "perdo",
-      "form": "vim",
-      "artAbbrev": "PeVi Gen",
-      "isGeneral": true,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "This spell will cancel the effects of any one spell of a specified Form whose level is less than or equal to (spell level + 10 + stress die (no botch)). There are 10 variants that cover each Hermetic Form, and a number of much rarer variants for different kinds of non-Hermetic magic.\n\n(Base effect, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Vision of the Haunting Spirits [MuMe 40]",
-    "type": "spell",
-    "system": {
-      "level": 40,
-      "technique": "muto",
-      "form": "mentem",
-      "artAbbrev": "MuMe",
-      "isGeneral": false,
-      "range": "Touch",
-      "duration": "Sun",
-      "target": "Room",
-      "mastered": false,
-      "notes": "All spirits within the target area become visible, although they might remain unseen if hiding behind something. This includes the spirits of living people, which appear as the person normally does. If the person is invisible or otherwise changed from his normal shape, his normal appearance is superimposed on his current appearance.\nEmotions naturally reappear in a person, so spells that destroy them must have a continuing duration to ensure that they do not come back. Memories do not naturally return, so Momentary duration spells remove them for ever, although a person could be told what he had forgotten, or reconstruct the memory from things he does remember. A continuing spell would prevent a person from relearning that information, however.\nPerdo Mentem botches can destroy more than intended, or destroy elements of the caster’s mind.\nRemove an important detail from a person’s memory.\nDiminish a single mental capability in a person. Reduce the intensity of all of a person’s emotions.\nRemove a minor or short memory from a person’s mind.\nReduce all of a person’s mental capabilities.\nRemove a major or long memory from a person’s mind.\nRemove all emotions from a person. Drive a person insane.\n\n(Base 15, +1 Touch, +2 Sun, +2 Room)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Ward Against Faeries of the Air [ReAu Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "rego",
-      "form": "auram",
-      "artAbbrev": "ReAu Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Ring",
-      "target": "Circle",
-      "mastered": false,
-      "notes": "As Ward Against Faeries of the Water (ReAq Gen), but for faeries of the air. The faerie cannot directly or indirectly break the magic circle, nor can they use ranged attacks or magic to affect those within it. From some angles at night, the ring may be seen as a violet-hued dome.\n\n(Base Spell)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Ward Against Faeries of the Mountain [ReTe Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "rego",
-      "form": "terram",
-      "artAbbrev": "ReTe Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Ring",
-      "target": "Circle",
-      "mastered": false,
-      "notes": "As Ward Against Faeries of the Waters (ReAq Gen), but for faeries of earth and stone. At some angles at night, the ring may be seen as a dark brown dome.\n\n(Base effect)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Ward Against Rain [ReAu 10]",
-    "type": "spell",
-    "system": {
-      "level": 10,
-      "technique": "rego",
-      "form": "auram",
-      "artAbbrev": "ReAu",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "No rain falls on the caster, no matter how bad the weather.\n\n(Base 4, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Ward Against Wood [ReHe 25]",
-    "type": "spell",
-    "system": {
-      "level": 25,
-      "technique": "rego",
-      "form": "herbam",
-      "artAbbrev": "ReHe",
-      "isGeneral": false,
-      "range": "Personal",
-      "duration": "Sun",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The caster is protected from non-enchanted wood, so that none of it can actually contact his body. If he is walking on a wooden surface, he is actually suspended very slightly above it.\n\n(Base 15, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Waves of Drowning and Smashing [ReAq 30]",
-    "type": "spell",
-    "system": {
-      "level": 30,
-      "technique": "rego",
-      "form": "aquam",
-      "artAbbrev": "ReAq",
-      "isGeneral": false,
-      "range": "Sight",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Raises a wave 5 feet high and 30 paces wide, which can submerge swimmers, overturn rowboats, and damage sailing ships. It starts as a small, curved wave and grows for the first 10 paces, at which point it reaches maximum size. If it travels 100 paces without striking an object large enough to break it up, it dissipates.\n\n(Base 10, +3 Sight, +1 size)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Wind of Mundane Silence [PeVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "perdo",
-      "form": "vim",
-      "artAbbrev": "PeVi Gen",
-      "isGeneral": true,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Room",
-      "mastered": false,
-      "notes": "You raise a metaphorical “breeze” that blows the magic away from an area, canceling the effects of any spell there. You can cancel the effects of any spell if, with this spell, you can double the level of the spell on a stress die + the level of your spell. The spell must penetrate to affect effects on a creature with Magic Resistance, including Parma Magica. If the spell penetrates, and its level + the stress die is double Parma Magica x 5, then this spell dispels the Parma Magica. Wind of Mundane Silence does not affect spells of Momentary duration. Magical things near the area of the Wind wave slightly from the “breeze.”\nRego Vim spells repel demons and other mystical creatures. Theoretically, it is possible to conjure and control demons through Rego Vim spells, but this knowledge and its use are forbidden by the Hermetic Code. Any who find and dare to use this knowledge face dangers from both the beings they deal with and those in the Order of Hermes who strongly object to such practices.\nRego Vim would also be the combination of Arts that granted Magic Resistance, but not even Bonisagus was able to turn Parma Magica into a spell. Aegis of the Hearth is the best that has been managed, and that spell is not fully integrated into Hermetic theory.\nWard the target against creatures with Might less than or equal to the level of the spell. A creature warded against cannot directly affect the target physically or by magical means. A spell of this nature will only ward against creatures from one Realm (Divine, Faerie, Infernal, or Magical). Note that wards against magical and faerie creatures can also be constructed using other Forms, but that those wards are more limited in effect. (Touch, Ring, Circle)\nSustain or suppress a spell you have cast whose level is less than or equal to the level + 2 magnitudes of the Vim spell. This, and the similar guidelines below, cannot make a spell last longer than it could have naturally, and so the sustaining version is only useful with Concentration Duration, among the standard Hermetic Durations. Similarly, a spell that has been suppressed still ends when its original duration expires. Create a conduit or container for spells with level less than or equal to the level + 5 magnitudes of the Vim spell. A conduit puts you in mystical contact with the target (effective Touch range), while a container will hold a spell for a specific length of time before releasing it. Sustain or suppress a spell cast by another with level less than or equal to half the (level + 5 magnitudes) of the Vim spell.\n\n(Base effect, +2 Voice, +2 Room)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Wizard's Boost (Form) [MuVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "muto",
-      "form": "vim",
-      "artAbbrev": "MuVi Gen",
-      "isGeneral": true,
-      "range": "Touch",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "You cast this spell as another spell of a level less than this one is cast. The effect of the other spell increases 5 levels in power, but not past the level of the Wizard’s Boost. The effects of the extra 5 levels of power are for the storyguide to determine. A Wizard’s Boost may never affect a single spell more than once. There are ten versions of this spell, one for each Hermetic Form.\n\n(Base effect, +1 Touch)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Wizard's Icy Grip [PeIg 30]",
-    "type": "spell",
-    "system": {
-      "level": 30,
-      "technique": "perdo",
-      "form": "ignem",
-      "artAbbrev": "PeIg",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Chills a single target so that it takes +20 damage. If this is enough to kill, the target is frozen solid. Armor does not add to Soak against this spell.\n\n(Base 20, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Wizard's Reach (Form) [MuVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "muto",
-      "form": "vim",
-      "artAbbrev": "MuVi Gen",
-      "isGeneral": true,
-      "range": "Voice",
-      "duration": "Momentary",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "The range of the targeted spell increases by one category. You may not affect a single spell more than once with this spell, and the targeted spell must be at least one magnitude lower in level than this spell. There are ten versions of Wizard’s Reach, one for each Form.\n\n(Base effect, +2 Voice)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Wizard's Vigil [MuVi Gen]",
-    "type": "spell",
-    "system": {
-      "level": 0,
-      "technique": "muto",
-      "form": "vim",
-      "artAbbrev": "MuVi Gen",
-      "isGeneral": true,
-      "range": "Voice",
-      "duration": "Sun",
-      "target": "Group",
-      "mastered": false,
-      "notes": "This spell functions as Wizard's Communion, except that the longer duration allows it to be used with Ritual spells. For the purposes of its effect, treat it as a Wizard's Communion of two magnitudes lower.\nIf you want to cast a Perdo Vim spell on a character who has Magic Resistance, you must overcome the Magic Resistance.\nMake something (including a magical item) seem non-magical to any Intellego spell of less than or equal to twice the (level + 2 magnitudes) of this spell.\nDispel effects of a specific type with a level less than or equal to the level + 4 magnitudes of the Vim spell + a stress die (no botch). A specific type could be Hermetic Terram magic, or Shamanic spirit control magic. A magus must have some knowledge of a type of magic (although not necessarily ability to use it) to invent a spell to affect it. All Hermetic magi have some knowledge of all Hermetic magic. Reduce a target's Might Score by the level of the spell + 2 magnitudes, as long as the spell penetrates the creature’s resistance. Dispel any magical effect with a level less than or equal to half the (level + 4 magnitudes of the Vim spell + a stress die) (no botch). Reduce the casting total for all magic cast by the target by half the (level + 2 magnitudes) of the spell. If two or more such spells affect one target, only the highest has any effect: the penalties do not add. The spell must penetrate the target’s Magic Resistance in order to have any effect.\n\n(Base effect, +2 Sun)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Wreaths of Foul Smoke [CrAu 10]",
-    "type": "spell",
-    "system": {
-      "level": 10,
-      "technique": "creo",
-      "form": "auram",
-      "artAbbrev": "CrAu",
-      "isGeneral": false,
-      "range": "Voice",
-      "duration": "Diameter",
-      "target": "Individual",
-      "mastered": false,
-      "notes": "Thick, yellow, sulfurous smoke rises up from the spot you designate, spreading and thinning naturally, but thick enough to block sight in a radius of about five paces around the point of origin. For each round anyone breathes the smoke, a Stamina stress roll of 3+ must be made or a Fatigue level is lost. Once a character is Unconscious, further failed rolls result in the character taking a Light Wound each time. The area where the spell is cast will be damaged: small plants wilt and die, and tree growth is stunted. A faint stench of sulfur clings for days to anything exposed to the smoke.\n\n(Base 3, +2 Voice, +1 Diam)\n\nArM5 Chapter IX OGL spell text — use with 2e casting math; verify saga house rules for any edition differences.\n\nArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math.",
-      "source": "ArM5 Chapter IX (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Clear Sight of the Naiad [InAq 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "intellego",
-      "form": "aquam",
-      "artAbbrev": "InAq",
-      "isGeneral": false,
-      "range": "",
-      "duration": "",
-      "target": "",
-      "mastered": false,
-      "notes": "ArM5 OGL spell index (InAq 5). Range, duration, and target not listed in the index. Appendix III index stub — not found in AG0201 or Chapter IX extracts; R/D/T may be incomplete.",
-      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Comfort of the Drenched Traveler [PeAq 5]",
-    "type": "spell",
-    "system": {
-      "level": 5,
-      "technique": "perdo",
-      "form": "aquam",
-      "artAbbrev": "PeAq",
-      "isGeneral": false,
-      "range": "",
-      "duration": "",
-      "target": "",
-      "mastered": false,
-      "notes": "ArM5 OGL spell index (PeAq 5). Range, duration, and target not listed in the index. Appendix III index stub — not found in AG0201 or Chapter IX extracts; R/D/T may be incomplete.",
-      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
-      "journal": ""
-    }
-  },
-  {
-    "name": "Words of the Flickering Flame [InIg 35]",
-    "type": "spell",
-    "system": {
-      "level": 35,
-      "technique": "intellego",
-      "form": "ignem",
-      "artAbbrev": "InIg",
-      "isGeneral": false,
-      "range": "",
-      "duration": "",
-      "target": "",
-      "mastered": false,
-      "notes": "ArM5 OGL spell index (InIg 35). Range, duration, and target not listed in the index. Appendix III index stub — not found in AG0201 or Chapter IX extracts; R/D/T may be incomplete.",
-      "source": "ArM5 Appendix III (CC BY-SA 4.0)",
       "journal": ""
     }
   }

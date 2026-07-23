@@ -1,0 +1,4851 @@
+Ars Maglca
+()
+he Order of Hermes has collecte
+that have been invented, improve
+by the magi through the centurie
+are the most generally useful, int
+plary of these spells. In no way s
+taken as a definitive list of spells available to t
+Use them as guides when you invent your o
+Spell form
+Each spell has several factors to describe
+TechniqueandForm-Thetechniquean
+the heading under which you find the spell.
+firstbytheirformsinalphabeticalorder,and t
+by technique. (See the Spell List.) There are g
+form and for some form-technique combinati
+covering the spells in which you specialize an
+when you interpret these spells and invent y
+Title- The titles given are the actual ti
+known by the magi. Titles are often metaphor
+they describe effects not easily described in
+Level (Lv)- Most spells are assigned
+multiple of 5. A Level 5 spell is very weak, a
+moderate power, and a 30th Level spell is e
+Level depends on the power of the spell and
+example, Gift of Reason (Cr Me 30) has a relati
+it is a difficult one to accomplish, so the Leve
+Some spells are general spells (abbreviated
+they have no specific level, but represent sev
+Levels, all with similar but increasingly pow
+to ward off mountain faeries, for instance, ca
+with progressively higher Levels you will
+powerful faeries. While the spells we list hav
+of 5, there is no law of magic that requires ne
+pattern, thus you could have a general spell
+Magi use the term magnitude to rank spell
+is for game use only; characters never use it.)
+spell equals the number of pawns of vis neede
+longer duration or to double its effect (1 pa
+second magnitude spell would thus be Level
+Range- There are seven basic ranges of s
+range, a target must be seen or distinctly se
+directly. You can throw a Pilum of Fire into t
+you get the bandit hiding there, but you can
+Circe on the bandit unless you him. (A
+see
+yard.)
+Body: affects yourbodyormindonly,not
+on
+S p e l ls
+cted hundreds of spells judge the power of spon
+oved, and passed down examples for several oth
+uries. Those listed here turn you into a wolfcan b
+, interesting, and exem into a large dog, a deer, a
+y should these spells be
+These formulaic spell
+to the Order of Hermes.
+are the spells that magi c
+r own and use them to
+guide to spontaneous ma
+at
+ibe it for game use. Self: affects only you
+Touch: affects you o
+eandformareshownby
+Reach: touching or
+ell. Spells are arranged
+Eye: eye contact; once
+d then within each form
+tarily, you can hold it by
+e general notes for each
+nations. Read the notes look away until the spell
+automatic if your target i
+and keep them in mind
+t your own. avoiding eye contact at al
+eyes buts till look in your
+l titles of the spells as setting or be conspicuou
+horic or figurative when Spells maintained throug
+in mundane terms. in the first few seconds.
+Near: within fifteen
+ed a Level, which is a
+Sight: see the target o
+, a 15th Level spell is of
+has a radius or diameter,
+is extremely powerful.
+nd on its difficulty. For Special (Spec.): a uni
+latively minor effect, but
+Duration- Standard
+evel is high.
+how long the effects of
+ted: Gen.), which means
+durations separated by
+everal spells of various
+duration and the second
+owerful effects. A spell supported by raw vis, 1 p
+, can be any Level, and
+per 5 levels for ritual sp
+ll be able to affect more
+results can be made per
+have levels as multiples
+things can be made to las
+ew spells to follow this
+made permanent. For ex
+ll of 13th level.
+indefinitely, but if you tu
+pells. (The term "Level" effect will not last forev
+t.) The magnitude of the gradually, not suddenly
+eded to give the spell its Created things weaken a
+pawn per 5 Levels). A By concentrating for a
+vel 6 to 10. spell (besides an "instant
+of spells. Regardless of Concentration (Conc.
+y sensed to be affected trate on it. When distract
+to the bushes and hope else in addition to concen
+annot cast the Curse of rolls to maintain the s
+(A pace is considered a involves speaking (as d
+speech requires no conce
+otyourclothingand so Ring-The spell create
+in effect as long as you d
+75
+0
+ntaneous magic. Many of them can serve as
+other similar spells. For instance, a spell to
+n be used as a model for the spells to turn you
+r, a pig, and so on.
+pells are the heart of the magic system. They
+gi can cast with relative surety, as well as a
+magic and to the powers of magic items.
+you and your accouterments (clothing, etc.)
+u or whomever or whatever you touch
+r within two paces
+nce you establish eye contact, even momen
+by casting the spell, and the target cannot
+pell is cast. Normally eye contact is almost
+et is within ten paces, and someone who is
+t all costs can do so. Those who avert their
+ur general direction (as one must in a social
+ous) must make Int rolls to avoid contact.
+ough concentration require eye contact only
+s.
+en paces
+et or otherwise sense it distinct! y; if the effect
+ter, you need only see the center of the circle
+unique range, described in the spell's text.
+ard durations are described below. This is
+of the spell last. If a spell has two listed
+y a slash, the first (shorter) is the normal
+ond (longer) is the duration if the spell is
+1 pawn per 5 Levels of the spell (two pawns
+spells). Only spells that produce normal
+ermanent. Spells that produce unnatural
+last longer with raw vis, but they cannot be
+example, you can turn someone into a dog
+u turn someone's head into a dog head the
+rever. A spell's effects usually wear off
+ly at the instant the spell's duration ends.
+n and crumble to dust when the spell ends.
+or a round, you can automatically cancel any
+nt" spell) that you have cast on yourself.
+ne.)-The spell lasts as long as you concen
+acted or when you attempt to do something
+entrating, you need to make Concentration
+spell. If a concentration spell explicitly
+does Tongue of the Beasts, lnAn 15), such
+ncentration rolls.
+ates an invisible magic ring which remains
+do not leave it.
+76
+Sunrise-Sunset (Sun.)- The spell lasts
+whichever comes first. Dawn and dusk, for
+spells, last about ten minutes, while the sun
+Moon- Lasts until both the new moon a
+come. If cast before the night of the new mo
+the rise of the next full moon. If cast before th
+it lasts until the night of the new moon.
+Year-Lasts until the fourth seasonal cha
+in the spring would last through the summ
+equinox, the winter solstice, and up to the ve
+casting one of these spells on a solstice or eq
+made to last a full year. If the spell is t
+somehow, the effects return at sunrise or sun
+first.
+Permanent (Perm.)- The spell affects
+dispelled. Compare to "instant."
+Instant(Inst.)-The spell worksforonly
+nature takes its normal course; its effects
+cannot be dispelled. If you burn someone wi
+magic is gone in a moment, but the burns re
+remain. If you calm a raging bull with an ins
+become angry again normally because the
+not continue to affect the bull. A spell wit
+keeps the bull calm until the spell wears off.
+not continue to work, they cannot be dispel
+Special (Spec.)-Some spells have uniqu
+their descriptions.
+Ritual-Ritual spells (designated by the
+fifteenminutesand 1 rawvispointforeachS
+Ritual Spells in the Magic Chapter.
+Requisites-Requisitesthatapplywhe
+a spell are listed before the spell description.
+listed at the end of the spell description.
+Aimed- Spells that affect targets indir
+rolls. You have to place the spell in therights
+For instance, if you launch a blast of water a
+Creo-Things created are either ind
+part of a largerb eing or object. For insta
+grow back a severed hand or create a
+grow wings on a person. (That wo
+Independent objects usually appear in
+in front of you. You cannot create thin
+ki 11 them or other tricky maneuvers (un
+this use and has a Perdo requisite).
+Intellego-Lets you perceive thing
+An Intellego Terram spell, for instan
+through walls. This technique cannot
+spells, though those who are sensitive
+realize that they are being spied on ma
+Muto- A Muto spell that cause
+cannot be used repeatedly to cause th
+Chapter 5
+sts until dawn or dusk, need no targeting roll t
+for the purposes of these have the water hit the
+sun is on the horizon.
+Description- The
+n and the full moon have
+andunpredictableandc
+oon, the spell lasts until
+sibility for determining
+e the rise of the full moon,
+thestoryguide. Descrip
+in which the spells are
+change. Thus a spell cast
+ryguide's option, as al
+mmer solstice, autumnal
+Spells tend not to be
+vernal equinox. Only by
+that you might be used t
+r equinox can the spell be
+subtle, and while you c
+is temporarily cancelled
+medium.
+sunset, whichever comes
+For general spells, t
+Level. Often the Level i
+ects its target until it is
+determines the effectiv
+The term "target'' m
+lyaninstant,afterwhich
+be a person, animal, m
+ects are permanent and
+e with an instant spell, the Natural resistance (
+s remain. Only its effects spells that allow it.
+instant spell, the bull can Casting requisites
+he magic of the spell does ways but not to learn it)
+with a different duration propriate form for the t
+ff. Since instant spells do possible requisites, whi
+pelled. Spell descriptions
+ique durations detailed in you need toknowinor
+lishments, however, ha
+own interpretations, c
+the word "ritual) require
+ryguideand player. W
+hS Levels of the spell. See one here or is complete
+want. What hand gest
+sounds or smells in add
+heneveryoulearnorcast
+side effects or uses doe
+on. Casting requisites are
+detail and you will be r
+.
+Spell Guides- A
+directly require targeting
+tions of spell effects tha
+htspottoaffectthetarget.
+to guide inventing for
+er at someone's eyes, you
+Notes on the Technique
+independent or a natural and again. A spell that
+stance, a Creo spell could doubles its normalsize
+e a bird, but it could not already double its nor
+ould be a Muto spell.) a spell.
+r in your hand or directly
+things inside of people to
+Perdo- Most Per
+(unless the spell specifies
+using no intervening
+no targeting roll to stri
+ings or see through them.
+tance, could let you see
+Rego- A Rego spe
+ot affect the subject of its
+or ill; it merely moves i
+tive to such things might
+are secondary results.
+magically.
+into a wall with a Rego
+uses something to grow is to move the whole o
+the target to grow again move just part of it is
+Ars Maeica
+ll to create the water, but you do need one to
+e target's eyes.
+e effects of the spell. Since magic is variable
+ndcanbeusedina variety of ways, the respon
+ing the effects in unusual situations lies with
+riptionscoverabout95% of thecircumstan('es
+re used. Under exceptional conditions (sto
+always) the spells may have different effects.
+be flashy, with bright lights and weird noises
+ed to from watching movies. Magic is usually
+u can see the effects, you can't al ways sec the
+s, the powerof the effect depends cm the spell' s
+el is used as a bonus on a die roll, and the total
+tiveness of the spell.
+'' means the subject of the spell. The target can
+, monster, object, area, or yourself.
+ce (often Stm, Size, or Int rolls) is described for
+es (those needed to cast the spell in certain
+n it) are listed for some spells. The phrase "ap
+he target'' indicates that the spell has several
+which are determined by the target.
+ns give you the bare essentials to know what
+ordertousethespellinagame. Many embel
+, have been left out. You are free to add your
+s, comments, and descriptions, both as sto
+When you invent a spell, whetheritduplicatcs
+letely new, you can add whatever detail you
+estures arc involved? Docs the spell create
+addition to its basic effects? What unforeseen
+does the spell have? Lavish your spells with
+be rewarded with more interesting play.
+Among the spells arc a few simple descrip
+that are not fleshed out as full spcl ls. U sc them
+ormulaic and casting spontaneous spells.
+s
+hat doubles a creature's size, for ins tan ee,
+ize, not its current size. A creature that is
+ormal size would not be affected by such
+erdo spells affect their targets directly,
+g medium. Therefore, you usually need
+strike something with a Perdo spell. ·
+spell does not change the target for good
+es it or controls it. Any damaging effects
+lts. For instance, you can slam someone
+go spell. The easiest way to move things
+le object evenly. To spin the object or to
+is more difficult.
+Ars Maglca
+Animal Spells
+Creo Animal Spells
+Soothe Pains of the Beast
+15
+Weaver's Trap of Webs 20
+Intellego Animal Spells
+Image of the Beast 5
+Shiver of the Lycanthrope 10
+Tongue of the Beasts
+15
+Tongue of the Birds 15
+Tongue of the Fish 20
+Vision of the Marauding Beast 20
+Opening the
+Tome of the Animal's Mind 25
+Hunter's Sense 30
+Muto Animal Spells
+Growth of the Creeping Things 10
+Beast of Outlandish Size 15
+The Immaculate Beast 15
+Transformation of the Ravenous
+Beast to the Torpid Toad 20
+Steed of Vengeance 25
+The Beast Remade 30
+Perdo Animal Spells
+Agony of the Beast 10
+Decay Fur and Hide 10
+Alleviate the Serpent's Bite 10
+Cripple the Howling Wolf 15
+The Falcon's Hood 20
+Cleanse the
+Verminous Infestation 25
+The Hunter's Lethal Arrow 30
+Rego Animal Spells
+Disguise of the Putrid Aroma 5
+Soothe the Ferocious Boar 10
+Panic of the Elephant's Mouse 15
+Viper's Gaze 15
+The Wizard's Sigil
+When you invent a spell, a little of y
+makeitselfknown. Ifnothingelse,someli
+from the spells listed in this chapter. Ma
+precisely duplicate another wizard's spell
+invent the equivalent of The Blessing of
+work as normal, with the added detail
+bama ..." The detail does not usually cha
+wizards have recurrent quirks in their spel
+certain wizards as having cast certain s
+wizard's spells is termed by the Order of
+Spell List
+Circle of Beast Warding 20 R
+The Gentle Beast 20
+Mastering the Unruly Beast 25
+Ward Against the
+Beasts of Legend 25
+Commanding the
+Harnessed Beast 30
+Aquam Spells
+Creo Aquam Spells
+Douse the Fire : 5
+Creeping Oil 10
+Footsteps of Slippery Oil 15
+Deluge of Rushing and Dashing '20
+A
+Mighty Torrent of Water 25
+LungsofWaterandDeath 35 C
+Intellego Aquam Spells
+Touch of the Pearls 5
+Subtle Tongue of
+Poison and Purity 10
+Call of the Rushing Waters 15
+Voice of the Lake 25
+Enchantment of the Scrying Pool 30
+Muto Aquam Spells
+Lungs of the Fish 10
+Breath of Winter 15
+Bridge of Frost 20 I
+Grant Lungs of the Fish 20
+Ice of Drowning 25
+Cloak of Winter 30
+Perdo Aquam Spells
+Parching Wind 10 M
+Incantation of Putrid Wine 15
+Break the Oncoming Wave 20
+Curse of the Desert 25
+Vile Water of Sterility 30
+P
+f your personal affinity to magic is likely to
+elittlequirkinthespellwillmakeitdifferent
+agic is unpredictable and idiosyncratic; to
+pell is nearI y impossible. For instance, if you
+of Childlike Bliss (PeMe 25), the spell might
+tail that the victim's babble "Barna bama R
+change the effectiveness of the spell. Many
+pells. Once known, these quirks can identify
+n spells. This recurrent mark or quirk in a
+r of Hermes "the wizard's sigil."
+77
+Rego Aquam Spells
+Ward Against
+Faeries of the Waters Gen
+5
+Cloak of the Duck's Feathers
+10
+Gift of the Floating Wood
+10
+Push of the Gentle Wave
+lS
+Chaos of the Angry Waves
+Wave of
+Drowning and Smashing
+(20
+Parting the Waters 25
+Pull of the Watery Grave 25 i
+Tower of Whirling Water 30
+50
+Neptune's Wrath
+Auram Spells
+Creo Auram Spells
+-��1
+Air's Ghostly Form .
+10
+Stench of the Twenty Corpses
+lS
+Chamber of Spring Breezes '
+15
+Wreaths of Foul Smoke
+20
+Clouds of Summer Snow
+Clouds of Rain and Thunder 25 '
+Charge of the Angry Winds 30
+35
+The Incantation of Lightning
+40
+Breath of the Open Sky
+Wrath of Whirling
+Winds and Water 60
+Intelle\lO Auram Spells
+Whispering Winds 10
+15
+True Sight of the Air
+Sailor's Foretaste of the Morrow 20
+Eyes of the Bat 25
+Muto Auram Spells
+10
+Blasting Wind, Blinding Mist
+10
+Clouds of Thunderous Might
+15
+Rain of Stones
+Talons of the Winds 20
+Fog of Confusion 25
+HeatofHell'slmpendingDoom 35
+40
+Infernal Smoke of Death
+Rain of Oil 50
+Perdo Auram Spells
+10
+Air Clear and Pure
+10
+Thief of the Stolen Breath
+Room of Stale Air 20
+25
+Quiet the Raging Winds
+The Cloudless Sky Returned 30
+Rego Auram Spells
+Ward Against
+Faeries of the Air ·ceri
+5
+Wind at the Back
+· 10,
+Jupiter's Resounding Blow
+' 15'
+Broom of the Winds
+78
+Circling Winds of Protection �20
+Gathering of the Stormy Might 20
+Wings of the Soaring Wind 25
+Pull of the Skybound Winds 45
+Corporem Spells
+Creo Corporem Spells
+Free the Accursed Body Gen
+Charm Against Putrefaction 5
+Bind Wound 10
+Gentle Touch of the
+Purified Body 15
+The Chirurgeon' s Healing Touch 20
+Restoration of the Defiled Body 25
+The Severed Limb Made Whole 30
+Incantation of the
+Body Made Whole 45
+The Shadow of Life Renewed 70
+Intellego Corporem Spells
+Physician's Eye 5
+Revealed Flaws of Mortal Flesh 10
+Sight of the True Form 10
+Whispers Through
+the Black Gate 15
+The Inexorable Search 20
+Tracing the
+Trail of Death's Stench 25
+The Eye of the Sage 30
+Muto Corporem Spells
+Evil Eye 5
+Eyes of the Cat 10
+Disguise of the New Visage 15
+Arm of the Infant 20
+Preternatural
+Growth and Shrinking 20
+Shape of the Woodland Prowler 25
+Curse of Circe 30
+Gift of the Bear's Fortitude 30
+The Silent Vigil 30
+Mists of Change 30
+Cloak of Black Feathers 35
+Cloak of Mist 40
+Stance of the Patient Tree 40
+Transform to Water 45
+Perdo Corporem Spells
+Touch of the Goose Feather 5
+Invocation ofW eariness 5
+Grip of the Choking Hand 10
+Dust to Dust 15
+The Wound the Weeps 15
+Incantation of the Milky Eyes 20
+Twist of the Tongue 20
+Bane of the Decrepit Body 25
+Curse of the Leprous Flesh 30
+Curse of the
+U nportended Plague 35
+The Kiss of Death 35
+Clenching Grasp
+of the Crushed Heart 40
+Chapter 5
+Rego Corporem Spells
+Spasms of the
+Uncontrolled Hands 5
+Curse of the Unruly Tongue 10
+l
+Despair of the
+Quivering Manacles 10 C
+Endurance of the Berserkers 15
+Gift of the Frog's Legs 15
+Rise of the Feathery Body 15
+Awaken the Slumbering Corpse 20
+Gift of Vigor 20
+Lifting the Dangling Puppet 20
+The Walking Corpse 25
+Strings of the
+Un willing Marionette 30
+The Leap of Homecoming 35
+The Seven League Stride 45
+I
+Herbam Spells
+Creo Herbam Spells
+Conjure the Sturdy Vine 10
+Trap of the Entwining Vines 15
+Wall of Thorns 20
+Wall of Living Wood 25
+Bridge of Wood 30
+Intellego Herbam Spells
+Probe Nature's Hidden Lore 5
+Intuition of the Forest 10
+Hunt for the Wild Herb 15
+Converse with Plants and Trees 25
+Shriek of the Impending Shafts 25 P
+Calling the Council of the Trees 45
+Muto Herbam.Spells
+Transformation
+of the Thorny Staff 5
+Dance of the Staves 10
+Twist the Living Tree 15
+Rope of Bronze 15 R
+Piercing Shaft of Wood 20
+Thaumaturgical
+Transformation of
+Plants to Iron 20
+Stir the Slumbering Tree 25
+Curse of the Haunted Forest 30
+Perdo Herbam Spells
+l
+Curse of the Rotted Wood 10
+Wizard's Autumn 15
+Plant's Whithering Bane 20
+The Great Rot 25
+Treading the Ashen Path 30
+Rego Herbam Spells
+Ward Against
+Faeries of the Wood Gen
+Whip of Thorns 5
+Repel the Wooden Shafts 10
+Strike of the Angered Branch 15
+I
+Tangle of Wood and Thorns 15
+Coils of the Entangling Plants 20
+Ars Magfca
+The Traitorous Spear 20
+Lord of the Trees 25
+Freeing the Striding Tree 30
+lgnem Spells
+Creo Ignem Spells
+Moonbeam 5
+s'
+Palm of Flame
+Heat of the Searing Forge 10�
+Lamp Without Flame 10
+Flash of the Scarlet Flames 15,
+Pilum of Fire 20
+Arc of Fiery Ribbons 25
+Ball of Abysmal Flame 30
+Blade of the Virulent Flame 30
+Circle of Encompassing Flames 30
+Intellego Ignem Spells
+Shadows of the Fires Past 5
+Tales of the Ashes 10
+Vision of Heat's Light 20
+Words with the Flickering Flame 25
+Sense of the Fires Nearby 30
+Muto Ignem Spells
+The Many-Hued Conflagration 5
+_
+Show of the Flames and Smoke 10
+Hornet Fire 15
+Prison of Flames 15
+Trapping the Fire 25
+Flames of Sculpted Ice 30
+Perdo Ignem Spells
+Quench the Rippling Flames 5
+Winter's Icy Touch 10
+Soothe the Raging Flames 15
+Conjuration of Indubitable Cold 20
+Well Without Light 25
+Wizard's Eclipse 30
+Rego Ignem Spells
+Tremulant Vault
+of the Torch's Flame 5
+Light Shaft of the Night 10
+Leap of the Fire 15
+Ward Against Heat and Flames · 25
+Burst of the Sweeping Flames 30
+Imagonem Spells
+Creo Imagonem Spells
+Restoration of the Lost Image Gen
+Fragile Image
+of the Painted Statue 5
+Image of the Inanimate Thing 10
+Phantasm of the Talking Head 10
+Phantasmal Fire 15
+Phantasmal Animal 20
+Phantasm of the Human Form 25
+The Shadow of Human Life 40
+Intellego Imagonem Spells
+Discern the Images of
+Ars Maglca
+Truth and Falsehood Gen
+Discern Own Illusions 5
+Image of the Past State 15
+The Ear for Distant Voices 20
+Eyes of the Past 25
+Summoning the Distant Images 35
+Visions of the Wandering Eye 45
+Muto Imagonem Spells
+Restore the Image Transformed Gen
+Taste of the Spices and Herbs 5
+Aura of Ennobled Presence 10
+Illusion of the Altered Image 10
+Disguise of the
+Transformed Image 15
+Notes of a Delightful Sound 15
+Image Phantom 20
+Visions of the Infernal Terrors 30
+Perdo Imagonem Spells
+Dispel the Phantom Image Gen
+Taste of the Dulled Tongue 5
+Removal of the
+Conspicuous Sigil 10
+Invisibility of the
+Standing Wizard 15
+Illusion of Cool Flames 20
+Chamber of Invisibility 25
+Silence of the Smothered Sound 25
+Veil of Invisibility 30
+Rego Imagonem Spells
+Restore the Moved Image Gen
+Illusion of the Shifted Image 10
+Image from the Wizard Torn 15
+The Captive Voice 20
+Wizard's Sidestep 20
+Confusion of the
+Insane Vibrations 25
+Illusion of the Misplaced Castle 30
+Haunt of the Living Ghost 40
+Mentem Spells
+Creo Mentem Spells
+Return of Mental Lucidity Gen
+Words of the Unbroken Silence 5
+Panic of the Trembling Heart 15
+Rising Ire 15
+Memory of the Distant Dream 20
+Pains of the Perpetual Worry 20
+Weight of a Thousand Hells 25
+Gift of Reason 30
+Intellego Mentem Spells
+Sense State of Consciousness 5
+Sight of the Transparent Motive 10
+Perception of the
+Conflicting Motives 15
+Frosty Breath of the Spoken Lie 20
+Posing the Silent Question 25
+Thoughts Within Babble 25
+Spells
+Peering into the Mortal Mind 30
+Muto Mentem Spells
+Vision of the Haunting Spirit 5 R
+Subtle Shift of Heart 10 E
+Enchantment of Detachment 15 S
+Recollection of Memories Never T
+Quite Lived 20
+Pe
+Emotion of Reversed Intentions 25
+Mind of the Beast 30 F
+P
+Perdo Mentem Spells
+R
+Lay to Rest the Haunting Spirit Gen
+Tip of the Tongue 5
+Trust of Childlike Faith 10 C
+Calm the Motion of the Heart 15 S
+Loss of But a Moment's Memory 20
+Re
+Passion's Lost Feeling 20
+Blessing of Childlike Bliss 25
+Black Whisper 30
+Rego Mentem Spells
+T
+Coerce the Spirits of the Night Gen
+Ring of Warding Against SpiritsGen
+Snap of Awakening 5 I
+The Call toS lumber 15
+Confusion of the Numbed Will· 15
+Aura of Rightful Authority 20 E
+Scent of Peaceful Slumber 20 C
+Incantation of C
+Summoning the Dead 25
+Summon the Haunting Spirit 25
+Exchange of the Two Minds 30 Vi
+The Shrouded Glen 40
+Int
+Enslave the Mortal Mind 50
+Terram Spells
+T
+Creo Terram Spells
+5
+Tooth of the Staff P
+Clenching of the S
+Earth's Mighty Hand 10
+M
+Stone of the Hundred Shards 15
+'20
+Rampart of Protecting Earth S
+Wall of Protecting Stone 25
+Circle of the Faerie Stone 30
+Opening the Earth's Pore 40 G
+Conjuring the Mystic Tower 50
+Pe
+Intellego Terram Spells
+Probe for Pure Silver 5
+Eye of the Eons 10
+Eye of the Treacherous Terrain 15
+Re
+Tracks of the Faerie Glow 25
+Stone Tell of the Mind that Sits 30 A
+Sense the C
+Feet that Tread the Earth 35
+Muto Terram Spells
+Edge of the Razor 5
+The Forgiving Earth 10
+Supple Iron and Rigid Rope 10
+Unyielding Earth 10
+79
+The Crystal Dart 15
+Hands of the Grasping Earth 15
+Object of Increased Size 15
+Rock of Viscid Clay 15
+Earth that Breaks NoM ore 20
+Statue to Animal 25
+Teeth of the Earth Mother 35
+Perdo Terram Spells
+Fist of Shattering 5
+Pit of the Gaping Earth 15
+Rusted Decay ofT en Score Years 15
+Obliteration of
+the Metallic Barrier 20
+Cascade ofR ocks 25
+Stone to Falling Dust 30
+Rego Terram Spells
+Ward Aga�nst
+Faeries of the Mountains Gen
+Unseen Arm 5
+Trackless Step 10
+Wielding the Invisible Sling 10
+The Earth's Carbuncle 15
+Invisible Hand of the Thief 15
+Unsene Porter 20
+The Earth Split Asunder 25
+Earth Shock 30
+Creeping Chasm 35
+Crest of the Earth Wave 50
+Hermes' Portal 75
+Vim Spells
+Intellego Vim Spells
+Wizard's Subtle Touch 5
+Sense the Nature of Vis lQ
+The Invisible Eye Revealed 15
+Scales of the Magical Weight 15
+Perceive Magical Scent 20
+Sense of the Lingering Magic 30
+Muto Vim Spells
+Shroud Magic Gen
+Wizard's Boso t Gen
+Wizard's Comm union Gen
+Gather the Essence of the Beast 15
+Perdo Vim Spells
+Demon's Eternal Oblivion Gen
+Disenchant Gen
+Wind ofM undane Silence Gen
+Rego Vim Spells
+Aegis of the Hearth Geri)
+Circular Ward
+Against Demons Gen
+Maintaining the
+Demanding Spell Gen
+Opening the Intangible Tunnel Gen
+Waiting Spell Gen
+Watching Ward Gen
+80
+Sp
+Animil Spe
+Animal spells affect all manner of natural
+living things besides plants and humans, doing
+to animals what Mentem and Corporem spells
+do to people. Any animal-like body or animal
+like mind can be affected by an Animal spell. The
+body of an intelligent animal (such as an intelli
+gent serpent or person whose body has been
+turned to a beast) is affected by Animal spells
+even though the mind is affected only by Men
+tem spells. If a human body has animal parts
+(such as bat wings), those parts can be affected by
+Animal spells even though the rest of the body is
+only affected by Corporem spells.
+Unless is used to make it permanent, food
+produced bt1yis a n Animal spell provides no nour
+ishment, and the feeling of being sated vanishes
+as soon as the spell wears off.
+Creo Animal Spells
+Animals created by Creo Animal spells are
+inherently magical and have a Magic Might of 5
++ Size. These animals are not afraid of magi as
+normalanimalsare,and are somewhat loyal, but
+they will not automatically follow your orders.
+They die and rot away at sunrise/sunset unless
+makes the spell duration Instant.
+vis
+Gen.: Counter a malign Animal spell you can
+match its Level on a roll of die+ Leifve l of this
+spell
+Lv 5: Createa bear'spelt(disappearsatsunrise/
+sunset).
+Lv Produce enough meat for five people.
+10:
+Soothe Pains of the Beast: Lv 15
+Touch, Sun./Inst.
+The animal touched can recover a lost body level
+by making a stress Stm roll of (apply wound
+penalty). 3+
+Weaver's Trap of Webs: Lv 20
+Near, Sun./Year
+Sticky spider webs as thick as string and strong
+as iron grow almost instantly to an area 5
+paces by 5 paces by 6 feet high. Wfilithl supports,
+the web can hang vertically, forming a wall;
+otherwise it acts like a net. Everyone in the area
+is caught in the webs and immobilized. Breaking
+free requires a Str roll of 12+, but someone who
+is not trapped can use an edged weapon to cut
+another person free in three rounds. Contrary to
+widespread opinion, fire is ineffective against
+these webs.
+Lv 25: Create a house cat.
+Lv Create an elephant.
+40:
+Chapters
+ell Descriptio
+lls
+ral Lv Create a griffin. a
+ing 50:
+lls a
+Intellego
+al
+he n
+lli Animal Spells s
+en
+lls
+When you try to get information from an ani
+en
+mal, remember that their memories are filtered
+rts Y
+through their unique senses. For example, dogs
+by a
+remembermuchabout the odors of various things
+y is p
+but often forget details of how they looked.
+Animals do not remember human words but
+d S
+might remember toneofvoiceandsuch. You are
+ur i
+not likely to get exactly the information you are
+hes
+looking for.
+To communicate with an animal you must
+bring yourself to the animal's mental level, which
+might have strange (though usually temporary)
+effects on you. Uninitiated observers might be
+disconcerted.
+are
+of 5
+i as Image of the Beast: Lv 5 i
+but Body, Conc. a
+ers. Gives you a hazy mental image of an animal if e
+less you hold some significant piece of its body, such
+as a bone or severed paw.
+Shiver of the Lycanthrope: Lv 10
+can
+Reach, Conc.
+this
+You feel a sudden shiver if you are next to a
+person or beast that is actually a lycanthrope.
+se/
+Tongue of the Beasts: Lv 15
+Body, Conc. c
+le. You may hold a conversation with one land i
+animal. o
+s
+Tongue of the Birds: Lv 15 l
+Body, Conc., Auram
+vel
+You may hold a conversation with a bird or bat.
+nd
+Tongue of the Fish: Lv 20 I
+Body, Conc., Aquam a
+You may hold one conversation with any fish or o
+aquatic creature.
+ong
+a 5 Vision of the Marauding Beast: Lv 20
+rts,
+Body, Conc.
+all;
+By touching wounds created by a beast, you can t
+rea
+get an image of the beast from the perspective of g
+ing
+the person who was attacked, handy for finding
+ho
+out what killed yourgrog. If the victimdidn'tsee h
+cut
+the creature, however, you can't see it either.
+to
+inst
+Opening the Tome of
+the Animal's Mind: Lv 25
+Touch, Conc.
+Youtouchtheheadoftheanimalinquestionand S
+readitsmemoriesofthepastday. Thefurtherthe t
+ArsMaglca
+ns
+animal is from human. the harder it is to read the
+memories accurately. To get a fact from an
+animal very dissimilar to a human requires a Per
+roll of or 12+ if the fact is obscure. Since
+normal6+ an, imals are sensitive to magic, they
+strongly resist your touch.
+Hunter's Sense: Lv 30
+100 yds., Sun./Year
+You sense the shapes and motivations of all
+animals above a certain size that come within 100
+paces of you. You decide the size threshold
+when you cast the spell, such as all animals of
+Size -1 or greater. If asleep, you see the animals
+in a dream and might not waken.
+Muto Animal Spells
+Animals are not infinitely mutable, and us
+ing too many of these spells for too long on an
+animal can warp its natural constitution and
+even destroy it.
+Lv 5: Gradually turn meat into maggots, flies,
+beteles, and other vermin. Since this is what
+naturally happens to meat anyway, the
+duration is Instant.
+Growth of the Creeping Things: Lv 10
+Touch, Sun./Year
+Causes an mouse, toad, or other small
+creature to ginsectrow t,o four times its normal size. If
+it was poisonous before, it is even more poison
+ous now. Semi-poisonous creatures, like most
+spiders, do +8 points of poison damage while in
+larger form.
+Beast of Outlandish Size: Lv 15
+Touch,Sun./Perm.
+Increases the Size of a land animal by +1. This
+adds+2todamage,+1 toSoak,-1 toDefense,and
+one body level.
+The Immaculate Beast: Lv 15
+Touch, Sun./Perm.
+Makes an animal into a flawless specimen of its
+type, amplifying its outstanding features and
+giving it +3 on rolls related to its strongest fea-·
+ture. It will improve a hawk's vision, a race
+e horse's speed, a draft horse's strength, etc.
+Transformation of the Ravenous
+Beast to the Torpid Toad: Lv 20
+Near, Sun./Perm.
+Turns any animal into a toad, unless it makes a
+Size roll of 9+. Birds are so dissimilar to toads
+that they get a +2 bonus on the roll.
+Ars MaQlca
+Steed of Vengeance: Lv 25
+Touch, Sun./Perm.
+Turns a horse into a ferocious magical mount
+with fangs and razor-sharp hooves. All Atk and
+Dam rolls get a +5 bonus. The horse tolerate
+a magus rider. When the spell wewilars l off, the
+horsemustmakeaStmrolloflO+ordiefromthe
+shock.
+The Beast Remade: Lv 30
+Touch, Sun./Perm., Corporem
+Gives an animal a human form, though its men
+tality remains the same. Some feature of the
+animal is retained in the human form. A former
+dog might have an exceptionally hairy human
+body, and a former cat might let loose an occa
+sional "meow."
+Perd o
+Animal Spells
+Lv 5: Removefurfromanypeltorlivinganimal.
+Agony of the Beast: Lv 10
+Sight, Conc.
+Causes intense pain in an animal. Each round
+the target must make a Stm +Size roll of 9+ to do
+anything but howl in pain.
+Decay Fur and Hide: Lv 10
+.
+Sight, Inst.
+Destroys an object made of animal fur or hide,
+including wool and leather. Each casting de
+creases leather armor's protection value by 3
+points, and any armor dropped to 0 protection or
+lower is destroyed completely.
+Alleviate the Serpent's Bite: Lv 10
+Touch, Inst.
+Makes one dose ofa nimal toxin harmless. If cast
+on toxin already in someone's body, it requires a
+Corporem requisite, and it keeps the person
+from suffering further damage. It can make
+poison ina poisonous animal harmless if you can
+touch the animal in question. No effect on herbal
+or mineral poisons.
+Cripple the Howling Wolf: Lv 15
+Sight, Inst.
+Cripples the leg of any animal of Size up to + 1,
+Aquam Spel
+Aquam spells affect water and all other liq
+uids. It cannot affect liquids in a body, such as
+blood; that would require a Corporem spell.
+Creo Aquam Spells
+Water created without raw quenches the
+thirst but provides no lasting 11beis nefits to the
+drinker.
+Spells
+slowing the target by at least half its speed. Stm Vip
++Size roll of 12+ to resist.
+t Hol
+The Falcon's Hood: Lv 20 tain
+Sight, Inst.
+Destroys an animal's vision. The title refers to Cir
+the hood used to cover a falcon's eyes when it is
+not hunting.
+Cre
+no
+Oeansethe
+leav
+Verminous Infestation: Lv 25
+ Near, Inst. The
+All spiders, snakes, rats, mice, lice, and other
+r little creatures emerge from their hiding places
+Cal
+and kill themselves or each other until all are
+doe
+ slain. Any animal Size -3 or greater is not af
+ever
+fected. Affects one building such as a keep,
+frig
+tower, or gatehouse.
+end
+The Hunter's Lethal Arrow: Lv 30
+Ma
+Touch, Inst.
+Enchants an arrow to slay an animal. The arrow
+You
+must be fired on the round after the spell is cast.
+. If it hits an animal, the beast must make a Stm + is in
+is ca
+Size roll of 12+ or die. If it makes the rolL it still
+part
+suffers normal arrow damage +10. The target
+mul
+gets normal magic resistance.
+Wa
+Rego Animal Spells the
+Disguise of the Putrid Aroma: Lv 5 Cre
+dia
+Near,Conc.
+, The target takes no interest in you as-long as you ryg
+ do not threaten it. A carnivore treats you as if Reg
+you were simply something that it would not
+ther
+r want to eat. It retains normal interest, however, leas
+atte
+in anyone else nearby.
+gold
+Soothe the Ferocious Boar: Lv 10 nigh
+Near, Inst.
+t Calms an animal until it is threatened or aroused Co
+again. You must speak soothingly or musically the
+to it.
+You
+Panic of the Elephant's Mouse: Lv 15 ani
+l Eye, Sun./Perm. abili
+Makes an animal fear you by preying upon its ing
+instinctive fears, causing it to try to escape by the son.
+quickest, most feasible means possible. The title wor
+refers to the elephant's legendary fear of mice. the
+, Size roll of 9+ to resist. pera
+lls
+ Creating flammable liquids, such as oil, Cre
+requires an Ignem requisite.
+Satu
+Douse the Fire: Lv 5 app
+Near, Inst. thro
+Creates water in a fire and puts it out it is no pers
+larger than a bonfire. Causes a goodif deal of the
+steam. seco
+81
+Viper's Gaze: Lv 15
+Eye, Spec.
+Holds an animal rigid as long as you can main
+ain eye contact and concentration.
+ircle of Beast Warding: Lv 20
+Spec., Ring
+reates a magical circle fifteen paces across that
+no natural animal will enter. Lasts until you
+leave the ring.
+The Gentle Beast: Lv 20
+Eye, Sun.
+Calms an animal, making it nearly fearless. It
+oes not resist being ridden, shaved, or what
+ever else you can think of. Combat, extremely
+frighteningcircumstances,oranykindofwound
+endsthespell. Theanimalmustbe5ize+3orlcss.
+Mastering the Unruly Beast: Lv 25
+Near, Conc.
+You can mentally control an animal as long as it
+is in sight, making it perform any act of which it
+is capable. It is difficult to maintain control of
+particularly stubborn or fierce animals, such as
+mules or boars.
+Ward Against
+the Beasts of Legend: Lv 25
+Spec., Ring
+Creates a magical ring around you seven paces in
+iameter that lasts until you leave it. The sto
+ryguide secretly rolls a simple die and adds your
+Rego+ Animal+ Int. No magical beast can enter
+theringunlessitcan make a Mystic Points roll at
+least equal to this total. It rolls once when it
+attempts to enter. The ring can be seen as a
+olden-hued dome at certain angles during the
+night.
+Commanding
+the Harnessed Beast: Lv 30
+Touch, Moon
+You implant a complicated command into an
+animal, which it then carries out to the best of its
+abilities. The command must involve complet
+ing a certain task, such as finding a certain per
+son. Vague orders, like "Protect me," do not
+work. If the animal has not completed the task as
+the end of the spell approaches, it becomes des
+perately ferocious, especially at night.
+Creeping Oil: Lv 10
+Spec., Sun./Perm., lgnem
+Saturates porous material with oil. The oil first
+appearsasadotinthematerialandthenspreads
+throughout it, saturating enough cloth to cover a
+person. Ifusedona person's clothes and ignited,
+the oil does + 12 damage the first round, the
+second, and the third. +6
++O
+Footsteps of Slippery Oil: Lv 15
+Self, Sun.
+Nonflammable grease spreads out from each of
+the next twenty footsteps you make, leaving a
+slick ten paces wide. The effects of the grease on
+movement depend on the surface covered. Qik
+-Enc rolls are required to remain upright when
+ever a character on the oil runs, changes direc
+tions, stops suddenly, etc. A roll of 6+ is needed
+for the average maneuver, with rolls of up to 15+
+needed to(forexample) makea right turn at near
+full speed on a smooth, greased surface.
+Deluge of Rushing and Dashing: Lv 20
+Near,Conc.
+Causes a stream to flood, starting at the stream's
+nearest point to you and continuing one mile
+downstream. As long as you concentrate, the
+stream remains at flood levels. Anyone caught
+near the stream when it floods is struck by the
+rush of water (+18 damage), caught up in the
+flood, and dragged along. Every round, each
+charactermakesa rollofStr+ Dex+Swim-Load.
+A roll of 9+ means the character has escaped the
+flood. Otherwise thecharacterdropsone fatigue
+level and takes +10 damage. Any who fall un
+conscious drown. This is repeated until the char
+acter either escapes the flood or dies.
+Mighty Torrent of Water: Lv 25
+Spec., Spec., Aimed (-3to+1)
+A three foot diameter cone of water sprays from
+your outstretched arms towards a target for up
+to five rounds. (You must maintain concentra
+tion). Anyone hit by this gusher of water takes
++14 damage and must make a Str +Size roll of
+10+ or be sent flying back. Targeting is at -3 for
+the first round, increasing by +1 for every round
+it is aimed at the same target thereafter.
+Lungs of Water and Death: Lv 35
+Near, Inst., Perdo
+Fills a target's lungs with water. The target falls
+to the ground and can do nothing but cough up
+water; Stm roll of 8+ to avoid drowning within
+three minutes. Casting Requisites: Animal for
+animals, Corporem for people.
+Intellego
+Aquam Spells
+Touch of tl:ie Pearls: Lv 5
+Touch, Inst.
+Tells you whether a liquid you hold or touch is
+poisonous, just as a pearl sometimes does.
+Subtle Tongue of
+Poison and Purity: Lv 10
+Touch, Inst.
+Determines all the mundane properties of a liq
+uid that you touch with your tongue.
+Call of the Rushing Waters: Lv 15
+100 miles, Moon
+Guides you to any natural body of water whose
+name you know. Once you have cast the spell,
+you can hear the water whenever you concen
+trate. Following the sound brings you, eventu-
+ally, to the water, but you must make Per rolls of in
+to follow the sound accurately. (Roll once per a
+of d6+a y forlongjourneys.) Bodies ofw aterwhichdo p
+a not move or make noise require rolls of 9+ to be sh
+on traced. a
+ik S
+n Voice of the Lake: Lv 25
+C
+ec Near,Conc.
+ed You can hold a conversation with a body of
+5+ water. A body of water usually knows about O
+ear things directly in c.ontact with it, such as boats a
+and m
+fish. fr
+Enchantment of the Scrying Pool: Lv30 (i
+Reach (500 miles), Year, Ritual, Imagonem
+'s Turns a pool of water into a scrying pool. In
+ile nately magical people (including most compan
+the ions with mystical virtues) who look into the
+ht pool can see any spot they know of that is within
+the sightofsomebodyofwater. Theviewisfromthe
+the perspective oft hat water. Maximum range
+L
+ch miles. is 500
+ad.
+P
+the Muto Aquam Spells
+e
+un R
+ar Some Muto Aquam spells involve heatand St
+cold, but are not Ignem spells, The distinction is
+that an Ignem spell uses heat as an intermediary fr
+to effect a change while a Muto Aquam spell
+I
+effects the change directly. For example, you can
+om tum ice tos team by applying heatwithan Ignem
+up spell, but you can probably make the change
+tra faster by using a Muto spell to make the change o
+kes directly.
+l of You cannot transform liquids within some B
+for one's body unless the spell is designed that way
+nd (and has a Corporem requisite.) B
+Lv 5: Turn a bottle of water into wine. y
+Lungs of the Fish: Lv 10
+lls
+Body, Sun./Year, Auram
+up Turns water into air as it enters your lungs, R
+hin
+allowing you to breathe water as well as you
+for
+would air.
+Breath of Winter: Lv 15 d
+Near, Inst.
+Turns a circle of water up to 5 paces across into
+snow.
+Bridge of Frost: L v 20 R
+l
+Sight, Spec.
+ti
+Causes a thick layer of frost (firm enough to walk
+h is on) to form on the surface of some water. The n
+t
+frost can take any shape up to 15 paces in any
+direteion. The bridge collapses after 6 to 15
+creatures have crossed over it (roll a simple die
++5). Only the storyguide knows the number of
+creatures that can cross. The bridge begins to
+liq melt normally after an hour.
+F
+Grant Lungs of the Fish: Lv 20
+Touch, Sun./Ye ar, Auram
+Allows a person to breathe water. a
+ose it
+ell, Ice of Drowning: Lv 25 a
+en Sight, Conc., Rego
+tu- Turns some ofthe water in a circle 10 paces across o
+into jagged chunks of ice that pound against
+anything on the water's surface. The ice can
+punch holes in small boats but does not damage
+ships. Any swimmers in the area take+ 15 dam
+age and suffer -5 and two extra botch rolls on
+Swim rolls.
+Cloak of Winter: Lv 30
+Sight, Spec.
+Over the course ofa n hour it snows and sleets on
+a body of water up to the size of a small lake (no
+more that two miles in diameter), causing it to
+freeze. lfthe water is running, iteither freezes up
+(if it is small) or fills with ice floes (if it is large).
+Perdo
+Aquam Spells
+Lv 5: Dry a wet object up to human size.
+Parching Wind: Lv 10
+Reach, Inst.
+Removes all water from any inanimate object of
+Stze-1 or less, including plants (with a Herbam
+requisite), possibly making the object brittle and
+fragile.
+Incantation of Putrid Wine: Lv 15
+Near, Inst.
+Makes all liquids in your presence vile, malodor
+ous, and mildly poisonous.
+Break the Oncoming Wave: Lv 20
+Sight, Conc.
+Breaks all waves and torrents of water (including
+magical ones) as they comes within 10 paces of
+you.
+Curse of the Desert: Lv 25
+Near, Inst.
+Removes much of the fluid from the target's
+body, doing +16 damage, which can only be
+soaked with Stm +Size. The target must drink
+within an hour of being struck with this spell or
+die. Casting requisites: Animal for animals,
+Corporem for humans.
+Vile Water of Sterility: Lv 30
+Sight, Perm.
+Ruins a body of water up to the size of a small
+lake, making it unfit for natural life or consump
+tion. The water becomes dark and murky, and
+noxious fumes emanate from it. Vegetation on
+the banks either dies or becomes corrupt.
+Rego Aquam Spells
+Ward Against
+Faeries of the Waters: Gen.
+Spec., Ring
+Creates an invisible ring 7 paces across with you
+at the center; it lasts as long as you remain within
+it. When the ring is created, the storyguide rolls
+a secrets impl e die and adds the Level of the spell.
+No water faerie whose Faerie Points are equal to
+or less than the result can enter the ring.
+Ars Magfca
+Cloak of the Duck's Feathers: Lv 5
+Touch, Sun. (Spec.)
+Makes water run off one object or creature, pro
+tecting the target and the target's apparel from
+dampness. It lasts until the target is submerged
+in water or until sunrise/sunset.
+Gift of the Floating Wood: Lv 10
+Near, Sun. (Spec.)
+Lets any object or creature of Size +3 or smaller
+float in water. Lasts until the object leaves the
+water or sunrise/ sunset.
+Push of the Gentle Wave: Lv 10
+Near, Conc.
+A low wave is formed to propel a small boat
+slowly through the water.
+Chaos of the Angry Waves: Lv 15
+Sight, Conc.
+Causes water to churn wildly, overturning small
+water craft in a circular area 20 paces across.
+Auram Spell
+Auram spells are powerful because the ele
+ment of air is ubiquitous. Their weakness is that
+air is not usually violent like fire nor strong like
+earth. Auram, however, also incorporates most
+weather phenomena such as storms, lightning,
+rain, mist, and falling snow.
+Auram spells usually affect air as phenom
+ena (winds, odors, etc.) rather than air as a gas (a
+modern conception).
+By their nature, Auram spells cover large
+areas with poorly defined borders. The areas
+given in the spell descriptions are not exact, but
+describe the general boundaries of the effects.
+Forexample,considerthetaskofmakingastorm.
+Storms are naturally large things, and making a
+small one that would affect a room-size area is no
+easier than making a more natural, larger storm.
+Creo Auram Spells
+Air's Ghostly Form: Lv 5
+Spec., Inst.
+A thick fog forms around you. A breeze can push
+the fog around. The fog dissipates at its natural
+rate, which can be as rapid as a minute.
+Stench of the Twenty Corpses: Lv 10
+Near, Inst.
+Makes the surrounding air stink horribly of rot
+ting corpses until the odor dissipates naturally.
+All those within 10 paces of the target point must
+make Stm rolls of or act with a -3 penalty on all
+rolls. Anyone wh6+o bo tches the roll vomits and is
+incapacitated. Personality rolls are necessary for
+someone to enter the area voluntarily.
+Spells
+Wave of Drowning To
+and Smashing: Lv 20
+ Sight, Inst. Fro
+Raises a 5 foot high, 30 pace wide, wave that can spo
+submerge swimmers, overturn rowboats, and tion.
+damagesailingships. Itstartsasasmall,curved Atk
+wave and grows for the first 10 paces, at which mus
+point it reaches maximum size. If it travels 100 suc
+paces without striking ano bject large enough to help
+break it up, it dissipates. dro
+they
+r
+e Parting the Waters: Lv 25 di
+mus
+Near, Conc.
+eac
+Parts a body of water up to SO paces across,
+revealing a dry path 5 paces wide along the
+bottom.
+Ne
+Pull of the Wateey Grave: Lv 25
+t
+Sight, Conc. Agi
+Creates a strong undertow which pulls any ob wat
+ject smaller than a row boat 25 fathoms into the up t
+depths. (Theeffectsofthissubmersion we leave sea,
+up to your imagination.) Those caught in the shor
+undercurrent must make rolls of 9+ on a Str + niti
+ll Dex + Swim -Load roll to avoid being dragged surf
+down. tion
+ls
+ Chamber of Spring Breezes: Lv 15 Ch
+t Reach, Sun./100 years
+e Creates breezes of fresh air that continually move A w
+t through a room, keeping theair breathable, even to 1
+, if the room is airtight. The
+mus
+ The
+a Wreaths of Foul Smoke: Lv 15 each
+tain
+Near, Inst.
+e Thick, yellow, sulphuric smoke rises up from the mai
+s spot you designate, filling a circular area 9 paces out
+t across. It blocks sight and each round anyone gale
+. breathing the smoke must make a Stm roll of 9+ this
+. or lose a fatigue level Once a character is uncon 12+
+a scious, further levels lost are body levels. The
+The
+o smoke dissipates naturally.
+.
+A li
+stret
+Clouds of Summer Snow: Lv 20 doin
+Sight, Inst. to th
+Creates clouds that drop snow over 4 square stan
+miles. Once created, the clouds behave as nor
+mal snow clouds and dissipate within an hour. Bre
+h This spell does not affect temperature.
+l You
+cou
+Oouds of Rain and Thunder: Lv 25 to ca
+Sight, Inst. ritu
+Creates a severe rain storm, including lightning long
+ and winds, covering 4 square miles. (If the gro
+. temperature is below freezing, the storm may be pas
+t a blizzard. If the temperature is high, the storm cou
+l is brief.) It takes half an hour for the clouds to faci
+s form and start raining. The storm rages for ten to m
+r minutes and then calms down to nothing over spel
+the next twenty minutes. mo
+83
+Tower of Whirling Water: Lv 30
+Near, Conc.
+From a large body of water you form a water
+spout which moves under your mental direc
+tion. It causes +14 damage to anyone it hits (no
+Atk roll necessary). In addition, those struck
+must make Qik-Enc rolls of 8+ to avoid being
+sucked up the waterspout. Those that fail arc
+helplessly pulled into the spout and begin to
+drown immediately. When the waterspout
+they fall up to20 feet to the water surface. Iffo yiolsu,
+direct the waterspout move across land, you
+must make an Int + Coto ncentration roll of 10+
+ach round to maintain it.
+Neptune's Wrath: Lv 50
+Sight, Inst., Ritual
+Agiganticwaveiscreatedina very large body of
+water. The wave, which is over 20 feet high and
+up toa mile wide, iscapableof capsizing ships at
+sea, smashing and drowning people near the
+shore, and utterly destroying coastline commu
+nities. The tidal wave needs 5 miles of water
+surface to build itself up to the proper propor
+tions.
+Charge of the Angey Winds: Lv 30
+Spec., Conc. (5 rounds)
+A wall of wind roars away from you, starting up
+to 10 paces away and continuing up to 30 paces.
+he wind is 5 paces wide. All within this area
+must make Dex+ Size rolls of 10+ or fall down.
+The rolls must be made atthe start of the gale and
+each subsequent round that the wind is main
+tained. You mustconcentrateon the gale and can
+maintain it for up to 5 rounds. Missile fire into or
+ut of the gale is futile, and marching against the
+gale requires a Str +Size roll of 16+. Failure in
+this attempt demands another Dex +Size roll of
+12+ to keep from falling.
+The Incantation of Lightning: Lv 35
+Near, Inst., Aimed -3
+A lightning bolt shoots forth from your out
+stretched hand in the direction you are pointing,
+doing +45 damage to the target it hits. Those next
+to the bolt must make Size rolls of 6+ to remain
+tanding.
+Breath of the Open Sky: Lv 40
+Sight, Conc., Ritual
+ou call up a wind capable of devastating a
+ountryside. You must stand under the open sky
+to cast this spell Once you have completed the
+ritual, a breeze picks up from behind you. As
+long as you face the same direction. the wind
+rows in speed and width. After an hour has
+passed,thewindisagaleroaringoverthevisible
+ountryside. Ify ou tumaway from youroriginal
+facing for more thana few seconds, you will have
+to make a Concentration roll of 12+ to keep the
+pell going. If you away for a minute or
+more, the spell ends.tu m
+Wrath of Whirling
+Winds and Water: Lv 60
+Spec., Inst., Ritual
+Creates a hurricane 45 miles wide. The winds
+and rain cause immense damage along shore
+lines. Can only be cast at sea or at the coast.
+In t lle go
+e
+Auram Spells
+Lv Sense poisonous vapors.
+S:
+Whispering Winds: Lv 10
+Sight, Conc., Imagonem
+You can hear words spoken by anyone within
+your line-of-sight, provided no solid barrier
+(including glass) intervenes.
+True Sight of the Air: Lv 15
+Body, Conc.
+Lets you see dearly through all manner of ob
+scurement in the air, including smoke, fog, and
+dust, even if they are magical.
+Sailor's Foretaste
+of the Morrow: Lv 20
+Sight, Inst.
+You know precisely what tomorrow's weather
+will be and can get a general impression about
+the weather in the week ahead.
+Eyes of the Bat: L v 25
+Body, Spec., Imagonem
+You can move about confidently in pitch black
+ness by sensing air and its boundaries (i.e. where
+solid objects are). The spell ends when you can
+normally or stop using the blind navigation
+sec
+for any reason.
+Muto Auram Spells
+Lv Createthesoundofchimes(withlmagonem
+S:
+requisite).
+Blasting Wind, Blinding Mist: Lv 10
+Near, Inst.
+Doubles the strength of some minor air phe
+nomenon, including fog, smoke, odors, etc.
+Clouds of Thunderous Might: Lv 10
+Sight, Inst.
+Turns rain clouds into a full-fledged storm.
+Rain of Stones: Lv 15
+Sight, Conc., Terram, Aimed
+Turns raindrops into stones just before they strike
+the target, causing +15 damage per round of
+exposure to rain.
+Talons of the Winds: Lv 20
+Near, Inst
+Transforms a wind into an abrasive medium that
+tears and claws at everything in its path. It is up
+to 20 paces wide and blows through 40 paces
+before ending. Soft materials like leaves and
+cloth are shredded, and people take +5 damage
+from innumerable bloody cuts and abrasions.
+Chapter 5
+Not surprisingly, this spell has a certain demor o
+alizing effect on its victims. i
+ds Fog of Confusion: Lv 25
+re Sight, Sun./Year, lmagonem
+Turns all the fog within 5 miles of the center of S
+the spell into a silvery mist too thick to see
+through. Random screams, thumps, hisses and
+other noises harass and confuse anyone within
+the fog, perhaps even leading them into danger.
+People have extreme difficulty navigating in this
+fog, especially through unknown terrain. Seven
+people you choose can see normally through the
+fog.
+Heat of Hell's Impending Doom: Lv 35
+Spec., Conc./Moon, Ignem, Ritual
+hin
+A huge wave of heat comes rolling over the area
+rier
+in a mile radius around you, with the exception
+of the area within 10 feet of you. This heat calls
+for a Fatigue roll of 8+ every round, and body
+levels are lost once fatigue levels are gone.
+ob Infernal Smoke of Death: Lv 40
+and
+Sight, Conc., Perdo i
+Turns smoke into a vile poison that eats through
+soft materials Oike cloth) and poisons all within J
+it. Anyone in the cloud of smoke takes +35
+poisondamage(onceonly),andvariousmaterial
+objects are damaged or destroyed. While you
+her concentrate, any new smoke formed becomes I
+ut poisonous,butevenafteryoustopconcentrating
+the poisonous smoke coheres and remains deadly.
+It dissipates only after several hours. If not
+controlled, it rolls along the ground poisoning
+everything in its path.
+ck t
+ere Rain of Oil: L v 50
+can Sight, Spec., Ritual, Ignem
+tion Turns the rain of a storm into droplets of oil. The s
+rain of oil continues as long as the storm does, a
+drenching the landscape with flammable liquid.
+A spontaneous Creo Ignem spell of Level
+30+
+could ignite the storm so that the oil burns as it
+falls.
+em
+Perdo Auram Spells
+Lv 5: Stopa breze e.
+he t
+Air Oear and Pure: Lv 10
+Near, Inst.
+Dispels an air phenomenon, such as smoke, haze, a
+or odor.
+Thief of the Stolen Breath: Lv 10
+Near, Inst.
+Takes a creature's breath out of its lungs, causing
+rike
+panic and an instant drop of one fatigue level
+of
+plus a second level unless a Stm roll of 7+ is a
+made. Casting prerequisites: Corporem for
+people, Animal for animals.
+Room of Stale Air: Lv 20
+that
+Near, Inst.
+s up
+ces Makes the air in a room stuffy and uncomfort s
+and able. Any creatures which breathe air suffer a - s
+3 penalty on all rolls. In addition, for each round
+age
+ons. of exertion, a character must make a Fatigue roll l
+of6+ or lose a fatigue level. may cause panic
+This
+in some creatures or people.
+Quiet the Raging Winds: Lv 25
+Near, Inst.
+Stops the wind near you, leaving only calm air.
+Calms any force of wind, magical or otherwise.
+The Cloudless Sky Returned: Lv 30
+10 miles, Inst.
+Clears the sky completely of any clouds or other
+meterological activity within one mile of you.
+Rego Auram Spells
+Ward Against Faeries of the Ai r: Gen.
+Spec., Ring, Vim
+As Ward Against Faeries of the Water
+Gen), but for faeries of the air.
+{RcAq
+Wind at the Back: Lv 5
+Reach, Spec.
+A fresh breze e follows you until you stop tra vcl
+ing. It will cause fog or haze to follow you.
+Jupiter's Resounding Blow: Lv 10
+Near, Inst, Aimed
+Creates a thunderclap; anyone directly under
+neath must makea Stm roll of9+ or deafened.
+If deafened, the target gets another S
+be
+tm roll each
+minute and recovers with a roll of
+8+.
+Broom of the Winds: Lv 15
+Near, Inst.
+Whips up violent, swirling winds around the
+target, who must make a Size roll of 1 O+ to
+remain standing. The target can also resist by
+making a Str roll of 9+ if holding onto a strong
+support. Ifbo th rolls fail, the target is knocked in
+a random direction; roll a simple die: 1-down; 2
+or left; 4 or forward; 6 or 7-right; 8 or 9-
+bac
+3-
+kward;
+10-5-
+up twelve feet and dropped.
+Damagedependson what obstructions are struck.
+Circling Winds of Protection: L v 20
+Reach, Spec.
+Surrounds you with winds that circle you at
+great speed. Since the wind picks up dust, you
+may be obscured. Anyone standing near enough
+to you to attack you with a hand weapon must
+make a Size roll of 9+ at the beginning of each
+round or be blown away. Mel ee attacks against
+you areat-2At� and missile or thrown weapon
+attacks are at -10. The winds continue for 5
+rounds after you end concentration.
+Gathering of the Stormy Might: Lv 20
+Sight, Inst.
+Calls the surrounding clouds into a storm within
+one hour. The size of the storm depends on the
+amount of cloud cover available. This spell
+cannot be used under a clear sky.
+Wings of the Soaring Wind: Lv 25
+Self, Conc.
+Causes a massive gush of air around you which
+supports and pushes you along through the air at
+speeds up to miles per hour. It is dangerous
+for extended 40tr avel, you might easily
+lose your concentratio
+beca
+n.
+use
+Ars Ma�lca
+Pull of the Skybound Winds: Lv 45 l
+Sight, Conc.
+Makes winds rise upward, pulling one object,
+creature, or person SO feet into the sky before
+Corporem S
+Corporemspells deal with bodies, human or
+human-like, and anything that involves those
+bodies. Most faeries are humanoid enough to be
+affected by Corporem spells.
+Creo
+Corporem Spells
+l
+Many Creo Corporem spells are most useful
+as permanent spells, requiring raw A spell
+that binds your wounds without ust1inisg. raw
+lets your wounds open again by sunrise or sun
+set, whichever comes first.
+No spell can restore fatigue levels.
+Free the Accursed Body: Gen.
+Touch, Inst.
+Cancels the effects (short of death) of a malign
+Corporem spell, such as Twist of the Tongue, if
+you can match the Level of the spell on die +
+Level.
+Charm Against Putrefaction: Lv 5
+Touch, Moon. /Perm.
+Prevents decay of a human corpse. Necroman
+cers use it to preserve their revived corpses.
+Bind Wound: Lv 10
+Touch, Sun./Inst.
+A wound is sealed by magical means, stopping
+any bleeding. Any subsequent recovery rolls are
+madeat+l.
+Gentle Touch
+of the Purified Body: Lv 15
+Touch, Sun./Inst.
+Stops the 'progress of any disease of typical
+strength. It does not remove damage that has
+already occurred nor cure such dread illnesses as
+leprosy.
+The Chirurgeon's Healing Touch: Lv 20
+Touch, Sun./ Inst.
+The person touched can recover a lost body level
+by making a stress Stm roll of to which is
+added the Chirurgy skill of an3+yo, ne who has
+successfully tended the wounds. Also, subtract
+the wound penalty from the roll. Does not heal
+damage from poison or disease.
+Restoration of the Defiled Body: Lv 25
+Touch, Sun./Inst.
+Removes the crippling or malignant effects of
+poison, disease, or premature aging. The effects
+Spells
+letting it drop to the side. Even a small building than
+can be torn from its foundation by this spell. but
+Such a building can be no larger than 20 feet to a ch
+side and cannot be built out of a material heavier
+pells
+of natural aging cannot be undone by this or any yell
+other spell. roll i
+The Severed Limb Made Whole: Lv 30 Re
+Touch, Sun./ Inst. Sigh
+A limb which has been detached from the body You
+can be reattached, but any decay that has oc pers
+curred on thesevered limb remainsafter the limb som
+reattached. After a day of decomposition, a
+lisim b is weak. After seven days it is nearly useless Sig
+and infects the character on whom it is replaced
+(Stm roll of or die). After two weeks it is
+l completely u6+sel ess. Y
+w
+o
+h
+u
+o
+Incantation of the
+Wh
+Body Made Whole: Lv 45
+Touch, Sun./Inst.
+You
+Heals all damage to a human body at the rate of
+stan
+one body level per round. You must maintain
+you
+concentration for the rounds during which the
+into
+spell is being cast. You must lay a cloak, blanket,
+All t
+or similar covering over the recipient to cast the
+cor
+spell
+The
+The Shadow of Life Renewed: Lv 70
+Reach, Inst., RituaL Mentem
+Det
+Brings the semblance of life to a corpse. During
+cast
+the ritual, healing spells will work on the corpse,
+ inti
+and the body must be returned to physical
+hair
+wholeness, or it simply dies again once it has
+can
+been brought back to life. For each day the the
+map
+person has been dead, roll for characteristic loss
+Wh
+as for aging. When the ritual is complete, roll a
+tion
+die to determine the success of the attempt. 1-
+pe
+body dissolves; 2- body possessed by demon,
+cov
+faerie, etc.; mindless, useless living corpse; 4
+or 5- autom3-aton with no abilities over 3; or 7- can
+automaton; 8-person with self-direction b6u t no on t
+pro
+personality and somehow dangerously de
+kin
+mented; 9 or 10- person with will, but no
+is.
+l personality. In any case, the revived person is
+bor
+not truly alive and is unable to gain experience
+sea
+points. Also, the character must make an aging
+roll each year regardlessofage. This is the closest
+Tra
+the Order of Hermes has gotten to raising a
+person from the dead. of
+l Fin
+ast
+Intellego
+20).
+t
+l Corporem Spells Th
+Lets
+Physician's Eye: Lv 5 wit
+Sight, Inst. eno
+f Determines the general health of a single person. hou
+Specific afflictions appear to you as areas of spel
+than stout wood. Where itd rops, nobody knows,
+ut perhaps a Finesse roll of 12+ would let you
+hoose.
+yellow on the person's body. Medicine+ Per
+roll is required to identify unuAsu al diseases.
+Revealed Flaws of Mortal Flesh: Lv 10
+Sight, Inst.
+ou are able to find any medical defects in the
+person or being that you see. You must possess
+something of value to the person.
+emotional
+Sight of the True Form: Lv 10
+Sight, Inst.
+ou see the true, original form of any person
+whose form has been changed or masked.
+Whispers Through the Black Gate: Lv 15
+Reach, Conc., Mentem
+You can, figuratively, talk through the gate that
+stands between the dead and the living, letting
+youspeakwithacorpsethat has not yet decayed
+into a skeleton nor been buried by Church burial.
+All those around you can hear the voice of the
+corpse.
+The Inexorable Search: Lv 20
+100 miles, Conc.
+Determines the location of a specific person. To
+cast the spell, you need a map and something
+intimate to the person sought, such as a lock of
+hair, or a fingernail. After casting the spell, you
+can move your finger (or other focus) over the
+map at the rate of one hour per square foot.
+When your finger passes over the person's loca
+tion as represented on the map, you sense the
+person's presence. (If the person is not in the area
+covered by the map, no sensations result.) You
+can locate the person to within a thumb's width
+on the map. Thus a map with a larger scale
+provides more precise information. map of a
+kingdom would reveal in what area A th e person
+is. A map of a city would reveal in what neigh
+borhood Each casting of the spell allows for the
+searching of one map.
+Tracing the Trail
+of Death's Stench: Lv 25
+100 miles, Conc.
+Finds the corpse of any being in the same manner
+asthatdescribedforTheinexorablcScarch(lnCo
+20). Some object intimate to the being is needed.
+The Eye of the Sage: L v 30
+100 miles, Conc. (1 hour), lmagonem
+Lets you see the specified person and what is
+withinonepaceofthatperson. The image is clear
+enough to allow reading. The vision lasts for an
+houroruntilconcentration is broken. To cast this
+spelL you need some object intimate to the target.
+86
+Muto
+Corporem Spells
+These spells transform people somehow.
+There are beneficials pells to cast on yoUiselfa nd
+on your compatriots and harmful spells to cast
+on your foes.
+Transformations usually do not completely
+eradicate the original form; something of the
+original remains. If you tum a fat, one-armed
+man into a wolf, the wolf will be fat, three
+legged,and male. Likewise, transformations can
+have subtle (and sometimes dramatic) perma
+nent effects. Someone who spends a long time,
+say a month, as an animal will begin to act and
+think like that animal. Eventually, such indi
+viduals might lose their human identities alto
+gether. What's more, someone transformed back
+intoahumanmighttemporarilyorpermanently
+retain some features gained in the transforma
+tion. Someone turned into a rabbit and back
+might keep a fondness for carrots or unnaturally
+long ears. Transformations are tricky things.
+Muto Corporem spells cannot alter a person's
+mind, so they leave the transformed person's
+intelligence and knowledge intact. Magican cast
+spells while in animal form, but they suffer the
+normal -15 penalty for casting without hands or
+voice. Any abilities that the animal form has, the
+transformed person has as well, though it takes
+a day or so of experience to get used to the form.
+To change accouterments along with the body
+requires requisites. For example, one needs a
+casting requisite of Animal for leather, of Aquam
+for any liquids carried, Tcrram for metal objects
+(including studs in armor), etc. Accouterments
+are transformed only if they are actually being
+worn, not just carried in the hand. Anything that
+does not transform with the body, because the
+casting magus chooses not to use the casting
+requisites for it or because the storyguide rules
+that it is not sufficiently a part of the target's
+worn equipment, falls to the ground.
+Evil Eye: Lv 5
+Near, Sun./Perm.
+Enlarges the left eye of the target, malforming
+the face and producing a grisly visage.
+Eyes of the Cat: L v 10
+Body, Sun./Year, Animal
+You gain the eyes ofa cat, which allow you to see
+in darkness (but not the absolute lack of light).
+Disguise of the New Visage: Lv 15
+Body, Sun./Year
+Your facial features are transformed to any
+approximately human configuration.
+Ann of the Infant: Lv 20
+Near, Sun./Year
+Turns a person's arm into an arm half its original
+length and pudgy like an infant's.
+Preternatural
+Growth and Shrinking: Lv 20
+Body, Sun./Year
+Adds + 1 to your normal Size or decreases it 1 or
+Chapter 5
+2 points. An extra Size point gives one+ 1 Soak, d
++tStr,anextrabodyleveLand-1 Def. Each point
+lost has the reverse effect. Y
+ba
+Shape of the Woodland Prowler: Lv 25 h
+w. Self, Sun./Perm. Animal fo
+nd You placea wolfskinoveryourself and turn into fo
+ast a wolf. You may change back at will. Casting
+requisites: various forms for accouterments you
+ly choose to transform.
+he Y
+ed Curse of Circe: Lv 30 ap
+e Eye, Sun./Perm., Animal th
+an Turns a person into a pig. Casting requisites: g
+a various forms for accouterments you choose to cr
+e, transform. Y
+nd W
+di Gift of the Bear's Fortitude: Lv 30 in
+to (
+Body,Sun./Year
+ck m
+Your flesh becomes resistant to physical dam
+tly in
+age. You get + 10 on Soak rolls until you botch
+a m
+one. If the duration is ''Year," your resistance
+ck
+comesbackaftereithersunriseorsunset, which S
+lly
+ever comes first. Your flesh tough and insen
+. sitive; any rolls thatinvolveseisns itive touch (such
+n's as for picking a lock) are at Y
+n's -2 12
+ast The Silent Vigil: Lv 30 th
+the th
+or Self, Spec., Terram si
+the You can move into and become part of a rock c
+formation that is at least twice your size. While
+kes
+in the stone, you can hear what is going on T
+m.
+around you, but you cannot use other senses.
+dy
+The spell lasts until you come out, and you must
+s a Y
+come out where you came in. While inside the
+am
+stone, you have no need for food or drink, though
+cts
+you do age. Rolls to recover from fatigue or
+nts b
+wounds take twice as long to make while you are
+ing g
+in the stone. Casting requisites: various forms
+hat c
+for any accouterments you choose to transform.
+the
+ing n
+les Mists of Cllange: Lv 30 g
+et's Spec., Moon/Perm., Ritual, Animai
+Auram
+As this spell is cast, a whipping wind arises and
+patches of mist begin to roll across the landscape.
+Sometimes, a patch of mist suddenly stops and
+ing envelops a person for a few seconds, during
+which time the victim cannot move. When the
+mist blows away and continues its course, the
+al
+person has been transformed into a random
+creature. Roll a simple die to determine the
+T
+result: 1-Raven,. 2-Horse, 3- Brown Bear, 4-
+see
+Large Toad, 5-Ferret, 6-Viper, 7-Boar/Sow, 8-
+t).
+Dog, 9-Black Cat, Other (storyguide picks, be T
+cruel). The people0- transformed partially retain a
+their human minds but inherit all the passions tr
+and instincts of their new forms. ti
+ny
+The mist covers an area with a one mile radius,
+I
+whose center must be within 10 miles of you
+when you cast the spell; and it lasts an hour. It
+affectsaboutoneintenofthepeoplewhoremain T
+within the radius for the full half hour. (To see a
+inal whether a given character falls victim, make a
+stress roll. A 0 indicates that the spell has af
+fected the character.) Once the transformations
+begin, people will realize the nature of the mist T
+and flee the cursed area. t
+Casting requisites: various forms for any accou l
+1 or terments you choose to transform.
+doak of Black Feathers: Lv 35
+Self, Sun./Perm., Animal, Auram
+You hang a small cape of raven feathers on your
+back and turn into a raven. You can revert to
+human form at will. Casting requisites: various
+forms for any accouterments you choose to trans
+form.
+doak of Mist: Lv 40
+Body, Sun./Perm., Auram, Aquam
+Your body becomes a thick, cohesive mist of
+approximately humansiz.e. You can floatthrough
+the air at walking spede and see and hear what is
+going on around you. You can seep through
+cracks but cannot move through solid objects.
+You can return to your normal form at any time.
+When returning to human form, you can grow
+into a set of dot hes so that you will not naked.
+(Magi, after all, must retain their dignbeity .) As
+mist, you arc subject to the force of winds. Cast
+ing requisites: various forms for any accouter
+ments you choose to transform.
+Stance of the Patient Tree: Lv 40
+Self, Sun./Perm., Herbam
+You turn into an oak tree about a foot thick and
+12 feet high. You can sense only the most basic
+things, such as night and day, strong winds, and
+things that affect you physically. Casting requi
+sites: various forms for any accouterments you
+choose to transform.
+Transform to Water: Lv 45
+Body, Sun./Perm., Aquam
+You turn yourself into water, one pint for every
+pound you weigh. As water, you can hold your
+self together unless someone makes an effort to
+break part of you off. You can roll across the
+groundslowly,butyoucannotmoveuphill. You
+can hear sounds, feel things touching you, and
+sense the temperature. If you return to your
+normal form while occupying clothing, you can
+grow into those clothes. (Once again, dignity!)
+Perdo
+Corporem Spells
+These spells harm people directly and usu
+ally permanently.
+Touch of the Goose Feather: Lv 5
+Near,Conc.
+The target must make a Stm roll of 7+ or let out
+a loud sneeze. Spell-casters must make Concen
+tration+ Int rolls of 15+ to maintain concentra
+tion,. and others get -1 on most activities.
+Invocation of Weariness: Lv 5
+Near, Inst.
+The target must make a Fatigue roll of 9+ or lose
+a fatigue level.
+Grip of the Choking Hand: Lv 10
+Near,Conc.
+The target feels an invisible, strangling hand on
+the throat. Each round the target loses a fatigue
+level (or a body level, once unconscious). Stm
+roll of to break the spell, roll each round.
+6+
+Ars Matlca
+Dust to Dust: Lv 15
+Near, Inst.
+Turns a dead (or undead) body into dust in two
+rounds. This spell is a lifesaver against some
+undead, which prove particularly resilient against
+most Corporem and Mentem spells; but it does
+not work on those undead that are possessed by
+spirits. It works only against those undead who
+are walking, mindless corpses, generally skele
+tons and zombies. Casting requisite: Animal for
+animal corpses.
+The Wound that Weeps: Lv 15
+Near, Inst.
+Opens a bleeding wound on your target. Each
+round the target must make a Stm roll. If the
+result is 2 or below, one fatigue level is lost (or a
+body level, unconscious). If the result is 3 to
+no level is losift . If the roll is 9+, the bleeding stop8s,.
+A target fighting in melee suffers a -3 penalty.
+One that is completely still receives a + 1 bonus.
+A Chirurgy roll of 7+ stops the bleeding.
+Incantation of the Milky Eyes: Lv 20
+Near, Inst.
+Blinds a target, leaving the eyes milky with cata
+racts.
+Deafen a target (causing -1 on combat
+Lv 2ro0l:l s).
+Twist of the Tongue: Lv 20
+Near, Inst.
+Twists the target's tongue into a spiral, com
+pletely destroying the ability to speak. A grave
+offense to a magus.
+Bane of the Decrepit Body: Lv 25
+Near, Inst.
+The target ages a number of years equal to a
+simple roll + 5, determine characteristic loss
+normally. Works only on adults.
+Curse of the Leprous Flesh: Lv 30
+Near, Inst.
+This curse of leprosy causes a person's flesh to
+rot off in a matter of weeks. Every week for three
+months, the person must make a Stm roll of or
+lose a body level permanently. Regardless6+, t he
+target loses a point of Stm by the time the spell
+ends. The spell can be dispelled while it is still in
+effect, but any damage done cannot be dispelled.
+Curse of the Unportended Plague: Lv 35
+Near, Inst., Ritual
+Starts a plague in a city. The plague reaches its
+height in to 12 months and can spread like any
+other plag6u e. It is non-magical once begun, and
+healthmeasurescanlessentheeffectoftheplague.
+A full-blown plague kills one in ten inhabitants
+of a city in the course of a few months. Using or
+even transcribing this spell is rigorously discour
+aged by most of the Order of Hermes Tribunals.
+The Kiss of Death: Lv 35
+Touch, Inst.
+The person you dies a sudden death. The
+only mark on thekis corps se is the black imprint of
+your lips. No words or gestures are necessary.
+Stm roll of 12+ to resist.
+Spells
+Clenching Grasp of heig
+the Crushed Heart: Lv40 mea
+o Near, Inst. wit
+e You hold out one hand and make a clenching slo
+t motion; the target's heart is crushed and instant
+Aw
+s death results. Stm roll of 15+ to resist (lose 5
+y points of Stm regardless).
+o Rai
+ ver
+r Re\lo (if i
+skel
+The
+Corporem Spells
+cere
+h Spasms of the Uncontrolled Hands: Lv 5 Gif
+e Near, Inst.
+a Target must make a Stm roll of or drop what Tra
+ever is held in hand. 5+ wh
+,. the
+. Curse of the Unruly Tongue: Lv 10 targ
+. cast
+Near,Conc.
+fer.
+Causes the target to stutter and slur words.
+ene
+Communication rolls are at spoken spells are
+at with an extra botch rol4l ; the
+-6
+ Despair of the Lif
+Quivering Manacles: Lv 10
+Lif
+Near,Conc.
+t the
+Your target shakes vigorously from side to side
+d
+without falling. Those affected get -3 to combat
+pe
+or other action rolls, and -1 to most other rolls.
+Th
+Endurance of the Berserkers: Lv 15
+
+Touch, 5 minutes/Sun.
+e Tur
+The target's body acts as though it is unwounded
+the
+and unfatigued for five minutes, as long as the
+zo
+character is not killed but even if incapacitated.
+(Sta
+Keep track of the actual wound and fatigue
+cha
+levels anyway because as soon as the spell wears
+a full
+off, the target falls to actual levels. In addition,
+s pr
+vigorous action can aggravate a wounded char
+or t
+acter's condition. A character who engages in
+combatwhileatmediumwoundsorworsewhile
+Str
+under this spell must make a stress Stm roll of
+Un
+10+ or drop an additional wound level. Thus, a
+o character who fought in combat while suffering
+e from heavy wounds would need to make the roll You
+r to keep from falling to incapacitated when the a pe
+e spell ends. Consecutive castings of this spell on so
+ll a character will delay the end of the spell, when jerk
+n the wounds take effect, but a body can only take telli
+. a numberofconsecutive castings equal to its Size The
++ 4. Further castings have no effect. Str
+Gift of the Frog's Legs: Lv 15 Th
+s Touch, 10 seconds
+y Allows the person on whom it is cast to leap up Tel
+d to 15 feet vertically or 25 feet horizontally (less if bes
+. loaded down). The person must make a Dex - wit
+Load roll of to land without injury. A miss
+r indicates the6+ loss of one body level, and a botch Th
+r indicates a broken ankle or other crippling in
+. jury. The person can only make such a lea ponce Tel
+for each casting of the speli and that leap must be whi
+made within ten seconds. As with a frog, a a sp
+running start does not improve the leap. + In
+e For
+f Rise of the Feathery Body: Lv 15 just
+. Body,Conc. hav
+Allows you to to float up and down to any in a
+87
+height, but you cannot move horizontally by
+means of this spell. You can lift up to pounds
+with you. You move as fast as smokSOe rises, or
+slower if you are carrying a load.
+Awaken the Slumbering Corpse: Lv 20
+Near,Conc.
+Raises a corpse and causes it to function at your
+verbal command. Use the statistics for zombies
+(if it still has most of the flesh on it) or for
+skeletons (if most of the flesh is gone) on p. 127.
+The corpse cannot have been buried by Church
+ceremony.
+Gift of Vigor: Lv 20
+Touch, Inst.
+Transfers bodily energy from you to any target
+who is at a lower fatigue level than you. You are
+thenat the target's original fatigue level, and the
+target is at yours. If you lose a fatigue level from
+casting this spell, the loss comes after the trans
+fer. Magi have looked for a way to restore their
+energy so they can cast more spells, and this is
+the closest they have come.
+Lifting the Dangling Puppet: L v 20
+Near,Conc.
+Lifts a person of Size +1 or lower vertically into
+the air. Generally, you can make the target rise or
+descend as fast as smoke rises, but a heavier
+person rises more slowly and falls more quickly.
+The Walking Corpse: Lv 25
+Reach, Inst., Ritual, Mentem
+Turns a corpse into a nearly mindless servant. If
+the corpse still has most of its flesh, it becomes a
+zombie; if not, it becomes an animated skeleton.
+(Stats are in the Undead section of the Bestiary
+chapter.) The creature follows your orders faith
+fully but unimaginatively. Unless the corpse is
+preserved with the Charm Against Putrefaction
+or the equivalent, the body decays normally.
+Strings of the
+Unwilling Marionette: Lv 30
+Near,Conc.
+You can control the gross physical movements of
+a person. such as walking, standing, turning, and
+so on. If the target resists, the movements are
+jerky. The target can yell, but you can prevent in
+telligible spehec by controlling the target's mouth.
+The target must be conscious to be moved about.
+Str roll of 12+ to resist, roll each round.
+The Leap of Homecoming: Lv 35
+Self (150 miles), Inst.
+Teleports you back to the one place you know
+best (probably your laboratory), provided it is
+within 150 miles.
+The Seven League Stride: Lv 45
+Self (49 miles), Inst.
+Teleports you to any place (within range) with
+which you have some arcane connection, such as
+a spell that lets you see there. If you fail a Finesse
++ Int roll of 11+ ,your arrival goes slightly awry.
+For instance, you might fall when you appear or
+just be facing the wrong way. A botch means you
+have appeared in the wrong place, perhaps even
+in a wall (ouch).
+BB
+Herbam Sp
+Herbam spells work on plants and plant
+matter, both living and dead. Since wood is a
+common material in weapons, vehicles, and
+buildings, Herbam spells can be useful in im
+proving or destroying physical things. They can
+also be used to bring the plant world to your aid.
+Creo Herbam Spells
+These spells create or heal plants. Any food
+created is nutritious only if raw is used.
+vis
+Gen: Cancels effects of a malign Herbam spell
+if you can roll its Level on die + Level of this
+spell
+Lv 5: Create an apple.
+Conjure the Sturdy Vine: Lv 10
+Reach, Sun./ Inst.
+Crows 10pacesof vine from a moderate quantity
+of wood or from fertile soil. The vine is extremely
+strong and pliable, suitable for use as a rope.
+Lv 15: Cause a tree to bear fruit within the hour.
+The tree cannot bear fruit again for a year.
+Trap of the Entwining Vines: Lv 15
+Near, 1 hour
+Causes strong, woody vines to grow rapidly out
+of fertile earth. The vines cover a circle 2 paces
+across and reach 6 feet high. Anything caught
+within them is immobilized. To avoid the vines,
+the target must make a Qik -Enc roll of 9+, and
+to break out re!-luires a Str roll of 12+. Someone
+nottrapped can cut a trapped person free in two
+rounds. The vines weaken and wither to dust
+after an hour.
+Wall of Thorns: Lv 20
+Near, Sun./Inst.
+Creates a straight wall of woody, thorny bushes
+up to 20 paces across, one pace thick, and 12 feet
+high. The th9ms, which are unnaturally resil
+ient, have +15 Soak and four ''body levels" (cut
+by edged weapons only). Forcing one's way
+through bodily requires a Str roll of 9+ and does
++ 15 damage regardless of the attempt's success.
+The wall grows out of existing bushes or fertile
+soil. A Climb roll of 9+ allows a character to scale
+the wall, but the character takes + 10 damage in
+the process.
+WallofLivingWood: Lv25
+Near, Sun./Inst.
+A straight wall of living oak is created, growing
+outquicklyfromnearbytre,esotherplantgrowth,
+or fertile earth. The wall is 20 paces long, one
+pace thick. and 15 feet high. It can be scaled by a
+Climb roll of 9+.
+Chapter 5
+ells
+nt Bridge of Wood: Lv 30 w
+a Near, Sun./Inst. (u
+d Creates an ornate and exquisitely carved bridge ca
+ made from living leaves, vines, and wood. The a
+an bridge can reach up to SO feet and is sturdy th
+d. enough to support creatures of up to Size +4.
+Al
+Intelle{fo 20
+w
+fa
+Herbam Spells
+od to
+su
+Probe Nature's Hidden Lore: Lv 5 le
+ll Touch, Inst. en
+is Lets you know what kind of plant you touch. re
+re
+You get an image of it in its natural habitat.
+tr
+Works with plant products as well as with plants
+themselves.
+Intuition of the Forest: Lv 10
+Body, Sun.
+ity Gives you an intuitive sense of how to get along
+ly in the forest and how to get the most out of the
+forest without causing it harm. It is a type of
+communion with the woods. This spell provides
+ur. a +2 toall nature-oriented rolls (not spells) when
+T
+r. in a forest or similar area. Causing significant
+harm to the forestc ancels this spell and gives you o
+a headache.
+ut Hunt for the Wild Herb: Lv 15 th
+es 10 miles, Conc. le
+ht When you cast this spell, the vegetation of a d
+es, forest guides you to the nearest specimen of the w
+nd type of plant you seek. You must make a Per roll
+D
+ne of to follow the subtle signals, which include
+o po 6+ int ing branches, inclined trunks, and such. A
+st plant of the type you seek must be within 10 C
+miles or the spell will fail. n
+w
+Converse with Plants and Trees: Lv 25 k
+st
+Reach, Conc.
+d
+es You can speak with plants for one conversation.
+h
+eet The level of the conversation depends on the
+il type of plants; longer-lived and more "noble"
+T
+cut plants have more to say. A single question and
+ay response takes ten to thirty minutes, with slower
+s growing plants speaking more slowly. Typically Y
+s. plants can talkaboutthesoiland theotherplants ti
+tile around them buth ave limited awareness ofm ore a
+le rapid events, such as the passing of animals or
+in people. Onlookers cannot understand your to
+conversation. c
+n
+Shriek of the Impending Shafts: Lv 25 ta
+Body, Conc.
+R
+ng Lets you know where anything wooden will be
+h, in the immediate future (a second) by a shriek
+ne that sounds in the air where the wood will be. T
+y a You get a +8 bonus on Def rolls against wooden pl
+weapons, and you can automatically dodge w
+ArsMaetca
+I
+,,
+wooden missiles from 10 or more paces away
+(unless so many are coming at you that you
+cannot get out of the way). Missiles from nearer
+archers still require ane ase factor 5 points higher
+than normal strike you.
+to
+Calling the Council of the Trees: Lv 45
+20 miles, Moon, Ritual
+All magical and potentially mobile trees within
+20 miles uproot themselves and travel to the spot
+where the ritual was performed. Trees from a
+faerie forest are especially prone to responding
+to the call. Once gathered, they hold meetings,
+summon ancient powers, and discuss the prob
+lems facing their kind. The results of the confer
+ence may not be entirely in your favor. The trees
+remain animated only for a month and seek to
+return home before the end of that month. The
+trees can be called only once per decade.
+Muto
+Herbam Spells
+Transformation
+of the Thorny Staff: Lv 5
+Touch, Sun./Perm.
+Causes a length of wood to grow thick, sharp
+thorns in whichever spots you touch (up to 6 feet
+length). If cast on a staff, they provide a
+damage bonus the first time a hit is scored, aft+4er
+which the thorns break off.
+Dance of the Staves: Lv 10
+Near, Inst.
+Causes a pole, staff, haft, or any other long. thin,
+non-livingwoodenobjecttobendandlashabout
+wildlyforafewsecondsandthenstopsuddenly,
+keeping its new, twisted shape. A staff that
+strikes someone while whipping about does
+damage, with a possible bonus if the weapo+4n
+head hits a person.
+Twist the Living Tree: Lv 15
+Near, Sun./Yea r
+You make a living tree bend into unusual posi
+tions. Depending on your needs, you can make
+a cage, a shelter, a wall, etc. Even the leaves can
+be bent to form a solid roof that sheds rain so as
+to form a tree tent. Takes one to ten minutes to
+complete (depending on the complexity of the
+new shape), during which time you must main
+tain concentration.
+Rope of Bronze: Lv 15
+Reach, Sun./Perm., Terram
+Turns up seven paces of rope (made from
+plant matetoria D refined, superior bronze,
+which will not breainktou ndernormaldrrumstances.
+Ars Magtca
+Piercing Shaft of Wood: Lv 20
+Touch, Inst., Rego, Aimed +2
+Tunis a piece of wood into a sleek, barbed, strong
+shaft that then flies through the air at a target.
+Damage depends on the size of item from which
+the shaft is formed: Staff (upper size limit) +20,
+two-foot branch +15, wand +10. If it pierces a
+body, removing the shaft causes the target to lose
+another body level unless a Stm rollof7+ is made
+(add Chirurgy score of the one who removes the
+shaft).
+Thaumaturgical
+Transformation of Plants to Iron: Lv 20
+Reach, Sun./Year, Terram
+Makes any plant, dead or alive, as hard as iron.
+Affects any amount of continuous plant material
+up to the size of an entire tree or a small glade of
+grass. Sharp-edged plants can become deadly
+when this hard.
+Stir the Slumbering Tree: Lv 25
+Reach, Sun./Perm., Mentem
+Raises any tree into a conscious state resembling
+that of a human. Such a tree can see and hear
+what going on around it at normal human
+speedis. These trees often share some mental
+attributes or personality traits with those that
+woke them. The trees can move their branches
+about slowly, too slowly to be detectable by
+people. Most trees in magical areas are already
+awake. It is theorized by some Hermetic scholars
+that before the Dominion arose, in the days when
+the faeries danced across the lands with human
+ity, all the trees were awake and that some even
+spoke aloud.
+Curse of the Haunted Forest: Lv 30
+Near, Inst., Ritual, Perdo
+Turns a previously normal forest into a haunted
+and dangerous place. The trees become con
+scious and crueL capable of sight, hearing, and
+limited movement. While they cannot uproot
+themselves, they can move their branches about,
+reaching the ground in an hour or two. (Only the
+foolish sleep in such forests.) The trees become
+gnarled and hideous, and the imaginative can
+see menacing faces in them. Only ill-tempered
+animals, such as boars and crows, live in the
+woods, and nothing in them is lefwilt edl ible. The
+only knowledge of what would happen should
+this ritual be attempted on a faerie forest comes
+from ancient and disputed legends of the Order
+of Hermes.
+Perd o
+Herbam Spells
+These spells destroy plants and plant mate
+rial. Since many items are made of wood, these
+spells can be quite destructive.
+Lv 5: Cover up to a bushel of vegetables, fruit,
+grain, etc. with mold, making them inedible.
+Spells
+Curse of the Rotted Wood: Lv 10 still
+Near, Inst. roll
+g Causes a non-living, wooden object to rot and
+. fall apart. Objects up to the size of a single door Stri
+canbeaffected,butthingsthatsizetakeuptotwo
+, rounds to decay. Cau
+a mus
+Wizard's Autumn: Lv 15 age
+e
+Sight, Inst.
+e
+Causes all the deciduous leaves within a one Ta
+mile radius, first to brown, then fall to the ground.
+The process takes about one minute. The
+Hur
+full
+trees will not bud again until the next spring. (tar
+aro
+Plant's Whithering Bane: Lv 20 mak
+.
+Near, Inst. per
+l
+Withersanddestroysonelivingtreeorallsmaller doe
+f
+living plants in an area 20 feet square. targ
+The Great Rot: Lv 25 Coi
+Near, Inst.
+Rots a large amount of dead wood, up to the Ani
+amount found in a wooden house or small inn. tha
+r Wooden structures creak and groan mightily for outs
+about a minute before collapsing. awa
+l selv
+t Treading the Ashen Path: Lv 30 roll
+indi
+Spec., Inst.
+con
+As you walk through a forest after casting this
+spell, all the plant material 10 paces in front of
+s Th
+you and 5 paces to either side withers and dies.
+Trees are reduced to bare trunks, while their
+ leavesandallsmallerplantstumtoash. Youcan Ani
+walk for seven miles with each casting of this wea
+spell. Use of this spell in faerie woods is not rec wea
+ommended. wiel
+Im
+tries
+wiel
+ Rego on.
+han
+t Herbam Spells rou
+, rele
+e sam
+e Ward Against Faeries of the Wood: Gen wiel
+Spec., Ring
+equ
+Like Ward Against Faeries of the Waters (ReAq
+wea
+e Gen), but for faeries of the wood. All faeries are (wit
+e faeries of the wood unless it is obvious that they ons
+are of the mountains, water, or air.
+ing
+Da
+r
+Whip of Thoms: Lv 5 Lor
+Near, Inst., Aimed
+A small branch whips itself at some object close
+Cau
+to it. A thorny branch can cause damage, but
+most branches are relatively har+Oml ess; it can be trun
+larg
+employed to hit something out of a person's
+Atk
+hand. You must target the spell to hit with the
+prac
+branch.
+Fre
+ Repel the Wooden Shafts: Lv 10
+Near,Conc.
+Like
+Deflects the blow of any weapon made of wood,
+up to the size of a two-handed club. You can wal
+Co
+, deflect a different weapon each round. The will
+. weapons automatically miss, but attackers must and
+89
+still roll to see if they botch (with two extra botch
+rolls for melee weapons).
+Strike of the Angered Branch: Lv 15
+Near, Inst., Aimed
+Causes a tree branch to swing at a target. You
+must target the spell for the branch to hit; Dam
+age is+lO.
+Tangle of Wood and Thoms: Lv 15
+Near, Spec., Aimed+ 1
+Hurls a length of wood that you hold at a target
+(targeting roll is required). The wood wraps
+around and immobilizes the target, who must
+make a Str roll of 10+ to break free (one attempt
+per round). If the length of wood has thorns, it
+does damage when it hits and each time the
+targe+6t tr ies to break free.
+Coils of the Entangling Plants: Lv 20
+Near, Spec..
+Animates all the grass and other plants smaller
+than adult trees within a field delineated by your
+outstretched arms and no more than 15 paces
+away, causing them to grab and wrap them
+selves around the people nearest to them (Str
+rollsof7+ to 10+ to break free). You can free one
+individual per round as long as you maintain
+concentration.
+The Traitorous Spear: L v 20
+Near, Spec.
+Animates a wooden or wooden-hafted melee
+weapon in someone's hands and makes that
+weapon attack the former wielder until the
+wielder is dead or the weapon is destroyed.
+Immediately when the spell is cast, the weapon
+tries to break free from the wielder's hands. The
+wielder must make a Qik-Enc roll of 9+ to hang
+on. subsequent rounds, the wielder can only
+hangOn on by making Str rolls of 6+, one roll per
+round. Once the weapon has broken free or been
+released, it attacks the one who had held it with
+same 1st, Atk, and Dam totals as it had in the
+wielder's hands. The weapon has a Def total
+equal to 7 minus its Load score. One-handed
+weapons have +10 Soak and 3 ''body levels"
+(with no wound penalties). Two-handed weap
+ons have+14Soakand4 body levels. All thrust
+ing and missile weapons suffer -5 on Atk and
+Dam rolls versus the weapon.
+Lord of the Trees: Lv 25
+Near,Conc.
+Causes a to move its branches and bend its
+trunk in atreny we ay which you mentally direct. A
+large 'tree striking with branches will have 1st +5,
+Atk +7, and Dam + 16. Normal weapons are
+practically useless against large trees.
+Freeing the Striding Tree: Lv 30
+Near,Conc.
+Like Lord of the Trees (ReHe but the tree can
+walk half as fast as a human 25ca)n, . If you botch a
+Concentration roll to maintain control, the tree
+will probably attack you, having been awakened
+and disturbed by this spell.
+90
+Ignem Spel
+As fire is volatile and dangerous, so are these
+spells. Magi who pursue the art of fire do so with
+fine regard for the dangers and also the powers
+involved, for fire is both dangerous and mighty,
+to friend and alike. Storyguides should make
+Ignem botchesfoe p articularily deadly.
+Light and heat are included in this form.
+Various Ignem spells have limits regarding
+the size of the fires they can affect. The following
+size categories are used to describe fires: candle,
+torch, campfire, bonfire (large heap of burning
+things), and house fire. Unless specified other
+wise, a spell that can affect one type of fire can
+affect all smaller fires as well. Fire damage is ex
+plained on p. 55-56.
+Creo Ignem Spells
+Spells that create fires are versatile weap
+ons, destructive to living things, undead, build
+ings, and morale. Those who depend on fire
+spells, however, risk the botch. Fire is an unfor
+giving element for those who lose control of it,
+and self-incineration is always a possibility.
+Moonbeam: LvS
+Spec., Spec.
+Causes a gentle light, enough to read by, to shine
+down from above and illuminate the area de
+scribed by your encircled arms. Lasts as long as
+you hold your arms out in a circle.
+Palm of Flame: Lv 5
+Touch, Conc.
+A flame leaps up from your palm, which must be
+upturned for the spell's duration. Wind can
+blow out the flame.
+Heat of the Searing Forge: Lv 10
+Near, Inst.
+Makes a piece of metal too hot to touch. Some
+thing the size of a breastplate or helmet will do
++ 10 damage if in direct contact with the skin for
+one round. For each additional round, more
+damage is done, the amount dropping 2 points
+each round (+ 8 damage on round 2, then +6, etc.).
+Smaller objects do less damage. Most metal
+armor has leather or cloth underneath it that
+gives the victim a +2 Soak bonus vs. the heat.
+Lamp Without Flame: Lv 10
+Touch, Spec.
+Creates light (like that ofa lamp) that shines forth
+from some object as long as you hold it.
+Chapter 5
+ls
+ese Flash of the Scarlet Flames: Lv 15 I
+ith
+Near, Inst., Aimed -3
+ers l
+A brilliant red flash explodes in the air where
+ty,
+you designate. If in someone's face, the target
+ke
+needs a Stm roll of 9+ to avoid temporary blind S
+ness. Ifb linded, one can try to make anotherStm
+. roll of 9+ to recover each minute. The targeting
+A
+modifier is for the flash in the eyes.
+ing p
+ing a
+le, Pilum of Fire: Lv 20 a
+ing Spec., Inst., Aimed + 1 t
+er
+A two foot thickpilum (javelin) of fire flies from
+an your palms, doing +25 damage (-1 for every pace T
+ex of distance from you) to whatever it strikes.
+Beyond 25 paces, the flames dissipate. L
+Arc of Fiery Ribbons: Lv 25 b
+Spec., Inst.
+A dozen ribbons of flame leap from your hands
+and fly out 15 paces, covering a degree angle.
+All those in the arc take +20 dam60ag e, -1 point per A
+ap pace from you. The area affected by this spell is n
+ild so broad that targeting rolls are necessary only in E
+fire exceptional circumstances. Anyone who sees tr
+r the ribbons coming can fall flat and therefore "
+f it, suffer half normal damage with a Qik -Enc roll
+of 18+, with a + 1 bonus for every pace the char
+acter is from you.
+A
+Ball of Abysmal Flame: Lv 30 c
+Near, Inst., Aimed -2 i
+ine
+This spell creates an apple-sized ball of fire in i
+de
+your hand. When you throw it, it bursts into h
+as
+flames as soon as it touches some creature or o
+substance, doing +30 damage to the target and
+blindinganywithinSpaceswhoarelookingatit. S
+Blindness lasts one round, Stm roll of 12+ to
+resist. You can hold the ball in your hand for up
+L
+to three rounds before throwing it, but after three
+t be rounds it flickers.out.
+fi
+can
+Blade of the Virulent Flame: Lv 30 t
+Reach, Spec.
+Forms a fire along the length of a metal blade.
+This flame doubles the Weapon Damage score
+for the blade (or adds +6, whichever is greater),
+e
+and can start fires as well. Note, however, that
+do
+after half an hour, the blade will have become so
+for
+hot that it will have partly melted. Once this oc
+ore
+curs, the spell ends. The user of the flaming blade
+ints
+needs gloves to use the weapon because the hilt l
+tc.).
+gets very hot. b
+etal
+hat
+t. Circle of Encompassing Flames: Lv 30 S
+Near, Conc., Aimed
+Creates a circle of flames six feet high. The circle
+starts with a one pace radius, but you can make fl
+it shrink to a pillar or grow up to a 3 pace radius. t
+Anyone moving through the flames takes +20
+rth
+damage. You cannot move the center of the d
+circle. Targeting roll needed to encircle some n
+one.
+ArsMaglca
+Intellego
+l�nem Spells
+Shadows of the Fires Past: Lv 5
+Near, Inst.
+Allows you to see where fires have in the
+past lunar month. A light red flickbecerinrtg haze
+appears wherever there was a fire, and you gain
+an intuitive sense of how and when that fire was
+there.
+Tales of the Ashes: Lv 10
+Touch, Inst.
+Lets you see what the ashes you touch originally
+were and how and when these objects were
+burned.
+Vision of Heat's Light: Lv 20
+Near, Sun./Moon
+Allows you to "see" the heat of objects that are
+nearly human body temperature or higher.
+Excellent for use in the dark, but it doesn't give
+true vision. This spell must never be called
+"infr avision."
+Words with the Flickering Flame: L v 25
+Reach, Conc.
+Allows you to converse with fires, which are
+commonly very chaotic and distractible. Prom
+ising them more fuel to might keep their
+interest. Fires are awarebu mmo stly of what they
+have burned, but they have a limited awareness
+of what goes on around them as well.
+Sense of the Fires Nearby: L v 30
+1 mile, Conc.
+Lets you know the location and size of every fire
+largerthancandleswithinonemileandallsmaller
+fires within one hundred paces as well. With a
+Concentration+ Int roll of 13+, you can concen
+trate on one of these fires and get some idea of
+what is around it (e.g. people, food, tents).
+Muto Ignem Spells
+The Many-Hued Conflagration: Lv 5
+Near, Inst.
+Makes a fire burn brightly for an instant. Those
+lookingatthefiremustmakeStmrollsof7+orbe
+blinded foro ne round by the many-colored lights.
+Show of the Flames and Smoke: Lv 10
+Near, Conc.
+Causes smoke of different colors, streams of
+flame, and strange popping and sizzling noises
+to come from a fire. It is so spectacular that folk
+will either be entranced or completely panicked,
+depending on the circumstances. The pyrotech
+nics might ignite nearby flammables and cause
+minor to those within 2 paces of the fire.
+bums
+Ars Mqlca
+Hornet Fire: Lv 15
+Near,Conc.
+Turns a fire into a swarm of fireballs, each the
+size of a large insect, that fly and harass at your
+command. Their burning touch gives all those
+you target within 7 paces of the fire a -2 penalty
+on all rolls and two extra botah rolls.
+Prison of Flames: Lv 15
+Near, Sun.
+Turns a bonfire into a prison the shape of a
+miniature castle. A person thrown into the middle
+is not burned, but will take +25 damage if they
+try to escape. The prison ends if the fire goes out
+or the spell ends.
+Trapping the Fire: Lv 25
+Reach, Sun./Year
+This enchantment places the heat and the flames
+of a campfire into a small, very hard object, such
+as a gem or a piece of metal. If the object is
+broken, the flame returns, but dies if there is
+nothing to burn. The object is as hot and bright
+asa coal.
+Flames of Sculpted Ice: Lv 30
+Near, Spec., Aquam
+Turns a house fire into ice. When the ice has
+melted halfway, the flames start again but proba
+bly do not spread because of the wet surround
+ings.
+Perdo Ignem Spells
+Quench the Rippling Flames: L v 5
+Near, Inst.
+Puts out a bonfire.
+Winter's Icy Touch: Lv 10
+Near, Inst.
+Causes the target to lose a great amount of body
+lmcigonem
+Imagonem is the form of sensations and
+illusions. By using the Imagonem form, a magus
+can alter what others perceive. Imagonem,
+however, means "image," not "illusion." Thus
+one creates, transforms, perceives, destroys, and
+control images, not necessarily illusions. Aclair
+voyance spell therefore, is Intellego Imagonem.
+It detects real images By manipulating sensa
+tions, however, a magus can create effective illu
+sions.
+An image works on the senses, not on the
+mind, so an unthinking beast is as likely to
+lieve an image as an imaginative human. Nevbeer
+theless, Imagonem spells are still most effective
+at fouling the communication on which human
+society depends.
+Fantastic beasts are likely to be fooled by
+illusions, as are the simpler undead and demons.
+The faeries, as expected, are hard to catch at their
+Spells
+heat (Stm roll of 1 O+ or lose a fatigue level). Also to h
+makes one susceptible to colds and other minor, it hi
+e but irritating, illnesses. Casting requisites: sing
+r Animal for animals, Corporem for people.
+Li
+y Soothe the Raging Flames: Lv 15
+Near, Sun./Year Coll
+Eradicates the heat of a bonfire, which continues vert
+to bum until it burns itself out. The remaining und
+flames do not spread or harm things. pac
+a (if t
+e Conjuration of Indubitable Cold: Lv 20 sky
+y cast
+Spec., Inst.
+t
+Cools the air within 10 paces of the caster, leav
+ing it a little below freezing. All non-living Lea
+things are chilled thoroughly, not just on the
+surface, and all living things (except you) lose Ma
+one fatigue level and must roll a Stm roll of to catc
+avoid losing a second. House fires becom6+e as Ma
+h small as campfires, bonfires become small as da
+s torchfires, and campfires and smaller go out.
+s
+Wa
+t Well Without Light: Lv 25
+Near, Ring/Perm. Kee
+Creates a 20 pace radius ring in which no light wit
+can enter or exist. Only spells greaterthan Level
+im
+25 can create light within the ring. fla
+s shri
+ Wizard's Eclipse: Lv 30 the
+ 1 mile, 5 minutes or h
+The sun is eclipsed by a magical interference that rect
+covers the ground within a mile of you with a age
+darkness equal to night.
+Bu
+Rego Ignem Spells
+Thi
+its
+Tremulant Vault
+ble
+of the Torch's Flame: Lv 5 tha
+Reach (10 feet), Inst., Aimed thin
+Causes a torch fire to quiver a few seconds and in a
+y then leap up to ten feet. You need a targeting roll star
+de
+Spells
+own game, and often see through illusiQns and for a
+s manipulate them fool the caster in tum. Cer wit
+, tain membeis of toth e Church have proven re mo
+s markably adept at discerning truth from illu you
+sion, though the talent is not dependable. frie
+ A spell for special attention is Eyes of the Use
+. Past (lnlm 25). It sees into the past and is used by
+ the Order of Hermes to settle disputes and to find
+ out who deserves Hermetic vengeance. Those
+who magi and magi who break the Code of C
+e the Orkildel r of Hermes can be found out through
+this and other spells. I
+ Imagonem spells require a great variety of
+e requisites for the specific things they are chang
+Res
+ing or mimicking. Finesse + Per rolls are re
+quired mimic a specific image, such as the
+visage otof t he Duke. The higher the roll, the better Can
+. you can fool people. You get a bonus on your roll som
+r for familiarity with what you are mimicking (-3 can
+91
+to hit a specific target. The flame stays atthe spot
+it hits if it can burn there. Otherwise it simply
+singes the spot and goes out (+6 damage).
+Light Shaft of the Night: Lv 10
+Near,Conc.
+Collects moonbeams and starlight into a single,
+vertical shaft of soft, silvery light that moves
+under your control. It illuminates an area fifteen
+paces across with light nearly equal to starlight
+(if the moon is out) or moonlight (if not). If the
+sky is overcast, the spell does not work. Can be
+cast under the night sky only.
+Leap of the Fire: Lv 15
+Near, Inst., Aimed +2
+Makes a bonfire jump up to ten paces, where it
+catches if there is fuel or burns out if there is none.
+Make targeting roll to hit a target, does +12
+damage.
+Ward Against Heat and Flames: Lv 25
+Touch,Sun./Year
+Keeps heat and fire at bay, unable to approach
+within one pace of the target, making the target
+immune to damage from flames or heat. Any
+flames that come within a pace of the target
+shrink to tiny wisps, which relight as soon as
+they are no longer within the warded area. If fire
+or heat damage of more than 25 points is ever di
+rected at the target, the ward falls and the dam
+age is done.
+Burst of the Sweeping Flames: Lv 30
+Near, Inst., Creo
+Thisspellcauses a fire to explode outwards from
+its source along the ground as if a giant wind
+blew on it from above. It will travel for no more
+than ten paces and will ferociously ignite any
+thing in its path. The original fire is left dead, but
+in all probability a number of new fires are
+started. The flames cause +5 to +25 damage,
+depending on the size of the original fire.
+for an unfamiliar object, +3 for highly familiar or
+with the subject to be mimicked available as a
+model). For mimicking people, a roll of lets
+you fool acquaintances of the person, 9+6+ fo ols
+friends, and 12+ fools close friends and family.
+Use a similar scale for mimicking objects.
+Creo
+Imagonem Spells
+Restoration of the Lost Image: Gen
+Near, Inst.
+Cancels the effects of a Pelm spell that masks
+some sensation, such as invisibility spells, if you
+can roll the target spell's Level on die+ Level.
+92
+Fragile Image of the Painted Statue: Lv 5
+Reach, Sun./Year
+Makes a still, silent image of anything up to
+human size. Unlike superior images, this one
+disappears when touched. Casting requisites:
+appropriate to the object created.
+Image of the Inanimate Thing: Lv 10
+Reach, Sun./Year
+Creates an illusionary object up to one pace in
+each dimension.
+Phantasm of the Talking Head: Lv 10
+Near, Spec.
+Creates an illusionary face on a wall or other flat
+object. The visage can speak up to twenty words
+before the spell expires, but cannot sing.
+Phantasmal Fire: Lv 15
+Near, Sun./Year, lgnem
+Makes an image of a fire that dances, illuminates,
+crackles, and (apparently) warms. It does not
+spread, burn, or protect against cold.
+Phantasmal Animal: L v 20
+Reach, Sun./Year, Animal
+. Creates an image of any animal or beast up to the
+size of a horse (Size +2). Under your direct
+mental commands, it moves about and makes
+appropriate noises.
+Phantasm of the Human Form: Lv 25
+Reach, Sun./Year, Corporem
+Makes an image of a clothed and equipped per
+son. Underyourdirect, unspoken command, the
+person can move about, speak, and behave as a
+human would.
+The Shadow of Human Life: Lv 40
+Reach, Sun./Year, Corporem, Mentem
+The human image created (as in Phantasm of the
+Human Form above) has limited freedom and
+simulated intellect. It functions as an independ
+ent human, albeit stupid, capable of interpreting
+general orders in new situations.
+Intellego
+Imagonem Spells
+Generally, these spells have the least to do
+with illusions of all the lmagonem spells, be
+cause one detects an image without altering or
+controlling it. They improve upon your senses
+by bringing in images (sounds and sights, mostly)
+not normally available.
+Discern the Images of
+Truth and Falsehood: Gen.
+Near, Conc.
+You can tell whether an image has been created
+or altered through a spell, seeing both the origi
+nal and false images in the case of alterations.
+Roll a die + Level+ 5; any illusion spells higher
+than your roll are not discerned.
+Chapter 5
+5 Discern Own Illusions: Lv 5 R
+Body, Sun.
+to Casting this spell lets you see through all your R
+ne own illusions. f
+es: m
+Image of the Past State: Lv 15
+Reach, Conc. T
+You can see what an object, animal, or person
+looked like up to one year ago, even if you have F
+in only part of the thing to be viewed. For instance, a
+you could tell from a bone what the original d
+creature looked like, provided it was killed within a
+the past year. Casting requisites: appropriate
+form for the target.
+A
+flat
+rds The Ear for Distant Voices: Lv 20
+T
+100 miles, Conc.
+a
+You can hear what is happening in the place you
+a
+designate. You must have a connection with the
+il
+place, usually meaning a physical object associ
+a
+tes, ated with the place or with a person there.
+P
+not
+d
+Eyes of the Past: L v 25 w
+Near, Conc.
+Shows what happened in your present location
+Il
+at a specific time in the past, up to five years ago.
+the You can see what happened in the past as if you
+ct had been standing where you are when the events C
+kes took place. d
+i
+cl
+Summoning the Distant Images: Lv 35 cl
+100 miles, Conc. o
+You can see and hear what is happening in a i
+er distant place, with which you must have some t
+the sort of contact, such as some object from the
+s a place.
+L
+Visions of the Wandering Eye: Lv 45
+10 miles, Conc.
+Lets you view any area within range from any
+the
+perspective. You can change perspectives, but
+nd each change requires a Concentration+ Int roll of
+nd
+12+. If beings foreign to the area have entered,
+ing you can sense their location. l
+Muto
+cl
+Imagonem Spells +
+do
+be
+or These are useful and powerful illusion I
+es spells, altering the visual image, the noises, the
+tly) smell, or taste of some objector being. The image A
+remains altered without the caster's concentra
+tion and adapts itself appropriately to the me
+dium. The accuracy of duplication depends on b
+the caster's knowledge of the subject. For in i
+stance, a magus who wants to make a voice
+sound that of a specific person must be famil t
+ted iar withlike th e voice to be mimicked. Those more ei
+igi familiar with the face, voice, body, or other as a
+ns. pect being mimicked might see through an illu
+her sion by mundane means. (E.g. "Duke Tybol,
+L
+didn't your scar used to be on your left cheek?")
+Ars Maglca
+Restore the Image Transformed: Gen.
+Near, Inst.
+Restores to normal an image that has been trans
+formed with a Muto lmagonem spell if you can
+match the target spell's Level on die+ Level.
+Taste of the Spices and Herbs: Lv 5
+Reach, Sun./Perm.
+Food or drink affected by this spell tastes exactly
+as you designate. Casting requisites: Aquam for
+drinks, Animal for meat, Herbam for vegetables
+and such.
+Aura of Ennobled Presence: L v 10
+Near, Sun./Year, Corporem, Mentem
+The target appears more forceful, authoritative,
+and believable. Numerous subtle changes in
+appearance effect this change, including slight
+illumination of the face, a more erect posture,
+and a louder and smoother voice. The target's
+Prs increases by+ 1 or rises to 0, whichever pro
+duces the higher result, and others are more
+willing to follow the character's orders or ad vice.
+Illusion of the Altered Image: Lv 10
+Near, Sun./Year
+Causes an object or illusion up to the size of a
+door to appear different but still normal For
+instance, a door could appear open instead of
+closed, or a person could appear dirty instead of
+clean. You change the apparent state of the
+object (e.g. dirty, closed, dry), but not the object
+itself. Casting requisites: appropriate form for
+the target.
+Lv 10: Alter someone's voice.
+Disguise of the
+Transformed Image: Lv 15
+Touch, Sun./Year, Corporem
+Makes someone look different, though still at
+least passably human.
+Notes of a Delightful Sound: Lv 15
+Near, Sun./Ye ar
+Causesanysounds, but especially music, to sound
+especially clear and sonorous. The notes are
+clearer, sharper, and much more distinct. Add
++2 to Com rolls and +5 to music rolls.
+Image Phantom: Lv 20
+Near, Sun./Ye ar
+Any one thins including living things, can be
+made to look like something else of approxi
+mately the same size and shape. The illusion is
+broken by actions that show it to be false. For
+instance, a person would have to curl up to be
+made to look like a rock. Standing up or being
+touched would show the illusion to be false, so
+either would end the spell. Casting requisites:
+appropriate form for the target.
+Lv 25: Make an object transparent
+Ars Maglca
+Visions of the Infernal Terrors: Lv 30
+Near, Sun., Mentem
+Causes everything that the target sese to look
+and sound terrifying. The world looks basically
+the same, but everything is hideously trans
+formed. The target must make a Stm +Brave roll
+to see what the effects are: 0- scared to death; 1
+to 5- incapacitated with fear, -1 Stm (perma
+nent); 6 to 9- incapacitated with fear; 10 to 15-
+flee, but fight at -5 if cornered or obstructed; 16+
+carry on, but at on all rolls.
+-4
+Perd o
+Ima\lonem Spells
+In addition to destroying created images,
+these spells mask the sensations of things, mak
+ing wine tasteless, sneaks silent, and magi
+ible. invis
+Dispel the Phantom Image: Gen.
+Near, Inst.
+Destroys the image from any Crim spell whose
+Level you can match on die + Level.
+Taste of the Dulled Tongue: Lv 5
+Reach, Sun./Year
+Hides the taste of any substance, liquid or solid.
+Casting requisites: appropriate form for the
+target.
+Removal of the Conspicuous Sigil: Lv 10
+Reach, Sun./Ye ar
+Marks, grooves, runes, writings, and other such
+things can be obscured so that they are not vis
+ible, but the overall shape of the medium re
+mains constant. For example, runes carved onto
+a sword blade could be made invisible, making
+the sword appear normal. Casting requisites:
+appropriate form for the target.
+Invisibility of the
+Standing Wizard: Lv 15
+Self, Sun./Year, Corporem
+You become invisible, but the spell is broken if
+you move (aside from breathing and shifting
+slightly in place), speak, or are touched by any
+being larger than a mouse.
+Illusion of Cool Flames: Lv 20
+Near, Sun./Year, Ignem
+A hotobject(possiblya fire),seemsto lose its heat
+and drop to the surrounding temperature. It
+still. however, has its normal beneficial and harm
+ful effects. A glowing coal will still bum some
+one's hand, though does not feel hot.
+it
+Spells
+Chamber of Invisibility: Lv 25 Ima
+Near, Sun./Year, Corporem
+You
+Causes a motionless group of creatures to be
+at y
+come invisible. (Affected characters can see each
+ you
+other.) You designate a circular area which can
+l spel
+hold up ten beings. Any affected character
+who takesto a step, makes a noise, or is touched the i
+ Thu
+makes everyone become visible. (The required
+- discipline may be difficult for ill-trained grogs whi
+mak
+and free-spirited companions.)
+con
+pas
+Silence of the Smothered Sound: Lv 25
+Th
+Near, Sun./Year
+Makes one being or object incapable of produc
+Cap
+ing sound by any means. Magi who cannot utter
+The
+their magic words suffer -10 from their magic
+in
+rolls. Casting requisites: appropriate form for
+the
+the target.
+the
+mus
+, stri
+ Veil of Invisibility: Lv 30 voic
+Self, Sun./Year, Corporem
+
+You become completely invisible, regardless of Wi
+what you do, but still cast a reflection in a mirror.
+You
+you
+to m
+stru
+spot
+cha
+Re\lo
+Co
+Ins
+. Ima�onem Spells
+Eve
+vib
+These spells makes things appear to be else add
+where from where they actually are. Moving see
+your image to another place counts as a magical tryi
+connection that place if you need such a con on
+ nection for aton other spell. rolls
+ in t
+terri
+are
+: one'
+Restore the Moved Image: Gen.
+Near, Inst. Illu
+Cancels a Reim spell that moves an image, put
+ting the image back where it belongs, if you can Mo
+match its Level on die + Level. less
+f
+Ha
+Lv 5: Makeyourvoicecomefromanotherplace.
+Wit
+to a
+Illusion of the Shifted Image: Lv 10 see t
+Near, Sun./Ye ar in s
+spel
+Makes any being or object appear to be up to a
+t pace away from its actual position. The image med
+t cannot be placed in a solid object. As soon as the wit
+ being or object moves or is touched, the spell Eac
+ ends. Casting requisites: appropriate form for Ve
+cov
+the target.
+veni
+93
+Image from the Wizard Tom: Lv 15
+SO miles, Conc., Corporem, Intellego
+Your image separates from your body and moves
+at your command. ltcanspeakin yourvoice, and
+you can see through its eyes. You can use this
+spell create a double and then separate from
+the imtoag e, instead of having the image separate.
+Thus someone watching will be unable to tell
+which is the double and which is you. You must
+make a Concentration + Int roll of 12+ or lose
+concentration for each solid object the image
+passes through and for each mile it travels.
+The Captive Voice: Lv 20
+Near, Sun./Perm.
+Captures a person's voice and places it in a bag.
+Thepersonmaynotspeakunlessthebagisopen,
+in which case the voice comes from the bag, not
+the victim's mouth. If the person screams while
+the bag is shut, the bag vibrates visibly. The bag
+must be leather with a copper chain for a draw
+string. Casting requisites: Corporemfor human
+voices, Animal for beasts.
+Wizard's Sidestep: Lv 20
+Self, Sun., Corporem
+Your image appears up to one pace from where
+you actually are, so attacks aimed there are likely
+to miss you. Whenever the image is successfully
+struck, it disappears and reappears in another
+spot. Each time it reappears, there is a 1 in 10
+chance it returns to your body, ending the spell.
+Confusion of the
+Insane Vibrations: Lv 25
+Spec., Sun. /Year
+Everything within half a mile of you seems to
+vibrate back and forth at varying high speeds. In
+addition, sounds and scents are displaced and
+seem come from the wrong areas. Anyone
+tryingto fight in these circumstances suffers -3
+on Atkto a nd -2 on Def rolls and two extra botch
+rolls. Navigating is exceedingly difficult. People
+in the area are likely to become desperate and
+terribly confused. The visual effects of this spell
+are negated by complete darkness or closing
+one's eyes.
+Illusion of the Misplaced Castle: Lv 30
+Sight, Sun./Year, Terram
+Moves the image of any building of castle size or
+less up a mile distant from its actual location.
+to
+Haunt of the Living Ghost: Lv 40
+300 miles, Conc., Corporem
+With this spell, you can project your own image
+to any designated spot. Youcanspeak, hear, and
+see through the image. The image must appear
+in some medium, such as a fire or a pool, and the
+spell has a casting requisite appropriate to this
+medium. You also must have some connection
+with the spot to which you project your image.
+Each minute requires a Concentration roll of 9+.
+Very powerful magi use thisspell toattend inter
+covenant meetings without traveling the inter
+vening distance.
+94
+Mentem Sp
+Mentem spells govern thoughts, emotions,
+minds, memories, and so on. All intelligent
+minds are affected by Mentem spells, while the
+minds of beasts are affected only by Animal
+spells.
+Normal people can get better than normal
+resistance against spells of the mind if they are
+especially dedicated, impassioned, or desperate.
+For instance, a parent defending home and family
+might get a +3 on rolls to withstand a malign
+spell or get a resistance roll where one is not
+normally applicable.
+Since ghosts are essentially minds without
+bodies, many Mentem spells work on them.
+Emotions, however, arise from the body's hu
+mors, heart, and other organs (the medieval
+paradigm, remember?) so non-corporeal crea
+tures, such as ghosts, do not have normal pas
+sions and are therefore not affected by Mentem
+spells that influence emotions.
+Since the effects of Mentem spells are not
+usually visible, they can give you a great deal of
+power when dealing with the common folk.
+Even spells requiring eye contact are relatively
+inconspicuous when cast without voice or ges
+tures, but only the more powerful magi can cast
+spells this way in the Dominion.
+Creo Mentem Spells
+In addition to healing minds, thesespellscan
+create thoughts, emotions, and memories in an
+other person.
+Return of Mental Lucidity: Gen.
+Reach, Inst.
+Cancels the effects (short of death) of a malign
+Mentem spell if you can match the Level of the
+spell on die + Level.
+Words of the Unbroken Silence: Lv 5
+Near, Inst.
+Lets you say two words directly to the mind of
+the target, who can tell that the words are super
+natural and who can recognize your "voice."
+Lv 10: Make someone understand a concept
+more easily.
+Panic of the Trembling Heart: Lv 15
+Eye, Sun./Moon
+Creates an overpowering fear of a specific object,
+person, or place.
+Rising Ire: Lv 15
+Eye, Sun./Moon
+Makes the target furious at someone or some
+thing (your choice). An appropriate personality
+roll (e.g. Calm) of 9+ can hold the anger in, but
+the anger is felt strongly regardless of the roll.
+Chapter 5
+ells
+s, Memory of the Distant Dream: Lv 20 Pe
+nt Eye, Year/Perm. C
+he Inserts a and complete memory into a per
+al son's minfuld. Tl houghtfulconcentration and an Int
+Yo
+roll of 8+ reveals the memory to be false.
+on
+al
+gu
+re Pains of the Perpetual Worry: Lv 20
+te.
+Eye, Moon/Year Fr
+ily
+Gives someone a recurrent sense of anxiety, a
+n
+fear of something one does not know, fear of
+ot Fo
+everything, fear of nothing, a nagging, taunting,
+ex
+painful emotion. To have this spell cast on you
+on
+m ut . truly a curse. (The Western world's first taste olsf fo
+nihilism.)
+u se
+li
+al
+a Weight of a Thousand Hells: Lv 25 mi
+s Eye, Moon/Perm. a
+m Causes the victim to feel the despair and sorrow mi
+of a thousand sinners in Hell. One feels despair, lie
+anguish. pain, etc. This is a truly horrible spell,
+ot
+of for the victim loses almost all motivation and P
+earthly cares. All one can feel is one's own pain.
+lk.
+endles,s inexorable, and searing. Appropriate
+ly Yo
+personality rolls suffer a harmful adjustment of
+ tar
+5 points, and the target suffers -2 on any rolls that
+st V
+require thought or concentration. The target has
+ed
+a strong tendency to do nothing but brood.
+ta
+co
+Gift of Reason: Lv 30 to
+s Eye, Conc./Sun. qu
+Gives the target the ability to reason clearly and ti
+understand ideas without the biases and distrac he
+n tions that normally interfere with thinking. w
+n Strong commitment to a cause, a strong preju qu
+dice, or a stubborn personality nullifies the ef
+fects of this spell. Evena relatively stupid person
+will be able to understand difficult concepts.
+Y
+gn h
+he In telle go u
+ro
+Mentem Spells
+P
+These spells are superb for cutting through
+of the confusion of social interaction and the end Y
+er m
+less banter of the rabble.
+lo
+n
+Sense State of Consciousness: Lv 5 h
+pt
+Near, Inst. ab
+Determines the state of consciousness of one ed
+other intelligent being. Some states are: asleep, pr
+awake, meditating, dead, drugged, insane, and
+comatose. A Per roll is required to identify un
+t, usual states. Cannot detect possession.
+Sight of the Transparent Motive: Lv 10
+Near, Inst.
+Detects the general motive most powerfully in
+e fluencing the target at the moment. General
+ity motivesaresuchthingsasfear,anger,andgreed,
+ut not specific things like thedesireto look good in
+l. front of one's superiors. m
+Ars Maglca
+Perception of the
+Conflicting Motives: Lv 15
+Near, Inst.
+You can detect the conflicting motives behind
+one target's actions. Thus you could learn that a
+guard is feeling a conflict between fear and duty.
+Frosty Breath of the Spoken Lie: Lv 20
+Eye,Conc.
+For as long as you maintain this spell, the target
+exhales a misty breath with each spoken lie, like
+one does during the winter, and small bits of ice
+form on the person's lips if the lie is particularly
+severe. In winter, when breath is visible anyway,
+lies produce a greater than normal amount of
+mist(it literally billows out). A target who makes
+a Guile+ Communication roll of 18+ can deter
+mine whether any given statement is taken as a
+lie (i.e. will produce frosty breath).
+Posing the Silent Question: L v 25
+Eye, Spec.
+You can ask one silent, mental question of the
+target, the answer to which you then detect.
+Veracity of the answer is limited by the knowl
+edge of the target. Questions about what the
+target "would do if. .. " are often inaccurate. You
+could ask the question," Are you afraid of me?",
+to a guard and get a truthful answer, but the
+question. ''Would you let me pass if l tried to in
+timidate you?" would get what the guard thinks
+he would do, not necessarily what he really
+would do. The individual does not notice the
+questioning.
+Thoughts Within Babble: Lv 25
+Body,Conc.
+You can get general ideas as to the nature of
+human speech and writing in any language,
+unlessthespeechorwritingiscoded. PerorCom
+rolls required for difficult exchanges.
+Peering into the Mortal Mind: Lv 30
+Eye,Conc.
+You can thoroughly probe and understand the
+mind of the target, including immediate and
+long-term motives, personal strengths and weak
+nesses, etc. The entire process takes about an
+hour, with half the relevant information avail
+able within ten minutes, but more subtle knowl
+edge open only to longer-lasting or higher level
+probes.
+Muto
+Mentem Spells
+Since these spells literally change people's
+minds, they are quite powerful.
+Vision of the Haunting Spirit: Lv 5
+Near, Inst.
+All spirits within sight and range become visible
+(if they can do so normally). They can then tum
+invisible again. but are likely to be interested in
+whoever has cast this spell on them.
+Subtle Shift of Heart: Lv 10
+Eye, Sun. /Moon
+Subtly changes an emotion into a related but
+different emotion. For instance, loathing could
+become hate, greed become jealousy, and so on.
+Enchantment of Detachment: Lv 15
+Eye, Inst.
+Calms and greatly lowers the intensity of the
+target's current emotions.
+Recollection of
+Memories Never Quite Lived: Lv 20
+Eye, Inst.
+Changes the target's memory of a detail into a
+similar, though different, memory. The target is
+no more sure of this manufactured memory than
+of the authentic one, so strange fabrications may
+well be discovered to be false.
+Emotion of Reversed Intentions: Lv 25
+Eye, Sun./Moon
+The main emotion influencing a character at the
+time of the casting is replaced by its opposite
+over the next minute. The new emotion is felt as
+strongly as the original one was, but it lacks
+justification and can therefore be talked out of
+someone. Int roll of 8+ to resist.
+Mind of the Beast: Lv 30
+Eye, Sun./Year, Animal
+You tum the mind of the target into that of an
+animal ofy ourc hoice. The victim acts and thinks
+like that animal as much as possible. Usually
+amusing.
+Perd o
+Mentem Spells
+Lay to Rest the Haunting Spirit: Gen
+Near, Inst.
+Sends a non-corporeal spirit to the afterlife if you
+beat its Mystic Might on die + Level.
+Tip of the Tongue: Lv 5
+Near, 1 minute
+Causes the target to forget one word of your i
+choosing. The harder the character tries to re i
+member the word, the harder it is to remember.
+It is incredibly frustrating. The target can come
+up with the word by making an Int+ Concentra
+tion roll of 6+.
+Trust of Childlike Faith: Lv 10
+Near, 1 minute
+The target loses judgment and believes almost
+any passable lie for the duration of the spell. Int
++ Stm roll of 7+ to resist. Truly incredible lies t
+allow additional resistance rolls.
+Calm the Motion of the Heart: Lv 15 Mys
+Eye, Inst. ring
+e Removes one emotion from the target until it
+appears again naturally. An angry person stops Sna
+being angry and a curious one stops being in
+quisitive (good for keeping an apprentice's nose
+Wh
+out of your business).
+one
+Do
+Loss of But a Moment's Memory: Lv 20 fatig
+t Eye, Inst., Intellego
+Removes up to five continuous minutes of a The
+. target's memory, leaving a blank. You targetthe
+loss of memory to a specific event or time. With
+The
+anlntrollof8+,thetargetrealizesthatmemories
+5 m
+of a certain period are missing. This ease factor
+wak
+can change, depending on how important this
+missing memory was and what sort of circum
+Co
+stances surrounded the event. Careful intro
+spection restores the memory.
+Con
+take
+Passion's Lost Feeling: Lv 20
+A ro
+Eye, Inst.
+cha
+s The target, until taking an hour's rest or medita rem
+tion. is unable to feel any sort of emotion and acts
+cha
+listlessly, without motivation or cares. Int+ Stm of a
+roll of 11+ to resist, and dire need allows addi
+alw
+tional resistance rolls. rolls
+Blessing of Childlike Bliss: L v 25 Aur
+Eye, Inst.
+Reduces an adult mind to a child's level. The Th
+target solves problems, reasons, and expresses thei
+emotions as would a three year old. Magi af enh
+f fected cannot cast spells. At first, anyway, the as t
+target is likely to be happy at having lost a world are
+of cares and troubles that are no longer imagin are
+able. likel
+not
+Black Whisper: Lv 30 on
+Spec., Inst.
+You must whisper a magic sentence in the tar Sce
+get's ear. It takes several seconds to speak the
+sentence, so an unwilling, able-bodied targetcan A v
+stop you. If you speak the whole sentence, the slow
+target must make a Stm roll of 15+ or go com the
+pletely insane. You need not use your hands for mus
+this spell, but you must be able to speak. rises
+The
+Rego
+Inc
+Mentem Spells Su
+Call
+Coerce the Spirits of the Night: Gen
+spot
+Near,Conc. Alte
+Makes a ghost obey you as long as youcancoerce hau
+it with threats, such as defiling its grave or ban mon
+ ishing it to Hell The more lurid and dramatic the
+. threat, the more cooperative the ghost will be. Su
+(Little need the ghost know that your threats are
+empty.) For each demand you make, the ghost
+Sum
+can break free if it rolls the spell's Level or better
+som
+on die+ Mystic Points.
+son,
+poss
+Ring of Warding Against Spirits: Gen
+by t
+Spec., Ring cont
+t Makes a circle 7 paces in diameter, with you at Dea
+the center. When the spell is cast, the storyguide the
+rolls a simple die + Level. Only ghosts with bly a
+95
+Mystic Points higher than this total can enter the
+ring.
+Snap of Awakening: Lv 5
+Near, Inst.
+When you snap your fingers, you awaken some
+one from sleep to alert consciousness, instantly.
+Does not work on someone unconscious from
+fatigue, wounds, or magic.
+The Call to Slumber: Lv 15
+Near, Inst., Corporem
+The targetbeco mes sleepy and falls asleep within
+5 minutes unless some current need makes
+wakefulness imperative. Stm roll of12+ to resist.
+Confusion of the Numbed Will: Lv 15
+Near, Moon
+Confuses a person. If the character decides to
+take any action. the player must make an Int roll.
+A roll of 13+ ends the spell. A roll of 8+ lets the
+character take the intended action, but the spell
+remains in effect. Any lower roll means the
+character is confused and takes some other type
+of action. While under this spell, a character
+always strikes last and gets at least a -1 on all
+rolls.
+Aura of Rightful Authority: Lv 20
+Touch, Sun./Moon
+hose who listen to the target of this spell have
+their obedience and tendency to follow orders
+enhanced greatly. Common people generally do
+as told without question (as long as the orders
+re within the realm of reason), but those who
+are accustomed to giving orders are much less
+likely to do so. Bishops, dukes, and generals are
+not affected by this spell unless this spell is cast
+n someone of nearly equal status.
+Scent of Peaceful Slumber: Lv 20
+Near, Inst., Auram
+very light purple haze that smells of lilacs
+lowlyrisesoutoftheground. Thosewhobreathe
+the and fail Stm rolls of 8+ fall asleep. You
+ushazet con centrate for two rounds before the haze
+rises to the height of a standing person's nose.
+he haze has a radius of 10 paces.
+Incantation of
+Summoning the Dead: Lv 25
+Reach, Conc.
+alls up someone's ghost. You must be in the
+pot where the person died or have the corpse.
+lternately, you can summon any ghost that
+aurits the area. Those buried by Church cere
+ony are not available for summoning.
+ummon the Haunting Spirit: Lv 25
+n/a, Inst., Ritual
+ummons someone's ghost, provided you have
+mething intimately connected with the per
+n, such as part of the corpse or a treasured
+ssession. Once you have summoned the ghost
+y this ritual, it haunts the place and can be
+ontacted by the Incantation of Summoning the
+ad (ReMe 25). Most ghosts do not present
+hemselves in places they haunt; they lurk invisi
+ly and impotently, just waiting to be summoned.
+96
+Rare is the spirit that appreciates being sum
+moned to serve the living.
+As usual, those buried by Church ceremony
+are beyond the reach of magic and cannot be
+summoned.
+Exchange of the Two Minds: Lv 30
+Touch, Year, Ritual
+This spell switches the minds of two creatures. A
+new body greatly confuses those who are unpre
+pared for the shock, and even those who are
+ready take at least a day to adjust completely.
+Magi who transport their own minds into
+younger, healthier bodies, usually find that a
+strong body entails powerful passions, which
+interfere with the clear thinking needed to pur-
+Terram Spe
+Terram spells, in addition to covering earth.
+stone, clay, metal, glass, etc., sometimes can af
+fect all inanimate objects in general For instance,
+WieldingthelnvisibleSling(ReTelO)willthrow
+all manner of non-living things.
+Though Terram spells affect all manner of
+solid objects, it is harder to affect certain materi
+als. Here, in increasing difficulty, are the mate
+rials Terram spells affect: earth (sand, dirt, etc.),
+clay, stone, glass, metal, gemstones. Spells that
+affect "earth" can only affect sand and dirt. Spells
+only affect solid stone if so specified.
+Creo Terram Spells
+Tooth of the Staff: Lv 5
+Touch, Sun./Inst.
+Creates a polished, flint spear head. It can
+appear already fastened on the end of a staff if
+you use a Herbam requisite.
+Clenching of the
+Earth's Mighty Hand: Lv 10
+Near, Sun./Inst.
+Creates dirt to fill in a pit of up to 3 paces across
+and 3 yards deep. (A good follow-up to the Pit of
+the Gaping Earth [PeTe 15).)
+Stone of the Hundred Shards: Lv 15
+Touch, Sun., Perdo
+Creates a stone the size of two fists which, if
+thrown, shatters into a hundred pieces, causing
++5 damage to all within ten feet, and+ 15 damage
+to anyone hit by the stone itself. The stone
+explodes when it touches anything after it leaves
+your hands.
+Rampart of Protecting Earth: L v 20
+Near, Sun./Inst.
+Creates a wall of packed dirtu p to 15p aces wide,
+4 yards high, and 2 paces thick. One can knock
+it down by striking it repeatedly.
+Chapter 5
+m sue the magic arts. Both people involved must fo
+make a Stm roll of to survive the transfer.
+ny (That's a stress roll, s3+uc ker, and it's against your pl
+be Stm before the switch.) u
+u
+The Shrouded Glen: Lv 40 i
+Spec., Moon/Perm., Ritual
+Enchants an area so that anyone moving toward
+E
+it is subtly diverted, effectively keeping the place
+. A from being discovered accidentally. Anyone not
+re actively searching for the hidden place will never E
+are find it. Those actively searching can find the e
+ly. place by making a Per roll of 12+. Searchers get ti
+nto a +5 bonus for having a map. If the surrounding t
+t a terrain is more difficult than the average forest, r
+ich the ease factor increases. Likewise, the ease
+ur- factor drops if the terrain is more open than a
+lls
+rth. Wall of Protecting Stone: Lv 25
+af Near, Sun./Inst. a
+ce, Makes a wall of granite up to 10 paces wide, 4
+w paces high, and 1 pace thick. One needs miner's E
+tools to break through it, though it can be toppled
+r of if it is not connected to a support on its side or
+Y
+eri top.
+y
+te
+t
+tc.), Circle of the Faerie Stone: Lv 30
+hat
+Near, Sun./Inst., Aimed
+lls
+Creates a 12 foot high stone wall in a circle up to
+10 paces across. It has a magic resistance of +20.
+s
+Opening the Earth's Pore: Lv 40
+Sight, Inst., Ritual, Ignem p
+Opens a hole from the surface of the earth down
+to the hot reaches of Hell. Molten rock spews t
+forth out of this hole, accompanied by noxious t
+gases. Except for those in the immediate vicinity
+of the pore, people can outrun the lava flow. The
+can lava spill covers the land within one mile of the
+ff if pore, doing +20 damage to anyone caught in it
+each round. Nasty.·
+Conjuring the Mystic Tower: Lv SO·
+Near, Moon./Inst., Ritual
+An elaborately carved tower, formed from a
+single blockofstone, rises out of the ground. The
+ss
+tower stands feet high and 30 feet wide, with
+it of a foundationse80t 20 feet into the ground. You de
+s
+termine the.design of the chambers within.
+t
+q
+Intellego s
+, if t
+ing Terram Spells q
+age it
+one s
+ves Probe for Pure Silver: Lv 5
+Near, Conc. S
+You are guided by a vague hunch, which is
+sometimes wrong, to silver nearby.
+ide, Eye of the Eons: L v 10 a
+ock Reach, Inst. t
+Determines the age of any non-living object to
+forest, and completely open terrain is unsuitable
+for this spell. Once a searcher spots the hidden
+place, the spell does not prevent approach. Hides
+up to one square mile of area, and diverts people
+up to ten miles away. All those who participate
+in theritualareunaffected by the spell. This spell
+mimics the properties of many faerie forests.
+Enslave the Mortal Mind: Lv 50
+Touch, Sun./Perm., Ritual
+Enables you to control completely the loyalty,
+emotions, desires, interests, and long-term ac
+tivities of any person. The target gets one chance
+to resist, by rolling Stm + Int of 12+. Further
+resistance rolls are possible when the control
+makes the victim do things strongly against that
+person's former personality.
+within 10% of its actual age. Casting requisites:
+appropriate form for the target.
+Eye of the Treacherous Terrain: Lv 15
+Sight, Conc.
+You can tell intuitively when any natural terrain
+you see is treacherous, such as a rock field prone
+to sliding.
+Tracks of the Faerie Glow: Lv 25
+30 paces, Conc.
+Causes any even faintly perceptible tracks of a
+specific being to glow with a faint faerie light,
+making them stand out, when you are within 30
+paces of them. The fainter the tracks are, the
+fainter the glow. You need something intimate
+to the target. This glow provides a bonus on
+tracking rolls, and the bonus depends on the
+relation of the being tracked to the terrain.
+Magically related to the terrain +2
+Native to the terrain
+Neutral to the terrain +4
+Inimical to the terrain +6+8
+In addition, tracking at night without a light
+source doubles the bonus.
+Stone Tell of the Mind that Sits: Lv 30
+Reach, Conc.
+Allows you to talk with living stone (but not
+statues and such, which have been cut off from
+the earth and are therefore "dead"). A typical
+question and response takes one hour; stone
+speaks slowly. Though a stone is usually willing
+to talk, its direction sense and its awareness of
+quickly-moving things (such as people) are lim
+ited. Wherever magic functions at a penalty, the
+stones will not speak with you.
+Sense the Feet that
+Tread the Earth: Lv 35
+1 mile, Conc.
+You touch the earth and feel what is moving
+along the ground within 1 mile of you. You can
+tell direction, distance, weight, number, and
+manner of movement. For instance, you might
+Ars Magfca
+sense "a single SO-stone creature slithering to
+ward us a hundred rods in that direction."
+Muto Terram Spells
+Edge of the Razor. Lv 5
+Touch, Inst., Ritual
+Sharpens any metal edge to a degree unequaled
+by manual methods. An edged or pointed
+weapon gains a + 1 bonus to damage. Good s
+naturcd magi reward grogs by enchanting their
+weapons thus.
+The Forgiving Earth: Lv 10
+Sight, Inst.
+Weakens earth in a 15 pace by 15 pace area, a
+making packed dirt like plowed ground and soft c
+ground into fine silt. s
+Supple Iron and Rigid Rope: Lv 10
+Touch, Sun./Inst.
+Makes a flexible object stiff and a stiff object t
+flexible. Works only on items easily held in two
+hands. Casting requisites for the material af c
+fected.
+Unyielding Earth: Lv 10
+Sight, Inst.
+Makes the surface of the ground in a 15 pace by t
+15paceareamoresolid. Mud becomessoftearth,
+and soft earth becomes packed dirt.
+The Crystal Dart: Lv 15
+50 paces, Inst., Rego, Aimed
+Creates a ten inch crystal dart tha+4t ri ses from the
+ground beneath your feet, floats into the air, and
+thenspeedsofflikeanarrowatyourtargetwhen
+i
+you move the palm of your hand towards it.
+Does +8 damage.
+t
+Hands of the Grasping Earth: Lv 15
+Near, Sun., Rego s
+Earthen hands from beneath the target out of s
+the ground and grasp the victim's anklrisees . The
+target can avoid the hands on a Qik -Enc roll of
+11+ . A roll of 8through10 indicates thatonly one
+ankle has been caught. (The other hand disap
+pears into the earth.) To break free requires a Str
+roll of 1?+ if both ankles are caught and a roll of
+12+ ifonly one is caught. (Each attempt requires
+a Fatigue roll.) Each hand can be destroyed by
+beating its +25 Soak roll (hacking weapons do
+double normal damage).
+r
+Object of Increased Size: Lv 15
+Reach, Sun./Perm.
+Enlarges an inanimate object up to the size of a
+large chest, doubling each dimension and in
+creasing its weight by a factor of eight. The size
+increase is based on the object's original, natural
+size, so casting it more than once on an object
+does not work. Noble elements, like gold, silver,
+and gems, are not affected by this spell If any
+thing resists the growth of the item, it cannot
+grow. (The same goes for shrinking when the
+spell ends.) Casting requisites: appropriate
+form for target.
+Spells
+Rock of Viscid Oay: Lv 15 pry
+Reach, Sun./Year mig
+Softens rock enough so that it may be dug out, of m
+molded,andotherwisemanipulatedinthesame
+manner that good, hard, river clay would be. The Obl
+rock is slightly sticky. Affects the amount that Met
+you could enclose in your arms.
+Shat
+Earth that Breaks No More: Lv 20 to on
+Near, Sun./Inst. barri
+Turns up to 30 feet square of packed dirt into dam
+stone. Works well on a Rampart of Protecting als
+Earth (CrTe 20). requ
+Statue to Animal: Lv 25 Cas
+Reach, Sun./Year, Ritual, Animal
+Enchants a hand-size, earthen or stone statue of Mak
+an animal. Later, any time someone gives the effec
+command word (decided during the ritual), the lies
+statue turns into a life-size specimen of the ani
+mal represented. The animal follows the orders Sto
+of the person who gave the command word and
+reverts to statue form when killed or commanded
+One
+to do so. If killed, the statue is no longer magical.
+tu
+One must touch the statue when giving the
+priat
+command word.
+Teeth of the Earth Mother. Lv 35 R
+Sight, Sun./Year, Rego, Aimed (-3,0)
+You cause twenty pointed pillars of white marble War
+to spring up from the earth to a height of 12 feet,
+Fae
+forming a circle three paces in diameter. These
+pillars can be used to cage people, to form a wall,
+or simply to skewer enemies. At their tops, the As
+pillars are thin and as sharp as spears. At the Gen)
+base, where they touch, they are 18 inches thick.
+To skewer a target, you must make a targeting Uns
+roll with a penalty of -3, but to capture a target
+you must make a standard targeting roll. Climb Mov
+ing to the top of the pillars requires three Climb inte
+rolls of 12+, and the tops break away when the man
+target reaches them, causing the victim to fall. used
+Skewering a target does +25 damage, possibly to m
+more on the following rounds if the victim light
+struggles or is exceptionally heavy. When the pou
+spell ends, the pillars crumble into dust. ate
+Perd o Tra
+Terram Spells You
+a sto
+Fist of Shattering: Lv 5 Wie
+Near, Inst.
+An object of clay, wood, glass, or weaker mate
+Hurl
+rial that weighs up to five pounds breaks apart.
+able
+Casting requisites: appropriate form for the tar
+The
+get.
+Dam
+for a
+Pit of the Gaping Earth: Lv 15
+Near, Inst. The
+The dirt in a circle 3 paces across recedes into the
+ground, leaving a pit 9 feet deep.
+Tu
+jagg
+Rusted Decay of Ten Score Years: Lv 15 surf
+Near, Inst. circ
+After the spell is cast, the metal of the target the
+becomes so thoroughly rusted that it breaks if parti
+used in any demanding way (e.g., in combat, to is+l
+97
+ry open a door). It also loses any sharpness it
+ight once have had. Works on up to 25 pounds
+f metal
+bliteration of the
+etallic Barrier. Lv 20
+Reach, Inst.
+hattersa barrierofmetalorweakermaterialup
+o one foot thick. Those within one pace of the
+arrier on the opposite side from you take +10
+amage. Alchemically refined and magical met
+ls may be able to withstand this spell Casting
+quisites: appropriate form for the target.
+scade of Rocks: Lv 25
+Sight, Inst., Ritual
+akesacliffcollapse,causinganavalanche. The
+ffects depend on the size of the cliff and what
+ies below it.
+tone to Falling Dust: Lv 30
+Sight, Inst.
+ne solid object weighing up to pounds
+rnstoapileofdust. Castingrequis50ites0 : appro
+riate form for the target.
+e�o Terram Spells
+ard Against
+aeries of the Mountains: Gen.
+Spec., Ring
+s Ward Against Faeries of the Waters (ReAq
+en), but for faeries of the earth and stone.
+nseen Arm: Lv 5
+Near,Conc.
+oves non-living things slowly; cannot oppose
+ntentional resistance. Magi this spell to
+use
+anipulate things at a distance, but it cannot be
+sed to pull something from someone's hand or
+move something that is held. It can only move
+ight things, like book pages, instruments, a small
+uchofcoins,etc. Casting requisites: appropri
+te form for the target.
+rackless Step: Lv 10
+Self, Spec.
+ou leave no tracks in theearth until you come to
+stop, such as to rest or to fight.
+ielding the Invisible Sling: Lv 10
+Reach, Inst., Aimed +2
+urls any nearby object that is normally throw
+ble by a person at any target within 100 paces.
+he object must be unobstructed (not held down).
+mage depends on the object thrown, up to +5
+or a fist-size stone.
+e Earth's Carbuncle: Lv 15
+Near, Inst., Muto, Aimed + 1
+ums the ground just under the surface into
+agged which suddenly burst through the
+urfacerocks and in, to the air. Anyone standing on the
+ircle, which one pace across, knocked into
+he air and thise n hit with the faisllin g rocks and
+artially buried once they have landed. Damage
+s+lO.
+98
+Invisible Hand of the Thief: Lv 15
+Near, Inst.
+Takes an item weighing up to three pounds and
+teleports it instantly to a sack or pouch that you
+are holding. The spell does not work if the item
+is worn, held, touched, or seen by anyone but
+you, if it is made of iron or steel, or if it is a living
+thing. You must know exactly what and where
+the object is. Casting requisites: appropriate
+form for the object stolen
+Unseen Porter: Lv 20
+Near, Conc.
+Like Unseen Ann, but it can carry large objects,
+such as crates. Roughly speaking, it has the
+capabilities ofa very strong person (Str+5) with
+no hands. The heavier the object is the slower
+the unseen porter moves. If delicacy is required
+high finesse rolls (12+ or so) are needed. Can
+only carry inanimate objects, and by no means
+can you carry yourself. Cannot lift things more
+than 6 feet above the ground. Casting requi
+sites: appropriate form for the target.
+The Earth Split Asunder: Lv 25
+Sight, Inst., Perdo, Aimed
+Creates a 5 foot wide, 20 pace long, 10 foot deep
+Vim Spells
+Vim spells are very useful They help you
+use your spells to better effect, and since using
+spells efficiently is what being a master magus is
+all about, these spells are very important. With
+imagination, you can use these spells to make
+wards, alarms, one-use magic items, etc.
+Vim spells also cover demons. Summoning
+and dealing with demons is prohibited within
+the Order, but fighting them is allowed.
+Since Vim spells deal with magic in its many
+forms, storyguides often have to assign Level
+equivalents to their ideas when they had not
+planned to do so. For instance, when you try to
+break the effects of some magical power that the
+story guide has set up, the story guide then has1o
+give that effect a number rating to determine
+whether your counter-spell is strong enough.
+Storyguides, be aware of this possibility and
+prepare for it.
+Creo Vim Spells
+There are no Creo Vim spells common to the
+Order, though you can use these arts to extract
+raw vis (see the Laboratory chapter). The pow
+ers of Creo Vim might be effective at high levels
+of proficiency, or in the hands of specialists.
+Intellego Vim Spells
+Since magic is a tricky thing to understand,
+spellstodetectmagicareatoncedifficultandim
+portant.
+Chapter
+5
+crack in the ground. It opens during one round, Cr
+stays open for another round, and then closes
+d again, crushing all within it for +25 damage. You Cr
+u must maintain concentration all three rounds to fe
+have the spell be cast in full. tio
+t pa
+g Earth Shock: Lv 30 pa
+e Sight, Inst. (o
+e Shakes the earth in a 15 pace radius. All those m
+w
+withinthatcirclemustmakeQik-EncrollsoflO+
+c
+or fall. Apply these modifiers:
+tu
+Standing Still +2 On Solid Stone +2
+Moving Slowly 0 On Earth 0
+Running -2 In Tree -6
+, H
+e
+h Creeping Chasm: Lv 35 Cr
+r Sight, Inst., Perdo, Aimed +6 an
+d Creates a chasm that runs from the ground in T
+n front of your feet to some target determined by t
+your outstretched arms. The chasm travels about m
+re 4 paces per round, growing slowly wider as it th
+i travels, reaching a maximum width of 20 feet at a h
+distance of 30 paces. The chasm is 20 to 30 feet pe
+deep and the sides are likely to collapse, so any it
+caught in it are in a bit of a bind. The chasm closes by
+naturally in a week. You must maintain concen w
+tration for eight rounds for the chas� to reach an
+p maximum length. so
+u Wizard's Subtle Touch: Lv 5 yo
+g Touch, Inst. a P
+is You can tell whether an object you touch is magi
+th cal by holding it in your hand and concentrating Pe
+e on it. After a short t�e the object feels like it is
+vibrating very quickly and softly if it is magical. Yo
+g ga
+in
+Sense the Nature of Vis: Lv 10 thi
+Touch, Inst. ma
+y You can tell what art a supply of raw vis is con er
+el
+nected to. In other words, you can tell whether
+ot the vis is good for studying Ignem and for casting Se
+to
+Ignem spells, or whether it is connected to Au
+e
+ram, and so on.
+Yo
+o
+are
+e
+h. The Invisible Eye Revealed: Lv 15 yo
+d Near, Conc. it
+You can see a visual representation of any magi in
+cal means used to spy on you. The image varies
+depending on the spell, but often it looks like
+some kind of eye floating in the air. It works on
+Intellego spells of up to Level 30.
+he
+Scales of the Magical Weight: Lv 15
+ct
+ Touch, Inst.
+ls You can determine the relative "weights" of
+magical things you hold in your hands as if your
+arms were the arms of mundane scales; the per Sh
+ceived weight being proportional to the number
+of vis points in each hand. Without a standard Ch
+"weight" with a known number of vis points, th
+youcanonlygeta vagueideaofthenumberofvis a
+d, points in an item. Just as if you were weighing ca
+ mundane things, closing your eyes and holding ca
+your arms straight out improves the accuracy of if
+Crest of the Earth Wave: Lv 50
+Spec., Inst., Aquam
+Creates a wave in the earth that starts at your
+feet and travels 100 paces in a designated direc
+tion. It starts as a narrow ripple and within 5
+paces reaches its full size of 5 feet high and 30
+paces wide. It moves about SO paces per round
+(over 15 mph). Those caught in its path must
+make Dex -Enc rolls of 10+ to leap over the
+wave or they are caught underneath and
+crushed. Damage is +30. The wave will over
+turn trees and damage buildings in its path.
+Hermes' Portal: Lv 75
+Reach, Penn., Ritual
+Creates a magical portal through which people,
+animals,andobjectscantravelinstantaneously.
+The ritual must be conducted simultaneously at
+two different locations, after which there is a
+magical connection between them. Each time
+the resulting portal is used, 1 point of vis per
+human or human-sized traveler must be ex
+pended. The traveler holds the vis in hand, and
+it disappears in transit. The portal is activated
+by some command words or ritual determined
+when the portal is enchanted. Inanimate things
+and unwilling creatures can be transported if
+someone else performs the necessary ritual.
+your measurement. The storyguide may call for
+a Per roll to determine your accuracy.
+Perceive Magical Scent: Lv 20
+5 paces, Conc.
+You become sensitive to magical things as if they
+gave off a scent. Generally you can sense magical
+things within 5 paces of you. You can sense
+magical things farther away if the magic is pow
+erful and if you make appropriate Per rolls.
+Sense of the Lingering Magic: Lv 30
+Reach, Conc.
+You can determine if magic was ever used in an
+area in the past; and if it was in the past ten years,
+you can get a definite idea of what kind of magic
+it was, what powers it had, and any distinguish
+ing characteristics it may have had.
+Muto Vim Spells
+These spells lety ou change other spells.
+Shroud Magic: Gen.
+Reach, Sun./Penn.
+Changes the outward appearance of a spell, ei
+ther one that has already been cast or one that
+anothermagus iscasting. The spell to be shrouded
+can be up to double the Shroud's Level. You can
+cast this spell while casting the one to be affected
+if you can roll an Int+ Concentration roll of 9+.
+Wizard's Boost: Gen. c
+Near, Inst.
+You cast this as another magus casts another n
+spell. The other spell increases 5 Levels in effec d
+tiveness, but not past the Level of the Wizard's
+Boost. The effects of the extra 5 levels of power t
+are for the storyg uide to determine. You can also d
+cast this spell simultaneously with one of your s
+own if you can make an Int+ Concentration roll
+of9+.
+Wizards' Communion: Gen.
+Reach, Inst.
+Lets magi combine their powers to cast spells. t
+The Level of the spell must be less than or equal d
+to double the Level of the Communion, and only e
+one extra magus can be added to the group for
+each 5 Levels of the Communion. All the wiz e
+ards in the gathering that know the Communion
+spell can add their Levels together to get the o
+effective Level of the Wizards' Communion for
+that gathering. One of the magi in the group
+mustknowthespelltobecastormustcastitfrom
+a text. Each magus rolls for fatigue and success
+T
+as if casting that spell but versus a number equal
+to the spell's Level divided by the number of
+1
+magi participating. Ifa ny magus fails to castthe
+t
+spell, the whole spell fails. If alls ucceed, the spell
+is cast. Spontaneous spells cannot be cast by this
+If
+means. Mostly this spell is used to cast protec
+t
+tion spells for the covenant that are too powerful
+for a single magus to cast, or even learn.
+g
+a
+Gather the Essence of the Beast: Lv 15
+Touch, Inst. a
+Concentrates the raw in a corpse into one part b
+of that corpse, which cvaisn then be removed. This
+spell lets you gather all the raw you find
+without lugging around entire corp"sesis of mon pt
+sters slain. Note that the in many magical P
+creaturesisalreadyconcent"raist edinthismanner. p
+t
+sl
+Perdo Vim Spells
+Demon's Eternal Oblivion: Gen.
+Near, Inst.
+a
+Weakens and possibly destroys a demon. Roll
+die+ Level; for every point by which you exceed
+the target's Demon Points, it loses one Demon
+P
+Point. If its Demon Points drop to 0, the demon
+e
+is banished back to Hell for an indeterminate
+t
+amount of time. If you know the demon's true
+name, double your roll.
+n
+Disenchant: Gen.
+Touch, Inst.
+You can make a magic item lose its powers
+permanently if you can roll double the total
+Y
+points used in it on die + Level. vis
+a
+c
+Wind of Mundane Silence: Gen. i
+Reach, Inst. (t
+Metaphorically speaking, you raise a ''breeze" Y
+that blows the magic away from an area, ti
+cancelling the effects of a spell. You can cancel i
+the effect of any spell if you can match double the t
+caster's Technique+ Form (at the time the spell but t
+was cast) on a roll of die+ Level. (If the spell was centr
+not cast by a magus, the number to match is be m
+double the caster's Might score. If the spell was the fi
+from from a magic item, it is double the Level of beca
+the spell.) It does not work on spells of instant Wor
+duration. Magical things nearby will wave
+slightly in the ''breeze" that this spell creates.
+Ope
+1
+Rego Vim Spells You c
+some
+one o
+The spell to repel demons is Rego Vim. It is
+you
+theoretically possible to conjure and control
+lntell
+demons through Rego Vim spells, but this knowl
+lets y
+edge and its use are forbidden by the Hermetic tion
+Code. Any who find and dare to use this knowl see t
+edge face dangers both from the beings they deal ope
+with and those in the Order of Hermes who
+Finall
+object to such practices. no g
+targe
+Aegis of the Hearth: Gen. make
+Spec., Year, Ritual conce
+This ritual protects a covenant the way a and
+protects a magus. It affects a circlep uaprma to magi
+ma100g ficeae t across (or the equivalent in area), though back
+the diameter can be increased another 100 feet
+for each extra point of raw used in the ritual. Wait
+If a spell enters the circle f"roism anyone besides R
+those who participated in the ritual, the aegis You
+resists the spell. lfthe targetofthespell normally disch
+gets a resistance rolL the Level+ 5 of the aegis is (Th
+added to that roll. If the spell would not nor requi
+mally be resisted., the caster must overcome the Thus,
+aegis' resistance of die + Level + 5. The aegis dista
+blocks Intellego spells that would penetrate its must
+perimeter even if they cannot be blocked by a spell
+Demons and faeries cannot enter place
+pthaerma pro mtecagticaed.. a rea unless they have higher Mystic Level
+Points than the Level of the aegis. Those who Leve
+participate in the ritual must walk around the then
+perimeter of the protected. area. When crossing event
+the border of an aegis, a magical person feels a you p
+slight tingle in the extremities. Waiti
+when
+Circular Ward Against Demons: Gen. Waiti
+Spec., Ring other
+A magical ring 7 paces across forms around you tect
+and remains active as long as you do not leave it. 'Xhen
+When you setup the ring, the storyguidesecretly uSed.
+rolls a die + Level. All demons with Demon insta
+Points equal to or less than this totalareunable to captu
+enter the circle or harm those within it. If you cast charg
+the spell again, the second ring dissipates the set of
+first, regardless of their relative strengths. Some Waiti
+magi cast this spell in bed before going to sleep at
+night. Wat
+T
+Maintaining the Demanding Spell: Gen. Puts
+n/a, 1 minute must
+You cast this spell on a spell that you have Unde
+already cast and are maintaining through con take
+centration. The spell that requires concentration must
+is thenautomatically maintained. for one minute susp
+(ten rounds), whether you concentrate or not. the
+You cannot change the effects of the concentra the
+tion spell without concentrating normally. For Watc
+instance, you could use the Unsene Arm (ReTeS) son.
+to hold ano bject in theair without concentrating, War
+99
+ut to move the object would still require con
+entration. A Concentration+ Int roll of 6+ must
+made in order to cast this spell while keeping
+e first one going (a lower roll than normal
+ause this is what the spell was designed for).
+orks only on spells of equal or lower Level.
+pening the Intangible Tunnel: Gen.
+100 Conc., Ritual
+ou canmil opeesn, a magical channel from yourself to
+me target, allowing you to cast a spell at some
+ne or some place not in your presence. First,
+ou need some definite connection, such as an
+tellego spell, that establishes a connection and
+ts you sense the target specifically. The connec
+on must be strong enough that you can at least
+e the target. Then, you cast this spell, which
+pens the channel between you and your target.
+inally, you can cast a spell, whose Level can be
+o greater than the Level of this spell, at the
+rget as you were present. Note that you must
+ake staifn dard concentration rolls to maintain
+ncentration on both the initial connecting spell
+nd on this spell. In addition, a magus who
+agically recognizes the Tunnel may cast spells
+ack at you.
+aiting Spell: Gen.
+Reach, Spec., Ritual
+ou place a spell in a specific locus where it will
+ischarge under the conditions that you specify.
+hese conditions must be immediately obvious,
+quiring no exceptional modes of detection.
+hus, a trap could not be set based on some
+istant event or obscure fact). The Waiting Spell
+ust be equal to or greater than the Level of the
+ell placed in waiting. Several spells can be
+laced in waiting together if the Waiting Spell's
+evel at least equals the sum of the other spells'
+evels. If one of these spells is a detection spell,
+en the other spell(s) can be be based on an
+vent detected. by the detection spell Thus, if
+ou put Frosty Breath of the Spoken Lie into the
+aiting Spell, you could have a spell that fires
+hen someone lies. (An Intellego spell in the
+aiting Spell has no effect other than to fire the
+ther spell[s) when the proper condition is de
+ted.. Thus, one's breath would not be frosty
+hen caught in a lie.) The Waiting Spell is often
+Sed. for traps, for emergency devices that (for
+tance) teleport their users away if they are
+aptured., or for spells held in staffs, be dis
+arged at will. The Waiting Spell laststo u ntil it is
+t off. You cannot store a ritual spell with a
+aiting Spell.
+atching Ward: Gen.
+Touch, Spec., Ritual
+uts another spell in suspension on a target, who
+ust be present for the entire ritual of this spell.
+nder the conditions you specify, the spell will
+ke effect. The Level of the Watching Ward
+ust at least equal the Level of the spell held in
+uspension. You can also put multiple spells in
+e Ward, provided. that its Level at least equals
+e sum of the Levels of the spells. Only one
+atching Ward can be placed on any one per
+n. If someone tries to dispel the Watching
+ard and fails, the spell is cast.
+qa
+Gr
+an
+po
+be
+th
+cr
+fro
+qr
+tur
+wi
+thr
+\
+U of
+'I . po
+/.j1
+· sai
+p
+The laboratory was
+after months of preparation the time h
+strinq which suspended it from the beam
+in the torchliqht. Under it, Lucienne tentativel
+qarnered from the faerie rinq. Carefully insc
+Grimqroth drew a protective circle around hi
+anticipation. he turned his attention to the amul
+power, each syllable cominq from his throat in
+beqan to worR its way from the mushrooms to t
+the blacR surface. The amulet spun ever fas
+crescendo and his entire body shooR with the ef
+from the mushrooms. As they qrew. they tw
+qraspinq it and slowinq its spin. When the spi
+turned blacR and withered away. Slumpinq bac
+with pride. He could not tell yet. but if all had q
+throuqh illusions and phantasms and would all
+of qhosts and spirits. The cost had been dear.
+potent maqic. but the amulet would be worth t
+Lucienne looRed to Grimqroth and said. "It
+said it would."
+"Yes. apparently so." said Grimqroth, smilin
+As the two of them slowly left the laboratory
+pitch blacR smoRe wormed its way up from the
+the amulet. which trembled for a momen
+drifted out of the labratory to minqle wi
+as darR and filled with shadows;
+e had come. Twirlinq rapidly on the silver
+m overhead. the ebony amulet qlistened
+ively held two of the mushrooms they had
+nscribinq runes of power on the floor,
+himself and Lucienne. Tremblinq with
+ulet. Solemnly he intoned the words of
+in a quttural qrowl. A pale oranqe qlow
+to the amulet. tracinq arcane patterns on
+faster. Grimqroth's words built into a
+effort. Suddenly. qray sprouts shot forth
+twined about the amulet, each tendril
+pinninq had stopped entirely, the vines
+bacR, Grimqroth qazed upon his creation
+qone well. the amulet would let him see
+allow him to perceive the invisible world
+ar. since each mushroom had contained
+h the price if it was unflawed.
+. "It worRed perfectly, Master, just as you
+ilinq sliqhtly.
+ory, lost in their private musinqs. a curl of
+the shadows of the floor and merqed with
+ent and then was still. A deep chucRle
+with the morninq's sonq. .
+II
+!

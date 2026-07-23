@@ -1,15 +1,16 @@
 /**
- * Merge ArM5 Chapter IX spellbook with Appendix III index into one pack.
- * Chapter 9 wins on clashes (full R/D/T + text). Index-only stubs are kept.
- * Prefer cleaner Index titles when Ch9 OCR mangled the name.
+ * Merge AG0201 (2e) spells with ArM5 Chapter IX + Appendix III.
+ * Priority on clashes: AG0201 > Chapter IX > Index stubs.
+ * Prefer cleaner Index titles when Ch9 OCR mangled the name (Arm5-only).
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { formatSpellDisplayName } from "../modules/utils/spell-folders.js";
+import { formatSpellDisplayName, stripSpellDisplaySuffix } from "../modules/utils/spell-folders.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
+const agPath = path.join(root, "src/compendium-data/spells-ag0201.json");
 const ch9Path = path.join(root, "src/compendium-data/spells-arm5-ch9.json");
 const indexPath = path.join(root, "src/compendium-data/spells-arm5-index.json");
 const outPath = path.join(root, "src/compendium-data/spells.json");
@@ -19,7 +20,7 @@ const outPath = path.join(root, "src/compendium-data/spells.json");
  * @returns {string}
  */
 function conflictKey(name) {
-  let n = String(name)
+  let n = String(stripSpellDisplaySuffix(name))
     .toLowerCase()
     .replace(/[’']/g, "")
     .replace(/[—–]/g, " ")
@@ -44,7 +45,11 @@ function conflictKey(name) {
     "touch of the goose feathers": "touch of the goose feather",
     "ward against faeries of the water": "ward against faeries of the waters",
     "invocation of weariness": "incantation of weariness",
-    "transformation of thethorny staff": "transformation of the thorny staff"
+    "transformation of thethorny staff": "transformation of the thorny staff",
+    "wound the weeps": "wound that weeps",
+    "the wound the weeps": "wound that weeps",
+    "beast to the torpid toad": "transformation of the ravenous beast to the torpid toad",
+    "transformation of the ravenous beast to the torpid toad": "transformation of the ravenous beast to the torpid toad"
   };
 
   return aliases[n] ?? n;
@@ -59,7 +64,7 @@ function conflictKey(name) {
 function preferName(a, b) {
   const score = (n) => {
     let s = 0;
-    if (/\b(illusioon|dispair|pruification|thaumaturgcical|curseof|miniscule)\b/i.test(n)) s -= 5;
+    if (/\b(illusioon|dispair|pruification|thaumaturgcical|curseof|miniscule|angey)\b/i.test(n)) s -= 5;
     if (/^[A-Z]/.test(n)) s += 1;
     if (/, The$/.test(n) || /^The /.test(n)) s += 1;
     s -= Math.abs(n.length - 40) * 0.01;
@@ -68,6 +73,15 @@ function preferName(a, b) {
   return score(a) >= score(b) ? a : b;
 }
 
+/**
+ * @param {object} spell
+ * @returns {object}
+ */
+function cloneSpell(spell) {
+  return structuredClone(spell);
+}
+
+const ag = JSON.parse(fs.readFileSync(agPath, "utf8"));
 const ch9 = JSON.parse(fs.readFileSync(ch9Path, "utf8"));
 const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
 
@@ -76,28 +90,55 @@ const byKey = new Map();
 /** @type {string[]} */
 const order = [];
 
-for (const item of ch9) {
+let agCount = 0;
+for (const item of ag) {
   const key = conflictKey(item.name);
-  const clone = structuredClone(item);
-  byKey.set(key, clone);
-  order.push(key);
+  const isNew = !byKey.has(key);
+  byKey.set(key, cloneSpell(item));
+  if (isNew) {
+    order.push(key);
+    agCount += 1;
+  }
 }
 
-let skipped = 0;
-let renamed = 0;
-const added = [];
+let ch9Added = 0;
+let ch9Skipped = 0;
+for (const item of ch9) {
+  const key = conflictKey(item.name);
+  if (byKey.has(key)) {
+    ch9Skipped += 1;
+    continue;
+  }
+  const clone = cloneSpell(item);
+  clone.system = {
+    ...clone.system,
+    notes: [
+      clone.system?.notes,
+      "ArM5 Chapter IX OGL — not found under this title in the AG0201 extract; use 2e casting math."
+    ].filter(Boolean).join("\n\n")
+  };
+  byKey.set(key, clone);
+  order.push(key);
+  ch9Added += 1;
+}
+
+let indexSkipped = 0;
+let indexRenamed = 0;
+const indexAdded = [];
 
 for (const item of index) {
   const key = conflictKey(item.name);
   if (byKey.has(key)) {
-    skipped += 1;
+    indexSkipped += 1;
     const existing = byKey.get(key);
-    const better = preferName(item.name, existing.name);
-    if (better !== existing.name) {
-      existing.name = better;
-      renamed += 1;
+    // Only rename Arm5-sourced entries; keep AG0201 titles intact.
+    if (!String(existing.system?.source ?? "").includes("AG0201")) {
+      const better = preferName(item.name, existing.name);
+      if (better !== existing.name) {
+        existing.name = better;
+        indexRenamed += 1;
+      }
     }
-    // Fill empty R/D/T from index only if Ch9 blank (index usually blank too).
     for (const field of ["range", "duration", "target"]) {
       if (!existing.system?.[field] && item.system?.[field]) {
         existing.system[field] = item.system[field];
@@ -106,28 +147,29 @@ for (const item of index) {
     continue;
   }
 
-  const clone = structuredClone(item);
+  const clone = cloneSpell(item);
   clone.system = {
     ...clone.system,
     notes: [
       clone.system?.notes,
-      "Appendix III index stub — not found in Chapter IX extract; R/D/T may be incomplete."
+      "Appendix III index stub — not found in AG0201 or Chapter IX extracts; R/D/T may be incomplete."
     ].filter(Boolean).join(" ")
   };
   byKey.set(key, clone);
   order.push(key);
-  added.push(item.name);
+  indexAdded.push(item.name);
 }
 
 const merged = order.map((key) => {
   const spell = byKey.get(key);
-  spell.name = formatSpellDisplayName(spell.name, spell.system ?? {});
+  spell.name = formatSpellDisplayName(stripSpellDisplaySuffix(spell.name), spell.system ?? {});
   return spell;
 });
 fs.writeFileSync(outPath, `${JSON.stringify(merged, null, 2)}\n`);
 
 console.log(`Wrote ${merged.length} spells to ${outPath}`);
-console.log(`  Chapter IX base: ${ch9.length}`);
-console.log(`  Index overlaps skipped (Ch9 kept): ${skipped} (renamed ${renamed} from cleaner index titles)`);
-console.log(`  Index-only stubs added: ${added.length}`);
-for (const name of added) console.log(`    + ${name}`);
+console.log(`  AG0201 (2e) base: ${agCount}`);
+console.log(`  Chapter IX added (no AG0201 title): ${ch9Added} (skipped overlaps: ${ch9Skipped})`);
+console.log(`  Index overlaps skipped: ${indexSkipped} (renamed ${indexRenamed} Arm5 titles)`);
+console.log(`  Index-only stubs added: ${indexAdded.length}`);
+for (const name of indexAdded) console.log(`    + ${name}`);
